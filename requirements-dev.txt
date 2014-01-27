@@ -1,0 +1,6 @@
+coverage
+ipython
+ipdb
+werkzeug
+flake8==2.0.0  # Remove version after pep8 1.4.7 release
+pep8==1.4.5  # Remove this line after pep8 1.4.7 release
