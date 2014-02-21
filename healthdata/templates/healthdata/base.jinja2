@@ -14,15 +14,16 @@
   </head>
   <body>
 {% block body %}
-{% block page_title_elem %}<h1 id='page-title'>{% block page_title %}TODO: override block page_title{% endblock %}</h1>{% endblock %}
 {% block content_container %}
     <div id='content' class='container'>
+      {% block page_title_elem %}<h1 id='page-title'>{% block page_title %}TODO: override block page_title{% endblock %}</h1>{% endblock %}
       {% block content %}<p>TODO: override block content</p>{% endblock content %}
     </div>
 {% endblock content_container %}
 {% block body_js %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="{{ static('js/bootstrap.min.js') }}"></script>
+    {% block body_extra_js %}{% endblock %}
 {% endblock body_js %}
 {% endblock body %}
   </body>

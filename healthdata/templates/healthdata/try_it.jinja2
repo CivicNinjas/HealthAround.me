@@ -1,0 +1,158 @@
+{% extends "healthdata/base.jinja2" %}
+
+{% block head_title %}Try Healthgeist{% endblock %}
+{% block page_title %}Healthgeist Demo{% endblock %}
+{% block content %}
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+    <span id="progress-text" class="sr-only">0% Complete</span>
+  </div>
+</div>
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <span id="ok1" class="glyphicon glyphicon-ok text-success hidden"></span>
+        <span id="bad1" class="glyphicon glyphicon-remove text-danger hidden"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Determine your location
+        </a>
+        <span id="res1" class="hidden"></span>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <p>
+          First, we need to figure out where you are.  We use the browser's
+          geolocation feature to figure it out.
+        </p>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <span id="ok2" class="glyphicon glyphicon-ok text-success hidden"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Collect data for your location
+        </a>
+        <span id="res2" class="hidden"></span>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        We've gathered data from several public sources covering the whole
+        country.  We'll get the data for your location, and compare it to the
+        rest of the U.S.A.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <span id="ok3" class="glyphicon glyphicon-ok text-success hidden"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Generate your Healthgeist Score
+        </a>
+        <span id="res3" class="hidden"></span>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        Now that we've got your data, let's rank your area compared to the rest
+        of the country.
+      </div>
+    </div>
+  </div>
+</div>
+<p id="results" class="hidden">
+  Soon, this will be an attractive, interactive web app.  Until then, here's
+  some JSON:
+  </br>
+  <a id="json_button" href="#" class="btn btn-primary">Download JSON</a>
+</p>
+{% endblock %}
+
+{% block body_extra_js %}
+<script>
+function handleLocationError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      showLocationError('You denied the request for location.');
+      break;
+    case error.POSITION_UNAVAILABLE:
+      showLocationError('Location information is unavailable.');
+      break;
+    case error.TIMEOUT:
+      showLocationError('The request to get user location timed out.');
+      break;
+    case error.UNKNOWN_ERROR:
+      showLocationError('An unknown error occurred.');
+      break;
+    }
+}
+
+function showLocationError(msg) {
+  $('#bad1').removeClass('hidden');
+  $('#res1')
+    .text(msg)
+    .addClass('bg-danger')
+    .removeClass('hidden');
+}
+
+function showPosition(position) {
+  var lat, lon;
+  lat = Math.round(position.coords.latitude * 10000) / 10000;
+  lon = Math.round(position.coords.longitude * 10000) / 10000;
+  $('#ok1').removeClass('hidden');
+  $('#res1')
+    .text("(Lat " + lat + ", Lon " + lon + ")")
+    .addClass('bg-success')
+    .removeClass('hidden');
+  $('#json_button').attr('href', '/api/score/'+lat+','+lon+ '/?format=json')
+  $('.progress-bar').attr('aria-valuenow', '33').width('33%');
+  $('.progress-text').text('33% Complete');
+  $('#collapseOne').collapse('hide');
+  $('#collapseTwo').collapse('show');
+  setTimeout(fake_step2, 1000);
+}
+
+
+function fake_step2() {
+  $('#ok2').removeClass('hidden');
+  $('#res2')
+    .text("(Data Collected)")
+    .addClass('bg-success')
+    .removeClass('hidden');
+  $('.progress-bar').attr('aria-valuenow', '66').width('66%')
+  $('.progress-text').text('66% Complete');
+  $('#collapseTwo').collapse('hide');
+  $('#collapseThree').collapse('show');
+  setTimeout(fake_step3, 1000);
+}
+
+function fake_step3() {
+  $('#ok3').removeClass('hidden');
+  $('#res3')
+    .text("(Score is Ready)")
+    .addClass('bg-success')
+    .removeClass('hidden');
+  $('.progress-bar').attr('aria-valuenow', '100').width('100%')
+  $('.progress-text').text('100% Complete');
+  $('#results').removeClass('hidden')
+}
+
+
+$( document).ready(function() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, handleLocationError)
+  } else {
+    showLocationError('Geolocation is not supported by this browser.')
+  }
+})
+
+</script>
+
+
+{% endblock %}
