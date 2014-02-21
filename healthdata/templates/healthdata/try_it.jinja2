@@ -110,7 +110,7 @@ function showPosition(position) {
     .text("(Lat " + lat + ", Lon " + lon + ")")
     .addClass('bg-success')
     .removeClass('hidden');
-  $('#json_button').attr('href', '/api/score/'+lat+','+lon+ '/?format=json')
+  $('#json_button').attr('href', '/api/score/'+lon+','+lat+ '/?format=json')
   $('.progress-bar').attr('aria-valuenow', '33').width('33%');
   $('.progress-text').text('33% Complete');
   $('#collapseOne').collapse('hide');
