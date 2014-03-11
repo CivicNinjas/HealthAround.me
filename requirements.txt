@@ -4,3 +4,5 @@ psycopg2==2.5.2
 -e git+git://github.com/newsapps/django-boundaryservice.git@v0.2.2#egg=django-boundaryservice
 Jinja2==2.7.2
 jingo==0.7
+django-mptt==0.6.0
+jsonfield==0.9.20

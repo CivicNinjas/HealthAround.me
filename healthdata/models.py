@@ -1,7 +1,11 @@
-from boundaryservice.models import Boundary
+from boundaryservice.models import Boundary, BoundarySet
 from django.db import models
+from django.contrib.contenttypes.models import ContentType
+from jsonfield import JSONField
+from mptt.models import MPTTModel, TreeForeignKey
 from south.modelsinspector import add_introspection_rules
 
+import algorithms
 
 
 add_introspection_rules(
@@ -35,3 +39,65 @@ class ProtoHealth(models.Model):
 
     def __unicode__(self):
         return u'%s' % self.boundary
+
+
+class ScoreMetric(models.Model):
+    '''A metric that has a score for a given location'''
+
+    FAKE_ALGORITHM = 0
+    algorithm_choices = (
+        (FAKE_ALGORITHM, 'FakeAlgorithm', 'Fake Algorithm'),
+    )
+    algorithm_class_name = dict([(a[0], a[1]) for a in algorithm_choices])
+
+    name = models.CharField(
+        max_length=50, help_text='Short human-readable name')
+    description = models.CharField(
+        max_length=255, default="This is a description",
+        help_text='Human-readable description')
+    data_source = models.ForeignKey(
+        ContentType, null=True, blank=True,
+        help_text='Model that Holds the Source Data')
+    boundary_set = models.ForeignKey(
+        BoundarySet, null=True, blank=True,
+        help_text='Related Boundary Set with Data')
+    data_property = models.CharField(
+        max_length=50, null=True, blank=True,
+        help_text='Data property used for source data')
+    algorithm = models.IntegerField(
+        choices=[(a[0], a[2]) for a in algorithm_choices],
+        default=FAKE_ALGORITHM,
+        help_text='Algorithm used to calculate score')
+    params = JSONField(
+        default='', null=True, blank=True,
+        help_text="Extra parameters for algorithm")
+
+    def __str__(self):
+        return self.name
+
+    def get_algorithm(self):
+        klass = getattr(algorithms, self.algorithm_class_name[self.algorithm])
+        algorithm = klass(self)
+        return algorithm
+
+
+class ScoreNode(MPTTModel):
+    '''A node in the tree of scored metrics'''
+
+    label = models.CharField(
+        max_length=255, help_text='Human-readable name')
+    slug = models.CharField(
+        max_length=50, help_text='Short slugified name for assets')
+    rel_order = models.IntegerField(
+        default=100, help_text="Relative ordering of sibling nodes")
+    parent = TreeForeignKey(
+        'self', null=True, blank=True, related_name='children')
+    weight = models.IntegerField(
+        default=1, help_text="Relative weight of this node to siblings")
+    metric = models.ForeignKey(ScoreMetric, blank=True, null=True)
+
+    class MPTTMeta:
+        order_insertion_by = ['rel_order', 'slug']
+
+    def __str__(self):
+        return self.label

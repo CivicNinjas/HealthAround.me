@@ -6,5 +6,6 @@ urlpatterns = patterns('healthdata.views',
         name='home'),
     url(r'^tryit/$', TemplateView.as_view(template_name='healthdata/try_it.jinja2'),
         name='try_it'),
-    url(r'^api/score/.*$', 'fake_api')
+    url(r'^api/score-fake/.*$', 'fake_api'),
+    url(r'^api/score/(?P<lon>-?[\d.]+),(?P<lat>-?[\d.]+)/$', 'score_by_location')
 )

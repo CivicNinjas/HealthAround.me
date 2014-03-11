@@ -1,0 +1,1467 @@
+[
+{
+  "pk": 1,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Percent Poverty"
+  }
+},
+{
+  "pk": 2,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Access to Jobs"
+  }
+},
+{
+  "pk": 3,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Employment Status"
+  }
+},
+{
+  "pk": 4,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Crime Rates"
+  }
+},
+{
+  "pk": 5,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Food Access"
+  }
+},
+{
+  "pk": 6,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Environmental Conditions"
+  }
+},
+{
+  "pk": 7,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Housing Quality"
+  }
+},
+{
+  "pk": 8,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "High School Graduation Rate"
+  }
+},
+{
+  "pk": 9,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Higher Education Rate"
+  }
+},
+{
+  "pk": 10,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "School Safety"
+  }
+},
+{
+  "pk": 11,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "School Health Policies"
+  }
+},
+{
+  "pk": 12,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Housing Stability"
+  }
+},
+{
+  "pk": 13,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "data_source": null,
+    "data_property": "",
+    "algorithm": 0,
+    "description": "This is a description",
+    "boundary_set": null,
+    "params": null,
+    "name": "Total Medicare Reimbursements Per Enrolee"
+  }
+},
+{
+  "pk": 1,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 50,
+    "parent": null,
+    "weight": 1,
+    "lft": 1,
+    "metric": null,
+    "level": 0,
+    "label": "Social Determinants of Health",
+    "rel_order": 1000,
+    "tree_id": 1,
+    "slug": "social-determinants"
+  }
+},
+{
+  "pk": 2,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 9,
+    "parent": 1,
+    "weight": 1,
+    "lft": 2,
+    "metric": null,
+    "level": 1,
+    "label": "Health & Health Care",
+    "rel_order": 1100,
+    "tree_id": 1,
+    "slug": "health-health-care"
+  }
+},
+{
+  "pk": 3,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 4,
+    "parent": 2,
+    "weight": 21,
+    "lft": 3,
+    "metric": 1,
+    "level": 2,
+    "label": "Percent Poverty",
+    "rel_order": 1110,
+    "tree_id": 1,
+    "slug": "percent-poverty"
+  }
+},
+{
+  "pk": 4,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 6,
+    "parent": 2,
+    "weight": 35,
+    "lft": 5,
+    "metric": 2,
+    "level": 2,
+    "label": "Access to Jobs",
+    "rel_order": 1120,
+    "tree_id": 1,
+    "slug": "job-access"
+  }
+},
+{
+  "pk": 5,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 8,
+    "parent": 2,
+    "weight": 29,
+    "lft": 7,
+    "metric": 3,
+    "level": 2,
+    "label": "Employment Status",
+    "rel_order": 1130,
+    "tree_id": 1,
+    "slug": "employment-status"
+  }
+},
+{
+  "pk": 6,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 19,
+    "parent": 1,
+    "weight": 1,
+    "lft": 10,
+    "metric": null,
+    "level": 1,
+    "label": "Built Environment",
+    "rel_order": 1200,
+    "tree_id": 1,
+    "slug": "built-environment"
+  }
+},
+{
+  "pk": 7,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 12,
+    "parent": 6,
+    "weight": 21,
+    "lft": 11,
+    "metric": 4,
+    "level": 2,
+    "label": "Crime Rates",
+    "rel_order": 1210,
+    "tree_id": 1,
+    "slug": "crime-rates"
+  }
+},
+{
+  "pk": 8,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 14,
+    "parent": 6,
+    "weight": 35,
+    "lft": 13,
+    "metric": 5,
+    "level": 2,
+    "label": "Food Access",
+    "rel_order": 1220,
+    "tree_id": 1,
+    "slug": "food-access"
+  }
+},
+{
+  "pk": 9,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 16,
+    "parent": 6,
+    "weight": 29,
+    "lft": 15,
+    "metric": 6,
+    "level": 2,
+    "label": "Environmental Conditions",
+    "rel_order": 1230,
+    "tree_id": 1,
+    "slug": "environmental-conditions"
+  }
+},
+{
+  "pk": 10,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 18,
+    "parent": 6,
+    "weight": 23,
+    "lft": 17,
+    "metric": 7,
+    "level": 2,
+    "label": "Housing Quality",
+    "rel_order": 1240,
+    "tree_id": 1,
+    "slug": "housing-quality"
+  }
+},
+{
+  "pk": 11,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 29,
+    "parent": 1,
+    "weight": 1,
+    "lft": 20,
+    "metric": null,
+    "level": 1,
+    "label": "Education",
+    "rel_order": 1300,
+    "tree_id": 1,
+    "slug": "education"
+  }
+},
+{
+  "pk": 12,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 22,
+    "parent": 11,
+    "weight": 21,
+    "lft": 21,
+    "metric": 8,
+    "level": 2,
+    "label": "High School Graduation Rate",
+    "rel_order": 1310,
+    "tree_id": 1,
+    "slug": "grad-rate"
+  }
+},
+{
+  "pk": 13,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 24,
+    "parent": 11,
+    "weight": 35,
+    "lft": 23,
+    "metric": 9,
+    "level": 2,
+    "label": "Higher Education Rate",
+    "rel_order": 1320,
+    "tree_id": 1,
+    "slug": "higher-ed-rate"
+  }
+},
+{
+  "pk": 14,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 26,
+    "parent": 11,
+    "weight": 29,
+    "lft": 25,
+    "metric": 10,
+    "level": 2,
+    "label": "School Safety",
+    "rel_order": 1330,
+    "tree_id": 1,
+    "slug": "school-safety"
+  }
+},
+{
+  "pk": 15,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 28,
+    "parent": 11,
+    "weight": 23,
+    "lft": 27,
+    "metric": 11,
+    "level": 2,
+    "label": "School Health Policies",
+    "rel_order": 1340,
+    "tree_id": 1,
+    "slug": "school-health-policies"
+  }
+},
+{
+  "pk": 16,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 39,
+    "parent": 1,
+    "weight": 1,
+    "lft": 30,
+    "metric": null,
+    "level": 1,
+    "label": "Economic Stability",
+    "rel_order": 1400,
+    "tree_id": 1,
+    "slug": "economic-stability"
+  }
+},
+{
+  "pk": 17,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 32,
+    "parent": 16,
+    "weight": 21,
+    "lft": 31,
+    "metric": 1,
+    "level": 2,
+    "label": "Percent Poverty",
+    "rel_order": 1410,
+    "tree_id": 1,
+    "slug": "percent-poverty"
+  }
+},
+{
+  "pk": 18,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 34,
+    "parent": 16,
+    "weight": 35,
+    "lft": 33,
+    "metric": 2,
+    "level": 2,
+    "label": "Access to Jobs",
+    "rel_order": 1420,
+    "tree_id": 1,
+    "slug": "job-access"
+  }
+},
+{
+  "pk": 19,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 36,
+    "parent": 16,
+    "weight": 29,
+    "lft": 35,
+    "metric": 3,
+    "level": 2,
+    "label": "Employment Status",
+    "rel_order": 1430,
+    "tree_id": 1,
+    "slug": "employment-status"
+  }
+},
+{
+  "pk": 20,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 38,
+    "parent": 16,
+    "weight": 23,
+    "lft": 37,
+    "metric": 12,
+    "level": 2,
+    "label": "Housing Stability",
+    "rel_order": 1440,
+    "tree_id": 1,
+    "slug": "housing-stability"
+  }
+},
+{
+  "pk": 21,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 49,
+    "parent": 1,
+    "weight": 1,
+    "lft": 40,
+    "metric": null,
+    "level": 1,
+    "label": "Community",
+    "rel_order": 1500,
+    "tree_id": 1,
+    "slug": "community"
+  }
+},
+{
+  "pk": 22,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 42,
+    "parent": 21,
+    "weight": 21,
+    "lft": 41,
+    "metric": 1,
+    "level": 2,
+    "label": "Percent Poverty",
+    "rel_order": 1510,
+    "tree_id": 1,
+    "slug": "percent-poverty"
+  }
+},
+{
+  "pk": 23,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 44,
+    "parent": 21,
+    "weight": 35,
+    "lft": 43,
+    "metric": 2,
+    "level": 2,
+    "label": "Job Access",
+    "rel_order": 1520,
+    "tree_id": 1,
+    "slug": "job-access"
+  }
+},
+{
+  "pk": 24,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 46,
+    "parent": 21,
+    "weight": 29,
+    "lft": 45,
+    "metric": 3,
+    "level": 2,
+    "label": "Employment Status",
+    "rel_order": 1530,
+    "tree_id": 1,
+    "slug": "employment-status"
+  }
+},
+{
+  "pk": 25,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 48,
+    "parent": 21,
+    "weight": 23,
+    "lft": 47,
+    "metric": 12,
+    "level": 2,
+    "label": "Housing Stability",
+    "rel_order": 1540,
+    "tree_id": 1,
+    "slug": "housing-stability"
+  }
+},
+{
+  "pk": 26,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 42,
+    "parent": null,
+    "weight": 1,
+    "lft": 1,
+    "metric": null,
+    "level": 0,
+    "label": "Health Profiles",
+    "rel_order": 2000,
+    "tree_id": 2,
+    "slug": "health-profiles"
+  }
+},
+{
+  "pk": 27,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 11,
+    "parent": 26,
+    "weight": 1,
+    "lft": 2,
+    "metric": null,
+    "level": 1,
+    "label": "Children & Teens",
+    "rel_order": 2100,
+    "tree_id": 2,
+    "slug": "children-teens"
+  }
+},
+{
+  "pk": 28,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 4,
+    "parent": 27,
+    "weight": 21,
+    "lft": 3,
+    "metric": 4,
+    "level": 2,
+    "label": "Crime Rates",
+    "rel_order": 2110,
+    "tree_id": 2,
+    "slug": "crime-rate"
+  }
+},
+{
+  "pk": 29,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 6,
+    "parent": 27,
+    "weight": 35,
+    "lft": 5,
+    "metric": 5,
+    "level": 2,
+    "label": "Food Access",
+    "rel_order": 2120,
+    "tree_id": 2,
+    "slug": "food-access"
+  }
+},
+{
+  "pk": 30,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 8,
+    "parent": 27,
+    "weight": 29,
+    "lft": 7,
+    "metric": 6,
+    "level": 2,
+    "label": "Environmental Conditions",
+    "rel_order": 2130,
+    "tree_id": 2,
+    "slug": "environmental"
+  }
+},
+{
+  "pk": 31,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 10,
+    "parent": 27,
+    "weight": 23,
+    "lft": 9,
+    "metric": 7,
+    "level": 2,
+    "label": "Housing Quality",
+    "rel_order": 2140,
+    "tree_id": 2,
+    "slug": "housing-quality"
+  }
+},
+{
+  "pk": 32,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 21,
+    "parent": 26,
+    "weight": 1,
+    "lft": 12,
+    "metric": null,
+    "level": 1,
+    "label": "Seniors",
+    "rel_order": 2200,
+    "tree_id": 2,
+    "slug": "seniors"
+  }
+},
+{
+  "pk": 33,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 14,
+    "parent": 32,
+    "weight": 21,
+    "lft": 13,
+    "metric": 1,
+    "level": 2,
+    "label": "Percent Poverty",
+    "rel_order": 2210,
+    "tree_id": 2,
+    "slug": "percent-poverty"
+  }
+},
+{
+  "pk": 34,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 16,
+    "parent": 32,
+    "weight": 35,
+    "lft": 15,
+    "metric": 2,
+    "level": 2,
+    "label": "Job Access",
+    "rel_order": 2220,
+    "tree_id": 2,
+    "slug": "job-access"
+  }
+},
+{
+  "pk": 35,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 18,
+    "parent": 32,
+    "weight": 29,
+    "lft": 17,
+    "metric": 3,
+    "level": 2,
+    "label": "Employment Status",
+    "rel_order": 2230,
+    "tree_id": 2,
+    "slug": "employment-status"
+  }
+},
+{
+  "pk": 36,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 20,
+    "parent": 32,
+    "weight": 23,
+    "lft": 19,
+    "metric": 12,
+    "level": 2,
+    "label": "Housing Stability",
+    "rel_order": 2240,
+    "tree_id": 2,
+    "slug": "housing-stability"
+  }
+},
+{
+  "pk": 37,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 31,
+    "parent": 26,
+    "weight": 1,
+    "lft": 22,
+    "metric": null,
+    "level": 1,
+    "label": "Babies & Infants",
+    "rel_order": 2300,
+    "tree_id": 2,
+    "slug": "babies-infants"
+  }
+},
+{
+  "pk": 38,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 26,
+    "parent": 37,
+    "weight": 35,
+    "lft": 25,
+    "metric": 2,
+    "level": 2,
+    "label": "Job Access",
+    "rel_order": 2320,
+    "tree_id": 2,
+    "slug": "job-access"
+  }
+},
+{
+  "pk": 39,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 28,
+    "parent": 37,
+    "weight": 29,
+    "lft": 27,
+    "metric": 3,
+    "level": 2,
+    "label": "Employment Status",
+    "rel_order": 2330,
+    "tree_id": 2,
+    "slug": "employment-status"
+  }
+},
+{
+  "pk": 40,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 30,
+    "parent": 37,
+    "weight": 23,
+    "lft": 29,
+    "metric": 12,
+    "level": 2,
+    "label": "Housing Stability",
+    "rel_order": 2340,
+    "tree_id": 2,
+    "slug": "housing-stability"
+  }
+},
+{
+  "pk": 41,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 41,
+    "parent": 26,
+    "weight": 1,
+    "lft": 32,
+    "metric": null,
+    "level": 1,
+    "label": "Adults",
+    "rel_order": 2400,
+    "tree_id": 2,
+    "slug": "adults"
+  }
+},
+{
+  "pk": 42,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 34,
+    "parent": 41,
+    "weight": 21,
+    "lft": 33,
+    "metric": 8,
+    "level": 2,
+    "label": "High School Graduation Rate",
+    "rel_order": 2410,
+    "tree_id": 2,
+    "slug": "hs-grad-rate"
+  }
+},
+{
+  "pk": 43,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 36,
+    "parent": 41,
+    "weight": 35,
+    "lft": 35,
+    "metric": 9,
+    "level": 2,
+    "label": "Higher Education Rates",
+    "rel_order": 2420,
+    "tree_id": 2,
+    "slug": "high-ed-rate"
+  }
+},
+{
+  "pk": 44,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 38,
+    "parent": 41,
+    "weight": 29,
+    "lft": 37,
+    "metric": 10,
+    "level": 2,
+    "label": "School Safety",
+    "rel_order": 2430,
+    "tree_id": 2,
+    "slug": "safe-schools"
+  }
+},
+{
+  "pk": 45,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 40,
+    "parent": 41,
+    "weight": 23,
+    "lft": 39,
+    "metric": 11,
+    "level": 2,
+    "label": "School Health Policies",
+    "rel_order": 2440,
+    "tree_id": 2,
+    "slug": "school-health-policies"
+  }
+},
+{
+  "pk": 46,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 30,
+    "parent": null,
+    "weight": 1,
+    "lft": 1,
+    "metric": null,
+    "level": 0,
+    "label": "Health Indicators",
+    "rel_order": 3000,
+    "tree_id": 3,
+    "slug": "health-indicators"
+  }
+},
+{
+  "pk": 47,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 11,
+    "parent": 46,
+    "weight": 1,
+    "lft": 2,
+    "metric": null,
+    "level": 1,
+    "label": "Causes of Death",
+    "rel_order": 3100,
+    "tree_id": 3,
+    "slug": "causes-of-death"
+  }
+},
+{
+  "pk": 48,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 4,
+    "parent": 47,
+    "weight": 21,
+    "lft": 3,
+    "metric": 8,
+    "level": 2,
+    "label": "High School Graduation Rate",
+    "rel_order": 3110,
+    "tree_id": 3,
+    "slug": "hs-grad-rate"
+  }
+},
+{
+  "pk": 49,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 6,
+    "parent": 47,
+    "weight": 35,
+    "lft": 5,
+    "metric": 9,
+    "level": 2,
+    "label": "Higher Education Rates",
+    "rel_order": 3120,
+    "tree_id": 3,
+    "slug": "higher-ed-rate"
+  }
+},
+{
+  "pk": 50,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 8,
+    "parent": 47,
+    "weight": 29,
+    "lft": 7,
+    "metric": 10,
+    "level": 2,
+    "label": "School Safety",
+    "rel_order": 3130,
+    "tree_id": 3,
+    "slug": "school-safety"
+  }
+},
+{
+  "pk": 51,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 10,
+    "parent": 47,
+    "weight": 23,
+    "lft": 9,
+    "metric": 11,
+    "level": 2,
+    "label": "School Health Policies",
+    "rel_order": 3140,
+    "tree_id": 3,
+    "slug": "school-health"
+  }
+},
+{
+  "pk": 52,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 21,
+    "parent": 46,
+    "weight": 1,
+    "lft": 12,
+    "metric": null,
+    "level": 1,
+    "label": "Chronic Disease Rates",
+    "rel_order": 3200,
+    "tree_id": 3,
+    "slug": "chronic-disease-rates"
+  }
+},
+{
+  "pk": 53,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 14,
+    "parent": 52,
+    "weight": 21,
+    "lft": 13,
+    "metric": 4,
+    "level": 2,
+    "label": "Crime Rates",
+    "rel_order": 3210,
+    "tree_id": 3,
+    "slug": "crime-rates"
+  }
+},
+{
+  "pk": 54,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 16,
+    "parent": 52,
+    "weight": 35,
+    "lft": 15,
+    "metric": 2,
+    "level": 2,
+    "label": "Access to Jobs",
+    "rel_order": 3220,
+    "tree_id": 3,
+    "slug": "job-access"
+  }
+},
+{
+  "pk": 55,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 18,
+    "parent": 52,
+    "weight": 29,
+    "lft": 17,
+    "metric": 6,
+    "level": 2,
+    "label": "Environmental Conditions",
+    "rel_order": 3230,
+    "tree_id": 3,
+    "slug": "environmental"
+  }
+},
+{
+  "pk": 56,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 20,
+    "parent": 52,
+    "weight": 23,
+    "lft": 19,
+    "metric": 7,
+    "level": 2,
+    "label": "Housing Quality",
+    "rel_order": 3240,
+    "tree_id": 3,
+    "slug": "housing-quality"
+  }
+},
+{
+  "pk": 57,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 29,
+    "parent": 46,
+    "weight": 1,
+    "lft": 22,
+    "metric": null,
+    "level": 1,
+    "label": "Life Expectancy",
+    "rel_order": 3300,
+    "tree_id": 3,
+    "slug": "life-expectancy"
+  }
+},
+{
+  "pk": 58,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 24,
+    "parent": 57,
+    "weight": 21,
+    "lft": 23,
+    "metric": 1,
+    "level": 2,
+    "label": "Percent Poverty",
+    "rel_order": 3310,
+    "tree_id": 3,
+    "slug": "percent-poverty"
+  }
+},
+{
+  "pk": 59,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 26,
+    "parent": 57,
+    "weight": 35,
+    "lft": 25,
+    "metric": 2,
+    "level": 2,
+    "label": "Access to Jobs",
+    "rel_order": 3320,
+    "tree_id": 3,
+    "slug": "job-access"
+  }
+},
+{
+  "pk": 60,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 28,
+    "parent": 57,
+    "weight": 29,
+    "lft": 27,
+    "metric": 3,
+    "level": 2,
+    "label": "Employment Status",
+    "rel_order": 3330,
+    "tree_id": 3,
+    "slug": "employment-status"
+  }
+},
+{
+  "pk": 61,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 40,
+    "parent": null,
+    "weight": 1,
+    "lft": 1,
+    "metric": null,
+    "level": 0,
+    "label": "Health Care: Access & Costs",
+    "rel_order": 4000,
+    "tree_id": 4,
+    "slug": "health-care-access-costs"
+  }
+},
+{
+  "pk": 62,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 11,
+    "parent": 61,
+    "weight": 1,
+    "lft": 2,
+    "metric": null,
+    "level": 1,
+    "label": "Medicare Reimbursements",
+    "rel_order": 4100,
+    "tree_id": 4,
+    "slug": "medicare-reimbursements"
+  }
+},
+{
+  "pk": 63,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 4,
+    "parent": 62,
+    "weight": 21,
+    "lft": 3,
+    "metric": 13,
+    "level": 2,
+    "label": "Total Medicare Reimbursements Per Enrolee",
+    "rel_order": 4110,
+    "tree_id": 4,
+    "slug": "total-medicare-reimbursements-per-enrolee"
+  }
+},
+{
+  "pk": 64,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 6,
+    "parent": 62,
+    "weight": 35,
+    "lft": 5,
+    "metric": 5,
+    "level": 2,
+    "label": "Food Access",
+    "rel_order": 4120,
+    "tree_id": 4,
+    "slug": "food-access"
+  }
+},
+{
+  "pk": 65,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 8,
+    "parent": 62,
+    "weight": 29,
+    "lft": 7,
+    "metric": 6,
+    "level": 2,
+    "label": "Environmental Conditions",
+    "rel_order": 4130,
+    "tree_id": 4,
+    "slug": "environment"
+  }
+},
+{
+  "pk": 66,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 10,
+    "parent": 62,
+    "weight": 23,
+    "lft": 9,
+    "metric": 7,
+    "level": 2,
+    "label": "Housing Quality",
+    "rel_order": 4140,
+    "tree_id": 4,
+    "slug": "housing-quality"
+  }
+},
+{
+  "pk": 67,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 21,
+    "parent": 61,
+    "weight": 1,
+    "lft": 12,
+    "metric": null,
+    "level": 1,
+    "label": "Health Care Quality",
+    "rel_order": 4200,
+    "tree_id": 4,
+    "slug": "health-care-quality"
+  }
+},
+{
+  "pk": 68,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 16,
+    "parent": 67,
+    "weight": 35,
+    "lft": 15,
+    "metric": 2,
+    "level": 2,
+    "label": "Access to Jobs",
+    "rel_order": 4220,
+    "tree_id": 4,
+    "slug": "job-access"
+  }
+},
+{
+  "pk": 69,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 18,
+    "parent": 67,
+    "weight": 29,
+    "lft": 17,
+    "metric": 3,
+    "level": 2,
+    "label": "Employment Status",
+    "rel_order": 4230,
+    "tree_id": 4,
+    "slug": "employment-status"
+  }
+},
+{
+  "pk": 70,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 14,
+    "parent": 67,
+    "weight": 21,
+    "lft": 13,
+    "metric": 1,
+    "level": 2,
+    "label": "Percent Poverty",
+    "rel_order": 4210,
+    "tree_id": 4,
+    "slug": "poverty"
+  }
+},
+{
+  "pk": 71,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 29,
+    "parent": 61,
+    "weight": 1,
+    "lft": 22,
+    "metric": null,
+    "level": 1,
+    "label": "Hospital Costs",
+    "rel_order": 4300,
+    "tree_id": 4,
+    "slug": "hospital-costs"
+  }
+},
+{
+  "pk": 72,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 24,
+    "parent": 71,
+    "weight": 21,
+    "lft": 23,
+    "metric": 1,
+    "level": 2,
+    "label": "Percent Poverty",
+    "rel_order": 4310,
+    "tree_id": 4,
+    "slug": "percent-poverty"
+  }
+},
+{
+  "pk": 73,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 26,
+    "parent": 71,
+    "weight": 35,
+    "lft": 25,
+    "metric": 2,
+    "level": 2,
+    "label": "Job Access",
+    "rel_order": 4320,
+    "tree_id": 4,
+    "slug": "job-access"
+  }
+},
+{
+  "pk": 74,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 28,
+    "parent": 71,
+    "weight": 29,
+    "lft": 27,
+    "metric": 3,
+    "level": 2,
+    "label": "Employment Status",
+    "rel_order": 4330,
+    "tree_id": 4,
+    "slug": "employment-status"
+  }
+},
+{
+  "pk": 75,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 20,
+    "parent": 67,
+    "weight": 23,
+    "lft": 19,
+    "metric": 12,
+    "level": 2,
+    "label": "Housing Stability",
+    "rel_order": 4240,
+    "tree_id": 4,
+    "slug": "housing-stability"
+  }
+},
+{
+  "pk": 76,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 39,
+    "parent": 61,
+    "weight": 1,
+    "lft": 30,
+    "metric": null,
+    "level": 1,
+    "label": "Health Care Access",
+    "rel_order": 4400,
+    "tree_id": 4,
+    "slug": "health-care-access"
+  }
+},
+{
+  "pk": 77,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 32,
+    "parent": 76,
+    "weight": 21,
+    "lft": 31,
+    "metric": 8,
+    "level": 2,
+    "label": "High School Graduation Rate",
+    "rel_order": 4410,
+    "tree_id": 4,
+    "slug": "hs-grad-rate"
+  }
+},
+{
+  "pk": 78,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 34,
+    "parent": 76,
+    "weight": 35,
+    "lft": 33,
+    "metric": 9,
+    "level": 2,
+    "label": "Higher Education Rates",
+    "rel_order": 4420,
+    "tree_id": 4,
+    "slug": "high-ed-rate"
+  }
+},
+{
+  "pk": 79,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 36,
+    "parent": 76,
+    "weight": 29,
+    "lft": 35,
+    "metric": 10,
+    "level": 2,
+    "label": "School Safety",
+    "rel_order": 4430,
+    "tree_id": 4,
+    "slug": "school-safety"
+  }
+},
+{
+  "pk": 80,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 38,
+    "parent": 76,
+    "weight": 23,
+    "lft": 37,
+    "metric": 11,
+    "level": 2,
+    "label": "School Health Policies",
+    "rel_order": 4440,
+    "tree_id": 4,
+    "slug": "school-health"
+  }
+},
+{
+  "pk": 81,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 24,
+    "parent": 37,
+    "weight": 21,
+    "lft": 23,
+    "metric": 1,
+    "level": 2,
+    "label": "Percent Poverty",
+    "rel_order": 2310,
+    "tree_id": 2,
+    "slug": "percent-poverty"
+  }
+}
+]
