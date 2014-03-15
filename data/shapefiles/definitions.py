@@ -4,7 +4,7 @@ from boundaryservice import utils
 
 SHAPEFILES = {
     'Counties': {
-        'file': 'tl_2013_us_county.zip',
+        'file': 'counties.zip',
         'singular': 'County',
         'kind_first': 'False',
         'ider': utils.simple_namer(['GEOID']),
@@ -13,7 +13,7 @@ SHAPEFILES = {
         'domain': 'United States of America',
         'last_updated': date(2013, 8, 6),
         'href': 'ftp://ftp2.census.gov/geo/tiger/TIGER2013/COUNTY/tl_2013_us_county.zip',
-        'notes': '',
+        'notes': 'Resaved as UTF-8 encoding',
         'encoding': '',
         'srid': '',
         'simplification': 0.0001,
