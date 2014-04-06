@@ -40,6 +40,7 @@ INSTALLED_APPS = (
 
     # Our apps
     'healthdata',
+    'data',
 )
 
 TEMPLATE_LOADERS = (
@@ -82,9 +83,9 @@ LOGGING = {
     'disable_existing_loggers': False,
     'filters': {
         'require_debug_false': {
-                '()': 'django.utils.log.RequireDebugFalse'
-            }
-        },
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
     'handlers': {
         'mail_admins': {
             'level': 'ERROR',
@@ -101,19 +102,19 @@ LOGGING = {
     }
 }
 
-if 'test' not in sys.argv:
-    try:
-        from settings_override import *  # noqa
-    except ImportError, ep:
-        pass
-    else:
-        try:
-            INSTALLED_APPS += LOCAL_INSTALLED_APPS
-        except NameError:
-            pass
-        try:
-            MIDDLEWARE_CLASSES += LOCAL_MIDDLEWARE_CLASSES
-        except NameError:
-            pass
+try:
+    from settings_override import *  # noqa
+except ImportError, ep:
+    pass
 else:
+    try:
+        INSTALLED_APPS += LOCAL_INSTALLED_APPS
+    except NameError:
+        pass
+    try:
+        MIDDLEWARE_CLASSES += LOCAL_MIDDLEWARE_CLASSES
+    except NameError:
+        pass
+
+if 'test' in sys.argv:
     SECRET_KEY = 'test_secret_key'
