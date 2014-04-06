@@ -6,7 +6,7 @@ SHAPEFILES = {
     'Counties': {
         'file': 'counties.zip',
         'singular': 'County',
-        'kind_first': 'False',
+        'kind_first': False,
         'ider': utils.simple_namer(['GEOID']),
         'namer': utils.simple_namer(['NAME']),
         'authority': 'United States Census Bureau',
@@ -21,7 +21,7 @@ SHAPEFILES = {
     'States': {
         'file': 'tl_2013_us_state.zip',
         'singular': 'State',
-        'kind_first': 'False',
+        'kind_first': False,
         'ider': utils.simple_namer(['GEOID']),
         'namer': utils.simple_namer(['NAME']),
         'authority': 'United States Census Bureau',
@@ -36,7 +36,7 @@ SHAPEFILES = {
     'Census Tracts': {
         'file': 'tl_2013_40_tract.zip',
         'singular': 'Census Tract',
-        'kind_first': 'True',
+        'kind_first': True,
         'ider': utils.simple_namer(['GEOID']),
         'namer': utils.simple_namer(['NAME']),
         'authority': 'United States Census Bureau',
@@ -51,7 +51,7 @@ SHAPEFILES = {
     'Census Block Groups': {
         'file': 'tl_2013_40_bg.zip',
         'singular': 'Census Block Group',
-        'kind_first': 'True',
+        'kind_first': True,
         'ider': utils.simple_namer(['GEOID']),
         'namer': utils.simple_namer(['TRACTCE', 'BLKGRPCE']),
         'authority': 'United States Census Bureau',
