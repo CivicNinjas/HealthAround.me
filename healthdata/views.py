@@ -3,11 +3,14 @@ from math import floor
 import json
 import os.path
 
+from boundaryservice.models import Boundary
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.conf import settings
-from django.shortcuts import render
+from rest_framework.generics import RetrieveAPIView
 
-from healthdata.models import ScoreNode
+from .models import ScoreNode
+from .serializers import BoundarySerializer
+
 
 def fake_api(request):
     '''Return hand-written JSON'''
@@ -67,7 +70,7 @@ def score_node(node, point):
             cscore = child_score['score']
             cweight = child_score['weight']
             score += (cscore * cweight) / total_child_weight
-        scores['score'] = floor(1000.0 *score) / 1000.0
+        scores['score'] = floor(1000.0 * score) / 1000.0
         citations.update(child_citations)
         boundaries.update(child_boundaries)
     return scores, citations, boundaries
@@ -117,3 +120,8 @@ def score_by_location(request, lon, lat):
         response = HttpResponse(json.dumps(content, indent=2))
         response['Content-Type'] = 'application/json'
     return response
+
+
+class BoundaryAPIView(RetrieveAPIView):
+    model = Boundary
+    serializer_class = BoundarySerializer

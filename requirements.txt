@@ -2,6 +2,8 @@ django==1.6.1
 south==0.8.4
 psycopg2==2.5.2
 -e git+git://github.com/newsapps/django-boundaryservice.git@v0.2.2#egg=django-boundaryservice
+djangorestframework==2.3.13
+djangorestframework-gis==0.2
 Jinja2==2.7.2
 jingo==0.7
 django-mptt==0.6.0

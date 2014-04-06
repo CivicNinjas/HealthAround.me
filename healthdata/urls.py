@@ -1,11 +1,23 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import include, patterns, url
 from django.views.generic import TemplateView
 
-urlpatterns = patterns('healthdata.views',
+from .views import BoundaryAPIView
+
+api_urls = patterns(
+    '',
+    url(r'^score-fake/.*$', 'healthdata.views.fake_api'),
+    url(r'^score/(?P<lon>-?[\d.]+),(?P<lat>-?[\d.]+)/$',
+        'healthdata.views.score_by_location'),
+    url(r'^boundary/(?P<slug>[a-z\-_\d]*)/$', BoundaryAPIView.as_view(),
+        name='boundary'),
+)
+
+urlpatterns = patterns(
+    'healthdata.views',
     url(r'^$', TemplateView.as_view(template_name='healthdata/home.jinja2'),
         name='home'),
-    url(r'^tryit/$', TemplateView.as_view(template_name='healthdata/try_it.jinja2'),
+    url(r'^tryit/$',
+        TemplateView.as_view(template_name='healthdata/try_it.jinja2'),
         name='try_it'),
-    url(r'^api/score-fake/.*$', 'fake_api'),
-    url(r'^api/score/(?P<lon>-?[\d.]+),(?P<lat>-?[\d.]+)/$', 'score_by_location')
+    url(r'^api/', include(api_urls, 'api')),
 )
