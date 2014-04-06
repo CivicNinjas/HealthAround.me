@@ -34,6 +34,7 @@ INSTALLED_APPS = (
     # Third-party apps
     'boundaryservice',
     'mptt',
+    'rest_framework',
     'south',
     'tastypie',
 
