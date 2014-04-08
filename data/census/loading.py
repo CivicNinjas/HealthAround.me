@@ -12,6 +12,7 @@ class CensusLoader(object):
     data_url = (
         census_url + '2008-2012_ACSSF_By_State_By_Sequence_Table_Subset/')
     cache_folder = os.path.join(os.path.dirname(__file__), 'cache')
+    model = 'healthdata.models.Census'
 
     def __init__(self, table_ids, **kwargs):
         '''Initialize the Census Loader
@@ -141,9 +142,101 @@ class CensusLoader(object):
 
         return self._seq_defs
 
+    @staticmethod
+    def to_title(raw_title):
+        '''Convert a string to a title'''
+        keep_lower = ('to', 'a', 'the', 'by', 'of', 'is')
+        raw_title_bits = raw_title.lower().strip().split()
+        title_bits = []
+        for bit in raw_title_bits:
+            if title_bits and bit in keep_lower:
+                title_bits.append(bit)
+            else:
+                title_bits.append(bit.title())
+        return ' '.join(title_bits)
+
+    def model_declaration(self):
+        '''Get Django model declaration for selected columns'''
+
+        # Gather table data
+        tables = {}
+        seq_defs = self.seq_defs()
+        for sdef in seq_defs.values():
+            for table_id, params in sdef['tables'].items():
+                t_def = tables.setdefault(table_id, {})
+                t_def['title'] = self.to_title(params['title'])
+                items = t_def.setdefault('items', [])
+                items.extend([(n, t) for n, t in params['items'].items()])
+
+        mname = self.model.split('.')[-1]
+        decl = ["""\
+from django.db import models
+from boundaryservice.models import Boundary
+
+
+class {}(models.Model):
+    '''Selected items from U.S. Census 5-Year Summary for Boundary'''
+
+    boundary = models.ForeignKey(Boundary, blank=True, null=True)
+    state_abbr = models.CharField(
+        max_length=2, help_text='State / U.S. - Abbreviation (USPS)')
+    logical_num = models.IntegerField(help_text='Logical record number')\
+""".format(mname)]
+
+        for table_id in sorted(tables.keys()):
+            decl.append("")
+            params = tables[table_id]
+            heading = params['title']
+            if len(heading) < 64:
+                decl.append("    # {} - {}".format(table_id, heading))
+            else:
+                comment_bits = ["    #", table_id, "-"]
+                for bit in heading.split():
+                    comment_bits.append(bit)
+                    if len(' '.join(comment_bits)) > 71:
+                        comment_bits.pop(-1)
+                        decl.append(' '.join(comment_bits))
+                        comment_bits = ["    #         ", bit]
+                if comment_bits:
+                    decl.append(' '.join(comment_bits))
+
+            first = True
+            for name, title in sorted(params['items']):
+                decl.append("""\
+    {}E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,""".format(
+                    name))
+                if first:
+                    if title.lower() == heading.lower():
+                        help_text = title
+                    else:
+                        help_text = heading + ': ' + title
+                    first = False
+                else:
+                    help_text = title
+                help_text = help_text.replace("'", "\\'")
+                if len(help_text) < 59:
+                    decl.append(
+                        "        help_text='{}')".format(help_text))
+                else:
+                    decl.append("        help_text=(")
+                    help_bits = []
+                    for bit in help_text.split():
+                        help_bits.append(bit)
+                        if len(' '.join(help_bits)) > 63:
+                            help_bits.pop(-1)
+                            decl.append(
+                                ' '*12 + "'" + ' '.join(help_bits) + "'")
+                            help_bits = [' ' + bit]
+                    if help_bits:
+                        decl.append(' '*12 + "'" + ' '.join(help_bits) + "'))")
+                    else:
+                        decl.append(' '*12 + "))")
+
+        return '\n'.join(decl)
+
 
 if __name__ == '__main__':
-    from pprint import pprint
     from definitions import TABLES
     cl = CensusLoader(table_ids=TABLES)
-    pprint(cl.seq_defs())
+    print(cl.model_declaration())

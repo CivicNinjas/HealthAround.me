@@ -73,14 +73,23 @@ ACSSF,B01002,0003,0.5, ,, ,Median age --,
 ACSSF,B01002,0003,1, ,, ,Total:,
 ACSSF,B01002,0003,2, ,, ,Male,
 ACSSF,B01002,0003,3, ,, ,Female,
+ACSSF,B19113,0063, ,75,1 CELL, ,MEDIAN FAMILY INCOME IN THE PAST 12 MONTHS (IN 2012 INFLATION-ADJUSTED DOLLARS),Income
+ACSSF,B19113,0063, , ,, ,Universe:  Families,
+ACSSF,B19113,0063,1, ,, ,Median family income in the past 12 months (in 2012 inflation-adjusted dollars),
 '''
 
 
 class CensusLoaderTest(TestCase):
     maxDiff = None
 
+    def getCensusLoader(self, table_ids):
+        cl = CensusLoader(table_ids)
+        cl.open_snatnl = mock.MagicMock(name='open_snatnl')
+        cl.open_snatnl.return_value = StringIO.StringIO(sample_sequence)
+        return cl
+
     def test_seq_defs_two_tables_in_one_seq_file(self):
-        cl = CensusLoader(['B00002', 'B00001'])
+        cl = self.getCensusLoader(['B00002', 'B00001'])
         cl.open_snatnl = mock.MagicMock(name='open_snatnl')
         cl.open_snatnl.return_value = StringIO.StringIO(sample_sequence)
         sd = cl.seq_defs()
@@ -121,9 +130,7 @@ class CensusLoaderTest(TestCase):
         self.assertEqual(expected, sd)
 
     def test_seq_defs_many_columns(self):
-        cl = CensusLoader(['B01001'])
-        cl.open_snatnl = mock.MagicMock(name='open_snatnl')
-        cl.open_snatnl.return_value = StringIO.StringIO(sample_sequence)
+        cl = self.getCensusLoader(['B01001'])
         sd = cl.seq_defs()
         expected = {
             '0002': {
@@ -246,3 +253,39 @@ class CensusLoaderTest(TestCase):
             }
         }
         self.assertEqual(expected, sd)
+
+    def test_to_title_1(self):
+        in1 = 'THIS IS A YELLING TITLE'
+        expected = 'This is a Yelling Title'
+        self.assertEqual(expected, CensusLoader.to_title(in1))
+
+    def test_model_declaration(self):
+        cl = self.getCensusLoader(['B19113', 'B00001'])
+        model_decl = cl.model_declaration()
+        expected = """\
+from django.db import models
+from boundaryservice.models import Boundary
+
+
+class Census(models.Model):
+    '''Selected items from U.S. Census 5-Year Summary for Boundary'''
+
+    boundary = models.ForeignKey(Boundary, blank=True, null=True)
+    state_abbr = models.CharField(
+        max_length=2, help_text='State / U.S. - Abbreviation (USPS)')
+    logical_num = models.IntegerField(help_text='Logical record number')
+
+    # B00001 - Unweighted Sample Count of the Population
+    B00001_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unweighted Sample Count of the Population: Total')
+
+    # B19113 - Median Family Income In the Past 12 Months (In 2012
+    #          Inflation-Adjusted Dollars)
+    B19113_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Median family income in the past 12 months (in 2012'
+            ' inflation-adjusted dollars)'))\
+"""
+        self.assertMultiLineEqual(expected, model_decl)
