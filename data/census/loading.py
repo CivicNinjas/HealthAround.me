@@ -1,8 +1,15 @@
 #!/usr/bin/env python
 '''Load Census Data'''
+from collections import namedtuple
 from csv import reader
+from struct import unpack
 from urllib import urlretrieve
+import logging
 import os.path
+
+from boundaryservice.models import Boundary
+
+logger = logging.getLogger(__name__)
 
 
 class CensusLoader(object):
@@ -12,9 +19,78 @@ class CensusLoader(object):
     data_url = (
         census_url + '2008-2012_ACSSF_By_State_By_Sequence_Table_Subset/')
     cache_folder = os.path.join(os.path.dirname(__file__), 'cache')
-    model = 'healthdata.models.Census'
+    model = 'data.models.Census'
 
-    def __init__(self, table_ids, **kwargs):
+    GEO_ALL = 0
+    GEO_TRACTS = 1
+    GEO_DOMAINS = (
+        (GEO_ALL, 'All_Geographies_Not_Tracts_Block_Groups'),
+        (GEO_TRACTS, 'Tracts_Block_Groups_Only'))
+
+    STATES = (
+        ('al', 'Alabama'),
+        ('ak', 'Alaska'),
+        ('az', 'Arizona'),
+        ('ar', 'Arkansas'),
+        ('ca', 'California'),
+        ('co', 'Colorado'),
+        ('ct', 'Connecticut'),
+        ('de', 'Delaware'),
+        ('dc', 'District of Columbia'),
+        ('fl', 'Florida'),
+        ('ga', 'Georgia'),
+        ('hi', 'Hawaii'),
+        ('id', 'Idaho'),
+        ('il', 'Illinois'),
+        ('in', 'Indiana'),
+        ('ia', 'Iowa'),
+        ('ks', 'Kansas'),
+        ('ky', 'Kentucky'),
+        ('la', 'Louisiana'),
+        ('me', 'Maine'),
+        ('md', 'Maryland'),
+        ('ma', 'Massachusetts'),
+        ('mi', 'Michigan'),
+        ('mn', 'Minnesota'),
+        ('ms', 'Mississippi'),
+        ('mo', 'Missouri'),
+        ('mt', 'Montana'),
+        ('ne', 'Nebraska'),
+        ('nv', 'Nevada'),
+        ('nh', 'New Hampshire'),
+        ('nj', 'New Jersey'),
+        ('nm', 'New Mexico'),
+        ('ny', 'New York'),
+        ('nc', 'North Carolina'),
+        ('nd', 'North Dakota'),
+        ('oh', 'Ohio'),
+        ('ok', 'Oklahoma'),
+        ('or', 'Oregon'),
+        ('pa', 'Pennsylvania'),
+        ('pr', 'Puerto Rico'),
+        ('ri', 'Rhode Island'),
+        ('sc', 'South Carolina'),
+        ('sd', 'South dakota'),
+        ('tn', 'Tennessee'),
+        ('tx', 'Texas'),
+        ('us', 'United States'),
+        ('ut', 'Utah'),
+        ('vt', 'Vermont'),
+        ('va', 'Virginia'),
+        ('wa', 'Washington'),
+        ('wv', 'West Virginia'),
+        ('wi', 'Wisconsin'),
+        ('wy', 'Wyoming'),
+    )
+
+    SUMMARY_LEVEL_TO_BOUNDARY_SET_SLUGS = (
+        ('040', 'states'),
+        ('050', 'counties'),
+        ('140', 'census-tracts'),
+        ('150', 'census-block-groups'),
+    )
+
+    def __init__(self, table_ids, states, **kwargs):
         '''Initialize the Census Loader
 
         Keyword arguments:
@@ -22,18 +98,51 @@ class CensusLoader(object):
         '''
 
         self.table_ids = table_ids
+        self.states = states
         self._seq_defs = None
 
     def cached_path(self, url, path):
         local_path = os.path.join(self.cache_folder, path)
-        filename, headers = urlretrieve(url, local_path)
-        return filename
+        if not os.path.exists(local_path):
+            logger.info("Downloading %s from %s...", local_path, url)
+            filename, headers = urlretrieve(url, local_path)
+            logger.info("...Downloaded")
+            assert filename == local_path
+        return local_path
 
     def open_snatnl(self):
         '''Return the Sequence Number and Table Number Lookup file'''
         snatnl_path = self.cached_path(
             self.table_lookup_url, self.table_lookup_name)
+        logger.info("Reading from %s", snatnl_path)
         return open(snatnl_path, 'rb')
+
+    def state_url(self, state_abbr, geo_type):
+        full_state = dict(self.STATES)[state_abbr].replace(' ', '')
+        return (
+            self.census_url +
+            '2008-2012_ACSSF_By_State_By_Sequence_Table_Subset/' +
+            full_state + '/')
+
+    def state_data_url(self, state_abbr, geo_type):
+        geo_path = dict(self.GEO_DOMAINS)[geo_type]
+        return self.state_url(state_abbr, geo_type) + geo_path + '/'
+
+    def geo_url(self, state_abbr, geo_type):
+        return (
+            self.state_data_url(state_abbr, geo_type) +
+            'g20125{}.txt'.format(state_abbr))
+
+    def geo_path(self, state_abbr, geo_type):
+        return 'g20125{}.{}.txt'.format(state_abbr, geo_type)
+
+    def open_geo(self, state_abbrev, geo_type):
+        '''Return the geographic info file for the state'''
+        geo_path = self.cached_path(
+            self.geo_url(state_abbrev, geo_type),
+            self.geo_path(state_abbrev, geo_type))
+        logger.info("Reading from %s", geo_path)
+        return open(geo_path, 'rb')
 
     def seq_defs(self):
         '''Parse the SNATNL, finding sequence numbers for desired table IDs
@@ -235,8 +344,60 @@ class {}(models.Model):
 
         return '\n'.join(decl)
 
+    def import_data(self):
+        self.load_geographies()
+        self.load_tables()
+
+    def load_geographies(self):
+        for state in self.states:
+            self.load_geography_state_domain(state, self.GEO_ALL)
+
+    def load_tables(self):
+        logging.warning("Loading table data not implemented.")
+
+    def load_geography_state_domain(self, state, domain):
+        fmt = (
+            '6s2s3s2s7ssss2s2s3s5s5s6ss5s4s5ss3s5s5s5s3s5sss5s3s5s5s5s2s3s'
+            '3s6s3s5s5s5s5s5sss6s5s5s5s40s1000s6s1s43s')
+        fields = (
+            'FILEID, STUSAB, SUMLEVEL, COMPONENT, LOGRECNO, US, REGION,'
+            ' DIVISION, STATECE, STATE, COUNTY, COUSUB, PLACE, TRACT BLKGRP,'
+            ' CONCIT, AIANHH, AIANHHFP, AIHHTLI, AITSCE, AITS, ANRC, CBSA,'
+            ' CSA, METDIV, MACC, MEMI, NECTA, CNECTA, NECTADIV, UA, BLANK1,'
+            ' CDCURR, SLDU, SLDL, BLANK2, BLANK3, ZCTA5, SUBMCD, SDELM,'
+            ' SDSEC, SDUNI, UR, PCI, BLANK4, BLANK5, PUMA5, BLANK6, GEOID,'
+            ' NAME, BTTR, BTBG, BLANK7')
+
+        Geography = namedtuple('GeoLine', fields)
+        boundary_set_slug = dict(self.SUMMARY_LEVEL_TO_BOUNDARY_SET_SLUGS)
+        added, existing, skipped = (0, 0, 0)
+        for count, line in enumerate(self.open_geo(state, domain)):
+            gl = Geography._make(unpack(fmt, line.rstrip('\n')))
+            bs_slug = boundary_set_slug.get(gl.SUMLEVEL)
+            if bs_slug and gl.COMPONENT == '00':
+                _, external_id = gl.GEOID.strip().split('US')
+                new = self.add_geo_record(
+                    gl.STUSAB, gl.LOGRECNO, external_id, bs_slug)
+                if new:
+                    added += 1
+                else:
+                    existing += 1
+            else:
+                skipped += 1
+        logger.info(
+            "%s geographies processed (%s added, %s existing, %s skipped)",
+            count, added, existing, skipped)
+
+    def add_geo_record(self, state_abbr, logical_num, external_id, bs_slug):
+        from data.models import Census
+        boundary = Boundary.objects.get(external_id=external_id)
+        assert boundary.set.slug == bs_slug
+        c, created = Census.objects.get_or_create(
+            state_abbr=state_abbr, logical_num=logical_num, boundary=boundary)
+        return created
+
 
 if __name__ == '__main__':
-    from definitions import TABLES
-    cl = CensusLoader(table_ids=TABLES)
-    print(cl.model_declaration())
+    from definitions import TABLES, STATES
+    cl = CensusLoader(table_ids=TABLES, states=STATES)
+    cl.import_data()

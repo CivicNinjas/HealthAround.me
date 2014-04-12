@@ -73,23 +73,25 @@ ACSSF,B01002,0003,0.5, ,, ,Median age --,
 ACSSF,B01002,0003,1, ,, ,Total:,
 ACSSF,B01002,0003,2, ,, ,Male,
 ACSSF,B01002,0003,3, ,, ,Female,
-ACSSF,B19113,0063, ,75,1 CELL, ,MEDIAN FAMILY INCOME IN THE PAST 12 MONTHS (IN 2012 INFLATION-ADJUSTED DOLLARS),Income
+ACSSF,B19113,0063, ,75,1 CELL, ,MEDIAN FAMILY INCOME IN THE PAST 12 MONTHS\
+ (IN 2012 INFLATION-ADJUSTED DOLLARS),Income
 ACSSF,B19113,0063, , ,, ,Universe:  Families,
-ACSSF,B19113,0063,1, ,, ,Median family income in the past 12 months (in 2012 inflation-adjusted dollars),
+ACSSF,B19113,0063,1, ,, ,Median family income in the past 12 months\
+ (in 2012 inflation-adjusted dollars),
 '''
 
 
 class CensusLoaderTest(TestCase):
     maxDiff = None
 
-    def getCensusLoader(self, table_ids):
-        cl = CensusLoader(table_ids)
+    def getCensusLoaderForSeq(self, table_ids):
+        cl = CensusLoader(table_ids, [])
         cl.open_snatnl = mock.MagicMock(name='open_snatnl')
         cl.open_snatnl.return_value = StringIO.StringIO(sample_sequence)
         return cl
 
     def test_seq_defs_two_tables_in_one_seq_file(self):
-        cl = self.getCensusLoader(['B00002', 'B00001'])
+        cl = self.getCensusLoaderForSeq(['B00002', 'B00001'])
         cl.open_snatnl = mock.MagicMock(name='open_snatnl')
         cl.open_snatnl.return_value = StringIO.StringIO(sample_sequence)
         sd = cl.seq_defs()
@@ -130,7 +132,7 @@ class CensusLoaderTest(TestCase):
         self.assertEqual(expected, sd)
 
     def test_seq_defs_many_columns(self):
-        cl = self.getCensusLoader(['B01001'])
+        cl = self.getCensusLoaderForSeq(['B01001'])
         sd = cl.seq_defs()
         expected = {
             '0002': {
@@ -260,7 +262,7 @@ class CensusLoaderTest(TestCase):
         self.assertEqual(expected, CensusLoader.to_title(in1))
 
     def test_model_declaration(self):
-        cl = self.getCensusLoader(['B19113', 'B00001'])
+        cl = self.getCensusLoaderForSeq(['B19113', 'B00001'])
         model_decl = cl.model_declaration()
         expected = """\
 from django.db import models
@@ -289,3 +291,34 @@ class Census(models.Model):
             ' inflation-adjusted dollars)'))\
 """
         self.assertMultiLineEqual(expected, model_decl)
+
+    def getCensusLoaderForGeo(self, fake_geo):
+        self.assertEqual(1269, len(fake_geo))
+        cl = CensusLoader([], ['xx'])
+        cl.open_geo = mock.MagicMock(name='open_geo')
+        cl.open_geo.return_value = StringIO.StringIO(fake_geo)
+        cl.add_geo_record = mock.MagicMock(name='add_geo_record')
+        cl.add_geo_record.return_value = True
+        return cl
+
+    def test_geo_state(self):
+        geo = (
+            'ACSSF OK040000000001     40                                  '
+            '                                                             '
+            '                                                        04000'
+            'US40                               Oklahoma' + ' '*1042 + '\n')
+        cl = self.getCensusLoaderForGeo(geo)
+        cl.load_geography_state_domain('OK', cl.GEO_ALL)
+        cl.add_geo_record.assert_called_once_with(
+            'OK', '0000001', '40', 'states')
+
+    def test_geo_state_wrong_component(self):
+        geo = (
+            'ACSSF OK040010000002     40                                  '
+            '                                                             '
+            '                                 U                      04001'
+            'US40                               Oklahoma -- Urban' +
+            ' '*1033 + '\n')
+        cl = self.getCensusLoaderForGeo(geo)
+        cl.load_geography_state_domain('OK', cl.GEO_ALL)
+        cl.add_geo_record.side_effect = Exception('Not Called')

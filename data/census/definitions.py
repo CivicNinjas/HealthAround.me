@@ -1,5 +1,5 @@
 # State-level regions to load
-STATES = ['ok', 'us']
+STATES = ['ok']
 
 # Census 'tables' to load
 TABLES = [
