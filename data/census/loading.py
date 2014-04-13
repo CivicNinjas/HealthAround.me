@@ -4,6 +4,7 @@ from collections import namedtuple
 from csv import reader
 from struct import unpack
 from urllib import urlretrieve
+from zipfile import ZipFile
 import logging
 import os.path
 
@@ -136,13 +137,33 @@ class CensusLoader(object):
     def geo_path(self, state_abbr, geo_type):
         return 'g20125{}.{}.txt'.format(state_abbr, geo_type)
 
-    def open_geo(self, state_abbrev, geo_type):
+    def open_geo(self, state_abbr, geo_type):
         '''Return the geographic info file for the state'''
         geo_path = self.cached_path(
-            self.geo_url(state_abbrev, geo_type),
-            self.geo_path(state_abbrev, geo_type))
+            self.geo_url(state_abbr, geo_type),
+            self.geo_path(state_abbr, geo_type))
         logger.info("Reading from %s", geo_path)
         return open(geo_path, 'rb')
+
+    def sequence_zip_url(self, state_abbr, geo_type, seq):
+        return (
+            self.state_data_url(state_abbr, geo_type) +
+            '20125{}{:04d}000.zip'.format(state_abbr, int(seq)))
+
+    def sequence_zip_path(self, state_abbr, geo_type, seq):
+        return '20125{}{:04d}000.{}.zip'.format(state_abbr, int(seq), geo_type)
+
+    def sequence_filename(self, state_abbr, seq, data_type='e'):
+        return '{}20125{}{:04d}000.txt'.format(data_type, state_abbr, int(seq))
+
+    def open_sequence_data(self, state_abbr, geo_type, seq, data_type='e'):
+        seq_zip_path = self.cached_path(
+            self.sequence_zip_url(state_abbr, geo_type, seq),
+            self.sequence_zip_path(state_abbr, geo_type, seq))
+        z = ZipFile(seq_zip_path, 'r')
+        seq_filename = self.sequence_filename(state_abbr, seq, data_type)
+        logger.info("Reading %s from %s", seq_filename, seq_zip_path)
+        return z.open(seq_filename)
 
     def seq_defs(self):
         '''Parse the SNATNL, finding sequence numbers for desired table IDs
@@ -345,15 +366,15 @@ class {}(models.Model):
         return '\n'.join(decl)
 
     def import_data(self):
-        self.load_geographies()
-        self.load_tables()
-
-    def load_geographies(self):
+        seq_defs = self.seq_defs()
         for state in self.states:
+            # Geography is same for both domains
             self.load_geography_state_domain(state, self.GEO_ALL)
-
-    def load_tables(self):
-        logging.warning("Loading table data not implemented.")
+            for domain, _ in self.GEO_DOMAINS:
+                for seq_num in sorted(seq_defs.keys()):
+                    seq_def = seq_defs[seq_num]
+                    self.load_sequence_data(
+                        state, domain, seq_num, seq_def, 'e')
 
     def load_geography_state_domain(self, state, domain):
         fmt = (
@@ -395,6 +416,54 @@ class {}(models.Model):
         c, created = Census.objects.get_or_create(
             state_abbr=state_abbr, logical_num=logical_num, boundary=boundary)
         return created
+
+    def load_sequence_data(
+            self, state, domain, seq_num, seq_def, data_type='e'):
+        seq_data_file = self.open_sequence_data(state, domain, seq_num)
+        seq_reader = reader(seq_data_file)
+        item_count, items_skipped, rows_updated, rows_skipped = (0, 0, 0, 0)
+        assert_cols = {
+            'file_id': 'ACSSF',
+            'file_type': '2012{}5'.format(data_type),
+            'state': state,
+            'char_iter': '000',
+            'seq_num': seq_num
+        }
+
+        for count, row in enumerate(seq_reader):
+            data = dict()
+            logical_num = None
+            for col, name in seq_def['columns'].items():
+                if name in assert_cols:
+                    assert assert_cols[name] == row[col], row[col]
+                elif name == 'rec_num':
+                    logical_num = row[col]
+                elif row[col] in ['', '.']:
+                    items_skipped += 1
+                else:
+                    data[name + data_type.upper()] = row[col]
+            assert logical_num, row
+            assert logical_num.isdigit(), logical_num
+            if data:
+                updated = self.add_seq_data(state, logical_num, data)
+            else:
+                updated = 0
+            assert updated in [0, 1]
+            if updated:
+                rows_updated += 1
+                item_count += len(data)
+            else:
+                rows_skipped += 1
+        logger.info(
+            "%s data rows processed (%s updated with %s data points,"
+            " %s rows skipped, %s empty items)",
+            count, rows_updated, item_count, rows_skipped, items_skipped)
+
+    def add_seq_data(self, state_abbr, logical_num, data):
+        from data.models import Census
+        return Census.objects.filter(
+            state_abbr=state_abbr.upper(), logical_num=logical_num).update(
+            **data)
 
 
 if __name__ == '__main__':

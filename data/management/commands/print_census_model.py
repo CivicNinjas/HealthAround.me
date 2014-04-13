@@ -8,5 +8,5 @@ class Command(BaseCommand):
     help = 'Print the Census model definition'
 
     def handle(self, *args, **options):
-        cl = CensusLoader(table_ids=TABLES)
+        cl = CensusLoader(table_ids=TABLES, states=[])
         self.stdout.write(cl.model_declaration())
