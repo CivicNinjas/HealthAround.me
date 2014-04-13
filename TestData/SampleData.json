@@ -1,2207 +1,945 @@
 {
-  "Category": [
-    {
-      "Social Determinants of Health": {
-        "Buckets": {
-          "Economic Stability": {
-            "Elements": [
-              {
-                "Name": "Poverty",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Percent Poverty",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "JobAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "Employment Status",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Employment Status",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingStability",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Built Environement": {
-            "Elements": [
-              {
-                "Name": "CrimeRate",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Crime Rates",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "FoodAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "EnvironmentalConditions",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Environmental Conditions",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingQuality",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Housing Quality",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Education": {
-            "Elements": [
-              {
-                "Name": "HSGradRate",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "High School Graduation Rate",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "HigherEd",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Higher Education Rates",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "SafeSchools",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "School Safety",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "SchoolHealth",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "School Health Policies",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Comunity": {
-            "Elements": [
-              {
-                "Name": "Poverty",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Percent Poverty",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "JobAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "Employment Status",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Employment Status",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingStability",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Health & Health Care": {
-            "Elements": [
-              {
-                "Name": "Poverty",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Percent Poverty",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "JobAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "Employment Status",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Employment Status",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingStability",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          }
+  "categories": {
+    "social_determinants": {
+      "name": "Social_Determinants_of_health",
+      "label": "Social Determinants of Health",
+      "value": 87.5,
+      "avg": 92,
+      "sd": 12,
+      "elements": [
+        {
+          "name": "economic_stability",
+          "label": "Economic Stability",
+          "value": 65.5,
+          "avg": 78,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "poverty",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "percent poverty",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "jobaccess",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Access to Jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "employment status",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Employment Status",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housingstability",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Housing Stability",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        {
+          "name": "built_environement",
+          "label": "Built Environment",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "crimerate",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Crime Rates",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "foodaccess",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Food Access",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "environmental_conditions",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Environmental Conditions",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housing_quality",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Housing Quality",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        {
+          "name": "education",
+          "label": "Education",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "hs_grad_rate",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "High School Graduation Rate",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "higher_ed",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Higher Education Rate",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "safe_schools",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "school safety",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "school_health",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "school health policies",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        {
+          "name": "comunity",
+          "label": "Community",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "poverty",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Percent Poverty",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "job_access",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "employment_status",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Employment Status",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housing_stability",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "Housing Stability",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        {
+          "name": "health_healthcare",
+          "label": "Health & Healthcare",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "poverty",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "percent poverty",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "job_access",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "employment_status",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "employment status",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housing_stability",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        }
+      ]
+    },
+    "health_profiles": {
+      "name": "health_profiles",
+      "label": "Health Profiles",
+      "value": 87.5,
+      "avg": 92,
+      "sd": 12,
+      "elements": {
+        "children_teens": {
+          "label": "Children & Teens",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "crimerate",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "crime rates",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "foodaccess",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "environmental_conditions",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "environmental conditions",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housingquality",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "housing quality",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        "adults": {
+          "label": "Adults",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "hsgradrate",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "high school graduation rate",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "highered",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "higher education rates",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "safeschools",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "school safety",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "school_health",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "school health policies",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        "seniors": {
+          "label": "Seniors",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "poverty",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "percent poverty",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "jobaccess",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "employment status",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "employment status",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housingstability",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
         }
       }
     },
-    {
-      "Health Profiles": {
-        "Buckets": {
-          "Babies & Infants": {
-            "Elements": [
-              {
-                "Name": "Poverty",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Percent Poverty",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "JobAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "Employment Status",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Employment Status",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingStability",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Children & Teens": {
-            "Elements": [
-              {
-                "Name": "CrimeRate",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Crime Rates",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "FoodAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "EnvironmentalConditions",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Environmental Conditions",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingQuality",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Housing Quality",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Adults": {
-            "Elements": [
-              {
-                "Name": "HSGradRate",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "High School Graduation Rate",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "HigherEd",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Higher Education Rates",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "SafeSchools",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "School Safety",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "SchoolHealth",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "School Health Policies",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Seniors": {
-            "Elements": [
-              {
-                "Name": "Poverty",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Percent Poverty",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "JobAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "Employment Status",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Employment Status",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingStability",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          }
+    "health_indicators": {
+      "name": "health_indicators",
+      "label": "Health Indicators",
+      "value": 87.5,
+      "avg": 92,
+      "sd": 12,
+      "elements": {
+        "life_expectancy": {
+          "label": "Life Expectancy",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "poverty",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "percent poverty",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "jobaccess",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "employment status",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "employment status",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housingstability",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        "chronic_disease": {
+          "label": "Chronic Disease",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "crimerate",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "crime rates",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "foodaccess",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "environmentalconditions",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "environmental conditions",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housingquality",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "housing quality",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        "causes_of_death": {
+          "label": "Causes of Death",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "hsgradrate",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "high school graduation rate",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "highered",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "higher education rates",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "safeschools",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "school safety",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "schoolhealth",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "school health policies",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
         }
       }
     },
-    {
-      "Health Indicators": {
-        "Buckets": {
-          "Life Expectancy": {
-            "Elements": [
-              {
-                "Name": "Poverty",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Percent Poverty",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "JobAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "Employment Status",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Employment Status",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingStability",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Chronic Disease Rates": {
-            "Elements": [
-              {
-                "Name": "CrimeRate",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Crime Rates",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "FoodAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "EnvironmentalConditions",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Environmental Conditions",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingQuality",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Housing Quality",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Causes of Death": {
-            "Elements": [
-              {
-                "Name": "HSGradRate",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "High School Graduation Rate",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "HigherEd",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Higher Education Rates",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "SafeSchools",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "School Safety",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "SchoolHealth",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "School Health Policies",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "Health Care:Access & Costs": {
-        "Buckets": {
-          "Hospital Costs": {
-            "Elements": [
-              {
-                "Name": "Something",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Percent Poverty",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "JobAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "Employment Status",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Employment Status",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingStability",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Medicare Reimbursements": {
-            "Elements": [
-              {
-                "Name": "TotalMedicareReimbursementsPerEnrolee",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15,
-                    "Cohort": 4386
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15,
-                    "Cohort": 4197
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15,
-                    "Cohort": 3497
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Total Medicare Reimbursements Per Enrolee",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "FoodAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "EnvironmentalConditions",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Environmental Conditions",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingQuality",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Housing Quality",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Health Care Access": {
-            "Elements": [
-              {
-                "Name": "HSGradRate",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "High School Graduation Rate",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "HigherEd",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Higher Education Rates",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "SafeSchools",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "School Safety",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "SchoolHealth",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "School Health Policies",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          },
-          "Health Care Quality": {
-            "Elements": [
-              {
-                "Name": "Poverty",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Percent Poverty",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.21
-              },
-              {
-                "Name": "JobAccess",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "Weight": 0.35
-              },
-              {
-                "Name": "Employment Status",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Employment Status",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.29
-              },
-              {
-                "Name": "HousingStability",
-                "Value": {
-                  "Overall": {
-                    "Data": 59,
-                    "CL": 56,
-                    "CH": 63,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "White": {
-                    "Data": 62,
-                    "CL": 60,
-                    "CH": 64,
-                    "AVG": 78,
-                    "SD": 15
-                  },
-                  "Black": {
-                    "Data": 73,
-                    "CL": 70,
-                    "CH": 75,
-                    "AVG": 78,
-                    "SD": 15
-                  }
-                },
-                "Units": "Percent",
-                "Label": "Access to Jobs",
-                "Description": "This is a description",
-                "Boundary": 40123,
-                "Citation": "This is a Citation",
-                "Year": 2010,
-                "weight": 0.23
-              }
-            ]
-          }
+    "healthcare_access": {
+      "name": "healthcare_access_&_costs",
+      "label": "Healthcare Access & Costs",
+      "value": 87.5,
+      "avg": 92,
+      "sd": 12,
+      "elements": {
+        "hospital_costs": {
+          "label": "Hospital Costs",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "something",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "percent poverty",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "jobaccess",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "employment status",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "employment status",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housingstability",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        "medicare_reimbursements": {
+          "label": "Medicare Reimbursements",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "totalmedicarereimbursementsperenrolee",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "total medicare reimbursements per enrolee",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "foodaccess",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "environmentalconditions",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "environmental conditions",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housingquality",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "housing quality",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        "healthcare_access": {
+          "label": "Healthcare Access",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "hsgradrate",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "high school graduation rate",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "highered",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "higher education rates",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "safeschools",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "school safety",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "schoolhealth",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "school health policies",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
+        },
+        "healthcare_quality": {
+          "label": "Healthcare Quality",
+          "value": 87.5,
+          "avg": 92,
+          "sd": 12,
+          "elements": [
+            {
+              "name": "poverty",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "percent poverty",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.21
+            },
+            {
+              "name": "jobaccess",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.35
+            },
+            {
+              "name": "employment status",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "employment status",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.29
+            },
+            {
+              "name": "housingstability",
+              "value": 59,
+              "avg": 63,
+              "sd": 15,
+              "units": "percent",
+              "label": "access to jobs",
+              "description": "This is a Description",
+              "boundary": 40123,
+              "citation": "5",
+              "year": 2010,
+              "weight": 0.23
+            }
+          ]
         }
       }
     }
-  ]
+  }
 }
