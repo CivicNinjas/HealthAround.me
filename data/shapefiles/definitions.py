@@ -12,7 +12,9 @@ SHAPEFILES = {
         'authority': 'United States Census Bureau',
         'domain': 'United States of America',
         'last_updated': date(2013, 8, 6),
-        'href': 'ftp://ftp2.census.gov/geo/tiger/TIGER2013/COUNTY/tl_2013_us_county.zip',
+        'href': (
+            'ftp://ftp2.census.gov/geo/tiger/TIGER2013/'
+            'COUNTY/tl_2013_us_county.zip'),
         'notes': 'Resaved as UTF-8 encoding',
         'encoding': '',
         'srid': '',
@@ -27,7 +29,9 @@ SHAPEFILES = {
         'authority': 'United States Census Bureau',
         'domain': 'United States of America',
         'last_updated': date(2013, 8, 6),
-        'href': 'ftp://ftp2.census.gov/geo/tiger/TIGER2013/STATE/tl_2013_us_state.zip',
+        'href': (
+            'ftp://ftp2.census.gov/geo/tiger/TIGER2013/'
+            'STATE/tl_2013_us_state.zip'),
         'notes': '',
         'encoding': '',
         'srid': '',
@@ -42,7 +46,9 @@ SHAPEFILES = {
         'authority': 'United States Census Bureau',
         'domain': 'United States of America',
         'last_updated': date(2013, 8, 2),
-        'href': 'ftp://ftp2.census.gov/geo/tiger/TIGER2013/TRACT/tl_2013_40_tract.zip',
+        'href': (
+            'ftp://ftp2.census.gov/geo/tiger/TIGER2013/'
+            'TRACT/tl_2013_40_tract.zip'),
         'notes': '',
         'encoding': '',
         'srid': '',
@@ -57,7 +63,9 @@ SHAPEFILES = {
         'authority': 'United States Census Bureau',
         'domain': 'United States of America',
         'last_updated': date(2013, 8, 2),
-        'href': 'ftp://ftp2.census.gov/geo/tiger/TIGER2013/BG/tl_2013_40_bg.zip',
+        'href': (
+            'ftp://ftp2.census.gov/geo/tiger/TIGER2013/'
+            'BG/tl_2013_40_bg.zip'),
         'notes': '',
         'encoding': '',
         'srid': '',

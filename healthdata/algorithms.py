@@ -1,7 +1,6 @@
 '''Algorithms for calculating scores'''
 
 from collections import OrderedDict
-from math import floor
 import random
 
 from django.utils.text import slugify
