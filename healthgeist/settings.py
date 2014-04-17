@@ -123,7 +123,5 @@ if 'test' not in sys.argv:
             MIDDLEWARE_CLASSES += LOCAL_MIDDLEWARE_CLASSES
         except NameError:
             pass
-
-if 'test' in sys.argv:
+else:
     SECRET_KEY = 'test_secret_key'
-import ipdb; ipdb.set_trace()
