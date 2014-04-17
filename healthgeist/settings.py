@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import sys
+import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -33,6 +34,8 @@ INSTALLED_APPS = (
 
     # Third-party apps
     'boundaryservice',
+    'django_extensions',
+    'django_nose',
     'mptt',
     'rest_framework',
     'south',
@@ -42,6 +45,8 @@ INSTALLED_APPS = (
     'healthdata',
     'data',
 )
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 TEMPLATE_LOADERS = (
     'jingo.Loader',
@@ -63,8 +68,10 @@ ROOT_URLCONF = 'healthgeist.urls'
 
 WSGI_APPLICATION = 'healthgeist.wsgi.application'
 
-DATABASES = {'default': {'ENGINE': 'django.db.backends.', 'NAME': '',
-                         'USER': '', 'PASSWORD': '', 'HOST': '', 'PORT': '', }}
+DATABASES = {
+    'default': dj_database_url.config(
+        default='spatialite:///{}/test.sqlite'.format(BASE_DIR))
+}
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
@@ -102,19 +109,21 @@ LOGGING = {
     }
 }
 
-try:
-    from settings_override import *  # noqa
-except ImportError, ep:
-    pass
-else:
+if 'test' not in sys.argv:
     try:
-        INSTALLED_APPS += LOCAL_INSTALLED_APPS
-    except NameError:
+        from settings_override import *  # noqa
+    except ImportError, ep:
         pass
-    try:
-        MIDDLEWARE_CLASSES += LOCAL_MIDDLEWARE_CLASSES
-    except NameError:
-        pass
+    else:
+        try:
+            INSTALLED_APPS += LOCAL_INSTALLED_APPS
+        except NameError:
+            pass
+        try:
+            MIDDLEWARE_CLASSES += LOCAL_MIDDLEWARE_CLASSES
+        except NameError:
+            pass
 
 if 'test' in sys.argv:
     SECRET_KEY = 'test_secret_key'
+import ipdb; ipdb.set_trace()

@@ -5,9 +5,8 @@ ALLOWED_HOSTS = []
 
 SECRET_KEY = ''  # Get this from another developer
 
-LOCAL_INSTALLED_APPS = ('django_extensions', 'django_nose')
+LOCAL_INSTALLED_APPS = ()
 LOCAL_MIDDLEWARE_CLASSES = ()
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 DATABASES = {
     'default': {
