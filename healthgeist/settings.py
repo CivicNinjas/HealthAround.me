@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import sys
+import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -33,6 +34,8 @@ INSTALLED_APPS = (
 
     # Third-party apps
     'boundaryservice',
+    'django_extensions',
+    'django_nose',
     'mptt',
     'rest_framework',
     'south',
@@ -40,7 +43,10 @@ INSTALLED_APPS = (
 
     # Our apps
     'healthdata',
+    'data',
 )
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 TEMPLATE_LOADERS = (
     'jingo.Loader',
@@ -62,8 +68,10 @@ ROOT_URLCONF = 'healthgeist.urls'
 
 WSGI_APPLICATION = 'healthgeist.wsgi.application'
 
-DATABASES = {'default': {'ENGINE': 'django.db.backends.', 'NAME': '',
-                         'USER': '', 'PASSWORD': '', 'HOST': '', 'PORT': '', }}
+DATABASES = {
+    'default': dj_database_url.config(
+        default='spatialite:///{}/test.sqlite'.format(BASE_DIR))
+}
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
@@ -82,9 +90,9 @@ LOGGING = {
     'disable_existing_loggers': False,
     'filters': {
         'require_debug_false': {
-                '()': 'django.utils.log.RequireDebugFalse'
-            }
-        },
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
     'handlers': {
         'mail_admins': {
             'level': 'ERROR',

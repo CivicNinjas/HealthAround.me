@@ -1,3 +1,5 @@
 settings_override.py
 *.pyc
 *.swp
+data/shapefiles/*.zip
+data/census/cache/*
