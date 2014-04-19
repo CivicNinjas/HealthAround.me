@@ -11,7 +11,7 @@ LOCAL_MIDDLEWARE_CLASSES = ()
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'healthgeist',
+        'NAME': 'healtharoundme',
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
