@@ -107,7 +107,7 @@ def score_by_location(request, lon, lat):
 
     location['boundaries'] = boundaries
     content = OrderedDict((
-        ('scores', scores),
+        ('elements', scores),
         ('location', location),
         ('citations', citations)
     ))
