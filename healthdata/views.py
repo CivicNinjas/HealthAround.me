@@ -1,15 +1,17 @@
 from collections import OrderedDict
 from math import floor
 import json
+import random
 import os.path
 
 from boundaryservice.models import Boundary
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.conf import settings
-from rest_framework.generics import RetrieveAPIView
+from rest_framework.generics import GenericAPIView, RetrieveAPIView
+from rest_framework.response import Response
 
 from .models import ScoreNode
-from .serializers import BoundarySerializer
+from .serializers import BoundarySerializer, PrimaryScoreSerializer
 
 
 def fake_api(request):
@@ -125,3 +127,21 @@ def score_by_location(request, lon, lat):
 class BoundaryAPIView(RetrieveAPIView):
     model = Boundary
     serializer_class = BoundarySerializer
+
+
+class ScoreAPIView(GenericAPIView):
+
+    def dispatch(self, request, *args, **kwargs):
+        # placeholder until all values properly serialized
+        random.seed(kwargs['lon'])
+        return super(ScoreAPIView, self).dispatch(request, *args, **kwargs)
+
+    def get(self, request, *args, **kwargs):
+        data = {
+            'elements': PrimaryScoreSerializer(
+                ScoreNode.objects.filter(parent=None),
+                location=(kwargs['lon'], kwargs['lat'])).data,
+            'location': {},
+            'citations': {}
+        }
+        return Response(data)
