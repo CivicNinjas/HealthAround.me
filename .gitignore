@@ -3,3 +3,4 @@ settings_override.py
 *.swp
 data/shapefiles/*.zip
 data/census/cache/*
+!data/census/cache/.keep 
