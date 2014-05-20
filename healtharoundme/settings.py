@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'tastypie',
 
     # Our apps
+    'data',
     'healthdata',
 )
 
