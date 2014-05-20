@@ -112,9 +112,9 @@ Install Data
 
         ./manage.py import_census_data
 
-6. Import the score tree (takes seconds)
+6. Import the initial score tree (takes seconds)
 
-        ./manage.py loaddata tree_20140311.json
+        ./manage.py loaddata scores
 
 Run it!
 -------
