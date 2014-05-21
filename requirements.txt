@@ -16,3 +16,5 @@ dj-database-url==0.3.0
 ipython
 ipdb
 ipdbplugin==1.4
+numpy
+scipy
