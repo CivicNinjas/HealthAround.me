@@ -4,6 +4,28 @@ from collections import OrderedDict
 import random
 
 from django.utils.text import slugify
+from scipy.stats import norm
+
+from boundaryservice.models import Boundary
+from data.models import Census
+
+
+def boundaries(point):
+    '''Return boundaries containing the point'''
+    wkt = 'POINT({} {})'.format(*point)
+    return Boundary.objects.filter(shape__contains=wkt)
+
+
+def boundary_dict(boundary):
+    '''Convert a boundary to a dictionary'''
+    return OrderedDict((
+        ('path', '/api/boundary/{}/'.format(boundary.slug)),
+        ('label', boundary.display_name),
+        ('year', 2013),
+        ('type', boundary.set.name),
+        ('external_id', boundary.external_id),
+        ('id', boundary.slug),
+    ))
 
 
 class BaseAlgorithm(object):
@@ -42,6 +64,44 @@ class FakeAlgorithm(BaseAlgorithm):
         score = OrderedDict((
             ("score", score),
             ("value", value),
+            ("value_type", "percent"),
+            ("description", self.metric.description),
+            ("citation_path", citation['path']),
+            ("boundary_path", boundary['path']),
+        ))
+        return score, citation, boundary
+
+
+class FoodStampAlgorithm(BaseAlgorithm):
+    def calculate(self, point):
+        for boundary in boundaries(point):
+            try:
+                data = Census.objects.filter(boundary=boundary).exclude(
+                    B19058_001E=0).first()
+            except Census.DoesNotExist:
+                pass
+            else:
+                break
+        boundary = boundary_dict(data.boundary)
+        citation = OrderedDict((
+            ('path', '/api/citation/census/B19058/'),
+            ('label', 'Census 5 Year Summary, 2008-2012'),
+            ('year', 2012),
+            ('type', 'percent'),
+            ('id', 'B19058'),
+        ))
+        total = data.B19058_001E
+        on_stamps = data.B19058_002E
+        percent = float(on_stamps / total)
+        state_avg = 0.138
+        state_std_dev = 0.106
+        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+
+        score = OrderedDict((
+            ("score", round(score, 3)),
+            ("value", round(percent, 3)),
+            ("average", state_avg),
+            ("std_dev", state_std_dev),
             ("value_type", "percent"),
             ("description", self.metric.description),
             ("citation_path", citation['path']),

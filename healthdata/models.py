@@ -45,8 +45,10 @@ class ScoreMetric(models.Model):
     '''A metric that has a score for a given location'''
 
     FAKE_ALGORITHM = 0
+    FOOD_STAMP_ALGORITHM = 1
     algorithm_choices = (
         (FAKE_ALGORITHM, 'FakeAlgorithm', 'Fake Algorithm'),
+        (FOOD_STAMP_ALGORITHM, 'FoodStampAlgorithm', 'Food Stamp Algorithm')
     )
     algorithm_class_name = dict([(a[0], a[1]) for a in algorithm_choices])
 
