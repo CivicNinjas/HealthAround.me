@@ -46,9 +46,11 @@ class ScoreMetric(models.Model):
 
     FAKE_ALGORITHM = 0
     FOOD_STAMP_ALGORITHM = 1
+    PERCENT_POVERTY_ALGORITHM = 2
     algorithm_choices = (
         (FAKE_ALGORITHM, 'FakeAlgorithm', 'Fake Algorithm'),
-        (FOOD_STAMP_ALGORITHM, 'FoodStampAlgorithm', 'Food Stamp Algorithm')
+        (FOOD_STAMP_ALGORITHM, 'FoodStampAlgorithm', 'Food Stamp Algorithm'),
+        (PERCENT_POVERTY_ALGORITHM, 'PercentPovertyAlgorithm', 'Percent Poverty Algorithm'),
     )
     algorithm_class_name = dict([(a[0], a[1]) for a in algorithm_choices])
 
