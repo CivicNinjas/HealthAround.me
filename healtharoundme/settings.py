@@ -72,6 +72,7 @@ DATABASES = {
     'default': dj_database_url.config(
         default='spatialite:///' + default_db_path)
 }
+POSTGIS_VERSION = (2, 1)
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'

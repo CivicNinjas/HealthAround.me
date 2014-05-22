@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Shut down server
+sudo /etc/init.d/supervisor stop
+
+# Update software
+cd /var/www/healtharoundme
+sudo git pull
+sudo pip install -r requirements.txt
+sudo ./manage.py syncdb
+sudo ./manage.py migrate
+
+# Restart server
+sudo /etc/init.d/supervisor start
