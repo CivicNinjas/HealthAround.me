@@ -6,12 +6,11 @@ from django.test import TestCase
 from data.models import Census
 from healthdata.models import ScoreMetric
 
-
-class FoodStampAlgorithmTest(TestCase):
+class PercentAlgorithmTest(TestCase):
     maxDiff = None
 
-    def test_calculation(self):
-        tract_set = BoundarySet.objects.create(
+    def setUp(self):
+        self.tract_set = BoundarySet.objects.create(
             name='Census Tract',
             kind_first=True,
             last_updated='2014-05-21',
@@ -34,7 +33,7 @@ class FoodStampAlgorithmTest(TestCase):
             '-96.00269 36.14836)))')
         tract = Boundary.objects.create(
             slug='census-tract-25',
-            set=tract_set,
+            set=self.tract_set,
             metadata={'GEOID': '40143002500'},
             external_id='40143002500',
             shape=shape,
@@ -46,26 +45,11 @@ class FoodStampAlgorithmTest(TestCase):
             B19058_001E=1042,
             B19058_002E=217,
             B19058_003E=825,
+            B17001_001E=1643,
+            B17001_002E=534,
         )
-        metric = ScoreMetric.objects.create(
-            name="% Food Stamp",
-            algorithm=ScoreMetric.FOOD_STAMP_ALGORITHM,
-            boundary_set=tract_set,
-            data_property='B19058_001E',
-            description=(
-                "% of households on public assistance income or food"
-                " stamps/SNAP in the past 12 months")
-        )
-        point = (-95.9907, 36.1524)
-        algorithm = metric.get_algorithm()
-        score, citation, boundary = algorithm.calculate(point)
-        expected_citation = {
-            'path': '/api/citation/census/B19058/',
-            'label': 'Census 5 Year Summary, 2008-2012',
-            'year': 2012,
-            'type': 'percent',
-            'id': 'B19058',
-        }
+
+    def assertBoundary(self, boundary):
         expected_boundary = {
             'path': '/api/boundary/census-tract-25/',
             'label': u'Census Tract 25',
@@ -74,6 +58,31 @@ class FoodStampAlgorithmTest(TestCase):
             'type': u'Census Tract',
             'id': u'census-tract-25',
         }
+        self.assertEqual(expected_boundary, dict(boundary))
+
+    def assertCitation(self, citation_id, citation):
+        expected_citation = {
+            'path': '/api/citation/census/{}/'.format(citation_id),
+            'label': 'Census 5 Year Summary, 2008-2012',
+            'year': 2012,
+            'type': 'percent',
+            'id': citation_id,
+        }
+        self.assertEqual(expected_citation, dict(citation))
+
+    def test_food_stamp(self):
+        metric = ScoreMetric.objects.create(
+            name="% Food Stamp",
+            algorithm=ScoreMetric.FOOD_STAMP_ALGORITHM,
+            boundary_set=self.tract_set,
+            data_property='B19058_001E',
+            description=(
+                "% of households on public assistance income or food"
+                " stamps/SNAP in the past 12 months")
+        )
+        point = (-95.9907, 36.1524)
+        algorithm = metric.get_algorithm()
+        score, citation, boundary = algorithm.calculate(point)
         expected_score = {
             "score": 0.254,
             "value": 0.208,
@@ -87,5 +96,32 @@ class FoodStampAlgorithmTest(TestCase):
             "boundary_path": '/api/boundary/census-tract-25/',
         }
         self.assertEqual(expected_score, dict(score))
-        self.assertEqual(expected_citation, dict(citation))
-        self.assertEqual(expected_boundary, dict(boundary))
+        self.assertCitation('B19058', citation)
+        self.assertBoundary(boundary)
+
+    def test_percent_poverty(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Poverty",
+            algorithm=ScoreMetric.PERCENT_POVERTY_ALGORITHM,
+            boundary_set=self.tract_set,
+            data_property='B17001_001E',
+            description=(
+                "Percent Poverty status in the past 12 months")
+        )
+        point = (-95.9907, 36.1524)
+        algorithm = metric.get_algorithm()
+        score, citation, boundary = algorithm.calculate(point)
+        expected_score = {
+            "score": 0.09,
+            "value": 0.325,
+            "average": 0.166,
+            "std_dev": 0.118383,
+            "value_type": "percent",
+            "description": (
+                "Percent Poverty status in the past 12 months"),
+            "citation_path": '/api/citation/census/B17001/',
+            "boundary_path": '/api/boundary/census-tract-25/',
+        }
+        self.assertEqual(expected_score, dict(score))
+        self.assertCitation('B17001', citation)
+        self.assertBoundary(boundary)

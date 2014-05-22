@@ -108,3 +108,40 @@ class FoodStampAlgorithm(BaseAlgorithm):
             ("boundary_path", boundary['path']),
         ))
         return score, citation, boundary
+
+class PercentPovertyAlgorithm(BaseAlgorithm):
+    def calculate(self, point):
+        for boundary in boundaries(point):
+            try:
+                data = Census.objects.filter(boundary=boundary).exclude(
+                    B17001_001E=0).first()
+            except Census.DoesNotExist:
+                pass
+            else:
+                break
+        boundary = boundary_dict(data.boundary)
+        citation = OrderedDict((
+            ('path', '/api/citation/census/B17001/'),
+            ('label', 'Census 5 Year Summary, 2008-2012'),
+            ('year', 2012),
+            ('type', 'percent'),
+            ('id', 'B17001'),
+        ))
+        total = data.B17001_001E
+        in_poverty = data.B17001_002E
+        percent = float(in_poverty / total)
+        state_avg = 0.166
+        state_std_dev = 0.118383
+        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+
+        score = OrderedDict((
+            ("score", round(score, 3)),
+            ("value", round(percent, 3)),
+            ("average", state_avg),
+            ("std_dev", state_std_dev),
+            ("value_type", "percent"),
+            ("description", self.metric.description),
+            ("citation_path", citation['path']),
+            ("boundary_path", boundary['path']),
+        ))
+        return score, citation, boundary
