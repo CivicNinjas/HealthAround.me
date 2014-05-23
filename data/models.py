@@ -1920,6 +1920,530 @@ class Census(models.Model):
         max_digits=12, decimal_places=2, blank=True, null=True,
         help_text='Income in the past 12 months at or above poverty level')
 
+    # B23001 - Sex by Age by Employment Status For the Population 16
+    #          Years And Over
+    B23001_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Sex by Age by Employment Status For the Population 16 Years And'
+            ' Over: Total:'))
+    B23001_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Male:')
+    B23001_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='16 to 19 years:')
+    B23001_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 and 21 years:')
+    B23001_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='22 to 24 years:')
+    B23001_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_020E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_021E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_022E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_023E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_024E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='25 to 29 years:')
+    B23001_025E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_026E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_027E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_028E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_029E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_030E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_031E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 to 34 years:')
+    B23001_032E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_033E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_034E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_035E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_036E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_037E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_038E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='35 to 44 years:')
+    B23001_039E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_040E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_041E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_042E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_043E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_044E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_045E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='45 to 54 years:')
+    B23001_046E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_047E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_048E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_049E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_050E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_051E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_052E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='55 to 59 years:')
+    B23001_053E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_054E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_055E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_056E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_057E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_058E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_059E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='60 and 61 years:')
+    B23001_060E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_061E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_062E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_063E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_064E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_065E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_066E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='62 to 64 years:')
+    B23001_067E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_068E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_069E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_070E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_071E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_072E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_073E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='65 to 69 years:')
+    B23001_074E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_075E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_076E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_077E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_078E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='70 to 74 years:')
+    B23001_079E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_080E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_081E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_082E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_083E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='75 years and over:')
+    B23001_084E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_085E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_086E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_087E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_088E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Female:')
+    B23001_089E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='16 to 19 years:')
+    B23001_090E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_091E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_092E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_093E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_094E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_095E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_096E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 and 21 years:')
+    B23001_097E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_098E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_099E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_100E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_101E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_102E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_103E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='22 to 24 years:')
+    B23001_104E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_105E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_106E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_107E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_108E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_109E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_110E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='25 to 29 years:')
+    B23001_111E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_112E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_113E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_114E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_115E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_116E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_117E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 to 34 years:')
+    B23001_118E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_119E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_120E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_121E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_122E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_123E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_124E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='35 to 44 years:')
+    B23001_125E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_126E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_127E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_128E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_129E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_130E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_131E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='45 to 54 years:')
+    B23001_132E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_133E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_134E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_135E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_136E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_137E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_138E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='55 to 59 years:')
+    B23001_139E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_140E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_141E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_142E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_143E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_144E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_145E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='60 and 61 years:')
+    B23001_146E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_147E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_148E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_149E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_150E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_151E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_152E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='62 to 64 years:')
+    B23001_153E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_154E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In Armed Forces')
+    B23001_155E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Civilian:')
+    B23001_156E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_157E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_158E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_159E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='65 to 69 years:')
+    B23001_160E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_161E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_162E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_163E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_164E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='70 to 74 years:')
+    B23001_165E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_166E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_167E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_168E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+    B23001_169E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='75 years and over:')
+    B23001_170E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In labor force:')
+    B23001_171E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Employed')
+    B23001_172E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Unemployed')
+    B23001_173E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not in labor force')
+
     # B23020 - Mean Usual Hours Worked In the Past 12 Months For
     #          Workers 16 to 64 Years
     B23020_001E = models.DecimalField(

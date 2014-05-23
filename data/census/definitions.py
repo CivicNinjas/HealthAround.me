@@ -58,8 +58,10 @@ TABLES = [
                #  Of Children Under 18 Years By Household Type For Households
     'B22003',  # Receipt Of Food Stamps/Snap In The Past 12 Months By Poverty
                #  Status In The Past 12 Months For Households
+    'B23001',  # Sex by Age by Employment Status for the Populatin 16 Years and
+               #  Over 
     'B23020',  # Mean Usual Hours Worked In The Past 12 Months For Workers 16
-               #  To 64 Years
+               #  To 64 Years 
     'B23025',  # Employment Status For The Population 16 Years And Over
     'B25001',  # Housing Units
     'B25002',  # Occupancy Status

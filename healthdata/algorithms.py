@@ -2,7 +2,6 @@
 
 from collections import OrderedDict
 import random
-
 from django.utils.text import slugify
 from scipy.stats import norm
 
@@ -109,6 +108,8 @@ class FoodStampAlgorithm(BaseAlgorithm):
         ))
         return score, citation, boundary
 
+
+
 class PercentPovertyAlgorithm(BaseAlgorithm):
     def calculate(self, point):
         for boundary in boundaries(point):
@@ -145,3 +146,105 @@ class PercentPovertyAlgorithm(BaseAlgorithm):
             ("boundary_path", boundary['path']),
         ))
         return score, citation, boundary
+
+
+
+class PercentUnemploymentAlgorithm(BaseAlgorithm):
+    def calculate(self, point):
+        list_of_rows = (
+                    'B23001_001E', 'B23001_008E', 'B23001_015E',
+                    'B23001_022E', 'B23001_029E', 'B23001_036E',
+                    'B23001_043E', 'B23001_050E', 'B23001_057E',
+                    'B23001_064E', 'B23001_071E', 'B23001_076E',
+                    'B23001_081E', 'B23001_086E', 'B23001_094E',
+                    'B23001_101E', 'B23001_108E', 'B23001_115E',
+                    'B23001_122E', 'B23001_129E', 'B23001_136E',
+                    'B23001_143E', 'B23001_150E', 'B23001_157E',
+                    'B23001_162E', 'B23001_167E', 'B23001_172E',
+    )
+        for boundary in boundaries(point):
+            try:
+                data = Census.objects.filter(boundary=boundary).exclude(
+                    B23001_001E=0).first()
+            except Census.DoesNotExist:
+                pass
+            else:
+                break
+        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(B23001_001E=0).first()
+        boundary = boundary_dict(data.boundary)
+        citation = OrderedDict((
+            ('path', '/api/citation/census/B23001/'),
+            ('label', 'Census 5 Year Summary, 2008-2012'),
+            ('year', 2012),
+            ('type', 'percent'),
+            ('id', 'B23001'),
+        ))
+        
+
+        data_list = list(new_data)
+        total = data_list.pop(0)
+        total_unemployed = sum(data_list)
+        percent = float(total_unemployed / total)
+        state_avg = 0.04193
+        state_std_dev = 0.0266
+        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+
+        score = OrderedDict((
+            ("score", round(score, 3)),
+            ("value", round(percent, 3)),
+            ("average", state_avg),
+            ("std_dev", state_std_dev),
+            ("value_type", "percent"),
+            ("description", self.metric.description),
+            ("citation_path", citation['path']),
+            ("boundary_path", boundary['path']),
+        ))
+        return score, citation, boundary
+
+
+
+class PercentIncomeHousingCost(BaseAlgorithm):
+    def calculate(self, point):
+        list_of_rows = (
+            'B25106_001E','B25106_006E','B25106_010E',
+            'B25106_014E','B25106_018E','B25106_022E',
+            'B25106_023E','B25106_028E','B25106_032E',
+            'B25106_036E','B25106_040E','B25106_044E',
+            'B25106_045E',
+        )
+        for boundary in boundaries(point):
+            try:
+                data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
+                    B25106_001E=0).first()
+            except Census.DoesNotExist:
+                pass
+            else:
+                break
+        boundary = boundary_dict(data.boundary)
+        citation = OrderedDict((
+            ('path', '/api/citation/census/B23001/'),
+            ('label', 'Census 5 Year Summary, 2008-2012'),
+            ('year', 2012),
+            ('type', 'percent'),
+            ('id', 'B25106'),
+        ))
+        
+        total = data.pop([0])
+        total_unemployed = sum(data)
+        percent = float(total_unemployed / total)
+        state_avg = 0.166
+        state_std_dev = 0.11
+        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+
+        score = OrderedDict((
+            ("score", round(score, 3)),
+            ("value", round(percent, 3)),
+            ("average", state_avg),
+            ("std_dev", state_std_dev),
+            ("value_type", "percent"),
+            ("description", self.metric.description),
+            ("citation_path", citation['path']),
+            ("boundary_path", boundary['path']),
+        ))
+        return score, citation, boundary
+

@@ -47,6 +47,33 @@ class PercentAlgorithmTest(TestCase):
             B19058_003E=825,
             B17001_001E=1643,
             B17001_002E=534,
+            B23001_001E=3186,
+            B23001_008E=0.00,
+            B23001_015E=0.00,
+            B23001_022E=0.00,
+            B23001_029E=0.00,
+            B23001_036E=23.0,
+            B23001_043E=40.0,
+            B23001_050E=23.0,
+            B23001_057E=22.0,
+            B23001_064E=0.00,
+            B23001_071E=0.00,
+            B23001_076E=0.00,
+            B23001_081E=10.0,
+            B23001_086E=0.00,
+            B23001_094E=0.00,
+            B23001_101E=0.00,
+            B23001_108E=0.00,
+            B23001_115E=0.00,
+            B23001_122E=8.00,
+            B23001_129E=5.00,
+            B23001_136E=0.00,
+            B23001_143E=0.00,
+            B23001_150E=0.00,
+            B23001_157E=0.00,
+            B23001_162E=0.00,
+            B23001_167E=0.00,
+            B23001_172E=0.00,
         )
 
     def assertBoundary(self, boundary):
@@ -125,3 +152,32 @@ class PercentAlgorithmTest(TestCase):
         self.assertEqual(expected_score, dict(score))
         self.assertCitation('B17001', citation)
         self.assertBoundary(boundary)
+
+
+    def test_percent_employment(self):
+        metric = ScoreMetric.objects.create(
+            name = "Percent Unemployment",
+            algorithm = ScoreMetric.PERCENT_UNEMPLOYMENT_ALGORITHM,
+            boundary_set=self.tract_set,
+            data_property = 'B23001_001E',
+            description=(
+                "Percent Unemployment in the past 12 months")
+            )
+        point = (-95.9907, 36.1524)
+        algorithm = metric.get_algorithm()
+        score, citation, boundary = algorithm.calculate(point)
+        expected_score = {
+            "score": 0.512,
+            "value": 0.041,
+            "average": 0.04193,
+            "std_dev": 0.0266,
+            "value_type": "percent",
+            "description": (
+                "Percent Unemployment in the past 12 months"),
+            "citation_path": '/api/citation/census/B23001/',
+            "boundary_path": '/api/boundary/census-tract-25/',           
+        }
+        self.assertEqual(expected_score, dict(score))
+        self.assertCitation('B23001', citation)
+        self.assertBoundary(boundary)
+
