@@ -5,6 +5,9 @@ from boundaryservice.models import Boundary
 class Census(models.Model):
     '''Selected items from U.S. Census 5-Year Summary for Boundary'''
 
+    class Meta:
+        verbose_name_plural = "census"
+
     boundary = models.ForeignKey(Boundary, blank=True, null=True)
     state_abbr = models.CharField(
         max_length=2, help_text='State / U.S. - Abbreviation (USPS)')
