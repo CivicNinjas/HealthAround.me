@@ -1,4 +1,4 @@
-import random
+from collections import OrderedDict
 
 from boundaryservice.models import Boundary
 from rest_framework import serializers
@@ -16,54 +16,45 @@ class BoundarySerializer(GeoFeatureModelSerializer):
                   'centroid')
 
 
-class ScoreSerializer(serializers.ModelSerializer):
-    elements = serializers.RelatedField(source='children')
-    score = serializers.SerializerMethodField('get_score')
+class ScoreNodeSerializer(serializers.ModelSerializer):
+    '''
+    Recursive serializer of ScoreNodes
+
+    This is a 'raw' form of ScoreNode serialization that doesn't calculate
+    weighted scores or accumulate boundaries and citations.
+
+    Nodes come in two flavors:
+
+    Branch nodes have children, but no metric.  Their 'children' field
+    will be a list of serialized child nodes, and 'metric' will be
+    None.
+
+    Leaf nodes have a metric, but no children.  Their 'metric' field will be
+    a three-element dictionary of score items, the citation, and the
+    boundary, while the 'children' field is an empty list
+    '''
+
+    metric = serializers.SerializerMethodField('get_metric')
+    children = serializers.SerializerMethodField('get_children')
 
     class Meta:
         model = ScoreNode
-        fields = ('label', 'slug', 'weight', 'score', 'elements')
+        fields = ('label', 'slug', 'weight', 'metric', 'children')
 
-    def get_score(self, obj):
-        return random.random()
+    def get_children(self, obj):
+        '''Return the recursive serialization of child nodes'''
+        return ScoreNodeSerializer(
+            obj.children.all(), many=True, context=self.context).data
 
-
-class TertiaryScoreSerializer(serializers.ModelSerializer):
-    description = serializers.Field(source='metric.description')
-    score = serializers.SerializerMethodField('get_score')
-    value = serializers.SerializerMethodField('get_value')
-    value_type = serializers.SerializerMethodField('get_value_type')
-    citation_path = serializers.SerializerMethodField('get_citation_path')
-    boundary_path = serializers.SerializerMethodField('get_boundary_path')
-
-    class Meta:
-        model = ScoreNode
-        fields = ('label', 'slug',  'weight', 'score', 'value', 'value_type',
-                  'description', 'citation_path', 'boundary_path')
-
-    def get_score(self, obj):
-        return random.random()
-
-    def get_value(self, obj):
-        return random.random() * 100
-
-    def get_value_type(self, obj):
-        return 'percent'
-
-    def get_citation_path(self, obj):
-        return '/api/citation/fake/access-to-jobs/'
-
-    def get_boundary_path(self, obj):
-        return '/api/boundary/fake/access-to-jobs/'
-
-
-class SecondaryScoreSerializer(ScoreSerializer):
-    elements = TertiaryScoreSerializer(source='children')
-
-
-class PrimaryScoreSerializer(ScoreSerializer):
-    elements = SecondaryScoreSerializer(source='children')
-
-    def __init__(self, *args, **kwargs):
-        self.location = kwargs.pop('location', (None, None))
-        super(PrimaryScoreSerializer, self).__init__(*args, **kwargs)
+    def get_metric(self, obj):
+        '''Return the metric results of leaf nodes'''
+        if obj.metric:
+            location = self.context['location']
+            score, citation, boundary = obj.metric.score(location)
+            return {
+                'score': score,
+                'citation': citation,
+                'boundary': boundary,
+            }
+        else:
+            return None

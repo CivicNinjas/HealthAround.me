@@ -1,10 +1,89 @@
-from collections import OrderedDict
-
 from boundaryservice.models import Boundary, BoundarySet
 from django.test import TestCase
 
 from data.models import Census
 from healthdata.models import ScoreMetric
+
+
+class FakeAlgorithmTest(TestCase):
+    maxDiff = None
+
+    def setUp(self):
+        self.tract_set = BoundarySet.objects.create(
+            name='Census Tract',
+            kind_first=True,
+            last_updated='2014-05-21',
+            count=0,
+            metadata_fields=['GEOID'])
+
+    def assertBoundary(self, slug, point_id, boundary):
+        expected_boundary = {
+            "path": '/api/boundary/fake/{}/{}/'.format(slug, point_id),
+            'label': u'Fake Data Boundary',
+            'year': 2010,
+            'type': 'fake',
+            'id': point_id,
+        }
+        self.assertEqual(expected_boundary, dict(boundary))
+
+    def assertCitation(self, slug, point_id, citation):
+        expected_citation = {
+            'path': '/api/citation/fake/{}/{}/'.format(slug, point_id),
+            'label': 'Fake Data Citation',
+            'year': 2010,
+            'type': 'fake',
+            'id': point_id,
+        }
+        self.assertEqual(expected_citation, dict(citation))
+
+    def test_calculate_random_stat(self):
+        metric = ScoreMetric.objects.create(
+            name=u"Random Stat",
+            algorithm=ScoreMetric.FAKE_ALGORITHM,
+            boundary_set=self.tract_set,
+            description=u"A random statistic")
+        point = (-95.9907, 36.1524)
+        point_id = '-95.9907,36.1524'
+        algorithm = metric.get_algorithm()
+        score, citation, boundary = algorithm.calculate(point)
+        expected_score = {
+            "score": 0.36,
+            "value": 0.17,
+            "value_type": "percent",
+            "description": u"A random statistic",
+            "citation_path": (
+                '/api/citation/fake/random-stat/{}/'.format(point_id)),
+            "boundary_path": (
+                '/api/boundary/fake/random-stat/{}/'.format(point_id)),
+        }
+        self.assertEqual(expected_score, dict(score))
+        self.assertCitation('random-stat', point_id, citation)
+        self.assertBoundary('random-stat', point_id, boundary)
+
+    def test_calculate_other_random_stat(self):
+        metric = ScoreMetric.objects.create(
+            name=u"Other Random Stat",
+            algorithm=ScoreMetric.FAKE_ALGORITHM,
+            boundary_set=self.tract_set,
+            description=u"Another random statistic")
+        point = (-95.9907, 36.1524)
+        point_id = '-95.9907,36.1524'
+        algorithm = metric.get_algorithm()
+        score, citation, boundary = algorithm.calculate(point)
+        expected_score = {
+            "score": 0.36,
+            "value": 0.47,
+            "value_type": "percent",
+            "description": u"Another random statistic",
+            "citation_path": (
+                '/api/citation/fake/other-random-stat/{}/'.format(point_id)),
+            "boundary_path": (
+                '/api/boundary/fake/other-random-stat/{}/'.format(point_id)),
+        }
+        self.assertEqual(expected_score, dict(score))
+        self.assertCitation('other-random-stat', point_id, citation)
+        self.assertBoundary('other-random-stat', point_id, boundary)
+
 
 class PercentAlgorithmTest(TestCase):
     maxDiff = None

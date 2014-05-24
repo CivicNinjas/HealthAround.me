@@ -43,10 +43,10 @@ class FakeAlgorithm(BaseAlgorithm):
         lon_st = coord_fmt.format(lon)
         lat_st = coord_fmt.format(lat)
         slug = slugify(self.metric.name)
-        path = "fake/{}/{},{}".format(slug, lon_st, lat_st)
+        path = "fake/{}/{},{}/".format(slug, lon_st, lat_st)
         random.seed(path)
         score = random.randint(0, 100) / 100.0
-        value = random.randint(0, 10000) / 100.0
+        value = random.randint(0, 100) / 100.0
         citation = OrderedDict((
             ('path', '/api/citation/' + path),
             ('label', 'Fake Data Citation'),
@@ -108,6 +108,7 @@ class FoodStampAlgorithm(BaseAlgorithm):
             ("boundary_path", boundary['path']),
         ))
         return score, citation, boundary
+
 
 class PercentPovertyAlgorithm(BaseAlgorithm):
     def calculate(self, point):
