@@ -107,7 +107,11 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
-    }
+        'south': {
+            'level': 'INFO',
+        }
+    },
+
 }
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
