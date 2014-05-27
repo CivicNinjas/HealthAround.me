@@ -9,13 +9,22 @@ TABLES = [
     'B02001',  # Race
     'B07003',  # Geographical Mobility In The Past Year By Sex For Current
                #  Residence In The United States US Only
+    'B07413',  # Geographical Mobility in the Past Year by Tenure for Residence 
+               #  1 Year Ago in the United States
+    'B08006',  # Sex of Workers by Means of Transportation to Work
     'B08016',  # Place Of Work For Workers 16 Years And Over--Metropolitan
                #  Statistical Area Level
     'B08018',  # Place Of Work For Workers 16 Years And Over--Not Metropolitan
                #  Or Micropolitan Statistical Area Level
     'B08301',  # Means Of Transportation To Work
     'B08303',  # Travel Time To Work
+    'B09002',  # Own Children by Family Type and Age
+    'B10002',  # Grandchildren Living with a Grandparent Householder by
+               #  Grandparent Responsibility and Prence of Parent
     'B11001',  # Household Type (Including Living Alone)
+    'B11003',  # Family Type by Presense and Age of Own Children
+    'B11004',  # Family Type by Presence and Age of Related Children
+    'B12001',  # Sex by Marital Status
     'B12503',  # Divorces In The Last Year By Sex By Marital Status For The
                #  Population 15 Years And Over Nation and State Only
     'B13001',  # Marital Status By Age For Women 15 To 50 Years
@@ -31,6 +40,7 @@ TABLES = [
                #  By Age For The Population 15 Years And Over
     'B14007',  # School Enrollment By Detailed Level Of School For The
                #  Population 3 Years And Over
+    'C15002',  # Sex by Educational Attainment.
     'B15003',  # Educational Attainment For The Population 25 Years And Over
     'B17001',  # Poverty Status In The Past 12 Months By Sex By Age
     'C17002',  # Ratio Of Income To Poverty Level In The Past 12 Months
@@ -59,20 +69,29 @@ TABLES = [
     'B22003',  # Receipt Of Food Stamps/Snap In The Past 12 Months By Poverty
                #  Status In The Past 12 Months For Households
     'B23001',  # Sex by Age by Employment Status for the Populatin 16 Years and
-               #  Over 
+                 #  Over 
     'B23020',  # Mean Usual Hours Worked In The Past 12 Months For Workers 16
                #  To 64 Years 
     'B23025',  # Employment Status For The Population 16 Years And Over
     'B25001',  # Housing Units
     'B25002',  # Occupancy Status
     'B25003',  # Tenure
+    'B25004',  # Vacancy
+    'B25016',  # Tenure by Plumbing Facilties by Occupants Per Room
     'B25027',  # Mortgage Status By Age Of Householder
     'B25034',  # Year Structure Built
     'B25035',  # Median Year Structure Built
+    'B25042',  # Tenure by Bedrooms
+    'B25052',  # Kitchen Facilities for Occupied Housing Units
     'B25058',  # Median Contract Rent (Dollars)
     'B25064',  # Median Gross Rent (Dollars)
+    'B25070',  # Gross Rent as a Percentage of Household Income in the Past 12 Months
     'B25075',  # Value
     'B25087',  # Mortgage Status And Selected Monthly Owner Costs
+    'B25091',  # Mortgage Status by Selected Monthly Owner Costs as a Percentage 
+               #  of Household Income in the Past 12 Months
+    'B25106',  # Tenure by Housing Costs as a Percentage of Household Income
+    'B27001',  # Health Insurance Coverage Status by Sex by Age
     'B27002',  # Private Health Insurance Status By Sex By Age
     'B27003',  # Public Health Insurance Status By Sex By Age
     'C27006',  # Medicare Coverage By Sex By Age
