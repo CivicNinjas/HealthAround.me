@@ -91,7 +91,7 @@ class FoodStampAlgorithm(BaseAlgorithm):
         ))
         total = data.B19058_001E
         on_stamps = data.B19058_002E
-        percent = float(on_stamps / total)
+        percent = on_stamps / float(total)
         state_avg = 0.138
         state_std_dev = 0.106
         score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
@@ -130,7 +130,7 @@ class PercentPovertyAlgorithm(BaseAlgorithm):
         ))
         total = data.B17001_001E
         in_poverty = data.B17001_002E
-        percent = float(in_poverty / total)
+        percent = in_poverty / float(total)
         state_avg = 0.166
         state_std_dev = 0.118383
         score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
@@ -184,7 +184,7 @@ class PercentUnemploymentAlgorithm(BaseAlgorithm):
         data_list = list(new_data)
         total = data_list.pop(0)
         total_unemployed = sum(data_list)
-        percent = float(total_unemployed / total)
+        percent = total_unemployed / float(total)
         state_avg = 0.04193
         state_std_dev = 0.0266
         score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
@@ -229,9 +229,9 @@ class PercentIncomeHousingCost(BaseAlgorithm):
             ('id', 'B25106'),
         ))
         
-        total = data.pop([0])
+        total = data.pop(0)
         total_unemployed = sum(data)
-        percent = float(total_unemployed / total)
+        percent = total_unemployed / float(total)
         state_avg = 0.166
         state_std_dev = 0.11
         score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
@@ -248,3 +248,43 @@ class PercentIncomeHousingCost(BaseAlgorithm):
         ))
         return score, citation, boundary
 
+class PercentSingleParentChildren(BaseAlgorithm):
+    def calculate(self, point):
+        list_of_rows = (
+            'B11003_003E', 'B11003_010E', 'B11003_016E',
+        )
+        for boundary in boundaries(point):
+            try:
+                data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
+                    B11003_003E=0, B11003_010E=0, B11003_016E=0).first()
+            except Census.DoesNotExist:
+                pass
+            else:
+                break
+        boundary = boundary_dict(data.boundary)
+        citation = OrderedDict((
+            ('path', '/api/citation/census/B11003/'),
+            ('label', 'Census 5 Year Summary, 2008-2012'),
+            ('year', 2012),
+            ('type', 'percent'),
+            ('id', 'B11003'),
+        ))
+        
+        total = sum(data)
+        total_single_parent = data.B11003_010E + data.B11003_016E
+        percent = total_single_parent / float(total)
+        state_avg = 0.332
+        state_std_dev = 0.11
+        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+
+        score = OrderedDict((
+            ("score", round(score, 3)),
+            ("value", round(percent, 3)),
+            ("average", state_avg),
+            ("std_dev", state_std_dev),
+            ("value_type", "percent"),
+            ("description", self.metric.description),
+            ("citation_path", citation['path']),
+            ("boundary_path", boundary['path']),
+        ))
+        return score, citation, boundary

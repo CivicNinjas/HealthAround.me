@@ -267,6 +267,212 @@ class Census(models.Model):
         max_digits=12, decimal_places=2, blank=True, null=True,
         help_text='Female')
 
+    # B07413 - Geographical Mobility In the Past Year by Tenure For
+    #          Residence 1 Year Ago In the United States
+    B07413_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Geographical Mobility In the Past Year by Tenure For Residence'
+            ' 1 Year Ago In the United States: Total living in area 1 year'
+            ' ago:'))
+    B07413_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07413_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+    B07413_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Same house:')
+    B07413_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07413_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+    B07413_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Moved within same county:')
+    B07413_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07413_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+    B07413_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Moved to different county within same state:')
+    B07413_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07413_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+    B07413_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Moved to different state:')
+    B07413_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07413_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+
+    # B08006 - Sex of Workers by Means of Transportation to Work
+    B08006_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Sex of Workers by Means of Transportation to Work: Total:')
+    B08006_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Car, truck, or van:')
+    B08006_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Drove alone')
+    B08006_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Carpooled:')
+    B08006_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In 2-person carpool')
+    B08006_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In 3-person carpool')
+    B08006_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In 4-or-more-person carpool')
+    B08006_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Public transportation (excluding taxicab):')
+    B08006_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Bus or trolley bus')
+    B08006_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Streetcar or trolley car (carro publico in Puerto Rico)')
+    B08006_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Subway or elevated')
+    B08006_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Railroad')
+    B08006_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Ferryboat')
+    B08006_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Bicycle')
+    B08006_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Walked')
+    B08006_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Taxicab, motorcycle, or other means')
+    B08006_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Worked at home')
+    B08006_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Male:')
+    B08006_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Car, truck, or van:')
+    B08006_020E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Drove alone')
+    B08006_021E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Carpooled:')
+    B08006_022E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In 2-person carpool')
+    B08006_023E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In 3-person carpool')
+    B08006_024E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In 4-or-more-person carpool')
+    B08006_025E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Public transportation (excluding taxicab):')
+    B08006_026E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Bus or trolley bus')
+    B08006_027E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Streetcar or trolley car (carro publico in Puerto Rico)')
+    B08006_028E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Subway or elevated')
+    B08006_029E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Railroad')
+    B08006_030E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Ferryboat')
+    B08006_031E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Bicycle')
+    B08006_032E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Walked')
+    B08006_033E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Taxicab, motorcycle, or other means')
+    B08006_034E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Worked at home')
+    B08006_035E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Female:')
+    B08006_036E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Car, truck, or van:')
+    B08006_037E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Drove alone')
+    B08006_038E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Carpooled:')
+    B08006_039E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In 2-person carpool')
+    B08006_040E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In 3-person carpool')
+    B08006_041E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In 4-or-more-person carpool')
+    B08006_042E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Public transportation (excluding taxicab):')
+    B08006_043E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Bus or trolley bus')
+    B08006_044E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Streetcar or trolley car (carro publico in Puerto Rico)')
+    B08006_045E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Subway or elevated')
+    B08006_046E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Railroad')
+    B08006_047E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Ferryboat')
+    B08006_048E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Bicycle')
+    B08006_049E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Walked')
+    B08006_050E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Taxicab, motorcycle, or other means')
+    B08006_051E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Worked at home')
+
     # B08016 - Place of Work For Workers 16 Years And
     #          Over--Metropolitan Statistical Area Level
     B08016_001E = models.DecimalField(
@@ -482,6 +688,94 @@ class Census(models.Model):
         max_digits=12, decimal_places=2, blank=True, null=True,
         help_text='90 or more minutes')
 
+    # B09002 - Own Children Under 18 Years by Family Type And Age
+    B09002_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Own Children Under 18 Years by Family Type And Age: Total:')
+    B09002_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In married-couple families:')
+    B09002_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 3 years')
+    B09002_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='3 and 4 years')
+    B09002_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='5 years')
+    B09002_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 11 years')
+    B09002_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='12 to 17 years')
+    B09002_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='In other families:')
+    B09002_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Male householder, no wife present:')
+    B09002_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 3 years')
+    B09002_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='3 and 4 years')
+    B09002_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='5 years')
+    B09002_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 11 years')
+    B09002_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='12 to 17 years')
+    B09002_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Female householder, no husband present:')
+    B09002_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 3 years')
+    B09002_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='3 and 4 years')
+    B09002_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='5 years')
+    B09002_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 11 years')
+    B09002_020E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='12 to 17 years')
+
+    # B10002 - Grandchildren Under 18 Years Living With a Grandparent
+    #          Householder by Grandparent Responsibility And Presence
+    #          of Parent
+    B10002_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Grandchildren Under 18 Years Living With a Grandparent'
+            ' Householder by Grandparent Responsibility And Presence of'
+            ' Parent: Total:'))
+    B10002_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Grandparent householder responsible for own grandchildren under'
+            ' 18 years:'))
+    B10002_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Parent present')
+    B10002_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No parent present')
+    B10002_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Grandparent householder not responsible for own grandchildren'
+            ' under 18 years'))
+
     # B11001 - Household Type (Including Living Alone)
     B11001_001E = models.DecimalField(
         max_digits=12, decimal_places=2, blank=True, null=True,
@@ -510,6 +804,196 @@ class Census(models.Model):
     B11001_009E = models.DecimalField(
         max_digits=12, decimal_places=2, blank=True, null=True,
         help_text='Householder not living alone')
+
+    # B11003 - Family Type by Presence And Age of Own Children Under 18 Years
+    B11003_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Family Type by Presence And Age of Own Children Under 18 Years:'
+            ' Total:'))
+    B11003_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Married-couple family:')
+    B11003_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With own children under 18 years:')
+    B11003_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years only')
+    B11003_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years and 6 to 17 years')
+    B11003_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 17 years only')
+    B11003_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No own children under 18 years')
+    B11003_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Other family:')
+    B11003_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Male householder, no wife present:')
+    B11003_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With own children under 18 years:')
+    B11003_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years only')
+    B11003_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years and 6 to 17 years')
+    B11003_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 17 years only')
+    B11003_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No own children under 18 years')
+    B11003_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Female householder, no husband present:')
+    B11003_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With own children under 18 years:')
+    B11003_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years only')
+    B11003_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years and 6 to 17 years')
+    B11003_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 17 years only')
+    B11003_020E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No own children under 18 years')
+
+    # B11004 - Family Type by Presence And Age of Related Children
+    #          Under 18 Years
+    B11004_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Family Type by Presence And Age of Related Children Under 18'
+            ' Years: Total:'))
+    B11004_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Married-couple family:')
+    B11004_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With related children under 18 years:')
+    B11004_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years only')
+    B11004_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years and 6 to 17 years')
+    B11004_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 17 years only')
+    B11004_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No related children under 18 years')
+    B11004_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Other family:')
+    B11004_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Male householder, no wife present:')
+    B11004_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With related children under 18 years:')
+    B11004_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years only')
+    B11004_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years and 6 to 17 years')
+    B11004_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 17 years only')
+    B11004_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No related children under 18 years')
+    B11004_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Female householder, no husband present:')
+    B11004_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With related children under 18 years:')
+    B11004_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years only')
+    B11004_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years and 6 to 17 years')
+    B11004_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 17 years only')
+    B11004_020E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No related children under 18 years')
+
+    # B12001 - Sex by Marital Status For the Population 15 Years And Over
+    B12001_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Sex by Marital Status For the Population 15 Years And Over:'
+            ' Total:'))
+    B12001_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Male:')
+    B12001_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Never married')
+    B12001_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Now married:')
+    B12001_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Married, spouse present')
+    B12001_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Married, spouse absent:')
+    B12001_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Separated')
+    B12001_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Other')
+    B12001_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Widowed')
+    B12001_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Divorced')
+    B12001_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Female:')
+    B12001_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Never married')
+    B12001_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Now married:')
+    B12001_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Married, spouse present')
+    B12001_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Married, spouse absent:')
+    B12001_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Separated')
+    B12001_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Other')
+    B12001_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Widowed')
+    B12001_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Divorced')
 
     # B12503 - Divorces In the Last Year by Sex by Marital Status For
     #          the Population 15 Years And Over
@@ -2509,6 +2993,92 @@ class Census(models.Model):
         max_digits=12, decimal_places=2, blank=True, null=True,
         help_text='Renter occupied')
 
+    # B25004 - Vacancy Status
+    B25004_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Vacancy Status: Total:')
+    B25004_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='For rent')
+    B25004_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Rented, not occupied')
+    B25004_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='For sale only')
+    B25004_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Sold, not occupied')
+    B25004_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='For seasonal, recreational, or occasional use')
+    B25004_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='For migrant workers')
+    B25004_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Other vacant')
+
+    # B25016 - Tenure by Plumbing Facilities by Occupants Per Room
+    B25016_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Tenure by Plumbing Facilities by Occupants Per Room: Total:'))
+    B25016_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Owner occupied:')
+    B25016_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Complete plumbing facilities:')
+    B25016_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.00 or less occupants per room')
+    B25016_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.01 to 1.50 occupants per room')
+    B25016_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.51 or more occupants per room')
+    B25016_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Lacking complete plumbing facilities:')
+    B25016_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.00 or less occupants per room')
+    B25016_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.01 to 1.50 occupants per room')
+    B25016_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.51 or more occupants per room')
+    B25016_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Renter occupied:')
+    B25016_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Complete plumbing facilities:')
+    B25016_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.00 or less occupants per room')
+    B25016_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.01 to 1.50 occupants per room')
+    B25016_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.51 or more occupants per room')
+    B25016_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Lacking complete plumbing facilities:')
+    B25016_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.00 or less occupants per room')
+    B25016_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.01 to 1.50 occupants per room')
+    B25016_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1.51 or more occupants per room')
+
     # B25027 - Mortgage Status by Age of Householder
     B25027_001E = models.DecimalField(
         max_digits=12, decimal_places=2, blank=True, null=True,
@@ -2599,6 +3169,64 @@ class Census(models.Model):
         max_digits=12, decimal_places=2, blank=True, null=True,
         help_text='Median year structure built')
 
+    # B25042 - Tenure by Bedrooms
+    B25042_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Tenure by Bedrooms: Total:')
+    B25042_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Owner occupied:')
+    B25042_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No bedroom')
+    B25042_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1 bedroom')
+    B25042_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='2 bedrooms')
+    B25042_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='3 bedrooms')
+    B25042_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='4 bedrooms')
+    B25042_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='5 or more bedrooms')
+    B25042_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Renter occupied:')
+    B25042_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No bedroom')
+    B25042_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='1 bedroom')
+    B25042_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='2 bedrooms')
+    B25042_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='3 bedrooms')
+    B25042_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='4 bedrooms')
+    B25042_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='5 or more bedrooms')
+
+    # B25052 - Kitchen Facilities For Occupied Housing Units
+    B25052_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Kitchen Facilities For Occupied Housing Units: Total:')
+    B25052_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Complete kitchen facilities')
+    B25052_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Lacking complete kitchen facilities')
+
     # B25058 - Median Contract Rent (Dollars)
     B25058_001E = models.DecimalField(
         max_digits=12, decimal_places=2, blank=True, null=True,
@@ -2608,6 +3236,44 @@ class Census(models.Model):
     B25064_001E = models.DecimalField(
         max_digits=12, decimal_places=2, blank=True, null=True,
         help_text='Median Gross Rent (Dollars): Median gross rent')
+
+    # B25070 - Gross Rent As a Percentage of Household Income In the
+    #          Past 12 Months
+    B25070_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Gross Rent As a Percentage of Household Income In the Past 12'
+            ' Months: Total:'))
+    B25070_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 10.0 percent')
+    B25070_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='10.0 to 14.9 percent')
+    B25070_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='15.0 to 19.9 percent')
+    B25070_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20.0 to 24.9 percent')
+    B25070_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='25.0 to 29.9 percent')
+    B25070_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30.0 to 34.9 percent')
+    B25070_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='35.0 to 39.9 percent')
+    B25070_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='40.0 to 49.9 percent')
+    B25070_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='50.0 percent or more')
+    B25070_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not computed')
 
     # B25075 - Value
     B25075_001E = models.DecimalField(
@@ -2774,6 +3440,396 @@ class Census(models.Model):
     B25087_029E = models.DecimalField(
         max_digits=12, decimal_places=2, blank=True, null=True,
         help_text='$700 or more')
+
+    # B25091 - Mortgage Status by Selected Monthly Owner Costs As a
+    #          Percentage of Household Income In the Past 12 Months
+    B25091_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Mortgage Status by Selected Monthly Owner Costs As a Percentage'
+            ' of Household Income In the Past 12 Months: Total:'))
+    B25091_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Housing units with a mortgage:')
+    B25091_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 10.0 percent')
+    B25091_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='10.0 to 14.9 percent')
+    B25091_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='15.0 to 19.9 percent')
+    B25091_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20.0 to 24.9 percent')
+    B25091_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='25.0 to 29.9 percent')
+    B25091_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30.0 to 34.9 percent')
+    B25091_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='35.0 to 39.9 percent')
+    B25091_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='40.0 to 49.9 percent')
+    B25091_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='50.0 percent or more')
+    B25091_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not computed')
+    B25091_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Housing units without a mortgage:')
+    B25091_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 10.0 percent')
+    B25091_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='10.0 to 14.9 percent')
+    B25091_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='15.0 to 19.9 percent')
+    B25091_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20.0 to 24.9 percent')
+    B25091_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='25.0 to 29.9 percent')
+    B25091_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30.0 to 34.9 percent')
+    B25091_020E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='35.0 to 39.9 percent')
+    B25091_021E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='40.0 to 49.9 percent')
+    B25091_022E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='50.0 percent or more')
+    B25091_023E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Not computed')
+
+    # B25106 - Tenure by Housing Costs As a Percentage of Household
+    #          Income In the Past 12 Months
+    B25106_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text=(
+            'Tenure by Housing Costs As a Percentage of Household Income In'
+            ' the Past 12 Months: Total:'))
+    B25106_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Owner-occupied housing units:')
+    B25106_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than $20,000:')
+    B25106_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='$20,000 to $34,999:')
+    B25106_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='$35,000 to $49,999:')
+    B25106_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='$50,000 to $74,999:')
+    B25106_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='$75,000 or more:')
+    B25106_020E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_021E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_022E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_023E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Zero or negative income')
+    B25106_024E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Renter-occupied housing units:')
+    B25106_025E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than $20,000:')
+    B25106_026E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_027E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_028E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_029E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='$20,000 to $34,999:')
+    B25106_030E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_031E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_032E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_033E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='$35,000 to $49,999:')
+    B25106_034E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_035E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_036E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_037E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='$50,000 to $74,999:')
+    B25106_038E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_039E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_040E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_041E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='$75,000 or more:')
+    B25106_042E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Less than 20 percent')
+    B25106_043E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='20 to 29 percent')
+    B25106_044E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='30 percent or more')
+    B25106_045E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Zero or negative income')
+    B25106_046E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No cash rent')
+
+    # B27001 - Health Insurance Coverage Status by Sex by Age
+    B27001_001E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Health Insurance Coverage Status by Sex by Age: Total:')
+    B27001_002E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Male:')
+    B27001_003E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years:')
+    B27001_004E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_005E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_006E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 17 years:')
+    B27001_007E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_008E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_009E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='18 to 24 years:')
+    B27001_010E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_011E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_012E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='25 to 34 years:')
+    B27001_013E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_014E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_015E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='35 to 44 years:')
+    B27001_016E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_017E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_018E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='45 to 54 years:')
+    B27001_019E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_020E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_021E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='55 to 64 years:')
+    B27001_022E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_023E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_024E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='65 to 74 years:')
+    B27001_025E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_026E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_027E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='75 years and over:')
+    B27001_028E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_029E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_030E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Female:')
+    B27001_031E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='Under 6 years:')
+    B27001_032E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_033E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_034E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='6 to 17 years:')
+    B27001_035E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_036E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_037E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='18 to 24 years:')
+    B27001_038E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_039E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_040E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='25 to 34 years:')
+    B27001_041E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_042E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_043E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='35 to 44 years:')
+    B27001_044E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_045E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_046E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='45 to 54 years:')
+    B27001_047E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_048E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_049E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='55 to 64 years:')
+    B27001_050E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_051E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_052E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='65 to 74 years:')
+    B27001_053E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_054E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
+    B27001_055E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='75 years and over:')
+    B27001_056E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='With health insurance coverage')
+    B27001_057E = models.DecimalField(
+        max_digits=12, decimal_places=2, blank=True, null=True,
+        help_text='No health insurance coverage')
 
     # B27002 - Private Health Insurance Status by Sex by Age
     B27002_001E = models.DecimalField(
