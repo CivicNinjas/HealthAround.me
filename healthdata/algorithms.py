@@ -92,7 +92,7 @@ class FoodStampAlgorithm(BaseAlgorithm):
         ))
         total = data.B19058_001E
         on_stamps = data.B19058_002E
-        percent = float(on_stamps / total)
+        percent = on_stamps / float(total)
         state_avg = 0.138
         state_std_dev = 0.106
         score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
@@ -130,7 +130,7 @@ class PercentPovertyAlgorithm(BaseAlgorithm):
         ))
         total = data.B17001_001E
         in_poverty = data.B17001_002E
-        percent = float(in_poverty / total)
+        percent = in_poverty / float(total)
         state_avg = 0.166
         state_std_dev = 0.118383
         score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
