@@ -91,7 +91,11 @@ class CensusLoaderTest(TestCase):
         return cl
 
     def test_seq_defs_two_tables_in_one_seq_file(self):
-        cl = self.getCensusLoaderForSeq(['B00002', 'B00001'])
+        table_ids = {
+            'B00002': {},
+            'B00001': {},
+        }
+        cl = self.getCensusLoaderForSeq(table_ids)
         cl.open_snatnl = mock.MagicMock(name='open_snatnl')
         cl.open_snatnl.return_value = StringIO.StringIO(sample_sequence)
         sd = cl.seq_defs()
@@ -113,6 +117,7 @@ class CensusLoaderTest(TestCase):
                         'subject_area': 'Unweighted Count',
                         'extra': ['Universe:  Total population'],
                         'start_pos': 7,
+                        'valtype': 'integer',
                         'items': {
                             'B00001_001': 'Total'
                         }
@@ -122,6 +127,7 @@ class CensusLoaderTest(TestCase):
                         'subject_area': 'Unweighted Count',
                         'extra': ['Universe:  Housing units'],
                         'start_pos': 8,
+                        'valtype': 'integer',
                         'items': {
                             'B00002_001': 'Total'
                         }
@@ -132,7 +138,8 @@ class CensusLoaderTest(TestCase):
         self.assertEqual(expected, sd)
 
     def test_seq_defs_many_columns(self):
-        cl = self.getCensusLoaderForSeq(['B01001'])
+        tables_ids = {'B01001': {}}
+        cl = self.getCensusLoaderForSeq(tables_ids)
         sd = cl.seq_defs()
         expected = {
             '0002': {
@@ -199,6 +206,7 @@ class CensusLoaderTest(TestCase):
                         'subject_area': 'Age-Sex',
                         'extra': ['Universe:  Total population'],
                         'start_pos': 7,
+                        'valtype': 'integer',
                         'items': {
                             'B01001_001': 'Total:',
                             'B01001_002': 'Male:',
@@ -262,7 +270,14 @@ class CensusLoaderTest(TestCase):
         self.assertEqual(expected, CensusLoader.to_title(in1))
 
     def test_model_declaration(self):
-        cl = self.getCensusLoaderForSeq(['B19113', 'B00001'])
+        table_ids = {
+            'B19113': {},
+            'B00001': {},
+            'B01002': {
+                'valtype': 'decimal:5,2',
+            },
+        }
+        cl = self.getCensusLoaderForSeq(table_ids)
         model_decl = cl.model_declaration()
         expected = """\
 from django.db import models
@@ -272,20 +287,34 @@ from boundaryservice.models import Boundary
 class Census(models.Model):
     '''Selected items from U.S. Census 5-Year Summary for Boundary'''
 
+    class Meta:
+        verbose_name_plural = "census"
+
     boundary = models.ForeignKey(Boundary, blank=True, null=True)
     state_abbr = models.CharField(
         max_length=2, help_text='State / U.S. - Abbreviation (USPS)')
     logical_num = models.IntegerField(help_text='Logical record number')
 
     # B00001 - Unweighted Sample Count of the Population
-    B00001_001E = models.DecimalField(
-        max_digits=12, decimal_places=2, blank=True, null=True,
+    B00001_001E = models.IntegerField(
+        blank=True, null=True,
         help_text='Unweighted Sample Count of the Population: Total')
+
+    # B01002 - Median Age by Sex
+    B01002_001E = models.DecimalField(
+        max_digits=5, decimal_places=2, blank=True, null=True,
+        help_text='Median Age by Sex: Total:')
+    B01002_002E = models.DecimalField(
+        max_digits=5, decimal_places=2, blank=True, null=True,
+        help_text='Male')
+    B01002_003E = models.DecimalField(
+        max_digits=5, decimal_places=2, blank=True, null=True,
+        help_text='Female')
 
     # B19113 - Median Family Income In the Past 12 Months (In 2012
     #          Inflation-Adjusted Dollars)
-    B19113_001E = models.DecimalField(
-        max_digits=12, decimal_places=2, blank=True, null=True,
+    B19113_001E = models.IntegerField(
+        blank=True, null=True,
         help_text=(
             'Median family income in the past 12 months (in 2012'
             ' inflation-adjusted dollars)'))\

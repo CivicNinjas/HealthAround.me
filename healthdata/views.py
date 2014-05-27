@@ -1,17 +1,16 @@
 from collections import OrderedDict
 from math import floor
 import json
-import random
 import os.path
 
 from boundaryservice.models import Boundary
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.conf import settings
-from rest_framework.generics import GenericAPIView, RetrieveAPIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.response import Response
 
 from .models import ScoreNode
-from .serializers import BoundarySerializer, PrimaryScoreSerializer
+from .serializers import BoundarySerializer, ScoreNodeSerializer
 
 
 def fake_api(request):
@@ -129,19 +128,84 @@ class BoundaryAPIView(RetrieveAPIView):
     serializer_class = BoundarySerializer
 
 
-class ScoreAPIView(GenericAPIView):
+class ScoreAPIView(ListAPIView):
+    serializer_class = ScoreNodeSerializer
+    queryset = ScoreNode.objects.filter(parent=None)
 
-    def dispatch(self, request, *args, **kwargs):
-        # placeholder until all values properly serialized
-        random.seed(kwargs['lon'])
-        return super(ScoreAPIView, self).dispatch(request, *args, **kwargs)
+    def get_serializer_context(self):
+        context = super(ScoreAPIView, self).get_serializer_context()
+        context['location'] = (
+            float(self.kwargs['lon']),
+            float(self.kwargs['lat']))
+        return context
 
-    def get(self, request, *args, **kwargs):
-        data = {
-            'elements': PrimaryScoreSerializer(
-                ScoreNode.objects.filter(parent=None),
-                location=(kwargs['lon'], kwargs['lat'])).data,
-            'location': {},
-            'citations': {}
-        }
+    def transform_data(self, raw_data):
+        '''Transform the raw ScoreNodeSerializer data'''
+        data = OrderedDict((
+            ('elements', []),
+            ('boundaries', {}),
+            ('citations', {}),
+        ))
+        for raw in raw_data:
+            transformed = self.transform_raw_element(raw)
+            element, boundaries, citations = transformed
+            data['elements'].append(element)
+            data['boundaries'].update(boundaries)
+            data['citations'].update(citations)
+        return data
+
+    def transform_raw_element(self, raw):
+        '''Recursively transform a raw element'''
+        element = OrderedDict((
+            ('label', raw['label']),
+            ('slug', raw['slug']),
+            ('weight', raw['weight']),
+        ))
+        boundaries = {}
+        citations = {}
+        if raw['metric']:
+            assert not raw['children']
+            metric = raw['metric']
+            for key, value in metric['score'].items():
+                element[key] = value
+            boundary = metric['boundary']
+            boundaries[boundary['path']] = boundary
+            citation = metric['citation']
+            citations[citation['path']] = citation
+        if raw['children']:
+            assert not raw['metric']
+            total_score = 0.0
+            total_weight = 0.0
+            child_elements = []
+            for child in raw['children']:
+                transformed = self.transform_raw_element(child)
+                sub_element, sub_boundaries, sub_citations = transformed
+
+                # Add elements and accumulate score
+                child_elements.append(sub_element)
+                total_score += sub_element['score'] * sub_element['weight']
+                total_weight += sub_element['weight']
+
+                # Merge boundaries
+                for boundary_path, boundary in sub_boundaries.items():
+                    boundaries[boundary_path] = boundary
+
+                # Merge citations
+                for citation_path, citation in sub_citations.items():
+                    citations[citation_path] = citation
+            element['elements'] = child_elements
+            element['score'] = round(total_score / total_weight, 2)
+        return element, boundaries, citations
+
+    def list(self, request, *args, **kwargs):
+        '''
+        Convert raw node serialization to wire serialization
+
+        Simplier version of rest_framework/mixins/ListModelMixin.list,
+        but transforms the raw ScoreNodeSerializer data.
+        '''
+        self.object_list = self.filter_queryset(self.get_queryset())
+        serializer = self.get_serializer(self.object_list, many=True)
+        raw_data = serializer.data
+        data = self.transform_data(raw_data)
         return Response(data)

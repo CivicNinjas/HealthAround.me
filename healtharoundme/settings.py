@@ -79,6 +79,7 @@ DATABASES = {
     'default': dj_database_url.config(
         default='spatialite:///' + default_db_path)
 }
+POSTGIS_VERSION = (2, 1)
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
@@ -113,10 +114,22 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
-    }
+        'south': {
+            'level': 'INFO',
+        }
+    },
+
 }
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.JSONPRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ),
+}
 
 if 'test' not in sys.argv:
     try:

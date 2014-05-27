@@ -1,6 +1,15 @@
-settings_override.py
+# Standard python stuff
 *.pyc
 *.swp
+
+# Developer overrides
+settings_override.py
+
+# Downloaded data
 data/shapefiles/*.zip
+!data/census/cache/.keep
 data/census/cache/*
-!data/census/cache/.keep 
+
+# Server and deployment folders
+src/*
+static/*

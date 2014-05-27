@@ -18,4 +18,3 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-POSTGIS_VERSION = ( 2, 1 )

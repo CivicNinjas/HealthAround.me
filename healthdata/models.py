@@ -51,8 +51,10 @@ class ScoreMetric(models.Model):
     algorithm_choices = (
         (FAKE_ALGORITHM, 'FakeAlgorithm', 'Fake Algorithm'),
         (FOOD_STAMP_ALGORITHM, 'FoodStampAlgorithm', 'Food Stamp Algorithm'),
-        (PERCENT_POVERTY_ALGORITHM, 'PercentPovertyAlgorithm', 'Percent Poverty Algorithm'),
-        (PERCENT_UNEMPLOYMENT_ALGORITHM, 'PercentUnemploymentAlgorithm', 'Percent Unemployment Algorithm'),
+        (PERCENT_POVERTY_ALGORITHM, 'PercentPovertyAlgorithm',
+         'Percent Poverty Algorithm'),
+        (PERCENT_UNEMPLOYMENT_ALGORITHM, 'PercentUnemploymentAlgorithm',
+         'Percent Unemployment Algorithm'),
     )
     algorithm_class_name = dict([(a[0], a[1]) for a in algorithm_choices])
 
@@ -85,6 +87,9 @@ class ScoreMetric(models.Model):
         klass = getattr(algorithms, self.algorithm_class_name[self.algorithm])
         algorithm = klass(self)
         return algorithm
+
+    def score(self, point):
+        return self.get_algorithm().calculate(point)
 
 
 class ScoreNode(MPTTModel):

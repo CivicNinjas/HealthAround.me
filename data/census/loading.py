@@ -268,6 +268,12 @@ class CensusLoader(object):
                     assert not subject_area, subject_area
                     sd_data['tables'][table_id].setdefault(
                         'extra', []).append(table_title)
+
+                # Add value type
+                table_defs = self.table_ids[table_id]
+                valtype = table_defs.get('valtype', 'integer')
+                sd_data['tables'][table_id]['valtype'] = valtype
+
             self._seq_defs = sd
 
         return self._seq_defs
@@ -295,6 +301,7 @@ class CensusLoader(object):
             for table_id, params in sdef['tables'].items():
                 t_def = tables.setdefault(table_id, {})
                 t_def['title'] = self.to_title(params['title'])
+                t_def['valtype'] = params['valtype']
                 items = t_def.setdefault('items', [])
                 items.extend([(n, t) for n, t in params['items'].items()])
 
@@ -306,6 +313,9 @@ from boundaryservice.models import Boundary
 
 class {}(models.Model):
     '''Selected items from U.S. Census 5-Year Summary for Boundary'''
+
+    class Meta:
+        verbose_name_plural = "census"
 
     boundary = models.ForeignKey(Boundary, blank=True, null=True)
     state_abbr = models.CharField(
@@ -332,10 +342,19 @@ class {}(models.Model):
 
             first = True
             for name, title in sorted(params['items']):
-                decl.append("""\
+                valtype = params['valtype']
+                if valtype == 'integer':
+                    decl.append("""\
+    {}E = models.IntegerField(
+        blank=True, null=True,""".format(name))
+                elif valtype.startswith('decimal:'):
+                    _, dec_params = valtype.split(':', 1)
+                    max_digits, decimal_places = dec_params.split(',', 1)
+                    decl.append("""\
     {}E = models.DecimalField(
-        max_digits=12, decimal_places=2, blank=True, null=True,""".format(
-                    name))
+        max_digits={}, decimal_places={}, blank=True, null=True,""".format(
+                        name, max_digits, decimal_places))
+
                 if first:
                     if title.lower() == heading.lower():
                         help_text = title
@@ -463,7 +482,7 @@ class {}(models.Model):
         from data.models import Census
         return Census.objects.filter(
             state_abbr=state_abbr.upper(), logical_num=logical_num).update(
-            **data)
+                **data)
 
 
 if __name__ == '__main__':
