@@ -202,37 +202,37 @@ class PercentUnemploymentAlgorithm(BaseAlgorithm):
 
 
 
-class PercentIncomeHousingCost(BaseAlgorithm):
+
+class PercentSingleParentAlgorithm(BaseAlgorithm):
     def calculate(self, point):
-        list_of_rows = (
-            'B25106_001E','B25106_006E','B25106_010E',
-            'B25106_014E','B25106_018E','B25106_022E',
-            'B25106_023E','B25106_028E','B25106_032E',
-            'B25106_036E','B25106_040E','B25106_044E',
-            'B25106_045E',
-        )
+        list_of_rows = [
+            'B09002_001E', 'B09002_008E',
+        ]
         for boundary in boundaries(point):
             try:
-                data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B25106_001E=0).first()
+                data = Census.objects.filter(boundary=boundary).exclude(
+                    B09002_001E=0).first()
             except Census.DoesNotExist:
                 pass
             else:
                 break
+        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
+                    B09002_001E=0).first()
         boundary = boundary_dict(data.boundary)
+        data = new_data
         citation = OrderedDict((
-            ('path', '/api/citation/census/B23001/'),
+            ('path', '/api/citation/census/B09002/'),
             ('label', 'Census 5 Year Summary, 2008-2012'),
             ('year', 2012),
             ('type', 'percent'),
-            ('id', 'B25106'),
+            ('id', 'B09002'),
         ))
         
-        total = data.pop(0)
-        total_unemployed = sum(data)
-        percent = total_unemployed / float(total)
-        state_avg = 0.166
-        state_std_dev = 0.11
+        total = data[0]
+        total_single_parent = data[1]
+        percent = total_single_parent / float(total)
+        state_avg = 0.452998
+        state_std_dev = 0.1657150
         score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
 
         score = OrderedDict((
@@ -247,33 +247,41 @@ class PercentIncomeHousingCost(BaseAlgorithm):
         ))
         return score, citation, boundary
 
-class PercentSingleParentChildren(BaseAlgorithm):
+class PercentIncomeHousingCostAlgorithm(BaseAlgorithm):
     def calculate(self, point):
-        list_of_rows = (
-            'B11003_003E', 'B11003_010E', 'B11003_016E',
-        )
+        list_of_rows = [
+            'B25091_001E', 'B25070_001E', 'B25070_008E',
+            'B25070_009E', 'B25070_010E', 'B25091_009E',
+            'B25091_010E', 'B25091_011E', 'B25091_020E',
+            'B25091_021E', 'B25091_022E',
+        ]
         for boundary in boundaries(point):
             try:
-                data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B11003_003E=0, B11003_010E=0, B11003_016E=0).first()
+                data = Census.objects.filter(boundary=boundary).exclude(
+                    B25091_001E=0, B25070_001E=0).first()
             except Census.DoesNotExist:
                 pass
             else:
                 break
+        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
+                    B25091_001E=0, B25070_001E=0).first()
         boundary = boundary_dict(data.boundary)
+        data = new_data
         citation = OrderedDict((
-            ('path', '/api/citation/census/B11003/'),
+            ('path', "/api/citation/census/('B25091', 'B25070')/",),
             ('label', 'Census 5 Year Summary, 2008-2012'),
             ('year', 2012),
             ('type', 'percent'),
-            ('id', 'B11003'),
+            ('id', ('B25091', 'B25070')),
         ))
         
-        total = sum(data)
-        total_single_parent = data.B11003_010E + data.B11003_016E
-        percent = total_single_parent / float(total)
-        state_avg = 0.332
-        state_std_dev = 0.11
+        total = data[0] + data[1]
+        total_renter_gradual = data[2]/float(4) + data[3]/float(2) + data[4]
+        total_mortgaged_owner = data[5]/float(4) + data[6]/float(2) + data[7]
+        total_unmortgaged_owner = data[8]/float(4) + data[9]/float(2) + data[10]
+        percent = (total_renter_gradual + total_mortgaged_owner + total_unmortgaged_owner)/float(total)
+        state_avg = 0.1544959
+        state_std_dev = 0.0867039
         score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
 
         score = OrderedDict((

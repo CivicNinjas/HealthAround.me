@@ -33,9 +33,7 @@ def stand_dev_total_rows(rows):
 	total_ok_pre = list(ok_data_new)
 	total_ok = total_ok_pre.pop(0)
 	to_divide_ok = sum(total_ok_pre)
-	ok_percentile = unemployed_ok/float(total_ok)
-
-
+	ok_percentile = to_divide_ok/float(total_ok)
 	count = 0
 	total = 0.0
 	for tracts in data:
@@ -45,8 +43,8 @@ def stand_dev_total_rows(rows):
 			tracts_unemployed = sum(tracks)
 			total += (tracts_unemployed/float(tracts_total) - ok_percentile)**2
 			count += 1
-	total = (total/float(count)**(0.5)
-	return total
+	final_total = (total/float(count))**(0.5)
+	return final_total
 
 def stand_dev_income_housing_cost(rows):
 	tract_set = BoundarySet.objects.all()[1]
@@ -78,39 +76,24 @@ def stand_dev_numer_denom(numer_rows, denom_rows):
 	numer_length = len(numer_rows)
 	denom_length = len(denom_rows)
 	tract_set = BoundarySet.objects.all()[1]
-	ok_data = Boundary.objects.get(slug='oklahoma-state')
-	ok_data_new_numer = Census.objects.filter(boundary=ok_data).values_list(*numer_rows).first()
-	ok_data_new_denom = Census.objects.filter(boundary=ok_data).values_list(*denom_rows).first()
-	data_numer = Census.objects.filter(boundary__set=tract_set).values_list(*numer_rows)
-	data_denom = Census.objects.filter(boundary__set=tract_set).values_list(*denom_rows)
-	ok_numer = sum(list(ok_data_new_numer))
-	ok_denom = sum(list(ok_data_new_denom))
-	ok_percentile = uk_numer/float(ok_denom)
+	ok_boundary = Boundary.objects.get(slug='oklahoma-state')
+	ok_data = Census.objects.filter(boundary=ok_boundary).values_list(*numer_rows + denom_rows).first()
+	tract_data = Census.objects.filter(boundary__set=tract_set).values_list(*numer_rows + denom_rows)
+	ok_numer = sum(ok_data[:numer_length])
+	ok_denom = sum(ok_data[numer_length:numer_length+denom_length])
+	ok_percentile = ok_numer/float(ok_denom)
 
 	count = 0
-	denom_location = 0
 	total = 0.0
-	data_numer_list = []
-	data_denom_list = []	
-	for tracts in data_numer:
-		current_tract = list(tracts)
-		sum_tract = sum(current_tract)
-		data_numer_list.append(sum_tract)
-
-	for tracts in data_denom:
-		current_tract = list(tracts)
-		sum_tract = sum(current_tract)
-		data_denom_list.append(sum_tract)
-
-	for denoms in data_denom_list:
-		if denoms != 0:
-			dec_num = data_numer_list[denom_location]
-			dec = (dec_num/float(denoms) - ok_percentile)**2
-			total += dec
+	for tract in tract_data:
+		if sum(tract[numer_length:numer_length+denom_length]) != 0:
+			tract_numer = sum(tract[:numer_length])
+			tract_denom = sum(tract[numer_length:numer_length+denom_length])
+			total += (tract_numer/float(tract_denom) - ok_percentile)**2
 			count += 1
-		denom_location += 1
-	total = (total/float(count))**(0.5)
-	return total
+
+	final_total = (total/float(count))**(0.5)
+	return final_total
 
 
 def avg_multiple_rows(rows):

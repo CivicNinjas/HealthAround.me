@@ -153,6 +153,19 @@ class PercentAlgorithmTest(TestCase):
             B23001_162E=0.00,
             B23001_167E=0.00,
             B23001_172E=0.00,
+            B09002_001E=4.00,
+            B09002_008E=0.00,
+            B25091_001E=147.0,
+            B25070_001E=895.0,
+            B25070_008E=52.0,
+            B25070_009E=54.0,
+            B25070_010E=215.0,
+            B25091_009E=0.00,
+            B25091_010E=4.00,
+            B25091_011E=11.0,
+            B25091_020E=0.00,
+            B25091_021E=0.00,
+            B25091_022E=0.00,     
         )
 
     def assertBoundary(self, boundary):
@@ -204,6 +217,7 @@ class PercentAlgorithmTest(TestCase):
         self.assertEqual(expected_score, dict(score))
         self.assertCitation('B19058', citation)
         self.assertBoundary(boundary)
+
 
     def test_percent_poverty(self):
         metric = ScoreMetric.objects.create(
@@ -258,5 +272,59 @@ class PercentAlgorithmTest(TestCase):
         }
         self.assertEqual(expected_score, dict(score))
         self.assertCitation('B23001', citation)
+        self.assertBoundary(boundary)
+
+    def test_percent_single_parent(self):
+        metric = ScoreMetric.objects.create(
+            name = "Percent Single Parent",
+            algorithm = ScoreMetric.PERCENT_SINGLE_PARENT_ALGORITHM,
+            boundary_set=self.tract_set,
+            data_property = 'B09002_001E',
+            description=(
+                "Percent of Children Living with a Single Parent")
+            )
+        point = (-95.9907, 36.1524)
+        algorithm = metric.get_algorithm()
+        score, citation, boundary = algorithm.calculate(point)
+        expected_score = {
+            "score": 0.997,
+            "value": 0.0,
+            "average": 0.452998,
+            "std_dev": 0.1657150,
+            "value_type": "percent",
+            "description": (
+                "Percent of Children Living with a Single Parent"),
+            "citation_path": '/api/citation/census/B09002/',
+            "boundary_path": '/api/boundary/census-tract-25/',           
+        }
+        self.assertEqual(expected_score, dict(score))
+        self.assertCitation('B09002', citation)
+        self.assertBoundary(boundary)
+
+    def test_percent_income_housing_cost(self):
+        metric = ScoreMetric.objects.create(
+            name = "Percent Income Housing Cost",
+            algorithm = ScoreMetric.PERCENT_INCOME_HOUSING_COST_ALGORITHM,
+            boundary_set=self.tract_set,
+            data_property = ('B25091','B25070'),
+            description=(
+                "Data calculated from values in both of these tables.")
+            )
+        point = (-95.9907, 36.1524)
+        algorithm = metric.get_algorithm()
+        score, citation, boundary = algorithm.calculate(point)
+        expected_score = {
+            "score": 0.118,
+            "value": 0.257,
+            "average": 0.1544959,
+            "std_dev": 0.0867039,
+            "value_type": "percent",
+            "description": (
+                "Data calculated from values in both of these tables."),
+            "citation_path": ("/api/citation/census/('B25091', 'B25070')/"),
+            "boundary_path": '/api/boundary/census-tract-25/',           
+        }
+        self.assertEqual(expected_score, dict(score))
+        self.assertCitation(('B25091','B25070'), citation)
         self.assertBoundary(boundary)
 

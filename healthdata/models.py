@@ -48,6 +48,8 @@ class ScoreMetric(models.Model):
     FOOD_STAMP_ALGORITHM = 1
     PERCENT_POVERTY_ALGORITHM = 2
     PERCENT_UNEMPLOYMENT_ALGORITHM = 3
+    PERCENT_SINGLE_PARENT_ALGORITHM = 4
+    PERCENT_INCOME_HOUSING_COST_ALGORITHM = 5
     algorithm_choices = (
         (FAKE_ALGORITHM, 'FakeAlgorithm', 'Fake Algorithm'),
         (FOOD_STAMP_ALGORITHM, 'FoodStampAlgorithm', 'Food Stamp Algorithm'),
@@ -55,6 +57,10 @@ class ScoreMetric(models.Model):
          'Percent Poverty Algorithm'),
         (PERCENT_UNEMPLOYMENT_ALGORITHM, 'PercentUnemploymentAlgorithm',
          'Percent Unemployment Algorithm'),
+        (PERCENT_SINGLE_PARENT_ALGORITHM, 'PercentSingleParentAlgorithm',
+         'Percent Single Parent Algorithm'),
+        (PERCENT_INCOME_HOUSING_COST_ALGORITHM, 'PercentIncomeHousingCostAlgorithm',
+         'Percent Income Housing Cost Algorithm'),
     )
     algorithm_class_name = dict([(a[0], a[1]) for a in algorithm_choices])
 
