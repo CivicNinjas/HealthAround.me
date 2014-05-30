@@ -28,6 +28,11 @@ TABLES = {
             'Geographical Mobility In The Past Year By Sex For Current'
             ' Residence In The United States US Only'),
     },
+    'B07013': {
+        'description': (
+            'Geographical Mobility in the Past Year by Tenure'
+            ' for Current Residence in the United States'),
+    },
     'B07413': {
         'description': (
             'Geographical Mobility in the Past Year by Tenure for Residence'
@@ -109,6 +114,10 @@ TABLES = {
         'description': (
             'School Enrollment By Detailed Level Of School For The Population'
             ' 3 Years And Over'),
+    },
+    'B15002': {
+        'description': (
+            'Sex by Educational Attainment for the Population 25 Years and Over')
     },
     'C15002': {
         'description': 'Sex by Educational Attainment.',
@@ -216,6 +225,9 @@ TABLES = {
     'B25004': {
         'description': 'Vacancy',
     },
+    'B25014': {
+        'description': 'Tenure by Occupants Per Room',
+    },
     'B25016': {
         'description': 'Tenure by Plumbing Facilties by Occupants Per Room',
     },
@@ -230,6 +242,9 @@ TABLES = {
     },
     'B25042': {
         'description': 'Tenure by Bedrooms',
+    },
+    'B25048': {
+        'description': 'Plumbing Facilities for Occupied Housing Units',
     },
     'B25052': {
         'description': 'Kitchen Facilities for Occupied Housing Units',

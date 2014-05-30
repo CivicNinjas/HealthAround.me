@@ -50,6 +50,15 @@ class ScoreMetric(models.Model):
     PERCENT_UNEMPLOYMENT_ALGORITHM = 3
     PERCENT_SINGLE_PARENT_ALGORITHM = 4
     PERCENT_INCOME_HOUSING_COST_ALGORITHM = 5
+    PERCENT_HIGH_SCHOOL_GRADUATES_ALGORITHM = 6
+    PERCENT_DIVORCED_MARRIAGE_ALGORITHM = 7
+    PERCENT_OVERCROWDING_ALGORITHM = 8
+    PERCENT_GEOGRAPHIC_MOBILITY_ALGORITHM = 9 
+    PERCENT_COLLEGE_GRADUATE_ALGORITHM = 10
+    PERCENT_BAD_COMMUTE_TIMES_ALGORITHM = 11
+    PERCENT_IMPROPER_KITCHEN_FACILITIES_ALGORITHM = 12
+    PERCENT_IMPROPER_PLUMBING_ALGORITHM = 13
+    PERCENT_LOW_VALUE_HOUSING_ALGORITHM = 14
     algorithm_choices = (
         (FAKE_ALGORITHM, 'FakeAlgorithm', 'Fake Algorithm'),
         (FOOD_STAMP_ALGORITHM, 'FoodStampAlgorithm', 'Food Stamp Algorithm'),
@@ -61,6 +70,24 @@ class ScoreMetric(models.Model):
          'Percent Single Parent Algorithm'),
         (PERCENT_INCOME_HOUSING_COST_ALGORITHM, 'PercentIncomeHousingCostAlgorithm',
          'Percent Income Housing Cost Algorithm'),
+        (PERCENT_HIGH_SCHOOL_GRADUATES_ALGORITHM, 'PercentHighSchoolGraduatesAlgorithm',
+         'Percent High School Graduates Algorithm'),
+        (PERCENT_DIVORCED_MARRIAGE_ALGORITHM, 'PercentDivorcedMarriageAlgorithm',
+         'Percent Divorced Marriage Algorithm'),
+        (PERCENT_OVERCROWDING_ALGORITHM, 'PercentOvercrowdingAlgorithm',
+         'Percent Overcrowding Algorithm'),
+        (PERCENT_GEOGRAPHIC_MOBILITY_ALGORITHM, 'PercentGeographicMobilityAlgorithm',
+         'Percent Geographic Mobility Algorithm'),
+        (PERCENT_COLLEGE_GRADUATE_ALGORITHM, 'PercentCollegeGraduateAlgorithm',
+         'Percent College Graduate Algorithm'),
+        (PERCENT_BAD_COMMUTE_TIMES_ALGORITHM, 'PercentBadCommuteTimesAlgorithm',
+         'Percent Bad Commute Times Algorithm'),
+        (PERCENT_IMPROPER_KITCHEN_FACILITIES_ALGORITHM, 'PercentImproperKitchenFacilitiesAlgorithm',
+         'Percent Improper Kitchen Facilities'),
+        (PERCENT_IMPROPER_PLUMBING_ALGORITHM, 'PercentImproperPlumbingAlgorithm',
+         'Percent Improper Plumbing Algorithm'),
+        (PERCENT_LOW_VALUE_HOUSING_ALGORITHM, 'PercentLowValueHousingAlgorithm',
+         'Percent Low Value Housing Algorithm'),
     )
     algorithm_class_name = dict([(a[0], a[1]) for a in algorithm_choices])
 
