@@ -61,15 +61,6 @@ class ScoreMetric(models.Model):
     description = models.CharField(
         max_length=255, default="This is a description",
         help_text='Human-readable description')
-    data_source = models.ForeignKey(
-        ContentType, null=True, blank=True,
-        help_text='Model that Holds the Source Data')
-    boundary_set = models.ForeignKey(
-        BoundarySet, null=True, blank=True,
-        help_text='Related Boundary Set with Data')
-    data_property = models.CharField(
-        max_length=50, null=True, blank=True,
-        help_text='Data property used for source data')
     algorithm = models.IntegerField(
         choices=[(a[0], a[2]) for a in algorithm_choices],
         default=PLACEHOLDER_ALGORITHM,
