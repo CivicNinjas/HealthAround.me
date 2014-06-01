@@ -1,96 +1,113 @@
+import json
+
 from boundaryservice.models import Boundary, BoundarySet
-from django.test import TestCase
+from django.test import TestCase as BaseTestCase
 
 from data.models import Census
-from healthdata.models import ScoreMetric
+from healthdata.models import ScoreMetric, ScoreNode
+from healthdata.utils import fake_boundary
+
+
+class TestCase(BaseTestCase):
+    maxDiff = None
+
+    def assertScoreEqual(self, expected, calculated):
+        '''
+        Assert calculated is equal to the equivalent dict
+
+        calculated includes OrderDicts, so it is serialized through
+        JSON to turn them into plain dicts
+        '''
+        actual = json.loads(json.dumps(calculated))
+        self.assertDictEqual(expected, actual)
 
 
 class FakeAlgorithmTest(TestCase):
-    maxDiff = None
-
     def setUp(self):
-        self.tract_set = BoundarySet.objects.create(
-            name='Census Tract',
-            kind_first=True,
-            last_updated='2014-05-21',
-            count=0,
-            metadata_fields=['GEOID'])
+        self.point = (-95.9907, 36.1524)
+        self.boundary = fake_boundary(self.point, 2)
 
-    def assertBoundary(self, slug, point_id, boundary):
-        expected_boundary = {
-            "path": '/api/boundary/fake/{}/{}/'.format(slug, point_id),
-            'label': u'Fake Data Boundary',
-            'year': 2010,
-            'type': 'fake',
-            'id': point_id,
+    def assertRandomResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.18,
+                u"value": 0.64,
+                u"value_type": u"percent",
+                u"description": u"A random statistic",
+            },
+            u"detail": {
+                u"path": u"/api/detail/fake_2_-96.00_36.15/random-stat/",
+                u"score_text": (
+                    u"We don't have data for Random Stat yet, but studies show"
+                    u" it has an impact on the health of a community. Do you"
+                    u" know about a data source?"
+                    u" <a href='#'>Tell us about it</a>."),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/fake_2_-96.00_36.15/",
+                u"label": "Future Data Placeholder",
+                u"type": "Placeholder",
+            },
         }
-        self.assertEqual(expected_boundary, dict(boundary))
+        self.assertScoreEqual(expected, score)
 
-    def assertCitation(self, slug, point_id, citation):
-        expected_citation = {
-            'path': '/api/citation/fake/{}/{}/'.format(slug, point_id),
-            'label': 'Fake Data Citation',
-            'year': 2010,
-            'type': 'fake',
-            'id': point_id,
-        }
-        self.assertEqual(expected_citation, dict(citation))
-
-    def test_calculate_random_stat(self):
+    def random_stat_node(self):
         metric = ScoreMetric.objects.create(
             name=u"Random Stat",
-            algorithm=ScoreMetric.FAKE_ALGORITHM,
-            boundary_set=self.tract_set,
+            algorithm=ScoreMetric.PLACEHOLDER_ALGORITHM,
             description=u"A random statistic")
-        point = (-95.9907, 36.1524)
-        point_id = '-95.9907,36.1524'
-        algorithm = metric.get_algorithm()
-        score, citation, boundary = algorithm.calculate(point)
-        expected_score = {
-            "score": 0.36,
-            "value": 0.17,
-            "value_type": "percent",
-            "description": u"A random statistic",
-            "citation_path": (
-                '/api/citation/fake/random-stat/{}/'.format(point_id)),
-            "boundary_path": (
-                '/api/boundary/fake/random-stat/{}/'.format(point_id)),
-        }
-        self.assertEqual(expected_score, dict(score))
-        self.assertCitation('random-stat', point_id, citation)
-        self.assertBoundary('random-stat', point_id, boundary)
+        return ScoreNode(
+            slug='random-stat', metric=metric, label='Random Stat')
 
-    def test_calculate_other_random_stat(self):
+    def test_calculate_random_stat_by_boundary(self):
+        node = self.random_stat_node()
+        calculated = node.score_by_boundary(self.boundary)
+        self.assertRandomResult(calculated)
+
+    def test_calculate_random_stat_by_location(self):
+        node = self.random_stat_node()
+        location = (-95.994, 36.153)
+        score = node.score_by_location(location)
+        self.assertRandomResult(score)
+
+    def test_score_other_random_stat_by_boundary(self):
         metric = ScoreMetric.objects.create(
             name=u"Other Random Stat",
-            algorithm=ScoreMetric.FAKE_ALGORITHM,
-            boundary_set=self.tract_set,
+            algorithm=ScoreMetric.PLACEHOLDER_ALGORITHM,
             description=u"Another random statistic")
-        point = (-95.9907, 36.1524)
-        point_id = '-95.9907,36.1524'
-        algorithm = metric.get_algorithm()
-        score, citation, boundary = algorithm.calculate(point)
-        expected_score = {
-            "score": 0.36,
-            "value": 0.47,
-            "value_type": "percent",
-            "description": u"Another random statistic",
-            "citation_path": (
-                '/api/citation/fake/other-random-stat/{}/'.format(point_id)),
-            "boundary_path": (
-                '/api/boundary/fake/other-random-stat/{}/'.format(point_id)),
+        node = ScoreNode(
+            slug='other-stat', metric=metric, label='Other Stat')
+        score = node.score_by_boundary(self.boundary)
+        expected = {
+            u"summary": {
+                u"score": 0.03,
+                u"value": 0.76,
+                u"value_type": u"percent",
+                u"description": u"Another random statistic",
+            },
+            u"detail": {
+                u"path": (
+                    u"/api/detail/fake_2_-96.00_36.15/other-stat/"),
+                u"score_text": (
+                    u"We don't have data for Other Stat yet, but studies show"
+                    u" it has an impact on the health of a community. Do you"
+                    u" know about a data source?"
+                    u" <a href='#'>Tell us about it</a>."),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/fake_2_-96.00_36.15/",
+                u"label": "Future Data Placeholder",
+                u"type": "Placeholder",
+            },
         }
-        self.assertEqual(expected_score, dict(score))
-        self.assertCitation('other-random-stat', point_id, citation)
-        self.assertBoundary('other-random-stat', point_id, boundary)
+        self.assertScoreEqual(expected, score)
 
 
 class PercentAlgorithmTest(TestCase):
-    maxDiff = None
-
     def setUp(self):
         self.tract_set = BoundarySet.objects.create(
             name='Census Tract',
+            slug='census-tracts',
             kind_first=True,
             last_updated='2014-05-21',
             count=0,
@@ -110,16 +127,19 @@ class PercentAlgorithmTest(TestCase):
             '-95.99611 36.14555, -95.99969 36.14541, -96.00045 36.14555, '
             '-96.00182 36.14595, -96.00224 36.14639, -96.00260 36.14702, '
             '-96.00269 36.14836)))')
-        tract = Boundary.objects.create(
+        self.tract = Boundary.objects.create(
             slug='census-tract-25',
+            name='Census Tract 25',
             set=self.tract_set,
             metadata={'GEOID': '40143002500'},
             external_id='40143002500',
             shape=shape,
             display_name='Census Tract 25',
+            kind='Census Tract',
             simple_shape=shape)
+        self.location = (-95.99, 36.15)
         Census.objects.create(
-            boundary=tract,
+            boundary=self.tract,
             logical_num=4846,
             B19058_001E=1042,
             B19058_002E=217,
@@ -128,79 +148,89 @@ class PercentAlgorithmTest(TestCase):
             B17001_002E=534,
         )
 
-    def assertBoundary(self, boundary):
-        expected_boundary = {
-            'path': '/api/boundary/census-tract-25/',
-            'label': u'Census Tract 25',
-            'year': 2013,
-            'external_id': u'40143002500',
-            'type': u'Census Tract',
-            'id': u'census-tract-25',
-        }
-        self.assertEqual(expected_boundary, dict(boundary))
-
-    def assertCitation(self, citation_id, citation):
-        expected_citation = {
-            'path': '/api/citation/census/{}/'.format(citation_id),
-            'label': 'Census 5 Year Summary, 2008-2012',
-            'year': 2012,
-            'type': 'percent',
-            'id': citation_id,
-        }
-        self.assertEqual(expected_citation, dict(citation))
-
-    def test_food_stamp(self):
+    def food_stamp_node(self):
         metric = ScoreMetric.objects.create(
             name="% Food Stamp",
             algorithm=ScoreMetric.FOOD_STAMP_ALGORITHM,
-            boundary_set=self.tract_set,
-            data_property='B19058_001E',
             description=(
                 "% of households on public assistance income or food"
                 " stamps/SNAP in the past 12 months")
         )
-        point = (-95.9907, 36.1524)
-        algorithm = metric.get_algorithm()
-        score, citation, boundary = algorithm.calculate(point)
-        expected_score = {
-            "score": 0.254,
-            "value": 0.208,
-            "average": 0.138,
-            "std_dev": 0.106,
-            "value_type": "percent",
-            "description": (
-                "% of households on public assistance income or food"
-                " stamps/SNAP in the past 12 months"),
-            "citation_path": '/api/citation/census/B19058/',
-            "boundary_path": '/api/boundary/census-tract-25/',
-        }
-        self.assertEqual(expected_score, dict(score))
-        self.assertCitation('B19058', citation)
-        self.assertBoundary(boundary)
+        return ScoreNode(slug='food-stamp', metric=metric)
 
-    def test_percent_poverty(self):
+    def assertFoodStampResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.254,
+                u"value": 0.208,
+                u"average": 0.138,
+                u"std_dev": 0.106,
+                u"value_type": u"percent",
+                u"description": (
+                    u"% of households on public assistance income or food"
+                    u" stamps/SNAP in the past 12 months"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/census-tract-25/food-stamp/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_food_stamp_by_boundary(self):
+        node = self.food_stamp_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertFoodStampResult(score)
+
+    def test_food_stamp_by_location(self):
+        node = self.food_stamp_node()
+        score = node.score_by_location(self.location)
+        self.assertFoodStampResult(score)
+
+    def percent_poverty_node(self):
         metric = ScoreMetric.objects.create(
             name="Percent Poverty",
             algorithm=ScoreMetric.PERCENT_POVERTY_ALGORITHM,
-            boundary_set=self.tract_set,
-            data_property='B17001_001E',
             description=(
                 "Percent Poverty status in the past 12 months")
         )
-        point = (-95.9907, 36.1524)
-        algorithm = metric.get_algorithm()
-        score, citation, boundary = algorithm.calculate(point)
-        expected_score = {
-            "score": 0.09,
-            "value": 0.325,
-            "average": 0.166,
-            "std_dev": 0.118383,
-            "value_type": "percent",
-            "description": (
-                "Percent Poverty status in the past 12 months"),
-            "citation_path": '/api/citation/census/B17001/',
-            "boundary_path": '/api/boundary/census-tract-25/',
+        return ScoreNode(slug='percent-poverty', metric=metric)
+
+    def assertPercentPovertyResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.09,
+                u"value": 0.325,
+                u"average": 0.166,
+                u"std_dev": 0.118383,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent Poverty status in the past 12 months"),
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/percent-poverty/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
         }
-        self.assertEqual(expected_score, dict(score))
-        self.assertCitation('B17001', citation)
-        self.assertBoundary(boundary)
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_poverty_by_boundary(self):
+        node = self.percent_poverty_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentPovertyResult(score)
+
+    def test_percent_poverty_by_location(self):
+        node = self.percent_poverty_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentPovertyResult(score)

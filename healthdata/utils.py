@@ -13,6 +13,7 @@ def std_dev_across_tracts(total_col, target_cols):
     '''
     # Get average for all Oklahoma
     # TODO: Why did the slug change between database loads?
+    # 'oklahoma-state' on one box, 'state-oklahoma' on another
     ok_state = Boundary.objects.get(set__slug='states', external_id=40)
     ok_data = Census.objects.filter(
         boundary=ok_state).values_list(total_col, *target_cols)[0]
@@ -79,31 +80,7 @@ def fake_boundary(location, precision):
         '{bot_lon:0.{precision}f}_'
         '{bot_lat:0.{precision}f}').format(**params)
     boundary = Boundary(
-        shape=shape_wkt, display_name='Pending Data', kind='Pending Data',
-        slug=fake_slug, centroid=centroid_wkt, name='fake')
+        shape=shape_wkt, display_name='Future Data Placeholder',
+        kind='Future Data Placeholder',
+        slug=fake_slug, centroid=centroid_wkt, name='Placeholder')
     return boundary
-
-
-def boundaries_for_location(location, set_slugs):
-    '''
-    Generate Boundaries for a location
-
-    location - a (lon, lat) pair of floats
-    set_slugs - a list of BoundarySet slugs, like 'census-tracts' or
-        'states'.  The boundaries are returned in this order.  A slug
-        of 'fake_2' will generate a fake Boundary with two decimals of
-        precision (about a mile tall).
-    '''
-    wkt = 'POINT({} {})'.format(*location)
-    for boundary_slug in set_slugs:
-        if boundary_slug.startswith('fake_'):
-            _, precision = boundary_slug.split('_', 2)
-            boundary = fake_boundary(location, int(precision))
-        else:
-            boundary_set = BoundarySet.objects.get(slug=boundary_slug)
-            try:
-                boundary = Boundary.objects.get(
-                    set=boundary_set, shape__contains=wkt)
-            except Boundary.DoesNotExist:
-                continue
-        yield boundary
