@@ -50,7 +50,7 @@ class ScoreMetric(models.Model):
     PERCENT_SINGLE_PARENT_ALGORITHM = 4
     PERCENT_INCOME_HOUSING_COST_ALGORITHM = 5
     PERCENT_HIGH_SCHOOL_GRADUATES_ALGORITHM = 6
-    PERCENT_DIVORCED_MARRIAGE_ALGORITHM = 7
+    PERCENT_DIVORCED_ALGORITHM = 7
     PERCENT_OVERCROWDING_ALGORITHM = 8
     PERCENT_GEOGRAPHIC_MOBILITY_ALGORITHM = 9
     PERCENT_COLLEGE_GRADUATE_ALGORITHM = 10
@@ -74,9 +74,9 @@ class ScoreMetric(models.Model):
         (PERCENT_HIGH_SCHOOL_GRADUATES_ALGORITHM,
          'PercentHighSchoolGraduatesAlgorithm',
          'Percent High School Graduates Algorithm'),
-        (PERCENT_DIVORCED_MARRIAGE_ALGORITHM,
-         'PercentDivorcedMarriageAlgorithm',
-         'Percent Divorced Marriage Algorithm'),
+        (PERCENT_DIVORCED_ALGORITHM,
+         'PercentDivorcedOrSeparatedAlgorithm',
+         'Percent Divorced or Separated Algorithm'),
         (PERCENT_OVERCROWDING_ALGORITHM,
          'PercentOvercrowdingAlgorithm',
          'Percent Overcrowding Algorithm'),
