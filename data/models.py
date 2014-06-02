@@ -270,6 +270,65 @@ class Census(models.Model):
         blank=True, null=True,
         help_text='Female')
 
+    # B07013 - Geographical Mobility In the Past Year by Tenure For
+    #          Current Residence In the United States
+    B07013_001E = models.IntegerField(
+        blank=True, null=True,
+        help_text=(
+            'Geographical Mobility In the Past Year by Tenure For Current'
+            ' Residence In the United States: Total:'))
+    B07013_002E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07013_003E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+    B07013_004E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Same house 1 year ago:')
+    B07013_005E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07013_006E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+    B07013_007E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Moved within same county:')
+    B07013_008E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07013_009E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+    B07013_010E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Moved from different county within same state:')
+    B07013_011E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07013_012E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+    B07013_013E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Moved from different state:')
+    B07013_014E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07013_015E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+    B07013_016E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Moved from abroad:')
+    B07013_017E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in owner-occupied housing units')
+    B07013_018E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Householder lived in renter-occupied housing units')
+
     # B07413 - Geographical Mobility In the Past Year by Tenure For
     #          Residence 1 Year Ago In the United States
     B07413_001E = models.IntegerField(
@@ -1518,6 +1577,116 @@ class Census(models.Model):
     B14007_019E = models.IntegerField(
         blank=True, null=True,
         help_text='Not enrolled in school')
+
+    # B15002 - Sex by Educational Attainment For the Population 25
+    #          Years And Over
+    B15002_001E = models.IntegerField(
+        blank=True, null=True,
+        help_text=(
+            'Sex by Educational Attainment For the Population 25 Years And'
+            ' Over: Total:'))
+    B15002_002E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Male:')
+    B15002_003E = models.IntegerField(
+        blank=True, null=True,
+        help_text='No schooling completed')
+    B15002_004E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Nursery to 4th grade')
+    B15002_005E = models.IntegerField(
+        blank=True, null=True,
+        help_text='5th and 6th grade')
+    B15002_006E = models.IntegerField(
+        blank=True, null=True,
+        help_text='7th and 8th grade')
+    B15002_007E = models.IntegerField(
+        blank=True, null=True,
+        help_text='9th grade')
+    B15002_008E = models.IntegerField(
+        blank=True, null=True,
+        help_text='10th grade')
+    B15002_009E = models.IntegerField(
+        blank=True, null=True,
+        help_text='11th grade')
+    B15002_010E = models.IntegerField(
+        blank=True, null=True,
+        help_text='12th grade, no diploma')
+    B15002_011E = models.IntegerField(
+        blank=True, null=True,
+        help_text='High school graduate, GED, or alternative')
+    B15002_012E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Some college, less than 1 year')
+    B15002_013E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Some college, 1 or more years, no degree')
+    B15002_014E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Associate\'s degree')
+    B15002_015E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Bachelor\'s degree')
+    B15002_016E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Master\'s degree')
+    B15002_017E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Professional school degree')
+    B15002_018E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Doctorate degree')
+    B15002_019E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Female:')
+    B15002_020E = models.IntegerField(
+        blank=True, null=True,
+        help_text='No schooling completed')
+    B15002_021E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Nursery to 4th grade')
+    B15002_022E = models.IntegerField(
+        blank=True, null=True,
+        help_text='5th and 6th grade')
+    B15002_023E = models.IntegerField(
+        blank=True, null=True,
+        help_text='7th and 8th grade')
+    B15002_024E = models.IntegerField(
+        blank=True, null=True,
+        help_text='9th grade')
+    B15002_025E = models.IntegerField(
+        blank=True, null=True,
+        help_text='10th grade')
+    B15002_026E = models.IntegerField(
+        blank=True, null=True,
+        help_text='11th grade')
+    B15002_027E = models.IntegerField(
+        blank=True, null=True,
+        help_text='12th grade, no diploma')
+    B15002_028E = models.IntegerField(
+        blank=True, null=True,
+        help_text='High school graduate, GED, or alternative')
+    B15002_029E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Some college, less than 1 year')
+    B15002_030E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Some college, 1 or more years, no degree')
+    B15002_031E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Associate\'s degree')
+    B15002_032E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Bachelor\'s degree')
+    B15002_033E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Master\'s degree')
+    B15002_034E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Professional school degree')
+    B15002_035E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Doctorate degree')
 
     # B15003 - Educational Attainment For the Population 25 Years And Over
     B15003_001E = models.IntegerField(
@@ -3022,6 +3191,47 @@ class Census(models.Model):
         blank=True, null=True,
         help_text='Other vacant')
 
+    # B25014 - Tenure by Occupants Per Room
+    B25014_001E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Tenure by Occupants Per Room: Total:')
+    B25014_002E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Owner occupied:')
+    B25014_003E = models.IntegerField(
+        blank=True, null=True,
+        help_text='0.50 or less occupants per room')
+    B25014_004E = models.IntegerField(
+        blank=True, null=True,
+        help_text='0.51 to 1.00 occupants per room')
+    B25014_005E = models.IntegerField(
+        blank=True, null=True,
+        help_text='1.01 to 1.50 occupants per room')
+    B25014_006E = models.IntegerField(
+        blank=True, null=True,
+        help_text='1.51 to 2.00 occupants per room')
+    B25014_007E = models.IntegerField(
+        blank=True, null=True,
+        help_text='2.01 or more occupants per room')
+    B25014_008E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Renter occupied:')
+    B25014_009E = models.IntegerField(
+        blank=True, null=True,
+        help_text='0.50 or less occupants per room')
+    B25014_010E = models.IntegerField(
+        blank=True, null=True,
+        help_text='0.51 to 1.00 occupants per room')
+    B25014_011E = models.IntegerField(
+        blank=True, null=True,
+        help_text='1.01 to 1.50 occupants per room')
+    B25014_012E = models.IntegerField(
+        blank=True, null=True,
+        help_text='1.51 to 2.00 occupants per room')
+    B25014_013E = models.IntegerField(
+        blank=True, null=True,
+        help_text='2.01 or more occupants per room')
+
     # B25016 - Tenure by Plumbing Facilities by Occupants Per Room
     B25016_001E = models.IntegerField(
         blank=True, null=True,
@@ -3218,6 +3428,17 @@ class Census(models.Model):
     B25042_015E = models.IntegerField(
         blank=True, null=True,
         help_text='5 or more bedrooms')
+
+    # B25048 - Plumbing Facilities For Occupied Housing Units
+    B25048_001E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Plumbing Facilities For Occupied Housing Units: Total:')
+    B25048_002E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Complete plumbing facilities')
+    B25048_003E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Lacking complete plumbing facilities')
 
     # B25052 - Kitchen Facilities For Occupied Housing Units
     B25052_001E = models.IntegerField(
