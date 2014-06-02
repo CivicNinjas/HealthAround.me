@@ -193,6 +193,16 @@ class CensusPercentAlgorithm(BaseAlgorithm):
             else:
                 yield boundary
 
+    def local_percent(self, source_data):
+        '''
+        Calculate the local percentage for the source data
+        '''
+        total_fields, target_fields = self.get_fields()
+        total = sum([getattr(source_data, f) for f in total_fields])
+        target = sum([getattr(source_data, f) for f in target_fields])
+        percent = float(target) / float(total)
+        return percent
+
     def score(self, source_data):
         '''
         Score based on the ratio vs the state ratio
@@ -206,10 +216,7 @@ class CensusPercentAlgorithm(BaseAlgorithm):
         function (CDF) with the tract's ratio, the state average, and the
         state standard deviation.  The last two can be pre-calcuated.
         '''
-        total_fields, target_fields = self.get_fields()
-        total = sum([getattr(source_data, f) for f in total_fields])
-        target = sum([getattr(source_data, f) for f in target_fields])
-        percent = float(target) / float(total)
+        percent = self.local_percent(source_data)
         avg, std_dev, better_sign = self.get_stats(source_data)
         cdf = norm.cdf(percent, avg, std_dev)
         if better_sign >= 0:
@@ -288,3 +295,310 @@ class PercentPovertyAlgorithm(CensusPercentAlgorithm):
         std_dev = 0.118383
         better_sign = -1
         return average, std_dev, better_sign
+
+
+def boundaries(point):
+    raise Exception('Convert to new way')
+
+
+def boundary_dict(boundary):
+    raise Exception('Convert to new way')
+
+
+class PercentUnemploymentAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on employment status is unemployed for 16 and older
+    '''
+
+    table = 'B23001'
+    total_column_ids = (1,)
+    target_column_ids = (
+        # Unemployed by age buckets
+        8,   15,  22,  29,  36,  43,  50,  57,  64,  71,    # Male, 16 to 64
+        76,  81,  86,                                       # Male, 65 and up
+        94, 101, 108, 115, 122, 129, 136, 143, 150, 157,    # Female 16 to 64
+        162, 167, 172)                                      # Female 65 and up
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.04193
+        std_dev = 0.0266
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+class PercentSingleParentAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on # of children w/o two parents
+    '''
+    table = 'B09002'
+    total_column_ids = (1,)
+    target_column_ids = (8,)  # Count not in married-couple families
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.452998
+        std_dev = 0.1657150
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+class PercentIncomeHousingCostAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on weighted percent requiring more than 35% of income
+
+    Combines data from two tables:
+    B25070: Gross Rent as a Percentage of Household Income
+    B25091: Morgage Status by Selected Monthly Owner Costs as a Percentage of
+            Household Income
+    '''
+
+    tables = {
+        'B25070': {
+            'total_column_ids': (1,),
+            'target_column_ids': (8, 9, 10),
+        },
+        'B25091': {
+            'total_column_ids': (1,),
+            'target_column_ids': (9, 10, 11, 20, 21, 22),
+        },
+    }
+
+    def get_fields(self):
+        '''Get fields from both tables'''
+        total_fields = []
+        target_fields = []
+        for table, columns in self.tables.items():
+            pattern = table + '_{:03}E'
+            total_fields.extend(
+                [pattern.format(f) for f in columns['total_column_ids']])
+            target_fields.extend(
+                [pattern.format(f) for f in columns['target_column_ids']])
+        return total_fields, target_fields
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.1544959
+        std_dev = 0.0867039
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        '''Calculate a weighted percentage'''
+        total_fields, _ = self.get_fields()
+        total = sum([getattr(source_data, f) for f in total_fields])
+        total_renter_gradual = (
+            source_data.B25070_008E / float(4) +  # 35% - 39.9%
+            source_data.B25070_009E / float(2) +  # 40% - 49.9%
+            source_data.B25070_010E / float(1))   # 50% or more
+        total_mortgaged_owner = (
+            source_data.B25091_009E / float(4) +  # 35% - 39.9%
+            source_data.B25091_010E / float(2) +  # 40% - 49.9%
+            source_data.B25091_011E / float(1))   # 50% or more
+        total_unmortgaged_owner = (
+            source_data.B25091_020E / float(4) +  # 35% - 39.9%
+            source_data.B25091_021E / float(2) +  # 40% - 49.9%
+            source_data.B25091_022E / float(1))   # 50% or more
+        weighted_percent_affordable = (
+            total_renter_gradual + total_mortgaged_owner +
+            total_unmortgaged_owner) / float(total)
+        return weighted_percent_affordable
+
+
+class PercentHighSchoolGraduatesAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on population 25 or older with a high school diploma
+
+    TODO: Switch to table B15003?
+    '''
+    table = 'B15002'
+    total_column_ids = (1,)
+    target_column_ids = (
+        11, 12, 13, 14, 15, 16, 17, 18,  # Male, High School Grad or better
+        28, 29, 30, 31, 32, 33, 34, 35)  # Female, High School Grad or better
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.861836
+        std_dev = 0.096739
+        better_sign = 1
+        return average, std_dev, better_sign
+
+
+class PercentDivorcedOrSeparatedAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on population that is divorced or separated but not widowed
+    '''
+    table = 'B12001'
+    total_column_ids = (1, )
+    target_column_ids = (3, 9, 12, 18, 5, 14)
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.264508
+        std_dev = 0.139789
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        '''
+        Calcuate the percent that were once married but aren't now
+        '''
+        total = source_data.B12001_001E
+        never_married = source_data.B12001_003E + source_data.B12001_012E
+        widowed = source_data.B12001_009E + source_data.B12001_018E
+        married_and_present = source_data.B12001_005E + source_data.B12001_014E
+        current_married_percent = (
+            married_and_present / float(total - never_married - widowed))
+        return 1.0 - current_married_percent
+
+
+class PercentOvercrowdingAlgorithm(CensusPercentAlgorithm):
+    '''Score based on weighted occupants per room'''
+    table = 'B25014'
+    total_column_ids = (1,)
+    target_column_ids = (3, 4, 5, 6, 7, 9, 10, 11, 12, 13)
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.040577
+        std_dev = 0.014887
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        '''Return a weighted percentage of over-occupied residences'''
+        total = source_data.B25014_001E
+        # Get sum for owner-occupied and renter-occupied by occupants per room
+        per_1_0 = source_data.B25014_004E + source_data.B25014_010E  # .5 - 1
+        per_1_5 = source_data.B25014_005E + source_data.B25014_011E  # 1 - 1.5
+        per_2_0 = source_data.B25014_006E + source_data.B25014_012E  # 1.5 - 2
+        per_2_x = source_data.B25014_007E + source_data.B25014_013E  # > 2
+        negative_weighted_sum = (
+            per_1_0 / 8.0 + per_1_5 / 4.0 + per_2_0 / 2.0 + per_2_x)
+        return negative_weighted_sum / float(total)
+
+
+class PercentGeographicMobilityAlgorithm(CensusPercentAlgorithm):
+    '''Score based on percent who did not live in the same house 1 year ago'''
+    table = 'B07013'
+    total_column_ids = (1,)
+    target_column_ids = (4, )
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.168965
+        std_dev = 0.09219
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        '''Calcuate the percent who moved in the last year'''
+        total = source_data.B07013_001E
+        same_house = source_data.B07013_004E  # Same house in the last year
+        percent_same = same_house / float(total)
+        return 1.0 - percent_same
+
+
+class PercentCollegeGraduateAlgorithm(CensusPercentAlgorithm):
+    '''Score based on percent who graduated college'''
+    table = 'B15003'
+    total_column_ids = (1,)
+    target_column_ids = (21, 22, 23, 24, 25)
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.301417
+        std_dev = 0.153007
+        better_sign = 1
+        return average, std_dev, better_sign
+
+
+class PercentBadCommuteTimesAlgorithm(CensusPercentAlgorithm):
+    '''Score based on weighted percent of those with long commute times'''
+    table = 'B08303'
+    total_column_ids = (1, )
+    target_column_ids = (8, 9, 10, 11, 12, 13)
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.082964
+        std_dev = 0.059340889
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        total = source_data.B08303_001E
+        min_30 = source_data.B08303_008E  # 30 - 34 minutes
+        min_35 = source_data.B08303_009E  # 35 - 39 minutes
+        min_40 = source_data.B08303_010E  # 40 - 44 minutes
+        min_45 = source_data.B08303_011E  # 45 - 59 minutes
+        min_60 = source_data.B08303_012E  # 60 - 89 minutes
+        min_90 = source_data.B08303_013E  # 90 or more minutes
+        weighted = (
+            (min_30 / 16.0) + (min_35 / 8.0) + (min_40 / 4.0) +
+            (min_45 / 2.0) + min_60 + min_90)
+        return weighted / float(total)
+
+
+class PercentImproperKitchenFacilitiesAlgorithm(CensusPercentAlgorithm):
+    '''Score based on if household lacks a complete kitchen'''
+    table = 'B25052'
+    total_column_ids = (1, )
+    target_column_ids = (3, )
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.00976313
+        std_dev = 0.01802429
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+class PercentImproperPlumbingAlgorithm(CensusPercentAlgorithm):
+    '''Score based on if household lacks complete plumbing'''
+    table = 'B25048'
+    total_column_ids = (1, )
+    target_column_ids = (3, )
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.00572503
+        std_dev = 0.0109313
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+class PercentLowValueHousingAlgorithm(CensusPercentAlgorithm):
+    '''Score based on value of owner-occupied housing units'''
+    table = 'B25075'
+    total_column_ids = (1, )
+    target_column_ids = (2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+
+    def get_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.0575880
+        std_dev = 0.057490381
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        total = source_data.B25075_001E
+        k000 = source_data.B25075_002E / 1.0    # Less than $10k
+        k010 = source_data.B25075_003E / 2.0    # $10k - $15k
+        k015 = source_data.B25075_004E / 2.0    # $15k - $20k
+        k020 = source_data.B25075_005E / 4.0    # $20k - $25k
+        k025 = source_data.B25075_006E / 4.0    # $25k - $30k
+        k030 = source_data.B25075_007E / 8.0    # $30k - $35k
+        k035 = source_data.B25075_008E / 8.0    # $35k - $40k
+        k040 = source_data.B25075_009E / 16.0   # $40k - $50k
+        k050 = source_data.B25075_010E / 32.0   # $50k - $60k
+        k060 = source_data.B25075_011E / 48.0   # $60k - $70k
+        k070 = source_data.B25075_012E / 64.0   # $70k - $80k
+        k080 = source_data.B25075_013E / 80.0   # $80k - $90k
+        k090 = source_data.B25075_014E / 96.0   # $90k - $100k
+        k100 = source_data.B25075_015E / 128.0  # $100k - $125k
+        value = (
+            k000 + k010 + k015 + k020 + k025 + k030 + k035 + k040 + k050 +
+            k060 + k070 + k080 + k090 + k100)
+        return value / float(total)

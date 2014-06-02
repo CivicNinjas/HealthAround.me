@@ -146,6 +146,115 @@ class PercentAlgorithmTest(TestCase):
             B19058_003E=825,
             B17001_001E=1643,
             B17001_002E=534,
+            B23001_001E=3186,
+            B23001_008E=0.00,
+            B23001_015E=0.00,
+            B23001_022E=0.00,
+            B23001_029E=0.00,
+            B23001_036E=23.0,
+            B23001_043E=40.0,
+            B23001_050E=23.0,
+            B23001_057E=22.0,
+            B23001_064E=0.00,
+            B23001_071E=0.00,
+            B23001_076E=0.00,
+            B23001_081E=10.0,
+            B23001_086E=0.00,
+            B23001_094E=0.00,
+            B23001_101E=0.00,
+            B23001_108E=0.00,
+            B23001_115E=0.00,
+            B23001_122E=8.00,
+            B23001_129E=5.00,
+            B23001_136E=0.00,
+            B23001_143E=0.00,
+            B23001_150E=0.00,
+            B23001_157E=0.00,
+            B23001_162E=0.00,
+            B23001_167E=0.00,
+            B23001_172E=0.00,
+            B09002_001E=4.00,
+            B09002_008E=0.00,
+            B25091_001E=147.0,
+            B25070_001E=895.0,
+            B25070_008E=52.0,
+            B25070_009E=54.0,
+            B25070_010E=215.0,
+            B25091_009E=0.00,
+            B25091_010E=4.00,
+            B25091_011E=11.0,
+            B25091_020E=0.00,
+            B25091_021E=0.00,
+            B25091_022E=0.00,
+            B15002_001E=2616.0,
+            B15002_011E=624.0,
+            B15002_012E=130.0,
+            B15002_013E=254.0,
+            B15002_014E=54.0,
+            B15002_015E=229.0,
+            B15002_016E=64.0,
+            B15002_017E=21.0,
+            B15002_018E=6.0,
+            B15002_028E=179.0,
+            B15002_029E=40.0,
+            B15002_030E=68.0,
+            B15002_031E=41.0,
+            B15002_032E=185.0,
+            B15002_033E=53.0,
+            B15002_034E=13.0,
+            B15002_035E=15.0,
+            B12001_001E=3191,
+            B12001_003E=1354,
+            B12001_009E=19,
+            B12001_012E=374,
+            B12001_018E=66,
+            B12001_005E=137,
+            B12001_014E=145,
+            B25014_001E=1042,
+            B25014_003E=127,
+            B25014_004E=20,
+            B25014_005E=0,
+            B25014_006E=0,
+            B25014_007E=0,
+            B25014_009E=645,
+            B25014_010E=231,
+            B25014_011E=0,
+            B25014_012E=19,
+            B25014_013E=0,
+            B07013_001E=1404,
+            B07013_004E=788,
+            B15003_001E=2616,
+            B15003_021E=95,
+            B15003_022E=414,
+            B15003_023E=117,
+            B15003_024E=34,
+            B15003_025E=21,
+            B08303_001E=941,
+            B08303_008E=20,
+            B08303_009E=10,
+            B08303_010E=13,
+            B08303_011E=12,
+            B08303_012E=68,
+            B08303_013E=0,
+            B25052_001E=1042,
+            B25052_003E=7,
+            B25048_001E=1042,
+            B25048_003E=0,
+            B25075_001E=147,
+            B25075_002E=0,
+            B25075_003E=0,
+            B25075_004E=0,
+            B25075_005E=0,
+            B25075_006E=0,
+            B25075_007E=0,
+            B25075_008E=0,
+            B25075_009E=19,
+            B25075_010E=4,
+            B25075_011E=9,
+            B25075_012E=44,
+            B25075_013E=6,
+            B25075_014E=27,
+            B25075_015E=12,
         )
 
     def food_stamp_node(self):
@@ -234,3 +343,523 @@ class PercentAlgorithmTest(TestCase):
         node = self.percent_poverty_node()
         score = node.score_by_location(self.location)
         self.assertPercentPovertyResult(score)
+
+    def percent_employment_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Unemployment",
+            algorithm=ScoreMetric.PERCENT_UNEMPLOYMENT_ALGORITHM,
+            description="Percent Unemployment in the past 12 months",
+        )
+        return ScoreNode(slug='percent-employment', metric=metric)
+
+    def assertPercentEmploymentResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.512,
+                u"value": 0.041,
+                u"average": 0.04193,
+                u"std_dev": 0.0266,
+                u"value_type": "percent",
+                u"description": "Percent Unemployment in the past 12 months",
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/percent-employment/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_employment_by_boundary(self):
+        node = self.percent_employment_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentEmploymentResult(score)
+
+    def test_percent_employment_by_location(self):
+        node = self.percent_employment_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentEmploymentResult(score)
+
+    def percent_single_parent_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Single Parent",
+            algorithm=ScoreMetric.PERCENT_SINGLE_PARENT_ALGORITHM,
+            description="Percent of Children Living with a Single Parent",
+        )
+        return ScoreNode(slug='percent-single-parent', metric=metric)
+
+    def assertPercentSingleParentResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.997,
+                u"value": 0.0,
+                u"average": 0.452998,
+                u"std_dev": 0.1657150,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent of Children Living with a Single Parent")
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/percent-single-parent/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_single_parent_by_boundary(self):
+        node = self.percent_single_parent_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentSingleParentResult(score)
+
+    def test_percent_single_parent_by_location(self):
+        node = self.percent_single_parent_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentSingleParentResult(score)
+
+    def percent_income_housing_cost_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Income Housing Cost",
+            algorithm=ScoreMetric.PERCENT_INCOME_HOUSING_COST_ALGORITHM,
+            description=(
+                "Data calculated from values in both of these tables."),
+        )
+        return ScoreNode(
+            slug='percent-income-housing-cost-node', metric=metric)
+
+    def assertPercentIncomeHousingResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.118,
+                u"value": 0.257,
+                u"average": 0.1544959,
+                u"std_dev": 0.0867039,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Data calculated from values in both of these tables."),
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/"
+                    u"percent-income-housing-cost-node/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_income_housing_cost_by_boundary(self):
+        node = self.percent_income_housing_cost_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentIncomeHousingResult(score)
+
+    def test_percent_income_housing_cost_by_location(self):
+        node = self.percent_income_housing_cost_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentIncomeHousingResult(score)
+
+    def percent_high_school_graduates_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent High School Graduates",
+            algorithm=ScoreMetric.PERCENT_HIGH_SCHOOL_GRADUATES_ALGORITHM,
+            description=(
+                "Educational Attainment for the Population 25 Years and Over")
+        )
+        return ScoreNode(
+            slug='percent-high-school-graduates', metric=metric)
+
+    def assertPercentHighSchoolGraduatesResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.136,
+                u"value": 0.755,
+                u"average": 0.861836,
+                u"std_dev": 0.096739,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Educational Attainment for the Population"
+                    u" 25 Years and Over"),
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/"
+                    u"percent-high-school-graduates/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_high_school_graduates_by_boundary(self):
+        node = self.percent_high_school_graduates_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentHighSchoolGraduatesResult(score)
+
+    def test_percent_high_school_graduates_by_location(self):
+        node = self.percent_high_school_graduates_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentHighSchoolGraduatesResult(score)
+
+    def percent_divorced_or_separated_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Divorced or Separated",
+            algorithm=ScoreMetric.PERCENT_DIVORCED_ALGORITHM,
+            description=(
+                "Percent of Population Divorced or Separated"
+                " 15 Years and Over")
+        )
+        return ScoreNode(slug='percent-divorced-married', metric=metric)
+
+    def assertPercentDivorcedOrSeparatedResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.0,
+                u"value": 0.795,
+                u"average": 0.264508,
+                u"std_dev": 0.139789,
+                u"value_type": u"percent",
+                u"description": (
+                    "Percent of Population Divorced or Separated"
+                    " 15 Years and Over")
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/"
+                    u"percent-divorced-married/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_divorced_or_separated_by_boundary(self):
+        node = self.percent_divorced_or_separated_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentDivorcedOrSeparatedResult(score)
+
+    def test_percent_divorced_or_separated_by_location(self):
+        node = self.percent_divorced_or_separated_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentDivorcedOrSeparatedResult(score)
+
+    def percent_overcrowded_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Overcrowding in Residences",
+            algorithm=ScoreMetric.PERCENT_OVERCROWDING_ALGORITHM,
+            description="Tenure by Occupants per Room",
+        )
+        return ScoreNode(slug='percent-overcrowded', metric=metric)
+
+    def assertPercentOvercrowdedResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.536,
+                u"value": 0.039,
+                u"average": 0.040577,
+                u"std_dev": 0.014887,
+                u"value_type": u"percent",
+                u"description": "Tenure by Occupants per Room",
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/percent-overcrowded/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_overcrowded_by_boundary(self):
+        node = self.percent_overcrowded_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentOvercrowdedResult(score)
+
+    def test_percent_overcrowded_by_location(self):
+        node = self.percent_overcrowded_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentOvercrowdedResult(score)
+
+    def percent_geographic_mobility_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Geographic Movement in a Year",
+            algorithm=ScoreMetric.PERCENT_GEOGRAPHIC_MOBILITY_ALGORITHM,
+            description=(
+                "Geographic Mobility in the Past Year by Tenure for Current"
+                " Residence in the United States")
+        )
+        return ScoreNode(slug='percent-geographic-mobility', metric=metric)
+
+    def assertPercentGeographicMobilityResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.002,
+                u"value": 0.439,
+                u"average": 0.168965,
+                u"std_dev": 0.09219,
+                u"value_type": u"percent",
+                u"description": (
+                    "Geographic Mobility in the Past Year by Tenure for"
+                    " Current Residence in the United States"),
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/"
+                    u"percent-geographic-mobility/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_geographic_mobility_by_boundary(self):
+        node = self.percent_geographic_mobility_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentGeographicMobilityResult(score)
+
+    def test_percent_geographic_mobility_by_location(self):
+        node = self.percent_geographic_mobility_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentGeographicMobilityResult(score)
+
+    def percent_college_graduates_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent College Graduates",
+            algorithm=ScoreMetric.PERCENT_COLLEGE_GRADUATE_ALGORITHM,
+            description=(
+                "Educational Attainment for the Population 25 Years and Over")
+        )
+        return ScoreNode(slug='percent-college-graduate', metric=metric)
+
+    def assertPercentCollegeGraduateResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.394,
+                u"value": 0.26,
+                u"average": 0.301417,
+                u"std_dev": 0.153007,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Educational Attainment for the Population"
+                    u" 25 Years and Over")
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/percent-college-graduate/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_college_graduate_by_boundary(self):
+        node = self.percent_college_graduates_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentCollegeGraduateResult(score)
+
+    def test_percent_college_graduate_by_location(self):
+        node = self.percent_college_graduates_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentCollegeGraduateResult(score)
+
+    def percent_bad_commute_times_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Bad Commute Times",
+            algorithm=ScoreMetric.PERCENT_BAD_COMMUTE_TIMES_ALGORITHM,
+            description="Travel Time to Work",
+        )
+        return ScoreNode(slug='percent-bad-commute-times', metric=metric)
+
+    def assertPercentBadCommuteTimesResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.488,
+                u"value": 0.085,
+                u"average": 0.082964,
+                u"std_dev": 0.059340889,
+                u"value_type": u"percent",
+                u"description": u"Travel Time to Work",
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/percent-bad-commute-times/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_bad_commute_times_by_boundary(self):
+        node = self.percent_bad_commute_times_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentBadCommuteTimesResult(score)
+
+    def test_percent_bad_commute_times_by_location(self):
+        node = self.percent_bad_commute_times_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentBadCommuteTimesResult(score)
+
+    def percent_improper_kitchen_facilities_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Improper Kitchen Facilities",
+            algorithm=(
+                ScoreMetric.PERCENT_IMPROPER_KITCHEN_FACILITIES_ALGORITHM),
+            description="Kitchen Facilities for Occupied Housing Units",
+        )
+        return ScoreNode(
+            slug='percent-improper-kitchen-facilities', metric=metric)
+
+    def assertPercentImproperKitchenFacilitiesResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.567,
+                u"value": 0.007,
+                u"average": 0.00976313,
+                u"std_dev": 0.01802429,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Kitchen Facilities for Occupied Housing Units"),
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25"
+                    u"/percent-improper-kitchen-facilities/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_improper_kitchen_facilities_by_boundary(self):
+        node = self.percent_improper_kitchen_facilities_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentImproperKitchenFacilitiesResult(score)
+
+    def test_percent_improper_kitchen_facilities_by_location(self):
+        node = self.percent_improper_kitchen_facilities_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentImproperKitchenFacilitiesResult(score)
+
+    def percent_improper_plumbing_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Improper Plumbing",
+            algorithm=ScoreMetric.PERCENT_IMPROPER_PLUMBING_ALGORITHM,
+            description="Plumbing Facilities for Occupied Housing Units",
+        )
+        return ScoreNode(slug='percent-improper-plumbing', metric=metric)
+
+    def assertPercentImproperPlumbingResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.7,
+                u"value": 0.0,
+                u"average": 0.00572503,
+                u"std_dev": 0.0109313,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Plumbing Facilities for Occupied Housing Units"),
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/percent-improper-plumbing/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_improper_plumbing_by_boundary(self):
+        node = self.percent_improper_plumbing_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentImproperPlumbingResult(score)
+
+    def test_percent_improper_plumbing_by_location(self):
+        node = self.percent_improper_plumbing_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentImproperPlumbingResult(score)
+
+    def percent_low_value_housing_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent Low Value Housing",
+            algorithm=ScoreMetric.PERCENT_LOW_VALUE_HOUSING_ALGORITHM,
+            description="Value",
+        )
+        return ScoreNode(slug='percent-low-value-housing', metric=metric)
+
+    def assertPercentLowValueHousingResult(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.755,
+                u"value": 0.018,
+                u"average": 0.0575880,
+                u"std_dev": 0.057490381,
+                u"value_type": u"percent",
+                u"description": u"Value",
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/percent-low-value-housing/"),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_low_value_housing_by_boundary(self):
+        node = self.percent_low_value_housing_node()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentLowValueHousingResult(score)
+
+    def test_percent_low_value_housing_by_location(self):
+        node = self.percent_low_value_housing_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentLowValueHousingResult(score)
