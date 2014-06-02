@@ -44,11 +44,12 @@ class ProtoHealth(models.Model):
 class ScoreMetric(models.Model):
     '''A metric that has a score for a given location'''
 
-    FAKE_ALGORITHM = 0
+    PLACEHOLDER_ALGORITHM = 0
     FOOD_STAMP_ALGORITHM = 1
     PERCENT_POVERTY_ALGORITHM = 2
     algorithm_choices = (
-        (FAKE_ALGORITHM, 'FakeAlgorithm', 'Fake Algorithm'),
+        (PLACEHOLDER_ALGORITHM, 'PlaceholderAlgorithm',
+            'Placeholder Algorithm'),
         (FOOD_STAMP_ALGORITHM, 'FoodStampAlgorithm', 'Food Stamp Algorithm'),
         (PERCENT_POVERTY_ALGORITHM, 'PercentPovertyAlgorithm',
          'Percent Poverty Algorithm'),
@@ -60,18 +61,9 @@ class ScoreMetric(models.Model):
     description = models.CharField(
         max_length=255, default="This is a description",
         help_text='Human-readable description')
-    data_source = models.ForeignKey(
-        ContentType, null=True, blank=True,
-        help_text='Model that Holds the Source Data')
-    boundary_set = models.ForeignKey(
-        BoundarySet, null=True, blank=True,
-        help_text='Related Boundary Set with Data')
-    data_property = models.CharField(
-        max_length=50, null=True, blank=True,
-        help_text='Data property used for source data')
     algorithm = models.IntegerField(
         choices=[(a[0], a[2]) for a in algorithm_choices],
-        default=FAKE_ALGORITHM,
+        default=PLACEHOLDER_ALGORITHM,
         help_text='Algorithm used to calculate score')
     params = JSONField(
         default='', null=True, blank=True,
@@ -80,13 +72,16 @@ class ScoreMetric(models.Model):
     def __str__(self):
         return self.name
 
-    def get_algorithm(self):
+    def get_algorithm(self, node):
         klass = getattr(algorithms, self.algorithm_class_name[self.algorithm])
-        algorithm = klass(self)
+        algorithm = klass(node, self)
         return algorithm
 
-    def score(self, point):
-        return self.get_algorithm().calculate(point)
+    def score_by_boundary(self, node, boundary):
+        return self.get_algorithm(node).calculate_by_boundary(boundary)
+
+    def score_by_location(self, node, location):
+        return self.get_algorithm(node).calculate_by_location(location)
 
 
 class ScoreNode(MPTTModel):
@@ -109,3 +104,15 @@ class ScoreNode(MPTTModel):
 
     def __str__(self):
         return self.label
+
+    def score_by_boundary(self, boundary):
+        if self.metric:
+            return self.metric.score_by_boundary(self, boundary)
+        else:
+            return None
+
+    def score_by_location(self, location):
+        if self.metric:
+            return self.metric.score_by_location(self, location)
+        else:
+            return None

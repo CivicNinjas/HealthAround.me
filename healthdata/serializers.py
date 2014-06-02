@@ -1,5 +1,3 @@
-from collections import OrderedDict
-
 from boundaryservice.models import Boundary
 from rest_framework import serializers
 from rest_framework_gis.serializers import GeoFeatureModelSerializer
@@ -14,6 +12,25 @@ class BoundarySerializer(GeoFeatureModelSerializer):
         id_field = 'slug'
         fields = ('slug', 'name', 'display_name', 'external_id', 'kind',
                   'centroid')
+
+
+class MetricDetailSerializer(GeoFeatureModelSerializer):
+    '''Serialize a boundary's metric to a GeoJSON feature'''
+
+    element = serializers.SerializerMethodField('get_element')
+
+    def get_element(self, obj):
+        context = self.context.copy()
+        context['boundary'] = obj
+        data = ScoreNodeSerializer(context['node'], context=context).data
+        return data
+
+    class Meta:
+        model = Boundary
+        geo_field = 'shape'
+        id_field = 'slug'
+        fields = ('slug', 'name', 'display_name', 'external_id', 'kind',
+                  'centroid', 'element')
 
 
 class ScoreNodeSerializer(serializers.ModelSerializer):
@@ -48,13 +65,11 @@ class ScoreNodeSerializer(serializers.ModelSerializer):
 
     def get_metric(self, obj):
         '''Return the metric results of leaf nodes'''
-        if obj.metric:
-            location = self.context['location']
-            score, citation, boundary = obj.metric.score(location)
-            return {
-                'score': score,
-                'citation': citation,
-                'boundary': boundary,
-            }
+        boundary = self.context.get('boundary')
+        location = self.context.get('location')
+        if boundary:
+            return obj.score_by_boundary(boundary)
+        elif location:
+            return obj.score_by_location(location)
         else:
             return None
