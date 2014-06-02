@@ -339,6 +339,42 @@ class PercentAlgorithmTest(TestCase):
         score = node.score_by_boundary(self.tract)
         self.assertPercentPovertyResult(score)
 
+    def test_percent_poverty_by_location_skips_null_boundary(self):
+        block_group_set = BoundarySet.objects.create(
+            name='Census Block Groups',
+            slug='census-block-groups',
+            kind_first=True,
+            last_updated='2014-05-21',
+            count=0,
+            metadata_fields=['GEOID'])
+        shape = (
+            'MULTIPOLYGON ((('
+            '-96.00269 36.14836, -96.00217 36.14869, -96.00213 36.14798, '
+            '-95.99806 36.14791, -95.99935 36.15051, -95.99702 36.15139, '
+            '-95.99649 36.15038, -95.98948 36.15279, -95.98841 36.15086, '
+            '-95.98952 36.15050, -95.98733 36.14637, -95.98732 36.14377, '
+            '-95.99231 36.14423, -95.99455 36.14527, -95.99611 36.14555, '
+            '-95.99969 36.14541, -96.00182 36.14595, -96.00260 36.14702, '
+            '-96.00269 36.14836)))')
+        block_group = Boundary.objects.create(
+            slug='census-block-group-002500-1',
+            name='002500 1',
+            set=block_group_set,
+            metadata={'GEOID': '40143002500'},
+            external_id='401430025001',
+            shape=shape,
+            display_name='Census Block Group 002500 1',
+            kind='Census Block Group',
+            simple_shape=shape)
+        Census.objects.create(
+            boundary=block_group,
+            logical_num=7506,
+            B17001_001E=None,
+            B17001_002E=None)
+        node = self.percent_poverty_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentPovertyResult(score)
+
     def test_percent_poverty_by_location(self):
         node = self.percent_poverty_node()
         score = node.score_by_location(self.location)

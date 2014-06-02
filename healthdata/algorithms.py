@@ -172,14 +172,16 @@ class CensusPercentAlgorithm(BaseAlgorithm):
     def source_data_for_boundary(self, boundary):
         '''Get census data where the total population is not 0'''
         total_fields, _ = self.get_fields()
-        empty_totals = {field: 0 for field in total_fields}
         try:
-            source_data = Census.objects.exclude(
-                **empty_totals).get(boundary=boundary)
+            source_data = Census.objects.get(boundary=boundary)
         except Census.DoesNotExist:
             return None
         else:
-            return source_data
+            # Look for non-null, positive number in total fields
+            for field in total_fields:
+                if getattr(source_data, field):
+                    return source_data
+            return None
 
     def boundaries_for_location(self, location):
         '''Generate census boundaries containing the point, smallest first'''
