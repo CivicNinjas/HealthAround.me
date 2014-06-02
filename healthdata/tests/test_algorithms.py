@@ -248,6 +248,7 @@ class PercentAlgorithmTest(TestCase):
         }
         self.assertEqual(expected_boundary, dict(boundary))
 
+
     def assertCitation(self, citation_id, citation):
         expected_citation = {
             'path': '/api/citation/census/{}/'.format(citation_id),
@@ -257,6 +258,7 @@ class PercentAlgorithmTest(TestCase):
             'id': citation_id,
         }
         self.assertEqual(expected_citation, dict(citation))
+
 
     def test_food_stamp(self):
         metric = ScoreMetric.objects.create(
@@ -343,6 +345,7 @@ class PercentAlgorithmTest(TestCase):
         self.assertCitation('B23001', citation)
         self.assertBoundary(boundary)
 
+
     def test_percent_single_parent(self):
         metric = ScoreMetric.objects.create(
             name = "Percent Single Parent",
@@ -369,6 +372,7 @@ class PercentAlgorithmTest(TestCase):
         self.assertEqual(expected_score, dict(score))
         self.assertCitation('B09002', citation)
         self.assertBoundary(boundary)
+
 
     def test_percent_income_housing_cost(self):
         metric = ScoreMetric.objects.create(
@@ -397,6 +401,7 @@ class PercentAlgorithmTest(TestCase):
         self.assertCitation(('B25091','B25070'), citation)
         self.assertBoundary(boundary)
 
+
     def test_percent_high_school_graduates(self):
         metric = ScoreMetric.objects.create(
             name = "Percent High School Graduates",
@@ -423,6 +428,7 @@ class PercentAlgorithmTest(TestCase):
         self.assertEqual(expected_score, dict(score))
         self.assertCitation('B15002', citation)
         self.assertBoundary(boundary)
+
 
     def test_percent_divorced_marriage(self):
         metric = ScoreMetric.objects.create(
@@ -480,6 +486,7 @@ class PercentAlgorithmTest(TestCase):
         self.assertCitation('B25014', citation)
         self.assertBoundary(boundary)
 
+
     def test_percent_geographic_mobility_algorithm(self):
         metric = ScoreMetric.objects.create(
             name = "Percent Geographic Movement in a Year",
@@ -509,7 +516,6 @@ class PercentAlgorithmTest(TestCase):
         self.assertEqual(expected_score, dict(score))
         self.assertCitation('B07013', citation)
         self.assertBoundary(boundary)
-
 
 
     def test_percent_college_graduates(self):
@@ -567,6 +573,7 @@ class PercentAlgorithmTest(TestCase):
         self.assertCitation('B08303', citation)
         self.assertBoundary(boundary)
 
+
     def test_percent_improper_kitchen_facilities(self):
         metric = ScoreMetric.objects.create(
             name = "Percent Improper Kitchen Facilities",
@@ -593,6 +600,7 @@ class PercentAlgorithmTest(TestCase):
         self.assertEqual(expected_score, dict(score))
         self.assertCitation('B25052', citation)
         self.assertBoundary(boundary)
+        
 
     def test_percent_improper_plumbing(self):
         metric = ScoreMetric.objects.create(
