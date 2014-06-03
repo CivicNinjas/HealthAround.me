@@ -408,6 +408,138 @@ class PercentAlgorithmTest(TestCase):
         }
         self.assertScoreEqual(expected, score)
 
+    def test_metric_overrides(self):
+        node = self.percent_poverty_node()
+        node.metric.params = {
+            'stats': {
+                'average': 0.300,
+                'std_dev': 0.025,
+                'better_sign': 1,
+            },
+            'score_md_fmt': (
+                "In **{boundary}**, **{value}** of people live in a household"
+                " where the income is below the poverty level, versus"
+                " **{average}** in {domain}.  This puts it in the **{rel}**."),
+            'why_md_fmt': (
+                "Living below the poverty level is associated with food"
+                " insufficiency, transportation problems, and lack of"
+                " community support, which leads to poor health in children"
+                " and adults, such as increased stomachaches, headaches,"
+                " colds, and iron deficiencies."),
+            'references': [{
+                'link': 'http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1446676/',
+                'title': (
+                    'Food insufficiency, family income, and health in US'
+                    ' preschool and school-aged children'),
+                'publisher': 'NIH',
+                'date': 'May 2001',
+            }],
+            'more_data': [{
+                'type': 'census_reporter',
+                'table': 'B17001',
+                'text': 'View poverty status on CensusReporter.org',
+            }],
+            'extra_str': 'extra',
+            'extra_list': [1, 2, 3],
+            'extra_dict': {'foo': 'bar'},
+        }
+        node.metric.save()
+        score = node.score_by_boundary(self.tract)
+        expected = {
+            u"summary": {
+                u"score": 0.841,
+                u"value": 0.325,
+                u"average": 0.300,
+                u"std_dev": 0.025,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent Poverty status in the past 12 months"),
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/census-tract-25/percent-poverty/"),
+                u"score_text": {
+                    u"markdown": (
+                        u"In **Census Tract 25**, **32%** of people live in a"
+                        u" household where the income is below the poverty"
+                        u" level, versus **30%** in Oklahoma.  This puts it in"
+                        u" the **top 16%**."),
+                    u"html": (
+                        u"<p>In <strong>Census Tract 25</strong>,"
+                        u" <strong>32%</strong> of people live in a household"
+                        u" where the income is below the poverty level, versus"
+                        u" <strong>30%</strong> in Oklahoma.  This puts it in"
+                        u" the <strong>top 16%</strong>.</p>"),
+                },
+                u"why_text": {
+                    u"markdown": (
+                        u"Living below the poverty level is associated with"
+                        u" food insufficiency, transportation problems, and"
+                        u" lack of community support, which leads to poor"
+                        u" health in children and adults, such as increased"
+                        u" stomachaches, headaches, colds, and iron"
+                        u" deficiencies."),
+                    u"html": (
+                        u"<p>Living below the poverty level is associated with"
+                        u" food insufficiency, transportation problems, and"
+                        u" lack of community support, which leads to poor"
+                        u" health in children and adults, such as increased"
+                        u" stomachaches, headaches, colds, and iron"
+                        u" deficiencies.</p>"),
+                },
+                u"references": [{
+                    u'link': (
+                        u'http://www.ncbi.nlm.nih.gov/pmc/articles/'
+                        u'PMC1446676/'),
+                    u'title': (
+                        u'Food insufficiency, family income, and health in'
+                        u' US preschool and school-aged children'),
+                    u'publisher': u'NIH',
+                    u'date': u'May 2001',
+                    u'markdown': (
+                        u'[Food insufficiency, family income, and health'
+                        u' in US preschool and school-aged children]'
+                        u'(http://www.ncbi.nlm.nih.gov/pmc/articles/'
+                        u'PMC1446676/), NIH, May 2001'),
+                    u'html': (
+                        u'<p><a href="http://www.ncbi.nlm.nih.gov/pmc/'
+                        u'articles/PMC1446676/">Food insufficiency,'
+                        u' family income, and health in US preschool and'
+                        u' school-aged children</a>, NIH, May 2001</p>'),
+                }],
+                u"more_data": [{
+                    u'type': u'census_reporter',
+                    u'table': u'B17001',
+                    u'text': u'View poverty status on CensusReporter.org',
+                    u'link': (
+                        u'http://censusreporter.org/data/table/?table=B17001'
+                        u'&geo_ids=14000US40143002500'
+                        u'&primary_geo_id=14000US40143002500'),
+                    u'markdown': (
+                        u'[View poverty status on CensusReporter.org]'
+                        u'(http://censusreporter.org/data/table/?table=B17001'
+                        u'&geo_ids=14000US40143002500'
+                        u'&primary_geo_id=14000US40143002500)'),
+                    u'html': (
+                        u'<p><a href="http://censusreporter.org/data/table/'
+                        u'?table=B17001'
+                        u'&amp;geo_ids=14000US40143002500'
+                        u'&amp;primary_geo_id=14000US40143002500">'
+                        u'View poverty status on CensusReporter.org</a></p>'),
+                }],
+                u'extra_str': u'extra',
+                u'extra_list': [1, 2, 3],
+                u'extra_dict': {u'foo': u'bar'},
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/census-tract-25/",
+                u"label": u"Census Tract 25",
+                u"type": u"Census Tract",
+                u"external_id": u'40143002500',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
     def percent_employment_node(self):
         metric = ScoreMetric.objects.create(
             name="Percent Unemployment",

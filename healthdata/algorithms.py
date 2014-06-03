@@ -5,6 +5,7 @@ import random
 
 from django.core.urlresolvers import reverse
 from scipy.stats import norm
+import markdown
 
 from boundaryservice.models import Boundary
 from healthdata.utils import fake_boundary
@@ -49,8 +50,6 @@ class BaseAlgorithm(object):
         }
         It can include more summary items.
         It can also include a 'detail' dictionary with additional information
-
-        TODO: more required details
         '''
         raise NotImplementedError('score is not implemented')
 
@@ -71,6 +70,95 @@ class BaseAlgorithm(object):
             'api:metric-detail', kwargs={
                 'boundary_slug': boundary.slug, 'node_slug': self.node.slug})
 
+    def expanded_detail(self, source_data, score):
+        '''
+        Extract data from metric.params to detail
+
+        Special keys:
+        stats - not added to detail
+        more_data - List of dicts, expecting:
+            type: 'census_reporter'
+            table: A census table like B17001
+            text: Link text like 'View on CensusReporter.org'
+        '''
+        boundary = source_data.boundary
+        cr_prefix = {
+            'Census Block Group': '15000US',
+            'Census Tract': '14000US',
+            'County': '05000US',
+            'State': '04000US',
+        }
+        detail = {
+            'path': self.detail_path(source_data.boundary)
+        }
+        params = self.metric.params or {}
+        md = markdown.Markdown()
+        for key, val in params.items():
+            if key == 'stats':
+                # Handled by get_stats
+                pass
+            elif key == 'more_data':
+                detail['more_data'] = []
+                for item in val:
+                    out = item.copy()
+                    mtype = item['type']
+                    table = item['table']
+                    text = item['text']
+                    assert mtype == 'census_reporter'
+                    link_fmt = (
+                        'http://censusreporter.org/data/table/?table={table}'
+                        '&geo_ids={geo_id}&primary_geo_id={geo_id}')
+                    try:
+                        geo_id = (
+                            cr_prefix[boundary.kind] + boundary.external_id)
+                    except KeyError:
+                        geo_id = '04000US40'  # Oklahoma
+                    out['link'] = link_fmt.format(
+                        table=table, geo_id=geo_id)
+                    out['markdown'] = "[{}]({})".format(text, out['link'])
+                    out['html'] = md.convert(out['markdown'])
+                    detail['more_data'].append(out)
+            elif key == 'references':
+                detail['references'] = []
+                for item in val:
+                    out = item.copy()
+                    title = item['title']
+                    publisher = item['publisher']
+                    date = item['date']
+                    link = item['link']
+                    out['markdown'] = (
+                        "[{}]({}), {}, {}".format(
+                            title, link, publisher, date))
+                    out['html'] = md.convert(out['markdown'])
+                    detail['references'].append(out)
+            elif key == 'score_md_fmt':
+                items = {
+                    'boundary': boundary.display_name,
+                    'domain': 'Oklahoma',
+                }
+                raw_value = score['summary']['value']
+                raw_average = score['summary']['average']
+                raw_score = score['summary']['score']
+                assert score['summary']['value_type'] == 'percent'
+                items['value'] = "{:.0%}".format(raw_value)
+                items['average'] = "{:.0%}".format(raw_average)
+                if raw_score >= .5:
+                    items['rel'] = 'top {:.0%}'.format(1 - raw_score)
+                else:
+                    items['rel'] = 'bottom {:.0%}'.format(raw_score)
+                out = {'markdown': val.format(**items)}
+                out['html'] = md.convert(out['markdown'])
+                detail['score_text'] = out
+            elif key == 'why_md_fmt':
+                detail['why_text'] = {
+                    'markdown': val,
+                    'html': md.convert(val),
+                }
+            else:
+                # Add everything else to detail as is
+                detail[key] = val
+        return detail
+
     def calculate(self, source_data):
         '''
         Calculate a metric dictionary from valid source data
@@ -79,9 +167,8 @@ class BaseAlgorithm(object):
         '''
         calculation = self.score(source_data)
         boundary = source_data.boundary
-        calculation.setdefault('detail', {}).update({
-            'path': self.detail_path(boundary),
-        })
+        calculation.setdefault('detail', {}).update(
+            self.expanded_detail(source_data, calculation))
         calculation.setdefault('boundary', {}).update({
             'path': self.boundary_path(boundary),
         })
@@ -148,7 +235,7 @@ class PlaceholderAlgorithm(BaseAlgorithm):
                 ("value_type", "percent"),
                 ("description", self.metric.description),
             )),
-            'detail': OrderedDict((
+            'detail':  OrderedDict((
                 ("score_text", score_text),
             )),
             'boundary': OrderedDict((
@@ -234,8 +321,7 @@ class CensusPercentAlgorithm(BaseAlgorithm):
                 ("value_type", "percent"),
                 ("description", self.metric.description),
             )),
-            'detail': OrderedDict((
-            )),
+            'detail': {},
             'boundary': OrderedDict((
                 ("label", source_data.boundary.display_name),
                 ("type", source_data.boundary.kind),
@@ -258,6 +344,20 @@ class CensusPercentAlgorithm(BaseAlgorithm):
 
     def get_stats(self, source_data):
         '''
+        Return population statistics from the metric, or the default stats
+        '''
+        try:
+            stats = self.metric.params.get('stats')
+        except (AttributeError, KeyError):
+            return self.get_default_stats(source_data)
+        else:
+            average = stats['average']
+            std_dev = stats['std_dev']
+            better_sign = stats['better_sign']
+            return average, std_dev, better_sign
+
+    def get_default_stats(self, source_data):
+        '''
         Return population statistics
 
         Return is a 3-element tuple:
@@ -266,7 +366,7 @@ class CensusPercentAlgorithm(BaseAlgorithm):
         - better_sign - Positive if higher than average is good, negative if
           lower than average is good.
         '''
-        raise NotImplementedError('get_stats not implemented')
+        raise NotImplementedError('get_default_stats not implemented')
 
     def calculate_by_location(self, location):
         calculation = super(
@@ -284,7 +384,7 @@ class FoodStampAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1,)
     target_column_ids = (2,)
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.138
         std_dev = 0.106
@@ -293,13 +393,13 @@ class FoodStampAlgorithm(CensusPercentAlgorithm):
 
 
 class PercentPovertyAlgorithm(CensusPercentAlgorithm):
-    '''Score based on percentage of households under povery level'''
+    '''Score based on percentage of individuals below poverty level'''
 
     table = 'B17001'
     total_column_ids = (1,)
     target_column_ids = (2,)
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.166
         std_dev = 0.118383
@@ -329,7 +429,7 @@ class PercentUnemploymentAlgorithm(CensusPercentAlgorithm):
         94, 101, 108, 115, 122, 129, 136, 143, 150, 157,    # Female 16 to 64
         162, 167, 172)                                      # Female 65 and up
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.04193
         std_dev = 0.0266
@@ -345,7 +445,7 @@ class PercentSingleParentAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1,)
     target_column_ids = (8,)  # Count not in married-couple families
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.452998
         std_dev = 0.1657150
@@ -386,7 +486,7 @@ class PercentIncomeHousingCostAlgorithm(CensusPercentAlgorithm):
                 [pattern.format(f) for f in columns['target_column_ids']])
         return total_fields, target_fields
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.1544959
         std_dev = 0.0867039
@@ -427,7 +527,7 @@ class PercentHighSchoolGraduatesAlgorithm(CensusPercentAlgorithm):
         11, 12, 13, 14, 15, 16, 17, 18,  # Male, High School Grad or better
         28, 29, 30, 31, 32, 33, 34, 35)  # Female, High School Grad or better
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.861836
         std_dev = 0.096739
@@ -443,7 +543,7 @@ class PercentDivorcedOrSeparatedAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1, )
     target_column_ids = (3, 9, 12, 18, 5, 14)
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.264508
         std_dev = 0.139789
@@ -469,7 +569,7 @@ class PercentOvercrowdingAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1,)
     target_column_ids = (3, 4, 5, 6, 7, 9, 10, 11, 12, 13)
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.040577
         std_dev = 0.014887
@@ -495,7 +595,7 @@ class PercentGeographicMobilityAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1,)
     target_column_ids = (4, )
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.168965
         std_dev = 0.09219
@@ -516,7 +616,7 @@ class PercentCollegeGraduateAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1,)
     target_column_ids = (21, 22, 23, 24, 25)
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.301417
         std_dev = 0.153007
@@ -530,7 +630,7 @@ class PercentBadCommuteTimesAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1, )
     target_column_ids = (8, 9, 10, 11, 12, 13)
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.082964
         std_dev = 0.059340889
@@ -557,7 +657,7 @@ class PercentImproperKitchenFacilitiesAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1, )
     target_column_ids = (3, )
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.00976313
         std_dev = 0.01802429
@@ -571,7 +671,7 @@ class PercentImproperPlumbingAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1, )
     target_column_ids = (3, )
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.00572503
         std_dev = 0.0109313
@@ -585,7 +685,7 @@ class PercentLowValueHousingAlgorithm(CensusPercentAlgorithm):
     total_column_ids = (1, )
     target_column_ids = (2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
 
-    def get_stats(self, source_data):
+    def get_default_stats(self, source_data):
         '''Stats for census tracts in Oklahoma'''
         average = 0.0575880
         std_dev = 0.057490381
