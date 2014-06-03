@@ -1,0 +1,9021 @@
+{
+ "displayFieldName": "UCC_CRIME_CLASS",
+ "fieldAliases": {
+  "CRIME_TYPE": "CRIME_TYPE"
+ },
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkt": "GEOGCS[\"NAD83\",DATUM[\"North American Datum 1983 (EPSG ID 6269)\",SPHEROID[\"GRS 1980 (EPSG ID 7019)\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Decimal_Degree\",0.01745329251994328]]"
+ },
+ "fields": [
+  {
+   "name": "CRIME_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "CRIME_TYPE",
+   "length": 40
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.906610287747398,
+    "y": 36.14946882200055
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -96.00693119731136,
+    "y": 36.137534399332665
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -96.00693119731136,
+    "y": 36.137534399332665
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -96.00693119731136,
+    "y": 36.137534399332665
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -96.00693119731136,
+    "y": 36.137534399332665
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.856260007992987,
+    "y": 36.060890003942845
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/FIREARM/RESID"
+   },
+   "geometry": {
+    "x": -95.962031669514275,
+    "y": 36.159674996714294
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "RAPE BY FORCE"
+   },
+   "geometry": {
+    "x": -95.85106500468045,
+    "y": 36.099639997237325
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.886359994045492,
+    "y": 36.118719992784861
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/POCKET PICK"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT / OUTSIDE RECOVERY"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886307137760951,
+    "y": 36.062174279223342
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.975780003191829,
+    "y": 36.072740004076955
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -96.005900005230302,
+    "y": 36.141899996513125
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.95651999788106,
+    "y": 36.181016362817068
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -96.019798022943618,
+    "y": 36.175859949789043
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -96.009490209265962,
+    "y": 36.089805358785711
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/UNK TIME/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.940124374039428,
+    "y": 36.173490000053647
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.985099992758038,
+    "y": 36.1186999935627
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/AGGRAVATED"
+   },
+   "geometry": {
+    "x": -95.922289996432667,
+    "y": 36.100990003406409
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT / OUTSIDE RECOVERY"
+   },
+   "geometry": {
+    "x": -95.895638258495225,
+    "y": 36.184499915510408
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/UNK TIME/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.891655965769644,
+    "y": 36.076244343891403
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.997674541409282,
+    "y": 36.157912734995051
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.997674541409282,
+    "y": 36.157912734995051
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.997674541409282,
+    "y": 36.157912734995051
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/HIGHWAY"
+   },
+   "geometry": {
+    "x": -96.02958845523527,
+    "y": 36.07255769767211
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.981454702851451,
+    "y": 36.083089224358751
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/HIGHWAY"
+   },
+   "geometry": {
+    "x": -95.922139055111359,
+    "y": 36.104371900372023
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/NON-RESID/UNK TIME/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/VEHICLE ACCESSORY"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.960814751211686,
+    "y": 36.046451269623716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.991399999195338,
+    "y": 36.134300007107854
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.922165005485112,
+    "y": 36.160744997009338
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.925826941852392,
+    "y": 36.174031018408002
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.930979046581925,
+    "y": 36.133301470923513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/NIGHT/ATTEMPT ENTRY"
+   },
+   "geometry": {
+    "x": -95.972992651417414,
+    "y": 36.110667548219418
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.997170001099704,
+    "y": 36.144970002843138
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.997170001099704,
+    "y": 36.144970002843138
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.94590428335394,
+    "y": 36.032810006383656
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.973350005498531,
+    "y": 36.143800006437303
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/POCKET PICK"
+   },
+   "geometry": {
+    "x": -95.886310004372007,
+    "y": 36.046380006678703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886310004372007,
+    "y": 36.046380006678703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.867382291250365,
+    "y": 36.123195879053824
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.95487999460876,
+    "y": 36.208630008019803
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/HIGHWAY"
+   },
+   "geometry": {
+    "x": -95.95487999460876,
+    "y": 36.208630008019803
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/DAY/ATTEMPT ENTRY"
+   },
+   "geometry": {
+    "x": -96.000885816343768,
+    "y": 36.148938599538127
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/AGGRAVATED"
+   },
+   "geometry": {
+    "x": -96.000885816343768,
+    "y": 36.148938599538127
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/KNIFE/RESID"
+   },
+   "geometry": {
+    "x": -95.823750006705524,
+    "y": 36.120879992597104
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.904240002735847,
+    "y": 36.06077999983907
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.903899999195332,
+    "y": 36.115400004559753
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.955889997237321,
+    "y": 36.166189998980762
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.998527852730618,
+    "y": 36.148977508334966
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886509996593588,
+    "y": 36.07538999321401
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886509996593588,
+    "y": 36.07538999321401
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886509996593588,
+    "y": 36.07538999321401
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -96.027096129706266,
+    "y": 36.151014830605078
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -96.027096129706266,
+    "y": 36.151014830605078
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.957879995279313,
+    "y": 36.046319992248414
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT / OUTSIDE RECOVERY"
+   },
+   "geometry": {
+    "x": -95.957879995279313,
+    "y": 36.046319992248414
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.957879995279313,
+    "y": 36.046319992248414
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.904580006276376,
+    "y": 36.133420007805228
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.904580006276376,
+    "y": 36.133420007805228
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT / OUTSIDE RECOVERY"
+   },
+   "geometry": {
+    "x": -95.851229994072312,
+    "y": 36.144899997183678
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.975700006303185,
+    "y": 36.104319999624494
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/DAY/UNLAWFUL ENTRY"
+   },
+   "geometry": {
+    "x": -95.967669991711972,
+    "y": 36.096449995574353
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.904540007832054,
+    "y": 36.118889994555119
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.904540007832054,
+    "y": 36.118889994555119
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.904540007832054,
+    "y": 36.118889994555119
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/VEHICLE ACCESSORY"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886480006142264,
+    "y": 36.060430005069378
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.874978810547518,
+    "y": 36.060838304361006
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.874978810547518,
+    "y": 36.060838304361006
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/NIGHT/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.952963338223896,
+    "y": 36.162623331330614
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.855401583710403,
+    "y": 36.104439994957445
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.855401583710403,
+    "y": 36.104439994957445
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.855401583710403,
+    "y": 36.104439994957445
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/UNK TIME/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -96.017819994260066,
+    "y": 36.167450000268218
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/HIGHWAY"
+   },
+   "geometry": {
+    "x": -95.857729992731208,
+    "y": 36.072149448671901
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.857729992731208,
+    "y": 36.072149448671901
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/AGGRAVATED"
+   },
+   "geometry": {
+    "x": -95.95798000815391,
+    "y": 36.078890007966159
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.95798000815391,
+    "y": 36.078890007966159
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.904589997505539,
+    "y": 36.177100002145764
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/NIGHT/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.891857148221561,
+    "y": 36.115022852422172
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.891857148221561,
+    "y": 36.115022852422172
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/DANGEROUS WEAPON/MISC"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886649639108754,
+    "y": 36.158556699890298
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.997982593133003,
+    "y": 36.155630694665355
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "RAPE BY FORCE"
+   },
+   "geometry": {
+    "x": -95.997982593133003,
+    "y": 36.155630694665355
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.997982593133003,
+    "y": 36.155630694665355
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.997982593133003,
+    "y": 36.155630694665355
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.997982593133003,
+    "y": 36.155630694665355
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.997982593133003,
+    "y": 36.155630694665355
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/UNK TIME/ATTEMPT ENTRY"
+   },
+   "geometry": {
+    "x": -95.974454287779594,
+    "y": 36.181765721769075
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/NIGHT/UNLAWFUL ENTRY"
+   },
+   "geometry": {
+    "x": -95.974454287779594,
+    "y": 36.181765721769075
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/NIGHT/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.947579993535882,
+    "y": 36.179710562807948
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.99670105035311,
+    "y": 36.156109469003049
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.99670105035311,
+    "y": 36.156109469003049
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.99670105035311,
+    "y": 36.156109469003049
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/KNIFE/MISC"
+   },
+   "geometry": {
+    "x": -95.99670105035311,
+    "y": 36.156109469003049
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.94527869159154,
+    "y": 36.166200006973746
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/FIREARM"
+   },
+   "geometry": {
+    "x": -95.975285001488629,
+    "y": 36.075257860884541
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/FIREARM"
+   },
+   "geometry": {
+    "x": -95.982213684228881,
+    "y": 36.220047216939761
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.989624996982513,
+    "y": 36.149334996526541
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.856059999007584,
+    "y": 36.17889000796616
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.856059999007584,
+    "y": 36.17889000796616
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.922260005981329,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.922260005981329,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/HIGHWAY"
+   },
+   "geometry": {
+    "x": -95.93262999662042,
+    "y": 36.185559991631507
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/UNK TIME/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.984499999329444,
+    "y": 36.117200001609326
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/DAY/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.895619550086238,
+    "y": 36.141289542468762
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.940159997130039,
+    "y": 36.089839992811676
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886569994260071,
+    "y": 36.031849993428587
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.904600005498523,
+    "y": 36.162599996110799
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/DAY/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.967750206530113,
+    "y": 36.229826333661457
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/VEHICLE ACCESSORY"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/VEHICLE ACCESSORY"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.922099995440249,
+    "y": 36.073359996727703
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/MISC"
+   },
+   "geometry": {
+    "x": -95.992140003942851,
+    "y": 36.154174992690983
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.992140003942851,
+    "y": 36.154174992690983
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.992140003942851,
+    "y": 36.154174992690983
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/HIGHWAY"
+   },
+   "geometry": {
+    "x": -95.987369996674062,
+    "y": 36.156959997532368
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/FIREARM"
+   },
+   "geometry": {
+    "x": -96.038853660679081,
+    "y": 36.158232437564877
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/FIREARM"
+   },
+   "geometry": {
+    "x": -96.038853660679081,
+    "y": 36.158232437564877
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/FIREARM"
+   },
+   "geometry": {
+    "x": -96.038853660679081,
+    "y": 36.158232437564877
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.851039993079894,
+    "y": 36.08464500626296
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.852117654434892,
+    "y": 36.060879995949861
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922509015575585,
+    "y": 36.135654304811617
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.985629997290971,
+    "y": 36.136089996164444
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/FIREARM"
+   },
+   "geometry": {
+    "x": -95.985629997290971,
+    "y": 36.136089996164444
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.993089992141122,
+    "y": 36.149270003245476
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.988275007577244,
+    "y": 36.152120001367926
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.91337999930262,
+    "y": 36.089880008019804
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/UNK TIME/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.974841431146345,
+    "y": 36.075260006651881
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.904945004653626,
+    "y": 36.191605003795324
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.966158768007688,
+    "y": 36.060680406059646
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.921699994233251,
+    "y": 36.159000002011659
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/UNK TIME/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.980781434820983,
+    "y": 36.201730008153916
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.967140506857064,
+    "y": 36.148201997843501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.853815794591057,
+    "y": 36.104458552492176
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.853815794591057,
+    "y": 36.104458552492176
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.892057274553608,
+    "y": 36.089920006464126
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.90902999246299,
+    "y": 36.16499500773817
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.99948000346005,
+    "y": 36.12979999772012
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.99948000346005,
+    "y": 36.12979999772012
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.958149993160362,
+    "y": 36.156590003540515
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.958149993160362,
+    "y": 36.156590003540515
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.958149993160362,
+    "y": 36.156590003540515
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.958149993160362,
+    "y": 36.156590003540515
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.958149993160362,
+    "y": 36.156590003540515
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.833264372617862,
+    "y": 36.117193748709184
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.833264372617862,
+    "y": 36.117193748709184
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.923600004157421,
+    "y": 36.176169996405839
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -96.014858265361681,
+    "y": 36.162885064654652
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.967259999275797,
+    "y": 36.133279996486309
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/DAY/ATTEMPT ENTRY"
+   },
+   "geometry": {
+    "x": -95.891615347064459,
+    "y": 36.156534934433395
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.904620004720684,
+    "y": 36.147979994742869
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.947038187282573,
+    "y": 36.135856358981513
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.868539999785426,
+    "y": 36.067609994045498
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.868539999785426,
+    "y": 36.067609994045498
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.868539999785426,
+    "y": 36.067609994045498
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.868539999785426,
+    "y": 36.067609994045498
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.868539999785426,
+    "y": 36.067609994045498
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.868539999785426,
+    "y": 36.067609994045498
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/DAY/ATTEMPT ENTRY"
+   },
+   "geometry": {
+    "x": -95.976832720001497,
+    "y": 36.225446369898101
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.981119996674067,
+    "y": 36.184590004211067
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.889522251607318,
+    "y": 36.132031528698299
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/NON-RESID/UNK TIME/UNLAWFUL ENTRY"
+   },
+   "geometry": {
+    "x": -95.9330802054304,
+    "y": 36.163491629495716
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "RAPE BY FORCE"
+   },
+   "geometry": {
+    "x": -95.90430000040233,
+    "y": 36.071800007107854
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/DANGEROUS WEAPON/MISC"
+   },
+   "geometry": {
+    "x": -95.90430000040233,
+    "y": 36.071800007107854
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/NON-RESID/UNK TIME/ATTEMPT ENTRY"
+   },
+   "geometry": {
+    "x": -96.059979997425074,
+    "y": 36.148180003728271
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.934024996848407,
+    "y": 36.188704999235568
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.910850005498531,
+    "y": 36.118880003325941
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/NON-RESID/DAY/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.896069993589521,
+    "y": 36.180440006356832
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.913365917704454,
+    "y": 36.079276531072054
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/NON-RESID/UNK TIME/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.913365917704454,
+    "y": 36.079276531072054
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.913365917704454,
+    "y": 36.079276531072054
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.856222322954082,
+    "y": 36.104529999839066
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.963849737948166,
+    "y": 36.092006631091635
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/DAY/UNLAWFUL ENTRY"
+   },
+   "geometry": {
+    "x": -95.907609997398254,
+    "y": 36.099243801414595
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.907609997398254,
+    "y": 36.099243801414595
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/AGGRAVATED"
+   },
+   "geometry": {
+    "x": -96.00240000724196,
+    "y": 36.14480000107288
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.909371907077542,
+    "y": 36.015325757657038
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.957850004827975,
+    "y": 36.060740001394748
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.97557000297725,
+    "y": 36.164239999383092
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.975870008073457,
+    "y": 36.184230001448391
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.975705001917774,
+    "y": 36.104565002668799
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.975705001917774,
+    "y": 36.104565002668799
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.975705001917774,
+    "y": 36.104565002668799
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY / FIREARM / CONVENIENCE STORE"
+   },
+   "geometry": {
+    "x": -95.975705001917774,
+    "y": 36.104565002668799
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/FIREARM"
+   },
+   "geometry": {
+    "x": -95.975705001917774,
+    "y": 36.104565002668799
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.975705001917774,
+    "y": 36.104565002668799
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "RAPE BY FORCE"
+   },
+   "geometry": {
+    "x": -95.873634235852023,
+    "y": 36.060009267032697
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/FIREARM/BANK"
+   },
+   "geometry": {
+    "x": -95.911043007212456,
+    "y": 36.104416995013771
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.908593278517912,
+    "y": 36.019738427608516
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.908593278517912,
+    "y": 36.019738427608516
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.97378132149764,
+    "y": 36.071787082212396
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/FIREARM/HIGHWAY"
+   },
+   "geometry": {
+    "x": -95.975820001636151,
+    "y": 36.180000006705527
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.95772000150204,
+    "y": 36.050487508281321
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.95772000150204,
+    "y": 36.050487508281321
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.95772000150204,
+    "y": 36.050487508281321
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/POCKET PICK"
+   },
+   "geometry": {
+    "x": -95.95772000150204,
+    "y": 36.050487508281321
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.95772000150204,
+    "y": 36.050487508281321
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.95772000150204,
+    "y": 36.050487508281321
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/BICYCLE"
+   },
+   "geometry": {
+    "x": -95.95772000150204,
+    "y": 36.050487508281321
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/HIGHWAY"
+   },
+   "geometry": {
+    "x": -95.977953665507059,
+    "y": 36.077040004479286
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/AGGRAVATED"
+   },
+   "geometry": {
+    "x": -95.958195003983079,
+    "y": 36.170459992167949
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.831369995332949,
+    "y": 36.10412924426074
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/MISC"
+   },
+   "geometry": {
+    "x": -95.873649507680511,
+    "y": 36.060790879550034
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.873649507680511,
+    "y": 36.060790879550034
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.873649507680511,
+    "y": 36.060790879550034
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.873649507680511,
+    "y": 36.060790879550034
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.873649507680511,
+    "y": 36.060790879550034
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.866360000751015,
+    "y": 36.118979999436739
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/FIREARM/HIGHWAY"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/FIREARM/MISC"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886300968679848,
+    "y": 36.063636351444501
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/VEHICLE ACCESSORY"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/TRUCK OR BUS"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/VEHICLE ACCESSORY"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.982855000442569,
+    "y": 36.148434998001754
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.890267352552257,
+    "y": 36.190765790835961
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -96.042012800172728,
+    "y": 36.147073206876115
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.994110002762682,
+    "y": 36.1512400020653
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.955929995681643,
+    "y": 36.152513079122485
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.955929995681643,
+    "y": 36.152513079122485
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "AUTO THEFT/PASSENGER VEHICLE"
+   },
+   "geometry": {
+    "x": -95.940190004345183,
+    "y": 36.104826585118566
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/ALL OTHER"
+   },
+   "geometry": {
+    "x": -95.917229992060655,
+    "y": 36.104399996513131
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.917229992060655,
+    "y": 36.104399996513131
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "BURG/RESID/DAY/FORCE ENTRY"
+   },
+   "geometry": {
+    "x": -95.933009596273877,
+    "y": 36.155040005149843
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.992300433579118,
+    "y": 36.145426514844686
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.922033325778443,
+    "y": 36.104373325295647
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922033325778443,
+    "y": 36.104373325295647
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922033325778443,
+    "y": 36.104373325295647
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/DANGEROUS WEAPON"
+   },
+   "geometry": {
+    "x": -95.922033325778443,
+    "y": 36.104373325295647
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.922033325778443,
+    "y": 36.104373325295647
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/MISC"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM VEHICLE"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "MALICIOUS MISCHIEF/VANDALISM"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/FIREARM/MISC"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ROBBERY/STRONG-ARM/COMM HOUSE"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/FIREARM"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "ASSAULT/FIREARM"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/FROM BUILDING"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/ALL OTHERS"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886318922717507,
+    "y": 36.06756972738026
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/UNDER $50/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$50-$199/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  },
+  {
+   "attributes": {
+    "CRIME_TYPE": "LARC/$200+/SHOPLIFT"
+   },
+   "geometry": {
+    "x": -95.886303902346128,
+    "y": 36.064299309733471
+   }
+  }
+ ],
+ "exceededTransferLimit": true
+}

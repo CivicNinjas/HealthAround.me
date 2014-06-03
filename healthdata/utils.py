@@ -1,5 +1,8 @@
 from boundaryservice.models import Boundary, BoundarySet
 from data.models import Census
+import json
+from json import JSONEncoder
+from itertools import chain
 
 def std_dev_across_tracts(total_col, target_cols):
     '''
@@ -219,4 +222,71 @@ def stand_dev_low_value_housing():
             count += 1
     final_total = (total/float(count))**(0.5)
     print ok_percentile
-    return final_total
+    return final_tota
+
+
+def create_dic_from_json_query(json_file):
+    list_of_crimes = [
+    "Larceny", "Auto Theft", "Assault",
+    "Robbery", "Malicious Mischief", "Burglary",
+    "Rape"
+    ]
+    count = 0
+    dictionary_to_build = {"type": "FeatureCollection", "crs": {
+        "type": "name", "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": []
+    }
+    tract_dict = {}
+    json_data = open(json_file)
+    data = json.load(json_data)
+    for crime in data["features"]:
+        x_coord = crime['geometry']['x']
+        y_coord = crime['geometry']['y']
+        point = 'POINT(%.17f %.17f)' %(x_coord, y_coord)
+        point_tract = (Boundary.objects.filter(shape__contains = point).filter
+            (kind=u'Census Tract').first())
+        #If the dictionary has already had that census track entered
+        if tract_dict.has_key(point_tract.slug):
+            #If that crime has already been entered in to that census track
+            for tracts in tract_dict[point_tract.slug]['CRIMES']:
+                if tracts[0] == crime['attributes']['CRIME_TYPE'][:4]:
+                    tracts[1] += 1
+                    break
+            #Else it hasn't, create a new list in that census track's list.
+            else:
+                (tract_dict[point_tract.slug]["CRIMES"].append([crime['attributes']
+                    ['CRIME_TYPE'][:4], 1]))
+        #Else that census track hasn't been entered yet
+        else:
+            count += 1
+            print point_tract.slug
+            tract_dict[point_tract.slug] = {'CRIMES':[[crime['attributes']['CRIME_TYPE'][:4], 1]]}
+    for tract in tract_dict:
+        current_tract_boundary = Boundary.objects.get(slug=tract)
+        current_tract_metadata = current_tract_boundary.metadata
+        current_county_boundary = Boundary.objects.filter(shape__contains=current_tract_boundary.centroid).filter(kind="County").first()
+        new_tract_dict = {"type": "Feature", "properties": {}}
+        new_tract_dict["properties"]["geoid"] = current_tract_metadata['GEOID']
+       
+        new_tract_dict["properties"]["name"] = "%s, %s, %s" %(
+                current_tract_metadata['NAMELSAD'],
+                current_county_boundary.metadata['NAME'], "OK") 
+
+        for crime in list_of_crimes:
+            for reports in tract_dict[tract]["CRIMES"]:
+                print reports
+                if crime[:4].upper() == reports[0]:
+                    new_tract_dict["properties"][crime] = reports[1]
+                    break
+            else:
+                new_tract_dict["properties"][crime] = 0
+        geojsontract = current_tract_boundary.shape.geojson 
+        new_tract_dict['geometry'] = geojsontract
+        dictionary_to_build["features"].append(new_tract_dict.copy())
+    new_json = json.dumps(dictionary_to_build)
+    print count
+    return new_json
+
