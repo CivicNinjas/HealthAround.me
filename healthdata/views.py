@@ -234,6 +234,7 @@ class ScoreAPIView(ListAPIView):
         ))
         boundaries = {}
         citations = {}
+        assert raw['metric'] or raw['children']
         if raw['metric']:
             assert not raw['children']
             metric = raw['metric']

@@ -268,6 +268,14 @@ class CensusPercentAlgorithm(BaseAlgorithm):
         '''
         raise NotImplementedError('get_stats not implemented')
 
+    def calculate_by_location(self, location):
+        calculation = super(
+            CensusPercentAlgorithm, self).calculate_by_location(location)
+        if not calculation:
+            fake = PlaceholderAlgorithm(self.node, self.metric)
+            calculation = fake.calculate_by_location(location)
+        return calculation
+
 
 class FoodStampAlgorithm(CensusPercentAlgorithm):
     '''Score based on percentage of households on food stamps/assistance'''

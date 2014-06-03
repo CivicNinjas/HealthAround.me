@@ -68,8 +68,10 @@ class ScoreNodeSerializer(serializers.ModelSerializer):
         boundary = self.context.get('boundary')
         location = self.context.get('location')
         if boundary:
-            return obj.score_by_boundary(boundary)
+            metric = obj.score_by_boundary(boundary)
         elif location:
-            return obj.score_by_location(location)
+            metric = obj.score_by_location(location)
         else:
             return None
+        assert metric or obj.children.count()
+        return metric

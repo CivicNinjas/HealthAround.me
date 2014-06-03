@@ -308,7 +308,8 @@ class PercentAlgorithmTest(TestCase):
             description=(
                 "Percent Poverty status in the past 12 months")
         )
-        return ScoreNode(slug='percent-poverty', metric=metric)
+        return ScoreNode(
+            slug='percent-poverty', metric=metric, label='Percent Poverty')
 
     def assertPercentPovertyResult(self, score):
         expected = {
@@ -339,7 +340,12 @@ class PercentAlgorithmTest(TestCase):
         score = node.score_by_boundary(self.tract)
         self.assertPercentPovertyResult(score)
 
-    def test_percent_poverty_by_location_skips_null_boundary(self):
+    def test_percent_poverty_by_location(self):
+        node = self.percent_poverty_node()
+        score = node.score_by_location(self.location)
+        self.assertPercentPovertyResult(score)
+
+    def test_by_location_skips_null_boundary(self):
         block_group_set = BoundarySet.objects.create(
             name='Census Block Groups',
             slug='census-block-groups',
@@ -375,10 +381,32 @@ class PercentAlgorithmTest(TestCase):
         score = node.score_by_location(self.location)
         self.assertPercentPovertyResult(score)
 
-    def test_percent_poverty_by_location(self):
+    def test_by_location_no_boundary_is_placeholder(self):
         node = self.percent_poverty_node()
-        score = node.score_by_location(self.location)
-        self.assertPercentPovertyResult(score)
+        score = node.score_by_location((0, 0))
+        expected = {
+            u"summary": {
+                u"score": 0.66,
+                u"value": 0.41,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent Poverty status in the past 12 months"),
+            },
+            u"detail": {
+                u"path": u"/api/detail/fake_2_0.00_0.00/percent-poverty/",
+                u"score_text": (
+                    u"We don't have data for Percent Poverty yet, but studies"
+                    u" show it has an impact on the health of a community. Do"
+                    u" you know about a data source?"
+                    u" <a href='#'>Tell us about it</a>."),
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/fake_2_0.00_0.00/",
+                u"label": u"Future Data Placeholder",
+                u"type": u"Placeholder",
+            },
+        }
+        self.assertScoreEqual(expected, score)
 
     def percent_employment_node(self):
         metric = ScoreMetric.objects.create(
