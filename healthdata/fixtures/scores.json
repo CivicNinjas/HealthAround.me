@@ -170,10 +170,40 @@
   }
 },
 {
+  "pk": 18,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": "{\"why_md_fmt\":\"When housing is a large proportion of the household expenses, there is less stability.  Areas with high cost of housing are most affected by:\\n\\n-Limited community involvement\\n- Higher rates of poverty\\n- Limited access to nutritional food\\n\\nThese effects can lead households to experience:\\n\\n- Limited access to healthcare\\n- Higher rates of inpatient hospitalization\\n-Higher rates of stress or poor physiological health\\n-Higher rates of injury and illness\\n-Reduced quality of life\\n\",\"references\":[{\"date\":\"Jan 2006\",\"publisher\":\"National Institutes of Health\",\"link\":\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1484604/\",\"title\":\"Housing Instability and Food Insecurity as Barriers to Health Care Amoung Low-Incom Americans\"}],\"stats\":{\"average\":0.1544959,\"std_dev\":0.0867039,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of households are spending a large percentage of family income on housing, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B25070\",\"type\":\"census_reporter\",\"text\":\"View rental rates on CensusReporter.org\"},{\"table\":\"B25091\",\"type\":\"census_reporter\",\"text\":\"View mortgage status on CensusReporter.org\"}]}",
+    "name": "Housing Cost",
+    "algorithm": 5,
+    "description": "Households spending a large percent of income on housing"
+  }
+},
+{
+  "pk": 19,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": "{\"why_md_fmt\":\"When there are more people living in a house than there are rooms, there is less stability.  Areas with high occupancy are most affected by:\\n\\n-Limited community involvement\\n- Higher rates of poverty\\n- Limited access to nutritional food\\n\\nThese effects can lead households to experience:\\n\\n- Limited access to healthcare\\n- Higher rates of inpatient hospitalization\\n-Higher rates of stress or poor physiological health\\n-Higher rates of injury and illness\\n-Reduced quality of life\\n\",\"references\":[{\"date\":\"Jan 2006\",\"publisher\":\"National Institutes of Health\",\"link\":\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1484604/\",\"title\":\"Housing Instability and Food Insecurity as Barriers to Health Care Amoung Low-Incom Americans\"}],\"stats\":{\"average\":0.040577,\"std_dev\":0.014887,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of households had a high ratio of occupants to rooms, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B25014\",\"type\":\"census_reporter\",\"text\":\"View occupants per room on CensusReporter.org\"}]}",
+    "name": "Overcrowding",
+    "algorithm": 8,
+    "description": "Percentage of houses with high occupancy per room"
+  }
+},
+{
+  "pk": 20,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": "{\"why_md_fmt\":\"When a large percentage of households move in a year, there is less stability.  Areas with large housing mobility are most affected by:\\n\\n-Limited community involvement\\n- Higher rates of poverty\\n- Limited access to nutritional food\\n\\nThese effects can lead households to experience:\\n\\n- Limited access to healthcare\\n- Higher rates of inpatient hospitalization\\n-Higher rates of stress or poor physiological health\\n-Higher rates of injury and illness\\n-Reduced quality of life\\n\",\"references\":[{\"date\":\"Jan 2006\",\"publisher\":\"National Institutes of Health\",\"link\":\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1484604/\",\"title\":\"Housing Instability and Food Insecurity as Barriers to Health Care Amoung Low-Incom Americans\"}],\"stats\":{\"average\":0.168965,\"std_dev\":0.09219,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of households moved in the past year, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B07013\",\"type\":\"census_reporter\",\"text\":\"View geographic mobility on CensusReporter.org\"}]}",
+    "name": "Geographic Mobility",
+    "algorithm": 9,
+    "description": "Percent of residents that moved in the last year"
+  }
+},
+{
   "pk": 1,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 52,
+    "rght": 64,
     "parent": null,
     "weight": 1,
     "lft": 1,
@@ -413,7 +443,7 @@
   "pk": 16,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 41,
+    "rght": 47,
     "parent": 1,
     "weight": 1,
     "lft": 32,
@@ -477,11 +507,11 @@
   "pk": 20,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 40,
+    "rght": 46,
     "parent": 16,
     "weight": 23,
     "lft": 39,
-    "metric": 12,
+    "metric": null,
     "level": 2,
     "label": "Housing Stability",
     "rel_order": 1440,
@@ -493,10 +523,10 @@
   "pk": 21,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 51,
+    "rght": 63,
     "parent": 1,
     "weight": 1,
-    "lft": 42,
+    "lft": 48,
     "metric": null,
     "level": 1,
     "label": "Community",
@@ -509,10 +539,10 @@
   "pk": 22,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 44,
+    "rght": 50,
     "parent": 21,
     "weight": 21,
-    "lft": 43,
+    "lft": 49,
     "metric": 1,
     "level": 2,
     "label": "Percent Poverty",
@@ -525,10 +555,10 @@
   "pk": 23,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 46,
+    "rght": 52,
     "parent": 21,
     "weight": 35,
-    "lft": 45,
+    "lft": 51,
     "metric": 2,
     "level": 2,
     "label": "Job Access",
@@ -541,10 +571,10 @@
   "pk": 24,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 48,
+    "rght": 54,
     "parent": 21,
     "weight": 29,
-    "lft": 47,
+    "lft": 53,
     "metric": 3,
     "level": 2,
     "label": "Employment Status",
@@ -557,11 +587,11 @@
   "pk": 25,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 50,
+    "rght": 62,
     "parent": 21,
     "weight": 23,
-    "lft": 49,
-    "metric": 12,
+    "lft": 55,
+    "metric": null,
     "level": 2,
     "label": "Housing Stability",
     "rel_order": 1540,
@@ -573,7 +603,7 @@
   "pk": 26,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 44,
+    "rght": 56,
     "parent": null,
     "weight": 1,
     "lft": 1,
@@ -669,7 +699,7 @@
   "pk": 32,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 21,
+    "rght": 27,
     "parent": 26,
     "weight": 1,
     "lft": 12,
@@ -733,11 +763,11 @@
   "pk": 36,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 20,
+    "rght": 26,
     "parent": 32,
     "weight": 23,
     "lft": 19,
-    "metric": 12,
+    "metric": null,
     "level": 2,
     "label": "Housing Stability",
     "rel_order": 2240,
@@ -749,10 +779,10 @@
   "pk": 37,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 33,
+    "rght": 45,
     "parent": 26,
     "weight": 1,
-    "lft": 22,
+    "lft": 28,
     "metric": null,
     "level": 1,
     "label": "Babies & Infants",
@@ -765,10 +795,10 @@
   "pk": 38,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 28,
+    "rght": 34,
     "parent": 37,
     "weight": 35,
-    "lft": 27,
+    "lft": 33,
     "metric": 2,
     "level": 2,
     "label": "Job Access",
@@ -781,10 +811,10 @@
   "pk": 39,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 30,
+    "rght": 36,
     "parent": 37,
     "weight": 29,
-    "lft": 29,
+    "lft": 35,
     "metric": 3,
     "level": 2,
     "label": "Employment Status",
@@ -797,11 +827,11 @@
   "pk": 40,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 32,
+    "rght": 44,
     "parent": 37,
     "weight": 23,
-    "lft": 31,
-    "metric": 12,
+    "lft": 37,
+    "metric": null,
     "level": 2,
     "label": "Housing Stability",
     "rel_order": 2340,
@@ -813,10 +843,10 @@
   "pk": 41,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 43,
+    "rght": 55,
     "parent": 26,
     "weight": 1,
-    "lft": 34,
+    "lft": 46,
     "metric": null,
     "level": 1,
     "label": "Adults",
@@ -829,10 +859,10 @@
   "pk": 42,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 36,
+    "rght": 48,
     "parent": 41,
     "weight": 21,
-    "lft": 35,
+    "lft": 47,
     "metric": 8,
     "level": 2,
     "label": "High School Graduation Rate",
@@ -845,10 +875,10 @@
   "pk": 43,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 38,
+    "rght": 50,
     "parent": 41,
     "weight": 35,
-    "lft": 37,
+    "lft": 49,
     "metric": 9,
     "level": 2,
     "label": "Higher Education Rates",
@@ -861,10 +891,10 @@
   "pk": 44,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 40,
+    "rght": 52,
     "parent": 41,
     "weight": 29,
-    "lft": 39,
+    "lft": 51,
     "metric": 10,
     "level": 2,
     "label": "School Safety",
@@ -877,10 +907,10 @@
   "pk": 45,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 42,
+    "rght": 54,
     "parent": 41,
     "weight": 23,
-    "lft": 41,
+    "lft": 53,
     "metric": 11,
     "level": 2,
     "label": "School Health Policies",
@@ -1133,7 +1163,7 @@
   "pk": 61,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 40,
+    "rght": 46,
     "parent": null,
     "weight": 1,
     "lft": 1,
@@ -1229,7 +1259,7 @@
   "pk": 67,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 21,
+    "rght": 27,
     "parent": 61,
     "weight": 1,
     "lft": 12,
@@ -1293,10 +1323,10 @@
   "pk": 71,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 29,
+    "rght": 35,
     "parent": 61,
     "weight": 1,
-    "lft": 22,
+    "lft": 28,
     "metric": null,
     "level": 1,
     "label": "Hospital Costs",
@@ -1309,10 +1339,10 @@
   "pk": 72,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 24,
+    "rght": 30,
     "parent": 71,
     "weight": 21,
-    "lft": 23,
+    "lft": 29,
     "metric": 1,
     "level": 2,
     "label": "Percent Poverty Test",
@@ -1325,10 +1355,10 @@
   "pk": 73,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 26,
+    "rght": 32,
     "parent": 71,
     "weight": 35,
-    "lft": 25,
+    "lft": 31,
     "metric": 2,
     "level": 2,
     "label": "Job Access",
@@ -1341,10 +1371,10 @@
   "pk": 74,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 28,
+    "rght": 34,
     "parent": 71,
     "weight": 29,
-    "lft": 27,
+    "lft": 33,
     "metric": 3,
     "level": 2,
     "label": "Employment Status",
@@ -1357,11 +1387,11 @@
   "pk": 75,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 20,
+    "rght": 26,
     "parent": 67,
     "weight": 23,
     "lft": 19,
-    "metric": 12,
+    "metric": null,
     "level": 2,
     "label": "Housing Stability",
     "rel_order": 4240,
@@ -1373,10 +1403,10 @@
   "pk": 76,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 39,
+    "rght": 45,
     "parent": 61,
     "weight": 1,
-    "lft": 30,
+    "lft": 36,
     "metric": null,
     "level": 1,
     "label": "Health Care Access",
@@ -1389,10 +1419,10 @@
   "pk": 77,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 32,
+    "rght": 38,
     "parent": 76,
     "weight": 21,
-    "lft": 31,
+    "lft": 37,
     "metric": 8,
     "level": 2,
     "label": "High School Graduation Rate",
@@ -1405,10 +1435,10 @@
   "pk": 78,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 34,
+    "rght": 40,
     "parent": 76,
     "weight": 35,
-    "lft": 33,
+    "lft": 39,
     "metric": 9,
     "level": 2,
     "label": "Higher Education Rates",
@@ -1421,10 +1451,10 @@
   "pk": 79,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 36,
+    "rght": 42,
     "parent": 76,
     "weight": 29,
-    "lft": 35,
+    "lft": 41,
     "metric": 10,
     "level": 2,
     "label": "School Safety",
@@ -1437,10 +1467,10 @@
   "pk": 80,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 38,
+    "rght": 44,
     "parent": 76,
     "weight": 23,
-    "lft": 37,
+    "lft": 43,
     "metric": 11,
     "level": 2,
     "label": "School Health Policies",
@@ -1453,10 +1483,10 @@
   "pk": 81,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 26,
+    "rght": 32,
     "parent": 37,
     "weight": 21,
-    "lft": 25,
+    "lft": 31,
     "metric": 1,
     "level": 2,
     "label": "Percent Poverty",
@@ -1469,10 +1499,10 @@
   "pk": 82,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 24,
+    "rght": 30,
     "parent": 37,
     "weight": 10,
-    "lft": 23,
+    "lft": 29,
     "metric": 14,
     "level": 2,
     "label": "Immunization Rate",
@@ -1495,6 +1525,246 @@
     "rel_order": 1250,
     "tree_id": 1,
     "slug": "year-built"
+  }
+},
+{
+  "pk": 84,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 41,
+    "parent": 20,
+    "weight": 1,
+    "lft": 40,
+    "metric": 18,
+    "level": 3,
+    "label": "Housing Cost",
+    "rel_order": 1441,
+    "tree_id": 1,
+    "slug": "housing-cost"
+  }
+},
+{
+  "pk": 85,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 43,
+    "parent": 20,
+    "weight": 1,
+    "lft": 42,
+    "metric": 19,
+    "level": 3,
+    "label": "Overcrowding",
+    "rel_order": 1442,
+    "tree_id": 1,
+    "slug": "overcrowding"
+  }
+},
+{
+  "pk": 86,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 45,
+    "parent": 20,
+    "weight": 1,
+    "lft": 44,
+    "metric": 20,
+    "level": 3,
+    "label": "Geographic Mobility",
+    "rel_order": 1443,
+    "tree_id": 1,
+    "slug": "geographic-mobility"
+  }
+},
+{
+  "pk": 87,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 57,
+    "parent": 25,
+    "weight": 1,
+    "lft": 56,
+    "metric": 12,
+    "level": 3,
+    "label": "Housing Cost",
+    "rel_order": 1541,
+    "tree_id": 1,
+    "slug": "housing-cost"
+  }
+},
+{
+  "pk": 88,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 59,
+    "parent": 25,
+    "weight": 1,
+    "lft": 58,
+    "metric": 19,
+    "level": 3,
+    "label": "Overcrowding",
+    "rel_order": 1542,
+    "tree_id": 1,
+    "slug": "overcrowding"
+  }
+},
+{
+  "pk": 89,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 61,
+    "parent": 25,
+    "weight": 1,
+    "lft": 60,
+    "metric": 20,
+    "level": 3,
+    "label": "Geographic Mobility",
+    "rel_order": 1543,
+    "tree_id": 1,
+    "slug": "geographic-mobility"
+  }
+},
+{
+  "pk": 90,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 21,
+    "parent": 36,
+    "weight": 1,
+    "lft": 20,
+    "metric": 18,
+    "level": 3,
+    "label": "Housing Cost",
+    "rel_order": 2241,
+    "tree_id": 2,
+    "slug": "housing-cost"
+  }
+},
+{
+  "pk": 91,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 23,
+    "parent": 36,
+    "weight": 1,
+    "lft": 22,
+    "metric": 19,
+    "level": 3,
+    "label": "Overcrowding",
+    "rel_order": 2242,
+    "tree_id": 2,
+    "slug": "overcrowding"
+  }
+},
+{
+  "pk": 92,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 25,
+    "parent": 36,
+    "weight": 1,
+    "lft": 24,
+    "metric": 20,
+    "level": 3,
+    "label": "Geographic Mobility",
+    "rel_order": 2243,
+    "tree_id": 2,
+    "slug": "geographic-mobility"
+  }
+},
+{
+  "pk": 93,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 39,
+    "parent": 40,
+    "weight": 1,
+    "lft": 38,
+    "metric": 18,
+    "level": 3,
+    "label": "Housing Cost",
+    "rel_order": 2341,
+    "tree_id": 2,
+    "slug": "housing-cost"
+  }
+},
+{
+  "pk": 94,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 21,
+    "parent": 75,
+    "weight": 1,
+    "lft": 20,
+    "metric": 18,
+    "level": 3,
+    "label": "Housing Cost",
+    "rel_order": 4241,
+    "tree_id": 4,
+    "slug": "housing-cost"
+  }
+},
+{
+  "pk": 95,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 41,
+    "parent": 40,
+    "weight": 1,
+    "lft": 40,
+    "metric": 19,
+    "level": 3,
+    "label": "Overcrowding",
+    "rel_order": 2342,
+    "tree_id": 2,
+    "slug": "overcrowding"
+  }
+},
+{
+  "pk": 96,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 23,
+    "parent": 75,
+    "weight": 1,
+    "lft": 22,
+    "metric": 19,
+    "level": 3,
+    "label": "Overcrowding",
+    "rel_order": 4242,
+    "tree_id": 4,
+    "slug": "overcrowding"
+  }
+},
+{
+  "pk": 97,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 43,
+    "parent": 40,
+    "weight": 1,
+    "lft": 42,
+    "metric": 20,
+    "level": 3,
+    "label": "Geographic Mobility",
+    "rel_order": 2343,
+    "tree_id": 2,
+    "slug": "geographic-mobility"
+  }
+},
+{
+  "pk": 98,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 25,
+    "parent": 75,
+    "weight": 1,
+    "lft": 24,
+    "metric": 20,
+    "level": 3,
+    "label": "Geographic Mobility",
+    "rel_order": 4243,
+    "tree_id": 4,
+    "slug": "geographic-mobility"
   }
 }
 ]
