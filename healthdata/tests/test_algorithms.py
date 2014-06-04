@@ -150,7 +150,8 @@ class PercentAlgorithmTest(TestCase):
             shape=shape,
             display_name='Census Tract 25',
             kind='Census Tract',
-            simple_shape=shape)
+            simple_shape=shape,
+            centroid="POINT (-95.9907 36.1525)")
         self.location = (-95.99, 36.15)
         Census.objects.create(
             boundary=self.tract,
@@ -394,6 +395,41 @@ class PercentAlgorithmTest(TestCase):
         node = self.percent_poverty_node()
         score = node.score_by_location(self.location)
         self.assertPercentPovertyResult(score)
+
+    def test_by_boundary_no_data_loads_placeholder(self):
+        node = self.percent_poverty_node()
+        Census.objects.all().delete()
+        score = node.score_by_boundary(self.tract)
+        expected = {
+            u"summary": {
+                u"score": 0.31,
+                u"value": 0.14,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent Poverty status in the past 12 months"),
+            },
+            u"detail": {
+                u"path": u"/api/detail/fake_2_-96.00_36.15/percent-poverty/",
+                u"score_text": {
+                    u'markdown': (
+                        u"We don't have data for Percent Poverty yet, but"
+                        u" studies show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" [Tell us about it](#)."),
+                    u'html': (
+                        u"<p>We don't have data for Percent Poverty yet, but"
+                        u" studies show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" <a href=\"#\">Tell us about it</a>.</p>"),
+                },
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/fake_2_-96.00_36.15/",
+                u"label": u"Future Data Placeholder",
+                u"type": u"Placeholder",
+            },
+        }
+        self.assertScoreEqual(expected, score)
 
     def test_by_location_no_boundary_is_placeholder(self):
         node = self.percent_poverty_node()

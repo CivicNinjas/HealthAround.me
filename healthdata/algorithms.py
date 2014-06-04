@@ -377,7 +377,17 @@ class CensusPercentAlgorithm(BaseAlgorithm):
         '''
         raise NotImplementedError('get_default_stats not implemented')
 
+    def calculate_by_boundary(self, boundary):
+        '''Calculate by boundary, or use fake data if no data match'''
+        calculation = super(
+            CensusPercentAlgorithm, self).calculate_by_boundary(boundary)
+        if not calculation:
+            fake = PlaceholderAlgorithm(self.node, self.metric)
+            calculation = fake.calculate_by_location(boundary.centroid.coords)
+        return calculation
+
     def calculate_by_location(self, location):
+        '''Calculate by location, or use fake data if no data match'''
         calculation = super(
             CensusPercentAlgorithm, self).calculate_by_location(location)
         if not calculation:
