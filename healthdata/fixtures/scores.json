@@ -73,10 +73,10 @@
   "pk": 8,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": null,
+    "params": "{\"why_md_fmt\":\"Higher rates of high school graduation indicate a higher level of educational attainment. Populations with higher levels of educational attainment can be expected to report better health than populations with lower levels of educational attainment. This is because a well educated population is more likely to:\\n\\n\\u2022 Be financially stable\\n\\u2022 Avoid certain risk factors\\n\\nTherefore, areas where more of the population has graduated high school are more likely to experience:\\n\\n\\u2022 Lower rates of poverty\\n\\u2022 Higher life expectancy\\n\\u2022 Lower rates of injury and illness\\n\\u2022 A higher quality of life\\n\",\"references\":[{\"date\":\"Mar 2007\",\"publisher\":\"National Bureau of Economic Research\",\"link\":\"http://www.nber.org/digest/mar07/w12352.html\",\"title\":\"The Effects of Education on Health\"}],\"stats\":{\"average\":0.861836,\"std_dev\":0.096739,\"better_sign\":1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of people 25 and older have graduated from high school, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B15002\",\"type\":\"census_reporter\",\"text\":\"View education rates on CensusReporter.org\"}]}",
     "name": "High School Graduation Rate",
-    "algorithm": 0,
-    "description": "This is a description"
+    "algorithm": 6,
+    "description": "Percent of High School Graduates"
   }
 },
 {
