@@ -346,15 +346,18 @@ class CensusPercentAlgorithm(BaseAlgorithm):
         '''
         Return population statistics from the metric, or the default stats
         '''
+        stats = None
         try:
             stats = self.metric.params.get('stats')
-        except (AttributeError, KeyError):
-            return self.get_default_stats(source_data)
-        else:
+        except AttributeError:
+            pass
+        if stats:
             average = stats['average']
             std_dev = stats['std_dev']
             better_sign = stats['better_sign']
             return average, std_dev, better_sign
+        else:
+            return self.get_default_stats(source_data)
 
     def get_default_stats(self, source_data):
         '''

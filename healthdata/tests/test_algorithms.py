@@ -540,6 +540,13 @@ class PercentAlgorithmTest(TestCase):
         }
         self.assertScoreEqual(expected, score)
 
+    def test_metric_empty_overrides(self):
+        node = self.percent_poverty_node()
+        node.metric.params = {}
+        node.metric.save()
+        score = node.score_by_boundary(self.tract)
+        self.assertPercentPovertyResult(score)
+
     def percent_employment_node(self):
         metric = ScoreMetric.objects.create(
             name="Percent Unemployment",
