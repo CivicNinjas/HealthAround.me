@@ -3,176 +3,177 @@
   "pk": 1,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
-    "params": null,
-    "name": "Percent Poverty"
+    "params": "{\"why_md_fmt\":\"Poverty has a cascading negative effect on almost all health determinants and outcomes. Impoverished households are most affected by:\\n\\n- Limited access to healthcare\\n- Limited access to nutritional food\\n- Negative societal perception\\n- Fundamentally limited opportunity\\n\\nThese effects lead impoverished households to experience:\\n\\n- Higher rates of physical illness and injury\\n- Higher rates of stress and physiological poor health\\n- A lower quality of life\\n- A lower life expectancy\\n\",\"references\":[{\"date\":\"Dec 2013\",\"publisher\":\"U.S. Census Bureau\",\"link\":\"http://www.census.gov/hhes/www/poverty/about/overview/measure.html\",\"title\":\"How the Census Bureau Measures Poverty\"},{\"date\":\"2003\",\"publisher\":\"WHO\",\"link\":\"http://www.euro.who.int/__data/assets/pdf_file/0005/98438/e81384.pdf\",\"title\":\"The Solid Facts, Second Edition\"},{\"date\":\"1999\",\"publisher\":\"International Journal of Health Services\",\"link\":\"http://individual.utoronto.ca/cmuntaner/publications/1990/1999MuntanerIntJHealthServ1.pdf\",\"title\":\"Social Inequalities and Their Effect on Health and Well-Being\"},{\"date\":\"2014\",\"publisher\":\"U.S. Department of Health and Human Services\",\"link\":\"http://www.healthypeople.gov/2020/topicsobjectives2020/overview.aspx?topicid=39\",\"title\":\"Social Determinants of Health\"},{\"date\":\"2013\",\"publisher\":\"CDC\",\"link\":\"http://www.cdc.gov/mmwr/pdf/other/su6203.pdf\",\"title\":\"CDC Health Disparities and Inequalities Report\"}],\"score_md_fmt\":\"In **{boundary}**, **{value}** of people live in a household where the income is below the poverty level, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B17001\",\"type\":\"census_reporter\",\"text\":\"View poverty status on CensusReporter.org\"}]}",
+    "name": "Percent Poverty",
+    "algorithm": 2,
+    "description": "Percent of population in a household with income below the poverty line"
   }
 },
 {
   "pk": 2,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "Access to Jobs"
+    "name": "Access to Jobs",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 3,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "Employment Status"
+    "name": "Employment Status",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 4,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "Crime Rates"
+    "name": "Crime Rates",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 5,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "Food Access"
+    "name": "Food Access",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 6,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "Environmental Conditions"
+    "name": "Environmental Conditions",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 7,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "Housing Quality"
+    "name": "Housing Quality",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 8,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "High School Graduation Rate"
+    "name": "High School Graduation Rate",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 9,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "Higher Education Rate"
+    "name": "Higher Education Rate",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 10,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "School Safety"
+    "name": "School Safety",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 11,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "School Health Policies"
+    "name": "School Health Policies",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 12,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "Housing Stability"
+    "name": "Housing Stability",
+    "algorithm": 0,
+    "description": "This is a description"
   }
 },
 {
   "pk": 13,
   "model": "healthdata.scoremetric",
   "fields": {
-    "data_source": null,
-    "data_property": "",
-    "algorithm": 0,
-    "description": "This is a description",
-    "boundary_set": null,
     "params": null,
-    "name": "Total Medicare Reimbursements Per Enrolee"
+    "name": "Total Medicare Reimbursements Per Enrolee",
+    "algorithm": 0,
+    "description": "This is a description"
+  }
+},
+{
+  "pk": 14,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Immunization Rate",
+    "algorithm": 0,
+    "description": "This is a description"
+  }
+},
+{
+  "pk": 15,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Teen Birth Rate",
+    "algorithm": 0,
+    "description": "This is a description"
+  }
+},
+{
+  "pk": 16,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Year Built",
+    "algorithm": 0,
+    "description": "This is a description"
+  }
+},
+{
+  "pk": 17,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "% Rentals",
+    "algorithm": 0,
+    "description": "Percentage of housing that is rented includes single and multi-tenant housing."
   }
 },
 {
   "pk": 1,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 50,
+    "rght": 52,
     "parent": null,
     "weight": 1,
     "lft": 1,
@@ -190,7 +191,7 @@
   "fields": {
     "rght": 9,
     "parent": 1,
-    "weight": 1,
+    "weight": 10,
     "lft": 2,
     "metric": null,
     "level": 1,
@@ -206,7 +207,7 @@
   "fields": {
     "rght": 4,
     "parent": 2,
-    "weight": 21,
+    "weight": 25,
     "lft": 3,
     "metric": 1,
     "level": 2,
@@ -252,7 +253,7 @@
   "pk": 6,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 19,
+    "rght": 21,
     "parent": 1,
     "weight": 1,
     "lft": 10,
@@ -332,10 +333,10 @@
   "pk": 11,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 29,
+    "rght": 31,
     "parent": 1,
     "weight": 1,
-    "lft": 20,
+    "lft": 22,
     "metric": null,
     "level": 1,
     "label": "Education",
@@ -348,10 +349,10 @@
   "pk": 12,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 22,
+    "rght": 24,
     "parent": 11,
     "weight": 21,
-    "lft": 21,
+    "lft": 23,
     "metric": 8,
     "level": 2,
     "label": "High School Graduation Rate",
@@ -364,10 +365,10 @@
   "pk": 13,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 24,
+    "rght": 26,
     "parent": 11,
     "weight": 35,
-    "lft": 23,
+    "lft": 25,
     "metric": 9,
     "level": 2,
     "label": "Higher Education Rate",
@@ -380,10 +381,10 @@
   "pk": 14,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 26,
+    "rght": 28,
     "parent": 11,
     "weight": 29,
-    "lft": 25,
+    "lft": 27,
     "metric": 10,
     "level": 2,
     "label": "School Safety",
@@ -396,10 +397,10 @@
   "pk": 15,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 28,
+    "rght": 30,
     "parent": 11,
     "weight": 23,
-    "lft": 27,
+    "lft": 29,
     "metric": 11,
     "level": 2,
     "label": "School Health Policies",
@@ -412,10 +413,10 @@
   "pk": 16,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 39,
+    "rght": 41,
     "parent": 1,
     "weight": 1,
-    "lft": 30,
+    "lft": 32,
     "metric": null,
     "level": 1,
     "label": "Economic Stability",
@@ -428,10 +429,10 @@
   "pk": 17,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 32,
+    "rght": 34,
     "parent": 16,
     "weight": 21,
-    "lft": 31,
+    "lft": 33,
     "metric": 1,
     "level": 2,
     "label": "Percent Poverty",
@@ -444,10 +445,10 @@
   "pk": 18,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 34,
+    "rght": 36,
     "parent": 16,
     "weight": 35,
-    "lft": 33,
+    "lft": 35,
     "metric": 2,
     "level": 2,
     "label": "Access to Jobs",
@@ -460,10 +461,10 @@
   "pk": 19,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 36,
+    "rght": 38,
     "parent": 16,
     "weight": 29,
-    "lft": 35,
+    "lft": 37,
     "metric": 3,
     "level": 2,
     "label": "Employment Status",
@@ -476,10 +477,10 @@
   "pk": 20,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 38,
+    "rght": 40,
     "parent": 16,
     "weight": 23,
-    "lft": 37,
+    "lft": 39,
     "metric": 12,
     "level": 2,
     "label": "Housing Stability",
@@ -492,10 +493,10 @@
   "pk": 21,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 49,
+    "rght": 51,
     "parent": 1,
     "weight": 1,
-    "lft": 40,
+    "lft": 42,
     "metric": null,
     "level": 1,
     "label": "Community",
@@ -508,10 +509,10 @@
   "pk": 22,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 42,
+    "rght": 44,
     "parent": 21,
     "weight": 21,
-    "lft": 41,
+    "lft": 43,
     "metric": 1,
     "level": 2,
     "label": "Percent Poverty",
@@ -524,10 +525,10 @@
   "pk": 23,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 44,
+    "rght": 46,
     "parent": 21,
     "weight": 35,
-    "lft": 43,
+    "lft": 45,
     "metric": 2,
     "level": 2,
     "label": "Job Access",
@@ -540,10 +541,10 @@
   "pk": 24,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 46,
+    "rght": 48,
     "parent": 21,
     "weight": 29,
-    "lft": 45,
+    "lft": 47,
     "metric": 3,
     "level": 2,
     "label": "Employment Status",
@@ -556,10 +557,10 @@
   "pk": 25,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 48,
+    "rght": 50,
     "parent": 21,
     "weight": 23,
-    "lft": 47,
+    "lft": 49,
     "metric": 12,
     "level": 2,
     "label": "Housing Stability",
@@ -572,7 +573,7 @@
   "pk": 26,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 42,
+    "rght": 44,
     "parent": null,
     "weight": 1,
     "lft": 1,
@@ -748,7 +749,7 @@
   "pk": 37,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 31,
+    "rght": 33,
     "parent": 26,
     "weight": 1,
     "lft": 22,
@@ -764,10 +765,10 @@
   "pk": 38,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 26,
+    "rght": 28,
     "parent": 37,
     "weight": 35,
-    "lft": 25,
+    "lft": 27,
     "metric": 2,
     "level": 2,
     "label": "Job Access",
@@ -780,10 +781,10 @@
   "pk": 39,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 28,
+    "rght": 30,
     "parent": 37,
     "weight": 29,
-    "lft": 27,
+    "lft": 29,
     "metric": 3,
     "level": 2,
     "label": "Employment Status",
@@ -796,10 +797,10 @@
   "pk": 40,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 30,
+    "rght": 32,
     "parent": 37,
     "weight": 23,
-    "lft": 29,
+    "lft": 31,
     "metric": 12,
     "level": 2,
     "label": "Housing Stability",
@@ -812,10 +813,10 @@
   "pk": 41,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 41,
+    "rght": 43,
     "parent": 26,
     "weight": 1,
-    "lft": 32,
+    "lft": 34,
     "metric": null,
     "level": 1,
     "label": "Adults",
@@ -828,10 +829,10 @@
   "pk": 42,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 34,
+    "rght": 36,
     "parent": 41,
     "weight": 21,
-    "lft": 33,
+    "lft": 35,
     "metric": 8,
     "level": 2,
     "label": "High School Graduation Rate",
@@ -844,10 +845,10 @@
   "pk": 43,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 36,
+    "rght": 38,
     "parent": 41,
     "weight": 35,
-    "lft": 35,
+    "lft": 37,
     "metric": 9,
     "level": 2,
     "label": "Higher Education Rates",
@@ -860,10 +861,10 @@
   "pk": 44,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 38,
+    "rght": 40,
     "parent": 41,
     "weight": 29,
-    "lft": 37,
+    "lft": 39,
     "metric": 10,
     "level": 2,
     "label": "School Safety",
@@ -876,10 +877,10 @@
   "pk": 45,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 40,
+    "rght": 42,
     "parent": 41,
     "weight": 23,
-    "lft": 39,
+    "lft": 41,
     "metric": 11,
     "level": 2,
     "label": "School Health Policies",
@@ -1314,7 +1315,7 @@
     "lft": 23,
     "metric": 1,
     "level": 2,
-    "label": "Percent Poverty",
+    "label": "Percent Poverty Test",
     "rel_order": 4310,
     "tree_id": 4,
     "slug": "percent-poverty"
@@ -1452,16 +1453,48 @@
   "pk": 81,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 24,
+    "rght": 26,
     "parent": 37,
     "weight": 21,
-    "lft": 23,
+    "lft": 25,
     "metric": 1,
     "level": 2,
     "label": "Percent Poverty",
     "rel_order": 2310,
     "tree_id": 2,
     "slug": "percent-poverty"
+  }
+},
+{
+  "pk": 82,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 24,
+    "parent": 37,
+    "weight": 10,
+    "lft": 23,
+    "metric": 14,
+    "level": 2,
+    "label": "Immunization Rate",
+    "rel_order": 100,
+    "tree_id": 2,
+    "slug": "immunization-rate"
+  }
+},
+{
+  "pk": 83,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 20,
+    "parent": 6,
+    "weight": 1,
+    "lft": 19,
+    "metric": 16,
+    "level": 2,
+    "label": "Year Built",
+    "rel_order": 1250,
+    "tree_id": 1,
+    "slug": "year-built"
   }
 }
 ]
