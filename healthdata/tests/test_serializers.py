@@ -79,13 +79,21 @@ class MetricDetailSerializerTest(APITestCase):
                         u'detail': {
                             u'path': (
                                 u'/api/detail/fake_2_-95.99_36.15/metric-a/'),
-                            u'score_text': (
-                                u"We don't have data for Metric A yet, but"
-                                u" studies show it has an impact on the"
-                                u" health of a community. Do you know about a"
-                                u" data source?"
-                                u" <a href='#'>Tell us about it</a>."
-                            ),
+                            u'score_text': {
+                                u'markdown': (
+                                    u"We don't have data for Metric A yet, but"
+                                    u" studies show it has an impact on the"
+                                    u" health of a community. Do you know"
+                                    u" about a data source?"
+                                    u" [Tell us about it](#)."),
+                                u'html': (
+                                    u"<p>We don't have data for Metric A yet,"
+                                    u" but studies show it has an impact on"
+                                    u" the health of a community. Do you know"
+                                    u" about a data source?"
+                                    u" <a href=\"#\">Tell us about it</a>."
+                                    u"</p>"),
+                            },
                         },
                         u'boundary': {
                             u'path': u'/api/boundary/fake_2_-95.99_36.15/',
@@ -139,28 +147,6 @@ class ScoreSerializerTest(APITestCase):
             u'type': u'Placeholder',
         }
 
-    boundary_a_rep = boundary_b_rep = boundary_rep
-
-    def citation_a_rep(self):
-        '''Citation for first metric'''
-        return {
-            u'path': u'/api/citation/fake/metric-a/-95.9910,36.1499/',
-            u'id': u'-95.9910,36.1499',
-            u'label': u'Fake Data Citation',
-            u'type': u'fake',
-            u'year': 2010,
-        }
-
-    def citation_b_rep(self):
-        '''Citation for second metric'''
-        return {
-            u'path': u'/api/citation/fake/metric-b/-95.9910,36.1499/',
-            u'id': u'-95.9910,36.1499',
-            u'label': u'Fake Data Citation',
-            u'type': u'fake',
-            u'year': 2010,
-        }
-
     def metric_a_rep(self):
         '''Raw representation of first metric'''
         return {
@@ -176,11 +162,18 @@ class ScoreSerializerTest(APITestCase):
                 },
                 u'detail': {
                     u"path": u"/api/detail/fake_2_-96.00_36.14/metric-a/",
-                    u"score_text": (
-                        u"We don't have data for Metric A yet, but studies"
-                        u" show it has an impact on the health of a community."
-                        u" Do you know about a data source? <a href='#'>Tell"
-                        u" us about it</a>."),
+                    u'score_text': {
+                        u'markdown': (
+                            u"We don't have data for Metric A yet, but"
+                            u" studies show it has an impact on the health of"
+                            u" a community. Do you know about a data source?"
+                            u" [Tell us about it](#)."),
+                        u'html': (
+                            u"<p>We don't have data for Metric A yet, but"
+                            u" studies show it has an impact on the health of"
+                            u" a community. Do you know about a data source?"
+                            u" <a href=\"#\">Tell us about it</a>.</p>"),
+                    },
                 },
                 u'boundary': self.boundary_rep(),
             },
@@ -201,11 +194,18 @@ class ScoreSerializerTest(APITestCase):
                 },
                 u'detail': {
                     u"path": u"/api/detail/fake_2_-96.00_36.14/metric-b/",
-                    u"score_text": (
-                        u"We don't have data for Metric B yet, but studies"
-                        u" show it has an impact on the health of a community."
-                        u" Do you know about a data source? <a href='#'>Tell"
-                        u" us about it</a>."),
+                    u'score_text': {
+                        u'markdown': (
+                            u"We don't have data for Metric B yet, but"
+                            u" studies show it has an impact on the health of"
+                            u" a community. Do you know about a data source?"
+                            u" [Tell us about it](#)."),
+                        u'html': (
+                            u"<p>We don't have data for Metric B yet, but"
+                            u" studies show it has an impact on the health of"
+                            u" a community. Do you know about a data source?"
+                            u" <a href=\"#\">Tell us about it</a>.</p>"),
+                    },
                 },
                 u'boundary': self.boundary_rep(),
             },

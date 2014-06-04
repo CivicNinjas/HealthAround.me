@@ -62,12 +62,18 @@ class DetailAPIViewTest(APITestCase):
                     u'description': u'The first metric',
                     u'weight': 2,
                     u'score': 0.53,
-                    u'score_text': (
-                        u"We don't have data for Metric A yet, but studies"
-                        u" show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" <a href='#'>Tell us about it</a>."
-                    ),
+                    u'score_text': {
+                        u'markdown': (
+                            u"We don't have data for Metric A yet, but"
+                            u" studies show it has an impact on the health of"
+                            u" a community. Do you know about a data source?"
+                            u" [Tell us about it](#)."),
+                        u'html': (
+                            u"<p>We don't have data for Metric A yet, but"
+                            u" studies show it has an impact on the health of"
+                            u" a community. Do you know about a data source?"
+                            u" <a href=\"#\">Tell us about it</a>.</p>"),
+                    },
                     u'value': 0.46,
                     u'value_type': u'percent',
                 },

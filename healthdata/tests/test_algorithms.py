@@ -37,16 +37,23 @@ class FakeAlgorithmTest(TestCase):
             },
             u"detail": {
                 u"path": u"/api/detail/fake_2_-96.00_36.15/random-stat/",
-                u"score_text": (
-                    u"We don't have data for Random Stat yet, but studies show"
-                    u" it has an impact on the health of a community. Do you"
-                    u" know about a data source?"
-                    u" <a href='#'>Tell us about it</a>."),
+                u"score_text": {
+                    u'markdown': (
+                        u"We don't have data for Random Stat yet, but studies"
+                        u" show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" [Tell us about it](#)."),
+                    u'html': (
+                        u"<p>We don't have data for Random Stat yet, but"
+                        u" studies show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" <a href=\"#\">Tell us about it</a>.</p>"),
+                },
             },
             u"boundary": {
                 u"path": u"/api/boundary/fake_2_-96.00_36.15/",
-                u"label": "Future Data Placeholder",
-                u"type": "Placeholder",
+                u"label": u"Future Data Placeholder",
+                u"type": u"Placeholder",
             },
         }
         self.assertScoreEqual(expected, score)
@@ -88,16 +95,23 @@ class FakeAlgorithmTest(TestCase):
             u"detail": {
                 u"path": (
                     u"/api/detail/fake_2_-96.00_36.15/other-stat/"),
-                u"score_text": (
-                    u"We don't have data for Other Stat yet, but studies show"
-                    u" it has an impact on the health of a community. Do you"
-                    u" know about a data source?"
-                    u" <a href='#'>Tell us about it</a>."),
+                u"score_text": {
+                    u'markdown': (
+                        u"We don't have data for Other Stat yet, but studies"
+                        u" show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" [Tell us about it](#)."),
+                    u'html': (
+                        u"<p>We don't have data for Other Stat yet, but"
+                        u" studies show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" <a href=\"#\">Tell us about it</a>.</p>"),
+                },
             },
             u"boundary": {
                 u"path": u"/api/boundary/fake_2_-96.00_36.15/",
-                u"label": "Future Data Placeholder",
-                u"type": "Placeholder",
+                u"label": u"Future Data Placeholder",
+                u"type": u"Placeholder",
             },
         }
         self.assertScoreEqual(expected, score)
@@ -394,11 +408,18 @@ class PercentAlgorithmTest(TestCase):
             },
             u"detail": {
                 u"path": u"/api/detail/fake_2_0.00_0.00/percent-poverty/",
-                u"score_text": (
-                    u"We don't have data for Percent Poverty yet, but studies"
-                    u" show it has an impact on the health of a community. Do"
-                    u" you know about a data source?"
-                    u" <a href='#'>Tell us about it</a>."),
+                u"score_text": {
+                    u'markdown': (
+                        u"We don't have data for Percent Poverty yet, but"
+                        u" studies show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" [Tell us about it](#)."),
+                    u'html': (
+                        u"<p>We don't have data for Percent Poverty yet, but"
+                        u" studies show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" <a href=\"#\">Tell us about it</a>.</p>"),
+                },
             },
             u"boundary": {
                 u"path": u"/api/boundary/fake_2_0.00_0.00/",
@@ -408,9 +429,8 @@ class PercentAlgorithmTest(TestCase):
         }
         self.assertScoreEqual(expected, score)
 
-    def test_metric_overrides(self):
-        node = self.percent_poverty_node()
-        node.metric.params = {
+    def add_metric_poverty_overrides(self, metric):
+        metric.params = {
             'stats': {
                 'average': 0.300,
                 'std_dev': 0.025,
@@ -443,7 +463,11 @@ class PercentAlgorithmTest(TestCase):
             'extra_list': [1, 2, 3],
             'extra_dict': {'foo': 'bar'},
         }
-        node.metric.save()
+        metric.save()
+
+    def test_metric_overrides(self):
+        node = self.percent_poverty_node()
+        self.add_metric_poverty_overrides(node.metric)
         score = node.score_by_boundary(self.tract)
         expected = {
             u"summary": {
@@ -537,6 +561,101 @@ class PercentAlgorithmTest(TestCase):
                 u"type": u"Census Tract",
                 u"external_id": u'40143002500',
             }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_metric_overrides_with_placeholder(self):
+        node = self.percent_poverty_node()
+        self.add_metric_poverty_overrides(node.metric)
+        score = node.score_by_location((0, 0))
+        expected = {
+            u"summary": {
+                u"score": 0.66,
+                u"value": 0.41,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent Poverty status in the past 12 months"),
+            },
+            u'detail': {
+                u"path": (
+                    u"/api/detail/fake_2_0.00_0.00/percent-poverty/"),
+                u"score_text": {
+                    u"markdown": (
+                        u"We don't have data for Percent Poverty yet, but"
+                        u" studies show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" [Tell us about it](#)."),
+                    u"html": (
+                        u"<p>We don't have data for Percent Poverty yet, but"
+                        u" studies show it has an impact on the health of a"
+                        u" community. Do you know about a data source?"
+                        u" <a href=\"#\">Tell us about it</a>.</p>"),
+                },
+                u"why_text": {
+                    u"markdown": (
+                        u"Living below the poverty level is associated with"
+                        u" food insufficiency, transportation problems, and"
+                        u" lack of community support, which leads to poor"
+                        u" health in children and adults, such as increased"
+                        u" stomachaches, headaches, colds, and iron"
+                        u" deficiencies."),
+                    u"html": (
+                        u"<p>Living below the poverty level is associated with"
+                        u" food insufficiency, transportation problems, and"
+                        u" lack of community support, which leads to poor"
+                        u" health in children and adults, such as increased"
+                        u" stomachaches, headaches, colds, and iron"
+                        u" deficiencies.</p>"),
+                },
+                u"references": [{
+                    u'link': (
+                        u'http://www.ncbi.nlm.nih.gov/pmc/articles/'
+                        u'PMC1446676/'),
+                    u'title': (
+                        u'Food insufficiency, family income, and health in'
+                        u' US preschool and school-aged children'),
+                    u'publisher': u'NIH',
+                    u'date': u'May 2001',
+                    u'markdown': (
+                        u'[Food insufficiency, family income, and health'
+                        u' in US preschool and school-aged children]'
+                        u'(http://www.ncbi.nlm.nih.gov/pmc/articles/'
+                        u'PMC1446676/), NIH, May 2001'),
+                    u'html': (
+                        u'<p><a href="http://www.ncbi.nlm.nih.gov/pmc/'
+                        u'articles/PMC1446676/">Food insufficiency,'
+                        u' family income, and health in US preschool and'
+                        u' school-aged children</a>, NIH, May 2001</p>'),
+                }],
+                u"more_data": [{
+                    u'type': u'census_reporter',
+                    u'table': u'B17001',
+                    u'text': u'View poverty status on CensusReporter.org',
+                    u'link': (
+                        u'http://censusreporter.org/data/table/?table=B17001'
+                        u'&geo_ids=04000US40'
+                        u'&primary_geo_id=04000US40'),
+                    u'markdown': (
+                        u'[View poverty status on CensusReporter.org]'
+                        u'(http://censusreporter.org/data/table/?table=B17001'
+                        u'&geo_ids=04000US40'
+                        u'&primary_geo_id=04000US40)'),
+                    u'html': (
+                        u'<p><a href="http://censusreporter.org/data/table/'
+                        u'?table=B17001'
+                        u'&amp;geo_ids=04000US40'
+                        u'&amp;primary_geo_id=04000US40">'
+                        u'View poverty status on CensusReporter.org</a></p>'),
+                }],
+                u'extra_str': u'extra',
+                u'extra_list': [1, 2, 3],
+                u'extra_dict': {u'foo': u'bar'},
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/fake_2_0.00_0.00/",
+                u"label": u"Future Data Placeholder",
+                u"type": u"Placeholder",
+            },
         }
         self.assertScoreEqual(expected, score)
 

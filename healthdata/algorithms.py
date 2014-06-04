@@ -136,9 +136,12 @@ class BaseAlgorithm(object):
                     'boundary': boundary.display_name,
                     'domain': 'Oklahoma',
                 }
-                raw_value = score['summary']['value']
-                raw_average = score['summary']['average']
-                raw_score = score['summary']['score']
+                raw_value = score['summary'].get('value')
+                raw_average = score['summary'].get('average')
+                raw_score = score['summary'].get('score')
+                if (raw_value is None or raw_average is None or
+                        raw_score is None):
+                    continue
                 assert score['summary']['value_type'] == 'percent'
                 items['value'] = "{:.0%}".format(raw_value)
                 items['average'] = "{:.0%}".format(raw_average)
@@ -223,10 +226,10 @@ class PlaceholderAlgorithm(BaseAlgorithm):
         return self.PlaceholderData(boundary, seed)
 
     def score(self, source_data):
-        score_text = (
+        score_md = (
             "We don't have data for {node.label} yet, but studies show it"
             " has an impact on the health of a community. Do you know about"
-            " a data source? <a href='{feedback_url}'>Tell us about it</a>."
+            " a data source? [Tell us about it]({feedback_url})."
         ).format(node=self.node, feedback_url='#')
         return {
             'summary': OrderedDict((
@@ -236,7 +239,10 @@ class PlaceholderAlgorithm(BaseAlgorithm):
                 ("description", self.metric.description),
             )),
             'detail':  OrderedDict((
-                ("score_text", score_text),
+                ("score_text", {
+                    'markdown': score_md,
+                    'html': markdown.markdown(score_md),
+                }),
             )),
             'boundary': OrderedDict((
                 ("label", "Future Data Placeholder"),
