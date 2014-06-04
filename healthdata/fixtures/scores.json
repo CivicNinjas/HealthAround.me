@@ -23,10 +23,10 @@
   "pk": 3,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": null,
+    "params": "{\"why_md_fmt\":\" Higher rates of unemployment in an area are likely to have a negative effect on health in that area. Areas with higher rates of unemployment are most affected by:\\n\\n- Lower lifetime income\\n- Lack of employer-provided health care\\n- Reduced human and societal capital\\n\\nThese effects lead areas with higher rates of unemployment to experience:\\n\\n- Higher rates of poverty\\n- Higher rates of stress and physiological poor health\\n- Reduced life expectancy\\n- Reduced quality of life\\n\",\"references\":[{\"date\":\"Mar 2013\",\"publisher\":\"Robert Wood Johnson Foundation\",\"link\":\"http://www.rwjf.org/content/dam/farm/reports/issue_briefs/2013/rwjf403360\",\"title\":\"How Does Employment - or Unemployment - Affect Health?\"},{\"date\":\"July 2013\",\"publisher\":\"Urban Institute\",\"link\":\"http://www.urban.org/uploadedpdf/412887-consequences-of-long-term-unemployment.pdf\",\"title\":\"Consequences of Long-Term Unemployment\"},{\"date\":\"1999\",\"publisher\":\"International Journal of Health Services\",\"link\":\"http://individual.utoronto.ca/cmuntaner/publications/1990/1999MuntanerIntJHealthServ1.pdf\",\"title\":\"Social Inequalities and Their Effect on Health and Well-Being\"}],\"stats\":{\"average\":0.04193,\"std_dev\":0.0266,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of people are searching for employment but unable to find a job, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B23001\",\"type\":\"census_reporter\",\"text\":\"View poverty status on CensusReporter.org\"}]}",
     "name": "Employment Status",
-    "algorithm": 0,
-    "description": "This is a description"
+    "algorithm": 3,
+    "description": "Percent Unemployed"
   }
 },
 {
