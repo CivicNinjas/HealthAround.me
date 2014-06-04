@@ -124,6 +124,7 @@ class ScoreAPIViewTest(APITestCase):
     def test_get(self):
         response = self.client.get(self.url)
         expected = {
+            u'score': 0.5,
             u'elements': [{
                 u'label': u'Parent',
                 u'slug': u'parent',

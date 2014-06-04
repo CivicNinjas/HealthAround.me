@@ -215,6 +215,7 @@ class ScoreAPIView(ListAPIView):
     def transform_data(self, raw_data):
         '''Transform the raw ScoreNodeSerializer data'''
         data = OrderedDict((
+            ('score', 0),
             ('elements', []),
             ('boundaries', {}),
         ))
@@ -223,6 +224,15 @@ class ScoreAPIView(ListAPIView):
             element, boundaries, citations = transformed
             data['elements'].append(element)
             data['boundaries'].update(boundaries)
+
+        # Accumulate score
+        total_score = 0.0
+        total_weight = 0.0
+        for element in data['elements']:
+            total_score += element['score'] * element['weight']
+            total_weight += element['weight']
+        data['score'] = round(total_score / total_weight, 2)
+
         return data
 
     def transform_raw_element(self, raw):
