@@ -286,7 +286,7 @@ def create_dic_from_json_query(json_file):
         geojsontract = current_tract_boundary.shape.geojson 
         new_tract_dict['geometry'] = geojsontract
         dictionary_to_build["features"].append(new_tract_dict.copy())
-    new_json = json.dumps(dictionary_to_build)
+    new_json = json.dumps(dictionary_to_build,sort_keys=True)
     print count
     return new_json
 
