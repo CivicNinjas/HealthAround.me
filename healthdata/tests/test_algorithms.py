@@ -4,6 +4,7 @@ from boundaryservice.models import Boundary, BoundarySet
 from django.test import TestCase as BaseTestCase
 
 from data.models import Census
+from healthdata.algorithms import AlgorithmCache
 from healthdata.models import ScoreMetric, ScoreNode
 from healthdata.utils import fake_boundary
 
@@ -26,6 +27,7 @@ class FakeAlgorithmTest(TestCase):
     def setUp(self):
         self.point = (-95.9907, 36.1524)
         self.boundary = fake_boundary(self.point, 2)
+        self.cache = AlgorithmCache()
 
     def assertRandomResult(self, score):
         expected = {
@@ -68,13 +70,13 @@ class FakeAlgorithmTest(TestCase):
 
     def test_calculate_random_stat_by_boundary(self):
         node = self.random_stat_node()
-        calculated = node.score_by_boundary(self.boundary)
+        calculated = node.score_by_boundary(self.boundary, self.cache)
         self.assertRandomResult(calculated)
 
     def test_calculate_random_stat_by_location(self):
         node = self.random_stat_node()
         location = (-95.994, 36.153)
-        score = node.score_by_location(location)
+        score = node.score_by_location(location, self.cache)
         self.assertRandomResult(score)
 
     def test_score_other_random_stat_by_boundary(self):
@@ -84,7 +86,7 @@ class FakeAlgorithmTest(TestCase):
             description=u"Another random statistic")
         node = ScoreNode(
             slug='other-stat', metric=metric, label='Other Stat')
-        score = node.score_by_boundary(self.boundary)
+        score = node.score_by_boundary(self.boundary, self.cache)
         expected = {
             u"summary": {
                 u"score": 0.03,
@@ -271,6 +273,7 @@ class PercentAlgorithmTest(TestCase):
             B25075_014E=27,
             B25075_015E=12,
         )
+        self.cache = AlgorithmCache()
 
     def food_stamp_node(self):
         metric = ScoreMetric.objects.create(
@@ -308,12 +311,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_food_stamp_by_boundary(self):
         node = self.food_stamp_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertFoodStampResult(score)
 
     def test_food_stamp_by_location(self):
         node = self.food_stamp_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertFoodStampResult(score)
 
     def percent_poverty_node(self):
@@ -352,12 +355,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_poverty_by_boundary(self):
         node = self.percent_poverty_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentPovertyResult(score)
 
     def test_percent_poverty_by_location(self):
         node = self.percent_poverty_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentPovertyResult(score)
 
     def test_by_location_skips_null_boundary(self):
@@ -393,13 +396,13 @@ class PercentAlgorithmTest(TestCase):
             B17001_001E=None,
             B17001_002E=None)
         node = self.percent_poverty_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentPovertyResult(score)
 
     def test_by_boundary_no_data_loads_placeholder(self):
         node = self.percent_poverty_node()
         Census.objects.all().delete()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         expected = {
             u"summary": {
                 u"score": 0.31,
@@ -433,7 +436,7 @@ class PercentAlgorithmTest(TestCase):
 
     def test_by_location_no_boundary_is_placeholder(self):
         node = self.percent_poverty_node()
-        score = node.score_by_location((0, 0))
+        score = node.score_by_location((0, 0), self.cache)
         expected = {
             u"summary": {
                 u"score": 0.66,
@@ -504,7 +507,7 @@ class PercentAlgorithmTest(TestCase):
     def test_metric_overrides(self):
         node = self.percent_poverty_node()
         self.add_metric_poverty_overrides(node.metric)
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         expected = {
             u"summary": {
                 u"score": 0.841,
@@ -603,7 +606,7 @@ class PercentAlgorithmTest(TestCase):
     def test_metric_overrides_with_placeholder(self):
         node = self.percent_poverty_node()
         self.add_metric_poverty_overrides(node.metric)
-        score = node.score_by_location((0, 0))
+        score = node.score_by_location((0, 0), self.cache)
         expected = {
             u"summary": {
                 u"score": 0.66,
@@ -699,7 +702,7 @@ class PercentAlgorithmTest(TestCase):
         node = self.percent_poverty_node()
         node.metric.params = {}
         node.metric.save()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentPovertyResult(score)
 
     def percent_employment_node(self):
@@ -735,12 +738,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_employment_by_boundary(self):
         node = self.percent_employment_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentEmploymentResult(score)
 
     def test_percent_employment_by_location(self):
         node = self.percent_employment_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentEmploymentResult(score)
 
     def percent_single_parent_node(self):
@@ -777,12 +780,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_single_parent_by_boundary(self):
         node = self.percent_single_parent_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentSingleParentResult(score)
 
     def test_percent_single_parent_by_location(self):
         node = self.percent_single_parent_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentSingleParentResult(score)
 
     def percent_income_housing_cost_node(self):
@@ -822,12 +825,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_income_housing_cost_by_boundary(self):
         node = self.percent_income_housing_cost_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentIncomeHousingResult(score)
 
     def test_percent_income_housing_cost_by_location(self):
         node = self.percent_income_housing_cost_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentIncomeHousingResult(score)
 
     def percent_high_school_graduates_node(self):
@@ -868,12 +871,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_high_school_graduates_by_boundary(self):
         node = self.percent_high_school_graduates_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentHighSchoolGraduatesResult(score)
 
     def test_percent_high_school_graduates_by_location(self):
         node = self.percent_high_school_graduates_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentHighSchoolGraduatesResult(score)
 
     def percent_divorced_or_separated_node(self):
@@ -914,12 +917,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_divorced_or_separated_by_boundary(self):
         node = self.percent_divorced_or_separated_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentDivorcedOrSeparatedResult(score)
 
     def test_percent_divorced_or_separated_by_location(self):
         node = self.percent_divorced_or_separated_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentDivorcedOrSeparatedResult(score)
 
     def percent_overcrowded_node(self):
@@ -955,12 +958,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_overcrowded_by_boundary(self):
         node = self.percent_overcrowded_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentOvercrowdedResult(score)
 
     def test_percent_overcrowded_by_location(self):
         node = self.percent_overcrowded_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentOvercrowdedResult(score)
 
     def percent_geographic_mobility_node(self):
@@ -1001,12 +1004,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_geographic_mobility_by_boundary(self):
         node = self.percent_geographic_mobility_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentGeographicMobilityResult(score)
 
     def test_percent_geographic_mobility_by_location(self):
         node = self.percent_geographic_mobility_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentGeographicMobilityResult(score)
 
     def percent_college_graduates_node(self):
@@ -1045,12 +1048,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_college_graduate_by_boundary(self):
         node = self.percent_college_graduates_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentCollegeGraduateResult(score)
 
     def test_percent_college_graduate_by_location(self):
         node = self.percent_college_graduates_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentCollegeGraduateResult(score)
 
     def percent_bad_commute_times_node(self):
@@ -1086,12 +1089,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_bad_commute_times_by_boundary(self):
         node = self.percent_bad_commute_times_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentBadCommuteTimesResult(score)
 
     def test_percent_bad_commute_times_by_location(self):
         node = self.percent_bad_commute_times_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentBadCommuteTimesResult(score)
 
     def percent_improper_kitchen_facilities_node(self):
@@ -1131,12 +1134,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_improper_kitchen_facilities_by_boundary(self):
         node = self.percent_improper_kitchen_facilities_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentImproperKitchenFacilitiesResult(score)
 
     def test_percent_improper_kitchen_facilities_by_location(self):
         node = self.percent_improper_kitchen_facilities_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentImproperKitchenFacilitiesResult(score)
 
     def percent_improper_plumbing_node(self):
@@ -1173,12 +1176,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_improper_plumbing_by_boundary(self):
         node = self.percent_improper_plumbing_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentImproperPlumbingResult(score)
 
     def test_percent_improper_plumbing_by_location(self):
         node = self.percent_improper_plumbing_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentImproperPlumbingResult(score)
 
     def percent_low_value_housing_node(self):
@@ -1214,10 +1217,10 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_low_value_housing_by_boundary(self):
         node = self.percent_low_value_housing_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentLowValueHousingResult(score)
 
     def test_percent_low_value_housing_by_location(self):
         node = self.percent_low_value_housing_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentLowValueHousingResult(score)

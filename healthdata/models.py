@@ -117,16 +117,16 @@ class ScoreMetric(models.Model):
     def __str__(self):
         return self.name
 
-    def get_algorithm(self, node):
+    def get_algorithm(self, node, cache):
         klass = getattr(algorithms, self.algorithm_class_name[self.algorithm])
-        algorithm = klass(node, self)
+        algorithm = klass(node, self, cache)
         return algorithm
 
-    def score_by_boundary(self, node, boundary):
-        return self.get_algorithm(node).calculate_by_boundary(boundary)
+    def score_by_boundary(self, node, boundary, cache):
+        return self.get_algorithm(node, cache).calculate_by_boundary(boundary)
 
-    def score_by_location(self, node, location):
-        return self.get_algorithm(node).calculate_by_location(location)
+    def score_by_location(self, node, location, cache):
+        return self.get_algorithm(node, cache).calculate_by_location(location)
 
 
 class ScoreNode(MPTTModel):
@@ -150,14 +150,14 @@ class ScoreNode(MPTTModel):
     def __str__(self):
         return self.label
 
-    def score_by_boundary(self, boundary):
+    def score_by_boundary(self, boundary, cache):
         if self.metric:
-            return self.metric.score_by_boundary(self, boundary)
+            return self.metric.score_by_boundary(self, boundary, cache)
         else:
             return None
 
-    def score_by_location(self, location):
+    def score_by_location(self, location, cache):
         if self.metric:
-            return self.metric.score_by_location(self, location)
+            return self.metric.score_by_location(self, location, cache)
         else:
             return None

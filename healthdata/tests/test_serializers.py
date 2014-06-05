@@ -2,6 +2,7 @@ import json
 
 from rest_framework.test import APITestCase as BaseAPITestCase
 
+from healthdata.algorithms import AlgorithmCache
 from healthdata.models import Boundary, ScoreNode, ScoreMetric
 from healthdata.serializers import (
     MetricDetailSerializer, ScoreNodeSerializer)
@@ -126,7 +127,10 @@ class ScoreSerializerTest(APITestCase):
         self.node_b = ScoreNode.objects.create(
             slug='metric-b', label='Metric B', metric=self.metric_b, weight=1,
             parent=self.parent_node)
-        self.context = {'location': (-95.991, 36.1499)}
+        self.context = {
+            'location': (-95.991, 36.1499),
+            'cache': AlgorithmCache(),
+        }
 
     def assertSerializerDataEqual(self, expected, actual):
         '''

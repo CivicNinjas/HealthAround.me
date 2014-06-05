@@ -67,10 +67,11 @@ class ScoreNodeSerializer(serializers.ModelSerializer):
         '''Return the metric results of leaf nodes'''
         boundary = self.context.get('boundary')
         location = self.context.get('location')
+        cache = self.context.get('cache')
         if boundary:
-            metric = obj.score_by_boundary(boundary)
+            metric = obj.score_by_boundary(boundary, cache)
         elif location:
-            metric = obj.score_by_location(location)
+            metric = obj.score_by_location(location, cache)
         else:
             return None
         assert metric or obj.children.count()

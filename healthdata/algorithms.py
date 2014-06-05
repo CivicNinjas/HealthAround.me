@@ -12,10 +12,16 @@ from healthdata.utils import fake_boundary
 from data.models import Census
 
 
+class AlgorithmCache(object):
+    '''Data that gets used repeatedly by algorithm calculations'''
+    pass
+
+
 class BaseAlgorithm(object):
-    def __init__(self, node, metric):
+    def __init__(self, node, metric, cache):
         self.node = node
         self.metric = metric
+        self.cache = cache
 
     def boundaries_for_location(self, location):
         '''
@@ -382,7 +388,7 @@ class CensusPercentAlgorithm(BaseAlgorithm):
         calculation = super(
             CensusPercentAlgorithm, self).calculate_by_boundary(boundary)
         if not calculation:
-            fake = PlaceholderAlgorithm(self.node, self.metric)
+            fake = PlaceholderAlgorithm(self.node, self.metric, self.cache)
             calculation = fake.calculate_by_location(boundary.centroid.coords)
         return calculation
 
@@ -391,7 +397,7 @@ class CensusPercentAlgorithm(BaseAlgorithm):
         calculation = super(
             CensusPercentAlgorithm, self).calculate_by_location(location)
         if not calculation:
-            fake = PlaceholderAlgorithm(self.node, self.metric)
+            fake = PlaceholderAlgorithm(self.node, self.metric, self.cache)
             calculation = fake.calculate_by_location(location)
         return calculation
 

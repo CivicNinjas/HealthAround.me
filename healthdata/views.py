@@ -9,6 +9,7 @@ from django.conf import settings
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.response import Response
 
+from .algorithms import AlgorithmCache
 from .models import ScoreNode
 from .serializers import (
     BoundarySerializer, MetricDetailSerializer, ScoreNodeSerializer)
@@ -177,6 +178,7 @@ class DetailAPIView(RetrieveAPIView):
         node_slug = self.kwargs['node_slug']
         node = ScoreNode.objects.filter(slug=node_slug).latest('id')
         context['node'] = node
+        context['cache'] = AlgorithmCache()
         return context
 
     def retrieve(self, request, *args, **kwargs):
@@ -210,6 +212,7 @@ class ScoreAPIView(ListAPIView):
         context['location'] = (
             float(self.kwargs['lon']),
             float(self.kwargs['lat']))
+        context['cache'] = AlgorithmCache()
         return context
 
     def transform_data(self, raw_data):
