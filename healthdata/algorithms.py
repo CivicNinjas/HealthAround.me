@@ -17,7 +17,9 @@ class AlgorithmCache(object):
 
     def __init__(self):
         self.location = None
+        self.boundary = None
         self.boundaries = {}
+        self.data = {}
 
     def get_boundary(self, location, boundary_set_slug):
         '''Get the boundary by location and boundary set slug'''
@@ -41,6 +43,19 @@ class AlgorithmCache(object):
 
         # Return the boundary
         return self.boundaries.get(boundary_set_slug)
+
+    def get_data(self, klass, boundary):
+        '''Get data by boundary'''
+
+        # Return the data
+        boundaries = self.data.setdefault(klass.__name__, {})
+        if boundary.id not in boundaries:
+            try:
+                data = klass.objects.get(boundary=boundary)
+            except klass.DoesNotExist:
+                data = None
+            boundaries[boundary.id] = data
+        return boundaries[boundary.id]
 
 
 class BaseAlgorithm(object):
@@ -297,9 +312,8 @@ class CensusPercentAlgorithm(BaseAlgorithm):
     def source_data_for_boundary(self, boundary):
         '''Get census data where the total population is not 0'''
         total_fields, _ = self.get_fields()
-        try:
-            source_data = Census.objects.get(boundary=boundary)
-        except Census.DoesNotExist:
+        source_data = self.cache.get_data(Census, boundary)
+        if not source_data:
             return None
         else:
             # Look for non-null, positive number in total fields
