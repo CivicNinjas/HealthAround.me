@@ -120,8 +120,16 @@ Run it!
 -------
 1. `./manage.py runserver`, and go to <http://localhost:8000/>
 
+Create scores.json
+==================
+After updating ScoreNodes or ScoreMetrics, you should add the changes to
+version control.
 
-TODO
-====
-- Update local_settings.example.py with better database defaults (host, post, u+p)
-- Create .keep in /data/census/cache/.keep
+        ./manage.py dumpdata --indent 2 healthdata.ScoreMetric healthdata.ScoreNode | sed 's/[ \t]*$//' > healthdata/fixtures/scores.json
+
+This will dump the ScoreMetric and ScoreNode rows to indented JSON, remove
+trailing whitespace, and store them in scores.json.  Check in your changes.
+When integrate, pull changes to server, and load with:
+
+        ./manage.py loaddata scores
+

@@ -5,8 +5,7 @@ from .models import ProtoHealth, ScoreMetric, ScoreNode
 
 
 class ScoreMetricAdmin(admin.ModelAdmin):
-    list_display = (
-        'name', 'data_source', 'boundary_set', 'data_property', 'algorithm')
+    list_display = ('name', 'algorithm')
 
 
 class ScoreNodeAdmin(MPTTModelAdmin):

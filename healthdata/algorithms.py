@@ -2,720 +2,732 @@
 
 from collections import OrderedDict
 import random
-from django.utils.text import slugify
+
+from django.core.urlresolvers import reverse
 from scipy.stats import norm
+import markdown
 
 from boundaryservice.models import Boundary
+from healthdata.utils import fake_boundary
 from data.models import Census
 
 
+class BaseAlgorithm(object):
+    def __init__(self, node, metric):
+        self.node = node
+        self.metric = metric
+
+    def boundaries_for_location(self, location):
+        '''
+        Generate boundaries for a (lon, lat) location
+
+        Return should be a iterable of Boundary objects in preferred order
+        '''
+        raise NotImplementedError('boundaries_for_location is not implemented')
+
+    def source_data_for_boundary(self, boundary):
+        '''
+        Return source data for a boundary
+
+        Return should be a source data instance with appropriate data,
+        or None if no data for the boundary.
+        '''
+        raise NotImplementedError(
+            'source_data_for_boundary is not implemented')
+
+    def score(self, source_data):
+        '''
+        Score an item of source data
+
+        Return should be a dictionary with at least:
+        {
+            'summary': {
+                'score': (the score, 0.0 to 1.0),
+                'value': (the raw value),
+                'value_type': (the type of the value, such as 'percent'),
+                'description': (a short description of the metric),
+            }
+        }
+        It can include more summary items.
+        It can also include a 'detail' dictionary with additional information
+        '''
+        raise NotImplementedError('score is not implemented')
+
+    def source_data_for_location(self, location):
+        '''Generate source data for a (lon, lat) location'''
+        for boundary in self.boundaries_for_location(location):
+            source_data = self.source_data_for_boundary(boundary)
+            if source_data:
+                yield source_data
+
+    def boundary_path(self, boundary):
+        '''Return the path to the boundary API endpoint'''
+        return reverse('api:boundary', kwargs={'slug': boundary.slug})
+
+    def detail_path(self, boundary):
+        '''Return the path to the metric detail API endpoint'''
+        return reverse(
+            'api:metric-detail', kwargs={
+                'boundary_slug': boundary.slug, 'node_slug': self.node.slug})
+
+    def expanded_detail(self, source_data, score):
+        '''
+        Extract data from metric.params to detail
+
+        Special keys:
+        stats - not added to detail
+        more_data - List of dicts, expecting:
+            type: 'census_reporter'
+            table: A census table like B17001
+            text: Link text like 'View on CensusReporter.org'
+        '''
+        boundary = source_data.boundary
+        cr_prefix = {
+            'Census Block Group': '15000US',
+            'Census Tract': '14000US',
+            'County': '05000US',
+            'State': '04000US',
+        }
+        detail = {
+            'path': self.detail_path(source_data.boundary)
+        }
+        params = self.metric.params or {}
+        md = markdown.Markdown()
+        for key, val in params.items():
+            if key == 'stats':
+                # Handled by get_stats
+                pass
+            elif key == 'more_data':
+                detail['more_data'] = []
+                for item in val:
+                    out = item.copy()
+                    mtype = item['type']
+                    table = item['table']
+                    text = item['text']
+                    assert mtype == 'census_reporter'
+                    link_fmt = (
+                        'http://censusreporter.org/data/table/?table={table}'
+                        '&geo_ids={geo_id}&primary_geo_id={geo_id}')
+                    try:
+                        geo_id = (
+                            cr_prefix[boundary.kind] + boundary.external_id)
+                    except KeyError:
+                        geo_id = '04000US40'  # Oklahoma
+                    out['link'] = link_fmt.format(
+                        table=table, geo_id=geo_id)
+                    out['markdown'] = "[{}]({})".format(text, out['link'])
+                    out['html'] = md.convert(out['markdown'])
+                    detail['more_data'].append(out)
+            elif key == 'references':
+                detail['references'] = []
+                for item in val:
+                    out = item.copy()
+                    title = item['title']
+                    publisher = item['publisher']
+                    date = item['date']
+                    link = item['link']
+                    out['markdown'] = (
+                        "[{}]({}), {}, {}".format(
+                            title, link, publisher, date))
+                    out['html'] = md.convert(out['markdown'])
+                    detail['references'].append(out)
+            elif key == 'score_md_fmt':
+                items = {
+                    'boundary': boundary.display_name,
+                    'domain': 'Oklahoma',
+                }
+                raw_value = score['summary'].get('value')
+                raw_average = score['summary'].get('average')
+                raw_score = score['summary'].get('score')
+                if (raw_value is None or raw_average is None or
+                        raw_score is None):
+                    continue
+                assert score['summary']['value_type'] == 'percent'
+                items['value'] = "{:.0%}".format(raw_value)
+                items['average'] = "{:.0%}".format(raw_average)
+                if raw_score >= .5:
+                    items['rel'] = 'top {:.0%}'.format(1 - raw_score)
+                else:
+                    items['rel'] = 'bottom {:.0%}'.format(raw_score)
+                out = {'markdown': val.format(**items)}
+                out['html'] = md.convert(out['markdown'])
+                detail['score_text'] = out
+            elif key == 'why_md_fmt':
+                detail['why_text'] = {
+                    'markdown': val,
+                    'html': md.convert(val),
+                }
+            else:
+                # Add everything else to detail as is
+                detail[key] = val
+        return detail
+
+    def calculate(self, source_data):
+        '''
+        Calculate a metric dictionary from valid source data
+
+        Return is a dictionary with three items: summary, detail, and boundary
+        '''
+        calculation = self.score(source_data)
+        boundary = source_data.boundary
+        calculation.setdefault('detail', {}).update(
+            self.expanded_detail(source_data, calculation))
+        calculation.setdefault('boundary', {}).update({
+            'path': self.boundary_path(boundary),
+        })
+        return calculation
+
+    def calculate_by_boundary(self, boundary):
+        '''
+        Calculate a metric dictionary for a boundary
+
+        If there is no data for a boundary, None is returned
+        '''
+        source_data = self.source_data_for_boundary(boundary)
+        if source_data:
+            return self.calculate(source_data)
+        else:
+            return None
+
+    def calculate_by_location(self, location):
+        '''
+        Calculate a metric dictionary for a (lon, lat) location
+
+        If there is no data for a location, None is returned
+        '''
+        for source_data in self.source_data_for_location(location):
+            calculation = self.calculate(source_data)
+            if calculation:
+                return calculation
+        return None
+
+
+class PlaceholderAlgorithm(BaseAlgorithm):
+    '''Placeholder for data that we plan to import in the future'''
+
+    class PlaceholderData(object):
+        '''Randomized data that is consistant for a boundary/node combo'''
+        def __init__(self, boundary, seed):
+            self.boundary = boundary
+            random.seed(seed)
+            self.score = random.randint(0, 100) / 100.0
+            self.value = random.randint(0, 100) / 100.0
+
+    def boundary_path(self, boundary):
+        return reverse(
+            'api:fake-boundary', kwargs={'slug': boundary.slug})
+
+    def boundaries_for_location(self, location):
+        '''Return a fake Boundary, roughly 1/2 sq. mile'''
+        return [fake_boundary(location, 2)]
+
+    def source_data_for_boundary(self, boundary):
+        seed = self.detail_path(boundary)
+        return self.PlaceholderData(boundary, seed)
+
+    def score(self, source_data):
+        score_md = (
+            "We don't have data for {node.label} yet, but studies show it"
+            " has an impact on the health of a community. Do you know about"
+            " a data source? [Tell us about it]({feedback_url})."
+        ).format(node=self.node, feedback_url='#')
+        return {
+            'summary': OrderedDict((
+                ("score", source_data.score),
+                ("value", source_data.value),
+                ("value_type", "percent"),
+                ("description", self.metric.description),
+            )),
+            'detail':  OrderedDict((
+                ("score_text", {
+                    'markdown': score_md,
+                    'html': markdown.markdown(score_md),
+                }),
+            )),
+            'boundary': OrderedDict((
+                ("label", "Future Data Placeholder"),
+                ("type", "Placeholder"),
+            )),
+        }
+
+
+class CensusPercentAlgorithm(BaseAlgorithm):
+    '''
+    Algorithm for census-based calcuations of ratio vs. the state average
+    '''
+    # Default boundary set order
+    boundary_set_slugs = (
+        'census-block-groups',
+        'census-tracts',
+        'counties',
+        'states',)
+
+    def source_data_for_boundary(self, boundary):
+        '''Get census data where the total population is not 0'''
+        total_fields, _ = self.get_fields()
+        try:
+            source_data = Census.objects.get(boundary=boundary)
+        except Census.DoesNotExist:
+            return None
+        else:
+            # Look for non-null, positive number in total fields
+            for field in total_fields:
+                if getattr(source_data, field):
+                    return source_data
+            return None
+
+    def boundaries_for_location(self, location):
+        '''Generate census boundaries containing the point, smallest first'''
+        wkt = 'POINT({} {})'.format(*location)
+        for set_slug in self.boundary_set_slugs:
+            try:
+                boundary = Boundary.objects.get(
+                    set__slug=set_slug, shape__contains=wkt)
+            except Boundary.DoesNotExist:
+                pass
+            else:
+                yield boundary
+
+    def local_percent(self, source_data):
+        '''
+        Calculate the local percentage for the source data
+        '''
+        total_fields, target_fields = self.get_fields()
+        total = sum([getattr(source_data, f) for f in total_fields])
+        target = sum([getattr(source_data, f) for f in target_fields])
+        percent = float(target) / float(total)
+        return percent
+
+    def score(self, source_data):
+        '''
+        Score based on the ratio vs the state ratio
+
+        For example, the metric 'Percentage on Food Stamps' comes from Census
+        table B19058.  The total households is item 1, and the count on food
+        stamps or other assistance is item 2.  The percent for any one census
+        tract is the count divided by the total.  The score is the percent of
+        census tracts across the state that have a lower percentage on food
+        stamps, which can be calculated using the cumulative distribution
+        function (CDF) with the tract's ratio, the state average, and the
+        state standard deviation.  The last two can be pre-calcuated.
+        '''
+        percent = self.local_percent(source_data)
+        avg, std_dev, better_sign = self.get_stats(source_data)
+        cdf = norm.cdf(percent, avg, std_dev)
+        if better_sign >= 0:
+            score = cdf
+        else:
+            score = 1.0 - cdf
+        return {
+            'summary': OrderedDict((
+                ("score", round(score, 3)),
+                ("value", round(percent, 3)),
+                ("average", avg),
+                ("std_dev", std_dev),
+                ("value_type", "percent"),
+                ("description", self.metric.description),
+            )),
+            'detail': {},
+            'boundary': OrderedDict((
+                ("label", source_data.boundary.display_name),
+                ("type", source_data.boundary.kind),
+                ("external_id", source_data.boundary.external_id)
+            )),
+        }
+
+    def get_fields(self):
+        '''
+        Return data field names on source data
+
+        Returns a two-element tuple:
+        - total_fields - Names of fields with population totals
+        - target_fields - Names of fields with target group counts
+        '''
+        pattern = self.table + '_{:03}E'
+        total_fields = [pattern.format(f) for f in self.total_column_ids]
+        target_fields = [pattern.format(f) for f in self.target_column_ids]
+        return total_fields, target_fields
+
+    def get_stats(self, source_data):
+        '''
+        Return population statistics from the metric, or the default stats
+        '''
+        stats = None
+        try:
+            stats = self.metric.params.get('stats')
+        except AttributeError:
+            pass
+        if stats:
+            average = stats['average']
+            std_dev = stats['std_dev']
+            better_sign = stats['better_sign']
+            return average, std_dev, better_sign
+        else:
+            return self.get_default_stats(source_data)
+
+    def get_default_stats(self, source_data):
+        '''
+        Return population statistics
+
+        Return is a 3-element tuple:
+        - average - The average value for the population
+        - standard deviation - The standard deviation for the population
+        - better_sign - Positive if higher than average is good, negative if
+          lower than average is good.
+        '''
+        raise NotImplementedError('get_default_stats not implemented')
+
+    def calculate_by_boundary(self, boundary):
+        '''Calculate by boundary, or use fake data if no data match'''
+        calculation = super(
+            CensusPercentAlgorithm, self).calculate_by_boundary(boundary)
+        if not calculation:
+            fake = PlaceholderAlgorithm(self.node, self.metric)
+            calculation = fake.calculate_by_location(boundary.centroid.coords)
+        return calculation
+
+    def calculate_by_location(self, location):
+        '''Calculate by location, or use fake data if no data match'''
+        calculation = super(
+            CensusPercentAlgorithm, self).calculate_by_location(location)
+        if not calculation:
+            fake = PlaceholderAlgorithm(self.node, self.metric)
+            calculation = fake.calculate_by_location(location)
+        return calculation
+
+
+class FoodStampAlgorithm(CensusPercentAlgorithm):
+    '''Score based on percentage of households on food stamps/assistance'''
+
+    table = 'B19058'
+    total_column_ids = (1,)
+    target_column_ids = (2,)
+
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.138
+        std_dev = 0.106
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+class PercentPovertyAlgorithm(CensusPercentAlgorithm):
+    '''Score based on percentage of individuals below poverty level'''
+
+    table = 'B17001'
+    total_column_ids = (1,)
+    target_column_ids = (2,)
+
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.166
+        std_dev = 0.118383
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
 def boundaries(point):
-    '''Return boundaries containing the point'''
-    wkt = 'POINT({} {})'.format(*point)
-    return Boundary.objects.filter(shape__contains=wkt)
+    raise Exception('Convert to new way')
 
 
 def boundary_dict(boundary):
-    '''Convert a boundary to a dictionary'''
-    return OrderedDict((
-        ('path', '/api/boundary/{}/'.format(boundary.slug)),
-        ('label', boundary.display_name),
-        ('year', 2013),
-        ('type', boundary.set.name),
-        ('external_id', boundary.external_id),
-        ('id', boundary.slug),
-    ))
+    raise Exception('Convert to new way')
 
 
-class BaseAlgorithm(object):
-    def __init__(self, metric):
-        self.metric = metric
+class PercentUnemploymentAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on employment status is unemployed for 16 and older
+    '''
 
-    def calculate(self, point):
-        raise NotImplementedError('Algorithm is not implemented')
+    table = 'B23001'
+    total_column_ids = (1,)
+    target_column_ids = (
+        # Unemployed by age buckets
+        8,   15,  22,  29,  36,  43,  50,  57,  64,  71,    # Male, 16 to 64
+        76,  81,  86,                                       # Male, 65 and up
+        94, 101, 108, 115, 122, 129, 136, 143, 150, 157,    # Female 16 to 64
+        162, 167, 172)                                      # Female 65 and up
 
-
-class FakeAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        lon, lat = point
-        coord_fmt = '{:0.4f}'
-        lon_st = coord_fmt.format(lon)
-        lat_st = coord_fmt.format(lat)
-        slug = slugify(self.metric.name)
-        path = "fake/{}/{},{}/".format(slug, lon_st, lat_st)
-        random.seed(path)
-        score = random.randint(0, 100) / 100.0
-        value = random.randint(0, 100) / 100.0
-        citation = OrderedDict((
-            ('path', '/api/citation/' + path),
-            ('label', 'Fake Data Citation'),
-            ('year', 2010),
-            ('type', 'fake'),
-            ('id', '{},{}'.format(lon_st, lat_st)),
-        ))
-        boundary = OrderedDict((
-            ('path', '/api/boundary/' + path),
-            ('label', 'Fake Data Boundary'),
-            ('year', 2010),
-            ('type', 'fake'),
-            ('id', '{},{}'.format(lon_st, lat_st)),
-        ))
-        score = OrderedDict((
-            ("score", score),
-            ("value", value),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.04193
+        std_dev = 0.0266
+        better_sign = -1
+        return average, std_dev, better_sign
 
 
-class FoodStampAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B19058_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        boundary = boundary_dict(data.boundary)
-        citation = OrderedDict((
-            ('path', '/api/citation/census/B19058/'),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B19058'),
-        ))
-        total = data.B19058_001E
-        on_stamps = data.B19058_002E
-        percent = on_stamps / float(total)
-        state_avg = 0.138
-        state_std_dev = 0.106
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentSingleParentAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on # of children w/o two parents
+    '''
+    table = 'B09002'
+    total_column_ids = (1,)
+    target_column_ids = (8,)  # Count not in married-couple families
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.452998
+        std_dev = 0.1657150
+        better_sign = -1
+        return average, std_dev, better_sign
 
 
-class PercentPovertyAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B17001_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        boundary = boundary_dict(data.boundary)
-        citation = OrderedDict((
-            ('path', '/api/citation/census/B17001/'),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B17001'),
-        ))
-        total = data.B17001_001E
-        in_poverty = data.B17001_002E
-        percent = in_poverty / float(total)
-        state_avg = 0.166
-        state_std_dev = 0.118383
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentIncomeHousingCostAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on weighted percent requiring more than 35% of income
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    Combines data from two tables:
+    B25070: Gross Rent as a Percentage of Household Income
+    B25091: Morgage Status by Selected Monthly Owner Costs as a Percentage of
+            Household Income
+    '''
 
+    tables = {
+        'B25070': {
+            'total_column_ids': (1,),
+            'target_column_ids': (8, 9, 10),
+        },
+        'B25091': {
+            'total_column_ids': (1,),
+            'target_column_ids': (9, 10, 11, 20, 21, 22),
+        },
+    }
 
-class PercentUnemploymentAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = (
-                    'B23001_001E', 'B23001_008E', 'B23001_015E',
-                    'B23001_022E', 'B23001_029E', 'B23001_036E',
-                    'B23001_043E', 'B23001_050E', 'B23001_057E',
-                    'B23001_064E', 'B23001_071E', 'B23001_076E',
-                    'B23001_081E', 'B23001_086E', 'B23001_094E',
-                    'B23001_101E', 'B23001_108E', 'B23001_115E',
-                    'B23001_122E', 'B23001_129E', 'B23001_136E',
-                    'B23001_143E', 'B23001_150E', 'B23001_157E',
-                    'B23001_162E', 'B23001_167E', 'B23001_172E',
-    )
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B23001_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(B23001_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        citation = OrderedDict((
-            ('path', '/api/citation/census/B23001/'),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B23001'),
-        ))
-        data_list = list(new_data)
-        total = data_list.pop(0)
-        total_unemployed = sum(data_list)
-        percent = total_unemployed / float(total)
-        state_avg = 0.04193
-        state_std_dev = 0.0266
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_fields(self):
+        '''Get fields from both tables'''
+        total_fields = []
+        target_fields = []
+        for table, columns in self.tables.items():
+            pattern = table + '_{:03}E'
+            total_fields.extend(
+                [pattern.format(f) for f in columns['total_column_ids']])
+            target_fields.extend(
+                [pattern.format(f) for f in columns['target_column_ids']])
+        return total_fields, target_fields
+
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.1544959
+        std_dev = 0.0867039
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        '''Calculate a weighted percentage'''
+        total_fields, _ = self.get_fields()
+        total = sum([getattr(source_data, f) for f in total_fields])
+        total_renter_gradual = (
+            source_data.B25070_008E / float(4) +  # 35% - 39.9%
+            source_data.B25070_009E / float(2) +  # 40% - 49.9%
+            source_data.B25070_010E / float(1))   # 50% or more
+        total_mortgaged_owner = (
+            source_data.B25091_009E / float(4) +  # 35% - 39.9%
+            source_data.B25091_010E / float(2) +  # 40% - 49.9%
+            source_data.B25091_011E / float(1))   # 50% or more
+        total_unmortgaged_owner = (
+            source_data.B25091_020E / float(4) +  # 35% - 39.9%
+            source_data.B25091_021E / float(2) +  # 40% - 49.9%
+            source_data.B25091_022E / float(1))   # 50% or more
+        weighted_percent_affordable = (
+            total_renter_gradual + total_mortgaged_owner +
+            total_unmortgaged_owner) / float(total)
+        return weighted_percent_affordable
 
 
-class PercentSingleParentAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B09002_001E', 'B09002_008E',
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B09002_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B09002_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', '/api/citation/census/B09002/'),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B09002'),
-        ))
-        
-        total = data[0]
-        total_single_parent = data[1]
-        percent = total_single_parent / float(total)
-        state_avg = 0.452998
-        state_std_dev = 0.1657150
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentHighSchoolGraduatesAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on population 25 or older with a high school diploma
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    TODO: Switch to table B15003?
+    '''
+    table = 'B15002'
+    total_column_ids = (1,)
+    target_column_ids = (
+        11, 12, 13, 14, 15, 16, 17, 18,  # Male, High School Grad or better
+        28, 29, 30, 31, 32, 33, 34, 35)  # Female, High School Grad or better
+
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.861836
+        std_dev = 0.096739
+        better_sign = 1
+        return average, std_dev, better_sign
 
 
-class PercentIncomeHousingCostAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B25091_001E', 'B25070_001E', 'B25070_008E',
-            'B25070_009E', 'B25070_010E', 'B25091_009E',
-            'B25091_010E', 'B25091_011E', 'B25091_020E',
-            'B25091_021E', 'B25091_022E',
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B25091_001E=0, B25070_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B25091_001E=0, B25070_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/('B25091', 'B25070')/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', ('B25091', 'B25070')),
-        ))
-        
-        total = data[0] + data[1]
-        total_renter_gradual = data[2]/float(4) + data[3]/float(2) + data[4]
-        total_mortgaged_owner = data[5]/float(4) + data[6]/float(2) + data[7]
-        total_unmortgaged_owner = data[8]/float(4) + data[9]/float(2) + data[10]
-        percent = (total_renter_gradual + total_mortgaged_owner + total_unmortgaged_owner)/float(total)
-        state_avg = 0.1544959
-        state_std_dev = 0.0867039
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentDivorcedOrSeparatedAlgorithm(CensusPercentAlgorithm):
+    '''
+    Score based on population that is divorced or separated but not widowed
+    '''
+    table = 'B12001'
+    total_column_ids = (1, )
+    target_column_ids = (3, 9, 12, 18, 5, 14)
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.264508
+        std_dev = 0.139789
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        '''
+        Calcuate the percent that were once married but aren't now
+        '''
+        total = source_data.B12001_001E
+        never_married = source_data.B12001_003E + source_data.B12001_012E
+        widowed = source_data.B12001_009E + source_data.B12001_018E
+        married_and_present = source_data.B12001_005E + source_data.B12001_014E
+        current_married_percent = (
+            married_and_present / float(total - never_married - widowed))
+        return 1.0 - current_married_percent
 
 
-class PercentHighSchoolGraduatesAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B15002_001E', 'B15002_011E', 'B15002_012E',
-            'B15002_013E', 'B15002_014E', 'B15002_015E',
-            'B15002_016E', 'B15002_017E', 'B15002_018E',
-            'B15002_028E', 'B15002_029E', 'B15002_030E',
-            'B15002_031E', 'B15002_032E', 'B15002_033E',
-            'B15002_034E', 'B15002_035E', 
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B15002_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B15002_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/B15002/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B15002'),
-        ))
-        
-        data_list = list(data)
-        total = data_list.pop(0)
-        high_school_grads = sum(data_list)
-        percent = high_school_grads/float(total)
-        state_avg = 0.861836
-        state_std_dev = 0.096739
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentOvercrowdingAlgorithm(CensusPercentAlgorithm):
+    '''Score based on weighted occupants per room'''
+    table = 'B25014'
+    total_column_ids = (1,)
+    target_column_ids = (3, 4, 5, 6, 7, 9, 10, 11, 12, 13)
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.040577
+        std_dev = 0.014887
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        '''Return a weighted percentage of over-occupied residences'''
+        total = source_data.B25014_001E
+        # Get sum for owner-occupied and renter-occupied by occupants per room
+        per_1_0 = source_data.B25014_004E + source_data.B25014_010E  # .5 - 1
+        per_1_5 = source_data.B25014_005E + source_data.B25014_011E  # 1 - 1.5
+        per_2_0 = source_data.B25014_006E + source_data.B25014_012E  # 1.5 - 2
+        per_2_x = source_data.B25014_007E + source_data.B25014_013E  # > 2
+        negative_weighted_sum = (
+            per_1_0 / 8.0 + per_1_5 / 4.0 + per_2_0 / 2.0 + per_2_x)
+        return negative_weighted_sum / float(total)
 
 
-class PercentDivorcedMarriageAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B12001_001E', 'B12001_003E', 'B12001_009E',
-            'B12001_012E', 'B12001_018E', 'B12001_005E',
-            'B12001_014E', 
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B12001_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B12001_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/B12001/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B12001'),
-        ))
-        
-        total = data[0] - data[1] - data[2] - data[3] - data[4]
-        total_currently_good_marriage = data[5] + data[6]
-        percent = total_currently_good_marriage/float(total)
-        state_avg = 0.735492
-        state_std_dev = 0.139789
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentGeographicMobilityAlgorithm(CensusPercentAlgorithm):
+    '''Score based on percent who did not live in the same house 1 year ago'''
+    table = 'B07013'
+    total_column_ids = (1,)
+    target_column_ids = (4, )
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.168965
+        std_dev = 0.09219
+        better_sign = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        '''Calcuate the percent who moved in the last year'''
+        total = source_data.B07013_001E
+        same_house = source_data.B07013_004E  # Same house in the last year
+        percent_same = same_house / float(total)
+        return 1.0 - percent_same
 
 
-class PercentOvercrowdingAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B25014_001E','B25014_003E','B25014_004E',
-            'B25014_005E','B25014_006E','B25014_007E',
-            'B25014_009E','B25014_010E','B25014_011E',
-            'B25014_012E','B25014_013E',
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B25014_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B25014_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/B25014/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B25014'),
-        ))
-        
-        data_list = list(data)
-        total = data_list[0]
-        decent_housing = (data_list[2] + data_list[7])/8.0
-        crowded_housing = (data_list[3] + data_list[8])/4.0
-        cramped_housing = (data_list[4] + data_list[9])/2.0
-        bad_housing = float(data_list[5] + data_list[10])
-        total_negative_housing = decent_housing + crowded_housing + cramped_housing + bad_housing
-        percent = total_negative_housing/float(total)
-        state_avg = 0.040577
-        state_std_dev = 0.014887
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentCollegeGraduateAlgorithm(CensusPercentAlgorithm):
+    '''Score based on percent who graduated college'''
+    table = 'B15003'
+    total_column_ids = (1,)
+    target_column_ids = (21, 22, 23, 24, 25)
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.301417
+        std_dev = 0.153007
+        better_sign = 1
+        return average, std_dev, better_sign
 
 
-class PercentGeographicMobilityAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B07013_001E', 'B07013_004E',
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B07013_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B07013_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/B07013/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B07013'),
-        ))
-        
-        total = data[0]
-        same_house_year_ago = data[1]
-        different_house_year_ago = total - same_house_year_ago
-        percent = different_house_year_ago/float(total)
-        state_avg = 0.168965
-        state_std_dev = 0.09219
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentBadCommuteTimesAlgorithm(CensusPercentAlgorithm):
+    '''Score based on weighted percent of those with long commute times'''
+    table = 'B08303'
+    total_column_ids = (1, )
+    target_column_ids = (8, 9, 10, 11, 12, 13)
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.082964
+        std_dev = 0.059340889
+        better_sign = -1
+        return average, std_dev, better_sign
 
-        return score, citation, boundary
+    def local_percent(self, source_data):
+        total = source_data.B08303_001E
+        min_30 = source_data.B08303_008E  # 30 - 34 minutes
+        min_35 = source_data.B08303_009E  # 35 - 39 minutes
+        min_40 = source_data.B08303_010E  # 40 - 44 minutes
+        min_45 = source_data.B08303_011E  # 45 - 59 minutes
+        min_60 = source_data.B08303_012E  # 60 - 89 minutes
+        min_90 = source_data.B08303_013E  # 90 or more minutes
+        weighted = (
+            (min_30 / 16.0) + (min_35 / 8.0) + (min_40 / 4.0) +
+            (min_45 / 2.0) + min_60 + min_90)
+        return weighted / float(total)
 
 
-class PercentCollegeGraduateAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B15003_001E','B15003_021E','B15003_022E',
-            'B15003_023E','B15003_024E','B15003_025E', 
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B15003_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B15003_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/B15003/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B15003'),
-        ))
-        
-        data_list = list(data)
-        total = data_list.pop(0)
-        college_grads = sum(data_list)
-        percent = college_grads/float(total)
-        state_avg = 0.301417
-        state_std_dev = 0.153007
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentImproperKitchenFacilitiesAlgorithm(CensusPercentAlgorithm):
+    '''Score based on if household lacks a complete kitchen'''
+    table = 'B25052'
+    total_column_ids = (1, )
+    target_column_ids = (3, )
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.00976313
+        std_dev = 0.01802429
+        better_sign = -1
+        return average, std_dev, better_sign
 
 
-class PercentBadCommuteTimesAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B08303_001E', 'B08303_008E', 'B08303_009E',
-            'B08303_010E', 'B08303_011E', 'B08303_012E',
-            'B08303_013E',
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B08303_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B08303_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/B08303/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B08303'),
-        ))
-        total = data[0]
-        bad_commutes = data[1]/16.0 + data[2]/8.0 + data[3]/4.0 + data[4]/2.0 + data[5] + data[6]
-        percent = bad_commutes/float(total)
-        state_avg = 0.082964
-        state_std_dev = 0.059340889
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentImproperPlumbingAlgorithm(CensusPercentAlgorithm):
+    '''Score based on if household lacks complete plumbing'''
+    table = 'B25048'
+    total_column_ids = (1, )
+    target_column_ids = (3, )
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.00572503
+        std_dev = 0.0109313
+        better_sign = -1
+        return average, std_dev, better_sign
 
 
-class PercentImproperKitchenFacilitiesAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B25052_001E', 'B25052_003E'
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B25052_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B25052_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/B25052/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B25052'),
-        ))
-        total = data[0]
-        improper_facilities = sum(data[1:])
-        percent = improper_facilities/float(total)
-        state_avg = 0.00976313
-        state_std_dev = 0.01802429
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
+class PercentLowValueHousingAlgorithm(CensusPercentAlgorithm):
+    '''Score based on value of owner-occupied housing units'''
+    table = 'B25075'
+    total_column_ids = (1, )
+    target_column_ids = (2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
 
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def get_default_stats(self, source_data):
+        '''Stats for census tracts in Oklahoma'''
+        average = 0.0575880
+        std_dev = 0.057490381
+        better_sign = -1
+        return average, std_dev, better_sign
 
-
-class PercentImproperPlumbingAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B25048_001E', 'B25048_003E'
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B25048_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B25048_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/B25048/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B25048'),
-        ))
-        total = data[0]
-        improper_plumbing = sum(data[1:])
-        percent = improper_plumbing/float(total)
-        state_avg = 0.00572503
-        state_std_dev = 0.0109313
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
-
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
-
-
-class PercentLowValueHousingAlgorithm(BaseAlgorithm):
-    def calculate(self, point):
-        list_of_rows = [
-            'B25075_001E', 'B25075_002E', 'B25075_003E',
-            'B25075_004E', 'B25075_005E', 'B25075_006E',
-            'B25075_007E', 'B25075_008E', 'B25075_009E',
-            'B25075_010E', 'B25075_011E', 'B25075_012E',
-            'B25075_013E', 'B25075_014E', 'B25075_015E', 
-        ]
-        for boundary in boundaries(point):
-            try:
-                data = Census.objects.filter(boundary=boundary).exclude(
-                    B25075_001E=0).first()
-            except Census.DoesNotExist:
-                pass
-            else:
-                break
-        new_data = Census.objects.filter(boundary=boundary).values_list(*list_of_rows).exclude(
-                    B25075_001E=0).first()
-        boundary = boundary_dict(data.boundary)
-        data = new_data
-        citation = OrderedDict((
-            ('path', "/api/citation/census/B25075/",),
-            ('label', 'Census 5 Year Summary, 2008-2012'),
-            ('year', 2012),
-            ('type', 'percent'),
-            ('id', 'B25075'),
-        ))
-        total = data[0]
-        low_value = sum(( data[1], data[2]/2.0, data[3]/2.0, data[4]/4.0,
-            data[5]/4.0, data[6]/8.0, data[7]/8.0, data[8]/16.0, data[9]/32.0,
-            data[10]/48.0, data[11]/64.0, data[12]/80.0, data[13]/96.0, data[14]/128.0) )
-        percent = low_value/float(total)
-        state_avg = 0.0575880
-        state_std_dev = 0.057490381
-        score = 1.0 - norm.cdf(percent, state_avg, state_std_dev)
-
-        score = OrderedDict((
-            ("score", round(score, 3)),
-            ("value", round(percent, 3)),
-            ("average", state_avg),
-            ("std_dev", state_std_dev),
-            ("value_type", "percent"),
-            ("description", self.metric.description),
-            ("citation_path", citation['path']),
-            ("boundary_path", boundary['path']),
-        ))
-        return score, citation, boundary
+    def local_percent(self, source_data):
+        total = source_data.B25075_001E
+        k000 = source_data.B25075_002E / 1.0    # Less than $10k
+        k010 = source_data.B25075_003E / 2.0    # $10k - $15k
+        k015 = source_data.B25075_004E / 2.0    # $15k - $20k
+        k020 = source_data.B25075_005E / 4.0    # $20k - $25k
+        k025 = source_data.B25075_006E / 4.0    # $25k - $30k
+        k030 = source_data.B25075_007E / 8.0    # $30k - $35k
+        k035 = source_data.B25075_008E / 8.0    # $35k - $40k
+        k040 = source_data.B25075_009E / 16.0   # $40k - $50k
+        k050 = source_data.B25075_010E / 32.0   # $50k - $60k
+        k060 = source_data.B25075_011E / 48.0   # $60k - $70k
+        k070 = source_data.B25075_012E / 64.0   # $70k - $80k
+        k080 = source_data.B25075_013E / 80.0   # $80k - $90k
+        k090 = source_data.B25075_014E / 96.0   # $90k - $100k
+        k100 = source_data.B25075_015E / 128.0  # $100k - $125k
+        value = (
+            k000 + k010 + k015 + k020 + k025 + k030 + k035 + k040 + k050 +
+            k060 + k070 + k080 + k090 + k100)
+        return value / float(total)

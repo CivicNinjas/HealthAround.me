@@ -55,55 +55,6 @@ def fake_boundary(location, precision):
     return boundary
 
 
-
-def fake_boundary(location, precision):
-    '''
-    Returns a rectangular fake Boundary
-
-    precision determines the size of the Boundary.  2 is about 1 mile tall,
-    and width varies by latitude
-    '''
-
-    def round_down(val):
-        factor = pow(10, precision)
-        return floor(val * factor) / factor
-
-    lon, lat = location
-    factor = pow(10, precision)
-    increment = 1.0 / factor
-    params = {
-        'bot_lon': floor(lon * factor) / factor,
-        'bot_lat': floor(lat * factor) / factor,
-        'precision': precision,
-        'pplus': precision + 1,
-    }
-    params['top_lon'] = params['bot_lon'] + increment
-    params['top_lat'] = params['bot_lat'] + increment
-    params['ctr_lon'] = params['bot_lon'] + (increment / 2)
-    params['ctr_lat'] = params['bot_lat'] + (increment / 2)
-    shape_wkt = (
-        "MULTIPOLYGON((("
-        "{bot_lon:0.{precision}f} {bot_lat:0.{precision}f},"
-        "{bot_lon:0.{precision}f} {top_lat:0.{precision}f},"
-        "{top_lon:0.{precision}f} {top_lat:0.{precision}f},"
-        "{top_lon:0.{precision}f} {bot_lat:0.{precision}f},"
-        "{bot_lon:0.{precision}f} {bot_lat:0.{precision}f}"
-        ")))").format(**params)
-    centroid_wkt = (
-        "POINT("
-        "{ctr_lon:0.{pplus}f} {ctr_lat:0.{pplus}f}"
-        ")").format(**params)
-    fake_slug = (
-        'fake_{precision}_'
-        '{bot_lon:0.{precision}f}_'
-        '{bot_lat:0.{precision}f}').format(**params)
-    boundary = Boundary(
-        shape=shape_wkt, display_name='Future Data Placeholder',
-        kind='Future Data Placeholder',
-        slug=fake_slug, centroid=centroid_wkt, name='Placeholder')
-    return boundary
-
-
 def std_dev_across_tracts(total_col, target_cols):
     '''
     Calcuate the standard deviation across Oklahoma census tracts
@@ -310,7 +261,8 @@ def stand_dev_low_value_housing():
             count += 1
     final_total = (total/float(count))**(0.5)
     print ok_percentile
-    return final_total
+<<<<<<< HEAD
+    return final_tota
 
 
 def create_dic_from_json_query(json_file):
@@ -378,4 +330,6 @@ def create_dic_from_json_query(json_file):
     print count
     return new_json
 
-
+=======
+    return final_total
+>>>>>>> 6da6e95488169dbeca5639b3fb46289b18cead76

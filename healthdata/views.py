@@ -10,7 +10,9 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.response import Response
 
 from .models import ScoreNode
-from .serializers import BoundarySerializer, ScoreNodeSerializer
+from .serializers import (
+    BoundarySerializer, MetricDetailSerializer, ScoreNodeSerializer)
+from .utils import fake_boundary
 
 
 def fake_api(request):
@@ -128,6 +130,77 @@ class BoundaryAPIView(RetrieveAPIView):
     serializer_class = BoundarySerializer
 
 
+def fake_boundary_from_slug(fake_slug):
+    '''Create a fake Boundary from a path slug'''
+    _, raw_res, raw_lon, raw_lat = fake_slug.split('_', 4)
+    location = (float(raw_lon), float(raw_lat))
+    precision = int(raw_res)
+    return fake_boundary(location, precision)
+
+
+class DetailAPIView(RetrieveAPIView):
+    model = Boundary
+    serializer_class = MetricDetailSerializer
+
+    def transform_data(self, raw_data):
+        '''Transform the raw MetricDetailSerializer data'''
+        data = raw_data.copy()
+        elem = data['properties'].pop('element')
+
+        # Element should be a leaf node
+        children = elem.pop('children')
+        assert not children
+
+        # Extract summary and detail items
+        metric = elem.pop('metric')
+        for key, val in metric['summary'].items():
+            elem[key] = val
+        for key, val in metric['detail'].items():
+            if key != 'path':
+                elem[key] = val
+
+        data['properties']['metric'] = elem
+        return data
+
+    def get_object(self, queryset=None):
+        '''Get the boundary, generating a fake boundary as needed'''
+        boundary_slug = self.kwargs['boundary_slug']
+        if boundary_slug.startswith('fake_'):
+            boundary = fake_boundary_from_slug(boundary_slug)
+        else:
+            boundary = Boundary.objects.get(slug=boundary_slug)
+        return boundary
+
+    def get_serializer_context(self):
+        '''Add the node to the context'''
+        context = super(DetailAPIView, self).get_serializer_context()
+        node_slug = self.kwargs['node_slug']
+        node = ScoreNode.objects.filter(slug=node_slug).latest('id')
+        context['node'] = node
+        return context
+
+    def retrieve(self, request, *args, **kwargs):
+        '''
+        Convert raw node serialization to wire serialization
+
+        Copy of rest_framework/mixins/RetrieveModelMixin.retrieve,
+        but transforms the raw MetricDetailSerializer data.
+        '''
+        self.object = self.get_object()
+        serializer = self.get_serializer(self.object)
+        raw_data = serializer.data
+        data = self.transform_data(raw_data)
+        return Response(data)
+
+
+class FakeBoundaryAPIView(RetrieveAPIView):
+    model = Boundary
+    serializer_class = BoundarySerializer
+
+    def get_object(self, queryset=None):
+        return fake_boundary_from_slug(self.kwargs['slug'])
+
+
 class ScoreAPIView(ListAPIView):
     serializer_class = ScoreNodeSerializer
     queryset = ScoreNode.objects.filter(parent=None)
@@ -142,16 +215,24 @@ class ScoreAPIView(ListAPIView):
     def transform_data(self, raw_data):
         '''Transform the raw ScoreNodeSerializer data'''
         data = OrderedDict((
+            ('score', 0),
             ('elements', []),
             ('boundaries', {}),
-            ('citations', {}),
         ))
         for raw in raw_data:
             transformed = self.transform_raw_element(raw)
             element, boundaries, citations = transformed
             data['elements'].append(element)
             data['boundaries'].update(boundaries)
-            data['citations'].update(citations)
+
+        # Accumulate score
+        total_score = 0.0
+        total_weight = 0.0
+        for element in data['elements']:
+            total_score += element['score'] * element['weight']
+            total_weight += element['weight']
+        data['score'] = round(total_score / total_weight, 2)
+
         return data
 
     def transform_raw_element(self, raw):
@@ -163,15 +244,29 @@ class ScoreAPIView(ListAPIView):
         ))
         boundaries = {}
         citations = {}
+        assert raw['metric'] or raw['children']
         if raw['metric']:
             assert not raw['children']
             metric = raw['metric']
-            for key, value in metric['score'].items():
+            for key, value in metric['summary'].items():
                 element[key] = value
+
+            # Extract boundary
             boundary = metric['boundary']
-            boundaries[boundary['path']] = boundary
-            citation = metric['citation']
-            citations[citation['path']] = citation
+            boundary_path = boundary['path']
+            boundary['uri'] = (
+                self.request.build_absolute_uri(boundary_path))
+            boundary_path_prefix = '/api/boundary/'
+            assert boundary_path.startswith(boundary_path_prefix)
+            assert boundary_path.endswith('/')
+            boundary_id = boundary_path[len(boundary_path_prefix):-1]
+            boundaries[boundary_id] = boundary
+            element['boundary_id'] = boundary_id
+
+            # Extract detail URI
+            detail_path = metric['detail']['path']
+            element['detail_uri'] = (
+                self.request.build_absolute_uri(detail_path))
         if raw['children']:
             assert not raw['metric']
             total_score = 0.0

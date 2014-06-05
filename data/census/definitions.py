@@ -117,7 +117,8 @@ TABLES = {
     },
     'B15002': {
         'description': (
-            'Sex by Educational Attainment for the Population 25 Years and Over')
+            'Sex by Educational Attainment for the Population'
+            ' 25 Years and Over')
     },
     'C15002': {
         'description': 'Sex by Educational Attainment.',

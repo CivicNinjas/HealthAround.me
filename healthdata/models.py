@@ -1,6 +1,5 @@
-from boundaryservice.models import Boundary, BoundarySet
+from boundaryservice.models import Boundary
 from django.db import models
-from django.contrib.contenttypes.models import ContentType
 from jsonfield import JSONField
 from mptt.models import MPTTModel, TreeForeignKey
 from south.modelsinspector import add_introspection_rules
@@ -44,23 +43,24 @@ class ProtoHealth(models.Model):
 class ScoreMetric(models.Model):
     '''A metric that has a score for a given location'''
 
-    FAKE_ALGORITHM = 0
+    PLACEHOLDER_ALGORITHM = 0
     FOOD_STAMP_ALGORITHM = 1
     PERCENT_POVERTY_ALGORITHM = 2
     PERCENT_UNEMPLOYMENT_ALGORITHM = 3
     PERCENT_SINGLE_PARENT_ALGORITHM = 4
     PERCENT_INCOME_HOUSING_COST_ALGORITHM = 5
     PERCENT_HIGH_SCHOOL_GRADUATES_ALGORITHM = 6
-    PERCENT_DIVORCED_MARRIAGE_ALGORITHM = 7
+    PERCENT_DIVORCED_ALGORITHM = 7
     PERCENT_OVERCROWDING_ALGORITHM = 8
-    PERCENT_GEOGRAPHIC_MOBILITY_ALGORITHM = 9 
+    PERCENT_GEOGRAPHIC_MOBILITY_ALGORITHM = 9
     PERCENT_COLLEGE_GRADUATE_ALGORITHM = 10
     PERCENT_BAD_COMMUTE_TIMES_ALGORITHM = 11
     PERCENT_IMPROPER_KITCHEN_FACILITIES_ALGORITHM = 12
     PERCENT_IMPROPER_PLUMBING_ALGORITHM = 13
     PERCENT_LOW_VALUE_HOUSING_ALGORITHM = 14
     algorithm_choices = (
-        (FAKE_ALGORITHM, 'FakeAlgorithm', 'Fake Algorithm'),
+        (PLACEHOLDER_ALGORITHM, 'PlaceholderAlgorithm',
+            'Placeholder Algorithm'),
         (FOOD_STAMP_ALGORITHM, 'FoodStampAlgorithm', 'Food Stamp Algorithm'),
         (PERCENT_POVERTY_ALGORITHM, 'PercentPovertyAlgorithm',
          'Percent Poverty Algorithm'),
@@ -68,25 +68,35 @@ class ScoreMetric(models.Model):
          'Percent Unemployment Algorithm'),
         (PERCENT_SINGLE_PARENT_ALGORITHM, 'PercentSingleParentAlgorithm',
          'Percent Single Parent Algorithm'),
-        (PERCENT_INCOME_HOUSING_COST_ALGORITHM, 'PercentIncomeHousingCostAlgorithm',
+        (PERCENT_INCOME_HOUSING_COST_ALGORITHM,
+         'PercentIncomeHousingCostAlgorithm',
          'Percent Income Housing Cost Algorithm'),
-        (PERCENT_HIGH_SCHOOL_GRADUATES_ALGORITHM, 'PercentHighSchoolGraduatesAlgorithm',
+        (PERCENT_HIGH_SCHOOL_GRADUATES_ALGORITHM,
+         'PercentHighSchoolGraduatesAlgorithm',
          'Percent High School Graduates Algorithm'),
-        (PERCENT_DIVORCED_MARRIAGE_ALGORITHM, 'PercentDivorcedMarriageAlgorithm',
-         'Percent Divorced Marriage Algorithm'),
-        (PERCENT_OVERCROWDING_ALGORITHM, 'PercentOvercrowdingAlgorithm',
+        (PERCENT_DIVORCED_ALGORITHM,
+         'PercentDivorcedOrSeparatedAlgorithm',
+         'Percent Divorced or Separated Algorithm'),
+        (PERCENT_OVERCROWDING_ALGORITHM,
+         'PercentOvercrowdingAlgorithm',
          'Percent Overcrowding Algorithm'),
-        (PERCENT_GEOGRAPHIC_MOBILITY_ALGORITHM, 'PercentGeographicMobilityAlgorithm',
+        (PERCENT_GEOGRAPHIC_MOBILITY_ALGORITHM,
+         'PercentGeographicMobilityAlgorithm',
          'Percent Geographic Mobility Algorithm'),
-        (PERCENT_COLLEGE_GRADUATE_ALGORITHM, 'PercentCollegeGraduateAlgorithm',
+        (PERCENT_COLLEGE_GRADUATE_ALGORITHM,
+         'PercentCollegeGraduateAlgorithm',
          'Percent College Graduate Algorithm'),
-        (PERCENT_BAD_COMMUTE_TIMES_ALGORITHM, 'PercentBadCommuteTimesAlgorithm',
+        (PERCENT_BAD_COMMUTE_TIMES_ALGORITHM,
+         'PercentBadCommuteTimesAlgorithm',
          'Percent Bad Commute Times Algorithm'),
-        (PERCENT_IMPROPER_KITCHEN_FACILITIES_ALGORITHM, 'PercentImproperKitchenFacilitiesAlgorithm',
+        (PERCENT_IMPROPER_KITCHEN_FACILITIES_ALGORITHM,
+         'PercentImproperKitchenFacilitiesAlgorithm',
          'Percent Improper Kitchen Facilities'),
-        (PERCENT_IMPROPER_PLUMBING_ALGORITHM, 'PercentImproperPlumbingAlgorithm',
+        (PERCENT_IMPROPER_PLUMBING_ALGORITHM,
+         'PercentImproperPlumbingAlgorithm',
          'Percent Improper Plumbing Algorithm'),
-        (PERCENT_LOW_VALUE_HOUSING_ALGORITHM, 'PercentLowValueHousingAlgorithm',
+        (PERCENT_LOW_VALUE_HOUSING_ALGORITHM,
+         'PercentLowValueHousingAlgorithm',
          'Percent Low Value Housing Algorithm'),
     )
     algorithm_class_name = dict([(a[0], a[1]) for a in algorithm_choices])
@@ -96,18 +106,9 @@ class ScoreMetric(models.Model):
     description = models.CharField(
         max_length=255, default="This is a description",
         help_text='Human-readable description')
-    data_source = models.ForeignKey(
-        ContentType, null=True, blank=True,
-        help_text='Model that Holds the Source Data')
-    boundary_set = models.ForeignKey(
-        BoundarySet, null=True, blank=True,
-        help_text='Related Boundary Set with Data')
-    data_property = models.CharField(
-        max_length=50, null=True, blank=True,
-        help_text='Data property used for source data')
     algorithm = models.IntegerField(
         choices=[(a[0], a[2]) for a in algorithm_choices],
-        default=FAKE_ALGORITHM,
+        default=PLACEHOLDER_ALGORITHM,
         help_text='Algorithm used to calculate score')
     params = JSONField(
         default='', null=True, blank=True,
@@ -116,13 +117,16 @@ class ScoreMetric(models.Model):
     def __str__(self):
         return self.name
 
-    def get_algorithm(self):
+    def get_algorithm(self, node):
         klass = getattr(algorithms, self.algorithm_class_name[self.algorithm])
-        algorithm = klass(self)
+        algorithm = klass(node, self)
         return algorithm
 
-    def score(self, point):
-        return self.get_algorithm().calculate(point)
+    def score_by_boundary(self, node, boundary):
+        return self.get_algorithm(node).calculate_by_boundary(boundary)
+
+    def score_by_location(self, node, location):
+        return self.get_algorithm(node).calculate_by_location(location)
 
 
 class ScoreNode(MPTTModel):
@@ -145,3 +149,15 @@ class ScoreNode(MPTTModel):
 
     def __str__(self):
         return self.label
+
+    def score_by_boundary(self, boundary):
+        if self.metric:
+            return self.metric.score_by_boundary(self, boundary)
+        else:
+            return None
+
+    def score_by_location(self, location):
+        if self.metric:
+            return self.metric.score_by_location(self, location)
+        else:
+            return None
