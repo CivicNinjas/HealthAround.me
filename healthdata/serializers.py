@@ -60,8 +60,12 @@ class ScoreNodeSerializer(serializers.ModelSerializer):
 
     def get_children(self, obj):
         '''Return the recursive serialization of child nodes'''
-        return ScoreNodeSerializer(
-            obj.children.all(), many=True, context=self.context).data
+        if obj.is_leaf_node():
+            return []
+        else:
+            return ScoreNodeSerializer(
+                obj.children.all().select_related('metric'),
+                many=True, context=self.context).data
 
     def get_metric(self, obj):
         '''Return the metric results of leaf nodes'''
@@ -74,5 +78,5 @@ class ScoreNodeSerializer(serializers.ModelSerializer):
             metric = obj.score_by_location(location, cache)
         else:
             return None
-        assert metric or obj.children.count()
+        assert metric or not obj.is_leaf_node()
         return metric
