@@ -200,10 +200,100 @@
   }
 },
 {
+  "pk": 21,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Civic Participation",
+    "algorithm": 0,
+    "description": "Measure of involvement in civic affairs"
+  }
+},
+{
+  "pk": 22,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Incarceration",
+    "algorithm": 0,
+    "description": "Rate of incarceration in residents"
+  }
+},
+{
+  "pk": 23,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Perception of Discrimination",
+    "algorithm": 0,
+    "description": "People's perception of discrimination and inequality"
+  }
+},
+{
+  "pk": 24,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": "{\"stats\":{\"average\":0.264508,\"std_dev\":0.139789,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of people 15 or older were once married but are now divorced or separated, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B12001\",\"type\":\"census_reporter\",\"text\":\"View marital status on CensusReporter.org\"}]}",
+    "name": "Divorced Population",
+    "algorithm": 7,
+    "description": "Percentage of once-married population that is divorced or separated but not widowed"
+  }
+},
+{
+  "pk": 25,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": "{\"references\":[{\"date\":\"Feb 2002\",\"publisher\":\"National Institutes of Health\",\"link\":\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1430354/\",\"title\":\"Family Structure, Socioeconomic Status, and Access to Health Care for Children\"},{\"date\":\"Dec 2010\",\"publisher\":\"U.S. Department of Health and Human Services\",\"link\":\"http://www.cdc.gov/nchs/data/series/sr_10/sr10_246.pdf\",\"title\":\"Family Structure and Children's Health in the United States\"}],\"stats\":{\"average\":0.452998,\"std_dev\":0.165715,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of households with their own children have a single parent, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B09002\",\"type\":\"census_reporter\",\"text\":\"View household data on CensusReporter.org\"}]}",
+    "name": "Single Parent Households",
+    "algorithm": 4,
+    "description": "Percentage of households with children that have a single parent"
+  }
+},
+{
+  "pk": 26,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": "{\"stats\":{\"average\":0.138,\"std_dev\":0.106,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of households get cash public assistance or Food Stamps/SNAP, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B19058\",\"type\":\"census_reporter\",\"text\":\"View household on public assistance on CensusReporter.org\"}]}",
+    "name": "Percent on Food Stamps",
+    "algorithm": 1,
+    "description": "Percentage of household getting public assistance"
+  }
+},
+{
+  "pk": 27,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": "{\"stats\":{\"average\":0.00572503,\"std_dev\":0.0109313,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of occupied housing units lack complete plumbing, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B25048\",\"type\":\"census_reporter\",\"text\":\"View plumbing data on CensusReporter.org\"}]}",
+    "name": "Inadequate Plumbing",
+    "algorithm": 13,
+    "description": "Percent of households that lack complete plumbing"
+  }
+},
+{
+  "pk": 28,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": "{\"stats\":{\"average\":0.00976313,\"std_dev\":0.01802429,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of occupied housing units lack a complete kitchen, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B25052\",\"type\":\"census_reporter\",\"text\":\"View kitchen data on CensusReporter.org\"}]}",
+    "name": "Inadequate Kitchen",
+    "algorithm": 12,
+    "description": "Percent of occupied houses without complete kitchens"
+  }
+},
+{
+  "pk": 29,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": "{\"stats\":{\"average\":0.057588,\"std_dev\":0.057490381,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of owner-occupied housing units have a low market value, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B25075\",\"type\":\"census_reporter\",\"text\":\"View house value data on CensusReporter.org\"}]}",
+    "name": "Low Value Housing",
+    "algorithm": 14,
+    "description": "Percent of houses that have a low market value"
+  }
+},
+{
   "pk": 1,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 64,
+    "rght": 74,
     "parent": null,
     "weight": 1,
     "lft": 1,
@@ -283,7 +373,7 @@
   "pk": 6,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 21,
+    "rght": 27,
     "parent": 1,
     "weight": 1,
     "lft": 10,
@@ -347,11 +437,11 @@
   "pk": 10,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 18,
+    "rght": 24,
     "parent": 6,
     "weight": 23,
     "lft": 17,
-    "metric": 7,
+    "metric": null,
     "level": 2,
     "label": "Housing Quality",
     "rel_order": 1240,
@@ -363,10 +453,10 @@
   "pk": 11,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 31,
+    "rght": 37,
     "parent": 1,
     "weight": 1,
-    "lft": 22,
+    "lft": 28,
     "metric": null,
     "level": 1,
     "label": "Education",
@@ -379,10 +469,10 @@
   "pk": 12,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 24,
+    "rght": 30,
     "parent": 11,
     "weight": 21,
-    "lft": 23,
+    "lft": 29,
     "metric": 8,
     "level": 2,
     "label": "High School Graduation Rate",
@@ -395,10 +485,10 @@
   "pk": 13,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 26,
+    "rght": 32,
     "parent": 11,
     "weight": 35,
-    "lft": 25,
+    "lft": 31,
     "metric": 9,
     "level": 2,
     "label": "Higher Education Rate",
@@ -411,10 +501,10 @@
   "pk": 14,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 28,
+    "rght": 34,
     "parent": 11,
     "weight": 29,
-    "lft": 27,
+    "lft": 33,
     "metric": 10,
     "level": 2,
     "label": "School Safety",
@@ -427,10 +517,10 @@
   "pk": 15,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 30,
+    "rght": 36,
     "parent": 11,
     "weight": 23,
-    "lft": 29,
+    "lft": 35,
     "metric": 11,
     "level": 2,
     "label": "School Health Policies",
@@ -443,10 +533,10 @@
   "pk": 16,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 47,
+    "rght": 57,
     "parent": 1,
     "weight": 1,
-    "lft": 32,
+    "lft": 38,
     "metric": null,
     "level": 1,
     "label": "Economic Stability",
@@ -459,14 +549,14 @@
   "pk": 17,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 34,
-    "parent": 16,
+    "rght": 41,
+    "parent": 99,
     "weight": 21,
-    "lft": 33,
+    "lft": 40,
     "metric": 1,
-    "level": 2,
+    "level": 3,
     "label": "Percent Poverty",
-    "rel_order": 1410,
+    "rel_order": 1411,
     "tree_id": 1,
     "slug": "percent-poverty"
   }
@@ -475,10 +565,10 @@
   "pk": 18,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 36,
+    "rght": 46,
     "parent": 16,
     "weight": 35,
-    "lft": 35,
+    "lft": 45,
     "metric": 2,
     "level": 2,
     "label": "Access to Jobs",
@@ -491,10 +581,10 @@
   "pk": 19,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 38,
+    "rght": 48,
     "parent": 16,
     "weight": 29,
-    "lft": 37,
+    "lft": 47,
     "metric": 3,
     "level": 2,
     "label": "Employment Status",
@@ -507,10 +597,10 @@
   "pk": 20,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 46,
+    "rght": 56,
     "parent": 16,
     "weight": 23,
-    "lft": 39,
+    "lft": 49,
     "metric": null,
     "level": 2,
     "label": "Housing Stability",
@@ -523,10 +613,10 @@
   "pk": 21,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 63,
+    "rght": 73,
     "parent": 1,
     "weight": 1,
-    "lft": 48,
+    "lft": 58,
     "metric": null,
     "level": 1,
     "label": "Community",
@@ -539,64 +629,64 @@
   "pk": 22,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 50,
+    "rght": 60,
     "parent": 21,
     "weight": 21,
-    "lft": 49,
-    "metric": 1,
+    "lft": 59,
+    "metric": 21,
     "level": 2,
-    "label": "Percent Poverty",
+    "label": "Civic Participation",
     "rel_order": 1510,
     "tree_id": 1,
-    "slug": "percent-poverty"
+    "slug": "civic-participation"
   }
 },
 {
   "pk": 23,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 52,
+    "rght": 72,
     "parent": 21,
     "weight": 35,
-    "lft": 51,
-    "metric": 2,
+    "lft": 71,
+    "metric": 23,
     "level": 2,
-    "label": "Job Access",
-    "rel_order": 1520,
+    "label": "Perception of Discrimination",
+    "rel_order": 1540,
     "tree_id": 1,
-    "slug": "job-access"
+    "slug": "perception-of-discrimination"
   }
 },
 {
   "pk": 24,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 54,
+    "rght": 70,
     "parent": 21,
     "weight": 29,
-    "lft": 53,
-    "metric": 3,
+    "lft": 69,
+    "metric": 22,
     "level": 2,
-    "label": "Employment Status",
+    "label": "Incarceration",
     "rel_order": 1530,
     "tree_id": 1,
-    "slug": "employment-status"
+    "slug": "incarceration"
   }
 },
 {
   "pk": 25,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 62,
+    "rght": 68,
     "parent": 21,
     "weight": 23,
-    "lft": 55,
+    "lft": 61,
     "metric": null,
     "level": 2,
-    "label": "Housing Stability",
-    "rel_order": 1540,
+    "label": "Family Status",
+    "rel_order": 1520,
     "tree_id": 1,
-    "slug": "housing-stability"
+    "slug": "family-status"
   }
 },
 {
@@ -1515,10 +1605,10 @@
   "pk": 83,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 20,
+    "rght": 26,
     "parent": 6,
     "weight": 1,
-    "lft": 19,
+    "lft": 25,
     "metric": 16,
     "level": 2,
     "label": "Year Built",
@@ -1531,10 +1621,10 @@
   "pk": 84,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 41,
+    "rght": 51,
     "parent": 20,
     "weight": 1,
-    "lft": 40,
+    "lft": 50,
     "metric": 18,
     "level": 3,
     "label": "Housing Cost",
@@ -1547,10 +1637,10 @@
   "pk": 85,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 43,
+    "rght": 53,
     "parent": 20,
     "weight": 1,
-    "lft": 42,
+    "lft": 52,
     "metric": 19,
     "level": 3,
     "label": "Overcrowding",
@@ -1563,10 +1653,10 @@
   "pk": 86,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 45,
+    "rght": 55,
     "parent": 20,
     "weight": 1,
-    "lft": 44,
+    "lft": 54,
     "metric": 20,
     "level": 3,
     "label": "Geographic Mobility",
@@ -1579,48 +1669,32 @@
   "pk": 87,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 57,
+    "rght": 63,
     "parent": 25,
     "weight": 1,
-    "lft": 56,
-    "metric": 12,
+    "lft": 62,
+    "metric": 25,
     "level": 3,
-    "label": "Housing Cost",
+    "label": "Single Parent Households",
     "rel_order": 1541,
     "tree_id": 1,
-    "slug": "housing-cost"
+    "slug": "single-parent-households"
   }
 },
 {
   "pk": 88,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 59,
+    "rght": 67,
     "parent": 25,
     "weight": 1,
-    "lft": 58,
-    "metric": 19,
+    "lft": 66,
+    "metric": 24,
     "level": 3,
-    "label": "Overcrowding",
+    "label": "Divorced Population",
     "rel_order": 1542,
     "tree_id": 1,
-    "slug": "overcrowding"
-  }
-},
-{
-  "pk": 89,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 61,
-    "parent": 25,
-    "weight": 1,
-    "lft": 60,
-    "metric": 20,
-    "level": 3,
-    "label": "Geographic Mobility",
-    "rel_order": 1543,
-    "tree_id": 1,
-    "slug": "geographic-mobility"
+    "slug": "divorced-population"
   }
 },
 {
@@ -1765,6 +1839,86 @@
     "rel_order": 4243,
     "tree_id": 4,
     "slug": "geographic-mobility"
+  }
+},
+{
+  "pk": 99,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 44,
+    "parent": 16,
+    "weight": 1,
+    "lft": 39,
+    "metric": null,
+    "level": 2,
+    "label": "Poverty Status",
+    "rel_order": 1410,
+    "tree_id": 1,
+    "slug": "poverty-status"
+  }
+},
+{
+  "pk": 100,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 43,
+    "parent": 99,
+    "weight": 1,
+    "lft": 42,
+    "metric": 26,
+    "level": 3,
+    "label": "Percent on Food Stamps",
+    "rel_order": 1412,
+    "tree_id": 1,
+    "slug": "percent-food-stamps"
+  }
+},
+{
+  "pk": 101,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 19,
+    "parent": 10,
+    "weight": 1,
+    "lft": 18,
+    "metric": 27,
+    "level": 3,
+    "label": "Inadequate Plumbing",
+    "rel_order": 1241,
+    "tree_id": 1,
+    "slug": "inadequate-plumbing"
+  }
+},
+{
+  "pk": 102,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 21,
+    "parent": 10,
+    "weight": 1,
+    "lft": 20,
+    "metric": 28,
+    "level": 3,
+    "label": "Inadequate Kitchen",
+    "rel_order": 1242,
+    "tree_id": 1,
+    "slug": "inadequate-kitchen"
+  }
+},
+{
+  "pk": 103,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 23,
+    "parent": 10,
+    "weight": 1,
+    "lft": 22,
+    "metric": 29,
+    "level": 3,
+    "label": "Low Value Housing",
+    "rel_order": 1243,
+    "tree_id": 1,
+    "slug": "low-value-housing"
   }
 }
 ]
