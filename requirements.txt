@@ -18,3 +18,4 @@ ipdb
 ipdbplugin==1.4
 numpy
 scipy
+xlrd

@@ -4558,3 +4558,20 @@ class Census(models.Model):
     C27007_021E = models.IntegerField(
         blank=True, null=True,
         help_text='No Medicaid/means-tested public coverage')
+
+class Dartmouth(models.Model):
+    '''Data derived from the Dartmouth Atlas of Health'''
+
+    class Meta:
+        verbose_name_plural = 'dartmouth'
+
+    boundary = models.ForeignKey(Boundary, blank=True, null=True)
+    state_abbr = models.CharField(
+        max_length=2, help_text='State / U.S. - Abbreviation (USPS)')
+    logical_num = models.IntegerField(help_text='Logical record number')
+
+    #Discharge Rate per 1000 Medicare Enrollees
+    DISCHARGE = models.DecimalField(
+        max_digits = 5, decimal_places = 1,
+        blank=True, null=True,
+        help_text='Discharge Rate Per 1000 Medicare Enrollees')

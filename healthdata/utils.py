@@ -1,6 +1,7 @@
 from boundaryservice.models import Boundary, BoundarySet
 from data.models import Census
 import json
+from xlrd import open_workbook,cellname
 from json import JSONEncoder
 from itertools import chain
 
@@ -290,3 +291,33 @@ def create_dic_from_json_query(json_file):
     print count
     return new_json
 
+
+def dartmouth_health_atlas_excel_importer(excel_file):
+    dictionary_to_build = {"type": "FeatureCollection", "crs": {
+        "type": "name", "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": []
+    }
+    count = 0 
+    excel_book = open_workbook(excel_file)
+    excel_page = excel_book.sheet_by_index(0)
+    for areas in range(3, 79):
+        area_dict = {"type":"Feature", "properties":{}}
+        current_row_name_excel = str(excel_page.cell(areas, 0).value)
+        current_row_boundary = Boundary.objects.filter(display_name=
+                current_row_name_excel[:-4]).filter(kind="County").first()
+        current_row_value = float(excel_page.cell(areas, 1).value)
+        area_dict["properties"]["geoid"] = current_row_boundary.metadata['GEOID']
+        area_dict["properties"]["geoid"] = current_row_boundary.metadata['GEOID']
+        area_dict["properties"]["name"] = "%s, %s, %s" %(
+                current_row_boundary.metadata['NAMELSAD'],
+                current_row_boundary.metadata['NAME'], "OK")
+        area_dict["properties"]["DISCHARGE_RATE"] = current_row_value
+        area_dict['geometry'] = current_row_boundary.shape.geojson
+        dictionary_to_build['features'].append(area_dict.copy())
+        count += 1
+    new_json = json.dumps(dictionary_to_build, sort_keys=True)
+    print count
+    return new_json
