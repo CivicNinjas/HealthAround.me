@@ -14,7 +14,33 @@ from data.models import Census
 
 class AlgorithmCache(object):
     '''Data that gets used repeatedly by algorithm calculations'''
-    pass
+
+    def __init__(self):
+        self.location = None
+        self.boundaries = {}
+
+    def get_boundary(self, location, boundary_set_slug):
+        '''Get the boundary by location and boundary set slug'''
+
+        # If location changed, clear the cache
+        if self.location:
+            if location != self.location:
+                self.boundaries = {}
+                self.location = location
+        else:
+            self.location = location
+
+        # If needed, load the boundaries
+        if not self.boundaries:
+            wkt = 'POINT({} {})'.format(*location)
+            boundaries = Boundary.objects.filter(
+                shape__contains=wkt).select_related('set')
+            for boundary in boundaries:
+                self.boundaries[boundary.set.slug] = boundary
+            self.boundaries['fake_2'] = fake_boundary(location, 2)
+
+        # Return the boundary
+        return self.boundaries.get(boundary_set_slug)
 
 
 class BaseAlgorithm(object):
@@ -225,7 +251,7 @@ class PlaceholderAlgorithm(BaseAlgorithm):
 
     def boundaries_for_location(self, location):
         '''Return a fake Boundary, roughly 1/2 sq. mile'''
-        return [fake_boundary(location, 2)]
+        return [self.cache.get_boundary(location, 'fake_2')]
 
     def source_data_for_boundary(self, boundary):
         seed = self.detail_path(boundary)
@@ -284,14 +310,9 @@ class CensusPercentAlgorithm(BaseAlgorithm):
 
     def boundaries_for_location(self, location):
         '''Generate census boundaries containing the point, smallest first'''
-        wkt = 'POINT({} {})'.format(*location)
         for set_slug in self.boundary_set_slugs:
-            try:
-                boundary = Boundary.objects.get(
-                    set__slug=set_slug, shape__contains=wkt)
-            except Boundary.DoesNotExist:
-                pass
-            else:
+            boundary = self.cache.get_boundary(location, set_slug)
+            if boundary:
                 yield boundary
 
     def local_percent(self, source_data):
