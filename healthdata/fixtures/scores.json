@@ -214,9 +214,9 @@
   "model": "healthdata.scoremetric",
   "fields": {
     "params": null,
-    "name": "Incarceration",
+    "name": "Incarceration and Institutionalization",
     "algorithm": 0,
-    "description": "Rate of incarceration in residents"
+    "description": "Rate of incarceration or institutionalization in residents"
   }
 },
 {
@@ -290,12 +290,62 @@
   }
 },
 {
+  "pk": 30,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Access to Health Services",
+    "algorithm": 0,
+    "description": "Access to Health Services"
+  }
+},
+{
+  "pk": 31,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Access to Primary Care",
+    "algorithm": 0,
+    "description": "Access to Primary Care"
+  }
+},
+{
+  "pk": 32,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Health Technology",
+    "algorithm": 0,
+    "description": "Health Technology"
+  }
+},
+{
+  "pk": 33,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Homelessness",
+    "algorithm": 0,
+    "description": "Homelessness"
+  }
+},
+{
+  "pk": 34,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Social Cohesion",
+    "algorithm": 0,
+    "description": "social-cohesion"
+  }
+},
+{
   "pk": 1,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 74,
+    "rght": 78,
     "parent": null,
-    "weight": 1,
+    "weight": 5,
     "lft": 1,
     "metric": null,
     "level": 0,
@@ -311,7 +361,7 @@
   "fields": {
     "rght": 9,
     "parent": 1,
-    "weight": 10,
+    "weight": 1,
     "lft": 2,
     "metric": null,
     "level": 1,
@@ -327,14 +377,14 @@
   "fields": {
     "rght": 4,
     "parent": 2,
-    "weight": 25,
+    "weight": 1,
     "lft": 3,
-    "metric": 1,
+    "metric": 30,
     "level": 2,
-    "label": "Percent Poverty",
+    "label": "Access to Health Services",
     "rel_order": 1110,
     "tree_id": 1,
-    "slug": "percent-poverty"
+    "slug": "health-services"
   }
 },
 {
@@ -343,14 +393,14 @@
   "fields": {
     "rght": 6,
     "parent": 2,
-    "weight": 35,
+    "weight": 1,
     "lft": 5,
-    "metric": 2,
+    "metric": 31,
     "level": 2,
-    "label": "Access to Jobs",
+    "label": "Access to Primary Care",
     "rel_order": 1120,
     "tree_id": 1,
-    "slug": "job-access"
+    "slug": "primary-care"
   }
 },
 {
@@ -359,14 +409,14 @@
   "fields": {
     "rght": 8,
     "parent": 2,
-    "weight": 29,
+    "weight": 1,
     "lft": 7,
-    "metric": 3,
+    "metric": 32,
     "level": 2,
-    "label": "Employment Status",
+    "label": "Health Technology",
     "rel_order": 1130,
     "tree_id": 1,
-    "slug": "employment-status"
+    "slug": "health-technology"
   }
 },
 {
@@ -391,7 +441,7 @@
   "fields": {
     "rght": 12,
     "parent": 6,
-    "weight": 21,
+    "weight": 1,
     "lft": 11,
     "metric": 4,
     "level": 2,
@@ -407,7 +457,7 @@
   "fields": {
     "rght": 14,
     "parent": 6,
-    "weight": 35,
+    "weight": 1,
     "lft": 13,
     "metric": 5,
     "level": 2,
@@ -423,7 +473,7 @@
   "fields": {
     "rght": 16,
     "parent": 6,
-    "weight": 29,
+    "weight": 1,
     "lft": 15,
     "metric": 6,
     "level": 2,
@@ -439,7 +489,7 @@
   "fields": {
     "rght": 24,
     "parent": 6,
-    "weight": 23,
+    "weight": 2,
     "lft": 17,
     "metric": null,
     "level": 2,
@@ -471,7 +521,7 @@
   "fields": {
     "rght": 30,
     "parent": 11,
-    "weight": 21,
+    "weight": 2,
     "lft": 29,
     "metric": 8,
     "level": 2,
@@ -487,7 +537,7 @@
   "fields": {
     "rght": 32,
     "parent": 11,
-    "weight": 35,
+    "weight": 2,
     "lft": 31,
     "metric": 9,
     "level": 2,
@@ -503,7 +553,7 @@
   "fields": {
     "rght": 34,
     "parent": 11,
-    "weight": 29,
+    "weight": 1,
     "lft": 33,
     "metric": 10,
     "level": 2,
@@ -519,7 +569,7 @@
   "fields": {
     "rght": 36,
     "parent": 11,
-    "weight": 23,
+    "weight": 1,
     "lft": 35,
     "metric": 11,
     "level": 2,
@@ -533,7 +583,7 @@
   "pk": 16,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 57,
+    "rght": 59,
     "parent": 1,
     "weight": 1,
     "lft": 38,
@@ -551,7 +601,7 @@
   "fields": {
     "rght": 41,
     "parent": 99,
-    "weight": 21,
+    "weight": 2,
     "lft": 40,
     "metric": 1,
     "level": 3,
@@ -567,7 +617,7 @@
   "fields": {
     "rght": 46,
     "parent": 16,
-    "weight": 35,
+    "weight": 2,
     "lft": 45,
     "metric": 2,
     "level": 2,
@@ -583,7 +633,7 @@
   "fields": {
     "rght": 48,
     "parent": 16,
-    "weight": 29,
+    "weight": 2,
     "lft": 47,
     "metric": 3,
     "level": 2,
@@ -597,9 +647,9 @@
   "pk": 20,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 56,
+    "rght": 58,
     "parent": 16,
-    "weight": 23,
+    "weight": 2,
     "lft": 49,
     "metric": null,
     "level": 2,
@@ -613,10 +663,10 @@
   "pk": 21,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 73,
+    "rght": 77,
     "parent": 1,
     "weight": 1,
-    "lft": 58,
+    "lft": 60,
     "metric": null,
     "level": 1,
     "label": "Community",
@@ -629,10 +679,10 @@
   "pk": 22,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 60,
+    "rght": 62,
     "parent": 21,
-    "weight": 21,
-    "lft": 59,
+    "weight": 1,
+    "lft": 61,
     "metric": 21,
     "level": 2,
     "label": "Civic Participation",
@@ -645,10 +695,10 @@
   "pk": 23,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 72,
+    "rght": 74,
     "parent": 21,
-    "weight": 35,
-    "lft": 71,
+    "weight": 1,
+    "lft": 73,
     "metric": 23,
     "level": 2,
     "label": "Perception of Discrimination",
@@ -661,10 +711,10 @@
   "pk": 24,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 70,
+    "rght": 72,
     "parent": 21,
-    "weight": 29,
-    "lft": 69,
+    "weight": 1,
+    "lft": 71,
     "metric": 22,
     "level": 2,
     "label": "Incarceration",
@@ -677,16 +727,16 @@
   "pk": 25,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 68,
+    "rght": 70,
     "parent": 21,
-    "weight": 23,
-    "lft": 61,
+    "weight": 2,
+    "lft": 63,
     "metric": null,
     "level": 2,
-    "label": "Family Status",
+    "label": "Family Structure",
     "rel_order": 1520,
     "tree_id": 1,
-    "slug": "family-status"
+    "slug": "family-structure"
   }
 },
 {
@@ -1623,7 +1673,7 @@
   "fields": {
     "rght": 51,
     "parent": 20,
-    "weight": 1,
+    "weight": 2,
     "lft": 50,
     "metric": 18,
     "level": 3,
@@ -1639,7 +1689,7 @@
   "fields": {
     "rght": 53,
     "parent": 20,
-    "weight": 1,
+    "weight": 2,
     "lft": 52,
     "metric": 19,
     "level": 3,
@@ -1655,7 +1705,7 @@
   "fields": {
     "rght": 55,
     "parent": 20,
-    "weight": 1,
+    "weight": 2,
     "lft": 54,
     "metric": 20,
     "level": 3,
@@ -1669,10 +1719,10 @@
   "pk": 87,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 63,
+    "rght": 65,
     "parent": 25,
-    "weight": 1,
-    "lft": 62,
+    "weight": 2,
+    "lft": 64,
     "metric": 25,
     "level": 3,
     "label": "Single Parent Households",
@@ -1685,10 +1735,10 @@
   "pk": 88,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 67,
+    "rght": 69,
     "parent": 25,
-    "weight": 1,
-    "lft": 66,
+    "weight": 2,
+    "lft": 68,
     "metric": 24,
     "level": 3,
     "label": "Divorced Population",
@@ -1847,7 +1897,7 @@
   "fields": {
     "rght": 44,
     "parent": 16,
-    "weight": 1,
+    "weight": 2,
     "lft": 39,
     "metric": null,
     "level": 2,
@@ -1863,7 +1913,7 @@
   "fields": {
     "rght": 43,
     "parent": 99,
-    "weight": 1,
+    "weight": 2,
     "lft": 42,
     "metric": 26,
     "level": 3,
@@ -1879,7 +1929,7 @@
   "fields": {
     "rght": 19,
     "parent": 10,
-    "weight": 1,
+    "weight": 2,
     "lft": 18,
     "metric": 27,
     "level": 3,
@@ -1895,7 +1945,7 @@
   "fields": {
     "rght": 21,
     "parent": 10,
-    "weight": 1,
+    "weight": 2,
     "lft": 20,
     "metric": 28,
     "level": 3,
@@ -1911,7 +1961,7 @@
   "fields": {
     "rght": 23,
     "parent": 10,
-    "weight": 1,
+    "weight": 2,
     "lft": 22,
     "metric": 29,
     "level": 3,
@@ -1919,6 +1969,38 @@
     "rel_order": 1243,
     "tree_id": 1,
     "slug": "low-value-housing"
+  }
+},
+{
+  "pk": 104,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 57,
+    "parent": 20,
+    "weight": 1,
+    "lft": 56,
+    "metric": 33,
+    "level": 3,
+    "label": "Homelessness",
+    "rel_order": 1444,
+    "tree_id": 1,
+    "slug": "homelessness"
+  }
+},
+{
+  "pk": 105,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 76,
+    "parent": 21,
+    "weight": 1,
+    "lft": 75,
+    "metric": 34,
+    "level": 2,
+    "label": "Social Cohesion",
+    "rel_order": 1550,
+    "tree_id": 1,
+    "slug": "social-cohesion"
   }
 }
 ]
