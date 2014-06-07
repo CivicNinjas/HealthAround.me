@@ -173,7 +173,7 @@
   "pk": 18,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": "{\"why_md_fmt\":\"When housing is a large proportion of the household expenses, there is less stability.  Areas with high cost of housing are most affected by:\\n\\n-Limited community involvement\\n- Higher rates of poverty\\n- Limited access to nutritional food\\n\\nThese effects can lead households to experience:\\n\\n- Limited access to healthcare\\n- Higher rates of inpatient hospitalization\\n-Higher rates of stress or poor physiological health\\n-Higher rates of injury and illness\\n-Reduced quality of life\\n\",\"references\":[{\"date\":\"Jan 2006\",\"publisher\":\"National Institutes of Health\",\"link\":\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1484604/\",\"title\":\"Housing Instability and Food Insecurity as Barriers to Health Care Amoung Low-Incom Americans\"}],\"stats\":{\"average\":0.1544959,\"std_dev\":0.0867039,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of households are spending a large percentage of family income on housing, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B25070\",\"type\":\"census_reporter\",\"text\":\"View rental rates on CensusReporter.org\"},{\"table\":\"B25091\",\"type\":\"census_reporter\",\"text\":\"View mortgage status on CensusReporter.org\"}]}",
+    "params": "{\"why_md_fmt\":\"When housing is a large proportion of the household expenses, there is less stability.  Areas with high cost of housing are most affected by:\\n\\n- Limited community involvement\\n- Higher rates of poverty\\n- Limited access to nutritional food\\n\\nThese effects can lead households to experience:\\n\\n- Limited access to healthcare\\n- Higher rates of inpatient hospitalization\\n- Higher rates of stress or poor physiological health\\n-Higher rates of injury and illness\\n- Reduced quality of life\\n\",\"references\":[{\"date\":\"Jan 2006\",\"publisher\":\"National Institutes of Health\",\"link\":\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1484604/\",\"title\":\"Housing Instability and Food Insecurity as Barriers to Health Care Amoung Low-Incom Americans\"}],\"stats\":{\"average\":0.1544959,\"std_dev\":0.0867039,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of households are spending a large percentage of family income on housing, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B25070\",\"type\":\"census_reporter\",\"text\":\"View rental rates on CensusReporter.org\"},{\"table\":\"B25091\",\"type\":\"census_reporter\",\"text\":\"View mortgage status on CensusReporter.org\"}]}",
     "name": "Housing Cost",
     "algorithm": 5,
     "description": "Households spending a large percent of income on housing"
@@ -223,7 +223,7 @@
   "pk": 23,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": null,
+    "params": "{\"why_md_fmt\":\"It's important, dude.\"}",
     "name": "Perception of Discrimination",
     "algorithm": 0,
     "description": "People's perception of discrimination and inequality"
@@ -340,10 +340,400 @@
   }
 },
 {
+  "pk": 35,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Placeholder",
+    "algorithm": 0,
+    "description": "Placeholder for future data"
+  }
+},
+{
+  "pk": 36,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Low Birthweight",
+    "algorithm": 0,
+    "description": "Percent of infants born with low birthrate"
+  }
+},
+{
+  "pk": 37,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Teen Birthrate",
+    "algorithm": 0,
+    "description": "Percentage of infants born to teen moms"
+  }
+},
+{
+  "pk": 38,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Infant Mortality",
+    "algorithm": 0,
+    "description": "Percent of infants that do not survive 12 months"
+  }
+},
+{
+  "pk": 39,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Teen Smokers",
+    "algorithm": 0,
+    "description": "Percent of teen smokers"
+  }
+},
+{
+  "pk": 40,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Child Poverty",
+    "algorithm": 0,
+    "description": "Percent of children in poverty"
+  }
+},
+{
+  "pk": 41,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Percent Free Lunch",
+    "algorithm": 0,
+    "description": "Percent of children on free lunch program"
+  }
+},
+{
+  "pk": 42,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Access to Parks",
+    "algorithm": 0,
+    "description": "Parks within a reasonable distance"
+  }
+},
+{
+  "pk": 43,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Adult Smokers",
+    "algorithm": 0,
+    "description": "Percent of adults who smoke"
+  }
+},
+{
+  "pk": 44,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Adult Obesity",
+    "algorithm": 0,
+    "description": "Percent of adults who are obese"
+  }
+},
+{
+  "pk": 45,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Adult Alcohol Use",
+    "algorithm": 0,
+    "description": "Percent of Adults who consume alcohol"
+  }
+},
+{
+  "pk": 46,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Senior Smokers",
+    "algorithm": 0,
+    "description": "Percent of seniors who smoke"
+  }
+},
+{
+  "pk": 47,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Preventable Hospital Days",
+    "algorithm": 0,
+    "description": "Days of preventable hospital admittance "
+  }
+},
+{
+  "pk": 48,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Death by Heart Disease",
+    "algorithm": 0,
+    "description": "Deaths due to heart disease"
+  }
+},
+{
+  "pk": 49,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Death by Cancer",
+    "algorithm": 0,
+    "description": "Death by Cancer"
+  }
+},
+{
+  "pk": 50,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Death by Respiratory Disease",
+    "algorithm": 0,
+    "description": "Death by Respiratory Disease"
+  }
+},
+{
+  "pk": 51,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Death by Stroke",
+    "algorithm": 0,
+    "description": "Death by Stroke"
+  }
+},
+{
+  "pk": 52,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Death by Accidents",
+    "algorithm": 0,
+    "description": "Death by Accidents"
+  }
+},
+{
+  "pk": 53,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Death by Suicide",
+    "algorithm": 0,
+    "description": "Death by Suicide"
+  }
+},
+{
+  "pk": 54,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Chronic Heart Disease",
+    "algorithm": 0,
+    "description": "% with heart disease"
+  }
+},
+{
+  "pk": 55,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Chronic Cancer",
+    "algorithm": 0,
+    "description": "% with cancer"
+  }
+},
+{
+  "pk": 56,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Chronic Asthma",
+    "algorithm": 0,
+    "description": "% with Asthma"
+  }
+},
+{
+  "pk": 57,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Chronic Diabetes",
+    "algorithm": 0,
+    "description": "% with diabetes"
+  }
+},
+{
+  "pk": 58,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Chronic Obesity",
+    "algorithm": 0,
+    "description": "% with obesity"
+  }
+},
+{
+  "pk": 59,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Chronic Arthritis",
+    "algorithm": 0,
+    "description": "% with arthritis"
+  }
+},
+{
+  "pk": 60,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Chronic Hypertension",
+    "algorithm": 0,
+    "description": "% with hypertension"
+  }
+},
+{
+  "pk": 61,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Male Life Expectancy",
+    "algorithm": 0,
+    "description": "Life Expectancy for Males"
+  }
+},
+{
+  "pk": 62,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Female Life Expectancy",
+    "algorithm": 0,
+    "description": "Life Expectancy for Females"
+  }
+},
+{
+  "pk": 64,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Medicare Costs in Last 6 Months of Life",
+    "algorithm": 0,
+    "description": "Medical Costs in Last 6 Months of Life"
+  }
+},
+{
+  "pk": 65,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Surgery Readmits",
+    "algorithm": 0,
+    "description": "Surgery Readmits"
+  }
+},
+{
+  "pk": 66,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "ER Visit Soon After Surgery",
+    "algorithm": 0,
+    "description": "ER Visit < 30 days post surgery discharge"
+  }
+},
+{
+  "pk": 67,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Medical Readmits",
+    "algorithm": 0,
+    "description": "Medical Readmits < 30 days"
+  }
+},
+{
+  "pk": 68,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "ER Visit Soon after medical",
+    "algorithm": 0,
+    "description": "ER Visit < 30 days post medical discharge"
+  }
+},
+{
+  "pk": 69,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Hip Replacement Surgery",
+    "algorithm": 0,
+    "description": "Average cost for hip replacement surgery"
+  }
+},
+{
+  "pk": 70,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Medicare Hospital Spending per Patient",
+    "algorithm": 0,
+    "description": "This is a descriptionMedicare Hospital Spending per Patient"
+  }
+},
+{
+  "pk": 71,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Permanent Pacemaker Implant",
+    "algorithm": 0,
+    "description": "Cost of a Permanent Pacemaker Implant"
+  }
+},
+{
+  "pk": 72,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Access to Hospitals",
+    "algorithm": 0,
+    "description": "Access to Hospitals"
+  }
+},
+{
+  "pk": 73,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Access to Doctors",
+    "algorithm": 0,
+    "description": "Access to Doctors"
+  }
+},
+{
+  "pk": 74,
+  "model": "healthdata.scoremetric",
+  "fields": {
+    "params": null,
+    "name": "Access to Dentists",
+    "algorithm": 0,
+    "description": "Access to Dentists"
+  }
+},
+{
   "pk": 1,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 78,
+    "rght": 76,
     "parent": null,
     "weight": 5,
     "lft": 1,
@@ -663,7 +1053,7 @@
   "pk": 21,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 77,
+    "rght": 75,
     "parent": 1,
     "weight": 1,
     "lft": 60,
@@ -695,10 +1085,10 @@
   "pk": 23,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 74,
+    "rght": 72,
     "parent": 21,
     "weight": 1,
-    "lft": 73,
+    "lft": 71,
     "metric": 23,
     "level": 2,
     "label": "Perception of Discrimination",
@@ -711,10 +1101,10 @@
   "pk": 24,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 72,
+    "rght": 70,
     "parent": 21,
     "weight": 1,
-    "lft": 71,
+    "lft": 69,
     "metric": 22,
     "level": 2,
     "label": "Incarceration",
@@ -727,7 +1117,7 @@
   "pk": 25,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 70,
+    "rght": 68,
     "parent": 21,
     "weight": 2,
     "lft": 63,
@@ -743,7 +1133,7 @@
   "pk": 26,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 56,
+    "rght": 36,
     "parent": null,
     "weight": 1,
     "lft": 1,
@@ -759,14 +1149,14 @@
   "pk": 27,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 11,
+    "rght": 21,
     "parent": 26,
     "weight": 1,
-    "lft": 2,
+    "lft": 12,
     "metric": null,
     "level": 1,
     "label": "Children & Teens",
-    "rel_order": 2100,
+    "rel_order": 2200,
     "tree_id": 2,
     "slug": "children-teens"
   }
@@ -775,78 +1165,78 @@
   "pk": 28,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 4,
+    "rght": 14,
     "parent": 27,
-    "weight": 21,
-    "lft": 3,
-    "metric": 4,
+    "weight": 1,
+    "lft": 13,
+    "metric": 39,
     "level": 2,
-    "label": "Crime Rates",
-    "rel_order": 2110,
+    "label": "Teen Smokers",
+    "rel_order": 2210,
     "tree_id": 2,
-    "slug": "crime-rate"
+    "slug": "teen-smokers"
   }
 },
 {
   "pk": 29,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 6,
+    "rght": 16,
     "parent": 27,
-    "weight": 35,
-    "lft": 5,
-    "metric": 5,
+    "weight": 1,
+    "lft": 15,
+    "metric": 40,
     "level": 2,
-    "label": "Food Access",
-    "rel_order": 2120,
+    "label": "Child Poverty",
+    "rel_order": 2220,
     "tree_id": 2,
-    "slug": "food-access"
+    "slug": "child-poverty"
   }
 },
 {
   "pk": 30,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 8,
+    "rght": 18,
     "parent": 27,
-    "weight": 29,
-    "lft": 7,
-    "metric": 6,
+    "weight": 1,
+    "lft": 17,
+    "metric": 41,
     "level": 2,
-    "label": "Environmental Conditions",
-    "rel_order": 2130,
+    "label": "Percent Free Lunch",
+    "rel_order": 2230,
     "tree_id": 2,
-    "slug": "environmental"
+    "slug": "child-free-lunch"
   }
 },
 {
   "pk": 31,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 10,
+    "rght": 20,
     "parent": 27,
-    "weight": 23,
-    "lft": 9,
-    "metric": 7,
+    "weight": 1,
+    "lft": 19,
+    "metric": 42,
     "level": 2,
-    "label": "Housing Quality",
-    "rel_order": 2140,
+    "label": "Access to Parks",
+    "rel_order": 2240,
     "tree_id": 2,
-    "slug": "housing-quality"
+    "slug": "access-to-parks"
   }
 },
 {
   "pk": 32,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 27,
+    "rght": 35,
     "parent": 26,
     "weight": 1,
-    "lft": 12,
+    "lft": 30,
     "metric": null,
     "level": 1,
     "label": "Seniors",
-    "rel_order": 2200,
+    "rel_order": 2400,
     "tree_id": 2,
     "slug": "seniors"
   }
@@ -855,78 +1245,46 @@
   "pk": 33,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 14,
+    "rght": 32,
     "parent": 32,
-    "weight": 21,
-    "lft": 13,
-    "metric": 1,
+    "weight": 1,
+    "lft": 31,
+    "metric": 46,
     "level": 2,
-    "label": "Percent Poverty",
-    "rel_order": 2210,
+    "label": "Percent Smoker",
+    "rel_order": 2410,
     "tree_id": 2,
-    "slug": "percent-poverty"
+    "slug": "senior-smokers"
   }
 },
 {
   "pk": 34,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 16,
+    "rght": 34,
     "parent": 32,
-    "weight": 35,
-    "lft": 15,
-    "metric": 2,
+    "weight": 1,
+    "lft": 33,
+    "metric": 47,
     "level": 2,
-    "label": "Job Access",
-    "rel_order": 2220,
+    "label": "Preventable Hospital Days",
+    "rel_order": 2420,
     "tree_id": 2,
-    "slug": "job-access"
-  }
-},
-{
-  "pk": 35,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 18,
-    "parent": 32,
-    "weight": 29,
-    "lft": 17,
-    "metric": 3,
-    "level": 2,
-    "label": "Employment Status",
-    "rel_order": 2230,
-    "tree_id": 2,
-    "slug": "employment-status"
-  }
-},
-{
-  "pk": 36,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 26,
-    "parent": 32,
-    "weight": 23,
-    "lft": 19,
-    "metric": null,
-    "level": 2,
-    "label": "Housing Stability",
-    "rel_order": 2240,
-    "tree_id": 2,
-    "slug": "housing-stability"
+    "slug": "preventable-hospital-days"
   }
 },
 {
   "pk": 37,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 45,
+    "rght": 11,
     "parent": 26,
     "weight": 1,
-    "lft": 28,
+    "lft": 2,
     "metric": null,
     "level": 1,
     "label": "Babies & Infants",
-    "rel_order": 2300,
+    "rel_order": 2100,
     "tree_id": 2,
     "slug": "babies-infants"
   }
@@ -935,62 +1293,46 @@
   "pk": 38,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 34,
+    "rght": 8,
     "parent": 37,
-    "weight": 35,
-    "lft": 33,
-    "metric": 2,
+    "weight": 1,
+    "lft": 7,
+    "metric": 37,
     "level": 2,
-    "label": "Job Access",
-    "rel_order": 2320,
+    "label": "Teen Birth Rate",
+    "rel_order": 2130,
     "tree_id": 2,
-    "slug": "job-access"
+    "slug": "teen-birth-rate"
   }
 },
 {
   "pk": 39,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 36,
+    "rght": 10,
     "parent": 37,
-    "weight": 29,
-    "lft": 35,
-    "metric": 3,
+    "weight": 1,
+    "lft": 9,
+    "metric": 38,
     "level": 2,
-    "label": "Employment Status",
-    "rel_order": 2330,
+    "label": "Infant Mortality",
+    "rel_order": 2140,
     "tree_id": 2,
-    "slug": "employment-status"
-  }
-},
-{
-  "pk": 40,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 44,
-    "parent": 37,
-    "weight": 23,
-    "lft": 37,
-    "metric": null,
-    "level": 2,
-    "label": "Housing Stability",
-    "rel_order": 2340,
-    "tree_id": 2,
-    "slug": "housing-stability"
+    "slug": "infant-mortality"
   }
 },
 {
   "pk": 41,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 55,
+    "rght": 29,
     "parent": 26,
     "weight": 1,
-    "lft": 46,
+    "lft": 22,
     "metric": null,
     "level": 1,
     "label": "Adults",
-    "rel_order": 2400,
+    "rel_order": 2300,
     "tree_id": 2,
     "slug": "adults"
   }
@@ -999,71 +1341,55 @@
   "pk": 42,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 48,
+    "rght": 24,
     "parent": 41,
-    "weight": 21,
-    "lft": 47,
-    "metric": 8,
+    "weight": 1,
+    "lft": 23,
+    "metric": 43,
     "level": 2,
-    "label": "High School Graduation Rate",
-    "rel_order": 2410,
+    "label": "Percent Smokers",
+    "rel_order": 2310,
     "tree_id": 2,
-    "slug": "hs-grad-rate"
+    "slug": "adult-smokers"
   }
 },
 {
   "pk": 43,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 50,
+    "rght": 26,
     "parent": 41,
-    "weight": 35,
-    "lft": 49,
-    "metric": 9,
+    "weight": 1,
+    "lft": 25,
+    "metric": 44,
     "level": 2,
-    "label": "Higher Education Rates",
-    "rel_order": 2420,
+    "label": "Percent Obese",
+    "rel_order": 2320,
     "tree_id": 2,
-    "slug": "high-ed-rate"
+    "slug": "adult-obesity"
   }
 },
 {
   "pk": 44,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 52,
+    "rght": 28,
     "parent": 41,
-    "weight": 29,
-    "lft": 51,
-    "metric": 10,
+    "weight": 1,
+    "lft": 27,
+    "metric": 45,
     "level": 2,
-    "label": "School Safety",
-    "rel_order": 2430,
+    "label": "Alcohol Use",
+    "rel_order": 2330,
     "tree_id": 2,
-    "slug": "safe-schools"
-  }
-},
-{
-  "pk": 45,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 54,
-    "parent": 41,
-    "weight": 23,
-    "lft": 53,
-    "metric": 11,
-    "level": 2,
-    "label": "School Health Policies",
-    "rel_order": 2440,
-    "tree_id": 2,
-    "slug": "school-health-policies"
+    "slug": "alcohol-use"
   }
 },
 {
   "pk": 46,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 30,
+    "rght": 38,
     "parent": null,
     "weight": 1,
     "lft": 1,
@@ -1079,7 +1405,7 @@
   "pk": 47,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 11,
+    "rght": 15,
     "parent": 46,
     "weight": 1,
     "lft": 2,
@@ -1097,14 +1423,14 @@
   "fields": {
     "rght": 4,
     "parent": 47,
-    "weight": 21,
+    "weight": 1,
     "lft": 3,
-    "metric": 8,
+    "metric": 48,
     "level": 2,
-    "label": "High School Graduation Rate",
+    "label": "Heart Disease",
     "rel_order": 3110,
     "tree_id": 3,
-    "slug": "hs-grad-rate"
+    "slug": "heart-disease-death"
   }
 },
 {
@@ -1113,14 +1439,14 @@
   "fields": {
     "rght": 6,
     "parent": 47,
-    "weight": 35,
+    "weight": 1,
     "lft": 5,
-    "metric": 9,
+    "metric": 49,
     "level": 2,
-    "label": "Higher Education Rates",
+    "label": "Cancer",
     "rel_order": 3120,
     "tree_id": 3,
-    "slug": "higher-ed-rate"
+    "slug": "cancer-death"
   }
 },
 {
@@ -1129,14 +1455,14 @@
   "fields": {
     "rght": 8,
     "parent": 47,
-    "weight": 29,
+    "weight": 1,
     "lft": 7,
-    "metric": 10,
+    "metric": 50,
     "level": 2,
-    "label": "School Safety",
+    "label": "Respiratory Disease",
     "rel_order": 3130,
     "tree_id": 3,
-    "slug": "school-safety"
+    "slug": "respiratory-disease-death"
   }
 },
 {
@@ -1145,24 +1471,24 @@
   "fields": {
     "rght": 10,
     "parent": 47,
-    "weight": 23,
+    "weight": 1,
     "lft": 9,
-    "metric": 11,
+    "metric": 51,
     "level": 2,
-    "label": "School Health Policies",
+    "label": "Stroke",
     "rel_order": 3140,
     "tree_id": 3,
-    "slug": "school-health"
+    "slug": "stroke-death"
   }
 },
 {
   "pk": 52,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 21,
+    "rght": 31,
     "parent": 46,
     "weight": 1,
-    "lft": 12,
+    "lft": 16,
     "metric": null,
     "level": 1,
     "label": "Chronic Disease Rates",
@@ -1175,74 +1501,74 @@
   "pk": 53,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 14,
+    "rght": 18,
     "parent": 52,
-    "weight": 21,
-    "lft": 13,
-    "metric": 4,
+    "weight": 1,
+    "lft": 17,
+    "metric": 54,
     "level": 2,
-    "label": "Crime Rates",
+    "label": "Heart Disease",
     "rel_order": 3210,
     "tree_id": 3,
-    "slug": "crime-rates"
+    "slug": "heart-disease"
   }
 },
 {
   "pk": 54,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 16,
+    "rght": 20,
     "parent": 52,
-    "weight": 35,
-    "lft": 15,
-    "metric": 2,
+    "weight": 1,
+    "lft": 19,
+    "metric": 55,
     "level": 2,
-    "label": "Access to Jobs",
+    "label": "Cancer",
     "rel_order": 3220,
     "tree_id": 3,
-    "slug": "job-access"
+    "slug": "cancer-disease"
   }
 },
 {
   "pk": 55,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 18,
+    "rght": 22,
     "parent": 52,
-    "weight": 29,
-    "lft": 17,
-    "metric": 6,
+    "weight": 1,
+    "lft": 21,
+    "metric": 56,
     "level": 2,
-    "label": "Environmental Conditions",
+    "label": "Asthma",
     "rel_order": 3230,
     "tree_id": 3,
-    "slug": "environmental"
+    "slug": "asthma-disease"
   }
 },
 {
   "pk": 56,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 20,
+    "rght": 24,
     "parent": 52,
-    "weight": 23,
-    "lft": 19,
-    "metric": 7,
+    "weight": 1,
+    "lft": 23,
+    "metric": 57,
     "level": 2,
-    "label": "Housing Quality",
+    "label": "Diabetes",
     "rel_order": 3240,
     "tree_id": 3,
-    "slug": "housing-quality"
+    "slug": "diabetes-disease"
   }
 },
 {
   "pk": 57,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 29,
+    "rght": 37,
     "parent": 46,
     "weight": 1,
-    "lft": 22,
+    "lft": 32,
     "metric": null,
     "level": 1,
     "label": "Life Expectancy",
@@ -1255,55 +1581,39 @@
   "pk": 58,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 24,
+    "rght": 34,
     "parent": 57,
-    "weight": 21,
-    "lft": 23,
-    "metric": 1,
+    "weight": 1,
+    "lft": 33,
+    "metric": 61,
     "level": 2,
-    "label": "Percent Poverty",
+    "label": "Male",
     "rel_order": 3310,
     "tree_id": 3,
-    "slug": "percent-poverty"
+    "slug": "life-expectancy-male"
   }
 },
 {
   "pk": 59,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 26,
+    "rght": 36,
     "parent": 57,
-    "weight": 35,
-    "lft": 25,
-    "metric": 2,
+    "weight": 1,
+    "lft": 35,
+    "metric": 62,
     "level": 2,
-    "label": "Access to Jobs",
+    "label": "Female",
     "rel_order": 3320,
     "tree_id": 3,
-    "slug": "job-access"
-  }
-},
-{
-  "pk": 60,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 28,
-    "parent": 57,
-    "weight": 29,
-    "lft": 27,
-    "metric": 3,
-    "level": 2,
-    "label": "Employment Status",
-    "rel_order": 3330,
-    "tree_id": 3,
-    "slug": "employment-status"
+    "slug": "life-expectancy-female"
   }
 },
 {
   "pk": 61,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 46,
+    "rght": 34,
     "parent": null,
     "weight": 1,
     "lft": 1,
@@ -1319,7 +1629,7 @@
   "pk": 62,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 11,
+    "rght": 7,
     "parent": 61,
     "weight": 1,
     "lft": 2,
@@ -1337,14 +1647,14 @@
   "fields": {
     "rght": 4,
     "parent": 62,
-    "weight": 21,
+    "weight": 1,
     "lft": 3,
     "metric": 13,
     "level": 2,
     "label": "Total Medicare Reimbursements Per Enrolee",
     "rel_order": 4110,
     "tree_id": 4,
-    "slug": "total-medicare-reimbursements-per-enrolee"
+    "slug": "total-medicare-reimbursements"
   }
 },
 {
@@ -1353,56 +1663,24 @@
   "fields": {
     "rght": 6,
     "parent": 62,
-    "weight": 35,
+    "weight": 1,
     "lft": 5,
-    "metric": 5,
+    "metric": 64,
     "level": 2,
-    "label": "Food Access",
+    "label": "Last 6 months of life",
     "rel_order": 4120,
     "tree_id": 4,
-    "slug": "food-access"
-  }
-},
-{
-  "pk": 65,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 8,
-    "parent": 62,
-    "weight": 29,
-    "lft": 7,
-    "metric": 6,
-    "level": 2,
-    "label": "Environmental Conditions",
-    "rel_order": 4130,
-    "tree_id": 4,
-    "slug": "environment"
-  }
-},
-{
-  "pk": 66,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 10,
-    "parent": 62,
-    "weight": 23,
-    "lft": 9,
-    "metric": 7,
-    "level": 2,
-    "label": "Housing Quality",
-    "rel_order": 4140,
-    "tree_id": 4,
-    "slug": "housing-quality"
+    "slug": "medicare-last-six-months"
   }
 },
 {
   "pk": 67,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 27,
+    "rght": 17,
     "parent": 61,
     "weight": 1,
-    "lft": 12,
+    "lft": 8,
     "metric": null,
     "level": 1,
     "label": "Health Care Quality",
@@ -1415,58 +1693,58 @@
   "pk": 68,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 16,
+    "rght": 12,
     "parent": 67,
-    "weight": 35,
-    "lft": 15,
-    "metric": 2,
+    "weight": 1,
+    "lft": 11,
+    "metric": 66,
     "level": 2,
-    "label": "Access to Jobs",
+    "label": "ER Visits Soon After Surgery Discharge",
     "rel_order": 4220,
     "tree_id": 4,
-    "slug": "job-access"
+    "slug": "er-visit-post-surgery"
   }
 },
 {
   "pk": 69,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 18,
+    "rght": 14,
     "parent": 67,
-    "weight": 29,
-    "lft": 17,
-    "metric": 3,
+    "weight": 1,
+    "lft": 13,
+    "metric": 67,
     "level": 2,
-    "label": "Employment Status",
+    "label": "Medical Readmits",
     "rel_order": 4230,
     "tree_id": 4,
-    "slug": "employment-status"
+    "slug": "medical-readmits"
   }
 },
 {
   "pk": 70,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 14,
+    "rght": 10,
     "parent": 67,
-    "weight": 21,
-    "lft": 13,
-    "metric": 1,
+    "weight": 1,
+    "lft": 9,
+    "metric": 65,
     "level": 2,
-    "label": "Percent Poverty",
+    "label": "Surgery Readmits",
     "rel_order": 4210,
     "tree_id": 4,
-    "slug": "poverty"
+    "slug": "surgery-readmits"
   }
 },
 {
   "pk": 71,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 35,
+    "rght": 25,
     "parent": 61,
     "weight": 1,
-    "lft": 28,
+    "lft": 18,
     "metric": null,
     "level": 1,
     "label": "Hospital Costs",
@@ -1479,174 +1757,142 @@
   "pk": 72,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 30,
+    "rght": 22,
     "parent": 71,
-    "weight": 21,
-    "lft": 29,
-    "metric": 1,
+    "weight": 1,
+    "lft": 21,
+    "metric": 69,
     "level": 2,
-    "label": "Percent Poverty Test",
-    "rel_order": 4310,
+    "label": "Hip Replacement Surgery",
+    "rel_order": 4320,
     "tree_id": 4,
-    "slug": "percent-poverty"
+    "slug": "hip-replacement-surgery"
   }
 },
 {
   "pk": 73,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 32,
+    "rght": 20,
     "parent": 71,
-    "weight": 35,
-    "lft": 31,
-    "metric": 2,
+    "weight": 1,
+    "lft": 19,
+    "metric": 70,
     "level": 2,
-    "label": "Job Access",
-    "rel_order": 4320,
+    "label": "Medicare Hospital Spending",
+    "rel_order": 4310,
     "tree_id": 4,
-    "slug": "job-access"
-  }
-},
-{
-  "pk": 74,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 34,
-    "parent": 71,
-    "weight": 29,
-    "lft": 33,
-    "metric": 3,
-    "level": 2,
-    "label": "Employment Status",
-    "rel_order": 4330,
-    "tree_id": 4,
-    "slug": "employment-status"
+    "slug": "medicare-hospital-spending"
   }
 },
 {
   "pk": 75,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 26,
+    "rght": 16,
     "parent": 67,
-    "weight": 23,
-    "lft": 19,
-    "metric": null,
+    "weight": 1,
+    "lft": 15,
+    "metric": 68,
     "level": 2,
-    "label": "Housing Stability",
+    "label": "ER Visits Soon After Medical Discharge",
     "rel_order": 4240,
     "tree_id": 4,
-    "slug": "housing-stability"
+    "slug": "et-visit-post-medical"
   }
 },
 {
   "pk": 76,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 45,
+    "rght": 33,
     "parent": 61,
     "weight": 1,
-    "lft": 36,
+    "lft": 26,
     "metric": null,
     "level": 1,
-    "label": "Health Care Access",
+    "label": "Access to Care",
     "rel_order": 4400,
     "tree_id": 4,
-    "slug": "health-care-access"
+    "slug": "access-to-care"
   }
 },
 {
   "pk": 77,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 38,
+    "rght": 28,
     "parent": 76,
-    "weight": 21,
-    "lft": 37,
-    "metric": 8,
+    "weight": 1,
+    "lft": 27,
+    "metric": 72,
     "level": 2,
-    "label": "High School Graduation Rate",
+    "label": "Hospitals",
     "rel_order": 4410,
     "tree_id": 4,
-    "slug": "hs-grad-rate"
+    "slug": "access-to-hospitals"
   }
 },
 {
   "pk": 78,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 40,
+    "rght": 30,
     "parent": 76,
-    "weight": 35,
-    "lft": 39,
-    "metric": 9,
+    "weight": 1,
+    "lft": 29,
+    "metric": 73,
     "level": 2,
-    "label": "Higher Education Rates",
+    "label": "Doctors",
     "rel_order": 4420,
     "tree_id": 4,
-    "slug": "high-ed-rate"
+    "slug": "access-to-doctors"
   }
 },
 {
   "pk": 79,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 42,
+    "rght": 32,
     "parent": 76,
-    "weight": 29,
-    "lft": 41,
-    "metric": 10,
+    "weight": 1,
+    "lft": 31,
+    "metric": 74,
     "level": 2,
-    "label": "School Safety",
+    "label": "Dentists",
     "rel_order": 4430,
     "tree_id": 4,
-    "slug": "school-safety"
-  }
-},
-{
-  "pk": 80,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 44,
-    "parent": 76,
-    "weight": 23,
-    "lft": 43,
-    "metric": 11,
-    "level": 2,
-    "label": "School Health Policies",
-    "rel_order": 4440,
-    "tree_id": 4,
-    "slug": "school-health"
+    "slug": "access-to-dentists"
   }
 },
 {
   "pk": 81,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 32,
+    "rght": 6,
     "parent": 37,
-    "weight": 21,
-    "lft": 31,
-    "metric": 1,
+    "weight": 1,
+    "lft": 5,
+    "metric": 36,
     "level": 2,
-    "label": "Percent Poverty",
-    "rel_order": 2310,
+    "label": "Low Birthweight ",
+    "rel_order": 2120,
     "tree_id": 2,
-    "slug": "percent-poverty"
+    "slug": "low-birthweight"
   }
 },
 {
   "pk": 82,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 30,
+    "rght": 4,
     "parent": 37,
-    "weight": 10,
-    "lft": 29,
+    "weight": 1,
+    "lft": 3,
     "metric": 14,
     "level": 2,
     "label": "Immunization Rate",
-    "rel_order": 100,
+    "rel_order": 2110,
     "tree_id": 2,
     "slug": "immunization-rate"
   }
@@ -1735,160 +1981,16 @@
   "pk": 88,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 69,
+    "rght": 67,
     "parent": 25,
     "weight": 2,
-    "lft": 68,
+    "lft": 66,
     "metric": 24,
     "level": 3,
     "label": "Divorced Population",
     "rel_order": 1542,
     "tree_id": 1,
     "slug": "divorced-population"
-  }
-},
-{
-  "pk": 90,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 21,
-    "parent": 36,
-    "weight": 1,
-    "lft": 20,
-    "metric": 18,
-    "level": 3,
-    "label": "Housing Cost",
-    "rel_order": 2241,
-    "tree_id": 2,
-    "slug": "housing-cost"
-  }
-},
-{
-  "pk": 91,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 23,
-    "parent": 36,
-    "weight": 1,
-    "lft": 22,
-    "metric": 19,
-    "level": 3,
-    "label": "Overcrowding",
-    "rel_order": 2242,
-    "tree_id": 2,
-    "slug": "overcrowding"
-  }
-},
-{
-  "pk": 92,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 25,
-    "parent": 36,
-    "weight": 1,
-    "lft": 24,
-    "metric": 20,
-    "level": 3,
-    "label": "Geographic Mobility",
-    "rel_order": 2243,
-    "tree_id": 2,
-    "slug": "geographic-mobility"
-  }
-},
-{
-  "pk": 93,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 39,
-    "parent": 40,
-    "weight": 1,
-    "lft": 38,
-    "metric": 18,
-    "level": 3,
-    "label": "Housing Cost",
-    "rel_order": 2341,
-    "tree_id": 2,
-    "slug": "housing-cost"
-  }
-},
-{
-  "pk": 94,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 21,
-    "parent": 75,
-    "weight": 1,
-    "lft": 20,
-    "metric": 18,
-    "level": 3,
-    "label": "Housing Cost",
-    "rel_order": 4241,
-    "tree_id": 4,
-    "slug": "housing-cost"
-  }
-},
-{
-  "pk": 95,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 41,
-    "parent": 40,
-    "weight": 1,
-    "lft": 40,
-    "metric": 19,
-    "level": 3,
-    "label": "Overcrowding",
-    "rel_order": 2342,
-    "tree_id": 2,
-    "slug": "overcrowding"
-  }
-},
-{
-  "pk": 96,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 23,
-    "parent": 75,
-    "weight": 1,
-    "lft": 22,
-    "metric": 19,
-    "level": 3,
-    "label": "Overcrowding",
-    "rel_order": 4242,
-    "tree_id": 4,
-    "slug": "overcrowding"
-  }
-},
-{
-  "pk": 97,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 43,
-    "parent": 40,
-    "weight": 1,
-    "lft": 42,
-    "metric": 20,
-    "level": 3,
-    "label": "Geographic Mobility",
-    "rel_order": 2343,
-    "tree_id": 2,
-    "slug": "geographic-mobility"
-  }
-},
-{
-  "pk": 98,
-  "model": "healthdata.scorenode",
-  "fields": {
-    "rght": 25,
-    "parent": 75,
-    "weight": 1,
-    "lft": 24,
-    "metric": 20,
-    "level": 3,
-    "label": "Geographic Mobility",
-    "rel_order": 4243,
-    "tree_id": 4,
-    "slug": "geographic-mobility"
   }
 },
 {
@@ -1991,16 +2093,112 @@
   "pk": 105,
   "model": "healthdata.scorenode",
   "fields": {
-    "rght": 76,
+    "rght": 74,
     "parent": 21,
     "weight": 1,
-    "lft": 75,
+    "lft": 73,
     "metric": 34,
     "level": 2,
     "label": "Social Cohesion",
     "rel_order": 1550,
     "tree_id": 1,
     "slug": "social-cohesion"
+  }
+},
+{
+  "pk": 106,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 12,
+    "parent": 47,
+    "weight": 1,
+    "lft": 11,
+    "metric": 52,
+    "level": 2,
+    "label": "Accidents",
+    "rel_order": 3150,
+    "tree_id": 3,
+    "slug": "accidental-death"
+  }
+},
+{
+  "pk": 107,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 14,
+    "parent": 47,
+    "weight": 1,
+    "lft": 13,
+    "metric": 53,
+    "level": 2,
+    "label": "Suicide",
+    "rel_order": 3160,
+    "tree_id": 3,
+    "slug": "suicide"
+  }
+},
+{
+  "pk": 108,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 26,
+    "parent": 52,
+    "weight": 1,
+    "lft": 25,
+    "metric": 58,
+    "level": 2,
+    "label": "Obesity",
+    "rel_order": 3250,
+    "tree_id": 3,
+    "slug": "obesity-disease"
+  }
+},
+{
+  "pk": 109,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 28,
+    "parent": 52,
+    "weight": 1,
+    "lft": 27,
+    "metric": 59,
+    "level": 2,
+    "label": "Arthritis",
+    "rel_order": 3260,
+    "tree_id": 3,
+    "slug": "arthritis-disease"
+  }
+},
+{
+  "pk": 110,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 30,
+    "parent": 52,
+    "weight": 1,
+    "lft": 29,
+    "metric": 60,
+    "level": 2,
+    "label": "Hypertension",
+    "rel_order": 3270,
+    "tree_id": 3,
+    "slug": "hypertension"
+  }
+},
+{
+  "pk": 111,
+  "model": "healthdata.scorenode",
+  "fields": {
+    "rght": 24,
+    "parent": 71,
+    "weight": 1,
+    "lft": 23,
+    "metric": 71,
+    "level": 2,
+    "label": "Permanent Pacemaker Implant",
+    "rel_order": 4330,
+    "tree_id": 4,
+    "slug": "permanent-pacemaker-implant"
   }
 }
 ]
