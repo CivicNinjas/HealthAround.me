@@ -13,6 +13,14 @@ add_introspection_rules(
     [], ['^django\.contrib\.gis\.db\.models\.fields\.PointField'])
 
 
+class Feedback(models.Model):
+    detail = models.CharField(max_length=100, blank=True)
+    action = models.CharField(max_length=100, blank=True)
+    name = models.CharField(max_length=100, blank=True)
+    email = models.CharField(max_length=100, blank=True)
+    message = models.TextField()
+
+
 class ProtoHealth(models.Model):
     boundary = models.ForeignKey(Boundary, blank=True, null=True)
     fips = models.CharField('FIPS', max_length=8)

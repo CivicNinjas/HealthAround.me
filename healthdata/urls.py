@@ -2,7 +2,8 @@ from django.conf.urls import include, patterns, url
 from django.views.generic import TemplateView
 
 from .views import (
-    BoundaryAPIView, DetailAPIView, FakeBoundaryAPIView, ScoreAPIView)
+    BoundaryAPIView, DetailAPIView, FakeBoundaryAPIView, FeedbackView,
+    ScoreAPIView)
 
 api_urls = patterns(
     '',
@@ -18,6 +19,7 @@ api_urls = patterns(
     url(r'^detail/(?P<boundary_slug>[a-z\-_\d.]*)'
         r'/(?P<node_slug>[a-z\-_\d]*)/$',
         DetailAPIView.as_view(), name='metric-detail'),
+    url(r'feedback/$', FeedbackView.as_view(), name='feedback')
 )
 
 urlpatterns = patterns(
