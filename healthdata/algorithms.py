@@ -9,7 +9,7 @@ import markdown
 
 from boundaryservice.models import Boundary
 from healthdata.utils import fake_boundary
-from data.models import Census
+from data.models import Census, Dartmouth
 
 
 class AlgorithmCache(object):
@@ -59,18 +59,30 @@ class AlgorithmCache(object):
 
 
 class BaseAlgorithm(object):
+    '''
+    Basic methods used by all algorithms
+
+    Algorithms are used to score a metric by location.  This location
+    can be determined by a boundary, or by a point (which is used to
+    pick from the available boundaries)
+    '''
+
     def __init__(self, node, metric, cache):
         self.node = node
         self.metric = metric
         self.cache = cache
 
-    def boundaries_for_location(self, location):
+    def calculate_by_boundary(self, boundary):
         '''
-        Generate boundaries for a (lon, lat) location
+        Calculate a metric dictionary for a boundary
 
-        Return should be a iterable of Boundary objects in preferred order
+        If there is no data for a boundary, None is returned
         '''
-        raise NotImplementedError('boundaries_for_location is not implemented')
+        source_data = self.source_data_for_boundary(boundary)
+        if source_data:
+            return self.calculate(source_data)
+        else:
+            return None
 
     def source_data_for_boundary(self, boundary):
         '''
@@ -81,6 +93,48 @@ class BaseAlgorithm(object):
         '''
         raise NotImplementedError(
             'source_data_for_boundary is not implemented')
+
+    def calculate_by_location(self, location):
+        '''
+        Calculate a metric dictionary for a (lon, lat) location
+
+        If there is no data for a location, None is returned
+        '''
+        for source_data in self.source_data_for_location(location):
+            calculation = self.calculate(source_data)
+            if calculation:
+                return calculation
+        return None
+
+    def source_data_for_location(self, location):
+        '''Generate source data for a (lon, lat) location'''
+        for boundary in self.boundaries_for_location(location):
+            source_data = self.source_data_for_boundary(boundary)
+            if source_data:
+                yield source_data
+
+    def boundaries_for_location(self, location):
+        '''
+        Generate boundaries for a (lon, lat) location
+
+        Return should be a iterable of Boundary objects in preferred order
+        '''
+        raise NotImplementedError('boundaries_for_location is not implemented')
+
+    def calculate(self, source_data):
+        '''
+        Calculate a metric dictionary from valid source data
+
+        Return is a dictionary with three items: summary, detail, and boundary
+        '''
+        calculation = self.score(source_data)
+        boundary = source_data.boundary
+        calculation.setdefault('detail', {}).update(
+            self.expanded_detail(source_data, calculation))
+        calculation.setdefault('boundary', {}).update({
+            'path': self.boundary_path(boundary),
+        })
+        return calculation
 
     def score(self, source_data):
         '''
@@ -99,13 +153,6 @@ class BaseAlgorithm(object):
         It can also include a 'detail' dictionary with additional information
         '''
         raise NotImplementedError('score is not implemented')
-
-    def source_data_for_location(self, location):
-        '''Generate source data for a (lon, lat) location'''
-        for boundary in self.boundaries_for_location(location):
-            source_data = self.source_data_for_boundary(boundary)
-            if source_data:
-                yield source_data
 
     def boundary_path(self, boundary):
         '''Return the path to the boundary API endpoint'''
@@ -209,45 +256,6 @@ class BaseAlgorithm(object):
                 detail[key] = val
         return detail
 
-    def calculate(self, source_data):
-        '''
-        Calculate a metric dictionary from valid source data
-
-        Return is a dictionary with three items: summary, detail, and boundary
-        '''
-        calculation = self.score(source_data)
-        boundary = source_data.boundary
-        calculation.setdefault('detail', {}).update(
-            self.expanded_detail(source_data, calculation))
-        calculation.setdefault('boundary', {}).update({
-            'path': self.boundary_path(boundary),
-        })
-        return calculation
-
-    def calculate_by_boundary(self, boundary):
-        '''
-        Calculate a metric dictionary for a boundary
-
-        If there is no data for a boundary, None is returned
-        '''
-        source_data = self.source_data_for_boundary(boundary)
-        if source_data:
-            return self.calculate(source_data)
-        else:
-            return None
-
-    def calculate_by_location(self, location):
-        '''
-        Calculate a metric dictionary for a (lon, lat) location
-
-        If there is no data for a location, None is returned
-        '''
-        for source_data in self.source_data_for_location(location):
-            calculation = self.calculate(source_data)
-            if calculation:
-                return calculation
-        return None
-
 
 class PlaceholderAlgorithm(BaseAlgorithm):
     '''Placeholder for data that we plan to import in the future'''
@@ -298,46 +306,17 @@ class PlaceholderAlgorithm(BaseAlgorithm):
         }
 
 
-class CensusPercentAlgorithm(BaseAlgorithm):
-    '''
-    Algorithm for census-based calcuations of ratio vs. the state average
-    '''
-    # Default boundary set order
-    boundary_set_slugs = (
-        'census-block-groups',
-        'census-tracts',
-        'counties',
-        'states',)
+class PercentAlgorithm(BaseAlgorithm):
 
-    def source_data_for_boundary(self, boundary):
-        '''Get census data where the total population is not 0'''
-        total_fields, _ = self.get_fields()
-        source_data = self.cache.get_data(Census, boundary)
-        if not source_data:
-            return None
-        else:
-            # Look for non-null, positive number in total fields
-            for field in total_fields:
-                if getattr(source_data, field):
-                    return source_data
-            return None
+    def local_percent(self, source_data):
+        raise NotImplementedError('local_percent not implemented')
 
     def boundaries_for_location(self, location):
-        '''Generate census boundaries containing the point, smallest first'''
+        '''Generate boundaries containing the point, smallest first'''
         for set_slug in self.boundary_set_slugs:
             boundary = self.cache.get_boundary(location, set_slug)
             if boundary:
                 yield boundary
-
-    def local_percent(self, source_data):
-        '''
-        Calculate the local percentage for the source data
-        '''
-        total_fields, target_fields = self.get_fields()
-        total = sum([getattr(source_data, f) for f in total_fields])
-        target = sum([getattr(source_data, f) for f in target_fields])
-        percent = float(target) / float(total)
-        return percent
 
     def score(self, source_data):
         '''
@@ -376,19 +355,6 @@ class CensusPercentAlgorithm(BaseAlgorithm):
             )),
         }
 
-    def get_fields(self):
-        '''
-        Return data field names on source data
-
-        Returns a two-element tuple:
-        - total_fields - Names of fields with population totals
-        - target_fields - Names of fields with target group counts
-        '''
-        pattern = self.table + '_{:03}E'
-        total_fields = [pattern.format(f) for f in self.total_column_ids]
-        target_fields = [pattern.format(f) for f in self.target_column_ids]
-        return total_fields, target_fields
-
     def get_stats(self, source_data):
         '''
         Return population statistics from the metric, or the default stats
@@ -421,7 +387,7 @@ class CensusPercentAlgorithm(BaseAlgorithm):
     def calculate_by_boundary(self, boundary):
         '''Calculate by boundary, or use fake data if no data match'''
         calculation = super(
-            CensusPercentAlgorithm, self).calculate_by_boundary(boundary)
+            PercentAlgorithm, self).calculate_by_boundary(boundary)
         if not calculation:
             fake = PlaceholderAlgorithm(self.node, self.metric, self.cache)
             calculation = fake.calculate_by_location(boundary.centroid.coords)
@@ -430,11 +396,59 @@ class CensusPercentAlgorithm(BaseAlgorithm):
     def calculate_by_location(self, location):
         '''Calculate by location, or use fake data if no data match'''
         calculation = super(
-            CensusPercentAlgorithm, self).calculate_by_location(location)
+            PercentAlgorithm, self).calculate_by_location(location)
         if not calculation:
             fake = PlaceholderAlgorithm(self.node, self.metric, self.cache)
             calculation = fake.calculate_by_location(location)
         return calculation
+
+
+class CensusPercentAlgorithm(PercentAlgorithm):
+    '''
+    Algorithm for census-based calcuations of ratio vs. the state average
+    '''
+    # Default boundary set order
+    boundary_set_slugs = (
+        'census-block-groups',
+        'census-tracts',
+        'counties',
+        'states',)
+
+    def source_data_for_boundary(self, boundary):
+        '''Get census data where the total population is not 0'''
+        source_data = self.cache.get_data(Census, boundary)
+        if not source_data:
+            return None
+        else:
+            # Look for non-null, positive number in total fields
+            total_fields, _ = self.get_fields()
+            for field in total_fields:
+                if getattr(source_data, field):
+                    return source_data
+            return None
+
+    def local_percent(self, source_data):
+        '''
+        Calculate the local percentage for the source data
+        '''
+        total_fields, target_fields = self.get_fields()
+        total = sum([getattr(source_data, f) for f in total_fields])
+        target = sum([getattr(source_data, f) for f in target_fields])
+        percent = float(target) / float(total)
+        return percent
+
+    def get_fields(self):
+        '''
+        Return data field names on source data
+
+        Returns a two-element tuple:
+        - total_fields - Names of fields with population totals
+        - target_fields - Names of fields with target group counts
+        '''
+        pattern = self.table + '_{:03}E'
+        total_fields = [pattern.format(f) for f in self.total_column_ids]
+        target_fields = [pattern.format(f) for f in self.target_column_ids]
+        return total_fields, target_fields
 
 
 class FoodStampAlgorithm(CensusPercentAlgorithm):
@@ -772,3 +786,29 @@ class PercentLowValueHousingAlgorithm(CensusPercentAlgorithm):
             k000 + k010 + k015 + k020 + k025 + k030 + k035 + k040 + k050 +
             k060 + k070 + k080 + k090 + k100)
         return value / float(total)
+
+
+class DartmouthPercentAlgorithm(PercentAlgorithm):
+    '''
+    Algorithm for census-based calcuations of ratio vs. the state average
+    '''
+    # Default boundary set order
+    boundary_set_slugs = ('counties', 'states')
+
+    def source_data_for_boundary(self, boundary):
+        '''Get census data where the total population is not 0'''
+        return self.cache.get_data(Dartmouth, boundary)
+
+
+class PercentDischargeRateAlgorithm(DartmouthPercentAlgorithm):
+    '''Score based on the Discharge Rate per 1000 Medicare Enrollees'''
+
+    def local_percent(self, source_data):
+        return float(source_data.discharge_rate) / 1000.0
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.323900
+        std_dev = 0.0887797251
+        better_sign = -1
+        return average, std_dev, better_sign
