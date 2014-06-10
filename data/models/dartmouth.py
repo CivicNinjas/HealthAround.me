@@ -10,9 +10,6 @@ class Dartmouth(models.Model):
         app_label = "data"
 
     boundary = models.ForeignKey(Boundary, blank=True, null=True)
-    state_abbr = models.CharField(
-        max_length=2, help_text='State / U.S. - Abbreviation (USPS)')
-    discharge_rate = models.DecimalField(
-        max_digits=5, decimal_places=1,
+    discharge_rate = models.FloatField(
         blank=True, null=True,
         help_text='Discharge Rate Per 1000 Medicare Enrollees')

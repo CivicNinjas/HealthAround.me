@@ -13,8 +13,7 @@ class Migration(SchemaMigration):
         db.create_table(u'data_dartmouth', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('boundary', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['boundaryservice.Boundary'], null=True, blank=True)),
-            ('state_abbr', self.gf('django.db.models.fields.CharField')(max_length=2)),
-            ('discharge_rate', self.gf('django.db.models.fields.DecimalField')(null=True, max_digits=5, decimal_places=1, blank=True)),
+            ('discharge_rate', self.gf('django.db.models.fields.FloatField')(null=True, blank=True)),
         ))
         db.send_create_signal('data', ['Dartmouth'])
 
@@ -518,9 +517,8 @@ class Migration(SchemaMigration):
         'data.dartmouth': {
             'Meta': {'object_name': 'Dartmouth'},
             'boundary': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['boundaryservice.Boundary']", 'null': 'True', 'blank': 'True'}),
-            'discharge_rate': ('django.db.models.fields.DecimalField', [], {'null': 'True', 'max_digits': '5', 'decimal_places': '1', 'blank': 'True'}),
-            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'state_abbr': ('django.db.models.fields.CharField', [], {'max_length': '2'})
+            'discharge_rate': ('django.db.models.fields.FloatField', [], {'null': 'True', 'blank': 'True'}),
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'})
         }
     }
 
