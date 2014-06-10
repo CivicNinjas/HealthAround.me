@@ -379,6 +379,7 @@ class CensusPercentAlgorithm(BaseAlgorithm):
 
     def calculate_by_boundary(self, boundary):
         '''Calculate by boundary, or use fake data if no data match'''
+        print boundary.display_name
         calculation = super(
             CensusPercentAlgorithm, self).calculate_by_boundary(boundary)
         if not calculation:
@@ -731,3 +732,37 @@ class PercentLowValueHousingAlgorithm(CensusPercentAlgorithm):
             k000 + k010 + k015 + k020 + k025 + k030 + k035 + k040 + k050 +
             k060 + k070 + k080 + k090 + k100)
         return value / float(total)
+
+
+class PercentDischargeRateAlgorithm(CensusPercentAlgorithm):
+    '''Score based on the Discharge Rate per 1000 Medicare Enrollees'''
+    table = 'DISCHARGE'
+    total_column_ids = (1, )
+    target_column_ids = (2, )
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.323900
+        std_dev = 0.0887797251
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+
+
+
+'''
+class HospitalDischargeRateAlgorithm(DartmouthPercentAlgorithm):
+    table = 'DISCHARGE'
+    total_column_ids = (1, )
+    target_column_ids = (1,)
+
+    def get_default_stats(self, source_data):
+        average=253.1
+        std_dev=92.274
+        better_sing = -1
+        return average, std_dev, better_sign
+
+    def local_percent(self, source_data):
+        return source_data.DISCHARGE
+'''
