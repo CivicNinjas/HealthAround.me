@@ -340,36 +340,6 @@ def create_dic_from_json_query(json_file):
     return new_json
 
 
-def dartmouth_health_discharge_rate_db_importer():
-    path = 'data/dartmouth/discharge_rate.csv'
-    reader = csv.reader(file(path))
-    count = 0
-    succesful = 0
-    for county, value in reader:
-        #Tests to see if it is reading in a state based on the lack of a comma
-        if county[-4:-3] == ",":
-            current_county_name = county[:-4]
-            current_county_census = Census.objects.get(
-                boundary__display_name=current_county_name,
-                boundary__kind="County")
-        else:
-            current_county_name = county
-            current_county_census = Census.objects.get(
-                boundary__display_name=(current_county_name + " State"))
-        if current_county_census is not None:
-            print current_county_census, value
-            current_county_census.DISCHARGE_001E = 1000.
-            current_county_census.DISCHARGE_002E = float(value)
-            current_county_census.save()
-            print county + "works"
-            succesful += 1
-        else:
-            print county
-        count += 1
-    print "Succesful: " + str(succesful)
-    print "Total: " + str(count)
-
-
 def discharge_health_stand_dev():
     tract_set = BoundarySet.objects.all()[2]
     dartmouth_data = Census.objects.filter(boundary__set=tract_set)
