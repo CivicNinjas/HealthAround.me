@@ -316,6 +316,7 @@ class {}(models.Model):
 
     class Meta:
         verbose_name_plural = "census"
+        app_label = "data"
 
     boundary = models.ForeignKey(Boundary, blank=True, null=True)
     state_abbr = models.CharField(
