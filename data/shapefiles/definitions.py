@@ -38,7 +38,7 @@ SHAPEFILES = {
         'simplification': 0.0001,
     },
     'Census Tracts': {
-        'file': 'tl_2013_40_tract.zip',
+        'file': 'tracts.zip',
         'singular': 'Census Tract',
         'kind_first': True,
         'ider': utils.simple_namer(['GEOID']),
@@ -49,13 +49,13 @@ SHAPEFILES = {
         'href': (
             'ftp://ftp2.census.gov/geo/tiger/TIGER2013/'
             'TRACT/tl_2013_40_tract.zip'),
-        'notes': '',
+        'notes': 'Also tl_2013_42_tract.zip, PA',
         'encoding': '',
         'srid': '',
         'simplification': 0.0001,
     },
     'Census Block Groups': {
-        'file': 'tl_2013_40_bg.zip',
+        'file': 'bgs.zip',
         'singular': 'Census Block Group',
         'kind_first': True,
         'ider': utils.simple_namer(['GEOID']),
@@ -66,7 +66,7 @@ SHAPEFILES = {
         'href': (
             'ftp://ftp2.census.gov/geo/tiger/TIGER2013/'
             'BG/tl_2013_40_bg.zip'),
-        'notes': '',
+        'notes': 'Also tl_2014_42_bg.zip, PA',
         'encoding': '',
         'srid': '',
         'simplification': 0.0001,

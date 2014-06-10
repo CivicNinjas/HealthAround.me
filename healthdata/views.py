@@ -6,10 +6,12 @@ import os.path
 from boundaryservice.models import Boundary
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.conf import settings
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.generics import (
+    CreateAPIView, ListAPIView, RetrieveAPIView)
 from rest_framework.response import Response
 
-from .models import ScoreNode
+from .algorithms import AlgorithmCache
+from .models import Feedback, ScoreNode
 from .serializers import (
     BoundarySerializer, MetricDetailSerializer, ScoreNodeSerializer)
 from .utils import fake_boundary
@@ -177,6 +179,7 @@ class DetailAPIView(RetrieveAPIView):
         node_slug = self.kwargs['node_slug']
         node = ScoreNode.objects.filter(slug=node_slug).latest('id')
         context['node'] = node
+        context['cache'] = AlgorithmCache()
         return context
 
     def retrieve(self, request, *args, **kwargs):
@@ -201,6 +204,13 @@ class FakeBoundaryAPIView(RetrieveAPIView):
         return fake_boundary_from_slug(self.kwargs['slug'])
 
 
+class FeedbackView(CreateAPIView):
+    model = Feedback
+
+    def get(self, request, *args, **kwargs):
+        return Response({})
+
+
 class ScoreAPIView(ListAPIView):
     serializer_class = ScoreNodeSerializer
     queryset = ScoreNode.objects.filter(parent=None)
@@ -210,6 +220,7 @@ class ScoreAPIView(ListAPIView):
         context['location'] = (
             float(self.kwargs['lon']),
             float(self.kwargs['lat']))
+        context['cache'] = AlgorithmCache()
         return context
 
     def transform_data(self, raw_data):

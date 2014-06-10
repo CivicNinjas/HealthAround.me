@@ -3,7 +3,8 @@ import json
 from boundaryservice.models import Boundary, BoundarySet
 from django.test import TestCase as BaseTestCase
 
-from data.models import Census
+from data.models import Census, Dartmouth
+from healthdata.algorithms import AlgorithmCache
 from healthdata.models import ScoreMetric, ScoreNode
 from healthdata.utils import fake_boundary
 
@@ -26,6 +27,7 @@ class FakeAlgorithmTest(TestCase):
     def setUp(self):
         self.point = (-95.9907, 36.1524)
         self.boundary = fake_boundary(self.point, 2)
+        self.cache = AlgorithmCache()
 
     def assertRandomResult(self, score):
         expected = {
@@ -68,13 +70,13 @@ class FakeAlgorithmTest(TestCase):
 
     def test_calculate_random_stat_by_boundary(self):
         node = self.random_stat_node()
-        calculated = node.score_by_boundary(self.boundary)
+        calculated = node.score_by_boundary(self.boundary, self.cache)
         self.assertRandomResult(calculated)
 
     def test_calculate_random_stat_by_location(self):
         node = self.random_stat_node()
         location = (-95.994, 36.153)
-        score = node.score_by_location(location)
+        score = node.score_by_location(location, self.cache)
         self.assertRandomResult(score)
 
     def test_score_other_random_stat_by_boundary(self):
@@ -84,7 +86,7 @@ class FakeAlgorithmTest(TestCase):
             description=u"Another random statistic")
         node = ScoreNode(
             slug='other-stat', metric=metric, label='Other Stat')
-        score = node.score_by_boundary(self.boundary)
+        score = node.score_by_boundary(self.boundary, self.cache)
         expected = {
             u"summary": {
                 u"score": 0.03,
@@ -116,18 +118,18 @@ class FakeAlgorithmTest(TestCase):
         }
         self.assertScoreEqual(expected, score)
 
-'''
-class PercentAlgorithmTestDartmouth(TestCase):
+
+class DartmouthPercentAlgorithmTest(TestCase):
     def setUp(self):
         self.tract_set = BoundarySet.objects.create(
-            name = 'County',
-            slug = 'counties',
+            name='County',
+            slug='counties',
             kind_first=True,
             last_updated='2014-05-21',
             count=0,
-            metadata_fields = ['GEOID'])
+            metadata_fields=['GEOID'])
         shape = (
-            'MULTIPOLYGON(((' 
+            'MULTIPOLYGON((('
             '-96.03327 35.901100, -96.029570 35.901110, -96.029550 35.901905, '
             '-96.02952 35.993660, -96.029760 35.994770, -96.029500 35.998294, '
             '-96.02982 36.000630, -96.029490 36.017735, -96.029580 36.075370, '
@@ -142,37 +144,37 @@ class PercentAlgorithmTestDartmouth(TestCase):
             '-96.10878 36.161099, -96.081300 36.160956, -96.074480 36.161189, '
             '-96.07360 36.161031, -96.064430 36.161090, -96.062980 36.160870, '
             '-96.06248 36.161034, -96.057530 36.161090, -96.001050 36.161294, '
-            '-96.00147 36.164990, -96.001070 36.166590, -96.001280 36.168487, ' 
-            '-96.00118 36.172992, -96.001380 36.175470, -96.001170 36.180320, ' 
-            '-96.00124 36.188764, -96.001100 36.191482, -96.001380 36.205290, ' 
-            '-96.00128 36.212990, -96.001480 36.219190, -96.001180 36.273890, ' 
-            '-96.00152 36.283065, -96.001430 36.311046, -96.001570 36.319237, ' 
-            '-96.00129 36.343510, -96.001320 36.370202, -96.001190 36.371074, ' 
-            '-96.00118 36.375091, -96.000850 36.375084, -96.001060 36.375479, ' 
-            '-96.00118 36.379027, -96.001310 36.396490, -96.001342 36.412330, ' 
-            '-96.00117 36.423690, -95.866240 36.423752, -95.821180 36.423470, ' 
-            '-95.79437 36.423580, -95.794250 36.394456, -95.812190 36.394340, ' 
-            '-95.81225 36.277797, -95.812060 36.249530, -95.815340 36.249530, ' 
-            '-95.81525 36.235070, -95.815000 36.230600, -95.815000 36.229410, ' 
-            '-95.81524 36.227995, -95.815280 36.224336, -95.814960 36.222300, ' 
-            '-95.81533 36.206133, -95.815400 36.162630, -95.772600 36.162580, ' 
-            '-95.76165 36.162750, -95.761750 36.140706, -95.761650 36.137721, ' 
-            '-95.76181 36.137209, -95.761663 36.133690, -95.761720 36.084741, ' 
-            '-95.76156 36.061723, -95.761650 36.057321, -95.761860 36.055354, ' 
-            '-95.76163 36.051204, -95.761545 35.934090, -95.761550 35.933300, ' 
-            '-95.76185 35.933104, -95.761460 35.920570, -95.761460 35.913800, ' 
-            '-95.76169 35.900811, -95.783330 35.900900, -95.795290 35.901115, ' 
-            '-95.81945 35.901095, -95.819260 35.885173, -95.819350 35.872505, ' 
-            '-95.81940 35.871090, -95.819730 35.871091, -95.819960 35.855900, ' 
-            '-95.86567 35.856100, -95.883970 35.856494, -95.890540 35.856335, ' 
-            '-95.91089 35.856420, -95.917940 35.856710, -95.922240 35.856485, ' 
-            '-95.96109 35.856680, -95.963950 35.856820, -95.979790 35.856882, ' 
-            '-95.98881 35.856740, -95.996100 35.856820, -95.996760 35.857153, ' 
-            '-95.99755 35.856834, -96.015090 35.856930, -96.015870 35.856814, ' 
-            '-96.03312 35.856820, -96.033260 35.872574, -96.033020 35.872830, ' 
-            '-96.03296 35.873261, -96.033093 35.874080, -96.033270 35.885700, ' 
+            '-96.00147 36.164990, -96.001070 36.166590, -96.001280 36.168487, '
+            '-96.00118 36.172992, -96.001380 36.175470, -96.001170 36.180320, '
+            '-96.00124 36.188764, -96.001100 36.191482, -96.001380 36.205290, '
+            '-96.00128 36.212990, -96.001480 36.219190, -96.001180 36.273890, '
+            '-96.00152 36.283065, -96.001430 36.311046, -96.001570 36.319237, '
+            '-96.00129 36.343510, -96.001320 36.370202, -96.001190 36.371074, '
+            '-96.00118 36.375091, -96.000850 36.375084, -96.001060 36.375479, '
+            '-96.00118 36.379027, -96.001310 36.396490, -96.001342 36.412330, '
+            '-96.00117 36.423690, -95.866240 36.423752, -95.821180 36.423470, '
+            '-95.79437 36.423580, -95.794250 36.394456, -95.812190 36.394340, '
+            '-95.81225 36.277797, -95.812060 36.249530, -95.815340 36.249530, '
+            '-95.81525 36.235070, -95.815000 36.230600, -95.815000 36.229410, '
+            '-95.81524 36.227995, -95.815280 36.224336, -95.814960 36.222300, '
+            '-95.81533 36.206133, -95.815400 36.162630, -95.772600 36.162580, '
+            '-95.76165 36.162750, -95.761750 36.140706, -95.761650 36.137721, '
+            '-95.76181 36.137209, -95.761663 36.133690, -95.761720 36.084741, '
+            '-95.76156 36.061723, -95.761650 36.057321, -95.761860 36.055354, '
+            '-95.76163 36.051204, -95.761545 35.934090, -95.761550 35.933300, '
+            '-95.76185 35.933104, -95.761460 35.920570, -95.761460 35.913800, '
+            '-95.76169 35.900811, -95.783330 35.900900, -95.795290 35.901115, '
+            '-95.81945 35.901095, -95.819260 35.885173, -95.819350 35.872505, '
+            '-95.81940 35.871090, -95.819730 35.871091, -95.819960 35.855900, '
+            '-95.86567 35.856100, -95.883970 35.856494, -95.890540 35.856335, '
+            '-95.91089 35.856420, -95.917940 35.856710, -95.922240 35.856485, '
+            '-95.96109 35.856680, -95.963950 35.856820, -95.979790 35.856882, '
+            '-95.98881 35.856740, -95.996100 35.856820, -95.996760 35.857153, '
+            '-95.99755 35.856834, -96.015090 35.856930, -96.015870 35.856814, '
+            '-96.03312 35.856820, -96.033260 35.872574, -96.033020 35.872830, '
+            '-96.03296 35.873261, -96.033093 35.874080, -96.033270 35.885700, '
             '-96.03327 35.901100)))')
-        self.tract = Boundary.objects.create(
+        self.county = Boundary.objects.create(
             slug='tulsa-county',
             name='Tulsa County',
             set=self.tract_set,
@@ -181,16 +183,16 @@ class PercentAlgorithmTestDartmouth(TestCase):
             shape=shape,
             display_name='Tulsa County',
             kind='County',
-            simple_shape= shape,
+            simple_shape=shape,
             centroid="POINT (95.941481 36.121077)")
         self.location = (-95.99, 36.15)
-        Dartmouth.objects.create(
-            DISCHARGE=223.4)
-        
+        Dartmouth.objects.create(boundary=self.county, discharge_rate=223.4)
+        self.cache = AlgorithmCache()
+
     def discharge_rate_node(self):
         metric = ScoreMetric.objects.create(
             name="Hospital Discharge Rate",
-            algorithm=ScoreMetric.HOSPITAL_DISCHARGE_RATE_ALGORITHM,
+            algorithm=ScoreMetric.PERCENT_DISCHARGE_RATE_ALGORITHM,
             description=(
                 "Hospital Discharges Rate per 1,000 Medicare Enrollees")
         )
@@ -199,16 +201,16 @@ class PercentAlgorithmTestDartmouth(TestCase):
     def assertDischargeRateResults(self, score):
         expected = {
             u"summary": {
-                u"score": 0.254,
-                u"value": 0.208,
-                u"average": 253.1,
-                u"std_dev": 92.274,
+                u"score": 0.871,
+                u"value": 0.223,
+                u"average": 0.3239,
+                u"std_dev": 0.0887797251,
                 u"value_type": u"percent",
                 u"description": (
                     u"Hospital Discharges Rate per 1,000 Medicare Enrollees"),
             },
             u'detail': {
-                u"path": u"/api/citation/dartmouth/DISCHARGE/",
+                u"path": u"/api/detail/tulsa-county/discharge-rate/",
             },
             u"boundary": {
                 u"path": u"/api/boundary/tulsa-county/",
@@ -221,17 +223,16 @@ class PercentAlgorithmTestDartmouth(TestCase):
 
     def test_discharge_rate_by_boundary(self):
         node = self.discharge_rate_node()
-        location = (-95.994, 36.153)
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.county, self.cache)
         self.assertDischargeRateResults(score)
 
     def test_discharge_rate_by_location(self):
         node = self.discharge_rate_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertDischargeRateResults(score)
-'''
 
-class PercentAlgorithmTest(TestCase):
+
+class CensusPercentAlgorithmTest(TestCase):
     def setUp(self):
         self.tract_set = BoundarySet.objects.create(
             name='Census Tract',
@@ -270,11 +271,52 @@ class PercentAlgorithmTest(TestCase):
         Census.objects.create(
             boundary=self.tract,
             logical_num=4846,
+            B07013_001E=1404,
+            B07013_004E=788,
+            B08303_001E=941,
+            B08303_008E=20,
+            B08303_009E=10,
+            B08303_010E=13,
+            B08303_011E=12,
+            B08303_012E=68,
+            B08303_013E=0,
+            B09002_001E=4.00,
+            B09002_008E=0.00,
+            B12001_001E=3191,
+            B12001_003E=1354,
+            B12001_005E=137,
+            B12001_009E=19,
+            B12001_012E=374,
+            B12001_014E=145,
+            B12001_018E=66,
+            B15002_001E=2616.0,
+            B15002_011E=624.0,
+            B15002_012E=130.0,
+            B15002_013E=254.0,
+            B15002_014E=54.0,
+            B15002_015E=229.0,
+            B15002_016E=64.0,
+            B15002_017E=21.0,
+            B15002_018E=6.0,
+            B15002_028E=179.0,
+            B15002_029E=40.0,
+            B15002_030E=68.0,
+            B15002_031E=41.0,
+            B15002_032E=185.0,
+            B15002_033E=53.0,
+            B15002_034E=13.0,
+            B15002_035E=15.0,
+            B15003_001E=2616,
+            B15003_021E=95,
+            B15003_022E=414,
+            B15003_023E=117,
+            B15003_024E=34,
+            B15003_025E=21,
+            B17001_001E=1643,
+            B17001_002E=534,
             B19058_001E=1042,
             B19058_002E=217,
             B19058_003E=825,
-            B17001_001E=1643,
-            B17001_002E=534,
             B23001_001E=3186,
             B23001_008E=0.00,
             B23001_015E=0.00,
@@ -302,43 +344,6 @@ class PercentAlgorithmTest(TestCase):
             B23001_162E=0.00,
             B23001_167E=0.00,
             B23001_172E=0.00,
-            B09002_001E=4.00,
-            B09002_008E=0.00,
-            B25091_001E=147.0,
-            B25070_001E=895.0,
-            B25070_008E=52.0,
-            B25070_009E=54.0,
-            B25070_010E=215.0,
-            B25091_009E=0.00,
-            B25091_010E=4.00,
-            B25091_011E=11.0,
-            B25091_020E=0.00,
-            B25091_021E=0.00,
-            B25091_022E=0.00,
-            B15002_001E=2616.0,
-            B15002_011E=624.0,
-            B15002_012E=130.0,
-            B15002_013E=254.0,
-            B15002_014E=54.0,
-            B15002_015E=229.0,
-            B15002_016E=64.0,
-            B15002_017E=21.0,
-            B15002_018E=6.0,
-            B15002_028E=179.0,
-            B15002_029E=40.0,
-            B15002_030E=68.0,
-            B15002_031E=41.0,
-            B15002_032E=185.0,
-            B15002_033E=53.0,
-            B15002_034E=13.0,
-            B15002_035E=15.0,
-            B12001_001E=3191,
-            B12001_003E=1354,
-            B12001_009E=19,
-            B12001_012E=374,
-            B12001_018E=66,
-            B12001_005E=137,
-            B12001_014E=145,
             B25014_001E=1042,
             B25014_003E=127,
             B25014_004E=20,
@@ -350,25 +355,14 @@ class PercentAlgorithmTest(TestCase):
             B25014_011E=0,
             B25014_012E=19,
             B25014_013E=0,
-            B07013_001E=1404,
-            B07013_004E=788,
-            B15003_001E=2616,
-            B15003_021E=95,
-            B15003_022E=414,
-            B15003_023E=117,
-            B15003_024E=34,
-            B15003_025E=21,
-            B08303_001E=941,
-            B08303_008E=20,
-            B08303_009E=10,
-            B08303_010E=13,
-            B08303_011E=12,
-            B08303_012E=68,
-            B08303_013E=0,
-            B25052_001E=1042,
-            B25052_003E=7,
             B25048_001E=1042,
             B25048_003E=0,
+            B25052_001E=1042,
+            B25052_003E=7,
+            B25070_001E=895.0,
+            B25070_008E=52.0,
+            B25070_009E=54.0,
+            B25070_010E=215.0,
             B25075_001E=147,
             B25075_002E=0,
             B25075_003E=0,
@@ -384,10 +378,15 @@ class PercentAlgorithmTest(TestCase):
             B25075_013E=6,
             B25075_014E=27,
             B25075_015E=12,
-            DISCHARGE_001E=1000,
-            DISCHARGE_002E=223.4,
+            B25091_001E=147.0,
+            B25091_009E=0.00,
+            B25091_010E=4.00,
+            B25091_011E=11.0,
+            B25091_020E=0.00,
+            B25091_021E=0.00,
+            B25091_022E=0.00,
         )
-
+        self.cache = AlgorithmCache()
 
     def food_stamp_node(self):
         metric = ScoreMetric.objects.create(
@@ -425,12 +424,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_food_stamp_by_boundary(self):
         node = self.food_stamp_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertFoodStampResult(score)
 
     def test_food_stamp_by_location(self):
         node = self.food_stamp_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertFoodStampResult(score)
 
     def percent_poverty_node(self):
@@ -469,12 +468,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_poverty_by_boundary(self):
         node = self.percent_poverty_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentPovertyResult(score)
 
     def test_percent_poverty_by_location(self):
         node = self.percent_poverty_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentPovertyResult(score)
 
     def test_by_location_skips_null_boundary(self):
@@ -510,13 +509,13 @@ class PercentAlgorithmTest(TestCase):
             B17001_001E=None,
             B17001_002E=None)
         node = self.percent_poverty_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentPovertyResult(score)
 
     def test_by_boundary_no_data_loads_placeholder(self):
         node = self.percent_poverty_node()
         Census.objects.all().delete()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         expected = {
             u"summary": {
                 u"score": 0.31,
@@ -550,7 +549,7 @@ class PercentAlgorithmTest(TestCase):
 
     def test_by_location_no_boundary_is_placeholder(self):
         node = self.percent_poverty_node()
-        score = node.score_by_location((0, 0))
+        score = node.score_by_location((0, 0), self.cache)
         expected = {
             u"summary": {
                 u"score": 0.66,
@@ -621,7 +620,7 @@ class PercentAlgorithmTest(TestCase):
     def test_metric_overrides(self):
         node = self.percent_poverty_node()
         self.add_metric_poverty_overrides(node.metric)
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         expected = {
             u"summary": {
                 u"score": 0.841,
@@ -720,7 +719,7 @@ class PercentAlgorithmTest(TestCase):
     def test_metric_overrides_with_placeholder(self):
         node = self.percent_poverty_node()
         self.add_metric_poverty_overrides(node.metric)
-        score = node.score_by_location((0, 0))
+        score = node.score_by_location((0, 0), self.cache)
         expected = {
             u"summary": {
                 u"score": 0.66,
@@ -816,7 +815,7 @@ class PercentAlgorithmTest(TestCase):
         node = self.percent_poverty_node()
         node.metric.params = {}
         node.metric.save()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentPovertyResult(score)
 
     def percent_employment_node(self):
@@ -852,12 +851,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_employment_by_boundary(self):
         node = self.percent_employment_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentEmploymentResult(score)
 
     def test_percent_employment_by_location(self):
         node = self.percent_employment_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentEmploymentResult(score)
 
     def percent_single_parent_node(self):
@@ -894,12 +893,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_single_parent_by_boundary(self):
         node = self.percent_single_parent_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentSingleParentResult(score)
 
     def test_percent_single_parent_by_location(self):
         node = self.percent_single_parent_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentSingleParentResult(score)
 
     def percent_income_housing_cost_node(self):
@@ -939,12 +938,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_income_housing_cost_by_boundary(self):
         node = self.percent_income_housing_cost_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentIncomeHousingResult(score)
 
     def test_percent_income_housing_cost_by_location(self):
         node = self.percent_income_housing_cost_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentIncomeHousingResult(score)
 
     def percent_high_school_graduates_node(self):
@@ -985,12 +984,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_high_school_graduates_by_boundary(self):
         node = self.percent_high_school_graduates_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentHighSchoolGraduatesResult(score)
 
     def test_percent_high_school_graduates_by_location(self):
         node = self.percent_high_school_graduates_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentHighSchoolGraduatesResult(score)
 
     def percent_divorced_or_separated_node(self):
@@ -1031,12 +1030,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_divorced_or_separated_by_boundary(self):
         node = self.percent_divorced_or_separated_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentDivorcedOrSeparatedResult(score)
 
     def test_percent_divorced_or_separated_by_location(self):
         node = self.percent_divorced_or_separated_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentDivorcedOrSeparatedResult(score)
 
     def percent_overcrowded_node(self):
@@ -1072,12 +1071,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_overcrowded_by_boundary(self):
         node = self.percent_overcrowded_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentOvercrowdedResult(score)
 
     def test_percent_overcrowded_by_location(self):
         node = self.percent_overcrowded_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentOvercrowdedResult(score)
 
     def percent_geographic_mobility_node(self):
@@ -1118,12 +1117,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_geographic_mobility_by_boundary(self):
         node = self.percent_geographic_mobility_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentGeographicMobilityResult(score)
 
     def test_percent_geographic_mobility_by_location(self):
         node = self.percent_geographic_mobility_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentGeographicMobilityResult(score)
 
     def percent_college_graduates_node(self):
@@ -1162,12 +1161,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_college_graduate_by_boundary(self):
         node = self.percent_college_graduates_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentCollegeGraduateResult(score)
 
     def test_percent_college_graduate_by_location(self):
         node = self.percent_college_graduates_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentCollegeGraduateResult(score)
 
     def percent_bad_commute_times_node(self):
@@ -1203,12 +1202,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_bad_commute_times_by_boundary(self):
         node = self.percent_bad_commute_times_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentBadCommuteTimesResult(score)
 
     def test_percent_bad_commute_times_by_location(self):
         node = self.percent_bad_commute_times_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentBadCommuteTimesResult(score)
 
     def percent_improper_kitchen_facilities_node(self):
@@ -1248,12 +1247,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_improper_kitchen_facilities_by_boundary(self):
         node = self.percent_improper_kitchen_facilities_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentImproperKitchenFacilitiesResult(score)
 
     def test_percent_improper_kitchen_facilities_by_location(self):
         node = self.percent_improper_kitchen_facilities_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentImproperKitchenFacilitiesResult(score)
 
     def percent_improper_plumbing_node(self):
@@ -1290,12 +1289,12 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_improper_plumbing_by_boundary(self):
         node = self.percent_improper_plumbing_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentImproperPlumbingResult(score)
 
     def test_percent_improper_plumbing_by_location(self):
         node = self.percent_improper_plumbing_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentImproperPlumbingResult(score)
 
     def percent_low_value_housing_node(self):
@@ -1331,51 +1330,10 @@ class PercentAlgorithmTest(TestCase):
 
     def test_percent_low_value_housing_by_boundary(self):
         node = self.percent_low_value_housing_node()
-        score = node.score_by_boundary(self.tract)
+        score = node.score_by_boundary(self.tract, self.cache)
         self.assertPercentLowValueHousingResult(score)
 
     def test_percent_low_value_housing_by_location(self):
         node = self.percent_low_value_housing_node()
-        score = node.score_by_location(self.location)
+        score = node.score_by_location(self.location, self.cache)
         self.assertPercentLowValueHousingResult(score)
-
-    def percent_discharge_rate_node(self):
-        metric = ScoreMetric.objects.create(
-            name="Percent Hospital Discharge Rate",
-            algorithm=ScoreMetric.PERCENT_DISCHARGE_RATE_ALGORITHM,
-            description="Value",
-            )
-        return ScoreNode(slug='percent-discharge-rate', metric=metric)
-
-    def assertPercentDischargeRateResult(self, score):
-        expected={
-            u"summary":{
-                u"score": 0.755,
-                u"value": 0.018,
-                u"average": 0.323900,
-                u"std_dev": 0.0887797251,
-                u"value_type":u"percent",
-                u"description":u"Value",
-            },
-            u'detail':{
-                u"path":(
-                    u"api/detail/tulsa-county/percent-discharge-rate/"),
-            },
-            u"boundary": {
-                u"path":u"api/boundary/tulsa-county/",
-                u"label":u"Tulsa County",
-                u"type": u"County",
-                u"external_id":u"40143"
-            }
-        }
-        self.assertScoreEqual(expected, score)
-
-    def test_percent_discharge_rate_by_boundary(self):
-        node = self.percent_discharge_rate_node()
-        score = node.score_by_boundary(self.tract)
-        self.assertPercentDischargeRateResult(score)
-
-    def test_percent_discharge_rate_by_location(self):
-        node = self.percent_discharge_rate_node()
-        score = node.score_by_location(self.location)
-        self.assertPercentDischargeRateResult(score)

@@ -1,61 +1,8 @@
 from math import floor
-import psycopg2
 from boundaryservice.models import Boundary, BoundarySet
 from data.models import Census
 import json
-from json import JSONEncoder
-from itertools import chain
-import os
 import csv
-
-
-def fake_boundary(location, precision):
-    '''
-    Returns a rectangular fake Boundary
-
-    precision determines the size of the Boundary.  2 is about 1 mile tall,
-    and width varies by latitude
-    '''
-
-    def round_down(val):
-        factor = pow(10, precision)
-        return floor(val * factor) / factor
-
-    lon, lat = location
-    factor = pow(10, precision)
-    increment = 1.0 / factor
-    params = {
-        'bot_lon': floor(lon * factor) / factor,
-        'bot_lat': floor(lat * factor) / factor,
-        'precision': precision,
-        'pplus': precision + 1,
-    }
-    params['top_lon'] = params['bot_lon'] + increment
-    params['top_lat'] = params['bot_lat'] + increment
-    params['ctr_lon'] = params['bot_lon'] + (increment / 2)
-    params['ctr_lat'] = params['bot_lat'] + (increment / 2)
-    shape_wkt = (
-        "MULTIPOLYGON((("
-        "{bot_lon:0.{precision}f} {bot_lat:0.{precision}f},"
-        "{bot_lon:0.{precision}f} {top_lat:0.{precision}f},"
-        "{top_lon:0.{precision}f} {top_lat:0.{precision}f},"
-        "{top_lon:0.{precision}f} {bot_lat:0.{precision}f},"
-        "{bot_lon:0.{precision}f} {bot_lat:0.{precision}f}"
-        ")))").format(**params)
-    centroid_wkt = (
-        "POINT("
-        "{ctr_lon:0.{pplus}f} {ctr_lat:0.{pplus}f}"
-        ")").format(**params)
-    fake_slug = (
-        'fake_{precision}_'
-        '{bot_lon:0.{precision}f}_'
-        '{bot_lat:0.{precision}f}').format(**params)
-    boundary = Boundary(
-        shape=shape_wkt, display_name='Future Data Placeholder',
-        kind='Future Data Placeholder',
-        slug=fake_slug, centroid=centroid_wkt, name='Placeholder')
-    return boundary
-
 
 
 def fake_boundary(location, precision):
@@ -316,18 +263,27 @@ def stand_dev_low_value_housing():
 
 
 def create_dic_from_json_query(json_file):
+    '''
+    Import crime data from Tulsa Police Department
+
+    TPD limits the number of records returned to 1000, and it isn't
+    clear if you can get all the records with multiple calls.  Need a
+    direct data dump.
+    '''
     list_of_crimes = [
-    "Larceny", "Auto Theft", "Assault",
-    "Robbery", "Malicious Mischief", "Burglary",
-    "Rape"
+        "Larceny", "Auto Theft", "Assault", "Robbery", "Malicious Mischief",
+        "Burglary", "Rape"
     ]
     count = 0
-    dictionary_to_build = {"type": "FeatureCollection", "crs": {
-        "type": "name", "properties": {
-            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
-        }
-    },
-    "features": []
+    dictionary_to_build = {
+        "type": "FeatureCollection",
+        "crs": {
+            "type": "name",
+            "properties": {
+                "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+            }
+        },
+        "features": []
     }
     tract_dict = {}
     json_data = open(json_file)
@@ -335,11 +291,12 @@ def create_dic_from_json_query(json_file):
     for crime in data["features"]:
         x_coord = crime['geometry']['x']
         y_coord = crime['geometry']['y']
-        point = 'POINT(%.17f %.17f)' %(x_coord, y_coord)
-        point_tract = (Boundary.objects.filter(shape__contains = point).filter
-            (kind=u'Census Tract').first())
+        point = 'POINT(%.17f %.17f)' % (x_coord, y_coord)
+        point_tract = Boundary.objects.filter(
+            shape__contains=point).filter(kind=u'Census Tract').first()
+
         #If the dictionary has already had that census track entered
-        if tract_dict.has_key(point_tract.slug):
+        if point_tract.slug in tract_dict:
             #If that crime has already been entered in to that census track
             for tracts in tract_dict[point_tract.slug]['CRIMES']:
                 if tracts[0] == crime['attributes']['CRIME_TYPE'][:4]:
@@ -347,23 +304,25 @@ def create_dic_from_json_query(json_file):
                     break
             #Else it hasn't, create a new list in that census track's list.
             else:
-                (tract_dict[point_tract.slug]["CRIMES"].append([crime['attributes']
-                    ['CRIME_TYPE'][:4], 1]))
+                tract_dict[point_tract.slug]["CRIMES"].append(
+                    [crime['attributes']['CRIME_TYPE'][:4], 1])
         #Else that census track hasn't been entered yet
         else:
             count += 1
             print point_tract.slug
-            tract_dict[point_tract.slug] = {'CRIMES':[[crime['attributes']['CRIME_TYPE'][:4], 1]]}
+            tract_dict[point_tract.slug] = {
+                'CRIMES': [[crime['attributes']['CRIME_TYPE'][:4], 1]]}
     for tract in tract_dict:
         current_tract_boundary = Boundary.objects.get(slug=tract)
         current_tract_metadata = current_tract_boundary.metadata
-        current_county_boundary = Boundary.objects.filter(shape__contains=current_tract_boundary.centroid).filter(kind="County").first()
+        current_county_boundary = Boundary.objects.filter(
+            shape__contains=current_tract_boundary.centroid).filter(
+                kind="County").first()
         new_tract_dict = {"type": "Feature", "properties": {}}
         new_tract_dict["properties"]["geoid"] = current_tract_metadata['GEOID']
-       
-        new_tract_dict["properties"]["name"] = "%s, %s, %s" %(
-                current_tract_metadata['NAMELSAD'],
-                current_county_boundary.metadata['NAME'], "OK") 
+        new_tract_dict["properties"]["name"] = "%s, %s, %s" % (
+            current_tract_metadata['NAMELSAD'],
+            current_county_boundary.metadata['NAME'], "OK")
 
         for crime in list_of_crimes:
             for reports in tract_dict[tract]["CRIMES"]:
@@ -373,76 +332,21 @@ def create_dic_from_json_query(json_file):
                     break
             else:
                 new_tract_dict["properties"][crime] = 0
-        geojsontract = current_tract_boundary.shape.geojson 
+        geojsontract = current_tract_boundary.shape.geojson
         new_tract_dict['geometry'] = geojsontract
         dictionary_to_build["features"].append(new_tract_dict.copy())
-    new_json = json.dumps(dictionary_to_build,sort_keys=True)
-    print count
-    return new_json
-
-
-def dartmouth_health_atlas_excel_importer(excel_file):
-    dictionary_to_build = {"type": "FeatureCollection", "crs": {
-        "type": "name", "properties": {
-            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
-        }
-    },
-    "features": []
-    }
-    count = 0 
-    excel_book = open_workbook(excel_file)
-    excel_page = excel_book.sheet_by_index(0)
-    for areas in range(3, 79):
-        area_dict = {"type":"Feature", "properties":{}}
-        current_row_name_excel = str(excel_page.cell(areas, 0).value)
-        current_row_boundary = Boundary.objects.filter(display_name=
-                current_row_name_excel[:-4]).filter(kind="County").first()
-        current_row_value = float(excel_page.cell(areas, 1).value)
-        area_dict["properties"]["geoid"] = current_row_boundary.metadata['GEOID']
-        area_dict["properties"]["geoid"] = current_row_boundary.metadata['GEOID']
-        area_dict["properties"]["name"] = "%s, %s, %s" %(
-                current_row_boundary.metadata['NAMELSAD'],
-                current_row_boundary.metadata['NAME'], "OK")
-        area_dict["properties"]["DISCHARGE_RATE"] = current_row_value
-        area_dict['geometry'] = current_row_boundary.shape.geojson
-        dictionary_to_build['features'].append(area_dict.copy())
-        count += 1
     new_json = json.dumps(dictionary_to_build, sort_keys=True)
     print count
     return new_json
 
 
-def dartmouth_health_discharge_rate_db_importer():
-    path = 'data/Dartmouth/Discharge_Rate.csv'
-    reader = csv.reader(file(path))
-    count = 0
-    succesful = 0
-    for county, value in reader:
-        #Tests to see if it is reading in a state based on the lack of a comma
-        if county[-4:-3] == ",":
-            current_county_name = county[:-4]
-            current_county_census = Census.objects.get(boundary__display_name=current_county_name, boundary__kind="County")
-        else:
-            current_county_name = county
-            current_county_census = Census.objects.get(boundary__display_name=(current_county_name + " State"))
-        if current_county_census is not None:
-            print current_county_census, value
-            current_county_census.DISCHARGE_001E = 1000.
-            current_county_census.DISCHARGE_002E = float(value)
-            current_county_census.save()
-            print county + "works"
-            succesful += 1
-        else:
-            print county
-        count += 1
-    print "Succesful: " + str(succesful)
-    print "Total: " + str(count)
-
 def discharge_health_stand_dev():
     tract_set = BoundarySet.objects.all()[2]
-    dartmouth_data = Census.objects.filter(boundary__set = tract_set)
-    ok_average = float(dartmouth_data[0].DISCHARGE_002E)/float(dartmouth_data[0].DISCHARGE_001E)
-    print "Oklahoma Average: %f" %(ok_average)
+    dartmouth_data = Census.objects.filter(boundary__set=tract_set)
+    ok_average = (
+        float(dartmouth_data[0].DISCHARGE_002E) /
+        float(dartmouth_data[0].DISCHARGE_001E))
+    print "Oklahoma Average: %f" % (ok_average)
     count = 0
     total = 0.0
     for data in dartmouth_data[1:]:
@@ -451,6 +355,3 @@ def discharge_health_stand_dev():
         count += 1
     final_total = (total/float(count))**(0.5)
     return final_total
-
-
-

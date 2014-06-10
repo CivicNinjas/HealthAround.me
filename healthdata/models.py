@@ -13,6 +13,14 @@ add_introspection_rules(
     [], ['^django\.contrib\.gis\.db\.models\.fields\.PointField'])
 
 
+class Feedback(models.Model):
+    detail = models.CharField(max_length=100, blank=True)
+    action = models.CharField(max_length=100, blank=True)
+    name = models.CharField(max_length=100, blank=True)
+    email = models.CharField(max_length=100, blank=True)
+    message = models.TextField()
+
+
 class ProtoHealth(models.Model):
     boundary = models.ForeignKey(Boundary, blank=True, null=True)
     fips = models.CharField('FIPS', max_length=8)
@@ -99,7 +107,7 @@ class ScoreMetric(models.Model):
         (PERCENT_LOW_VALUE_HOUSING_ALGORITHM,
          'PercentLowValueHousingAlgorithm',
          'Percent Low Value Housing Algorithm'),
-        (PERCENT_DISCHARGE_RATE_ALGORITHM, 
+        (PERCENT_DISCHARGE_RATE_ALGORITHM,
          'PercentDischargeRateAlgorithm',
          'Percent Discharge Rate Algorithm'),
     )
@@ -121,16 +129,16 @@ class ScoreMetric(models.Model):
     def __str__(self):
         return self.name
 
-    def get_algorithm(self, node):
+    def get_algorithm(self, node, cache):
         klass = getattr(algorithms, self.algorithm_class_name[self.algorithm])
-        algorithm = klass(node, self)
+        algorithm = klass(node, self, cache)
         return algorithm
 
-    def score_by_boundary(self, node, boundary):
-        return self.get_algorithm(node).calculate_by_boundary(boundary)
+    def score_by_boundary(self, node, boundary, cache):
+        return self.get_algorithm(node, cache).calculate_by_boundary(boundary)
 
-    def score_by_location(self, node, location):
-        return self.get_algorithm(node).calculate_by_location(location)
+    def score_by_location(self, node, location, cache):
+        return self.get_algorithm(node, cache).calculate_by_location(location)
 
 
 class ScoreNode(MPTTModel):
@@ -154,14 +162,14 @@ class ScoreNode(MPTTModel):
     def __str__(self):
         return self.label
 
-    def score_by_boundary(self, boundary):
+    def score_by_boundary(self, boundary, cache):
         if self.metric:
-            return self.metric.score_by_boundary(self, boundary)
+            return self.metric.score_by_boundary(self, boundary, cache)
         else:
             return None
 
-    def score_by_location(self, location):
+    def score_by_location(self, location, cache):
         if self.metric:
-            return self.metric.score_by_location(self, location)
+            return self.metric.score_by_location(self, location, cache)
         else:
             return None
