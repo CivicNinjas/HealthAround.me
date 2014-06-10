@@ -3,7 +3,6 @@ import psycopg2
 from boundaryservice.models import Boundary, BoundarySet
 from data.models import Census
 import json
-from xlrd import open_workbook,cellname
 from json import JSONEncoder
 from itertools import chain
 import os
