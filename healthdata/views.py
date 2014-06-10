@@ -1,13 +1,11 @@
 from collections import OrderedDict
 from math import floor
-from urlparse import urlparse
 import json
 import os.path
 
 from boundaryservice.models import Boundary
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.conf import settings
-from django.core.urlresolvers import resolve, Resolver404
 from rest_framework.generics import (
     CreateAPIView, ListAPIView, RetrieveAPIView)
 from rest_framework.response import Response
