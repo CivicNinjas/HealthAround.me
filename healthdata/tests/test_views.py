@@ -2,7 +2,7 @@ import json
 
 from rest_framework.test import APITestCase as BaseAPITestCase
 
-from healthdata.models import ScoreNode, ScoreMetric
+from healthdata.models import Feedback, ScoreNode, ScoreMetric
 
 
 class APITestCase(BaseAPITestCase):
@@ -106,6 +106,44 @@ class FakeBoundaryAPIView(APITestCase):
                 u'kind': u'Future Data Placeholder',
                 u'name': u'Placeholder'}}
         self.assertDataEqual(response, expected)
+
+
+class FeedbackViewTest(APITestCase):
+    def setUp(self):
+        self.url = '/api/feedback/'
+
+    def test_get_plain(self):
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, 200)
+        self.assertDataEqual(response, {})
+
+    def assertFeedbackEqual(self, feedback, expected):
+        self.assertEqual(feedback.detail, expected.get('detail', ''))
+        self.assertEqual(feedback.action, expected.get('action', ''))
+        self.assertEqual(feedback.name, expected.get('name', ''))
+        self.assertEqual(feedback.email, expected.get('email', ''))
+
+    def test_post_full(self):
+        data = {
+            'detail': '/api/detail/fake_4_-95.9910_36.1499/metric-a/',
+            'action': 'feedback',
+            'name': 'Dave Smith',
+            'email': 'dave@example.com',
+            'message': 'I thought this was very interesting',
+        }
+        response = self.client.post(self.url, data)
+        self.assertEqual(201, response.status_code)
+        feedback = Feedback.objects.latest('id')
+        self.assertFeedbackEqual(feedback, data)
+
+    def test_post_minimal(self):
+        data = {
+            'message': 'I want to complain without consequences.',
+        }
+        response = self.client.post(self.url, data)
+        self.assertEqual(201, response.status_code)
+        feedback = Feedback.objects.latest('id')
+        self.assertFeedbackEqual(feedback, data)
 
 
 class ScoreAPIViewTest(APITestCase):
