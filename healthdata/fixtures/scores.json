@@ -3,7 +3,7 @@
   "pk": 1,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": "{\"why_md_fmt\":\"Poverty has a cascading negative effect on almost all health determinants and outcomes. Impoverished households are most affected by:\\n\\n- Limited access to healthcare\\n- Limited access to nutritional food\\n- Negative societal perception\\n- Fundamentally limited opportunity\\n\\nThese effects lead impoverished households to experience:\\n\\n- Higher rates of physical illness and injury\\n- Higher rates of stress and physiological poor health\\n- A lower quality of life\\n- A lower life expectancy\\n\",\"references\":[{\"date\":\"Dec 2013\",\"publisher\":\"U.S. Census Bureau\",\"link\":\"http://www.census.gov/hhes/www/poverty/about/overview/measure.html\",\"title\":\"How the Census Bureau Measures Poverty\"},{\"date\":\"2003\",\"publisher\":\"WHO\",\"link\":\"http://www.euro.who.int/__data/assets/pdf_file/0005/98438/e81384.pdf\",\"title\":\"The Solid Facts, Second Edition\"},{\"date\":\"1999\",\"publisher\":\"International Journal of Health Services\",\"link\":\"http://individual.utoronto.ca/cmuntaner/publications/1990/1999MuntanerIntJHealthServ1.pdf\",\"title\":\"Social Inequalities and Their Effect on Health and Well-Being\"},{\"date\":\"2014\",\"publisher\":\"U.S. Department of Health and Human Services\",\"link\":\"http://www.healthypeople.gov/2020/topicsobjectives2020/overview.aspx?topicid=39\",\"title\":\"Social Determinants of Health\"},{\"date\":\"2013\",\"publisher\":\"CDC\",\"link\":\"http://www.cdc.gov/mmwr/pdf/other/su6203.pdf\",\"title\":\"CDC Health Disparities and Inequalities Report\"}],\"stats\":{\"average\":0.166,\"std_dev\":0.118383,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of people live in a household where the income is below the poverty level, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B17001\",\"type\":\"census_reporter\",\"text\":\"View poverty status on CensusReporter.org\"}]}",
+    "params": "{\"why_md_fmt\":\"Social cohesion is a measure of how well an individual can be expected to experience positive social inclusion in a specific area. Areas with greater social cohesion can be expected to have better health due to the positive impact societal acceptance and human interaction have on an individual's physiological state.\",\"references\":[{\"date\":\"1999\",\"publisher\":\"International Journal of Health Services\",\"link\":\"http://individual.utoronto.ca/cmuntaner/publications/1990/1999MuntanerIntJHealthServ1.pdf\",\"title\":\"Social Inequalities and Their Effect on Health and Well-Being\"}]}",
     "name": "Percent Poverty",
     "algorithm": 2,
     "description": "Percent of population in a household with income below the poverty line"
@@ -223,7 +223,7 @@
   "pk": 23,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": "{\"why_md_fmt\":\"It's important, dude.\"}",
+    "params": "{\"why_md_fmt\":\"The grade for perceptions of discrimination and equity is based on survey data on individual perceptions of racial discrimination by race. Discrimination and unequal treatment can result in many detrimental health outcomes.\"}",
     "name": "Perception of Discrimination",
     "algorithm": 0,
     "description": "People's perception of discrimination and inequality"
@@ -233,7 +233,7 @@
   "pk": 24,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": "{\"stats\":{\"average\":0.264508,\"std_dev\":0.139789,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of people 15 or older were once married but are now divorced or separated, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B12001\",\"type\":\"census_reporter\",\"text\":\"View marital status on CensusReporter.org\"}]}",
+    "params": "{\"why_md_fmt\":\"Divorce population is a measure of family structure which is a determinant of health. Divorce population is considered a determinant because it contributes to social support which is directly related to health outcomes for an area. Areas with more social support can be expected to have better health.\",\"stats\":{\"average\":0.264508,\"std_dev\":0.139789,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of people 15 or older were once married but are now divorced or separated, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B12001\",\"type\":\"census_reporter\",\"text\":\"View marital status on CensusReporter.org\"}]}",
     "name": "Divorced Population",
     "algorithm": 7,
     "description": "Percentage of once-married population that is divorced or separated but not widowed"
@@ -243,7 +243,7 @@
   "pk": 25,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": "{\"references\":[{\"date\":\"Feb 2002\",\"publisher\":\"National Institutes of Health\",\"link\":\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1430354/\",\"title\":\"Family Structure, Socioeconomic Status, and Access to Health Care for Children\"},{\"date\":\"Dec 2010\",\"publisher\":\"U.S. Department of Health and Human Services\",\"link\":\"http://www.cdc.gov/nchs/data/series/sr_10/sr10_246.pdf\",\"title\":\"Family Structure and Children's Health in the United States\"}],\"stats\":{\"average\":0.452998,\"std_dev\":0.165715,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of households with their own children have a single parent, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B09002\",\"type\":\"census_reporter\",\"text\":\"View household data on CensusReporter.org\"}]}",
+    "params": "{\"why_md_fmt\":\"Single parent households are a measure of family structure which is a determinant of health. Family structure is considered a determinant because it contributes to social support which is directly related to health outcomes for an area. Areas with more social support can be expected to have better health.\",\"references\":[{\"date\":\"Feb 2002\",\"publisher\":\"National Institutes of Health\",\"link\":\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1430354/\",\"title\":\"Family Structure, Socioeconomic Status, and Access to Health Care for Children\"},{\"date\":\"Dec 2010\",\"publisher\":\"U.S. Department of Health and Human Services\",\"link\":\"http://www.cdc.gov/nchs/data/series/sr_10/sr10_246.pdf\",\"title\":\"Family Structure and Children's Health in the United States\"}],\"stats\":{\"average\":0.452998,\"std_dev\":0.165715,\"better_sign\":-1},\"score_md_fmt\":\"In **{boundary}**, **{value}** of households with their own children have a single parent, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B09002\",\"type\":\"census_reporter\",\"text\":\"View household data on CensusReporter.org\"}]}",
     "name": "Single Parent Households",
     "algorithm": 4,
     "description": "Percentage of households with children that have a single parent"
@@ -443,7 +443,7 @@
   "pk": 45,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": null,
+    "params": "{\"why_md_fmt\":\"Alcohol use has a detrimental effect on health. Long term alcohol use in adults can lead to increased risk of heart disease, high blood pressure, increased risk of stroke, increased risk of liver disease, and many more negative health outcomes.\",\"references\":[{\"date\":\"Mar 2014\",\"publisher\":\"U.S. Centers for Disease Control and Prevention\",\"link\":\"http://www.cdc.gov/alcohol/fact-sheets/alcohol-use.htm\",\"title\":\"Alcohol Use and Health\"}]}",
     "name": "Adult Alcohol Use",
     "algorithm": 0,
     "description": "Percent of Adults who consume alcohol"
