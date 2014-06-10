@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e  # Exit on errors
 set -v  # Print shell input lines
 # Change to project root
