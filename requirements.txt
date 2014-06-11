@@ -19,3 +19,4 @@ ipdbplugin==1.4
 numpy
 scipy
 Markdown==2.4.1
+django-cors-headers==0.12
