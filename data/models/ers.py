@@ -24,5 +24,3 @@ class Ers(models.Model):
     rec_facilities_per_thousand = models.FloatField(
         blank=True, null=True,
         help_text='Recreational Facilities in County per 1,000 Residents')
-
-

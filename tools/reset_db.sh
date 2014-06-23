@@ -13,6 +13,8 @@ cd data/shapefiles
 ./fetch_data.sh
 cd -
 ./manage.py loadshapefiles
-./manage.py import_census_data
 ./manage.py loaddata scores
+./manage.py import_census_data
+./manage.py import_dartmouth_data
+./manage.py import_ers_data
 echo "Done.  You may want to run ./manage.py createsuperuser"
