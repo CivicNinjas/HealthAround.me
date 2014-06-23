@@ -1,3 +1,4 @@
+from datetime import date
 from math import floor
 from textwrap import fill
 import json
@@ -359,11 +360,12 @@ def discharge_health_stand_dev():
     return final_total
 
 
-def score_tree_to_twopi():
+def score_tree_to_graph():
     """Export score tree to twopi representation
 
     The output can be processed with Graphviz's twopi command to create
-    visualizations of the score tree.
+    visualizations of the score tree.  Or, try a different GraphViz
+    visualization like circle or dot.
     """
     from healthdata.models import ScoreNode
 
@@ -383,7 +385,8 @@ graph scoretree {
   node [style=filled, fillcolor=white, shape=box];
   overlap="false";\
 """]
-    out.append('  label="Score Nodes for {}";'.format('2014/06/23'))
+    today = date.today().strftime('%Y/%m/%d')
+    out.append('  label="Score Nodes for {}";'.format(today))
     out.append("""
   /* Legend */
   subgraph legend {

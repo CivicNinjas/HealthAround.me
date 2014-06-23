@@ -7,7 +7,7 @@ from healthdata.utils import score_tree_to_twopi
 
 class Command(BaseCommand):
     args = ''
-    help = 'Export a twopi graph of the scores tree'
+    help = 'Export a Graphviz graph of the scores tree'
 
     def handle(self, *args, **options):
         twopi = score_tree_to_twopi()
