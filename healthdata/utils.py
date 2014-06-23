@@ -1,6 +1,6 @@
-from math import floor
+from math import floor, sqrt
 from boundaryservice.models import Boundary, BoundarySet
-from data.models import Census
+from data.models import Census, Dartmouth, Ers
 import json
 import csv
 
@@ -51,6 +51,38 @@ def fake_boundary(location, precision):
         kind='Future Data Placeholder',
         slug=fake_slug, centroid=centroid_wkt, name='Placeholder')
     return boundary
+
+
+def stand_dev_single_value(dataset, field, geolevel):
+    '''
+    Calculate the average and standard deviation for a single database value.
+    '''
+    total_average = 0
+    total_geoography_count = 0
+    ok_state = BoundarySet.objects.get(slug=geolevel)
+    if dataset == 'Ers':
+        ok_data = Ers.objects.filter(boundary__set=ok_state).values_list(field)
+    elif dataset == 'Census':
+        ok_data = Census.objects.filter(boundary__set=ok_state).values_list(field)
+    elif dataset == 'Dartmouth':
+        ok_data = Dartmouth.objects.filter(boundary__set=ok_state).values_list(field)
+
+    total_features = len(ok_data)
+    total_sum = 0
+
+    for feature in ok_data:
+        total_sum += sum(feature)
+
+    average = total_sum / float(total_features)
+
+    total_dif_squared_sum = 0
+
+    for feature in ok_data:
+        total_dif_squared_sum += ((sum(feature) - average)**2)
+    
+    stand_dev = (total_dif_squared_sum / float(total_features)) ** (0.5)
+    print "Average: " + str(average)
+    print "Standard Deviation: " + str(stand_dev)
 
 
 def std_dev_across_tracts(total_col, target_cols):
@@ -355,3 +387,12 @@ def discharge_health_stand_dev():
         count += 1
     final_total = (total/float(count))**(0.5)
     return final_total
+
+
+
+
+
+
+
+
+
