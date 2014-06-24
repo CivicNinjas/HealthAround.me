@@ -9,7 +9,7 @@ import markdown
 
 from boundaryservice.models import Boundary
 from healthdata.utils import fake_boundary
-from data.models import Census, Dartmouth
+from data.models import Census, Dartmouth, Ers
 
 
 class AlgorithmCache(object):
@@ -796,7 +796,7 @@ class DartmouthPercentAlgorithm(PercentAlgorithm):
     boundary_set_slugs = ('counties', 'states')
 
     def source_data_for_boundary(self, boundary):
-        '''Get census data where the total population is not 0'''
+        '''Get data where the total population is not 0'''
         return self.cache.get_data(Dartmouth, boundary)
 
 
@@ -810,5 +810,29 @@ class PercentDischargeRateAlgorithm(DartmouthPercentAlgorithm):
         '''Stats for counties in Oklahoma'''
         average = 0.323900
         std_dev = 0.0887797251
+        better_sign = -1
+        return average, std_dev, better_sign
+
+class ErsPercentAlgorithm(PercentAlgorithm):
+    '''
+    Algorithm for calculations of Ers data per county vs. the state average
+    '''
+    # Default boundary set order
+    boundary_set_slugs = ('counties', 'states')
+
+    def source_data_for_boundary(self, boundary):
+        '''Get data for where the total population is not 0'''
+        return self.cache.get_data(Ers, boundary)
+
+class PercentAdultObesityAlgorithm(ErsPercentAlgorithm):
+    '''Score based on percent of adults that are obese'''
+
+    def local_percent(self, source_data):
+        return float(source_data.adult_obesity) / 100.0
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.333883
+        std_dev = 0.0230814
         better_sign = -1
         return average, std_dev, better_sign

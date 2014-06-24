@@ -67,6 +67,7 @@ class ScoreMetric(models.Model):
     PERCENT_IMPROPER_PLUMBING_ALGORITHM = 13
     PERCENT_LOW_VALUE_HOUSING_ALGORITHM = 14
     PERCENT_DISCHARGE_RATE_ALGORITHM = 15
+    PERCENT_ADULT_OBESITY_ALGORITHM = 16
     algorithm_choices = (
         (PLACEHOLDER_ALGORITHM, 'PlaceholderAlgorithm',
             'Placeholder Algorithm'),
@@ -110,6 +111,9 @@ class ScoreMetric(models.Model):
         (PERCENT_DISCHARGE_RATE_ALGORITHM,
          'PercentDischargeRateAlgorithm',
          'Percent Discharge Rate Algorithm'),
+        (PERCENT_ADULT_OBESITY_ALGORITHM,
+         'PercentAdultObesityAlgorithm',
+         'Percent Adult Obesity Algorithm'),
     )
     algorithm_class_name = dict([(a[0], a[1]) for a in algorithm_choices])
 

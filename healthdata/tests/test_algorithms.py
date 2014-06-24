@@ -3,7 +3,7 @@ import json
 from boundaryservice.models import Boundary, BoundarySet
 from django.test import TestCase as BaseTestCase
 
-from data.models import Census, Dartmouth
+from data.models import Census, Dartmouth, Ers
 from healthdata.algorithms import AlgorithmCache
 from healthdata.models import ScoreMetric, ScoreNode
 from healthdata.utils import fake_boundary
@@ -230,6 +230,121 @@ class DartmouthPercentAlgorithmTest(TestCase):
         node = self.discharge_rate_node()
         score = node.score_by_location(self.location, self.cache)
         self.assertDischargeRateResults(score)
+
+
+class ErsAlgorithmTest(TestCase):
+    def setUp(self):
+        self.tract_set = BoundarySet.objects.create(
+            name='County',
+            slug='counties',
+            kind_first=True,
+            last_updated='2014-05-21',
+            count=0,
+            metadata_fields=['GEOID'])
+        shape = (
+            'MULTIPOLYGON((('
+            '-96.03327 35.901100, -96.029570 35.901110, -96.029550 35.901905, '
+            '-96.02952 35.993660, -96.029760 35.994770, -96.029500 35.998294, '
+            '-96.02982 36.000630, -96.029490 36.017735, -96.029580 36.075370, '
+            '-96.15431 36.075770, -96.154840 36.075660, -96.182740 36.075720, '
+            '-96.18508 36.075562, -96.190350 36.075545, -96.203730 36.075870, '
+            '-96.21060 36.075775, -96.211370 36.075270, -96.211840 36.075179, '
+            '-96.21275 36.075260, -96.213810 36.075720, -96.259570 36.075775, '
+            '-96.26129 36.075740, -96.261740 36.075570, -96.283600 36.075570, '
+            '-96.29779 36.075779, -96.297890 36.090481, -96.297780 36.104281, '
+            '-96.29792 36.125090, -96.298090 36.131140, -96.297890 36.162279, '
+            '-96.24785 36.161890, -96.176650 36.161130, -96.165780 36.160885, '
+            '-96.10878 36.161099, -96.081300 36.160956, -96.074480 36.161189, '
+            '-96.07360 36.161031, -96.064430 36.161090, -96.062980 36.160870, '
+            '-96.06248 36.161034, -96.057530 36.161090, -96.001050 36.161294, '
+            '-96.00147 36.164990, -96.001070 36.166590, -96.001280 36.168487, '
+            '-96.00118 36.172992, -96.001380 36.175470, -96.001170 36.180320, '
+            '-96.00124 36.188764, -96.001100 36.191482, -96.001380 36.205290, '
+            '-96.00128 36.212990, -96.001480 36.219190, -96.001180 36.273890, '
+            '-96.00152 36.283065, -96.001430 36.311046, -96.001570 36.319237, '
+            '-96.00129 36.343510, -96.001320 36.370202, -96.001190 36.371074, '
+            '-96.00118 36.375091, -96.000850 36.375084, -96.001060 36.375479, '
+            '-96.00118 36.379027, -96.001310 36.396490, -96.001342 36.412330, '
+            '-96.00117 36.423690, -95.866240 36.423752, -95.821180 36.423470, '
+            '-95.79437 36.423580, -95.794250 36.394456, -95.812190 36.394340, '
+            '-95.81225 36.277797, -95.812060 36.249530, -95.815340 36.249530, '
+            '-95.81525 36.235070, -95.815000 36.230600, -95.815000 36.229410, '
+            '-95.81524 36.227995, -95.815280 36.224336, -95.814960 36.222300, '
+            '-95.81533 36.206133, -95.815400 36.162630, -95.772600 36.162580, '
+            '-95.76165 36.162750, -95.761750 36.140706, -95.761650 36.137721, '
+            '-95.76181 36.137209, -95.761663 36.133690, -95.761720 36.084741, '
+            '-95.76156 36.061723, -95.761650 36.057321, -95.761860 36.055354, '
+            '-95.76163 36.051204, -95.761545 35.934090, -95.761550 35.933300, '
+            '-95.76185 35.933104, -95.761460 35.920570, -95.761460 35.913800, '
+            '-95.76169 35.900811, -95.783330 35.900900, -95.795290 35.901115, '
+            '-95.81945 35.901095, -95.819260 35.885173, -95.819350 35.872505, '
+            '-95.81940 35.871090, -95.819730 35.871091, -95.819960 35.855900, '
+            '-95.86567 35.856100, -95.883970 35.856494, -95.890540 35.856335, '
+            '-95.91089 35.856420, -95.917940 35.856710, -95.922240 35.856485, '
+            '-95.96109 35.856680, -95.963950 35.856820, -95.979790 35.856882, '
+            '-95.98881 35.856740, -95.996100 35.856820, -95.996760 35.857153, '
+            '-95.99755 35.856834, -96.015090 35.856930, -96.015870 35.856814, '
+            '-96.03312 35.856820, -96.033260 35.872574, -96.033020 35.872830, '
+            '-96.03296 35.873261, -96.033093 35.874080, -96.033270 35.885700, '
+            '-96.03327 35.901100)))')
+        self.county = Boundary.objects.create(
+            slug='tulsa-county',
+            name='Tulsa County',
+            set=self.tract_set,
+            metadata={'GEOID': '40143'},
+            external_id='40143',
+            shape=shape,
+            display_name='Tulsa County',
+            kind='County',
+            simple_shape=shape,
+            centroid="POINT (95.941481 36.121077)")
+        self.location = (-95.99, 36.15)
+        Ers.objects.create(boundary=self.county, adult_obesity=30.2,
+            adult_diabetes = 10.3, childhood_obesity = None, 
+            rec_facilities_per_thousand = 0.1212)
+        self.cache = AlgorithmCache()
+
+    def adult_obesity_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Adult Obesity Rate",
+            algorithm=ScoreMetric.PERCENT_ADULT_OBESITY_ALGORITHM,
+            description=(
+                "Percent of Adults that are obese")
+            )
+        return ScoreNode(slug='adult-obesity', metric=metric)
+
+    def assertAdultObesityRateResults(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.916,
+                u"value": 0.302,
+                u"average": 0.333883,
+                u"std_dev": 0.0230814,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent of Adults that are obese"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/tulsa-county/adult-obesity/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/tulsa-county/",
+                u"label": u"Tulsa County",
+                u"type": u"County",
+                u"external_id": u'40143',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_adult_obesity_by_boundary(self):
+        node = self.adult_obesity_node()
+        score = node.score_by_boundary(self.county, self.cache)
+        self.assertAdultObesityRateResults(score)
+
+    def test_adult_obesity_by_location(self):
+        node = self.adult_obesity_node()
+        score = node.score_by_location(self.location, self.cache)
+        self.assertAdultObesityRateResults(score)
 
 
 class CensusPercentAlgorithmTest(TestCase):
