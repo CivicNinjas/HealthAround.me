@@ -346,6 +346,91 @@ class ErsAlgorithmTest(TestCase):
         score = node.score_by_location(self.location, self.cache)
         self.assertAdultObesityRateResults(score)
 
+    def adult_diabetes_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Adult Diabetes Rate",
+            algorithm=ScoreMetric.PERCENT_ADULT_DIABETES_ALGORITHM,
+            description=(
+                "Percent of Adults that are Diabetic")
+            )
+        return ScoreNode(slug='adult-diabetes', metric=metric)
+
+    def assertAdultDiabetesRateResults(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.913,
+                u"value": 0.103,
+                u"average": 0.1227012,
+                u"std_dev": 0.0145057,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent of Adults that are Diabetic"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/tulsa-county/adult-diabetes/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/tulsa-county/",
+                u"label": u"Tulsa County",
+                u"type": u"County",
+                u"external_id": u'40143',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_adult_diabetes_by_boundary(self):
+        node = self.adult_diabetes_node()
+        score = node.score_by_boundary(self.county, self.cache)
+        self.assertAdultDiabetesRateResults(score)
+
+    def test_adult_diabetes_by_location(self):
+        node = self.adult_diabetes_node()
+        score = node.score_by_location(self.location, self.cache)
+        self.assertAdultDiabetesRateResults(score)
+
+    def adult_fitness_center_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Fitness Centers per 1000 Residents of a County",
+            algorithm=ScoreMetric.FITNESS_CENTERS_PER_CAPITA_ALGORITHM,
+            description=(
+                "Fitness and Recreation Centers per 1000 Residents")
+            )
+        return ScoreNode(slug='fitness-centers', metric=metric)
+
+
+    def assertFitnessCentersPerCapitaResults(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.958,
+                u"value": 0.121,
+                u"average": 0.0334103,
+                u"std_dev": 0.0508600,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Fitness and Recreation Centers per 1000 Residents"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/tulsa-county/fitness-centers/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/tulsa-county/",
+                u"label": u"Tulsa County",
+                u"type": u"County",
+                u"external_id": u'40143',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_adult_fitness_centers_by_boundary(self):
+        node = self.adult_fitness_center_node()
+        score = node.score_by_boundary(self.county, self.cache)
+        self.assertFitnessCentersPerCapitaResults(score)
+
+    def test_adult_diabetes_by_location(self):
+        node = self.adult_fitness_center_node()
+        score = node.score_by_location(self.location, self.cache)
+        self.assertFitnessCentersPerCapitaResults(score)
+
 
 class CensusPercentAlgorithmTest(TestCase):
     def setUp(self):

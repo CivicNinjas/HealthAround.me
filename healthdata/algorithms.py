@@ -836,3 +836,30 @@ class PercentAdultObesityAlgorithm(ErsPercentAlgorithm):
         std_dev = 0.0230814
         better_sign = -1
         return average, std_dev, better_sign
+
+class PercentAdultDiabetesAlgorithm(ErsPercentAlgorithm):
+    '''Score based on percent of adults that are Diabetic'''
+
+    def local_percent(self, source_data):
+        return float(source_data.adult_diabetes) / 100.0
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.1227012
+        std_dev = 0.0145057
+        better_sign = -1
+        return average, std_dev, better_sign
+
+class FitnessCentersPerCapitaAlgorithm(ErsPercentAlgorithm):
+    '''Score based on fitness centers/recreation areas per 1000 people'''
+
+    def local_percent(self, source_data):
+        return float(source_data.rec_facilities_per_thousand)
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.0334103
+        std_dev = 0.0508600
+        better_sign = 1
+        return average, std_dev, better_sign
+
