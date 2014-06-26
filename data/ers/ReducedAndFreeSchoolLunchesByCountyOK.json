@@ -1,0 +1,8019 @@
+{
+ "displayFieldName": "FIPSTXT",
+ "fieldAliases": {
+  "State": "State",
+  "County": "County",
+  "PCT_FREE_LUNCH10": "Students eligible for free lunch (%), 2010",
+  "PCT_REDUCED_LUNCH10": "Students eligible for reduced-price lunch (%), 2010"
+ },
+ "fields": [
+  {
+   "name": "State",
+   "type": "esriFieldTypeString",
+   "alias": "State",
+   "length": 2
+  },
+  {
+   "name": "County",
+   "type": "esriFieldTypeString",
+   "alias": "County",
+   "length": 50
+  },
+  {
+   "name": "PCT_FREE_LUNCH10",
+   "type": "esriFieldTypeDouble",
+   "alias": "Students eligible for free lunch (%), 2010"
+  },
+  {
+   "name": "PCT_REDUCED_LUNCH10",
+   "type": "esriFieldTypeDouble",
+   "alias": "Students eligible for reduced-price lunch (%), 2010"
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Oneida",
+    "PCT_FREE_LUNCH10": 36.217626982533631,
+    "PCT_REDUCED_LUNCH10": 8.1022169960134232
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Onondaga",
+    "PCT_FREE_LUNCH10": 31.977011494252871,
+    "PCT_REDUCED_LUNCH10": 6.2028397565922919
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Ontario",
+    "PCT_FREE_LUNCH10": 20.104593807571167,
+    "PCT_REDUCED_LUNCH10": 6.4539133535389555
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Orange",
+    "PCT_FREE_LUNCH10": 26.508209538702111,
+    "PCT_REDUCED_LUNCH10": 8.5285379202501961
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Orleans",
+    "PCT_FREE_LUNCH10": 33.460243080978181,
+    "PCT_REDUCED_LUNCH10": 9.4303704788402403
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Oswego",
+    "PCT_FREE_LUNCH10": 34.514925373134332,
+    "PCT_REDUCED_LUNCH10": 9.8740671641791042
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Otsego",
+    "PCT_FREE_LUNCH10": 27.053504144687263,
+    "PCT_REDUCED_LUNCH10": 11.454408440090431
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Putnam",
+    "PCT_FREE_LUNCH10": 6.6260520035171471,
+    "PCT_REDUCED_LUNCH10": 3.2973244567265421
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Queens",
+    "PCT_FREE_LUNCH10": 60.838761326007059,
+    "PCT_REDUCED_LUNCH10": 9.5811651686619843
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Rensselaer",
+    "PCT_FREE_LUNCH10": 26.586102719033235,
+    "PCT_REDUCED_LUNCH10": 6.3769463165233562
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Richmond",
+    "PCT_FREE_LUNCH10": 44.882018166104068,
+    "PCT_REDUCED_LUNCH10": 8.2285602465632799
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Rockland",
+    "PCT_FREE_LUNCH10": 20.765678172095285,
+    "PCT_REDUCED_LUNCH10": 5.1701507049100632
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "St. Lawrence",
+    "PCT_FREE_LUNCH10": 34.976202404809619,
+    "PCT_REDUCED_LUNCH10": 10.489729458917836
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Saratoga",
+    "PCT_FREE_LUNCH10": 11.900579659230633,
+    "PCT_REDUCED_LUNCH10": 4.5377364014286545
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Schenectady",
+    "PCT_FREE_LUNCH10": 30.722865814559913,
+    "PCT_REDUCED_LUNCH10": 6.8396528876159532
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Schoharie",
+    "PCT_FREE_LUNCH10": 26.902173913043477,
+    "PCT_REDUCED_LUNCH10": 9.8035117056856187
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Schuyler",
+    "PCT_FREE_LUNCH10": 27.012987012987011,
+    "PCT_REDUCED_LUNCH10": 6.9264069264069263
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Seneca",
+    "PCT_FREE_LUNCH10": 28.341754708314191,
+    "PCT_REDUCED_LUNCH10": 9.163987138263666
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Steuben",
+    "PCT_FREE_LUNCH10": 34.599728629579374,
+    "PCT_REDUCED_LUNCH10": 12.267176514123596
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Suffolk",
+    "PCT_FREE_LUNCH10": 18.510542985358494,
+    "PCT_REDUCED_LUNCH10": 5.7414669799828673
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Sullivan",
+    "PCT_FREE_LUNCH10": 35.758835758835758,
+    "PCT_REDUCED_LUNCH10": 9.04860904860905
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Tioga",
+    "PCT_FREE_LUNCH10": 30.662538699690401,
+    "PCT_REDUCED_LUNCH10": 10.055727554179567
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Tompkins",
+    "PCT_FREE_LUNCH10": 28.066979003990976,
+    "PCT_REDUCED_LUNCH10": 6.4115911851466256
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Ulster",
+    "PCT_FREE_LUNCH10": 25.356207009498853,
+    "PCT_REDUCED_LUNCH10": 8.368817556501801
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Warren",
+    "PCT_FREE_LUNCH10": 22.053193632883335,
+    "PCT_REDUCED_LUNCH10": 7.4551682450130965
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Washington",
+    "PCT_FREE_LUNCH10": 28.739224137931036,
+    "PCT_REDUCED_LUNCH10": 9.6012931034482758
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Wayne",
+    "PCT_FREE_LUNCH10": 27.896120973044049,
+    "PCT_REDUCED_LUNCH10": 9.7764628533859295
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Westchester",
+    "PCT_FREE_LUNCH10": 25.81973514449399,
+    "PCT_REDUCED_LUNCH10": 5.3238496968400506
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Wyoming",
+    "PCT_FREE_LUNCH10": 23.438098888463013,
+    "PCT_REDUCED_LUNCH10": 9.3522422384055197
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Yates",
+    "PCT_FREE_LUNCH10": 36.319275008713838,
+    "PCT_REDUCED_LUNCH10": 8.1212966190310212
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Alamance",
+    "PCT_FREE_LUNCH10": 44.398861352980582,
+    "PCT_REDUCED_LUNCH10": 6.0365036838580046
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Alexander",
+    "PCT_FREE_LUNCH10": 41.738973246565436,
+    "PCT_REDUCED_LUNCH10": 9.1106290672451191
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Alleghany",
+    "PCT_FREE_LUNCH10": 52.310654685494221,
+    "PCT_REDUCED_LUNCH10": 12.965340179717586
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Anson",
+    "PCT_FREE_LUNCH10": 0,
+    "PCT_REDUCED_LUNCH10": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Ashe",
+    "PCT_FREE_LUNCH10": 33.757961783439491,
+    "PCT_REDUCED_LUNCH10": 8.1892629663330307
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Avery",
+    "PCT_FREE_LUNCH10": 48.203842940685043,
+    "PCT_REDUCED_LUNCH10": 10.693400167084377
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Beaufort",
+    "PCT_FREE_LUNCH10": 52.862671827038568,
+    "PCT_REDUCED_LUNCH10": 6.5127452288802887
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Bertie",
+    "PCT_FREE_LUNCH10": 67.827586206896555,
+    "PCT_REDUCED_LUNCH10": 9.1724137931034484
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Bladen",
+    "PCT_FREE_LUNCH10": 62.5,
+    "PCT_REDUCED_LUNCH10": 6.1753731343283578
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Brunswick",
+    "PCT_FREE_LUNCH10": 47.711574952561669,
+    "PCT_REDUCED_LUNCH10": 7.5977229601518026
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Buncombe",
+    "PCT_FREE_LUNCH10": 42.343970815394222,
+    "PCT_REDUCED_LUNCH10": 6.8458934498964732
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Burke",
+    "PCT_FREE_LUNCH10": 47.100515463917525,
+    "PCT_REDUCED_LUNCH10": 9.6577892325315009
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cabarrus",
+    "PCT_FREE_LUNCH10": 36.056696454992007,
+    "PCT_REDUCED_LUNCH10": 5.9122921228620466
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Caldwell",
+    "PCT_FREE_LUNCH10": 48.655429243433943,
+    "PCT_REDUCED_LUNCH10": 7.6911015288122302
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Camden",
+    "PCT_FREE_LUNCH10": 24.004085801838613,
+    "PCT_REDUCED_LUNCH10": 6.179775280898876
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Carteret",
+    "PCT_FREE_LUNCH10": 31.822272215973001,
+    "PCT_REDUCED_LUNCH10": 6.7716535433070861
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Caswell",
+    "PCT_FREE_LUNCH10": 55.079681274900395,
+    "PCT_REDUCED_LUNCH10": 7.5365205843293497
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Catawba",
+    "PCT_FREE_LUNCH10": 43.549884927524531,
+    "PCT_REDUCED_LUNCH10": 7.4413534138167714
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Chatham",
+    "PCT_FREE_LUNCH10": 38.288951841359776,
+    "PCT_REDUCED_LUNCH10": 5.4164305949008495
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cherokee",
+    "PCT_FREE_LUNCH10": 50.826226012793171,
+    "PCT_REDUCED_LUNCH10": 12.020255863539447
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Chowan",
+    "PCT_FREE_LUNCH10": 0.91934809862097788,
+    "PCT_REDUCED_LUNCH10": 57.417467613873796
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Clay",
+    "PCT_FREE_LUNCH10": 46.023926812104158,
+    "PCT_REDUCED_LUNCH10": 8.304011259676285
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cleveland",
+    "PCT_FREE_LUNCH10": 50.312215822976661,
+    "PCT_REDUCED_LUNCH10": 5.3591997575022736
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Columbus",
+    "PCT_FREE_LUNCH10": 60.270692347735555,
+    "PCT_REDUCED_LUNCH10": 6.9234773555439872
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Craven",
+    "PCT_FREE_LUNCH10": 9.1573631047315249,
+    "PCT_REDUCED_LUNCH10": 43.407761828814465
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cumberland",
+    "PCT_FREE_LUNCH10": 46.753537691819439,
+    "PCT_REDUCED_LUNCH10": 7.5290296083336443
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Currituck",
+    "PCT_FREE_LUNCH10": 25.131942699170644,
+    "PCT_REDUCED_LUNCH10": 6.2578537320934906
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Dare",
+    "PCT_FREE_LUNCH10": 28.434120945134161,
+    "PCT_REDUCED_LUNCH10": 6.3275931117340809
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Davidson",
+    "PCT_FREE_LUNCH10": 44.255704883143501,
+    "PCT_REDUCED_LUNCH10": 5.9748551609979117
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Davie",
+    "PCT_FREE_LUNCH10": 36.071808915259396,
+    "PCT_REDUCED_LUNCH10": 5.7660124752776509
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Duplin",
+    "PCT_FREE_LUNCH10": 60.153089119737558,
+    "PCT_REDUCED_LUNCH10": 7.5123018042646263
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Durham",
+    "PCT_FREE_LUNCH10": 50.948990052921786,
+    "PCT_REDUCED_LUNCH10": 5.2062841151533625
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Edgecombe",
+    "PCT_FREE_LUNCH10": 70.486981152631003,
+    "PCT_REDUCED_LUNCH10": 6.9615426517049785
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Forsyth",
+    "PCT_FREE_LUNCH10": 47.052945270258213,
+    "PCT_REDUCED_LUNCH10": 5.2820357251200063
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Franklin",
+    "PCT_FREE_LUNCH10": 49.66150315547906,
+    "PCT_REDUCED_LUNCH10": 7.2174411933448077
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Gaston",
+    "PCT_FREE_LUNCH10": 6.1088431378307728,
+    "PCT_REDUCED_LUNCH10": 47.290669329495728
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Gates",
+    "PCT_FREE_LUNCH10": 39.690170940170937,
+    "PCT_REDUCED_LUNCH10": 12.393162393162394
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Graham",
+    "PCT_FREE_LUNCH10": 46.405750798722046,
+    "PCT_REDUCED_LUNCH10": 13.099041533546327
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Granville",
+    "PCT_FREE_LUNCH10": 43.648725212464591,
+    "PCT_REDUCED_LUNCH10": 7.3314447592067982
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Greene",
+    "PCT_FREE_LUNCH10": 65.143369175627242,
+    "PCT_REDUCED_LUNCH10": 5.6451612903225801
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Guilford",
+    "PCT_FREE_LUNCH10": 45.983083860295096,
+    "PCT_REDUCED_LUNCH10": 5.9286533792256995
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Halifax",
+    "PCT_FREE_LUNCH10": 46.572017958985562,
+    "PCT_REDUCED_LUNCH10": 4.671763135541803
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Harnett",
+    "PCT_FREE_LUNCH10": 45.977596741344193,
+    "PCT_REDUCED_LUNCH10": 7.927698574338085
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Haywood",
+    "PCT_FREE_LUNCH10": 44.733137079226928,
+    "PCT_REDUCED_LUNCH10": 6.8603609369000385
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Henderson",
+    "PCT_FREE_LUNCH10": 43.48813360679754,
+    "PCT_REDUCED_LUNCH10": 7.2883094052153528
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Hertford",
+    "PCT_FREE_LUNCH10": 33.464566929133859,
+    "PCT_REDUCED_LUNCH10": 2.5439127801332528
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Hoke",
+    "PCT_FREE_LUNCH10": 43.167028199566161,
+    "PCT_REDUCED_LUNCH10": 8.2670523017594597
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Hyde",
+    "PCT_FREE_LUNCH10": 51.559934318555008,
+    "PCT_REDUCED_LUNCH10": 8.0459770114942533
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Iredell",
+    "PCT_FREE_LUNCH10": 32.323615663274111,
+    "PCT_REDUCED_LUNCH10": 5.7374504053820941
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Jackson",
+    "PCT_FREE_LUNCH10": 45.16971279373368,
+    "PCT_REDUCED_LUNCH10": 7.8851174934725847
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Johnston",
+    "PCT_FREE_LUNCH10": 37.66213223663398,
+    "PCT_REDUCED_LUNCH10": 5.1724137931034484
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Jones",
+    "PCT_FREE_LUNCH10": 63.469224620303756,
+    "PCT_REDUCED_LUNCH10": 11.350919264588329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Lee",
+    "PCT_FREE_LUNCH10": 53.081147040878584,
+    "PCT_REDUCED_LUNCH10": 7.1690054911531425
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Lenoir",
+    "PCT_FREE_LUNCH10": 60.66360387953037,
+    "PCT_REDUCED_LUNCH10": 7.0648289943848903
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Lincoln",
+    "PCT_FREE_LUNCH10": 35.712673937570514,
+    "PCT_REDUCED_LUNCH10": 6.8296352012034598
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "McDowell",
+    "PCT_FREE_LUNCH10": 49.791231732776623,
+    "PCT_REDUCED_LUNCH10": 7.9033701163137486
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Macon",
+    "PCT_FREE_LUNCH10": 52.275160599571734,
+    "PCT_REDUCED_LUNCH10": 8.217344753747323
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Madison",
+    "PCT_FREE_LUNCH10": 49.107142857142854,
+    "PCT_REDUCED_LUNCH10": 8.3074534161490696
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Martin",
+    "PCT_FREE_LUNCH10": 55.261806981519513,
+    "PCT_REDUCED_LUNCH10": 7.9568788501026697
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Mecklenburg",
+    "PCT_FREE_LUNCH10": 46.045799166649097,
+    "PCT_REDUCED_LUNCH10": 5.4195914753683674
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Mitchell",
+    "PCT_FREE_LUNCH10": 47.771587743732589,
+    "PCT_REDUCED_LUNCH10": 12.883008356545961
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Montgomery",
+    "PCT_FREE_LUNCH10": 65.618497109826592,
+    "PCT_REDUCED_LUNCH10": 7.9537572254335265
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Moore",
+    "PCT_FREE_LUNCH10": 36.688470973017175,
+    "PCT_REDUCED_LUNCH10": 5.3883892068683572
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Nash",
+    "PCT_FREE_LUNCH10": 54.452823671636644,
+    "PCT_REDUCED_LUNCH10": 8.0997064072304426
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "New Hanover",
+    "PCT_FREE_LUNCH10": 36.859517803233942,
+    "PCT_REDUCED_LUNCH10": 4.9005417476531168
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Northampton",
+    "PCT_FREE_LUNCH10": 67.030567685589517,
+    "PCT_REDUCED_LUNCH10": 8.5152838427947604
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Onslow",
+    "PCT_FREE_LUNCH10": 31.356215989953956,
+    "PCT_REDUCED_LUNCH10": 10.087902888237757
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Orange",
+    "PCT_FREE_LUNCH10": 25.228695233509868,
+    "PCT_REDUCED_LUNCH10": 3.3060503931953136
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pamlico",
+    "PCT_FREE_LUNCH10": 51.423877327491788,
+    "PCT_REDUCED_LUNCH10": 7.28368017524644
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pasquotank",
+    "PCT_FREE_LUNCH10": 47.408242112041208,
+    "PCT_REDUCED_LUNCH10": 8.3226014166130078
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pender",
+    "PCT_FREE_LUNCH10": 46.698224852071007,
+    "PCT_REDUCED_LUNCH10": 8.2840236686390547
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Perquimans",
+    "PCT_FREE_LUNCH10": 50.600436681222703,
+    "PCT_REDUCED_LUNCH10": 7.1506550218340612
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Person",
+    "PCT_FREE_LUNCH10": 42.297432477492499,
+    "PCT_REDUCED_LUNCH10": 6.4854951650550179
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pitt",
+    "PCT_FREE_LUNCH10": 49.7841726618705,
+    "PCT_REDUCED_LUNCH10": 4.5958527295810407
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Polk",
+    "PCT_FREE_LUNCH10": 44.493216280925779,
+    "PCT_REDUCED_LUNCH10": 8.8986432561851547
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Randolph",
+    "PCT_FREE_LUNCH10": 46.553101997896952,
+    "PCT_REDUCED_LUNCH10": 7.4111461619348047
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Richmond",
+    "PCT_FREE_LUNCH10": 63.239664955417453,
+    "PCT_REDUCED_LUNCH10": 6.8900297216968385
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Robeson",
+    "PCT_FREE_LUNCH10": 74.062214089661481,
+    "PCT_REDUCED_LUNCH10": 6.2130915744822417
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Rockingham",
+    "PCT_FREE_LUNCH10": 48.699830412662521,
+    "PCT_REDUCED_LUNCH10": 6.557377049180328
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Rowan",
+    "PCT_FREE_LUNCH10": 51.295799821268993,
+    "PCT_REDUCED_LUNCH10": 8.1839988711725695
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Rutherford",
+    "PCT_FREE_LUNCH10": 48.763487061968874,
+    "PCT_REDUCED_LUNCH10": 6.7411438938222101
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Sampson",
+    "PCT_FREE_LUNCH10": 61.472602739726021,
+    "PCT_REDUCED_LUNCH10": 7.9023972602739727
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Scotland",
+    "PCT_FREE_LUNCH10": 66.815073938622987,
+    "PCT_REDUCED_LUNCH10": 6.7896326920019083
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Stanly",
+    "PCT_FREE_LUNCH10": 42.648744399291445,
+    "PCT_REDUCED_LUNCH10": 8.5443367719078864
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Stokes",
+    "PCT_FREE_LUNCH10": 37.888198757763973,
+    "PCT_REDUCED_LUNCH10": 8.4133258046301513
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Surry",
+    "PCT_FREE_LUNCH10": 46.132008516678496,
+    "PCT_REDUCED_LUNCH10": 7.3811213626685594
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Swain",
+    "PCT_FREE_LUNCH10": 43.550561797752806,
+    "PCT_REDUCED_LUNCH10": 9.6629213483146064
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Transylvania",
+    "PCT_FREE_LUNCH10": 44.376332622601275,
+    "PCT_REDUCED_LUNCH10": 8.3955223880597014
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Tyrrell",
+    "PCT_FREE_LUNCH10": 61.614497528830313,
+    "PCT_REDUCED_LUNCH10": 6.9192751235584842
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Union",
+    "PCT_FREE_LUNCH10": 27.214415120207608,
+    "PCT_REDUCED_LUNCH10": 5.2563286490721248
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Vance",
+    "PCT_FREE_LUNCH10": 69.903278482602687,
+    "PCT_REDUCED_LUNCH10": 5.9917095842230879
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wake",
+    "PCT_FREE_LUNCH10": 27.911449409820744,
+    "PCT_REDUCED_LUNCH10": 4.2575524660215214
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Warren",
+    "PCT_FREE_LUNCH10": 69.20289855072464,
+    "PCT_REDUCED_LUNCH10": 9.0217391304347831
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Washington",
+    "PCT_FREE_LUNCH10": 71.824359644537367,
+    "PCT_REDUCED_LUNCH10": 7.4751698902247785
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Watauga",
+    "PCT_FREE_LUNCH10": 27.458136539287249,
+    "PCT_REDUCED_LUNCH10": 7.5139544869042503
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wayne",
+    "PCT_FREE_LUNCH10": 51.999388721919416,
+    "PCT_REDUCED_LUNCH10": 7.7071977993989096
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wilkes",
+    "PCT_FREE_LUNCH10": 52.285035629453681,
+    "PCT_REDUCED_LUNCH10": 8.0095011876484552
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wilson",
+    "PCT_FREE_LUNCH10": 57.918406681657565,
+    "PCT_REDUCED_LUNCH10": 7.1554770318021195
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Yadkin",
+    "PCT_FREE_LUNCH10": 42.232849604221634,
+    "PCT_REDUCED_LUNCH10": 7.1240105540897103
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Yancey",
+    "PCT_FREE_LUNCH10": 47.700170357751276,
+    "PCT_REDUCED_LUNCH10": 10.391822827938672
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Adams",
+    "PCT_FREE_LUNCH10": 17.870722433460077,
+    "PCT_REDUCED_LUNCH10": 10.266159695817491
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Barnes",
+    "PCT_FREE_LUNCH10": 25.704918032786882,
+    "PCT_REDUCED_LUNCH10": 9.1803278688524586
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Benson",
+    "PCT_FREE_LUNCH10": 61.96078431372549,
+    "PCT_REDUCED_LUNCH10": 7.1568627450980387
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Billings",
+    "PCT_FREE_LUNCH10": 5.1282051282051277,
+    "PCT_REDUCED_LUNCH10": 17.948717948717949
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Bottineau",
+    "PCT_FREE_LUNCH10": 24.873737373737374,
+    "PCT_REDUCED_LUNCH10": 7.3232323232323235
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Bowman",
+    "PCT_FREE_LUNCH10": 18.421052631578945,
+    "PCT_REDUCED_LUNCH10": 7.1428571428571423
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Burke",
+    "PCT_FREE_LUNCH10": 16.600790513833992,
+    "PCT_REDUCED_LUNCH10": 0.39525691699604742
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Burleigh",
+    "PCT_FREE_LUNCH10": 16.718376030493751,
+    "PCT_REDUCED_LUNCH10": 5.2123038737700558
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Cass",
+    "PCT_FREE_LUNCH10": 21.939839174029586,
+    "PCT_REDUCED_LUNCH10": 5.1623150997716669
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Cavalier",
+    "PCT_FREE_LUNCH10": 25.442477876106196,
+    "PCT_REDUCED_LUNCH10": 10.176991150442479
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Dickey",
+    "PCT_FREE_LUNCH10": 22.807017543859647,
+    "PCT_REDUCED_LUNCH10": 6.666666666666667
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Divide",
+    "PCT_FREE_LUNCH10": 29.20353982300885,
+    "PCT_REDUCED_LUNCH10": 7.0796460176991154
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Dunn",
+    "PCT_FREE_LUNCH10": 19.240506329113924,
+    "PCT_REDUCED_LUNCH10": 4.8101265822784809
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Eddy",
+    "PCT_FREE_LUNCH10": 29.651162790697676,
+    "PCT_REDUCED_LUNCH10": 15.988372093023257
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Emmons",
+    "PCT_FREE_LUNCH10": 30.472854640980735,
+    "PCT_REDUCED_LUNCH10": 14.185639229422067
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Foster",
+    "PCT_FREE_LUNCH10": 16.609589041095891,
+    "PCT_REDUCED_LUNCH10": 9.2465753424657535
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Golden Valley",
+    "PCT_FREE_LUNCH10": 36.893203883495147,
+    "PCT_REDUCED_LUNCH10": 3.8834951456310676
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Grand Forks",
+    "PCT_FREE_LUNCH10": 27.42200328407225,
+    "PCT_REDUCED_LUNCH10": 9.183673469387756
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Grant",
+    "PCT_FREE_LUNCH10": 37.698412698412696,
+    "PCT_REDUCED_LUNCH10": 7.1428571428571423
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Griggs",
+    "PCT_FREE_LUNCH10": 31.790123456790127,
+    "PCT_REDUCED_LUNCH10": 13.271604938271606
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Hettinger",
+    "PCT_FREE_LUNCH10": 23.869346733668344,
+    "PCT_REDUCED_LUNCH10": 10.050251256281408
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Kidder",
+    "PCT_FREE_LUNCH10": 33.830845771144283,
+    "PCT_REDUCED_LUNCH10": 10.696517412935323
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "LaMoure",
+    "PCT_FREE_LUNCH10": 31.862068965517242,
+    "PCT_REDUCED_LUNCH10": 11.586206896551724
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Logan",
+    "PCT_FREE_LUNCH10": 20.289855072463769,
+    "PCT_REDUCED_LUNCH10": 12.753623188405797
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McHenry",
+    "PCT_FREE_LUNCH10": 28.35820895522388,
+    "PCT_REDUCED_LUNCH10": 14.236509758897819
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McIntosh",
+    "PCT_FREE_LUNCH10": 26.262626262626267,
+    "PCT_REDUCED_LUNCH10": 12.121212121212121
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McKenzie",
+    "PCT_FREE_LUNCH10": 14.732142857142858,
+    "PCT_REDUCED_LUNCH10": 5.9523809523809517
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McLean",
+    "PCT_FREE_LUNCH10": 21.908396946564885,
+    "PCT_REDUCED_LUNCH10": 8.778625954198473
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Mercer",
+    "PCT_FREE_LUNCH10": 17.888100866824271,
+    "PCT_REDUCED_LUNCH10": 4.806934594168637
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Morton",
+    "PCT_FREE_LUNCH10": 26.413760603204523,
+    "PCT_REDUCED_LUNCH10": 6.573986804901037
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Mountrail",
+    "PCT_FREE_LUNCH10": 38.231552162849873,
+    "PCT_REDUCED_LUNCH10": 6.0432569974554706
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Nelson",
+    "PCT_FREE_LUNCH10": 28.026905829596409,
+    "PCT_REDUCED_LUNCH10": 10.986547085201794
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Oliver",
+    "PCT_FREE_LUNCH10": 23.979591836734691,
+    "PCT_REDUCED_LUNCH10": 4.0816326530612246
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Pembina",
+    "PCT_FREE_LUNCH10": 26.554621848739497,
+    "PCT_REDUCED_LUNCH10": 10.252100840336134
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Pierce",
+    "PCT_FREE_LUNCH10": 23.414634146341466,
+    "PCT_REDUCED_LUNCH10": 8.9430894308943092
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Ramsey",
+    "PCT_FREE_LUNCH10": 34.745308310991959,
+    "PCT_REDUCED_LUNCH10": 7.935656836461126
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Ransom",
+    "PCT_FREE_LUNCH10": 24.948875255623722,
+    "PCT_REDUCED_LUNCH10": 7.7709611451942742
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Renville",
+    "PCT_FREE_LUNCH10": 22.998296422487225,
+    "PCT_REDUCED_LUNCH10": 11.073253833049405
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Richland",
+    "PCT_FREE_LUNCH10": 25.760822974710674,
+    "PCT_REDUCED_LUNCH10": 8.3154736390912998
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Rolette",
+    "PCT_FREE_LUNCH10": 60.950764006791168,
+    "PCT_REDUCED_LUNCH10": 7.7249575551782677
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Sargent",
+    "PCT_FREE_LUNCH10": 19.589257503949447,
+    "PCT_REDUCED_LUNCH10": 9.3206951026856242
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Sheridan",
+    "PCT_FREE_LUNCH10": 51.886792452830186,
+    "PCT_REDUCED_LUNCH10": 3.7735849056603774
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Sioux",
+    "PCT_FREE_LUNCH10": 76.94174757281553,
+    "PCT_REDUCED_LUNCH10": 7.2815533980582519
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Slope",
+    "PCT_FREE_LUNCH10": 0,
+    "PCT_REDUCED_LUNCH10": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Stark",
+    "PCT_FREE_LUNCH10": 21.912470023980816,
+    "PCT_REDUCED_LUNCH10": 7.7637889688249402
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Steele",
+    "PCT_FREE_LUNCH10": 18.595041322314049,
+    "PCT_REDUCED_LUNCH10": 4.5454545454545459
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Stutsman",
+    "PCT_FREE_LUNCH10": 27.532368621477531,
+    "PCT_REDUCED_LUNCH10": 10.662604722010663
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Towner",
+    "PCT_FREE_LUNCH10": 20.945945945945947,
+    "PCT_REDUCED_LUNCH10": 8.7837837837837842
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Traill",
+    "PCT_FREE_LUNCH10": 18.54655563966692,
+    "PCT_REDUCED_LUNCH10": 8.1756245268735803
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Walsh",
+    "PCT_FREE_LUNCH10": 31.670533642691417,
+    "PCT_REDUCED_LUNCH10": 8.468677494199536
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Ward",
+    "PCT_FREE_LUNCH10": 21.029715902906283,
+    "PCT_REDUCED_LUNCH10": 8.3378687275497985
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Wells",
+    "PCT_FREE_LUNCH10": 23.4375,
+    "PCT_REDUCED_LUNCH10": 7.9861111111111107
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Williams",
+    "PCT_FREE_LUNCH10": 19.381860196418256,
+    "PCT_REDUCED_LUNCH10": 7.6545349508954361
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Adams",
+    "PCT_FREE_LUNCH10": 49.10480788573728,
+    "PCT_REDUCED_LUNCH10": 7.4029370348018517
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Allen",
+    "PCT_FREE_LUNCH10": 43.931473200226748,
+    "PCT_REDUCED_LUNCH10": 7.2998677331989672
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ashland",
+    "PCT_FREE_LUNCH10": 33.181175959134876,
+    "PCT_REDUCED_LUNCH10": 8.2382349744592975
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ashtabula",
+    "PCT_FREE_LUNCH10": 46.548297336690077,
+    "PCT_REDUCED_LUNCH10": 8.3079369285808937
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Athens",
+    "PCT_FREE_LUNCH10": 41.125890098078735,
+    "PCT_REDUCED_LUNCH10": 6.0190783286309291
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Auglaize",
+    "PCT_FREE_LUNCH10": 24.826103452636904,
+    "PCT_REDUCED_LUNCH10": 6.2602757050714555
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Belmont",
+    "PCT_FREE_LUNCH10": 37.925644747125155,
+    "PCT_REDUCED_LUNCH10": 7.4690186446354803
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Brown",
+    "PCT_FREE_LUNCH10": 42.934642211314902,
+    "PCT_REDUCED_LUNCH10": 8.5895117540687149
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Butler",
+    "PCT_FREE_LUNCH10": 33.368996876563877,
+    "PCT_REDUCED_LUNCH10": 4.479801204507412
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Carroll",
+    "PCT_FREE_LUNCH10": 42.455242966751918,
+    "PCT_REDUCED_LUNCH10": 8.3887468030690542
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Champaign",
+    "PCT_FREE_LUNCH10": 33.298875823749839,
+    "PCT_REDUCED_LUNCH10": 6.5512340095619583
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Clark",
+    "PCT_FREE_LUNCH10": 46.308914054790655,
+    "PCT_REDUCED_LUNCH10": 4.4452798270757956
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Clermont",
+    "PCT_FREE_LUNCH10": 30.280864964669956,
+    "PCT_REDUCED_LUNCH10": 5.5178780669672971
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Clinton",
+    "PCT_FREE_LUNCH10": 38.201830324016818,
+    "PCT_REDUCED_LUNCH10": 6.9131832797427659
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Columbiana",
+    "PCT_FREE_LUNCH10": 41.166546155700168,
+    "PCT_REDUCED_LUNCH10": 7.4777054711978792
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Coshocton",
+    "PCT_FREE_LUNCH10": 44.676694666927133,
+    "PCT_REDUCED_LUNCH10": 6.9349482320765778
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Crawford",
+    "PCT_FREE_LUNCH10": 43.856991364944705,
+    "PCT_REDUCED_LUNCH10": 9.4834116043023791
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Cuyahoga",
+    "PCT_FREE_LUNCH10": 45.565803772953991,
+    "PCT_REDUCED_LUNCH10": 4.8663861565469393
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Darke",
+    "PCT_FREE_LUNCH10": 25.449901311970279,
+    "PCT_REDUCED_LUNCH10": 7.360965981655637
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Defiance",
+    "PCT_FREE_LUNCH10": 33.901720663463031,
+    "PCT_REDUCED_LUNCH10": 7.8282436831498989
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Delaware",
+    "PCT_FREE_LUNCH10": 13.840770907422279,
+    "PCT_REDUCED_LUNCH10": 2.8450154869794653
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Erie",
+    "PCT_FREE_LUNCH10": 39.578396927853582,
+    "PCT_REDUCED_LUNCH10": 7.1737887082277965
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Fairfield",
+    "PCT_FREE_LUNCH10": 27.905673219361816,
+    "PCT_REDUCED_LUNCH10": 5.1447331545021422
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Fayette",
+    "PCT_FREE_LUNCH10": 44.171011470281549,
+    "PCT_REDUCED_LUNCH10": 5.9228362877997913
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Franklin",
+    "PCT_FREE_LUNCH10": 41.486695373744062,
+    "PCT_REDUCED_LUNCH10": 4.4385558131831733
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Fulton",
+    "PCT_FREE_LUNCH10": 30.285714285714288,
+    "PCT_REDUCED_LUNCH10": 6.2476190476190476
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Gallia",
+    "PCT_FREE_LUNCH10": 47.636925795053003,
+    "PCT_REDUCED_LUNCH10": 6.7137809187279158
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Geauga",
+    "PCT_FREE_LUNCH10": 13.715374236050481,
+    "PCT_REDUCED_LUNCH10": 5.0083339947614887
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Greene",
+    "PCT_FREE_LUNCH10": 25.249567416478101,
+    "PCT_REDUCED_LUNCH10": 5.0046585917742581
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Guernsey",
+    "PCT_FREE_LUNCH10": 49.23634975181367,
+    "PCT_REDUCED_LUNCH10": 8.5147002672775862
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hamilton",
+    "PCT_FREE_LUNCH10": 39.316544196333027,
+    "PCT_REDUCED_LUNCH10": 3.9559106798887065
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hancock",
+    "PCT_FREE_LUNCH10": 26.01880877742947,
+    "PCT_REDUCED_LUNCH10": 5.7168784029038111
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hardin",
+    "PCT_FREE_LUNCH10": 34.833221401387952,
+    "PCT_REDUCED_LUNCH10": 7.611372285650325
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Harrison",
+    "PCT_FREE_LUNCH10": 46.349942062572424,
+    "PCT_REDUCED_LUNCH10": 7.1842410196987254
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Henry",
+    "PCT_FREE_LUNCH10": 30.699424524125718,
+    "PCT_REDUCED_LUNCH10": 8.4550686144311644
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Highland",
+    "PCT_FREE_LUNCH10": 36.009299781181618,
+    "PCT_REDUCED_LUNCH10": 7.0979212253829322
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hocking",
+    "PCT_FREE_LUNCH10": 51.350727314707925,
+    "PCT_REDUCED_LUNCH10": 7.2731470791964901
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Holmes",
+    "PCT_FREE_LUNCH10": 29.640256014124915,
+    "PCT_REDUCED_LUNCH10": 14.124917236813065
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Huron",
+    "PCT_FREE_LUNCH10": 38.297193877551024,
+    "PCT_REDUCED_LUNCH10": 7.4617346938775517
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Jackson",
+    "PCT_FREE_LUNCH10": 53.040224508886816,
+    "PCT_REDUCED_LUNCH10": 7.782974742750234
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Jefferson",
+    "PCT_FREE_LUNCH10": 50.010624734381636,
+    "PCT_REDUCED_LUNCH10": 7.5223119422014459
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Knox",
+    "PCT_FREE_LUNCH10": 36.782608695652172,
+    "PCT_REDUCED_LUNCH10": 6.7204968944099388
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lake",
+    "PCT_FREE_LUNCH10": 25.540893961008081,
+    "PCT_REDUCED_LUNCH10": 5.4297432239657635
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lawrence",
+    "PCT_FREE_LUNCH10": 42.267732267732264,
+    "PCT_REDUCED_LUNCH10": 5.8341658341658347
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Licking",
+    "PCT_FREE_LUNCH10": 31.047197640117997,
+    "PCT_REDUCED_LUNCH10": 5.9292035398230087
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Logan",
+    "PCT_FREE_LUNCH10": 36.309088248207225,
+    "PCT_REDUCED_LUNCH10": 6.2637201814722667
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lorain",
+    "PCT_FREE_LUNCH10": 37.878557957033536,
+    "PCT_REDUCED_LUNCH10": 6.0937804851611785
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lucas",
+    "PCT_FREE_LUNCH10": 40.154103667224611,
+    "PCT_REDUCED_LUNCH10": 3.7433081105009065
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Madison",
+    "PCT_FREE_LUNCH10": 29.305731587100407,
+    "PCT_REDUCED_LUNCH10": 5.9428249542317984
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Mahoning",
+    "PCT_FREE_LUNCH10": 43.240089840445698,
+    "PCT_REDUCED_LUNCH10": 5.8921331272059039
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Marion",
+    "PCT_FREE_LUNCH10": 35.972869860110215,
+    "PCT_REDUCED_LUNCH10": 6.6553624417125894
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Medina",
+    "PCT_FREE_LUNCH10": 16.446339729921817,
+    "PCT_REDUCED_LUNCH10": 4.3887704335465534
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Meigs",
+    "PCT_FREE_LUNCH10": 47.714285714285715,
+    "PCT_REDUCED_LUNCH10": 7.3142857142857149
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Mercer",
+    "PCT_FREE_LUNCH10": 18.862456225093588,
+    "PCT_REDUCED_LUNCH10": 5.2892162782272667
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Miami",
+    "PCT_FREE_LUNCH10": 29.503747738433706,
+    "PCT_REDUCED_LUNCH10": 5.8865339881106236
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Monroe",
+    "PCT_FREE_LUNCH10": 41.810154525386309,
+    "PCT_REDUCED_LUNCH10": 11.567328918322296
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Montgomery",
+    "PCT_FREE_LUNCH10": 42.623953515042622,
+    "PCT_REDUCED_LUNCH10": 5.971176268205971
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Morgan",
+    "PCT_FREE_LUNCH10": 48.314606741573037,
+    "PCT_REDUCED_LUNCH10": 8.7078651685393265
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Morrow",
+    "PCT_FREE_LUNCH10": 34.447155997747323,
+    "PCT_REDUCED_LUNCH10": 7.2836493335836305
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Muskingum",
+    "PCT_FREE_LUNCH10": 46.877975785607404,
+    "PCT_REDUCED_LUNCH10": 6.448102299006937
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Noble",
+    "PCT_FREE_LUNCH10": 37.788018433179722,
+    "PCT_REDUCED_LUNCH10": 9.9078341013824893
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ottawa",
+    "PCT_FREE_LUNCH10": 29.652996845425868,
+    "PCT_REDUCED_LUNCH10": 6.4917815042337708
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Paulding",
+    "PCT_FREE_LUNCH10": 35.741687979539641,
+    "PCT_REDUCED_LUNCH10": 9.2071611253196934
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Perry",
+    "PCT_FREE_LUNCH10": 44.869644762921176,
+    "PCT_REDUCED_LUNCH10": 6.9980179905473392
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Pickaway",
+    "PCT_FREE_LUNCH10": 36.995708154506438,
+    "PCT_REDUCED_LUNCH10": 5.5257510729613735
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Pike",
+    "PCT_FREE_LUNCH10": 51.414487783969143,
+    "PCT_REDUCED_LUNCH10": 5.7651093013287618
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Portage",
+    "PCT_FREE_LUNCH10": 29.188903100604239,
+    "PCT_REDUCED_LUNCH10": 6.0733030476778547
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Preble",
+    "PCT_FREE_LUNCH10": 33.868038740920099,
+    "PCT_REDUCED_LUNCH10": 6.3861985472154963
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Putnam",
+    "PCT_FREE_LUNCH10": 19.841006955945677,
+    "PCT_REDUCED_LUNCH10": 4.7366677707850284
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Richland",
+    "PCT_FREE_LUNCH10": 45.51535597952536,
+    "PCT_REDUCED_LUNCH10": 8.0618892508143318
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ross",
+    "PCT_FREE_LUNCH10": 41.956077630234937,
+    "PCT_REDUCED_LUNCH10": 4.4603336738168204
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Sandusky",
+    "PCT_FREE_LUNCH10": 39.409704852426216,
+    "PCT_REDUCED_LUNCH10": 9.7648824412206103
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Scioto",
+    "PCT_FREE_LUNCH10": 53.172277227722773,
+    "PCT_REDUCED_LUNCH10": 6.6851485148514858
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Seneca",
+    "PCT_FREE_LUNCH10": 31.983985765124558,
+    "PCT_REDUCED_LUNCH10": 7.5029655990510076
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Shelby",
+    "PCT_FREE_LUNCH10": 30.41850969717591,
+    "PCT_REDUCED_LUNCH10": 6.0224566178972445
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Stark",
+    "PCT_FREE_LUNCH10": 38.671177359527405,
+    "PCT_REDUCED_LUNCH10": 6.4775381233685954
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Summit",
+    "PCT_FREE_LUNCH10": 34.770827179678172,
+    "PCT_REDUCED_LUNCH10": 6.3980890492763303
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Trumbull",
+    "PCT_FREE_LUNCH10": 42.72715455608995,
+    "PCT_REDUCED_LUNCH10": 7.6368126868581827
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Tuscarawas",
+    "PCT_FREE_LUNCH10": 35.354360392058304,
+    "PCT_REDUCED_LUNCH10": 7.5647147524503646
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Union",
+    "PCT_FREE_LUNCH10": 20.114032309154261,
+    "PCT_REDUCED_LUNCH10": 4.3817970647238944
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Van Wert",
+    "PCT_FREE_LUNCH10": 30.258899676375407,
+    "PCT_REDUCED_LUNCH10": 7.7438742487286172
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Vinton",
+    "PCT_FREE_LUNCH10": 59.932942162615255,
+    "PCT_REDUCED_LUNCH10": 8.2564962279966476
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Warren",
+    "PCT_FREE_LUNCH10": 13.501009421265142,
+    "PCT_REDUCED_LUNCH10": 2.5936518618214448
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Washington",
+    "PCT_FREE_LUNCH10": 38.715359323626117,
+    "PCT_REDUCED_LUNCH10": 7.7970878346641612
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Wayne",
+    "PCT_FREE_LUNCH10": 32.235174860618351,
+    "PCT_REDUCED_LUNCH10": 8.4452610238215922
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Williams",
+    "PCT_FREE_LUNCH10": 25.265285497726126,
+    "PCT_REDUCED_LUNCH10": 5.457301667508843
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Wood",
+    "PCT_FREE_LUNCH10": 28.746550626194011,
+    "PCT_REDUCED_LUNCH10": 6.2088728507747826
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Wyandot",
+    "PCT_FREE_LUNCH10": 26.164772727272727,
+    "PCT_REDUCED_LUNCH10": 8.3806818181818183
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Adair",
+    "PCT_FREE_LUNCH10": 64.765992233803388,
+    "PCT_REDUCED_LUNCH10": 12.385039852851012
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Alfalfa",
+    "PCT_FREE_LUNCH10": 44.846796657381617,
+    "PCT_REDUCED_LUNCH10": 13.649025069637883
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Atoka",
+    "PCT_FREE_LUNCH10": 61.852631578947367,
+    "PCT_REDUCED_LUNCH10": 12.042105263157895
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Beaver",
+    "PCT_FREE_LUNCH10": 45.833333333333329,
+    "PCT_REDUCED_LUNCH10": 12.409420289855072
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Beckham",
+    "PCT_FREE_LUNCH10": 45.207253886010363,
+    "PCT_REDUCED_LUNCH10": 8.652849740932643
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Blaine",
+    "PCT_FREE_LUNCH10": 61.980548187444739,
+    "PCT_REDUCED_LUNCH10": 11.538461538461538
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Bryan",
+    "PCT_FREE_LUNCH10": 58.862830651758934,
+    "PCT_REDUCED_LUNCH10": 11.030815380419961
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Caddo",
+    "PCT_FREE_LUNCH10": 66.282923425780567,
+    "PCT_REDUCED_LUNCH10": 8.0760509331937911
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Canadian",
+    "PCT_FREE_LUNCH10": 31.070235564617587,
+    "PCT_REDUCED_LUNCH10": 8.4898702876230967
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Carter",
+    "PCT_FREE_LUNCH10": 55.431845205923679,
+    "PCT_REDUCED_LUNCH10": 10.593449356826289
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cherokee",
+    "PCT_FREE_LUNCH10": 61.528344074707356,
+    "PCT_REDUCED_LUNCH10": 13.00802314875707
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Choctaw",
+    "PCT_FREE_LUNCH10": 70.051508462104479,
+    "PCT_REDUCED_LUNCH10": 8.4621044885945551
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cimarron",
+    "PCT_FREE_LUNCH10": 52.666666666666664,
+    "PCT_REDUCED_LUNCH10": 12.666666666666668
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cleveland",
+    "PCT_FREE_LUNCH10": 38.754620415126531,
+    "PCT_REDUCED_LUNCH10": 7.6675196663823328
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Coal",
+    "PCT_FREE_LUNCH10": 60.144927536231883,
+    "PCT_REDUCED_LUNCH10": 13.043478260869565
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Comanche",
+    "PCT_FREE_LUNCH10": 44.83856502242152,
+    "PCT_REDUCED_LUNCH10": 11.995515695067265
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cotton",
+    "PCT_FREE_LUNCH10": 45.155709342560549,
+    "PCT_REDUCED_LUNCH10": 11.159169550173011
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Craig",
+    "PCT_FREE_LUNCH10": 46.333500753390254,
+    "PCT_REDUCED_LUNCH10": 12.104470115519838
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Creek",
+    "PCT_FREE_LUNCH10": 51.86731440716563,
+    "PCT_REDUCED_LUNCH10": 11.408835585243663
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Custer",
+    "PCT_FREE_LUNCH10": 51.300187226960681,
+    "PCT_REDUCED_LUNCH10": 10.671936758893279
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Delaware",
+    "PCT_FREE_LUNCH10": 59.988231832892026,
+    "PCT_REDUCED_LUNCH10": 12.003530450132391
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Dewey",
+    "PCT_FREE_LUNCH10": 37.927663734115349,
+    "PCT_REDUCED_LUNCH10": 12.707722385141739
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Ellis",
+    "PCT_FREE_LUNCH10": 45.088757396449701,
+    "PCT_REDUCED_LUNCH10": 13.609467455621301
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Garfield",
+    "PCT_FREE_LUNCH10": 55.410088563727378,
+    "PCT_REDUCED_LUNCH10": 10.743165190604543
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Garvin",
+    "PCT_FREE_LUNCH10": 51.60627568173328,
+    "PCT_REDUCED_LUNCH10": 11.505416511019799
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Grady",
+    "PCT_FREE_LUNCH10": 41.954838005890693,
+    "PCT_REDUCED_LUNCH10": 9.0869422930075281
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Grant",
+    "PCT_FREE_LUNCH10": 42.931937172774873,
+    "PCT_REDUCED_LUNCH10": 9.6858638743455501
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Greer",
+    "PCT_FREE_LUNCH10": 50.871794871794876,
+    "PCT_REDUCED_LUNCH10": 11.384615384615385
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Harmon",
+    "PCT_FREE_LUNCH10": 70.566727605118828,
+    "PCT_REDUCED_LUNCH10": 12.431444241316271
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Harper",
+    "PCT_FREE_LUNCH10": 43.88297872340425,
+    "PCT_REDUCED_LUNCH10": 15.292553191489361
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Haskell",
+    "PCT_FREE_LUNCH10": 64.205256570713388,
+    "PCT_REDUCED_LUNCH10": 10.387984981226534
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Hughes",
+    "PCT_FREE_LUNCH10": 63.698049194232397,
+    "PCT_REDUCED_LUNCH10": 11.747243426632739
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Jackson",
+    "PCT_FREE_LUNCH10": 49.237304498938016,
+    "PCT_REDUCED_LUNCH10": 9.3647422282293871
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Jefferson",
+    "PCT_FREE_LUNCH10": 66.917293233082702,
+    "PCT_REDUCED_LUNCH10": 5.6808688387635753
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Johnston",
+    "PCT_FREE_LUNCH10": 63.985278654048372,
+    "PCT_REDUCED_LUNCH10": 8.1493165089379609
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Kay",
+    "PCT_FREE_LUNCH10": 58.142283148191922,
+    "PCT_REDUCED_LUNCH10": 9.7376506735996227
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Kingfisher",
+    "PCT_FREE_LUNCH10": 47.125710675931778,
+    "PCT_REDUCED_LUNCH10": 13.771320277953253
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Kiowa",
+    "PCT_FREE_LUNCH10": 57.875894988066825,
+    "PCT_REDUCED_LUNCH10": 11.276849642004773
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Latimer",
+    "PCT_FREE_LUNCH10": 54.418604651162795,
+    "PCT_REDUCED_LUNCH10": 11.495016611295682
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Le Flore",
+    "PCT_FREE_LUNCH10": 64.201796821008983,
+    "PCT_REDUCED_LUNCH10": 9.1815579030506473
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Lincoln",
+    "PCT_FREE_LUNCH10": 49.446105152101282,
+    "PCT_REDUCED_LUNCH10": 11.517496043608229
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Logan",
+    "PCT_FREE_LUNCH10": 53.997349823321549,
+    "PCT_REDUCED_LUNCH10": 10.777385159010601
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Love",
+    "PCT_FREE_LUNCH10": 59.47214076246334,
+    "PCT_REDUCED_LUNCH10": 11.085043988269796
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "McClain",
+    "PCT_FREE_LUNCH10": 35.941906373378458,
+    "PCT_REDUCED_LUNCH10": 8.178228990411732
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "McCurtain",
+    "PCT_FREE_LUNCH10": 67.88699913519747,
+    "PCT_REDUCED_LUNCH10": 9.7722686653214179
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "McIntosh",
+    "PCT_FREE_LUNCH10": 63.126684636118604,
+    "PCT_REDUCED_LUNCH10": 14.743935309973047
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Major",
+    "PCT_FREE_LUNCH10": 43.27956989247312,
+    "PCT_REDUCED_LUNCH10": 16.756272401433691
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Marshall",
+    "PCT_FREE_LUNCH10": 69.784656796769852,
+    "PCT_REDUCED_LUNCH10": 10.531628532974429
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Mayes",
+    "PCT_FREE_LUNCH10": 57.244147157190639,
+    "PCT_REDUCED_LUNCH10": 11.518394648829432
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Murray",
+    "PCT_FREE_LUNCH10": 41.097467382962392,
+    "PCT_REDUCED_LUNCH10": 12.010744435917115
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Muskogee",
+    "PCT_FREE_LUNCH10": 56.682898466458319,
+    "PCT_REDUCED_LUNCH10": 10.763863652881749
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Noble",
+    "PCT_FREE_LUNCH10": 50.114416475972547,
+    "PCT_REDUCED_LUNCH10": 10.434782608695652
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Nowata",
+    "PCT_FREE_LUNCH10": 50.507099391480722,
+    "PCT_REDUCED_LUNCH10": 14.148073022312374
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Okfuskee",
+    "PCT_FREE_LUNCH10": 61.118568232662199,
+    "PCT_REDUCED_LUNCH10": 10.917225950782997
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Oklahoma",
+    "PCT_FREE_LUNCH10": 55.594027266825364,
+    "PCT_REDUCED_LUNCH10": 6.8816273533867127
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Okmulgee",
+    "PCT_FREE_LUNCH10": 59.938280263711597,
+    "PCT_REDUCED_LUNCH10": 11.810913171552812
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Osage",
+    "PCT_FREE_LUNCH10": 50.635880972959626,
+    "PCT_REDUCED_LUNCH10": 8.7665143844919129
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Ottawa",
+    "PCT_FREE_LUNCH10": 60.526315789473685,
+    "PCT_REDUCED_LUNCH10": 11.529605263157896
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pawnee",
+    "PCT_FREE_LUNCH10": 56.987740805604204,
+    "PCT_REDUCED_LUNCH10": 12.399299474605954
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Payne",
+    "PCT_FREE_LUNCH10": 41.0349436700401,
+    "PCT_REDUCED_LUNCH10": 9.2896696582012606
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pittsburg",
+    "PCT_FREE_LUNCH10": 57.948402948402943,
+    "PCT_REDUCED_LUNCH10": 10.393120393120393
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pontotoc",
+    "PCT_FREE_LUNCH10": 51.276565397232922,
+    "PCT_REDUCED_LUNCH10": 11.196690914277564
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pottawatomie",
+    "PCT_FREE_LUNCH10": 54.998099581908022,
+    "PCT_REDUCED_LUNCH10": 9.2664386164956287
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pushmataha",
+    "PCT_FREE_LUNCH10": 68.14946619217082,
+    "PCT_REDUCED_LUNCH10": 9.4306049822064058
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Roger Mills",
+    "PCT_FREE_LUNCH10": 42.653352353780313,
+    "PCT_REDUCED_LUNCH10": 6.847360912981455
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Rogers",
+    "PCT_FREE_LUNCH10": 36.712560072736714,
+    "PCT_REDUCED_LUNCH10": 10.345499415508508
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Seminole",
+    "PCT_FREE_LUNCH10": 66.8581616481775,
+    "PCT_REDUCED_LUNCH10": 8.3993660855784462
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Sequoyah",
+    "PCT_FREE_LUNCH10": 64.633869870777602,
+    "PCT_REDUCED_LUNCH10": 10.349127182044887
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Stephens",
+    "PCT_FREE_LUNCH10": 45.198894363658212,
+    "PCT_REDUCED_LUNCH10": 9.2296598966470373
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Texas",
+    "PCT_FREE_LUNCH10": 55.901044030866998,
+    "PCT_REDUCED_LUNCH10": 12.573763050385839
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Tillman",
+    "PCT_FREE_LUNCH10": 69.633838383838381,
+    "PCT_REDUCED_LUNCH10": 9.0909090909090917
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Tulsa",
+    "PCT_FREE_LUNCH10": 48.135408286868795,
+    "PCT_REDUCED_LUNCH10": 8.4126235586747669
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Wagoner",
+    "PCT_FREE_LUNCH10": 43.91808536886257,
+    "PCT_REDUCED_LUNCH10": 9.610165309647174
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Washington",
+    "PCT_FREE_LUNCH10": 43.31949193942355,
+    "PCT_REDUCED_LUNCH10": 8.3536883243771367
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Washita",
+    "PCT_FREE_LUNCH10": 57.262569832402235,
+    "PCT_REDUCED_LUNCH10": 11.685288640595903
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Woods",
+    "PCT_FREE_LUNCH10": 36.710963455149503,
+    "PCT_REDUCED_LUNCH10": 9.5514950166112964
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Woodward",
+    "PCT_FREE_LUNCH10": 49.07891119054166,
+    "PCT_REDUCED_LUNCH10": 10.173219686554853
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Baker",
+    "PCT_FREE_LUNCH10": 42.991452991452995,
+    "PCT_REDUCED_LUNCH10": 8.5897435897435894
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Benton",
+    "PCT_FREE_LUNCH10": 30.906359539308966,
+    "PCT_REDUCED_LUNCH10": 5.067601402103155
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Clackamas",
+    "PCT_FREE_LUNCH10": 29.466400804403769,
+    "PCT_REDUCED_LUNCH10": 6.1506211974027298
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Clatsop",
+    "PCT_FREE_LUNCH10": 43.427991886409735,
+    "PCT_REDUCED_LUNCH10": 7.5253549695740372
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Columbia",
+    "PCT_FREE_LUNCH10": 35.585027268220124,
+    "PCT_REDUCED_LUNCH10": 7.4615765989092715
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Coos",
+    "PCT_FREE_LUNCH10": 47.702927874315634,
+    "PCT_REDUCED_LUNCH10": 6.9983337300642701
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Crook",
+    "PCT_FREE_LUNCH10": 53.49075975359343,
+    "PCT_REDUCED_LUNCH10": 7.3237508555783704
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Curry",
+    "PCT_FREE_LUNCH10": 47.266099635479954,
+    "PCT_REDUCED_LUNCH10": 12.555690562980965
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Deschutes",
+    "PCT_FREE_LUNCH10": 44.273091030343451,
+    "PCT_REDUCED_LUNCH10": 7.6567189063021015
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Douglas",
+    "PCT_FREE_LUNCH10": 50.744724865535787,
+    "PCT_REDUCED_LUNCH10": 8.957385188249896
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Gilliam",
+    "PCT_FREE_LUNCH10": 39.271255060728741,
+    "PCT_REDUCED_LUNCH10": 8.9068825910931171
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Grant",
+    "PCT_FREE_LUNCH10": 40.582726326742971,
+    "PCT_REDUCED_LUNCH10": 10.718002081165452
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Harney",
+    "PCT_FREE_LUNCH10": 38.455079764903445,
+    "PCT_REDUCED_LUNCH10": 10.915197313182199
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Hood River",
+    "PCT_FREE_LUNCH10": 50.417827298050142,
+    "PCT_REDUCED_LUNCH10": 8.2552544948088133
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Jackson",
+    "PCT_FREE_LUNCH10": 47.360872059667244,
+    "PCT_REDUCED_LUNCH10": 7.2647733792312108
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Jefferson",
+    "PCT_FREE_LUNCH10": 72.031204854088415,
+    "PCT_REDUCED_LUNCH10": 7.5411730713666563
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Josephine",
+    "PCT_FREE_LUNCH10": 52.614955875522526,
+    "PCT_REDUCED_LUNCH10": 7.77519739897817
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Klamath",
+    "PCT_FREE_LUNCH10": 57.920476291728683,
+    "PCT_REDUCED_LUNCH10": 8.685945141399106
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Lake",
+    "PCT_FREE_LUNCH10": 36.516853932584269,
+    "PCT_REDUCED_LUNCH10": 5.9925093632958806
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Lane",
+    "PCT_FREE_LUNCH10": 44.073776348695965,
+    "PCT_REDUCED_LUNCH10": 7.5138442300821726
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Lincoln",
+    "PCT_FREE_LUNCH10": 54.659706109822118,
+    "PCT_REDUCED_LUNCH10": 8.372003093580819
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Linn",
+    "PCT_FREE_LUNCH10": 40.846659472186801,
+    "PCT_REDUCED_LUNCH10": 7.5738251741391149
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Malheur",
+    "PCT_FREE_LUNCH10": 58.202676864244737,
+    "PCT_REDUCED_LUNCH10": 7.9541108986615674
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Marion",
+    "PCT_FREE_LUNCH10": 54.223387636688237,
+    "PCT_REDUCED_LUNCH10": 7.9762701777876961
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Morrow",
+    "PCT_FREE_LUNCH10": 57.401032702237522,
+    "PCT_REDUCED_LUNCH10": 12.048192771084338
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Multnomah",
+    "PCT_FREE_LUNCH10": 47.184419929469215,
+    "PCT_REDUCED_LUNCH10": 7.2113210959399581
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Polk",
+    "PCT_FREE_LUNCH10": 40.618101545253865,
+    "PCT_REDUCED_LUNCH10": 5.8244184071998637
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Sherman",
+    "PCT_FREE_LUNCH10": 46.153846153846153,
+    "PCT_REDUCED_LUNCH10": 8.5470085470085468
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Tillamook",
+    "PCT_FREE_LUNCH10": 49.012458219386204,
+    "PCT_REDUCED_LUNCH10": 11.607414159829839
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Umatilla",
+    "PCT_FREE_LUNCH10": 54.665010593994303,
+    "PCT_REDUCED_LUNCH10": 8.8989552129758156
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Union",
+    "PCT_FREE_LUNCH10": 41.054808686659769,
+    "PCT_REDUCED_LUNCH10": 9.3588417786970002
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Wallowa",
+    "PCT_FREE_LUNCH10": 37.442922374429223,
+    "PCT_REDUCED_LUNCH10": 8.7899543378995428
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Wasco",
+    "PCT_FREE_LUNCH10": 51.526390870185445,
+    "PCT_REDUCED_LUNCH10": 5.8487874465049927
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Washington",
+    "PCT_FREE_LUNCH10": 33.429534567390142,
+    "PCT_REDUCED_LUNCH10": 5.3427168963274001
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Wheeler",
+    "PCT_FREE_LUNCH10": 52.46636771300448,
+    "PCT_REDUCED_LUNCH10": 8.5201793721973083
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Yamhill",
+    "PCT_FREE_LUNCH10": 44.303563734843351,
+    "PCT_REDUCED_LUNCH10": 7.0597648796700927
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Adams",
+    "PCT_FREE_LUNCH10": 25.508923591745681,
+    "PCT_REDUCED_LUNCH10": 7.4316787506971558
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Allegheny",
+    "PCT_FREE_LUNCH10": 31.565346128934184,
+    "PCT_REDUCED_LUNCH10": 4.968209276810617
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Armstrong",
+    "PCT_FREE_LUNCH10": 31.912660088179717,
+    "PCT_REDUCED_LUNCH10": 8.5345370564770118
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Beaver",
+    "PCT_FREE_LUNCH10": 22.913423542090769,
+    "PCT_REDUCED_LUNCH10": 4.9245599329421621
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Bedford",
+    "PCT_FREE_LUNCH10": 33.248595129783247,
+    "PCT_REDUCED_LUNCH10": 10.717152796360716
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Berks",
+    "PCT_FREE_LUNCH10": 35.132701561715827,
+    "PCT_REDUCED_LUNCH10": 5.3759631564963248
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Blair",
+    "PCT_FREE_LUNCH10": 36.000222086502696,
+    "PCT_REDUCED_LUNCH10": 8.5225695408361553
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Bradford",
+    "PCT_FREE_LUNCH10": 31.807897984368573,
+    "PCT_REDUCED_LUNCH10": 9.0497737556561084
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Bucks",
+    "PCT_FREE_LUNCH10": 13.337091194447206,
+    "PCT_REDUCED_LUNCH10": 4.1303314654553089
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Butler",
+    "PCT_FREE_LUNCH10": 16.81282447032412,
+    "PCT_REDUCED_LUNCH10": 4.5110144520836251
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Cambria",
+    "PCT_FREE_LUNCH10": 35.037189428707073,
+    "PCT_REDUCED_LUNCH10": 8.9676636598617918
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Cameron",
+    "PCT_FREE_LUNCH10": null,
+    "PCT_REDUCED_LUNCH10": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Carbon",
+    "PCT_FREE_LUNCH10": 32.794133505877276,
+    "PCT_REDUCED_LUNCH10": 8.7026852151407308
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Centre",
+    "PCT_FREE_LUNCH10": 18.581193178047648,
+    "PCT_REDUCED_LUNCH10": 5.9857986594996353
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Chester",
+    "PCT_FREE_LUNCH10": 16.424571843591128,
+    "PCT_REDUCED_LUNCH10": 4.2909355012534265
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Clarion",
+    "PCT_FREE_LUNCH10": 29.664530719939691,
+    "PCT_REDUCED_LUNCH10": 8.2548058801356952
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Clearfield",
+    "PCT_FREE_LUNCH10": 37.408829174664113,
+    "PCT_REDUCED_LUNCH10": 9.2226487523992322
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Clinton",
+    "PCT_FREE_LUNCH10": 37.48864668483197,
+    "PCT_REDUCED_LUNCH10": 9.5140781108083559
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Columbia",
+    "PCT_FREE_LUNCH10": 26.896479463537297,
+    "PCT_REDUCED_LUNCH10": 8.7489522212908639
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Crawford",
+    "PCT_FREE_LUNCH10": 36.495691423881823,
+    "PCT_REDUCED_LUNCH10": 8.1903980303652038
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Cumberland",
+    "PCT_FREE_LUNCH10": 16.445188174689111,
+    "PCT_REDUCED_LUNCH10": 4.8167470551563474
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Dauphin",
+    "PCT_FREE_LUNCH10": 34.7359755949931,
+    "PCT_REDUCED_LUNCH10": 6.5346342880662416
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Delaware",
+    "PCT_FREE_LUNCH10": 29.86436566135524,
+    "PCT_REDUCED_LUNCH10": 4.5983348955174499
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Elk",
+    "PCT_FREE_LUNCH10": 29.681888147768088,
+    "PCT_REDUCED_LUNCH10": 7.6962544894817855
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Erie",
+    "PCT_FREE_LUNCH10": 40.827712755405678,
+    "PCT_REDUCED_LUNCH10": 7.1216028565760761
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Fayette",
+    "PCT_FREE_LUNCH10": 46.262070397674179,
+    "PCT_REDUCED_LUNCH10": 7.3253037067801898
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Forest",
+    "PCT_FREE_LUNCH10": 32.849829351535838,
+    "PCT_REDUCED_LUNCH10": 12.286689419795222
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Franklin",
+    "PCT_FREE_LUNCH10": 26.013243789038654,
+    "PCT_REDUCED_LUNCH10": 7.8805241159066357
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Fulton",
+    "PCT_FREE_LUNCH10": 31.953924914675767,
+    "PCT_REDUCED_LUNCH10": 11.860068259385665
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Greene",
+    "PCT_FREE_LUNCH10": 38.667161685539256,
+    "PCT_REDUCED_LUNCH10": 7.0725821421941708
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Huntingdon",
+    "PCT_FREE_LUNCH10": 34.039548022598872,
+    "PCT_REDUCED_LUNCH10": 9.9223163841807906
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Indiana",
+    "PCT_FREE_LUNCH10": 33.493479752916954,
+    "PCT_REDUCED_LUNCH10": 10.530444161192273
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Jefferson",
+    "PCT_FREE_LUNCH10": 36.186030428769016,
+    "PCT_REDUCED_LUNCH10": 10.563623789764868
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Juniata",
+    "PCT_FREE_LUNCH10": 29.88357050452781,
+    "PCT_REDUCED_LUNCH10": 10.058214747736093
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Lackawanna",
+    "PCT_FREE_LUNCH10": 35.156527294668841,
+    "PCT_REDUCED_LUNCH10": 5.7038404202456165
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Lancaster",
+    "PCT_FREE_LUNCH10": 27.338871214799106,
+    "PCT_REDUCED_LUNCH10": 7.1800989749027915
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Lawrence",
+    "PCT_FREE_LUNCH10": 34.056074766355138,
+    "PCT_REDUCED_LUNCH10": 5.8915887850467286
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Charleston",
+    "PCT_FREE_LUNCH10": 44.053918438098719,
+    "PCT_REDUCED_LUNCH10": 5.1158653407535812
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Cherokee",
+    "PCT_FREE_LUNCH10": 61.670734413135122,
+    "PCT_REDUCED_LUNCH10": 6.8781894830264037
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Chester",
+    "PCT_FREE_LUNCH10": 60.432432432432435,
+    "PCT_REDUCED_LUNCH10": 6.3603603603603602
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Chesterfield",
+    "PCT_FREE_LUNCH10": 54.65025906735751,
+    "PCT_REDUCED_LUNCH10": 8.7953367875647679
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Clarendon",
+    "PCT_FREE_LUNCH10": 63.365769891242131,
+    "PCT_REDUCED_LUNCH10": 5.9912230490364431
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Colleton",
+    "PCT_FREE_LUNCH10": 70.760608486789437,
+    "PCT_REDUCED_LUNCH10": 6.2930344275420342
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Darlington",
+    "PCT_FREE_LUNCH10": 66.194540849826467,
+    "PCT_REDUCED_LUNCH10": 5.177750680048776
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Dillon",
+    "PCT_FREE_LUNCH10": 72.581710135358207,
+    "PCT_REDUCED_LUNCH10": 5.1667216903268409
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Dorchester",
+    "PCT_FREE_LUNCH10": 34.513486513486512,
+    "PCT_REDUCED_LUNCH10": 6.9050949050949049
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Edgefield",
+    "PCT_FREE_LUNCH10": 55.210884353741498,
+    "PCT_REDUCED_LUNCH10": 6.6394557823129254
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Fairfield",
+    "PCT_FREE_LUNCH10": 66.330390920554862,
+    "PCT_REDUCED_LUNCH10": 7.7868852459016393
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Florence",
+    "PCT_FREE_LUNCH10": 57.287275230147117,
+    "PCT_REDUCED_LUNCH10": 5.0675385012475269
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Georgetown",
+    "PCT_FREE_LUNCH10": 56.808662784758404,
+    "PCT_REDUCED_LUNCH10": 5.7104913678618852
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Greenville",
+    "PCT_FREE_LUNCH10": 41.086032516447602,
+    "PCT_REDUCED_LUNCH10": 5.0584257999354723
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Greenwood",
+    "PCT_FREE_LUNCH10": 51.485062276805159,
+    "PCT_REDUCED_LUNCH10": 5.4786168452225414
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Hampton",
+    "PCT_FREE_LUNCH10": 68.641499035546985,
+    "PCT_REDUCED_LUNCH10": 6.2827225130890048
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Horry",
+    "PCT_FREE_LUNCH10": 56.378782374007372,
+    "PCT_REDUCED_LUNCH10": 5.8208335495925674
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Jasper",
+    "PCT_FREE_LUNCH10": 64.854070660522282,
+    "PCT_REDUCED_LUNCH10": 4.731182795698925
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Kershaw",
+    "PCT_FREE_LUNCH10": 48.35408823245487,
+    "PCT_REDUCED_LUNCH10": 6.1975094121054157
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Lancaster",
+    "PCT_FREE_LUNCH10": 49.572503419972641,
+    "PCT_REDUCED_LUNCH10": 5.4292065663474691
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Laurens",
+    "PCT_FREE_LUNCH10": 61.317403939296092,
+    "PCT_REDUCED_LUNCH10": 7.6095145840060274
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Lee",
+    "PCT_FREE_LUNCH10": 82.778702163061567,
+    "PCT_REDUCED_LUNCH10": 5.1164725457570714
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Lexington",
+    "PCT_FREE_LUNCH10": 37.840464824934664,
+    "PCT_REDUCED_LUNCH10": 6.2142255437717351
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "McCormick",
+    "PCT_FREE_LUNCH10": 58.803222094361338,
+    "PCT_REDUCED_LUNCH10": 8.8607594936708853
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Marion",
+    "PCT_FREE_LUNCH10": 77.1896420411272,
+    "PCT_REDUCED_LUNCH10": 5.5026656511805028
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Marlboro",
+    "PCT_FREE_LUNCH10": 71.281592484902717,
+    "PCT_REDUCED_LUNCH10": 7.671661820621785
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Newberry",
+    "PCT_FREE_LUNCH10": 57.757586147779868,
+    "PCT_REDUCED_LUNCH10": 6.0003428767358136
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Oconee",
+    "PCT_FREE_LUNCH10": 48.057703186875358,
+    "PCT_REDUCED_LUNCH10": 7.0054686026777295
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Orangeburg",
+    "PCT_FREE_LUNCH10": 64.164438985622425,
+    "PCT_REDUCED_LUNCH10": 6.3434722924644182
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Pickens",
+    "PCT_FREE_LUNCH10": 37.405213270142177,
+    "PCT_REDUCED_LUNCH10": 7.221563981042654
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Richland",
+    "PCT_FREE_LUNCH10": 41.635454726124777,
+    "PCT_REDUCED_LUNCH10": 5.8749789797135126
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Saluda",
+    "PCT_FREE_LUNCH10": 61.908230152949749,
+    "PCT_REDUCED_LUNCH10": 6.7734887108521491
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Spartanburg",
+    "PCT_FREE_LUNCH10": 44.832712197981664,
+    "PCT_REDUCED_LUNCH10": 6.8904149742473093
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Sumter",
+    "PCT_FREE_LUNCH10": 60.287221570926143,
+    "PCT_REDUCED_LUNCH10": 8.2004689331770226
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Union",
+    "PCT_FREE_LUNCH10": 57.426188866351133,
+    "PCT_REDUCED_LUNCH10": 8.3615055217489296
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Williamsburg",
+    "PCT_FREE_LUNCH10": 85.165829145728651,
+    "PCT_REDUCED_LUNCH10": 4.3015075376884422
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "York",
+    "PCT_FREE_LUNCH10": 35.281639172427568,
+    "PCT_REDUCED_LUNCH10": 5.1660884973420851
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Aurora",
+    "PCT_FREE_LUNCH10": 25.828970331588131,
+    "PCT_REDUCED_LUNCH10": 7.3298429319371721
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Beadle",
+    "PCT_FREE_LUNCH10": 35.557299843014128,
+    "PCT_REDUCED_LUNCH10": 11.538461538461538
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Bennett",
+    "PCT_FREE_LUNCH10": 53.271028037383175,
+    "PCT_REDUCED_LUNCH10": 8.2242990654205617
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Bon Homme",
+    "PCT_FREE_LUNCH10": 22.821203953279426,
+    "PCT_REDUCED_LUNCH10": 13.117699910152741
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Brookings",
+    "PCT_FREE_LUNCH10": 16.125811283075386,
+    "PCT_REDUCED_LUNCH10": 7.3889166250624072
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Brown",
+    "PCT_FREE_LUNCH10": 22.371757362980301,
+    "PCT_REDUCED_LUNCH10": 7.5482738443534227
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Brule",
+    "PCT_FREE_LUNCH10": 36.672325976230901,
+    "PCT_REDUCED_LUNCH10": 10.780984719864177
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Buffalo",
+    "PCT_FREE_LUNCH10": null,
+    "PCT_REDUCED_LUNCH10": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Butte",
+    "PCT_FREE_LUNCH10": 33.703920421299003,
+    "PCT_REDUCED_LUNCH10": 12.814511410181392
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Campbell",
+    "PCT_FREE_LUNCH10": 16.279069767441861,
+    "PCT_REDUCED_LUNCH10": 15.503875968992247
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Charles Mix",
+    "PCT_FREE_LUNCH10": 48.36520666255398,
+    "PCT_REDUCED_LUNCH10": 6.9093152375077116
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Clark",
+    "PCT_FREE_LUNCH10": 35.914332784184516,
+    "PCT_REDUCED_LUNCH10": 12.850082372322898
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Clay",
+    "PCT_FREE_LUNCH10": 26.035911602209943,
+    "PCT_REDUCED_LUNCH10": 6.4226519337016574
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Codington",
+    "PCT_FREE_LUNCH10": 19.816933638443938,
+    "PCT_REDUCED_LUNCH10": 10.617848970251716
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Corson",
+    "PCT_FREE_LUNCH10": 97.173144876325097,
+    "PCT_REDUCED_LUNCH10": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Custer",
+    "PCT_FREE_LUNCH10": 36.675700090334232,
+    "PCT_REDUCED_LUNCH10": 6.5943992773261062
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Davison",
+    "PCT_FREE_LUNCH10": 21.922544951590595,
+    "PCT_REDUCED_LUNCH10": 7.6763485477178426
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Day",
+    "PCT_FREE_LUNCH10": 30.290456431535269,
+    "PCT_REDUCED_LUNCH10": 11.618257261410788
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Deuel",
+    "PCT_FREE_LUNCH10": 10.48158640226629,
+    "PCT_REDUCED_LUNCH10": 4.5325779036827196
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Dewey",
+    "PCT_FREE_LUNCH10": 64.261744966442961,
+    "PCT_REDUCED_LUNCH10": 7.550335570469799
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Douglas",
+    "PCT_FREE_LUNCH10": 22.346368715083798,
+    "PCT_REDUCED_LUNCH10": 18.994413407821227
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Edmunds",
+    "PCT_FREE_LUNCH10": 21.490467937608319,
+    "PCT_REDUCED_LUNCH10": 8.8388214904679376
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Fall River",
+    "PCT_FREE_LUNCH10": 42.228212039532792,
+    "PCT_REDUCED_LUNCH10": 9.433962264150944
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Faulk",
+    "PCT_FREE_LUNCH10": 17.391304347826086,
+    "PCT_REDUCED_LUNCH10": 10.248447204968944
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Grant",
+    "PCT_FREE_LUNCH10": 23.076923076923077,
+    "PCT_REDUCED_LUNCH10": 10.963748894783377
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Gregory",
+    "PCT_FREE_LUNCH10": 49.313186813186817,
+    "PCT_REDUCED_LUNCH10": 10.164835164835164
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Haakon",
+    "PCT_FREE_LUNCH10": 21.725239616613418,
+    "PCT_REDUCED_LUNCH10": 15.015974440894569
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hamlin",
+    "PCT_FREE_LUNCH10": 25.429017160686428,
+    "PCT_REDUCED_LUNCH10": 13.104524180967239
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hand",
+    "PCT_FREE_LUNCH10": 21.818181818181817,
+    "PCT_REDUCED_LUNCH10": 10.681818181818182
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hanson",
+    "PCT_FREE_LUNCH10": 15.555555555555555,
+    "PCT_REDUCED_LUNCH10": 7.1794871794871788
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Harding",
+    "PCT_FREE_LUNCH10": 18.888888888888889,
+    "PCT_REDUCED_LUNCH10": 5
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hughes",
+    "PCT_FREE_LUNCH10": 19.734345351043643,
+    "PCT_REDUCED_LUNCH10": 6.5654648956356736
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hutchinson",
+    "PCT_FREE_LUNCH10": 24.179743223965762,
+    "PCT_REDUCED_LUNCH10": 9.7004279600570626
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hyde",
+    "PCT_FREE_LUNCH10": 23.469387755102041,
+    "PCT_REDUCED_LUNCH10": 6.8027210884353746
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Jackson",
+    "PCT_FREE_LUNCH10": 39.513677811550153,
+    "PCT_REDUCED_LUNCH10": 13.069908814589665
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Jerauld",
+    "PCT_FREE_LUNCH10": 35.254237288135592,
+    "PCT_REDUCED_LUNCH10": 8.8135593220338979
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Jones",
+    "PCT_FREE_LUNCH10": 35.05747126436782,
+    "PCT_REDUCED_LUNCH10": 17.816091954022991
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Kingsbury",
+    "PCT_FREE_LUNCH10": 19.981325863678805,
+    "PCT_REDUCED_LUNCH10": 11.76470588235294
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lake",
+    "PCT_FREE_LUNCH10": 18.475073313782993,
+    "PCT_REDUCED_LUNCH10": 9.3352883675464327
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lawrence",
+    "PCT_FREE_LUNCH10": 25.332005312084995,
+    "PCT_REDUCED_LUNCH10": 8.3997343957503308
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lincoln",
+    "PCT_FREE_LUNCH10": 12.537953205929631,
+    "PCT_REDUCED_LUNCH10": 7.0191105554563311
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lyman",
+    "PCT_FREE_LUNCH10": 39.945652173913047,
+    "PCT_REDUCED_LUNCH10": 11.141304347826086
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "McCook",
+    "PCT_FREE_LUNCH10": 21.823472356935014,
+    "PCT_REDUCED_LUNCH10": 12.609117361784675
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "McPherson",
+    "PCT_FREE_LUNCH10": 42.733188720173537,
+    "PCT_REDUCED_LUNCH10": 11.062906724511931
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Marshall",
+    "PCT_FREE_LUNCH10": 31.818181818181817,
+    "PCT_REDUCED_LUNCH10": 10.192837465564738
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Meade",
+    "PCT_FREE_LUNCH10": 28.475033738191634,
+    "PCT_REDUCED_LUNCH10": 10.931174089068826
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Mellette",
+    "PCT_FREE_LUNCH10": 92.142857142857139,
+    "PCT_REDUCED_LUNCH10": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Miner",
+    "PCT_FREE_LUNCH10": 25.72944297082228,
+    "PCT_REDUCED_LUNCH10": 10.344827586206897
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Minnehaha",
+    "PCT_FREE_LUNCH10": 27.379999303839327,
+    "PCT_REDUCED_LUNCH10": 6.6204880086323925
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Moody",
+    "PCT_FREE_LUNCH10": 28.445424476295479,
+    "PCT_REDUCED_LUNCH10": 11.576626240352811
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Pennington",
+    "PCT_FREE_LUNCH10": 28.567997598318822,
+    "PCT_REDUCED_LUNCH10": 7.0849594716301407
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Perkins",
+    "PCT_FREE_LUNCH10": 22.916666666666664,
+    "PCT_REDUCED_LUNCH10": 14.583333333333334
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Potter",
+    "PCT_FREE_LUNCH10": 19.505494505494507,
+    "PCT_REDUCED_LUNCH10": 9.0659340659340657
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Roberts",
+    "PCT_FREE_LUNCH10": 37.81565656565656,
+    "PCT_REDUCED_LUNCH10": 12.94191919191919
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Sanborn",
+    "PCT_FREE_LUNCH10": 36.616161616161619,
+    "PCT_REDUCED_LUNCH10": 16.666666666666664
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Shannon",
+    "PCT_FREE_LUNCH10": 98.413897280966765,
+    "PCT_REDUCED_LUNCH10": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Spink",
+    "PCT_FREE_LUNCH10": 23.734439834024894,
+    "PCT_REDUCED_LUNCH10": 10.290456431535269
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Stanley",
+    "PCT_FREE_LUNCH10": 29.490022172949004,
+    "PCT_REDUCED_LUNCH10": 6.8736141906873618
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Sully",
+    "PCT_FREE_LUNCH10": 13.135593220338984,
+    "PCT_REDUCED_LUNCH10": 8.4745762711864394
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Todd",
+    "PCT_FREE_LUNCH10": 98.329959514170042,
+    "PCT_REDUCED_LUNCH10": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Tripp",
+    "PCT_FREE_LUNCH10": 36.344314558979804,
+    "PCT_REDUCED_LUNCH10": 12.964930924548353
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Turner",
+    "PCT_FREE_LUNCH10": 21.278089887640451,
+    "PCT_REDUCED_LUNCH10": 9.6207865168539328
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Union",
+    "PCT_FREE_LUNCH10": 14.265232974910393,
+    "PCT_REDUCED_LUNCH10": 7.2759856630824373
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Walworth",
+    "PCT_FREE_LUNCH10": 30.419580419580424,
+    "PCT_REDUCED_LUNCH10": 11.538461538461538
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Yankton",
+    "PCT_FREE_LUNCH10": 26.275752773375594,
+    "PCT_REDUCED_LUNCH10": 8.1458003169572102
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Ziebach",
+    "PCT_FREE_LUNCH10": 96.891191709844563,
+    "PCT_REDUCED_LUNCH10": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Anderson",
+    "PCT_FREE_LUNCH10": 41.600689817355182,
+    "PCT_REDUCED_LUNCH10": 7.3136317315983383
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Bedford",
+    "PCT_FREE_LUNCH10": 52.446233178216573,
+    "PCT_REDUCED_LUNCH10": 6.9802540560935729
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Benton",
+    "PCT_FREE_LUNCH10": 60.017308524448289,
+    "PCT_REDUCED_LUNCH10": 9.6927736910428379
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Bledsoe",
+    "PCT_FREE_LUNCH10": 62.632911392405063,
+    "PCT_REDUCED_LUNCH10": 11.443037974683543
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Blount",
+    "PCT_FREE_LUNCH10": 36.292189266297029,
+    "PCT_REDUCED_LUNCH10": 7.5039026753512417
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Bradley",
+    "PCT_FREE_LUNCH10": 46.91785210816353,
+    "PCT_REDUCED_LUNCH10": 9.3105215942586188
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Campbell",
+    "PCT_FREE_LUNCH10": 64.20094293610795,
+    "PCT_REDUCED_LUNCH10": 9.6569663469354587
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cannon",
+    "PCT_FREE_LUNCH10": 51.612903225806448,
+    "PCT_REDUCED_LUNCH10": 10.268059972739664
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Carroll",
+    "PCT_FREE_LUNCH10": 50.606948514022598,
+    "PCT_REDUCED_LUNCH10": 7.8275429049811631
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Carter",
+    "PCT_FREE_LUNCH10": 51.476534738389901,
+    "PCT_REDUCED_LUNCH10": 11.395662296287218
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cheatham",
+    "PCT_FREE_LUNCH10": 39.075568598679382,
+    "PCT_REDUCED_LUNCH10": 7.1753484959647835
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Chester",
+    "PCT_FREE_LUNCH10": 45.17066085693537,
+    "PCT_REDUCED_LUNCH10": 8.2062454611474234
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Claiborne",
+    "PCT_FREE_LUNCH10": 57.762323583554917,
+    "PCT_REDUCED_LUNCH10": 11.72018817754142
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Clay",
+    "PCT_FREE_LUNCH10": 43.920145190562614,
+    "PCT_REDUCED_LUNCH10": 5.9891107078039925
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cocke",
+    "PCT_FREE_LUNCH10": 65.511111111111106,
+    "PCT_REDUCED_LUNCH10": 9.137777777777778
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Coffee",
+    "PCT_FREE_LUNCH10": 45.790944661822245,
+    "PCT_REDUCED_LUNCH10": 7.646730016769145
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Crockett",
+    "PCT_FREE_LUNCH10": 56.919723937522704,
+    "PCT_REDUCED_LUNCH10": 8.8267344714856524
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cumberland",
+    "PCT_FREE_LUNCH10": 53.03564433999216,
+    "PCT_REDUCED_LUNCH10": 10.601906254080166
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Davidson",
+    "PCT_FREE_LUNCH10": 58.553273443736295,
+    "PCT_REDUCED_LUNCH10": 5.9754444205111312
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Decatur",
+    "PCT_FREE_LUNCH10": 50.264550264550266,
+    "PCT_REDUCED_LUNCH10": 6.8195179306290417
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "DeKalb",
+    "PCT_FREE_LUNCH10": 56.906260351109637,
+    "PCT_REDUCED_LUNCH10": 8.0490228552500831
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Dickson",
+    "PCT_FREE_LUNCH10": 43.169981060606062,
+    "PCT_REDUCED_LUNCH10": 8.8186553030303028
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Dyer",
+    "PCT_FREE_LUNCH10": 57.162901641644446,
+    "PCT_REDUCED_LUNCH10": 7.8995369720780122
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Fayette",
+    "PCT_FREE_LUNCH10": 71.121029141506952,
+    "PCT_REDUCED_LUNCH10": 6.1433447098976108
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Fentress",
+    "PCT_FREE_LUNCH10": 63.834491471888825,
+    "PCT_REDUCED_LUNCH10": 11.749842072015161
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Franklin",
+    "PCT_FREE_LUNCH10": 47.939095662872958,
+    "PCT_REDUCED_LUNCH10": 10.381421101199631
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Gibson",
+    "PCT_FREE_LUNCH10": 48.391970645370172,
+    "PCT_REDUCED_LUNCH10": 8.676883229009281
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Giles",
+    "PCT_FREE_LUNCH10": 48.407948288245152,
+    "PCT_REDUCED_LUNCH10": 10.964807277950682
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Grainger",
+    "PCT_FREE_LUNCH10": 55.350248207391061,
+    "PCT_REDUCED_LUNCH10": 9.9282956425813573
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Greene",
+    "PCT_FREE_LUNCH10": 47.203168775963675,
+    "PCT_REDUCED_LUNCH10": 9.0232827746111486
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Grundy",
+    "PCT_FREE_LUNCH10": 70.852778956300384,
+    "PCT_REDUCED_LUNCH10": 8.7399236317352571
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hamblen",
+    "PCT_FREE_LUNCH10": 49.91972707204495,
+    "PCT_REDUCED_LUNCH10": 9.2514549468191856
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hamilton",
+    "PCT_FREE_LUNCH10": 48.089882363990696,
+    "PCT_REDUCED_LUNCH10": 6.0766864683368942
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hancock",
+    "PCT_FREE_LUNCH10": 73.214285714285708,
+    "PCT_REDUCED_LUNCH10": 8.75
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hardeman",
+    "PCT_FREE_LUNCH10": 71.473278767453053,
+    "PCT_REDUCED_LUNCH10": 10.929224843524315
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hardin",
+    "PCT_FREE_LUNCH10": 58.646616541353382,
+    "PCT_REDUCED_LUNCH10": 7.3039742212674552
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hawkins",
+    "PCT_FREE_LUNCH10": 51.170454545454547,
+    "PCT_REDUCED_LUNCH10": 9.25
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Haywood",
+    "PCT_FREE_LUNCH10": 66.77124928693668,
+    "PCT_REDUCED_LUNCH10": 10.752994865944096
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Henderson",
+    "PCT_FREE_LUNCH10": 49.50354609929078,
+    "PCT_REDUCED_LUNCH10": 10.374873353596756
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Henry",
+    "PCT_FREE_LUNCH10": 54.933008526187578,
+    "PCT_REDUCED_LUNCH10": 9.1149005278116118
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hickman",
+    "PCT_FREE_LUNCH10": 55.774720996626002,
+    "PCT_REDUCED_LUNCH10": 9.161692187905528
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Houston",
+    "PCT_FREE_LUNCH10": 49.291975724882001,
+    "PCT_REDUCED_LUNCH10": 10.586648685097774
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Humphreys",
+    "PCT_FREE_LUNCH10": 41.271317829457367,
+    "PCT_REDUCED_LUNCH10": 8.5271317829457356
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Jackson",
+    "PCT_FREE_LUNCH10": 61.901763224181359,
+    "PCT_REDUCED_LUNCH10": 10.70528967254408
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Jefferson",
+    "PCT_FREE_LUNCH10": 48.776978417266186,
+    "PCT_REDUCED_LUNCH10": 9.1432308698495746
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Johnson",
+    "PCT_FREE_LUNCH10": 58.623655913978489,
+    "PCT_REDUCED_LUNCH10": 11.612903225806452
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Knox",
+    "PCT_FREE_LUNCH10": 37.697715289982426,
+    "PCT_REDUCED_LUNCH10": 6.3044901616182498
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lake",
+    "PCT_FREE_LUNCH10": 66.256410256410263,
+    "PCT_REDUCED_LUNCH10": 6.4615384615384617
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lauderdale",
+    "PCT_FREE_LUNCH10": 69.176621160409553,
+    "PCT_REDUCED_LUNCH10": 9.2576791808873722
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lawrence",
+    "PCT_FREE_LUNCH10": 49.104604889141555,
+    "PCT_REDUCED_LUNCH10": 9.5793064241046046
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lewis",
+    "PCT_FREE_LUNCH10": 56.00608210846427,
+    "PCT_REDUCED_LUNCH10": 9.7313735428281802
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lincoln",
+    "PCT_FREE_LUNCH10": 40.777251184834121,
+    "PCT_REDUCED_LUNCH10": 9.194312796208532
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Loudon",
+    "PCT_FREE_LUNCH10": 46.815927067971579,
+    "PCT_REDUCED_LUNCH10": 8.566832015015418
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "McMinn",
+    "PCT_FREE_LUNCH10": 50.745538988022489,
+    "PCT_REDUCED_LUNCH10": 9.9364458567587377
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "McNairy",
+    "PCT_FREE_LUNCH10": 51.8870006621055,
+    "PCT_REDUCED_LUNCH10": 7.5700728316045023
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Macon",
+    "PCT_FREE_LUNCH10": 51.360544217687078,
+    "PCT_REDUCED_LUNCH10": 7.2213500784929359
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Madison",
+    "PCT_FREE_LUNCH10": 65.190932603073179,
+    "PCT_REDUCED_LUNCH10": 8.7022668492317052
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Marion",
+    "PCT_FREE_LUNCH10": 54.07013815090329,
+    "PCT_REDUCED_LUNCH10": 10.541976620616365
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Marshall",
+    "PCT_FREE_LUNCH10": 44.300712410948634,
+    "PCT_REDUCED_LUNCH10": 8.4176977877765271
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Maury",
+    "PCT_FREE_LUNCH10": 43.182788354819429,
+    "PCT_REDUCED_LUNCH10": 7.9825834542815679
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Meigs",
+    "PCT_FREE_LUNCH10": 62.50684181718664,
+    "PCT_REDUCED_LUNCH10": 7.991242474001095
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Monroe",
+    "PCT_FREE_LUNCH10": 62.20407033088744,
+    "PCT_REDUCED_LUNCH10": 10.48040980202132
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Montgomery",
+    "PCT_FREE_LUNCH10": 35.238415043653461,
+    "PCT_REDUCED_LUNCH10": 10.040295500335796
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Moore",
+    "PCT_FREE_LUNCH10": 41.555783009211872,
+    "PCT_REDUCED_LUNCH10": 7.1647901740020474
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Morgan",
+    "PCT_FREE_LUNCH10": 51.011168125565952,
+    "PCT_REDUCED_LUNCH10": 11.319046181708421
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Obion",
+    "PCT_FREE_LUNCH10": 48.72072072072072,
+    "PCT_REDUCED_LUNCH10": 8.3603603603603602
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Overton",
+    "PCT_FREE_LUNCH10": 52.593215587328288,
+    "PCT_REDUCED_LUNCH10": 12.419400056069527
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Perry",
+    "PCT_FREE_LUNCH10": 56.627516778523493,
+    "PCT_REDUCED_LUNCH10": 12.835570469798657
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Pickett",
+    "PCT_FREE_LUNCH10": 50.966850828729285,
+    "PCT_REDUCED_LUNCH10": 15.05524861878453
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Polk",
+    "PCT_FREE_LUNCH10": 55.142547816672682,
+    "PCT_REDUCED_LUNCH10": 9.4911584265608084
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Burleson",
+    "PCT_FREE_LUNCH10": 49.463110495323868,
+    "PCT_REDUCED_LUNCH10": 9.4908209213716663
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Burnet",
+    "PCT_FREE_LUNCH10": 49.171494005119229,
+    "PCT_REDUCED_LUNCH10": 9.8477704432170281
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Caldwell",
+    "PCT_FREE_LUNCH10": 56.997261940979612,
+    "PCT_REDUCED_LUNCH10": 9.2181320352905374
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Calhoun",
+    "PCT_FREE_LUNCH10": 55.954631379962194,
+    "PCT_REDUCED_LUNCH10": 7.6795841209829865
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Callahan",
+    "PCT_FREE_LUNCH10": 42.505947660586834,
+    "PCT_REDUCED_LUNCH10": 9.674861221252975
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cameron",
+    "PCT_FREE_LUNCH10": 17.071599573113865,
+    "PCT_REDUCED_LUNCH10": 1.5046774798334761
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Camp",
+    "PCT_FREE_LUNCH10": 65.788423153692605,
+    "PCT_REDUCED_LUNCH10": 9.7405189620758481
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Carson",
+    "PCT_FREE_LUNCH10": 26.579352850539291,
+    "PCT_REDUCED_LUNCH10": 6.3944530046224966
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cass",
+    "PCT_FREE_LUNCH10": 51.2679553112254,
+    "PCT_REDUCED_LUNCH10": 8.2816102145770518
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Castro",
+    "PCT_FREE_LUNCH10": 48.998282770463653,
+    "PCT_REDUCED_LUNCH10": 9.4447624499141387
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Chambers",
+    "PCT_FREE_LUNCH10": 29.333530367962169,
+    "PCT_REDUCED_LUNCH10": 4.6549431062509239
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cherokee",
+    "PCT_FREE_LUNCH10": 61.229405530397919,
+    "PCT_REDUCED_LUNCH10": 6.8985451392234314
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Childress",
+    "PCT_FREE_LUNCH10": 49.223744292237441,
+    "PCT_REDUCED_LUNCH10": 5.6621004566210047
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Clay",
+    "PCT_FREE_LUNCH10": 36.338028169014088,
+    "PCT_REDUCED_LUNCH10": 10.76056338028169
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cochran",
+    "PCT_FREE_LUNCH10": 67.241379310344826,
+    "PCT_REDUCED_LUNCH10": 7.5596816976127315
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Coke",
+    "PCT_FREE_LUNCH10": 40.699815837937386,
+    "PCT_REDUCED_LUNCH10": 12.523020257826889
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Coleman",
+    "PCT_FREE_LUNCH10": 55.439330543933053,
+    "PCT_REDUCED_LUNCH10": 9.2050209205020916
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Collin",
+    "PCT_FREE_LUNCH10": 19.735898887002453,
+    "PCT_REDUCED_LUNCH10": 3.8803999245425396
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Collingsworth",
+    "PCT_FREE_LUNCH10": 53.970826580226905,
+    "PCT_REDUCED_LUNCH10": 10.210696920583469
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Colorado",
+    "PCT_FREE_LUNCH10": 54.194484760522499,
+    "PCT_REDUCED_LUNCH10": 8.3599419448476056
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Comal",
+    "PCT_FREE_LUNCH10": 30.051111790660084,
+    "PCT_REDUCED_LUNCH10": 7.0289633480407145
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Comanche",
+    "PCT_FREE_LUNCH10": 55.595667870036102,
+    "PCT_REDUCED_LUNCH10": 10.243682310469314
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Concho",
+    "PCT_FREE_LUNCH10": 52.955665024630541,
+    "PCT_REDUCED_LUNCH10": 10.098522167487685
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cooke",
+    "PCT_FREE_LUNCH10": 48.505711156313566,
+    "PCT_REDUCED_LUNCH10": 6.9785636050696294
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Coryell",
+    "PCT_FREE_LUNCH10": 37.803243533038469,
+    "PCT_REDUCED_LUNCH10": 14.830451682080151
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cottle",
+    "PCT_FREE_LUNCH10": 59.832635983263593,
+    "PCT_REDUCED_LUNCH10": 8.3682008368200833
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Crane",
+    "PCT_FREE_LUNCH10": 15.088757396449704,
+    "PCT_REDUCED_LUNCH10": 9.3688362919132153
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Crockett",
+    "PCT_FREE_LUNCH10": 44.312169312169317,
+    "PCT_REDUCED_LUNCH10": 15.079365079365079
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Crosby",
+    "PCT_FREE_LUNCH10": 51.823118696664082,
+    "PCT_REDUCED_LUNCH10": 10.705973622963539
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Culberson",
+    "PCT_FREE_LUNCH10": 64.731182795698928,
+    "PCT_REDUCED_LUNCH10": 9.2473118279569881
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dallam",
+    "PCT_FREE_LUNCH10": 50.103092783505154,
+    "PCT_REDUCED_LUNCH10": 11.752577319587628
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dallas",
+    "PCT_FREE_LUNCH10": 64.235951378321957,
+    "PCT_REDUCED_LUNCH10": 6.726839237057221
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dawson",
+    "PCT_FREE_LUNCH10": 24.231678486997634,
+    "PCT_REDUCED_LUNCH10": 7.1710007880220656
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Deaf Smith",
+    "PCT_FREE_LUNCH10": 70.643015521064299,
+    "PCT_REDUCED_LUNCH10": 8.1152993348115299
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Delta",
+    "PCT_FREE_LUNCH10": 54.672395273899035,
+    "PCT_REDUCED_LUNCH10": 8.0558539205155757
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Denton",
+    "PCT_FREE_LUNCH10": 26.006456218766488,
+    "PCT_REDUCED_LUNCH10": 5.1533351957041313
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "DeWitt",
+    "PCT_FREE_LUNCH10": 54.883934727648821,
+    "PCT_REDUCED_LUNCH10": 6.9639163410710179
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dickens",
+    "PCT_FREE_LUNCH10": 34.739454094292803,
+    "PCT_REDUCED_LUNCH10": 7.4441687344913143
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dimmit",
+    "PCT_FREE_LUNCH10": 69.333333333333343,
+    "PCT_REDUCED_LUNCH10": 7.5833333333333339
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Donley",
+    "PCT_FREE_LUNCH10": 48,
+    "PCT_REDUCED_LUNCH10": 9.6923076923076916
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Duval",
+    "PCT_FREE_LUNCH10": 46.553030303030305,
+    "PCT_REDUCED_LUNCH10": 7.7272727272727266
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Eastland",
+    "PCT_FREE_LUNCH10": 55.03289473684211,
+    "PCT_REDUCED_LUNCH10": 9.5065789473684212
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Ector",
+    "PCT_FREE_LUNCH10": 52.423396334478809,
+    "PCT_REDUCED_LUNCH10": 7.1091065292096216
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Edwards",
+    "PCT_FREE_LUNCH10": 56.659142212189614,
+    "PCT_REDUCED_LUNCH10": 15.124153498871332
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Ellis",
+    "PCT_FREE_LUNCH10": 40.650430562542539,
+    "PCT_REDUCED_LUNCH10": 6.9333885715976677
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "El Paso",
+    "PCT_FREE_LUNCH10": 59.170913097369507,
+    "PCT_REDUCED_LUNCH10": 9.6074920809805811
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Erath",
+    "PCT_FREE_LUNCH10": 47.021613073273585,
+    "PCT_REDUCED_LUNCH10": 7.4327886136004215
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Falls",
+    "PCT_FREE_LUNCH10": 68.609688853879476,
+    "PCT_REDUCED_LUNCH10": 8.2315872390705014
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fannin",
+    "PCT_FREE_LUNCH10": 46.71828908554572,
+    "PCT_REDUCED_LUNCH10": 9.9557522123893811
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fayette",
+    "PCT_FREE_LUNCH10": 44.453507340946167,
+    "PCT_REDUCED_LUNCH10": 7.9662860250135941
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fisher",
+    "PCT_FREE_LUNCH10": 45.170876671619617,
+    "PCT_REDUCED_LUNCH10": 11.589895988112927
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Floyd",
+    "PCT_FREE_LUNCH10": 63.484320557491294,
+    "PCT_REDUCED_LUNCH10": 8.2926829268292686
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Foard",
+    "PCT_FREE_LUNCH10": 48.75,
+    "PCT_REDUCED_LUNCH10": 15
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fort Bend",
+    "PCT_FREE_LUNCH10": 27.826995271979015,
+    "PCT_REDUCED_LUNCH10": 4.7170255878610812
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Franklin",
+    "PCT_FREE_LUNCH10": 47.452229299363054,
+    "PCT_REDUCED_LUNCH10": 8.8535031847133752
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Freestone",
+    "PCT_FREE_LUNCH10": 42.880258899676377,
+    "PCT_REDUCED_LUNCH10": 6.8770226537216832
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Frio",
+    "PCT_FREE_LUNCH10": 58.729179518815542,
+    "PCT_REDUCED_LUNCH10": 7.464528069093153
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gaines",
+    "PCT_FREE_LUNCH10": 46.463376296762029,
+    "PCT_REDUCED_LUNCH10": 10.279786230745049
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Galveston",
+    "PCT_FREE_LUNCH10": 38.966279006079638,
+    "PCT_REDUCED_LUNCH10": 4.9878589816150294
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Garza",
+    "PCT_FREE_LUNCH10": 54.665314401622723,
+    "PCT_REDUCED_LUNCH10": 11.866125760649087
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gillespie",
+    "PCT_FREE_LUNCH10": 41.304347826086953,
+    "PCT_REDUCED_LUNCH10": 8.2218506131549614
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Glasscock",
+    "PCT_FREE_LUNCH10": 30.03533568904594,
+    "PCT_REDUCED_LUNCH10": 3.8869257950530036
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Goliad",
+    "PCT_FREE_LUNCH10": 45.631768953068594,
+    "PCT_REDUCED_LUNCH10": 6.6425992779783396
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gonzales",
+    "PCT_FREE_LUNCH10": 66.692073170731703,
+    "PCT_REDUCED_LUNCH10": 7.774390243902439
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gray",
+    "PCT_FREE_LUNCH10": 50.719424460431654,
+    "PCT_REDUCED_LUNCH10": 9.3268242548818083
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Grayson",
+    "PCT_FREE_LUNCH10": 44.629435829131388,
+    "PCT_REDUCED_LUNCH10": 7.1258681381409952
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gregg",
+    "PCT_FREE_LUNCH10": 50.247489067230525,
+    "PCT_REDUCED_LUNCH10": 6.6605795569224853
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Grimes",
+    "PCT_FREE_LUNCH10": 57.341361741547011,
+    "PCT_REDUCED_LUNCH10": 10.884668828161185
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Guadalupe",
+    "PCT_FREE_LUNCH10": 36.186787949745572,
+    "PCT_REDUCED_LUNCH10": 6.9077317962804514
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hale",
+    "PCT_FREE_LUNCH10": 62.281270252754375,
+    "PCT_REDUCED_LUNCH10": 8.697342838626053
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hall",
+    "PCT_FREE_LUNCH10": 62.386980108499088,
+    "PCT_REDUCED_LUNCH10": 7.0524412296564201
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hamilton",
+    "PCT_FREE_LUNCH10": 34.311224489795919,
+    "PCT_REDUCED_LUNCH10": 9.566326530612244
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hansford",
+    "PCT_FREE_LUNCH10": 48.79825200291333,
+    "PCT_REDUCED_LUNCH10": 10.196649672250546
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hardeman",
+    "PCT_FREE_LUNCH10": 61.224489795918366,
+    "PCT_REDUCED_LUNCH10": 11.564625850340136
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hardin",
+    "PCT_FREE_LUNCH10": 34.6636041726481,
+    "PCT_REDUCED_LUNCH10": 5.8187386352761026
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Harris",
+    "PCT_FREE_LUNCH10": 46.747388789910993,
+    "PCT_REDUCED_LUNCH10": 6.7402526392188715
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Harrison",
+    "PCT_FREE_LUNCH10": 49.727028066128412,
+    "PCT_REDUCED_LUNCH10": 7.1972318339100356
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hartley",
+    "PCT_FREE_LUNCH10": 45.897000565930959,
+    "PCT_REDUCED_LUNCH10": 9.6208262591963791
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Haskell",
+    "PCT_FREE_LUNCH10": 52.591170825335901,
+    "PCT_REDUCED_LUNCH10": 9.021113243761997
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hays",
+    "PCT_FREE_LUNCH10": 40.451284114530942,
+    "PCT_REDUCED_LUNCH10": 6.5613893918058066
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hemphill",
+    "PCT_FREE_LUNCH10": 31.721698113207548,
+    "PCT_REDUCED_LUNCH10": 3.6556603773584904
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Henderson",
+    "PCT_FREE_LUNCH10": 55.051362215274679,
+    "PCT_REDUCED_LUNCH10": 8.2894149173738274
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hidalgo",
+    "PCT_FREE_LUNCH10": 9.9210306189479258,
+    "PCT_REDUCED_LUNCH10": 1.4740005954603239
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hill",
+    "PCT_FREE_LUNCH10": 58.069474331386417,
+    "PCT_REDUCED_LUNCH10": 8.0233630494927759
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hockley",
+    "PCT_FREE_LUNCH10": 51.555929352396966,
+    "PCT_REDUCED_LUNCH10": 8.2211942809083265
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hood",
+    "PCT_FREE_LUNCH10": 38.427778494901254,
+    "PCT_REDUCED_LUNCH10": 6.8413579450109712
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hopkins",
+    "PCT_FREE_LUNCH10": 50.114068441064639,
+    "PCT_REDUCED_LUNCH10": 10.768060836501901
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Houston",
+    "PCT_FREE_LUNCH10": 59.747133196118781,
+    "PCT_REDUCED_LUNCH10": 6.1452513966480442
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Howard",
+    "PCT_FREE_LUNCH10": 49.193099610461886,
+    "PCT_REDUCED_LUNCH10": 6.67779632721202
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hudspeth",
+    "PCT_FREE_LUNCH10": 75.063613231552168,
+    "PCT_REDUCED_LUNCH10": 9.0330788804071247
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hunt",
+    "PCT_FREE_LUNCH10": 50.389192666452232,
+    "PCT_REDUCED_LUNCH10": 8.2084271469926016
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hutchinson",
+    "PCT_FREE_LUNCH10": 39.933759167258103,
+    "PCT_REDUCED_LUNCH10": 8.3274189732670916
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Irion",
+    "PCT_FREE_LUNCH10": 33.434650455927049,
+    "PCT_REDUCED_LUNCH10": 4.2553191489361701
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jack",
+    "PCT_FREE_LUNCH10": 43.905635648754917,
+    "PCT_REDUCED_LUNCH10": 7.2739187418086511
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jackson",
+    "PCT_FREE_LUNCH10": 45.313028764805416,
+    "PCT_REDUCED_LUNCH10": 7.072758037225042
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jasper",
+    "PCT_FREE_LUNCH10": 51.914762198888198,
+    "PCT_REDUCED_LUNCH10": 6.4546016059295859
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jeff Davis",
+    "PCT_FREE_LUNCH10": 41.782729805013929,
+    "PCT_REDUCED_LUNCH10": 6.9637883008356551
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jefferson",
+    "PCT_FREE_LUNCH10": 56.514191883650014,
+    "PCT_REDUCED_LUNCH10": 5.8245367112362185
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jim Hogg",
+    "PCT_FREE_LUNCH10": 26.712922810060714,
+    "PCT_REDUCED_LUNCH10": 15.091066782307024
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jim Wells",
+    "PCT_FREE_LUNCH10": 63.349542010629875,
+    "PCT_REDUCED_LUNCH10": 8.5152097704398972
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Johnson",
+    "PCT_FREE_LUNCH10": 42.406683735345638,
+    "PCT_REDUCED_LUNCH10": 8.6477563670664335
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jones",
+    "PCT_FREE_LUNCH10": 54.820834872552638,
+    "PCT_REDUCED_LUNCH10": 9.0875507942371634
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Karnes",
+    "PCT_FREE_LUNCH10": 55.823117338003506,
+    "PCT_REDUCED_LUNCH10": 9.6760070052539415
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kaufman",
+    "PCT_FREE_LUNCH10": 42.669547872340424,
+    "PCT_REDUCED_LUNCH10": 6.3788231382978715
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kendall",
+    "PCT_FREE_LUNCH10": 24.480691481946188,
+    "PCT_REDUCED_LUNCH10": 4.6424090338770387
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kenedy",
+    "PCT_FREE_LUNCH10": 45.922746781115883,
+    "PCT_REDUCED_LUNCH10": 5.1502145922746783
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kent",
+    "PCT_FREE_LUNCH10": 36.601307189542482,
+    "PCT_REDUCED_LUNCH10": 8.4967320261437909
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kerr",
+    "PCT_FREE_LUNCH10": 20.625454545454545,
+    "PCT_REDUCED_LUNCH10": 4.0727272727272732
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kimble",
+    "PCT_FREE_LUNCH10": 49.640287769784173,
+    "PCT_REDUCED_LUNCH10": 6.4748201438848918
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "King",
+    "PCT_FREE_LUNCH10": 20.689655172413794,
+    "PCT_REDUCED_LUNCH10": 8.6206896551724146
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kinney",
+    "PCT_FREE_LUNCH10": 58.957654723127042,
+    "PCT_REDUCED_LUNCH10": 9.7719869706840399
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kleberg",
+    "PCT_FREE_LUNCH10": 63.39686098654709,
+    "PCT_REDUCED_LUNCH10": 7.2683109118086699
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Knox",
+    "PCT_FREE_LUNCH10": 58.517350157728707,
+    "PCT_REDUCED_LUNCH10": 8.2018927444794958
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lamar",
+    "PCT_FREE_LUNCH10": 51.297090006767419,
+    "PCT_REDUCED_LUNCH10": 6.1019625535754569
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lamb",
+    "PCT_FREE_LUNCH10": 56.427221172022676,
+    "PCT_REDUCED_LUNCH10": 8.4751102709514807
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lampasas",
+    "PCT_FREE_LUNCH10": 44.519275429633069,
+    "PCT_REDUCED_LUNCH10": 10.032512772875057
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "La Salle",
+    "PCT_FREE_LUNCH10": 79.324894514767934,
+    "PCT_REDUCED_LUNCH10": 3.1223628691983123
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lavaca",
+    "PCT_FREE_LUNCH10": 28.982725527831093,
+    "PCT_REDUCED_LUNCH10": 10.17274472168906
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lee",
+    "PCT_FREE_LUNCH10": 54.9480757483201,
+    "PCT_REDUCED_LUNCH10": 7.7886377519853394
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Leon",
+    "PCT_FREE_LUNCH10": 47.385103011093506,
+    "PCT_REDUCED_LUNCH10": 7.955625990491284
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Liberty",
+    "PCT_FREE_LUNCH10": 54.862472122727581,
+    "PCT_REDUCED_LUNCH10": 7.5353112117321084
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Limestone",
+    "PCT_FREE_LUNCH10": 60.85116973618716,
+    "PCT_REDUCED_LUNCH10": 7.7650572424091582
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lipscomb",
+    "PCT_FREE_LUNCH10": 48.854041013268997,
+    "PCT_REDUCED_LUNCH10": 16.164053075995174
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Live Oak",
+    "PCT_FREE_LUNCH10": 45.892018779342727,
+    "PCT_REDUCED_LUNCH10": 7.5704225352112671
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Llano",
+    "PCT_FREE_LUNCH10": 50.157068062827229,
+    "PCT_REDUCED_LUNCH10": 8.5863874345549736
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Loving",
+    "PCT_FREE_LUNCH10": null,
+    "PCT_REDUCED_LUNCH10": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lubbock",
+    "PCT_FREE_LUNCH10": 48.421275694002972,
+    "PCT_REDUCED_LUNCH10": 7.2578936215299859
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lynn",
+    "PCT_FREE_LUNCH10": 48.231511254019296,
+    "PCT_REDUCED_LUNCH10": 8.360128617363344
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "McCulloch",
+    "PCT_FREE_LUNCH10": 53.621346886912328,
+    "PCT_REDUCED_LUNCH10": 10.419313850063533
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "McLennan",
+    "PCT_FREE_LUNCH10": 53.903006524020256,
+    "PCT_REDUCED_LUNCH10": 7.3155709658287327
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "McMullen",
+    "PCT_FREE_LUNCH10": 34.831460674157306,
+    "PCT_REDUCED_LUNCH10": 6.179775280898876
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Madison",
+    "PCT_FREE_LUNCH10": 61.95777351247601,
+    "PCT_REDUCED_LUNCH10": 6.90978886756238
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Marion",
+    "PCT_FREE_LUNCH10": 32.326530612244895,
+    "PCT_REDUCED_LUNCH10": 6.2857142857142865
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Martin",
+    "PCT_FREE_LUNCH10": 28.628628628628626,
+    "PCT_REDUCED_LUNCH10": 7.7077077077077076
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Mason",
+    "PCT_FREE_LUNCH10": 48.744460856720828,
+    "PCT_REDUCED_LUNCH10": 10.782865583456426
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Matagorda",
+    "PCT_FREE_LUNCH10": 57.717558318200865,
+    "PCT_REDUCED_LUNCH10": 6.2578572426316521
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Maverick",
+    "PCT_FREE_LUNCH10": 0.80808080808080807,
+    "PCT_REDUCED_LUNCH10": 0.14814814814814814
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Medina",
+    "PCT_FREE_LUNCH10": 41.572916666666664,
+    "PCT_REDUCED_LUNCH10": 8.5520833333333339
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Menard",
+    "PCT_FREE_LUNCH10": 66.363636363636374,
+    "PCT_REDUCED_LUNCH10": 6.9696969696969706
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Midland",
+    "PCT_FREE_LUNCH10": 43.200888450148071,
+    "PCT_REDUCED_LUNCH10": 7.5230338927278702
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Milam",
+    "PCT_FREE_LUNCH10": 58.127018299246501,
+    "PCT_REDUCED_LUNCH10": 7.3627556512378902
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Mills",
+    "PCT_FREE_LUNCH10": 51.867662753468515,
+    "PCT_REDUCED_LUNCH10": 10.032017075773746
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Mitchell",
+    "PCT_FREE_LUNCH10": 51.167582417582416,
+    "PCT_REDUCED_LUNCH10": 8.3791208791208778
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Montague",
+    "PCT_FREE_LUNCH10": 42.734536845220475,
+    "PCT_REDUCED_LUNCH10": 8.0793134063332346
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Montgomery",
+    "PCT_FREE_LUNCH10": 36.256531543919479,
+    "PCT_REDUCED_LUNCH10": 5.5464495902315605
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Moore",
+    "PCT_FREE_LUNCH10": 56.979269496544916,
+    "PCT_REDUCED_LUNCH10": 9.5557749259624867
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Morris",
+    "PCT_FREE_LUNCH10": 60.595446584938706,
+    "PCT_REDUCED_LUNCH10": 7.4868651488616464
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Motley",
+    "PCT_FREE_LUNCH10": 63.934426229508205,
+    "PCT_REDUCED_LUNCH10": 14.207650273224044
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Nacogdoches",
+    "PCT_FREE_LUNCH10": 58.210593724270424,
+    "PCT_REDUCED_LUNCH10": 5.9372427042356604
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Navarro",
+    "PCT_FREE_LUNCH10": 60.151453131395826,
+    "PCT_REDUCED_LUNCH10": 7.6442898076135899
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Newton",
+    "PCT_FREE_LUNCH10": 61.581920903954803,
+    "PCT_REDUCED_LUNCH10": 6.0263653483992465
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Travis",
+    "PCT_FREE_LUNCH10": 48.680053741965942,
+    "PCT_REDUCED_LUNCH10": 5.9013278138881828
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Trinity",
+    "PCT_FREE_LUNCH10": 46.896853146853147,
+    "PCT_REDUCED_LUNCH10": 7.255244755244755
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Tyler",
+    "PCT_FREE_LUNCH10": 47.522522522522522,
+    "PCT_REDUCED_LUNCH10": 7.9673423423423433
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Upshur",
+    "PCT_FREE_LUNCH10": 40.490081680280049,
+    "PCT_REDUCED_LUNCH10": 8.2847141190198368
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Upton",
+    "PCT_FREE_LUNCH10": 24.684431977559605,
+    "PCT_REDUCED_LUNCH10": 10.238429172510518
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Uvalde",
+    "PCT_FREE_LUNCH10": 67.18645204560697,
+    "PCT_REDUCED_LUNCH10": 8.1153588195841717
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Val Verde",
+    "PCT_FREE_LUNCH10": 62.236614065493022,
+    "PCT_REDUCED_LUNCH10": 7.6074067317340148
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Van Zandt",
+    "PCT_FREE_LUNCH10": 44.564014884843608,
+    "PCT_REDUCED_LUNCH10": 8.4682691340641654
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Victoria",
+    "PCT_FREE_LUNCH10": 57.325672499347093,
+    "PCT_REDUCED_LUNCH10": 8.1548707234264821
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Walker",
+    "PCT_FREE_LUNCH10": 31.030927835051546,
+    "PCT_REDUCED_LUNCH10": 9.0463917525773194
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Waller",
+    "PCT_FREE_LUNCH10": 64.265927977839326,
+    "PCT_REDUCED_LUNCH10": 7.8427977839335181
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Ward",
+    "PCT_FREE_LUNCH10": 44.887181949111863,
+    "PCT_REDUCED_LUNCH10": 9.361497839654346
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Washington",
+    "PCT_FREE_LUNCH10": 47.946768060836504,
+    "PCT_REDUCED_LUNCH10": 6.9771863117870714
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Webb",
+    "PCT_FREE_LUNCH10": 43.231517851908308,
+    "PCT_REDUCED_LUNCH10": 5.0829571436946708
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wharton",
+    "PCT_FREE_LUNCH10": 52.964233219010296,
+    "PCT_REDUCED_LUNCH10": 6.9573738363547282
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wheeler",
+    "PCT_FREE_LUNCH10": 40.431519699812384,
+    "PCT_REDUCED_LUNCH10": 11.163227016885553
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wichita",
+    "PCT_FREE_LUNCH10": 47.282430597818454,
+    "PCT_REDUCED_LUNCH10": 8.7870418051589354
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wilbarger",
+    "PCT_FREE_LUNCH10": 54.309327036599761,
+    "PCT_REDUCED_LUNCH10": 10.743801652892563
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Willacy",
+    "PCT_FREE_LUNCH10": 9.8183391003460212,
+    "PCT_REDUCED_LUNCH10": 1.1029411764705883
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Williamson",
+    "PCT_FREE_LUNCH10": 28.058489584511342,
+    "PCT_REDUCED_LUNCH10": 6.1339425055979007
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wilson",
+    "PCT_FREE_LUNCH10": 36.574952561669825,
+    "PCT_REDUCED_LUNCH10": 8.0289373814041749
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Winkler",
+    "PCT_FREE_LUNCH10": 21.2484237074401,
+    "PCT_REDUCED_LUNCH10": 13.177805800756619
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wise",
+    "PCT_FREE_LUNCH10": 36.102526813306675,
+    "PCT_REDUCED_LUNCH10": 7.8622068714779125
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wood",
+    "PCT_FREE_LUNCH10": 47.517845554834523,
+    "PCT_REDUCED_LUNCH10": 7.9169370538611297
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Yoakum",
+    "PCT_FREE_LUNCH10": 45.976447497546616,
+    "PCT_REDUCED_LUNCH10": 11.776251226692837
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Young",
+    "PCT_FREE_LUNCH10": 46.365479293368082,
+    "PCT_REDUCED_LUNCH10": 9.3252244425137558
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Zapata",
+    "PCT_FREE_LUNCH10": 70.719405362357307,
+    "PCT_REDUCED_LUNCH10": 6.9551367135651718
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Zavala",
+    "PCT_FREE_LUNCH10": 73.239955768521938,
+    "PCT_REDUCED_LUNCH10": 10.799852561739771
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Beaver",
+    "PCT_FREE_LUNCH10": 32.384566729917772,
+    "PCT_REDUCED_LUNCH10": 18.659076533839343
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Box Elder",
+    "PCT_FREE_LUNCH10": 30.981432360742705,
+    "PCT_REDUCED_LUNCH10": 10.813439434129089
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Cache",
+    "PCT_FREE_LUNCH10": 27.235345948894391,
+    "PCT_REDUCED_LUNCH10": 10.439306843452357
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Carbon",
+    "PCT_FREE_LUNCH10": 44.199706314243755,
+    "PCT_REDUCED_LUNCH10": 10.279001468428781
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Daggett",
+    "PCT_FREE_LUNCH10": 18.571428571428573,
+    "PCT_REDUCED_LUNCH10": 14.285714285714285
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Davis",
+    "PCT_FREE_LUNCH10": 18.684852517187846,
+    "PCT_REDUCED_LUNCH10": 8.4747172322022628
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Duchesne",
+    "PCT_FREE_LUNCH10": 34.387672343876723,
+    "PCT_REDUCED_LUNCH10": 11.030008110300081
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Emery",
+    "PCT_FREE_LUNCH10": 36.412371134020624,
+    "PCT_REDUCED_LUNCH10": 13.814432989690722
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Garfield",
+    "PCT_FREE_LUNCH10": 40.631364562118129,
+    "PCT_REDUCED_LUNCH10": 12.423625254582484
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Grand",
+    "PCT_FREE_LUNCH10": 38.892345986309898,
+    "PCT_REDUCED_LUNCH10": 9.5830740510267578
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Iron",
+    "PCT_FREE_LUNCH10": 40.221052631578949,
+    "PCT_REDUCED_LUNCH10": 10.094736842105263
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Juab",
+    "PCT_FREE_LUNCH10": 30.342384887839437,
+    "PCT_REDUCED_LUNCH10": 10.547028728846911
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Kane",
+    "PCT_FREE_LUNCH10": 31,
+    "PCT_REDUCED_LUNCH10": 17.583333333333336
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Millard",
+    "PCT_FREE_LUNCH10": 38.576654472896578,
+    "PCT_REDUCED_LUNCH10": 11.972065181243764
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Morgan",
+    "PCT_FREE_LUNCH10": 12.263771612384398,
+    "PCT_REDUCED_LUNCH10": 7.1572175311620425
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Piute",
+    "PCT_FREE_LUNCH10": 58.357771260997069,
+    "PCT_REDUCED_LUNCH10": 15.542521994134898
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Rich",
+    "PCT_FREE_LUNCH10": 56.3894523326572,
+    "PCT_REDUCED_LUNCH10": 4.056795131845842
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Salt Lake",
+    "PCT_FREE_LUNCH10": 34.699011770377211,
+    "PCT_REDUCED_LUNCH10": 6.2843972201020364
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "San Juan",
+    "PCT_FREE_LUNCH10": 60.593927260593929,
+    "PCT_REDUCED_LUNCH10": 8.9089089089089093
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Sanpete",
+    "PCT_FREE_LUNCH10": 38.148214606136733,
+    "PCT_REDUCED_LUNCH10": 14.911178898259465
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Sevier",
+    "PCT_FREE_LUNCH10": 38.270042194092831,
+    "PCT_REDUCED_LUNCH10": 14.156118143459913
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Summit",
+    "PCT_FREE_LUNCH10": 17.825142546836815,
+    "PCT_REDUCED_LUNCH10": 3.5025794189519415
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Tooele",
+    "PCT_FREE_LUNCH10": 33.765960432159389,
+    "PCT_REDUCED_LUNCH10": 8.9588887329872318
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Uintah",
+    "PCT_FREE_LUNCH10": 35.876042908224079,
+    "PCT_REDUCED_LUNCH10": 10.462190438352536
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Utah",
+    "PCT_FREE_LUNCH10": 27.023102418534439,
+    "PCT_REDUCED_LUNCH10": 5.2185541298854723
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Wasatch",
+    "PCT_FREE_LUNCH10": 30.193192272309105,
+    "PCT_REDUCED_LUNCH10": 7.2309107635694581
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Washington",
+    "PCT_FREE_LUNCH10": 30.55485904645915,
+    "PCT_REDUCED_LUNCH10": 9.4279471289895049
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Wayne",
+    "PCT_FREE_LUNCH10": 33.333333333333329,
+    "PCT_REDUCED_LUNCH10": 14.759535655058043
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Weber",
+    "PCT_FREE_LUNCH10": 37.018055495990048,
+    "PCT_REDUCED_LUNCH10": 8.6589183857271514
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Addison",
+    "PCT_FREE_LUNCH10": 25.284151833583529,
+    "PCT_REDUCED_LUNCH10": 7.7417971263135321
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Bennington",
+    "PCT_FREE_LUNCH10": 39.966832504145941,
+    "PCT_REDUCED_LUNCH10": 6.467661691542288
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Caledonia",
+    "PCT_FREE_LUNCH10": 40.063795853269532,
+    "PCT_REDUCED_LUNCH10": 10.239234449760765
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Chittenden",
+    "PCT_FREE_LUNCH10": 22.135536884867509,
+    "PCT_REDUCED_LUNCH10": 3.9239220755239592
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Essex",
+    "PCT_FREE_LUNCH10": 44.245142002989532,
+    "PCT_REDUCED_LUNCH10": 7.9222720478325863
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Franklin",
+    "PCT_FREE_LUNCH10": 31.466602710157094,
+    "PCT_REDUCED_LUNCH10": 7.4829116200983332
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Grand Isle",
+    "PCT_FREE_LUNCH10": 51.147540983606554,
+    "PCT_REDUCED_LUNCH10": 3.9344262295081971
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Lamoille",
+    "PCT_FREE_LUNCH10": 31.554587530628915,
+    "PCT_REDUCED_LUNCH10": 8.1949360196025047
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Orange",
+    "PCT_FREE_LUNCH10": 35.88565594691169,
+    "PCT_REDUCED_LUNCH10": 8.8565594691168972
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Orleans",
+    "PCT_FREE_LUNCH10": 43.884892086330936,
+    "PCT_REDUCED_LUNCH10": 10.817060637204522
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Rutland",
+    "PCT_FREE_LUNCH10": 35.75202536104262,
+    "PCT_REDUCED_LUNCH10": 6.1054361864506284
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Washington",
+    "PCT_FREE_LUNCH10": 26.250880902043694,
+    "PCT_REDUCED_LUNCH10": 6.7535823349776845
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Windham",
+    "PCT_FREE_LUNCH10": 34.161157763087367,
+    "PCT_REDUCED_LUNCH10": 7.2538860103626934
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Windsor",
+    "PCT_FREE_LUNCH10": 28.026157747230751,
+    "PCT_REDUCED_LUNCH10": 6.4993994394768455
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Accomack",
+    "PCT_FREE_LUNCH10": 58.215408805031444,
+    "PCT_REDUCED_LUNCH10": 6.7216981132075473
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Albemarle",
+    "PCT_FREE_LUNCH10": 21.188260558339298,
+    "PCT_REDUCED_LUNCH10": 3.9370078740157481
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Alleghany",
+    "PCT_FREE_LUNCH10": 38.441363806669166,
+    "PCT_REDUCED_LUNCH10": 7.9805170475833647
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Amelia",
+    "PCT_FREE_LUNCH10": 40.044994375703034,
+    "PCT_REDUCED_LUNCH10": 8.9426321709786283
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Amherst",
+    "PCT_FREE_LUNCH10": 37.834311806914542,
+    "PCT_REDUCED_LUNCH10": 7.7408132202652746
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Appomattox",
+    "PCT_FREE_LUNCH10": 39,
+    "PCT_REDUCED_LUNCH10": 7.0000000000000009
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Arlington",
+    "PCT_FREE_LUNCH10": 25.287409820805212,
+    "PCT_REDUCED_LUNCH10": 5.7900861065859903
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Augusta",
+    "PCT_FREE_LUNCH10": 28.00499231950845,
+    "PCT_REDUCED_LUNCH10": 7.661290322580645
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bath",
+    "PCT_FREE_LUNCH10": 29.635258358662615,
+    "PCT_REDUCED_LUNCH10": 11.854103343465045
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bedford",
+    "PCT_FREE_LUNCH10": 27.773617203380763,
+    "PCT_REDUCED_LUNCH10": 6.5368567454798328
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bland",
+    "PCT_FREE_LUNCH10": 30.32329988851728,
+    "PCT_REDUCED_LUNCH10": 11.594202898550725
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Botetourt",
+    "PCT_FREE_LUNCH10": 16.091036134957076,
+    "PCT_REDUCED_LUNCH10": 4.412058295068876
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Brunswick",
+    "PCT_FREE_LUNCH10": 70.481640438721982,
+    "PCT_REDUCED_LUNCH10": 10.300429184549357
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Buchanan",
+    "PCT_FREE_LUNCH10": 53.629677006715703,
+    "PCT_REDUCED_LUNCH10": 10.809082187400064
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Buckingham",
+    "PCT_FREE_LUNCH10": 52.285012285012286,
+    "PCT_REDUCED_LUNCH10": 8.4029484029484021
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Campbell",
+    "PCT_FREE_LUNCH10": 30.76923076923077,
+    "PCT_REDUCED_LUNCH10": 5.6402439024390247
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Caroline",
+    "PCT_FREE_LUNCH10": 41.132252760159737,
+    "PCT_REDUCED_LUNCH10": 6.6478740897345556
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Carroll",
+    "PCT_FREE_LUNCH10": 41.097424412094064,
+    "PCT_REDUCED_LUNCH10": 8.6450167973124294
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Charles City",
+    "PCT_FREE_LUNCH10": 54.739336492890999,
+    "PCT_REDUCED_LUNCH10": 8.5308056872037916
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Charlotte",
+    "PCT_FREE_LUNCH10": 44.391634980988592,
+    "PCT_REDUCED_LUNCH10": 9.743346007604563
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Chesterfield",
+    "PCT_FREE_LUNCH10": 17.141510862797233,
+    "PCT_REDUCED_LUNCH10": 3.0779327869680091
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Clarke",
+    "PCT_FREE_LUNCH10": 15.80211335254563,
+    "PCT_REDUCED_LUNCH10": 3.4582132564841501
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Craig",
+    "PCT_FREE_LUNCH10": 32.31197771587744,
+    "PCT_REDUCED_LUNCH10": 6.5459610027855151
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Culpeper",
+    "PCT_FREE_LUNCH10": 32.074983839689722,
+    "PCT_REDUCED_LUNCH10": 5.9211376858435676
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Cumberland",
+    "PCT_FREE_LUNCH10": 55.489021956087825,
+    "PCT_REDUCED_LUNCH10": 7.8509647371922826
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Dickenson",
+    "PCT_FREE_LUNCH10": 44.347481158270533,
+    "PCT_REDUCED_LUNCH10": 8.5680285600952004
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Dinwiddie",
+    "PCT_FREE_LUNCH10": 46.498905908096276,
+    "PCT_REDUCED_LUNCH10": 7.8993435448577678
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Essex",
+    "PCT_FREE_LUNCH10": 58.139534883720934,
+    "PCT_REDUCED_LUNCH10": 8.0783353733170138
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fairfax",
+    "PCT_FREE_LUNCH10": 19.8101432715127,
+    "PCT_REDUCED_LUNCH10": 4.9802232574492402
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fauquier",
+    "PCT_FREE_LUNCH10": 18.955078125,
+    "PCT_REDUCED_LUNCH10": 4.560546875
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Floyd",
+    "PCT_FREE_LUNCH10": 35.91101694915254,
+    "PCT_REDUCED_LUNCH10": 9.0042372881355934
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fluvanna",
+    "PCT_FREE_LUNCH10": 20.779220779220779,
+    "PCT_REDUCED_LUNCH10": 4.0816326530612246
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Franklin",
+    "PCT_FREE_LUNCH10": 40.699244060475159,
+    "PCT_REDUCED_LUNCH10": 8.2613390928725696
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Frederick",
+    "PCT_FREE_LUNCH10": 24.336973478939157,
+    "PCT_REDUCED_LUNCH10": 5.8502340093603742
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Giles",
+    "PCT_FREE_LUNCH10": 34.982050259274033,
+    "PCT_REDUCED_LUNCH10": 7.2197846031112887
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Gloucester",
+    "PCT_FREE_LUNCH10": 26.932668329177055,
+    "PCT_REDUCED_LUNCH10": 5.752285951787198
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Goochland",
+    "PCT_FREE_LUNCH10": 20.614389652384801,
+    "PCT_REDUCED_LUNCH10": 2.8698464025869042
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Grayson",
+    "PCT_FREE_LUNCH10": 45.128205128205131,
+    "PCT_REDUCED_LUNCH10": 9.8461538461538467
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Greene",
+    "PCT_FREE_LUNCH10": 28.591256072172104,
+    "PCT_REDUCED_LUNCH10": 5.6557945870922968
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Greensville",
+    "PCT_FREE_LUNCH10": 65.007857517024632,
+    "PCT_REDUCED_LUNCH10": 7.4908328968046094
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Halifax",
+    "PCT_FREE_LUNCH10": 52.336609760303496,
+    "PCT_REDUCED_LUNCH10": 9.1050181065700979
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Hanover",
+    "PCT_FREE_LUNCH10": 9.3214457316747641,
+    "PCT_REDUCED_LUNCH10": 2.1568522769740004
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Henrico",
+    "PCT_FREE_LUNCH10": 31.105556547441925,
+    "PCT_REDUCED_LUNCH10": 5.8560971255133012
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Henry",
+    "PCT_FREE_LUNCH10": 49.205713522894143,
+    "PCT_REDUCED_LUNCH10": 6.8081698037645175
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Highland",
+    "PCT_FREE_LUNCH10": 51.260504201680668,
+    "PCT_REDUCED_LUNCH10": 14.705882352941178
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Isle of Wight",
+    "PCT_FREE_LUNCH10": 28.205128205128204,
+    "PCT_REDUCED_LUNCH10": 5.2009456264775409
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "James City",
+    "PCT_FREE_LUNCH10": 22.281850381023936,
+    "PCT_REDUCED_LUNCH10": 4.6903509713427072
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "King and Queen",
+    "PCT_FREE_LUNCH10": 61.971830985915489,
+    "PCT_REDUCED_LUNCH10": 9.9871959026888604
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "King George",
+    "PCT_FREE_LUNCH10": 21.628806186563558,
+    "PCT_REDUCED_LUNCH10": 4.7849202513291447
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "King William",
+    "PCT_FREE_LUNCH10": 27.50830564784053,
+    "PCT_REDUCED_LUNCH10": 6.0465116279069768
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lancaster",
+    "PCT_FREE_LUNCH10": 63.890991672975019,
+    "PCT_REDUCED_LUNCH10": 5.904617713853141
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lee",
+    "PCT_FREE_LUNCH10": 49.596886294134002,
+    "PCT_REDUCED_LUNCH10": 7.8120656102307482
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Loudoun",
+    "PCT_FREE_LUNCH10": 12.409903844630666,
+    "PCT_REDUCED_LUNCH10": 3.562659400890269
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Louisa",
+    "PCT_FREE_LUNCH10": 36.165715493553158,
+    "PCT_REDUCED_LUNCH10": 8.0955400549566701
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lunenburg",
+    "PCT_FREE_LUNCH10": 56.257594167679223,
+    "PCT_REDUCED_LUNCH10": 9.3560145808019435
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Madison",
+    "PCT_FREE_LUNCH10": 28.015143320713896,
+    "PCT_REDUCED_LUNCH10": 6.1654948620876153
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Mathews",
+    "PCT_FREE_LUNCH10": 28.630363036303631,
+    "PCT_REDUCED_LUNCH10": 5.5280528052805282
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Mecklenburg",
+    "PCT_FREE_LUNCH10": 50.415282392026583,
+    "PCT_REDUCED_LUNCH10": 7.5581395348837201
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Middlesex",
+    "PCT_FREE_LUNCH10": 41.393786733837111,
+    "PCT_REDUCED_LUNCH10": 6.1293031066330812
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Montgomery",
+    "PCT_FREE_LUNCH10": 30.376620703848527,
+    "PCT_REDUCED_LUNCH10": 6.277011730808808
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Nelson",
+    "PCT_FREE_LUNCH10": 39.420142421159717,
+    "PCT_REDUCED_LUNCH10": 7.6805696846388605
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "New Kent",
+    "PCT_FREE_LUNCH10": 17.901662049861496,
+    "PCT_REDUCED_LUNCH10": 3.8434903047091415
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Northampton",
+    "PCT_FREE_LUNCH10": 67.333333333333329,
+    "PCT_REDUCED_LUNCH10": 7.6666666666666661
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Northumberland",
+    "PCT_FREE_LUNCH10": 43.826322930800544,
+    "PCT_REDUCED_LUNCH10": 6.9877883310719131
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Nottoway",
+    "PCT_FREE_LUNCH10": 52.151682999573922,
+    "PCT_REDUCED_LUNCH10": 6.3911376224968048
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Orange",
+    "PCT_FREE_LUNCH10": 30.543852929911914,
+    "PCT_REDUCED_LUNCH10": 7.6024511681348148
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Page",
+    "PCT_FREE_LUNCH10": 43.116040032458756,
+    "PCT_REDUCED_LUNCH10": 7.4655125777657565
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Patrick",
+    "PCT_FREE_LUNCH10": 48.145193458316712,
+    "PCT_REDUCED_LUNCH10": 7.857997606701236
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Pittsylvania",
+    "PCT_FREE_LUNCH10": 45.344566861093114,
+    "PCT_REDUCED_LUNCH10": 8.0038885288399229
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Powhatan",
+    "PCT_FREE_LUNCH10": 13.635382955771306,
+    "PCT_REDUCED_LUNCH10": 3.5598705501618122
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Prince Edward",
+    "PCT_FREE_LUNCH10": 55.311642493139942,
+    "PCT_REDUCED_LUNCH10": 7.9184633477067816
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Prince George",
+    "PCT_FREE_LUNCH10": 26.208082545141874,
+    "PCT_REDUCED_LUNCH10": 10.541702493551162
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Prince William",
+    "PCT_FREE_LUNCH10": 28.306569892068744,
+    "PCT_REDUCED_LUNCH10": 7.0073834505409103
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Pulaski",
+    "PCT_FREE_LUNCH10": 43.628601921024547,
+    "PCT_REDUCED_LUNCH10": 5.9338313767342585
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Rappahannock",
+    "PCT_FREE_LUNCH10": 27.801724137931032,
+    "PCT_REDUCED_LUNCH10": 6.25
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Richmond",
+    "PCT_FREE_LUNCH10": 44.233937397034595,
+    "PCT_REDUCED_LUNCH10": 5.930807248764415
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Roanoke",
+    "PCT_FREE_LUNCH10": 18.822595772310798,
+    "PCT_REDUCED_LUNCH10": 5.3026477166149633
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Rockbridge",
+    "PCT_FREE_LUNCH10": 32.151772341487764,
+    "PCT_REDUCED_LUNCH10": 8.437343984023963
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Rockingham",
+    "PCT_FREE_LUNCH10": 29.013140943055916,
+    "PCT_REDUCED_LUNCH10": 7.8330327235248642
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Russell",
+    "PCT_FREE_LUNCH10": 44.150943396226417,
+    "PCT_REDUCED_LUNCH10": 8.2130965593784691
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Scott",
+    "PCT_FREE_LUNCH10": 46.928879310344826,
+    "PCT_REDUCED_LUNCH10": 9.294181034482758
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Shenandoah",
+    "PCT_FREE_LUNCH10": 32.946298984034833,
+    "PCT_REDUCED_LUNCH10": 6.4505724883083371
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Smyth",
+    "PCT_FREE_LUNCH10": 47.785787847579812,
+    "PCT_REDUCED_LUNCH10": 7.8063851699279097
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Southampton",
+    "PCT_FREE_LUNCH10": 36.335296155178384,
+    "PCT_REDUCED_LUNCH10": 7.1007966747488744
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Spotsylvania",
+    "PCT_FREE_LUNCH10": 23.824464702141192,
+    "PCT_REDUCED_LUNCH10": 5.2618189527241892
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Stafford",
+    "PCT_FREE_LUNCH10": 17.268486206516549,
+    "PCT_REDUCED_LUNCH10": 4.0443742423685851
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Surry",
+    "PCT_FREE_LUNCH10": 48.208802456499491,
+    "PCT_REDUCED_LUNCH10": 9.1095189355168884
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Sussex",
+    "PCT_FREE_LUNCH10": 69.327731092436977,
+    "PCT_REDUCED_LUNCH10": 10.840336134453782
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Tazewell",
+    "PCT_FREE_LUNCH10": 40.314057073833609,
+    "PCT_REDUCED_LUNCH10": 8.2439981881322666
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Warren",
+    "PCT_FREE_LUNCH10": 30.655430711610489,
+    "PCT_REDUCED_LUNCH10": 5.0374531835205998
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Washington",
+    "PCT_FREE_LUNCH10": 35.298880043179061,
+    "PCT_REDUCED_LUNCH10": 7.5563351774389416
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Westmoreland",
+    "PCT_FREE_LUNCH10": 56.13350671868227,
+    "PCT_REDUCED_LUNCH10": 7.5856090160381449
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Wise",
+    "PCT_FREE_LUNCH10": 47.107438016528924,
+    "PCT_REDUCED_LUNCH10": 5.6649135987978969
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Wythe",
+    "PCT_FREE_LUNCH10": 39.047837033646147,
+    "PCT_REDUCED_LUNCH10": 7.6676585030899522
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "York",
+    "PCT_FREE_LUNCH10": 12.875879718490083,
+    "PCT_REDUCED_LUNCH10": 5.7261676263595653
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Alexandria",
+    "PCT_FREE_LUNCH10": 41.536794732894407,
+    "PCT_REDUCED_LUNCH10": 9.6091340945078763
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bedford",
+    "PCT_FREE_LUNCH10": 49.799196787148588,
+    "PCT_REDUCED_LUNCH10": 8.9959839357429718
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bristol",
+    "PCT_FREE_LUNCH10": 56.23696287025448,
+    "PCT_REDUCED_LUNCH10": 5.5486024196912807
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Buena Vista",
+    "PCT_FREE_LUNCH10": 31.663685152057248,
+    "PCT_REDUCED_LUNCH10": 10.017889087656529
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Charlottesville",
+    "PCT_FREE_LUNCH10": 44.656243306917972,
+    "PCT_REDUCED_LUNCH10": 5.9755836367530524
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Chesapeake",
+    "PCT_FREE_LUNCH10": 25.611351514541614,
+    "PCT_REDUCED_LUNCH10": 5.4694575827714598
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Colonial Heights",
+    "PCT_FREE_LUNCH10": 28.772774149192159,
+    "PCT_REDUCED_LUNCH10": 5.775180474389825
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Covington",
+    "PCT_FREE_LUNCH10": 45,
+    "PCT_REDUCED_LUNCH10": 9.0816326530612255
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Danville",
+    "PCT_FREE_LUNCH10": 66.318578553615964,
+    "PCT_REDUCED_LUNCH10": 6.3435162094763093
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Emporia",
+    "PCT_FREE_LUNCH10": 52.105263157894733,
+    "PCT_REDUCED_LUNCH10": 7.2368421052631584
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fairfax",
+    "PCT_FREE_LUNCH10": 19.638242894056848,
+    "PCT_REDUCED_LUNCH10": 6.2569213732004432
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Falls Church",
+    "PCT_FREE_LUNCH10": 6.83371298405467,
+    "PCT_REDUCED_LUNCH10": 1.8223234624145785
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Franklin",
+    "PCT_FREE_LUNCH10": 70.537802026500387,
+    "PCT_REDUCED_LUNCH10": 6.1574434918160561
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fredericksburg",
+    "PCT_FREE_LUNCH10": 47.732919254658384,
+    "PCT_REDUCED_LUNCH10": 4.9689440993788816
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Galax",
+    "PCT_FREE_LUNCH10": 55.695208169677926,
+    "PCT_REDUCED_LUNCH10": 5.4202670856245092
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Hampton",
+    "PCT_FREE_LUNCH10": 41.733927080434178,
+    "PCT_REDUCED_LUNCH10": 7.3337044252713603
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Harrisonburg",
+    "PCT_FREE_LUNCH10": 59.073280261277816,
+    "PCT_REDUCED_LUNCH10": 8.0628699734639717
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Hopewell",
+    "PCT_FREE_LUNCH10": 57.308146399055495,
+    "PCT_REDUCED_LUNCH10": 7.343565525383708
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lexington",
+    "PCT_FREE_LUNCH10": 24.785658612626658,
+    "PCT_REDUCED_LUNCH10": 5.689789555728761
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lynchburg",
+    "PCT_FREE_LUNCH10": 52.682813767528103,
+    "PCT_REDUCED_LUNCH10": 5.6553482442925018
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Manassas",
+    "PCT_FREE_LUNCH10": 38.282788499409214,
+    "PCT_REDUCED_LUNCH10": 7.2206905605881584
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Manassas Park",
+    "PCT_FREE_LUNCH10": 45.011836320595201,
+    "PCT_REDUCED_LUNCH10": 8.1163341224213728
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Martinsville",
+    "PCT_FREE_LUNCH10": 63.135771332492638,
+    "PCT_REDUCED_LUNCH10": 5.8007566204287517
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Newport News",
+    "PCT_FREE_LUNCH10": 45.385069535554976,
+    "PCT_REDUCED_LUNCH10": 7.2782734190501186
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Norfolk",
+    "PCT_FREE_LUNCH10": 55.533193240003556,
+    "PCT_REDUCED_LUNCH10": 7.8876490958060792
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Norton",
+    "PCT_FREE_LUNCH10": 45.091324200913242,
+    "PCT_REDUCED_LUNCH10": 7.9908675799086755
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Petersburg",
+    "PCT_FREE_LUNCH10": 63.93410472641694,
+    "PCT_REDUCED_LUNCH10": 5.5501078642871153
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Poquoson",
+    "PCT_FREE_LUNCH10": 9.9827882960413081,
+    "PCT_REDUCED_LUNCH10": 2.6247848537005165
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Portsmouth",
+    "PCT_FREE_LUNCH10": 51.778656126482211,
+    "PCT_REDUCED_LUNCH10": 6.3854436418154554
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Radford",
+    "PCT_FREE_LUNCH10": 37.46011486917677,
+    "PCT_REDUCED_LUNCH10": 2.1059349074664961
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Richmond",
+    "PCT_FREE_LUNCH10": 65.858342265094677,
+    "PCT_REDUCED_LUNCH10": 4.0014290818149343
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Roanoke",
+    "PCT_FREE_LUNCH10": 54.028985507246375,
+    "PCT_REDUCED_LUNCH10": 5.7608695652173916
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Salem",
+    "PCT_FREE_LUNCH10": 23.041709053916581,
+    "PCT_REDUCED_LUNCH10": 6.7650050864699898
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Staunton",
+    "PCT_FREE_LUNCH10": 44.77665706051873,
+    "PCT_REDUCED_LUNCH10": 6.7002881844380395
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Suffolk",
+    "PCT_FREE_LUNCH10": 35.100296408630314,
+    "PCT_REDUCED_LUNCH10": 6.2452609085269177
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Virginia Beach",
+    "PCT_FREE_LUNCH10": 22.95005970358924,
+    "PCT_REDUCED_LUNCH10": 6.8469480929971196
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Waynesboro",
+    "PCT_FREE_LUNCH10": 48.425089016707751,
+    "PCT_REDUCED_LUNCH10": 7.011777595179403
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Williamsburg",
+    "PCT_FREE_LUNCH10": 31.987814166031985,
+    "PCT_REDUCED_LUNCH10": 5.5597867479055596
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Winchester",
+    "PCT_FREE_LUNCH10": 39.992688722354231,
+    "PCT_REDUCED_LUNCH10": 7.0188265399378542
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Adams",
+    "PCT_FREE_LUNCH10": 62.339128471438244,
+    "PCT_REDUCED_LUNCH10": 13.885752991645969
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Asotin",
+    "PCT_FREE_LUNCH10": 44.130626654898499,
+    "PCT_REDUCED_LUNCH10": 8.7084436598999719
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Benton",
+    "PCT_FREE_LUNCH10": 37.680375180375179,
+    "PCT_REDUCED_LUNCH10": 7.38936988936989
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Chelan",
+    "PCT_FREE_LUNCH10": 49.010094686595195,
+    "PCT_REDUCED_LUNCH10": 7.6140543078488152
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Clallam",
+    "PCT_FREE_LUNCH10": 32.083547337784623,
+    "PCT_REDUCED_LUNCH10": 7.9352850539291211
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Clark",
+    "PCT_FREE_LUNCH10": 33.266746395762972,
+    "PCT_REDUCED_LUNCH10": 7.9759761338397448
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Columbia",
+    "PCT_FREE_LUNCH10": 44.715447154471541,
+    "PCT_REDUCED_LUNCH10": 5.4878048780487809
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Cowlitz",
+    "PCT_FREE_LUNCH10": 42.431589885694493,
+    "PCT_REDUCED_LUNCH10": 6.2983489204479852
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Douglas",
+    "PCT_FREE_LUNCH10": 47.592272202998849,
+    "PCT_REDUCED_LUNCH10": 7.2087658592848909
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Ferry",
+    "PCT_FREE_LUNCH10": 45.658835546475999,
+    "PCT_REDUCED_LUNCH10": 7.4565883554647607
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Franklin",
+    "PCT_FREE_LUNCH10": 62.134291176640986,
+    "PCT_REDUCED_LUNCH10": 8.6901106540756619
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Garfield",
+    "PCT_FREE_LUNCH10": 33.434650455927049,
+    "PCT_REDUCED_LUNCH10": 13.98176291793313
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Grant",
+    "PCT_FREE_LUNCH10": 61.517542924176169,
+    "PCT_REDUCED_LUNCH10": 8.6434893889303623
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Grays Harbor",
+    "PCT_FREE_LUNCH10": 50.779220779220779,
+    "PCT_REDUCED_LUNCH10": 8.6085343228200362
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Island",
+    "PCT_FREE_LUNCH10": 25.081681550860381,
+    "PCT_REDUCED_LUNCH10": 10.052276192550643
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Jefferson",
+    "PCT_FREE_LUNCH10": 34.912091855041261,
+    "PCT_REDUCED_LUNCH10": 9.2931467527807676
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "King",
+    "PCT_FREE_LUNCH10": 24.223855733274309,
+    "PCT_REDUCED_LUNCH10": 5.9066568811329478
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Kitsap",
+    "PCT_FREE_LUNCH10": 22.570380757199871,
+    "PCT_REDUCED_LUNCH10": 5.9594434257361666
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Kittitas",
+    "PCT_FREE_LUNCH10": 29.351814105177333,
+    "PCT_REDUCED_LUNCH10": 4.8715858132898493
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Klickitat",
+    "PCT_FREE_LUNCH10": 42.463177687245377,
+    "PCT_REDUCED_LUNCH10": 7.8972109056722033
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Lewis",
+    "PCT_FREE_LUNCH10": 46.919986608637423,
+    "PCT_REDUCED_LUNCH10": 7.9594911282222975
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Lincoln",
+    "PCT_FREE_LUNCH10": 32.486823191183518,
+    "PCT_REDUCED_LUNCH10": 9.9185433636799232
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Mason",
+    "PCT_FREE_LUNCH10": 47.763975155279503,
+    "PCT_REDUCED_LUNCH10": 8.9068322981366457
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Okanogan",
+    "PCT_FREE_LUNCH10": 42.91649912880311,
+    "PCT_REDUCED_LUNCH10": 9.2480900683554488
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Pacific",
+    "PCT_FREE_LUNCH10": 41.253180661577609,
+    "PCT_REDUCED_LUNCH10": 8.8740458015267176
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Pend Oreille",
+    "PCT_FREE_LUNCH10": 49.54900781719784,
+    "PCT_REDUCED_LUNCH10": 8.7793144918821415
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Pierce",
+    "PCT_FREE_LUNCH10": 31.103920851838314,
+    "PCT_REDUCED_LUNCH10": 7.1269123972341699
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "San Juan",
+    "PCT_FREE_LUNCH10": 23.46153846153846,
+    "PCT_REDUCED_LUNCH10": 9.5604395604395602
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Skagit",
+    "PCT_FREE_LUNCH10": 42.993261739313539,
+    "PCT_REDUCED_LUNCH10": 7.154137713202779
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Skamania",
+    "PCT_FREE_LUNCH10": 32.93795620437956,
+    "PCT_REDUCED_LUNCH10": 6.7062043795620436
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Snohomish",
+    "PCT_FREE_LUNCH10": 24.89543759367049,
+    "PCT_REDUCED_LUNCH10": 6.2746157331567396
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Spokane",
+    "PCT_FREE_LUNCH10": 36.015825640313736,
+    "PCT_REDUCED_LUNCH10": 8.8942874991323659
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Stevens",
+    "PCT_FREE_LUNCH10": 33.56434587909159,
+    "PCT_REDUCED_LUNCH10": 7.0369975477129749
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Thurston",
+    "PCT_FREE_LUNCH10": 23.932519777395122,
+    "PCT_REDUCED_LUNCH10": 6.4984652242269973
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Wahkiakum",
+    "PCT_FREE_LUNCH10": 47.446808510638299,
+    "PCT_REDUCED_LUNCH10": 7.2340425531914887
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Walla Walla",
+    "PCT_FREE_LUNCH10": 38.646564621935781,
+    "PCT_REDUCED_LUNCH10": 7.1699850385544934
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Whatcom",
+    "PCT_FREE_LUNCH10": 28.084949215143123,
+    "PCT_REDUCED_LUNCH10": 6.7257617728531853
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Whitman",
+    "PCT_FREE_LUNCH10": 24.269264836138174,
+    "PCT_REDUCED_LUNCH10": 7.1966341895482735
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Yakima",
+    "PCT_FREE_LUNCH10": 64.212432106216056,
+    "PCT_REDUCED_LUNCH10": 5.7566141686296657
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Barbour",
+    "PCT_FREE_LUNCH10": 49.859943977591037,
+    "PCT_REDUCED_LUNCH10": 8.043217286914766
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Berkeley",
+    "PCT_FREE_LUNCH10": 40.050661412890513,
+    "PCT_REDUCED_LUNCH10": 8.4266816774556723
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Boone",
+    "PCT_FREE_LUNCH10": 44.815066938960747,
+    "PCT_REDUCED_LUNCH10": 6.081234399818471
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Braxton",
+    "PCT_FREE_LUNCH10": 51.711711711711715,
+    "PCT_REDUCED_LUNCH10": 9.4144144144144146
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Brooke",
+    "PCT_FREE_LUNCH10": 38.92358013678264,
+    "PCT_REDUCED_LUNCH10": 10.110020814748736
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Cabell",
+    "PCT_FREE_LUNCH10": 42.156365480762261,
+    "PCT_REDUCED_LUNCH10": 5.4923556264038842
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Calhoun",
+    "PCT_FREE_LUNCH10": 53.65418894830659,
+    "PCT_REDUCED_LUNCH10": 7.8431372549019605
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Clay",
+    "PCT_FREE_LUNCH10": 59.488169966199898,
+    "PCT_REDUCED_LUNCH10": 7.6774505070014492
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Doddridge",
+    "PCT_FREE_LUNCH10": 47.98973481608212,
+    "PCT_REDUCED_LUNCH10": 10.607356715141146
+   }
+  }
+ ]
+}

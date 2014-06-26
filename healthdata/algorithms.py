@@ -813,6 +813,7 @@ class PercentDischargeRateAlgorithm(DartmouthPercentAlgorithm):
         better_sign = -1
         return average, std_dev, better_sign
 
+
 class ErsPercentAlgorithm(PercentAlgorithm):
     '''
     Algorithm for calculations of Ers data per county vs. the state average
@@ -823,6 +824,7 @@ class ErsPercentAlgorithm(PercentAlgorithm):
     def source_data_for_boundary(self, boundary):
         '''Get data for where the total population is not 0'''
         return self.cache.get_data(Ers, boundary)
+
 
 class PercentAdultObesityAlgorithm(ErsPercentAlgorithm):
     '''Score based on percent of adults that are obese'''
@@ -837,6 +839,7 @@ class PercentAdultObesityAlgorithm(ErsPercentAlgorithm):
         better_sign = -1
         return average, std_dev, better_sign
 
+
 class PercentAdultDiabetesAlgorithm(ErsPercentAlgorithm):
     '''Score based on percent of adults that are Diabetic'''
 
@@ -849,6 +852,7 @@ class PercentAdultDiabetesAlgorithm(ErsPercentAlgorithm):
         std_dev = 0.0145057
         better_sign = -1
         return average, std_dev, better_sign
+
 
 class FitnessCentersPerCapitaAlgorithm(ErsPercentAlgorithm):
     '''Score based on fitness centers/recreation areas per 1000 people'''

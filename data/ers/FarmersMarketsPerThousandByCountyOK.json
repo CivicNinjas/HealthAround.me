@@ -1,0 +1,8035 @@
+{
+ "displayFieldName": "FIPSTXT",
+ "fieldAliases": {
+  "State": "State",
+  "County": "County",
+  "FMRKTPTH13": "Farmers' markets/1,000 pop, 2013",
+  "PCT_FRMKT_FRVEG13": "Farmers' markets that report selling fruit & vegetables (%), 2013"
+ },
+ "fields": [
+  {
+   "name": "State",
+   "type": "esriFieldTypeString",
+   "alias": "State",
+   "length": 2
+  },
+  {
+   "name": "County",
+   "type": "esriFieldTypeString",
+   "alias": "County",
+   "length": 50
+  },
+  {
+   "name": "FMRKTPTH13",
+   "type": "esriFieldTypeDouble",
+   "alias": "Farmers' markets/1,000 pop, 2013"
+  },
+  {
+   "name": "PCT_FRMKT_FRVEG13",
+   "type": "esriFieldTypeDouble",
+   "alias": "Farmers' markets that report selling fruit & vegetables (%), 2013"
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Niagara",
+    "FMRKTPTH13": 0.032539372640895486,
+    "PCT_FRMKT_FRVEG13": 42.857142857142854
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Oneida",
+    "FMRKTPTH13": 0.072787682611450785,
+    "PCT_FRMKT_FRVEG13": 64.705882352941174
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Onondaga",
+    "FMRKTPTH13": 0.023562071063206329,
+    "PCT_FRMKT_FRVEG13": 27.27272727272727
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Ontario",
+    "FMRKTPTH13": 0.073719809434292613,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Orange",
+    "FMRKTPTH13": 0.050732686803093091,
+    "PCT_FRMKT_FRVEG13": 73.68421052631578
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Orleans",
+    "FMRKTPTH13": 0.046689700252124385,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Oswego",
+    "FMRKTPTH13": 0.057518488085456038,
+    "PCT_FRMKT_FRVEG13": 85.714285714285708
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Otsego",
+    "FMRKTPTH13": 0.11343564147855255,
+    "PCT_FRMKT_FRVEG13": 71.428571428571431
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Putnam",
+    "FMRKTPTH13": 0.030118365175138294,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Queens",
+    "FMRKTPTH13": 0.0092398222258203745,
+    "PCT_FRMKT_FRVEG13": 61.904761904761905
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Rensselaer",
+    "FMRKTPTH13": 0.075077423593080367,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Richmond",
+    "FMRKTPTH13": 0.010621845311942353,
+    "PCT_FRMKT_FRVEG13": 40
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Rockland",
+    "FMRKTPTH13": 0.022029412412629776,
+    "PCT_FRMKT_FRVEG13": 71.428571428571431
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "St. Lawrence",
+    "FMRKTPTH13": 0.10692137714733765,
+    "PCT_FRMKT_FRVEG13": 41.666666666666671
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Saratoga",
+    "FMRKTPTH13": 0.045018074757014942,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Schenectady",
+    "FMRKTPTH13": 0.025785822954539597,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Schoharie",
+    "FMRKTPTH13": 0.093460855478363816,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Schuyler",
+    "FMRKTPTH13": 0.16203953764718593,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Seneca",
+    "FMRKTPTH13": 0.1132983996601048,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Steuben",
+    "FMRKTPTH13": 0.050472931366907926,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Suffolk",
+    "FMRKTPTH13": 0.014006788623552882,
+    "PCT_FRMKT_FRVEG13": 61.904761904761905
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Sullivan",
+    "FMRKTPTH13": 0.10417616188975556,
+    "PCT_FRMKT_FRVEG13": 62.5
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Tioga",
+    "FMRKTPTH13": 0.059431831689052653,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Tompkins",
+    "FMRKTPTH13": 0.058505762817637537,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Ulster",
+    "FMRKTPTH13": 0.066009868475337061,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Warren",
+    "FMRKTPTH13": 0.12206658732338491,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Washington",
+    "FMRKTPTH13": 0.12711729748625544,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Wayne",
+    "FMRKTPTH13": 0.053785417697553836,
+    "PCT_FRMKT_FRVEG13": 80
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Westchester",
+    "FMRKTPTH13": 0.036395021161105164,
+    "PCT_FRMKT_FRVEG13": 57.142857142857139
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Wyoming",
+    "FMRKTPTH13": 0.071612718418791174,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Yates",
+    "FMRKTPTH13": 0.15782828282828282,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Alamance",
+    "FMRKTPTH13": 0.019490644490644492,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Alexander",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Alleghany",
+    "FMRKTPTH13": 0.091516427198682165,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Anson",
+    "FMRKTPTH13": 0.075898447876740924,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Ashe",
+    "FMRKTPTH13": 0.07380890873528434,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Avery",
+    "FMRKTPTH13": 0.056705415367167562,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Beaufort",
+    "FMRKTPTH13": 0.021049529543014714,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Bertie",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Bladen",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Brunswick",
+    "FMRKTPTH13": 0.0089081304506623184,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Buncombe",
+    "FMRKTPTH13": 0.057262055707799908,
+    "PCT_FRMKT_FRVEG13": 42.857142857142854
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Burke",
+    "FMRKTPTH13": 0.033147339925970944,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cabarrus",
+    "FMRKTPTH13": 0.027100564775769928,
+    "PCT_FRMKT_FRVEG13": 80
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Caldwell",
+    "FMRKTPTH13": 0.03661662394727206,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Camden",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Carteret",
+    "FMRKTPTH13": 0.02957180033120416,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Caswell",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Catawba",
+    "FMRKTPTH13": 0.038875462456022136,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Chatham",
+    "FMRKTPTH13": 0.045471080392870136,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cherokee",
+    "FMRKTPTH13": 0.074096028452874926,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Chowan",
+    "FMRKTPTH13": 0.13539128080151638,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Clay",
+    "FMRKTPTH13": 0.094179694857788654,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cleveland",
+    "FMRKTPTH13": 0.020518292057369145,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Columbus",
+    "FMRKTPTH13": 0.034699330302925158,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Craven",
+    "FMRKTPTH13": 0.0095447169991409765,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cumberland",
+    "FMRKTPTH13": 0.0030859530503102926,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Currituck",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Dare",
+    "FMRKTPTH13": 0.057848610187140256,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Davidson",
+    "FMRKTPTH13": 0.018375597206909226,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Davie",
+    "FMRKTPTH13": 0.048270702097362006,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Duplin",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Durham",
+    "FMRKTPTH13": 0.014304054126540814,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Edgecombe",
+    "FMRKTPTH13": 0.017871823283411373,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Forsyth",
+    "FMRKTPTH13": 0.0083766826661305586,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Franklin",
+    "FMRKTPTH13": 0.016266775111834077,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Gaston",
+    "FMRKTPTH13": 0.024032799965392766,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Gates",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Graham",
+    "FMRKTPTH13": 0.1149425287356322,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Granville",
+    "FMRKTPTH13": 0.049639287841683762,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Greene",
+    "FMRKTPTH13": 0.046665733351999632,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Guilford",
+    "FMRKTPTH13": 0.0059894705108419393,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Halifax",
+    "FMRKTPTH13": 0.01851646113394808,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Harnett",
+    "FMRKTPTH13": 0.024562983583739303,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Haywood",
+    "FMRKTPTH13": 0.067902492021457192,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Henderson",
+    "FMRKTPTH13": 0.036946040308129972,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Hertford",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Hoke",
+    "FMRKTPTH13": 0.019787873990818425,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Hyde",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Iredell",
+    "FMRKTPTH13": 0.036875875802050297,
+    "PCT_FRMKT_FRVEG13": 16.666666666666664
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Jackson",
+    "FMRKTPTH13": 0.074169303797468347,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Johnston",
+    "FMRKTPTH13": 0.017148932764750942,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Jones",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Lee",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Lenoir",
+    "FMRKTPTH13": 0.016884191331656171,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Lincoln",
+    "FMRKTPTH13": 0.037824820647308764,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "McDowell",
+    "FMRKTPTH13": 0.022223209920440908,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Macon",
+    "FMRKTPTH13": 0.029525524816203609,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Madison",
+    "FMRKTPTH13": 0.14463407578825571,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Martin",
+    "FMRKTPTH13": 0.041734485205124995,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Mecklenburg",
+    "FMRKTPTH13": 0.013415463488784158,
+    "PCT_FRMKT_FRVEG13": 38.461538461538467
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Mitchell",
+    "FMRKTPTH13": 0.13014055179593961,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Montgomery",
+    "FMRKTPTH13": 0.07228567297961544,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Moore",
+    "FMRKTPTH13": 0.033221855551372061,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Nash",
+    "FMRKTPTH13": 0.010448447360722197,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "New Hanover",
+    "FMRKTPTH13": 0.0095586759322098692,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Northampton",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Onslow",
+    "FMRKTPTH13": 0.01091327763923978,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Orange",
+    "FMRKTPTH13": 0.043496857352056315,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pamlico",
+    "FMRKTPTH13": 0.076487685482637291,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pasquotank",
+    "FMRKTPTH13": 0.024636003054864377,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pender",
+    "FMRKTPTH13": 0.018451886705415629,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Perquimans",
+    "FMRKTPTH13": 0.073730000737300003,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Person",
+    "FMRKTPTH13": 0.025466028318223491,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pitt",
+    "FMRKTPTH13": 0.02897643636195046,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Polk",
+    "FMRKTPTH13": 0.19732622958906812,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Randolph",
+    "FMRKTPTH13": 0.021057655861749468,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Richmond",
+    "FMRKTPTH13": 0.021446801209599586,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Robeson",
+    "FMRKTPTH13": 0.022140875007380292,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Rockingham",
+    "FMRKTPTH13": 0.032355478861087146,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Rowan",
+    "FMRKTPTH13": 0.014473874656245476,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Rutherford",
+    "FMRKTPTH13": 0.044561294059979509,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Sampson",
+    "FMRKTPTH13": 0.015637461101815509,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Scotland",
+    "FMRKTPTH13": 0.027705435806505235,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Stanly",
+    "FMRKTPTH13": 0.016508188061278396,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Stokes",
+    "FMRKTPTH13": 0.085501143577795355,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Surry",
+    "FMRKTPTH13": 0.040782479846657872,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Swain",
+    "FMRKTPTH13": 0.28286542677321264,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Transylvania",
+    "FMRKTPTH13": 0.030442327011476759,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Tyrrell",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Union",
+    "FMRKTPTH13": 0.014387109150201419,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Vance",
+    "FMRKTPTH13": 0.044314455375343439,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wake",
+    "FMRKTPTH13": 0.013653296588461285,
+    "PCT_FRMKT_FRVEG13": 84.615384615384613
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Warren",
+    "FMRKTPTH13": 0.048600311041990668,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Washington",
+    "FMRKTPTH13": 0.078517587939698485,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Watauga",
+    "FMRKTPTH13": 0.0771143799039926,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wayne",
+    "FMRKTPTH13": 0.008048548846642951,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wilkes",
+    "FMRKTPTH13": 0.014428765186275359,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wilson",
+    "FMRKTPTH13": 0.036644801934845539,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Yadkin",
+    "FMRKTPTH13": 0.052515492070160694,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Yancey",
+    "FMRKTPTH13": 0.056721497447532618,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Adams",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Barnes",
+    "FMRKTPTH13": 0.090785292782569221,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Benson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Billings",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Bottineau",
+    "FMRKTPTH13": 0.15199878400972794,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Bowman",
+    "FMRKTPTH13": 0.31230480949406619,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Burke",
+    "FMRKTPTH13": 0.92123445416858596,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Burleigh",
+    "FMRKTPTH13": 0.04663417818919486,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Cass",
+    "FMRKTPTH13": 0.019211434645901238,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Cavalier",
+    "FMRKTPTH13": 0.25329280648429586,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Dickey",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Divide",
+    "FMRKTPTH13": 0.44883303411131054,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Dunn",
+    "FMRKTPTH13": 0.25207965717166625,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Eddy",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Emmons",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Foster",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Golden Valley",
+    "FMRKTPTH13": 0.55432372505543237,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Grand Forks",
+    "FMRKTPTH13": 0.014820962769741524,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Grant",
+    "FMRKTPTH13": 0.42863266180882981,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Griggs",
+    "FMRKTPTH13": 0.42337002540220153,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Hettinger",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Kidder",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "LaMoure",
+    "FMRKTPTH13": 0.48614487117160915,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Logan",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McHenry",
+    "FMRKTPTH13": 0.51822421834513732,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McIntosh",
+    "FMRKTPTH13": 0.36350418029807346,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McKenzie",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McLean",
+    "FMRKTPTH13": 0.1074229240519927,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Mercer",
+    "FMRKTPTH13": 0.35352345038887578,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Morton",
+    "FMRKTPTH13": 0.10675776662752215,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Mountrail",
+    "FMRKTPTH13": 0.22899015342340279,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Nelson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Oliver",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Pembina",
+    "FMRKTPTH13": 0.41259799202310549,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Pierce",
+    "FMRKTPTH13": 0.22436616558223021,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Ramsey",
+    "FMRKTPTH13": 0.17337031900138697,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Ransom",
+    "FMRKTPTH13": 0.36737692872887584,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Renville",
+    "FMRKTPTH13": 0.39077764751856192,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Richland",
+    "FMRKTPTH13": 0.061663686255164336,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Rolette",
+    "FMRKTPTH13": 0.069531358642747884,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Sargent",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Sheridan",
+    "FMRKTPTH13": 0.78988941548183256,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Sioux",
+    "FMRKTPTH13": 0.23004370830457785,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Slope",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Stark",
+    "FMRKTPTH13": 0.037353853049942098,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Steele",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Stutsman",
+    "FMRKTPTH13": 0.14330753797649756,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Towner",
+    "FMRKTPTH13": 0.43140638481449523,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Traill",
+    "FMRKTPTH13": 0.12388503468780973,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Walsh",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Ward",
+    "FMRKTPTH13": 0.061730300317911047,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Wells",
+    "FMRKTPTH13": 0.23413720440177946,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Williams",
+    "FMRKTPTH13": 0.1498295688654156,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Adams",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Allen",
+    "FMRKTPTH13": 0.047555187795436604,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ashland",
+    "FMRKTPTH13": 0.018881462180431251,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ashtabula",
+    "FMRKTPTH13": 0.069728755142495699,
+    "PCT_FRMKT_FRVEG13": 28.571428571428569
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Athens",
+    "FMRKTPTH13": 0.015551132122418512,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Auglaize",
+    "FMRKTPTH13": 0.065457877855599922,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Belmont",
+    "FMRKTPTH13": 0.057412696817901274,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Brown",
+    "FMRKTPTH13": 0.022532164665059373,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Butler",
+    "FMRKTPTH13": 0.013492035651355006,
+    "PCT_FRMKT_FRVEG13": 40
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Carroll",
+    "FMRKTPTH13": 0.069961870780424665,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Champaign",
+    "FMRKTPTH13": 0.075824592442815628,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Clark",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Clermont",
+    "FMRKTPTH13": 0.015068940402340709,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Clinton",
+    "FMRKTPTH13": 0.047748651100606401,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Columbiana",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Coshocton",
+    "FMRKTPTH13": 0.054378857500203916,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Crawford",
+    "FMRKTPTH13": 0.046675535018320148,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Cuyahoga",
+    "FMRKTPTH13": 0.021342000820481363,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Darke",
+    "FMRKTPTH13": 0.019045079703658561,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Defiance",
+    "FMRKTPTH13": 0.077565478191173043,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Delaware",
+    "FMRKTPTH13": 0.02761500267865526,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Erie",
+    "FMRKTPTH13": 0.013089347888688187,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Fairfield",
+    "FMRKTPTH13": 0.020342568859595591,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Fayette",
+    "FMRKTPTH13": 0.034626038781163437,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Franklin",
+    "FMRKTPTH13": 0.027602658888850783,
+    "PCT_FRMKT_FRVEG13": 57.575757575757578
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Fulton",
+    "FMRKTPTH13": 0.023522216733704984,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Gallia",
+    "FMRKTPTH13": 0.065129607919760329,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Geauga",
+    "FMRKTPTH13": 0.021349274124679761,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Greene",
+    "FMRKTPTH13": 0.079468417417031922,
+    "PCT_FRMKT_FRVEG13": 15.384615384615385
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Guernsey",
+    "FMRKTPTH13": 0.050229801341135694,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hamilton",
+    "FMRKTPTH13": 0.019949179465312116,
+    "PCT_FRMKT_FRVEG13": 81.25
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hancock",
+    "FMRKTPTH13": 0.079290613312893971,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hardin",
+    "FMRKTPTH13": 0.063237107534701367,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Harrison",
+    "FMRKTPTH13": 0.063637520682194221,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Henry",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Highland",
+    "FMRKTPTH13": 0.093027582678264109,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hocking",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Holmes",
+    "FMRKTPTH13": 0.16269610691458455,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Huron",
+    "FMRKTPTH13": 0.016869095816464237,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Jackson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Jefferson",
+    "FMRKTPTH13": 0.029244469139773941,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Knox",
+    "FMRKTPTH13": 0.049419322955275513,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lake",
+    "FMRKTPTH13": 0.026134453049455098,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lawrence",
+    "FMRKTPTH13": 0.016100726142749038,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Licking",
+    "FMRKTPTH13": 0.035812984594447796,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Logan",
+    "FMRKTPTH13": 0.02199058802832388,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lorain",
+    "FMRKTPTH13": 0.013267966485116658,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lucas",
+    "FMRKTPTH13": 0.0091324617920629774,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Madison",
+    "FMRKTPTH13": 0.069681555292314123,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Mahoning",
+    "FMRKTPTH13": 0.017010780582193966,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Marion",
+    "FMRKTPTH13": 0.015097074187022556,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Medina",
+    "FMRKTPTH13": 0.028787913682319616,
+    "PCT_FRMKT_FRVEG13": 20
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Meigs",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Mercer",
+    "FMRKTPTH13": 0.024464831804281346,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Miami",
+    "FMRKTPTH13": 0.048515427906074132,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Monroe",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Montgomery",
+    "FMRKTPTH13": 0.016843681280119777,
+    "PCT_FRMKT_FRVEG13": 44.444444444444443
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Morgan",
+    "FMRKTPTH13": 0.13412916638723091,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Morrow",
+    "FMRKTPTH13": 0.057244261262808398,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Muskingum",
+    "FMRKTPTH13": 0.034904013961605584,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Noble",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ottawa",
+    "FMRKTPTH13": 0.024190231984324729,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Paulding",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Perry",
+    "FMRKTPTH13": 0.11106483409690407,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Pickaway",
+    "FMRKTPTH13": 0.017730810829979255,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Pike",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Portage",
+    "FMRKTPTH13": 0.018581489120538121,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Preble",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Putnam",
+    "FMRKTPTH13": 0.029241476109714018,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Richland",
+    "FMRKTPTH13": 0.057062271241430471,
+    "PCT_FRMKT_FRVEG13": 71.428571428571431
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ross",
+    "FMRKTPTH13": 0.012915057665732477,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Sandusky",
+    "FMRKTPTH13": 0.016526194017517766,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Scioto",
+    "FMRKTPTH13": 0.012742587000012741,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Seneca",
+    "FMRKTPTH13": 0.017851404905566068,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Shelby",
+    "FMRKTPTH13": 0.020338845160371793,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Stark",
+    "FMRKTPTH13": 0.034678873630184494,
+    "PCT_FRMKT_FRVEG13": 30.76923076923077
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Summit",
+    "FMRKTPTH13": 0.020339822969577169,
+    "PCT_FRMKT_FRVEG13": 54.54545454545454
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Trumbull",
+    "FMRKTPTH13": 0.014464383865461944,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Tuscarawas",
+    "FMRKTPTH13": 0.010823447917568622,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Union",
+    "FMRKTPTH13": 0.018969932656739068,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Van Wert",
+    "FMRKTPTH13": 0.069579738380183692,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Vinton",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Warren",
+    "FMRKTPTH13": 0.013809547921432878,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Washington",
+    "FMRKTPTH13": 0.048800325335502236,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Wayne",
+    "FMRKTPTH13": 0.060950125383115075,
+    "PCT_FRMKT_FRVEG13": 14.285714285714285
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Williams",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Wood",
+    "FMRKTPTH13": 0.031201248049921998,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Wyandot",
+    "FMRKTPTH13": 0.044234086787278276,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Adair",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Alfalfa",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Atoka",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Beaver",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Beckham",
+    "FMRKTPTH13": 0.043325679130020361,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Blaine",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Bryan",
+    "FMRKTPTH13": 0.023042005576165349,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Caddo",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Canadian",
+    "FMRKTPTH13": 0.016318537859007831,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Carter",
+    "FMRKTPTH13": 0.041593012373921177,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cherokee",
+    "FMRKTPTH13": 0.020768431983385256,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Choctaw",
+    "FMRKTPTH13": 0.065867474641022258,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cimarron",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cleveland",
+    "FMRKTPTH13": 0.0037645216422349213,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Coal",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Comanche",
+    "FMRKTPTH13": 0.0079120183558825854,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cotton",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Craig",
+    "FMRKTPTH13": 0.067805804176837542,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Creek",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Custer",
+    "FMRKTPTH13": 0.035043453882814692,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Delaware",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Dewey",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Ellis",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Garfield",
+    "FMRKTPTH13": 0.016342806713624997,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Garvin",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Grady",
+    "FMRKTPTH13": 0.037652020030874658,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Grant",
+    "FMRKTPTH13": 0.22143489813994685,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Greer",
+    "FMRKTPTH13": 0.1644195988161789,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Harmon",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Harper",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Haskell",
+    "FMRKTPTH13": 0.077291698871541192,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Hughes",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Jackson",
+    "FMRKTPTH13": 0.038114113656286926,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Jefferson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Johnston",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Kay",
+    "FMRKTPTH13": 0.04363858523706661,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Kingfisher",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Kiowa",
+    "FMRKTPTH13": 0.10741138560687433,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Latimer",
+    "FMRKTPTH13": 0.090752336872674477,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Le Flore",
+    "FMRKTPTH13": 0.020050929360575863,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Lincoln",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Logan",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Love",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "McClain",
+    "FMRKTPTH13": 0.056159267683149411,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "McCurtain",
+    "FMRKTPTH13": 0.060235520886666859,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "McIntosh",
+    "FMRKTPTH13": 0.048581422464049749,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Major",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Marshall",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Mayes",
+    "FMRKTPTH13": 0.024290711232024875,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Murray",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Muskogee",
+    "FMRKTPTH13": 0.014165108504731145,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Noble",
+    "FMRKTPTH13": 0.086790487762541224,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Nowata",
+    "FMRKTPTH13": 0.094241824521722736,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Okfuskee",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Oklahoma",
+    "FMRKTPTH13": 0.017525388221051767,
+    "PCT_FRMKT_FRVEG13": 23.076923076923077
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Okmulgee",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Osage",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Ottawa",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pawnee",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Payne",
+    "FMRKTPTH13": 0.05102105894207834,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pittsburg",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pontotoc",
+    "FMRKTPTH13": 0.026344907529374573,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pottawatomie",
+    "FMRKTPTH13": 0.02826455624646693,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pushmataha",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Roger Mills",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Rogers",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Seminole",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Sequoyah",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Stephens",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Texas",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Tillman",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Tulsa",
+    "FMRKTPTH13": 0.016291527102584486,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Wagoner",
+    "FMRKTPTH13": 0.013328002132480341,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Washington",
+    "FMRKTPTH13": 0.019367458795731412,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Washita",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Woods",
+    "FMRKTPTH13": 0.11322463768115941,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Woodward",
+    "FMRKTPTH13": 0.097333073778469933,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Baker",
+    "FMRKTPTH13": 0.062857502042868815,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Benton",
+    "FMRKTPTH13": 0.023140113386555593,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Clackamas",
+    "FMRKTPTH13": 0.044287325748911699,
+    "PCT_FRMKT_FRVEG13": 47.058823529411761
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Clatsop",
+    "FMRKTPTH13": 0.13404466368193882,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Columbia",
+    "FMRKTPTH13": 0.020289737450797388,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Coos",
+    "FMRKTPTH13": 0.047973902197204724,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Crook",
+    "FMRKTPTH13": 0.048241593902262535,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Curry",
+    "FMRKTPTH13": 0.13484358144552319,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Deschutes",
+    "FMRKTPTH13": 0.018486908187851637,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Douglas",
+    "FMRKTPTH13": 0.055988951513567989,
+    "PCT_FRMKT_FRVEG13": 83.333333333333343
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Gilliam",
+    "FMRKTPTH13": 0.51203277009728621,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Grant",
+    "FMRKTPTH13": 0.27333606669400029,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Harney",
+    "FMRKTPTH13": 0.13865779256794233,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Hood River",
+    "FMRKTPTH13": 0.17711654268508678,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Jackson",
+    "FMRKTPTH13": 0.043602116156037436,
+    "PCT_FRMKT_FRVEG13": 55.555555555555557
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Jefferson",
+    "FMRKTPTH13": 0.045979125477033429,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Josephine",
+    "FMRKTPTH13": 0.048233449897503916,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Klamath",
+    "FMRKTPTH13": 0.075858720718533793,
+    "PCT_FRMKT_FRVEG13": 40
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Lake",
+    "FMRKTPTH13": 0.2573671342169605,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Lane",
+    "FMRKTPTH13": 0.045128644843206167,
+    "PCT_FRMKT_FRVEG13": 31.25
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Lincoln",
+    "FMRKTPTH13": 0.13000801716105825,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Linn",
+    "FMRKTPTH13": 0.033795201081446437,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Malheur",
+    "FMRKTPTH13": 0.065295461965393403,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Marion",
+    "FMRKTPTH13": 0.034376611403659545,
+    "PCT_FRMKT_FRVEG13": 63.636363636363633
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Morrow",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Multnomah",
+    "FMRKTPTH13": 0.034244049437870759,
+    "PCT_FRMKT_FRVEG13": 92.307692307692307
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Polk",
+    "FMRKTPTH13": 0.026194124657839248,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Sherman",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Tillamook",
+    "FMRKTPTH13": 0.15818404713884604,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Umatilla",
+    "FMRKTPTH13": 0.065087216870606618,
+    "PCT_FRMKT_FRVEG13": 40
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Union",
+    "FMRKTPTH13": 0.038821382817655965,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Wallowa",
+    "FMRKTPTH13": 0.73303034745638473,
+    "PCT_FRMKT_FRVEG13": 80
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Wasco",
+    "FMRKTPTH13": 0.11770706634754974,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Washington",
+    "FMRKTPTH13": 0.02373683518602375,
+    "PCT_FRMKT_FRVEG13": 53.846153846153847
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Wheeler",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Yamhill",
+    "FMRKTPTH13": 0.039898259438431997,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Adams",
+    "FMRKTPTH13": 0.039415856999270804,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Allegheny",
+    "FMRKTPTH13": 0.017082364654797948,
+    "PCT_FRMKT_FRVEG13": 23.809523809523807
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Armstrong",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Beaver",
+    "FMRKTPTH13": 0.023495550530118359,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Bedford",
+    "FMRKTPTH13": 0.020274105911929286,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Berks",
+    "FMRKTPTH13": 0.014510593942794402,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Blair",
+    "FMRKTPTH13": 0.039332604369065695,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Bradford",
+    "FMRKTPTH13": 0.015925595617276085,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Bucks",
+    "FMRKTPTH13": 0.011163330691345071,
+    "PCT_FRMKT_FRVEG13": 28.571428571428569
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Butler",
+    "FMRKTPTH13": 0.010812564199599936,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Cambria",
+    "FMRKTPTH13": 0.035314724827664144,
+    "PCT_FRMKT_FRVEG13": 80
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Cameron",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Carbon",
+    "FMRKTPTH13": 0.030766390794695873,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Centre",
+    "FMRKTPTH13": 0.077334037932345612,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Chester",
+    "FMRKTPTH13": 0.019740413561664116,
+    "PCT_FRMKT_FRVEG13": 70
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Clarion",
+    "FMRKTPTH13": 0.025223225546082834,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Clearfield",
+    "FMRKTPTH13": 0.024635396137169887,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Clinton",
+    "FMRKTPTH13": 0.050611129387352273,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Columbia",
+    "FMRKTPTH13": 0.029901176611299655,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Crawford",
+    "FMRKTPTH13": 0.034247357245599214,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Cumberland",
+    "FMRKTPTH13": 0.033526951478119474,
+    "PCT_FRMKT_FRVEG13": 12.5
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Dauphin",
+    "FMRKTPTH13": 0.02595813323938961,
+    "PCT_FRMKT_FRVEG13": 42.857142857142854
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Delaware",
+    "FMRKTPTH13": 0.0089110993088551381,
+    "PCT_FRMKT_FRVEG13": 80
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Elk",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Erie",
+    "FMRKTPTH13": 0.01781603871068891,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Fayette",
+    "FMRKTPTH13": 0.044228217602830605,
+    "PCT_FRMKT_FRVEG13": 83.333333333333343
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Forest",
+    "FMRKTPTH13": 0.1304291117777488,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Franklin",
+    "FMRKTPTH13": 0.019831432821021316,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Fulton",
+    "FMRKTPTH13": 0.067695640400758192,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Greene",
+    "FMRKTPTH13": 0.052514113167913878,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Huntingdon",
+    "FMRKTPTH13": 0.043532202947130144,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Indiana",
+    "FMRKTPTH13": 0.011335555102133351,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Jefferson",
+    "FMRKTPTH13": 0.022339379858815119,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Juniata",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Lackawanna",
+    "FMRKTPTH13": 0.027975027625339779,
+    "PCT_FRMKT_FRVEG13": 16.666666666666664
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Lancaster",
+    "FMRKTPTH13": 0.024676219527241597,
+    "PCT_FRMKT_FRVEG13": 53.846153846153847
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Lawrence",
+    "FMRKTPTH13": 0.044508239587853701,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Charleston",
+    "FMRKTPTH13": 0.032862126946396397,
+    "PCT_FRMKT_FRVEG13": 16.666666666666664
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Cherokee",
+    "FMRKTPTH13": 0.017965577952642735,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Chester",
+    "FMRKTPTH13": 0.030725742026669944,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Chesterfield",
+    "FMRKTPTH13": 0.065071687308851919,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Clarendon",
+    "FMRKTPTH13": 0.058212300259044739,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Colleton",
+    "FMRKTPTH13": 0.052420517390506648,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Darlington",
+    "FMRKTPTH13": 0.014675883121266824,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Dillon",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Dorchester",
+    "FMRKTPTH13": 0.007017740848865933,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Edgefield",
+    "FMRKTPTH13": 0.075909970774661245,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Fairfield",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Florence",
+    "FMRKTPTH13": 0.01449821671934352,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Georgetown",
+    "FMRKTPTH13": 0.033228663044742396,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Greenville",
+    "FMRKTPTH13": 0.017108456924113301,
+    "PCT_FRMKT_FRVEG13": 62.5
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Greenwood",
+    "FMRKTPTH13": 0.028671368771145133,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Hampton",
+    "FMRKTPTH13": 0.096497153333976654,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Horry",
+    "FMRKTPTH13": 0.021255114511929431,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Jasper",
+    "FMRKTPTH13": 0.038710176905508459,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Kershaw",
+    "FMRKTPTH13": 0.016040293216559996,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Lancaster",
+    "FMRKTPTH13": 0.012643983360517898,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Laurens",
+    "FMRKTPTH13": 0.015100493786146807,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Lee",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Lexington",
+    "FMRKTPTH13": 0.025886999548826579,
+    "PCT_FRMKT_FRVEG13": 57.142857142857139
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "McCormick",
+    "FMRKTPTH13": 0.10057326762546516,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Marion",
+    "FMRKTPTH13": 0.030809994762300889,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Marlboro",
+    "FMRKTPTH13": 0.03553028957186001,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Newberry",
+    "FMRKTPTH13": 0.026612731530764318,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Oconee",
+    "FMRKTPTH13": 0.040199927640130251,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Orangeburg",
+    "FMRKTPTH13": 0.032795487340941884,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Pickens",
+    "FMRKTPTH13": 0.041781565973092669,
+    "PCT_FRMKT_FRVEG13": 80
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Richland",
+    "FMRKTPTH13": 0.053322499555645837,
+    "PCT_FRMKT_FRVEG13": 14.285714285714285
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Saluda",
+    "FMRKTPTH13": 0.050268938822701448,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Spartanburg",
+    "FMRKTPTH13": 0.013853053732532164,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Sumter",
+    "FMRKTPTH13": 0.027764409728649166,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Union",
+    "FMRKTPTH13": 0.035395724196517063,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Williamsburg",
+    "FMRKTPTH13": 0.029744199881023201,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "York",
+    "FMRKTPTH13": 0.017047755023760311,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Aurora",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Beadle",
+    "FMRKTPTH13": 0.056328507857826844,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Bennett",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Bon Homme",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Brookings",
+    "FMRKTPTH13": 0.030647583438045911,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Brown",
+    "FMRKTPTH13": 0.026787388497495377,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Brule",
+    "FMRKTPTH13": 0.1889287738522577,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Buffalo",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Butte",
+    "FMRKTPTH13": 0.097770825185764576,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Campbell",
+    "FMRKTPTH13": 0.71633237822349571,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Charles Mix",
+    "FMRKTPTH13": 0.10850694444444445,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Clark",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Clay",
+    "FMRKTPTH13": 0.21229920033967872,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Codington",
+    "FMRKTPTH13": 0.07244801854669275,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Corson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Custer",
+    "FMRKTPTH13": 0.1199184554502938,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Davison",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Day",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Deuel",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Dewey",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Douglas",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Edmunds",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Fall River",
+    "FMRKTPTH13": 0.14345144168698895,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Faulk",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Grant",
+    "FMRKTPTH13": 0.13776002204160351,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Gregory",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Haakon",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hamlin",
+    "FMRKTPTH13": 0.16897600540723218,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hand",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hanson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Harding",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hughes",
+    "FMRKTPTH13": 0.11461318051575932,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hutchinson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hyde",
+    "FMRKTPTH13": 0.6958942240779401,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Jackson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Jerauld",
+    "FMRKTPTH13": 0.48851978505129456,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Jones",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Kingsbury",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lake",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lawrence",
+    "FMRKTPTH13": 0.16395458458007134,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lincoln",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lyman",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "McCook",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "McPherson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Marshall",
+    "FMRKTPTH13": 0.2140869192892314,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Meade",
+    "FMRKTPTH13": 0.076769537847382163,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Mellette",
+    "FMRKTPTH13": 0.47596382674916704,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Miner",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Minnehaha",
+    "FMRKTPTH13": 0.02285231122562658,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Moody",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Pennington",
+    "FMRKTPTH13": 0.038333636807958066,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Perkins",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Potter",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Roberts",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Sanborn",
+    "FMRKTPTH13": 0.43029259896729777,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Shannon",
+    "FMRKTPTH13": 0.071128814282665917,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Spink",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Stanley",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Sully",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Todd",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Tripp",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Turner",
+    "FMRKTPTH13": 0.1203659123736158,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Union",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Walworth",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Yankton",
+    "FMRKTPTH13": 0.044241914790072112,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Ziebach",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Anderson",
+    "FMRKTPTH13": 0.013259785721862736,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Bedford",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Benton",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Bledsoe",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Blount",
+    "FMRKTPTH13": 0.0080530210908622366,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Bradley",
+    "FMRKTPTH13": 0.0098878715367729936,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Campbell",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cannon",
+    "FMRKTPTH13": 0.072406053146043009,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Carroll",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Carter",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cheatham",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Chester",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Claiborne",
+    "FMRKTPTH13": 0.031509957146458281,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Clay",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cocke",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Coffee",
+    "FMRKTPTH13": 0.037578445003945735,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Crockett",
+    "FMRKTPTH13": 0.068385420228407309,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cumberland",
+    "FMRKTPTH13": 0.017534938364691648,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Davidson",
+    "FMRKTPTH13": 0.013882568892248129,
+    "PCT_FRMKT_FRVEG13": 11.111111111111111
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Decatur",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "DeKalb",
+    "FMRKTPTH13": 0.052907253584466428,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Dickson",
+    "FMRKTPTH13": 0.019848752505905003,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Dyer",
+    "FMRKTPTH13": 0.026140373807345442,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Fayette",
+    "FMRKTPTH13": 0.025867197806461628,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Fentress",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Franklin",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Gibson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Giles",
+    "FMRKTPTH13": 0.034397358282883879,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Grainger",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Greene",
+    "FMRKTPTH13": 0.043592612505267442,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Grundy",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hamblen",
+    "FMRKTPTH13": 0.015937270901730787,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hamilton",
+    "FMRKTPTH13": 0.014469895382656382,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hancock",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hardeman",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hardin",
+    "FMRKTPTH13": 0.038535645472061661,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hawkins",
+    "FMRKTPTH13": 0.017671903440719599,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Haywood",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Henderson",
+    "FMRKTPTH13": 0.035684973057845341,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Henry",
+    "FMRKTPTH13": 0.03092050338579512,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hickman",
+    "FMRKTPTH13": 0.041373603640877117,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Houston",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Humphreys",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Jackson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Jefferson",
+    "FMRKTPTH13": 0.038320783276810176,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Johnson",
+    "FMRKTPTH13": 0.22105554020447638,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Knox",
+    "FMRKTPTH13": 0.013595854170868164,
+    "PCT_FRMKT_FRVEG13": 83.333333333333343
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lake",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lauderdale",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lawrence",
+    "FMRKTPTH13": 0.047521741196597446,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lewis",
+    "FMRKTPTH13": 0.084061869535978481,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lincoln",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Loudon",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "McMinn",
+    "FMRKTPTH13": 0.01907814407814408,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "McNairy",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Macon",
+    "FMRKTPTH13": 0.044448395412925591,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Madison",
+    "FMRKTPTH13": 0.02027246188777165,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Marion",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Marshall",
+    "FMRKTPTH13": 0.03238027393711751,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Maury",
+    "FMRKTPTH13": 0.024393218685205515,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Meigs",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Monroe",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Montgomery",
+    "FMRKTPTH13": 0.010841988854435458,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Moore",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Morgan",
+    "FMRKTPTH13": 0.045597555970999952,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Obion",
+    "FMRKTPTH13": 0.031908104658583278,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Overton",
+    "FMRKTPTH13": 0.045065344749887333,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Perry",
+    "FMRKTPTH13": 0.1272264631043257,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Pickett",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Polk",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Burleson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Burnet",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Caldwell",
+    "FMRKTPTH13": 0.025817111581556255,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Calhoun",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Callahan",
+    "FMRKTPTH13": 0.073980912924465486,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cameron",
+    "FMRKTPTH13": 0.0048128174955541598,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Camp",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Carson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cass",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Castro",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Chambers",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cherokee",
+    "FMRKTPTH13": 0.019528961449830098,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Childress",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Clay",
+    "FMRKTPTH13": 0.094921689606074985,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cochran",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Coke",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Coleman",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Collin",
+    "FMRKTPTH13": 0.0047924738989890275,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Collingsworth",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Colorado",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Comal",
+    "FMRKTPTH13": 0.0087424814659392922,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Comanche",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Concho",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cooke",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Coryell",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cottle",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Crane",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Crockett",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Crosby",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Culberson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dallam",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dallas",
+    "FMRKTPTH13": 0.0036677163127388349,
+    "PCT_FRMKT_FRVEG13": 55.555555555555557
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dawson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Deaf Smith",
+    "FMRKTPTH13": 0.051652892561983473,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Delta",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Denton",
+    "FMRKTPTH13": 0.0056552769389116991,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "DeWitt",
+    "FMRKTPTH13": 0.048863913999511364,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dickens",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dimmit",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Donley",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Duval",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Eastland",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Ector",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Edwards",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Ellis",
+    "FMRKTPTH13": 0.0064948138911079508,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "El Paso",
+    "FMRKTPTH13": 0.015711906482732615,
+    "PCT_FRMKT_FRVEG13": 15.384615384615385
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Erath",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Falls",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fannin",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fayette",
+    "FMRKTPTH13": 0.040494027130998179,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fisher",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Floyd",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Foard",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fort Bend",
+    "FMRKTPTH13": 0.0031883027548529953,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Franklin",
+    "FMRKTPTH13": 0.18796992481203006,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Freestone",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Frio",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gaines",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Galveston",
+    "FMRKTPTH13": 0.013311856870914926,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Garza",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gillespie",
+    "FMRKTPTH13": 0.039756689062934843,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Glasscock",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Goliad",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gonzales",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gray",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Grayson",
+    "FMRKTPTH13": 0.016402181490138189,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gregg",
+    "FMRKTPTH13": 0.0081527499225488749,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Grimes",
+    "FMRKTPTH13": 0.037337116827838551,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Guadalupe",
+    "FMRKTPTH13": 0.021452935834268917,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hale",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hall",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hamilton",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hansford",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hardeman",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hardin",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Harris",
+    "FMRKTPTH13": 0.002115805063826786,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Harrison",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hartley",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Haskell",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hays",
+    "FMRKTPTH13": 0.029587549559145509,
+    "PCT_FRMKT_FRVEG13": 20
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hemphill",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Henderson",
+    "FMRKTPTH13": 0.012643184059473539,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hidalgo",
+    "FMRKTPTH13": 0.0012398456640117439,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hill",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hockley",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hood",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hopkins",
+    "FMRKTPTH13": 0.028193633877470467,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Houston",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Howard",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hudspeth",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hunt",
+    "FMRKTPTH13": 0.011483825032441806,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hutchinson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Irion",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jack",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jackson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jasper",
+    "FMRKTPTH13": 0.027837318709461902,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jeff Davis",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jefferson",
+    "FMRKTPTH13": 0.007942401702850925,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jim Hogg",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jim Wells",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Johnson",
+    "FMRKTPTH13": 0.0065171629486252044,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jones",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Karnes",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kaufman",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kendall",
+    "FMRKTPTH13": 0.055623539882078091,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kenedy",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kent",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kerr",
+    "FMRKTPTH13": 0.020085967942795161,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kimble",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "King",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kinney",
+    "FMRKTPTH13": 0.27754648903691365,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kleberg",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Knox",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lamar",
+    "FMRKTPTH13": 0.020075886852301699,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lamb",
+    "FMRKTPTH13": 0.071387778412335817,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lampasas",
+    "FMRKTPTH13": 0.049733923509225647,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "La Salle",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lavaca",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lee",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Leon",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Liberty",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Limestone",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lipscomb",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Live Oak",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Llano",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Loving",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lubbock",
+    "FMRKTPTH13": 0.010498320268757,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lynn",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "McCulloch",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "McLennan",
+    "FMRKTPTH13": 0.0083784723531358535,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "McMullen",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Madison",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Marion",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Martin",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Mason",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Matagorda",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Maverick",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Medina",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Menard",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Midland",
+    "FMRKTPTH13": 0.013638378396808619,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Milam",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Mills",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Mitchell",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Montague",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Montgomery",
+    "FMRKTPTH13": 0.0041233117615406337,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Moore",
+    "FMRKTPTH13": 0.044816922870075743,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Morris",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Motley",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Nacogdoches",
+    "FMRKTPTH13": 0.015143713844383195,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Navarro",
+    "FMRKTPTH13": 0.020842451906042229,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Newton",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Travis",
+    "FMRKTPTH13": 0.015516838508046849,
+    "PCT_FRMKT_FRVEG13": 47.058823529411761
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Trinity",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Tyler",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Upshur",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Upton",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Uvalde",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Val Verde",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Van Zandt",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Victoria",
+    "FMRKTPTH13": 0.011202097032564496,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Walker",
+    "FMRKTPTH13": 0.0146181733130628,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Waller",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Ward",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Washington",
+    "FMRKTPTH13": 0.029331534332560933,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Webb",
+    "FMRKTPTH13": 0.0038584414983100024,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wharton",
+    "FMRKTPTH13": 0.024221872350732712,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wheeler",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wichita",
+    "FMRKTPTH13": 0.022803457004081821,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wilbarger",
+    "FMRKTPTH13": 0.075426157791522105,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Willacy",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Williamson",
+    "FMRKTPTH13": 0.017534938364691648,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wilson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Winkler",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wise",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wood",
+    "FMRKTPTH13": 0.023797058683546715,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Yoakum",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Young",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Zapata",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Zavala",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Beaver",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Box Elder",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Cache",
+    "FMRKTPTH13": 0.025969529085872578,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Carbon",
+    "FMRKTPTH13": 0.047067683328626569,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Daggett",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Davis",
+    "FMRKTPTH13": 0.0094994126196530169,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Duchesne",
+    "FMRKTPTH13": 0.051964248596965287,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Emery",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Garfield",
+    "FMRKTPTH13": 0.39254170755642787,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Grand",
+    "FMRKTPTH13": 0.10720411663807891,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Iron",
+    "FMRKTPTH13": 0.042780748663101602,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Juab",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Kane",
+    "FMRKTPTH13": 0.13848497438027974,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Millard",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Morgan",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Piute",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Rich",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Salt Lake",
+    "FMRKTPTH13": 0.0075199136713910517,
+    "PCT_FRMKT_FRVEG13": 62.5
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "San Juan",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Sanpete",
+    "FMRKTPTH13": 0.071669175087794745,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Sevier",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Summit",
+    "FMRKTPTH13": 0.078941136226087408,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Tooele",
+    "FMRKTPTH13": 0.016702856188408218,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Uintah",
+    "FMRKTPTH13": 0.028965357432510715,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Utah",
+    "FMRKTPTH13": 0.011100750410727766,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Wasatch",
+    "FMRKTPTH13": 0.039567918331816561,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Washington",
+    "FMRKTPTH13": 0.020716944388815613,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Wayne",
+    "FMRKTPTH13": 0.36536353671903543,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Weber",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Addison",
+    "FMRKTPTH13": 0.10885834807456797,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Bennington",
+    "FMRKTPTH13": 0.19075128757119109,
+    "PCT_FRMKT_FRVEG13": 85.714285714285708
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Caledonia",
+    "FMRKTPTH13": 0.41772436618360592,
+    "PCT_FRMKT_FRVEG13": 69.230769230769226
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Chittenden",
+    "FMRKTPTH13": 0.10094382476152022,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Essex",
+    "FMRKTPTH13": 0.16061676839061997,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Franklin",
+    "FMRKTPTH13": 0.08296345459824947,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Grand Isle",
+    "FMRKTPTH13": 0.28640985249892598,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Lamoille",
+    "FMRKTPTH13": 0.16026925234393782,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Orange",
+    "FMRKTPTH13": 0.17286682339925322,
+    "PCT_FRMKT_FRVEG13": 40
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Orleans",
+    "FMRKTPTH13": 0.29510494669666898,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Rutland",
+    "FMRKTPTH13": 0.098572343886050365,
+    "PCT_FRMKT_FRVEG13": 83.333333333333343
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Washington",
+    "FMRKTPTH13": 0.11771630370806356,
+    "PCT_FRMKT_FRVEG13": 85.714285714285708
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Windham",
+    "FMRKTPTH13": 0.27282027964078664,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Windsor",
+    "FMRKTPTH13": 0.160111010300475,
+    "PCT_FRMKT_FRVEG13": 77.777777777777786
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Accomack",
+    "FMRKTPTH13": 0.059986203173270143,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Albemarle",
+    "FMRKTPTH13": 0.048899277268681964,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Alleghany",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Amelia",
+    "FMRKTPTH13": 0.078376048279645741,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Amherst",
+    "FMRKTPTH13": 0.030879446640316204,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Appomattox",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Arlington",
+    "FMRKTPTH13": 0.036191725666719451,
+    "PCT_FRMKT_FRVEG13": 62.5
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Augusta",
+    "FMRKTPTH13": 0.013576257840288902,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bath",
+    "FMRKTPTH13": 0.21496130696474633,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bedford",
+    "FMRKTPTH13": 0.01436988072998994,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bland",
+    "FMRKTPTH13": 0.14841199168892846,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Botetourt",
+    "FMRKTPTH13": 0.060324546057790911,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Brunswick",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Buchanan",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Buckingham",
+    "FMRKTPTH13": 0.058520599250936327,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Campbell",
+    "FMRKTPTH13": 0.018128093105886194,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Caroline",
+    "FMRKTPTH13": 0.069032168990749682,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Carroll",
+    "FMRKTPTH13": 0.033499715252420355,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Charles City",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Charlotte",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Chesterfield",
+    "FMRKTPTH13": 0.030877921051331456,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Clarke",
+    "FMRKTPTH13": 0.069817775605669208,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Craig",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Culpeper",
+    "FMRKTPTH13": 0.041744067124459938,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Cumberland",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Dickenson",
+    "FMRKTPTH13": 0.063734862970044617,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Dinwiddie",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Essex",
+    "FMRKTPTH13": 0.089023413157660464,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fairfax",
+    "FMRKTPTH13": 0.017879460254853825,
+    "PCT_FRMKT_FRVEG13": 35
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fauquier",
+    "FMRKTPTH13": 0.075140512758859065,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Floyd",
+    "FMRKTPTH13": 0.064977257959714096,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fluvanna",
+    "FMRKTPTH13": 0.077020834135633695,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Franklin",
+    "FMRKTPTH13": 0.035454078105334068,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Frederick",
+    "FMRKTPTH13": 0.012450664242937361,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Giles",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Gloucester",
+    "FMRKTPTH13": 0.054221113701675427,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Goochland",
+    "FMRKTPTH13": 0.14053496978498148,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Grayson",
+    "FMRKTPTH13": 0.065863136402555492,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Greene",
+    "FMRKTPTH13": 0.053273666826487667,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Greensville",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Halifax",
+    "FMRKTPTH13": 0.055789561772992276,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Hanover",
+    "FMRKTPTH13": 0.029800929789009414,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Henrico",
+    "FMRKTPTH13": 0.0063505772674736132,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Henry",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Highland",
+    "FMRKTPTH13": 0.44543429844097993,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Isle of Wight",
+    "FMRKTPTH13": 0.056498771151727446,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "James City",
+    "FMRKTPTH13": 0.014499688256702481,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "King and Queen",
+    "FMRKTPTH13": 0.14192449616803859,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "King George",
+    "FMRKTPTH13": 0.040816326530612242,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "King William",
+    "FMRKTPTH13": 0.062574306989550091,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lancaster",
+    "FMRKTPTH13": 0.088999644001423989,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lee",
+    "FMRKTPTH13": 0.039255711706053228,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Loudoun",
+    "FMRKTPTH13": 0.023746059638228779,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Louisa",
+    "FMRKTPTH13": 0.089739754711337119,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lunenburg",
+    "FMRKTPTH13": 0.079440737210041315,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Madison",
+    "FMRKTPTH13": 0.07575757575757576,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Mathews",
+    "FMRKTPTH13": 0.11256190904997748,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Mecklenburg",
+    "FMRKTPTH13": 0.031497055025355131,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Middlesex",
+    "FMRKTPTH13": 0.27721308445758641,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Montgomery",
+    "FMRKTPTH13": 0.031514591255751415,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Nelson",
+    "FMRKTPTH13": 0.20233358062993187,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "New Kent",
+    "FMRKTPTH13": 0.052167562209817935,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Northampton",
+    "FMRKTPTH13": 0.24537870112874202,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Northumberland",
+    "FMRKTPTH13": 0.080997894054754577,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Nottoway",
+    "FMRKTPTH13": 0.063171193935565376,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Orange",
+    "FMRKTPTH13": 0.058400981136483086,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Page",
+    "FMRKTPTH13": 0.04184975936388366,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Patrick",
+    "FMRKTPTH13": 0.10839520893176521,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Pittsylvania",
+    "FMRKTPTH13": 0.015921792156925182,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Powhatan",
+    "FMRKTPTH13": 0.035558084130427048,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Prince Edward",
+    "FMRKTPTH13": 0.043032963249849385,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Prince George",
+    "FMRKTPTH13": 0.027070193010476164,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Prince William",
+    "FMRKTPTH13": 0.013944116628591482,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Pulaski",
+    "FMRKTPTH13": 0.086365730078304934,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Rappahannock",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Richmond",
+    "FMRKTPTH13": 0.11038745998454576,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Roanoke",
+    "FMRKTPTH13": 0.021528293559810983,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Rockbridge",
+    "FMRKTPTH13": 0.044654818254889705,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Rockingham",
+    "FMRKTPTH13": 0.012921399129097698,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Russell",
+    "FMRKTPTH13": 0.035155563367902973,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Scott",
+    "FMRKTPTH13": 0.087792458627803882,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Shenandoah",
+    "FMRKTPTH13": 0.046967099546767491,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Smyth",
+    "FMRKTPTH13": 0.063055678163818657,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Southampton",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Spotsylvania",
+    "FMRKTPTH13": 0.023869386715890648,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Stafford",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Surry",
+    "FMRKTPTH13": 0.14611338398597312,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Sussex",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Tazewell",
+    "FMRKTPTH13": 0.067769043101111412,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Warren",
+    "FMRKTPTH13": 0.026267402153926978,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Washington",
+    "FMRKTPTH13": 0.036238448994383041,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Westmoreland",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Wise",
+    "FMRKTPTH13": 0.073317366440197471,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Wythe",
+    "FMRKTPTH13": 0.034186865406310891,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "York",
+    "FMRKTPTH13": 0.015118072143440268,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Alexandria",
+    "FMRKTPTH13": 0.027342201320628323,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bedford",
+    "FMRKTPTH13": 0.16767270288397049,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bristol",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Buena Vista",
+    "FMRKTPTH13": 0.1490979573579842,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Charlottesville",
+    "FMRKTPTH13": 0.068250068250068241,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Chesapeake",
+    "FMRKTPTH13": 0.0087559157155553229,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Colonial Heights",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Covington",
+    "FMRKTPTH13": 0.17328019407381737,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Danville",
+    "FMRKTPTH13": 0.023257977486277791,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Emporia",
+    "FMRKTPTH13": 0.17421602787456444,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fairfax",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Falls Church",
+    "FMRKTPTH13": 0.075591503515004918,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Franklin",
+    "FMRKTPTH13": 0.1172607879924953,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fredericksburg",
+    "FMRKTPTH13": 0.03662064672062109,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Galax",
+    "FMRKTPTH13": 0.28951939779965258,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Hampton",
+    "FMRKTPTH13": 0.014616036715484228,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Harrisonburg",
+    "FMRKTPTH13": 0.039230301484866913,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Hopewell",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lexington",
+    "FMRKTPTH13": 0.2857959416976279,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lynchburg",
+    "FMRKTPTH13": 0.012967982052312839,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Manassas",
+    "FMRKTPTH13": 0.049255017854943975,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Manassas Park",
+    "FMRKTPTH13": 0.063299151791365998,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Martinsville",
+    "FMRKTPTH13": 0.072817301390810454,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Newport News",
+    "FMRKTPTH13": 0.022132952646547813,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Norfolk",
+    "FMRKTPTH13": 0.0040686461986638566,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Norton",
+    "FMRKTPTH13": 0.24582104228121929,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Petersburg",
+    "FMRKTPTH13": 0.031276389453601477,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Poquoson",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Portsmouth",
+    "FMRKTPTH13": 0.01036591686534674,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Radford",
+    "FMRKTPTH13": 0.059934072520227755,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Richmond",
+    "FMRKTPTH13": 0.05705889904854286,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Roanoke",
+    "FMRKTPTH13": 0.020519344612133089,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Salem",
+    "FMRKTPTH13": 0.040048057669203045,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Staunton",
+    "FMRKTPTH13": 0.04180427239663894,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Suffolk",
+    "FMRKTPTH13": 0.023479414423404281,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Virginia Beach",
+    "FMRKTPTH13": 0.0089481254795636001,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Waynesboro",
+    "FMRKTPTH13": 0.047377647226038759,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Williamsburg",
+    "FMRKTPTH13": 0.065932616865563398,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Winchester",
+    "FMRKTPTH13": 0.074401993973438482,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Adams",
+    "FMRKTPTH13": 0.052617732175743226,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Asotin",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Benton",
+    "FMRKTPTH13": 0.02741258127830349,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Chelan",
+    "FMRKTPTH13": 0.040712744446103115,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Clallam",
+    "FMRKTPTH13": 0.027830733478980837,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Clark",
+    "FMRKTPTH13": 0.013689659971662405,
+    "PCT_FRMKT_FRVEG13": 83.333333333333343
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Columbia",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Cowlitz",
+    "FMRKTPTH13": 0.039217224204870782,
+    "PCT_FRMKT_FRVEG13": 25
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Douglas",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Ferry",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Franklin",
+    "FMRKTPTH13": 0.011648902090977926,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Garfield",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Grant",
+    "FMRKTPTH13": 0.010902390894323126,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Grays Harbor",
+    "FMRKTPTH13": 0.013948557719131843,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Island",
+    "FMRKTPTH13": 0.063149652045417226,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Jefferson",
+    "FMRKTPTH13": 0.10048904669391037,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "King",
+    "FMRKTPTH13": 0.0194277288486829,
+    "PCT_FRMKT_FRVEG13": 89.743589743589752
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Kitsap",
+    "FMRKTPTH13": 0.031373656325125197,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Kittitas",
+    "FMRKTPTH13": 0.023996928393165678,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Klickitat",
+    "FMRKTPTH13": 0.048311512633460549,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Lewis",
+    "FMRKTPTH13": 0.03967151981592415,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Lincoln",
+    "FMRKTPTH13": 0.095812973076554578,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Mason",
+    "FMRKTPTH13": 0.032877432930036823,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Okanogan",
+    "FMRKTPTH13": 0.14536644457904302,
+    "PCT_FRMKT_FRVEG13": 16.666666666666664
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Pacific",
+    "FMRKTPTH13": 0.14580801944106928,
+    "PCT_FRMKT_FRVEG13": 33.333333333333329
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Pend Oreille",
+    "FMRKTPTH13": 0.077041602465331274,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Pierce",
+    "FMRKTPTH13": 0.018480166469339556,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "San Juan",
+    "FMRKTPTH13": 0.18958543983822043,
+    "PCT_FRMKT_FRVEG13": 66.666666666666657
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Skagit",
+    "FMRKTPTH13": 0.050751975097697556,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Skamania",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Snohomish",
+    "FMRKTPTH13": 0.012277705324158705,
+    "PCT_FRMKT_FRVEG13": 77.777777777777786
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Spokane",
+    "FMRKTPTH13": 0.021020105731131826,
+    "PCT_FRMKT_FRVEG13": 60
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Stevens",
+    "FMRKTPTH13": 0.091873765446276817,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Thurston",
+    "FMRKTPTH13": 0.02709691404858864,
+    "PCT_FRMKT_FRVEG13": 85.714285714285708
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Wahkiakum",
+    "FMRKTPTH13": 0.25043826696719257,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Walla Walla",
+    "FMRKTPTH13": 0.016833883240185844,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Whatcom",
+    "FMRKTPTH13": 0.019487289415478753,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Whitman",
+    "FMRKTPTH13": 0.021456464832854138,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Yakima",
+    "FMRKTPTH13": 0.0080979200492353534,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Barbour",
+    "FMRKTPTH13": 0.1212635663614867,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Berkeley",
+    "FMRKTPTH13": 0.0093372425255373592,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Boone",
+    "FMRKTPTH13": 0,
+    "PCT_FRMKT_FRVEG13": null
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Braxton",
+    "FMRKTPTH13": 0.20735416090682887,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Brooke",
+    "FMRKTPTH13": 0.16769379113738314,
+    "PCT_FRMKT_FRVEG13": 75
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Cabell",
+    "FMRKTPTH13": 0.020624084806236724,
+    "PCT_FRMKT_FRVEG13": 50
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Calhoun",
+    "FMRKTPTH13": 0.26291573550677005,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Clay",
+    "FMRKTPTH13": 0.10756157900397977,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Doddridge",
+    "FMRKTPTH13": 0.1222792858889704,
+    "PCT_FRMKT_FRVEG13": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Fayette",
+    "FMRKTPTH13": 0.043602433015762276,
+    "PCT_FRMKT_FRVEG13": 100
+   }
+  }
+ ]
+}
