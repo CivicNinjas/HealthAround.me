@@ -65,6 +65,12 @@ def ImportObesityData_from_json():
     '''
 
 
+'''Returns  float_num rounded down to four decimal points'''
+def round_float(float_num):
+    return float(ceil(float_num * 10000) / 10000.0)
+
+
+
 class ImportDataFromJson(object):
 
     def __init__(self, json_name):
@@ -101,8 +107,7 @@ class ImportGroceryPerCapitaData(ImportDataFromJson):
     def finish_import(self, counties, Ers_data):
         grocery_stores_per_thousand = counties['attributes']['GROCPTH11']
 
-        Ers_data.grocery_stores_per_thousand = float(ceil(
-            grocery_stores_per_thousand * 10000) / 10000.0)
+        Ers_data.grocery_stores_per_thousand = round_float(grocery_stores_per_thousand)
 
 
 class ImportObesityData(ImportDataFromJson):
@@ -119,8 +124,7 @@ class ImportObesityData(ImportDataFromJson):
             Ers_data.childhood_obesity = childhood_obesity
         else:
             Ers_data.childhood_obesity = float(childhood_obesity)
-        Ers_data.rec_facilities_per_thousand = float(ceil(
-            rec_facilities_per_thousand * 10000) / 10000.0)
+        Ers_data.rec_facilities_per_thousand = round_float(rec_facilities_per_thousand)
 
 
 class ImportGroceryAccessData(ImportDataFromJson):
@@ -128,8 +132,7 @@ class ImportGroceryAccessData(ImportDataFromJson):
     def finish_import(self, counties, Ers_data):
         percent_low_access_to_groceries = counties['attributes']['PCT_LACCESS_POP10']
         
-        Ers_data.percent_low_access_to_groceries = float(ceil(
-            percent_low_access_to_groceries * 10000) /10000.0)
+        Ers_data.percent_low_access_to_groceries = round_float(percent_low_access_to_groceries)
 
 
 class ImportRestaurantData(ImportDataFromJson):
@@ -138,10 +141,8 @@ class ImportRestaurantData(ImportDataFromJson):
         fast_food_rest_per_thousand = counties['attributes']['FFRPTH11']
         full_rest_per_thousand = counties['attributes']['FSRPTH11']
 
-        Ers_data.fast_food_rest_per_thosaund = float(ceil(
-            fast_food_rest_per_thousand * 10000) /10000.0)
-        Ers_data.full_rest_per_thousand = float(ceil(
-            full_rest_per_thousand * 10000) /10000.0)
+        Ers_data.fast_food_rest_per_thousand = round_float(fast_food_rest_per_thousand)
+        Ers_data.full_rest_per_thousand = round_float(full_rest_per_thousand)
 
 
 class ImportFarmersMarketData(ImportDataFromJson):
@@ -149,8 +150,7 @@ class ImportFarmersMarketData(ImportDataFromJson):
     def finish_import(self, counties, Ers_data):
         farmers_markets_per_thousand = counties['attributes']['FMRKTPTH13']
 
-        Ers_data.farmers_markets_per_thousand = float(ceil(
-            farmers_markets_per_thousand * 10000) / 10000.0)
+        Ers_data.farmers_markets_per_thousand = round_float(farmers_markets_per_thousand)
 
 
 class ImportSchoolMealData(ImportDataFromJson):
@@ -162,10 +162,10 @@ class ImportSchoolMealData(ImportDataFromJson):
             ["PCT_REDUCED_LUNCH10"]
 
         Ers_data.percent_students_for_free_lunch =\
-            percent_students_for_free_lunch
+            round_float(percent_students_for_free_lunch)
 
         Ers_data.percent_students_for_reduced_lunch =\
-            percent_students_for_reduced_lunch
+            round_float(percent_students_for_reduced_lunch)
 
 
 

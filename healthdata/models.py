@@ -70,15 +70,27 @@ class ScoreMetric(models.Model):
     PERCENT_ADULT_OBESITY_ALGORITHM = 16
     PERCENT_ADULT_DIABETES_ALGORITHM = 17
     FITNESS_CENTERS_PER_CAPITA_ALGORITHM = 18
+    FAST_FOOD_PER_THOUSAND_ALGORITHM = 19
+    FULL_REST_PER_THOUSAND_ALGORITHM = 20
+    FARMERS_MARKETS_PER_THOUSAND_ALGORITHM = 21
+    PERCENT_LOW_ACCESS_TO_GROCERIES_ALGORITHM = 22
+    GROCERY_STORES_PER_THOUSAND_ALGORITHM = 23
+    PERCENT_FREE_LUNCH_ALGORITHM = 24
     algorithm_choices = (
-        (PLACEHOLDER_ALGORITHM, 'PlaceholderAlgorithm',
-            'Placeholder Algorithm'),
-        (FOOD_STAMP_ALGORITHM, 'FoodStampAlgorithm', 'Food Stamp Algorithm'),
-        (PERCENT_POVERTY_ALGORITHM, 'PercentPovertyAlgorithm',
+        (PLACEHOLDER_ALGORITHM, 
+         'PlaceholderAlgorithm',
+         'Placeholder Algorithm'),
+        (FOOD_STAMP_ALGORITHM, 
+         'FoodStampAlgorithm', 
+         'Food Stamp Algorithm'),
+        (PERCENT_POVERTY_ALGORITHM, 
+         'PercentPovertyAlgorithm',
          'Percent Poverty Algorithm'),
-        (PERCENT_UNEMPLOYMENT_ALGORITHM, 'PercentUnemploymentAlgorithm',
+        (PERCENT_UNEMPLOYMENT_ALGORITHM, 
+         'PercentUnemploymentAlgorithm',
          'Percent Unemployment Algorithm'),
-        (PERCENT_SINGLE_PARENT_ALGORITHM, 'PercentSingleParentAlgorithm',
+        (PERCENT_SINGLE_PARENT_ALGORITHM,
+         'PercentSingleParentAlgorithm',
          'Percent Single Parent Algorithm'),
         (PERCENT_INCOME_HOUSING_COST_ALGORITHM,
          'PercentIncomeHousingCostAlgorithm',
@@ -122,6 +134,24 @@ class ScoreMetric(models.Model):
         (FITNESS_CENTERS_PER_CAPITA_ALGORITHM,
          'FitnessCentersPerCapitaAlgorithm',
          'Fitness Centers Per Capita Algorithm'),
+        (FAST_FOOD_PER_THOUSAND_ALGORITHM,
+         'FastFoodPerThousandAlgorithm',
+         'Fast Food Per Thousand Algorithm'),
+        (FULL_REST_PER_THOUSAND_ALGORITHM,
+         'FullRestPerThousandAlgorithm',
+         'Full Rest Per Thousand Algorithm'),
+        (FARMERS_MARKETS_PER_THOUSAND_ALGORITHM,
+         'FarmersMarketsPerThousandAlgorithm',
+         'Farmers Markets Per Thousand Algorithm'),
+        (PERCENT_LOW_ACCESS_TO_GROCERIES_ALGORITHM,
+         'PercentLowAccessToGroceriesAlgorithm',
+         'Percent Low Access To Groceries Algorithm'),
+        (GROCERY_STORES_PER_THOUSAND_ALGORITHM,
+         'GroceryStoresPerThousandAlgorithm',
+         'Grocery Stores Per Thousand Algorithm'),
+        (PERCENT_FREE_LUNCH_ALGORITHM,
+         'PercentFreeLunchAlgorithm',
+         'Percent Free Lunch Algorithm'),
     )
     algorithm_class_name = dict([(a[0], a[1]) for a in algorithm_choices])
 

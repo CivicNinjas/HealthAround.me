@@ -299,9 +299,20 @@ class ErsAlgorithmTest(TestCase):
             simple_shape=shape,
             centroid="POINT (95.941481 36.121077)")
         self.location = (-95.99, 36.15)
-        Ers.objects.create(boundary=self.county, adult_obesity=30.2,
-            adult_diabetes = 10.3, childhood_obesity = None, 
-            rec_facilities_per_thousand = 0.1212)
+        Ers.objects.create(
+            boundary=self.county,
+            adult_obesity=30.2,
+            adult_diabetes = 10.3,
+            childhood_obesity = None, 
+            rec_facilities_per_thousand = 0.1212,
+            fast_food_rest_per_thousand = 0.8615,
+            full_rest_per_thousand = 0.7829,
+            farmers_markets_per_thousand = 0.0163,
+            percent_low_access_to_groceries = 25.5236,
+            grocery_stores_per_thousand = 0.1327,
+            percent_students_for_free_lunch = 48.1355,
+            percent_students_for_reduced_lunch = 8.4127, 
+            )
         self.cache = AlgorithmCache()
 
     def adult_obesity_node(self):
@@ -397,7 +408,6 @@ class ErsAlgorithmTest(TestCase):
             )
         return ScoreNode(slug='fitness-centers', metric=metric)
 
-
     def assertFitnessCentersPerCapitaResults(self, score):
         expected = {
             u"summary": {
@@ -430,6 +440,261 @@ class ErsAlgorithmTest(TestCase):
         node = self.adult_fitness_center_node()
         score = node.score_by_location(self.location, self.cache)
         self.assertFitnessCentersPerCapitaResults(score)
+
+    def fast_food_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Fast Food Restaurants Per Thousand",
+            algorithm=ScoreMetric.FAST_FOOD_PER_THOUSAND_ALGORITHM,
+            description=(
+                "Fast Food Restaurants per Thousand Population")
+            )
+        return ScoreNode(slug='fast-food', metric=metric)
+
+    def assertFastFoodPerThousandResults(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.059,
+                u"value": 0.862,
+                u"average": 0.4844545,
+                u"std_dev": 0.2416161,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Fast Food Restaurants per Thousand Population"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/tulsa-county/fast-food/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/tulsa-county/",
+                u"label": u"Tulsa County",
+                u"type": u"County",
+                u"external_id": u'40143',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_fast_food_by_boundary(self):
+        node = self.fast_food_node()
+        score = node.score_by_boundary(self.county, self.cache)
+        self.assertFastFoodPerThousandResults(score)
+
+    def test_fast_food_by_location(self):
+        node = self.fast_food_node()
+        score = node.score_by_location(self.location, self.cache)
+        self.assertFastFoodPerThousandResults(score)
+
+    def full_rest_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Full Service Restaurants Per Thousand",
+            algorithm=ScoreMetric.FULL_REST_PER_THOUSAND_ALGORITHM,
+            description=(
+                "Full Service Restaurants per Thousand Population")
+            )
+        return ScoreNode(slug='full-rest', metric=metric)
+
+    def assertFullRestPerThousandResults(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.274,
+                u"value": 0.783,
+                u"average": 0.6372740,
+                u"std_dev": 0.2420894,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Full Service Restaurants per Thousand Population"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/tulsa-county/full-rest/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/tulsa-county/",
+                u"label": u"Tulsa County",
+                u"type": u"County",
+                u"external_id": u'40143',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_full_rest_by_boundary(self):
+        node = self.full_rest_node()
+        score = node.score_by_boundary(self.county, self.cache)
+        self.assertFullRestPerThousandResults(score)
+
+    def test_full_rest_by_location(self):
+        node = self.full_rest_node()
+        score = node.score_by_location(self.location, self.cache)
+        self.assertFullRestPerThousandResults(score)
+
+    def farmers_markets_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Farmers' Markets per Thousand Population",
+            algorithm=ScoreMetric.FARMERS_MARKETS_PER_THOUSAND_ALGORITHM,
+            description=(
+                "Farmers' Markets per Thousand Population")
+            )
+        return ScoreNode(slug='farmers-markets', metric=metric)
+
+    def assertFarmersMarketsPerThousandResults(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.417,
+                u"value": 0.016,
+                u"average": 0.0248259,
+                u"std_dev": 0.0409239,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Farmers' Markets per Thousand Population"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/tulsa-county/farmers-markets/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/tulsa-county/",
+                u"label": u"Tulsa County",
+                u"type": u"County",
+                u"external_id": u'40143',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_farmers_markets_by_boundary(self):
+        node = self.farmers_markets_node()
+        score = node.score_by_boundary(self.county, self.cache)
+        self.assertFarmersMarketsPerThousandResults(score)
+
+    def test_farmers_markets_by_location(self):
+        node = self.farmers_markets_node()
+        score = node.score_by_location(self.location, self.cache)
+        self.assertFarmersMarketsPerThousandResults(score)
+
+    def grocery_access_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent with Low Access to Groceries",
+            algorithm=ScoreMetric.PERCENT_LOW_ACCESS_TO_GROCERIES_ALGORITHM,
+            description=(
+                "Percent with Low Access to Groceries")
+            )
+        return ScoreNode(slug='low-grocery', metric=metric)
+
+    def assertPercentLowAccessToGroceriesResults(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.549,
+                u"value": 25.524,
+                u"average": 27.8403948,
+                u"std_dev": 18.7626943,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent with Low Access to Groceries"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/tulsa-county/low-grocery/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/tulsa-county/",
+                u"label": u"Tulsa County",
+                u"type": u"County",
+                u"external_id": u'40143',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_low_groceries_by_boundary(self):
+        node = self.grocery_access_node()
+        score = node.score_by_boundary(self.county, self.cache)
+        self.assertPercentLowAccessToGroceriesResults(score)
+
+    def test_low_groceries_by_location(self):
+        node = self.grocery_access_node()
+        score = node.score_by_location(self.location, self.cache)
+        self.assertPercentLowAccessToGroceriesResults(score)
+
+    def groceries_per_thousand_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Grocery Stores per Thousand Population",
+            algorithm=ScoreMetric.GROCERY_STORES_PER_THOUSAND_ALGORITHM,
+            description=(
+                "Grocery Stores per Thousand Population")
+            )
+        return ScoreNode(slug='groceries-per', metric=metric)
+
+    def assertGroceryStoresPerThousandResults(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.29,
+                u"value": 0.133,
+                u"average": 0.2111467,
+                u"std_dev": 0.1415997,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Grocery Stores per Thousand Population"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/tulsa-county/groceries-per/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/tulsa-county/",
+                u"label": u"Tulsa County",
+                u"type": u"County",
+                u"external_id": u'40143',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_groceries_per_thousand_by_boundary(self):
+        node = self.groceries_per_thousand_node()
+        score = node.score_by_boundary(self.county, self.cache)
+        self.assertGroceryStoresPerThousandResults(score)
+
+    def test_groceries_per_thousand_by_location(self):
+        node = self.groceries_per_thousand_node()
+        score = node.score_by_location(self.location, self.cache)
+        self.assertGroceryStoresPerThousandResults(score)
+
+    def percent_free_lunch_node(self):
+        metric = ScoreMetric.objects.create(
+            name="Percent of Students Qualifying for a Free Lunch",
+            algorithm=ScoreMetric.PERCENT_FREE_LUNCH_ALGORITHM,
+            description=(
+                "Percent of Students Qualifying for a Free Lunch")
+            )
+        return ScoreNode(slug='free-lunch', metric=metric)
+
+    def assertPercentFreeLunchResults(self, score):
+        expected = {
+            u"summary": {
+                u"score": 0.715,
+                u"value": 48.136,
+                u"average": 53.579519,
+                u"std_dev": 9.5828258,
+                u"value_type": u"percent",
+                u"description": (
+                    u"Percent of Students Qualifying for a Free Lunch"),
+            },
+            u'detail': {
+                u"path": u"/api/detail/tulsa-county/free-lunch/",
+            },
+            u"boundary": {
+                u"path": u"/api/boundary/tulsa-county/",
+                u"label": u"Tulsa County",
+                u"type": u"County",
+                u"external_id": u'40143',
+            }
+        }
+        self.assertScoreEqual(expected, score)
+
+    def test_percent_free_lunch_by_boundary(self):
+        node = self.percent_free_lunch_node()
+        score = node.score_by_boundary(self.county, self.cache)
+        self.assertPercentFreeLunchResults(score)
+
+    def test_percent_free_lunch_by_location(self):
+        node = self.percent_free_lunch_node()
+        score = node.score_by_location(self.location, self.cache)
+        self.assertPercentFreeLunchResults(score)
+
+
+
 
 
 class CensusPercentAlgorithmTest(TestCase):
