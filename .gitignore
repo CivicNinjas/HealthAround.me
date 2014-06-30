@@ -14,3 +14,7 @@ data/census/cache/*
 # Server and deployment folders
 src/*
 static/*
+
+# Test files
+.coverage
+htmlcov
