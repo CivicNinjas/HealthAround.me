@@ -1,0 +1,10037 @@
+{
+ "displayFieldName": "FIPSTXT",
+ "fieldAliases": {
+  "OBJECTID": "OBJECTID",
+  "OBJECTID_1": "OBJECTID",
+  "FIPSNUM": "FIPSNUM",
+  "State": "State",
+  "County": "County",
+  "PCT_LACCESS_POP10": "Population, low access to store (%), 2010"
+ },
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "OBJECTID_1",
+   "type": "esriFieldTypeInteger",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "FIPSNUM",
+   "type": "esriFieldTypeInteger",
+   "alias": "FIPSNUM"
+  },
+  {
+   "name": "State",
+   "type": "esriFieldTypeString",
+   "alias": "State",
+   "length": 2
+  },
+  {
+   "name": "County",
+   "type": "esriFieldTypeString",
+   "alias": "County",
+   "length": 50
+  },
+  {
+   "name": "PCT_LACCESS_POP10",
+   "type": "esriFieldTypeDouble",
+   "alias": "Population, low access to store (%), 2010"
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "OBJECTID": 2002,
+    "OBJECTID_1": 1870,
+    "FIPSNUM": 36065,
+    "State": "NY",
+    "County": "Oneida",
+    "PCT_LACCESS_POP10": 19.6128402036544
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2003,
+    "OBJECTID_1": 1871,
+    "FIPSNUM": 36067,
+    "State": "NY",
+    "County": "Onondaga",
+    "PCT_LACCESS_POP10": 26.168768798785301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2004,
+    "OBJECTID_1": 1872,
+    "FIPSNUM": 36069,
+    "State": "NY",
+    "County": "Ontario",
+    "PCT_LACCESS_POP10": 13.833693368925301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2005,
+    "OBJECTID_1": 1873,
+    "FIPSNUM": 36071,
+    "State": "NY",
+    "County": "Orange",
+    "PCT_LACCESS_POP10": 27.6642012550261
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2006,
+    "OBJECTID_1": 1874,
+    "FIPSNUM": 36073,
+    "State": "NY",
+    "County": "Orleans",
+    "PCT_LACCESS_POP10": 16.233640075918
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2007,
+    "OBJECTID_1": 1875,
+    "FIPSNUM": 36075,
+    "State": "NY",
+    "County": "Oswego",
+    "PCT_LACCESS_POP10": 7.9790128314071298
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2008,
+    "OBJECTID_1": 1876,
+    "FIPSNUM": 36077,
+    "State": "NY",
+    "County": "Otsego",
+    "PCT_LACCESS_POP10": 20.457689364882899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2009,
+    "OBJECTID_1": 1877,
+    "FIPSNUM": 36079,
+    "State": "NY",
+    "County": "Putnam",
+    "PCT_LACCESS_POP10": 39.222299324631202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2010,
+    "OBJECTID_1": 1878,
+    "FIPSNUM": 36081,
+    "State": "NY",
+    "County": "Queens",
+    "PCT_LACCESS_POP10": 0.33401809881669797
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2011,
+    "OBJECTID_1": 1879,
+    "FIPSNUM": 36083,
+    "State": "NY",
+    "County": "Rensselaer",
+    "PCT_LACCESS_POP10": 23.470406914606102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2012,
+    "OBJECTID_1": 1880,
+    "FIPSNUM": 36085,
+    "State": "NY",
+    "County": "Richmond",
+    "PCT_LACCESS_POP10": 4.8937060580779406
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2013,
+    "OBJECTID_1": 1881,
+    "FIPSNUM": 36087,
+    "State": "NY",
+    "County": "Rockland",
+    "PCT_LACCESS_POP10": 29.7424604205147
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2014,
+    "OBJECTID_1": 1882,
+    "FIPSNUM": 36089,
+    "State": "NY",
+    "County": "St. Lawrence",
+    "PCT_LACCESS_POP10": 14.277372642894001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2015,
+    "OBJECTID_1": 1883,
+    "FIPSNUM": 36091,
+    "State": "NY",
+    "County": "Saratoga",
+    "PCT_LACCESS_POP10": 29.484508938448702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2016,
+    "OBJECTID_1": 1884,
+    "FIPSNUM": 36093,
+    "State": "NY",
+    "County": "Schenectady",
+    "PCT_LACCESS_POP10": 35.954905582778402
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2017,
+    "OBJECTID_1": 1885,
+    "FIPSNUM": 36095,
+    "State": "NY",
+    "County": "Schoharie",
+    "PCT_LACCESS_POP10": 12.011396606662601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2018,
+    "OBJECTID_1": 1886,
+    "FIPSNUM": 36097,
+    "State": "NY",
+    "County": "Schuyler",
+    "PCT_LACCESS_POP10": 6.6596026927134595
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2019,
+    "OBJECTID_1": 1887,
+    "FIPSNUM": 36099,
+    "State": "NY",
+    "County": "Seneca",
+    "PCT_LACCESS_POP10": 4.6499928988402299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2020,
+    "OBJECTID_1": 1888,
+    "FIPSNUM": 36101,
+    "State": "NY",
+    "County": "Steuben",
+    "PCT_LACCESS_POP10": 11.4651907075651
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2021,
+    "OBJECTID_1": 1889,
+    "FIPSNUM": 36103,
+    "State": "NY",
+    "County": "Suffolk",
+    "PCT_LACCESS_POP10": 30.371160449870299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2022,
+    "OBJECTID_1": 1890,
+    "FIPSNUM": 36105,
+    "State": "NY",
+    "County": "Sullivan",
+    "PCT_LACCESS_POP10": 13.9764000523832
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2023,
+    "OBJECTID_1": 1891,
+    "FIPSNUM": 36107,
+    "State": "NY",
+    "County": "Tioga",
+    "PCT_LACCESS_POP10": 14.800341124344801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2024,
+    "OBJECTID_1": 1892,
+    "FIPSNUM": 36109,
+    "State": "NY",
+    "County": "Tompkins",
+    "PCT_LACCESS_POP10": 17.5956499574669
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2025,
+    "OBJECTID_1": 1893,
+    "FIPSNUM": 36111,
+    "State": "NY",
+    "County": "Ulster",
+    "PCT_LACCESS_POP10": 25.642976237750997
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2026,
+    "OBJECTID_1": 1894,
+    "FIPSNUM": 36113,
+    "State": "NY",
+    "County": "Warren",
+    "PCT_LACCESS_POP10": 17.264973566216497
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2027,
+    "OBJECTID_1": 1895,
+    "FIPSNUM": 36115,
+    "State": "NY",
+    "County": "Washington",
+    "PCT_LACCESS_POP10": 12.1673571590675
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2028,
+    "OBJECTID_1": 1896,
+    "FIPSNUM": 36117,
+    "State": "NY",
+    "County": "Wayne",
+    "PCT_LACCESS_POP10": 14.714225559027399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2029,
+    "OBJECTID_1": 1897,
+    "FIPSNUM": 36119,
+    "State": "NY",
+    "County": "Westchester",
+    "PCT_LACCESS_POP10": 14.964507179297801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2030,
+    "OBJECTID_1": 1898,
+    "FIPSNUM": 36121,
+    "State": "NY",
+    "County": "Wyoming",
+    "PCT_LACCESS_POP10": 18.719517166437701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2031,
+    "OBJECTID_1": 1899,
+    "FIPSNUM": 36123,
+    "State": "NY",
+    "County": "Yates",
+    "PCT_LACCESS_POP10": 2.2377800555871596
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2032,
+    "OBJECTID_1": 1900,
+    "FIPSNUM": 37001,
+    "State": "NC",
+    "County": "Alamance",
+    "PCT_LACCESS_POP10": 26.991467265557301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2033,
+    "OBJECTID_1": 1901,
+    "FIPSNUM": 37003,
+    "State": "NC",
+    "County": "Alexander",
+    "PCT_LACCESS_POP10": 6.4943262197439902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2034,
+    "OBJECTID_1": 1902,
+    "FIPSNUM": 37005,
+    "State": "NC",
+    "County": "Alleghany",
+    "PCT_LACCESS_POP10": 3.6104323756004897
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2035,
+    "OBJECTID_1": 1903,
+    "FIPSNUM": 37007,
+    "State": "NC",
+    "County": "Anson",
+    "PCT_LACCESS_POP10": 5.7571130648256004
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2036,
+    "OBJECTID_1": 1904,
+    "FIPSNUM": 37009,
+    "State": "NC",
+    "County": "Ashe",
+    "PCT_LACCESS_POP10": 5.0629433666978505
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2037,
+    "OBJECTID_1": 1905,
+    "FIPSNUM": 37011,
+    "State": "NC",
+    "County": "Avery",
+    "PCT_LACCESS_POP10": 0
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2038,
+    "OBJECTID_1": 1906,
+    "FIPSNUM": 37013,
+    "State": "NC",
+    "County": "Beaufort",
+    "PCT_LACCESS_POP10": 14.655193183060099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2039,
+    "OBJECTID_1": 1907,
+    "FIPSNUM": 37015,
+    "State": "NC",
+    "County": "Bertie",
+    "PCT_LACCESS_POP10": 8.8156258435333203
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2040,
+    "OBJECTID_1": 1908,
+    "FIPSNUM": 37017,
+    "State": "NC",
+    "County": "Bladen",
+    "PCT_LACCESS_POP10": 6.4218879537758902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2041,
+    "OBJECTID_1": 1909,
+    "FIPSNUM": 37019,
+    "State": "NC",
+    "County": "Brunswick",
+    "PCT_LACCESS_POP10": 15.679895978503101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2042,
+    "OBJECTID_1": 1910,
+    "FIPSNUM": 37021,
+    "State": "NC",
+    "County": "Buncombe",
+    "PCT_LACCESS_POP10": 24.796211090366899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2043,
+    "OBJECTID_1": 1911,
+    "FIPSNUM": 37023,
+    "State": "NC",
+    "County": "Burke",
+    "PCT_LACCESS_POP10": 27.706670781295902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2044,
+    "OBJECTID_1": 1912,
+    "FIPSNUM": 37025,
+    "State": "NC",
+    "County": "Cabarrus",
+    "PCT_LACCESS_POP10": 22.3508233662211
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2045,
+    "OBJECTID_1": 1913,
+    "FIPSNUM": 37027,
+    "State": "NC",
+    "County": "Caldwell",
+    "PCT_LACCESS_POP10": 35.324564806620202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2046,
+    "OBJECTID_1": 1914,
+    "FIPSNUM": 37029,
+    "State": "NC",
+    "County": "Camden",
+    "PCT_LACCESS_POP10": 3.7478083866290999
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2047,
+    "OBJECTID_1": 1915,
+    "FIPSNUM": 37031,
+    "State": "NC",
+    "County": "Carteret",
+    "PCT_LACCESS_POP10": 24.6089409222105
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2048,
+    "OBJECTID_1": 1916,
+    "FIPSNUM": 37033,
+    "State": "NC",
+    "County": "Caswell",
+    "PCT_LACCESS_POP10": 10.5957369033594
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2049,
+    "OBJECTID_1": 1917,
+    "FIPSNUM": 37035,
+    "State": "NC",
+    "County": "Catawba",
+    "PCT_LACCESS_POP10": 26.124981271881097
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2050,
+    "OBJECTID_1": 1918,
+    "FIPSNUM": 37037,
+    "State": "NC",
+    "County": "Chatham",
+    "PCT_LACCESS_POP10": 7.89529790972672
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2051,
+    "OBJECTID_1": 1919,
+    "FIPSNUM": 37039,
+    "State": "NC",
+    "County": "Cherokee",
+    "PCT_LACCESS_POP10": 0.42883155255031896
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2052,
+    "OBJECTID_1": 1920,
+    "FIPSNUM": 37041,
+    "State": "NC",
+    "County": "Chowan",
+    "PCT_LACCESS_POP10": 21.438298422753498
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2053,
+    "OBJECTID_1": 1921,
+    "FIPSNUM": 37043,
+    "State": "NC",
+    "County": "Clay",
+    "PCT_LACCESS_POP10": 3.7181281489466
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2054,
+    "OBJECTID_1": 1922,
+    "FIPSNUM": 37045,
+    "State": "NC",
+    "County": "Cleveland",
+    "PCT_LACCESS_POP10": 12.976242355867202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2055,
+    "OBJECTID_1": 1923,
+    "FIPSNUM": 37047,
+    "State": "NC",
+    "County": "Columbus",
+    "PCT_LACCESS_POP10": 2.7893646737763698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2056,
+    "OBJECTID_1": 1924,
+    "FIPSNUM": 37049,
+    "State": "NC",
+    "County": "Craven",
+    "PCT_LACCESS_POP10": 22.801888495203901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2057,
+    "OBJECTID_1": 1925,
+    "FIPSNUM": 37051,
+    "State": "NC",
+    "County": "Cumberland",
+    "PCT_LACCESS_POP10": 30.225624676290703
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2058,
+    "OBJECTID_1": 1926,
+    "FIPSNUM": 37053,
+    "State": "NC",
+    "County": "Currituck",
+    "PCT_LACCESS_POP10": 13.1031413066135
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2059,
+    "OBJECTID_1": 1927,
+    "FIPSNUM": 37055,
+    "State": "NC",
+    "County": "Dare",
+    "PCT_LACCESS_POP10": 37.623216998150397
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2060,
+    "OBJECTID_1": 1928,
+    "FIPSNUM": 37057,
+    "State": "NC",
+    "County": "Davidson",
+    "PCT_LACCESS_POP10": 17.301148322569301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2061,
+    "OBJECTID_1": 1929,
+    "FIPSNUM": 37059,
+    "State": "NC",
+    "County": "Davie",
+    "PCT_LACCESS_POP10": 11.028393840420799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2062,
+    "OBJECTID_1": 1930,
+    "FIPSNUM": 37061,
+    "State": "NC",
+    "County": "Duplin",
+    "PCT_LACCESS_POP10": 1.6856313543181602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2063,
+    "OBJECTID_1": 1931,
+    "FIPSNUM": 37063,
+    "State": "NC",
+    "County": "Durham",
+    "PCT_LACCESS_POP10": 26.969196573867499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2064,
+    "OBJECTID_1": 1932,
+    "FIPSNUM": 37065,
+    "State": "NC",
+    "County": "Edgecombe",
+    "PCT_LACCESS_POP10": 16.151481970759399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2065,
+    "OBJECTID_1": 1933,
+    "FIPSNUM": 37067,
+    "State": "NC",
+    "County": "Forsyth",
+    "PCT_LACCESS_POP10": 38.947950660117201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2066,
+    "OBJECTID_1": 1934,
+    "FIPSNUM": 37069,
+    "State": "NC",
+    "County": "Franklin",
+    "PCT_LACCESS_POP10": 4.7316688218629901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2067,
+    "OBJECTID_1": 1935,
+    "FIPSNUM": 37071,
+    "State": "NC",
+    "County": "Gaston",
+    "PCT_LACCESS_POP10": 28.310236037763399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2068,
+    "OBJECTID_1": 1936,
+    "FIPSNUM": 37073,
+    "State": "NC",
+    "County": "Gates",
+    "PCT_LACCESS_POP10": 0.039059205422849998
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2069,
+    "OBJECTID_1": 1937,
+    "FIPSNUM": 37075,
+    "State": "NC",
+    "County": "Graham",
+    "PCT_LACCESS_POP10": 2.8380665593106902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2070,
+    "OBJECTID_1": 1938,
+    "FIPSNUM": 37077,
+    "State": "NC",
+    "County": "Granville",
+    "PCT_LACCESS_POP10": 14.438960354470302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2071,
+    "OBJECTID_1": 1939,
+    "FIPSNUM": 37079,
+    "State": "NC",
+    "County": "Greene",
+    "PCT_LACCESS_POP10": 0
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2072,
+    "OBJECTID_1": 1940,
+    "FIPSNUM": 37081,
+    "State": "NC",
+    "County": "Guilford",
+    "PCT_LACCESS_POP10": 21.017281055172397
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2073,
+    "OBJECTID_1": 1941,
+    "FIPSNUM": 37083,
+    "State": "NC",
+    "County": "Halifax",
+    "PCT_LACCESS_POP10": 17.448632935246899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2074,
+    "OBJECTID_1": 1942,
+    "FIPSNUM": 37085,
+    "State": "NC",
+    "County": "Harnett",
+    "PCT_LACCESS_POP10": 8.9457689882947911
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2075,
+    "OBJECTID_1": 1943,
+    "FIPSNUM": 37087,
+    "State": "NC",
+    "County": "Haywood",
+    "PCT_LACCESS_POP10": 20.3715727082607
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2076,
+    "OBJECTID_1": 1944,
+    "FIPSNUM": 37089,
+    "State": "NC",
+    "County": "Henderson",
+    "PCT_LACCESS_POP10": 20.945732144631197
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2077,
+    "OBJECTID_1": 1945,
+    "FIPSNUM": 37091,
+    "State": "NC",
+    "County": "Hertford",
+    "PCT_LACCESS_POP10": 11.433555774253399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2078,
+    "OBJECTID_1": 1946,
+    "FIPSNUM": 37093,
+    "State": "NC",
+    "County": "Hoke",
+    "PCT_LACCESS_POP10": 22.588297331319097
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2079,
+    "OBJECTID_1": 1947,
+    "FIPSNUM": 37095,
+    "State": "NC",
+    "County": "Hyde",
+    "PCT_LACCESS_POP10": 59.201500543158403
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2080,
+    "OBJECTID_1": 1948,
+    "FIPSNUM": 37097,
+    "State": "NC",
+    "County": "Iredell",
+    "PCT_LACCESS_POP10": 15.7150155711547
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2081,
+    "OBJECTID_1": 1949,
+    "FIPSNUM": 37099,
+    "State": "NC",
+    "County": "Jackson",
+    "PCT_LACCESS_POP10": 17.1767369522967
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2082,
+    "OBJECTID_1": 1950,
+    "FIPSNUM": 37101,
+    "State": "NC",
+    "County": "Johnston",
+    "PCT_LACCESS_POP10": 4.9914686107801201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2083,
+    "OBJECTID_1": 1951,
+    "FIPSNUM": 37103,
+    "State": "NC",
+    "County": "Jones",
+    "PCT_LACCESS_POP10": 0.0030807405930369505
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2084,
+    "OBJECTID_1": 1952,
+    "FIPSNUM": 37105,
+    "State": "NC",
+    "County": "Lee",
+    "PCT_LACCESS_POP10": 21.5369010028795
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2085,
+    "OBJECTID_1": 1953,
+    "FIPSNUM": 37107,
+    "State": "NC",
+    "County": "Lenoir",
+    "PCT_LACCESS_POP10": 12.2968325841638
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2086,
+    "OBJECTID_1": 1954,
+    "FIPSNUM": 37109,
+    "State": "NC",
+    "County": "Lincoln",
+    "PCT_LACCESS_POP10": 16.467666410739803
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2087,
+    "OBJECTID_1": 1955,
+    "FIPSNUM": 37111,
+    "State": "NC",
+    "County": "McDowell",
+    "PCT_LACCESS_POP10": 7.75188345816923
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2088,
+    "OBJECTID_1": 1956,
+    "FIPSNUM": 37113,
+    "State": "NC",
+    "County": "Macon",
+    "PCT_LACCESS_POP10": 6.4556662819300792
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2089,
+    "OBJECTID_1": 1957,
+    "FIPSNUM": 37115,
+    "State": "NC",
+    "County": "Madison",
+    "PCT_LACCESS_POP10": 9.9684571181935198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2090,
+    "OBJECTID_1": 1958,
+    "FIPSNUM": 37117,
+    "State": "NC",
+    "County": "Martin",
+    "PCT_LACCESS_POP10": 2.2364890868000802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2091,
+    "OBJECTID_1": 1959,
+    "FIPSNUM": 37119,
+    "State": "NC",
+    "County": "Mecklenburg",
+    "PCT_LACCESS_POP10": 22.4419436562073
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2092,
+    "OBJECTID_1": 1960,
+    "FIPSNUM": 37121,
+    "State": "NC",
+    "County": "Mitchell",
+    "PCT_LACCESS_POP10": 5.5338162201816994
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2093,
+    "OBJECTID_1": 1961,
+    "FIPSNUM": 37123,
+    "State": "NC",
+    "County": "Montgomery",
+    "PCT_LACCESS_POP10": 0.83046864855138292
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2094,
+    "OBJECTID_1": 1962,
+    "FIPSNUM": 37125,
+    "State": "NC",
+    "County": "Moore",
+    "PCT_LACCESS_POP10": 25.361115137397601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2095,
+    "OBJECTID_1": 1963,
+    "FIPSNUM": 37127,
+    "State": "NC",
+    "County": "Nash",
+    "PCT_LACCESS_POP10": 13.183550891503701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2096,
+    "OBJECTID_1": 1964,
+    "FIPSNUM": 37129,
+    "State": "NC",
+    "County": "New Hanover",
+    "PCT_LACCESS_POP10": 31.976328556134696
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2097,
+    "OBJECTID_1": 1965,
+    "FIPSNUM": 37131,
+    "State": "NC",
+    "County": "Northampton",
+    "PCT_LACCESS_POP10": 4.4800432229757403
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2098,
+    "OBJECTID_1": 1966,
+    "FIPSNUM": 37133,
+    "State": "NC",
+    "County": "Onslow",
+    "PCT_LACCESS_POP10": 32.288580876748199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2099,
+    "OBJECTID_1": 1967,
+    "FIPSNUM": 37135,
+    "State": "NC",
+    "County": "Orange",
+    "PCT_LACCESS_POP10": 23.2868483732484
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2100,
+    "OBJECTID_1": 1968,
+    "FIPSNUM": 37137,
+    "State": "NC",
+    "County": "Pamlico",
+    "PCT_LACCESS_POP10": 4.9571398196210401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2101,
+    "OBJECTID_1": 1969,
+    "FIPSNUM": 37139,
+    "State": "NC",
+    "County": "Pasquotank",
+    "PCT_LACCESS_POP10": 17.7661164035719
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2102,
+    "OBJECTID_1": 1970,
+    "FIPSNUM": 37141,
+    "State": "NC",
+    "County": "Pender",
+    "PCT_LACCESS_POP10": 6.8687401928830107
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2103,
+    "OBJECTID_1": 1971,
+    "FIPSNUM": 37143,
+    "State": "NC",
+    "County": "Perquimans",
+    "PCT_LACCESS_POP10": 2.7844666841364001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2104,
+    "OBJECTID_1": 1972,
+    "FIPSNUM": 37145,
+    "State": "NC",
+    "County": "Person",
+    "PCT_LACCESS_POP10": 7.5391584034434995
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2105,
+    "OBJECTID_1": 1973,
+    "FIPSNUM": 37147,
+    "State": "NC",
+    "County": "Pitt",
+    "PCT_LACCESS_POP10": 8.6490184887049804
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2106,
+    "OBJECTID_1": 1974,
+    "FIPSNUM": 37149,
+    "State": "NC",
+    "County": "Polk",
+    "PCT_LACCESS_POP10": 0.35316971732328001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2107,
+    "OBJECTID_1": 1975,
+    "FIPSNUM": 37151,
+    "State": "NC",
+    "County": "Randolph",
+    "PCT_LACCESS_POP10": 17.231291559142999
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2108,
+    "OBJECTID_1": 1976,
+    "FIPSNUM": 37153,
+    "State": "NC",
+    "County": "Richmond",
+    "PCT_LACCESS_POP10": 12.060202083655399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2109,
+    "OBJECTID_1": 1977,
+    "FIPSNUM": 37155,
+    "State": "NC",
+    "County": "Robeson",
+    "PCT_LACCESS_POP10": 9.6575339031794485
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2110,
+    "OBJECTID_1": 1978,
+    "FIPSNUM": 37157,
+    "State": "NC",
+    "County": "Rockingham",
+    "PCT_LACCESS_POP10": 22.170086411490701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2111,
+    "OBJECTID_1": 1979,
+    "FIPSNUM": 37159,
+    "State": "NC",
+    "County": "Rowan",
+    "PCT_LACCESS_POP10": 23.649227694396298
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2112,
+    "OBJECTID_1": 1980,
+    "FIPSNUM": 37161,
+    "State": "NC",
+    "County": "Rutherford",
+    "PCT_LACCESS_POP10": 22.664881644461097
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2113,
+    "OBJECTID_1": 1981,
+    "FIPSNUM": 37163,
+    "State": "NC",
+    "County": "Sampson",
+    "PCT_LACCESS_POP10": 4.5960419347283699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2114,
+    "OBJECTID_1": 1982,
+    "FIPSNUM": 37165,
+    "State": "NC",
+    "County": "Scotland",
+    "PCT_LACCESS_POP10": 16.4352770342893
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2115,
+    "OBJECTID_1": 1983,
+    "FIPSNUM": 37167,
+    "State": "NC",
+    "County": "Stanly",
+    "PCT_LACCESS_POP10": 7.2767141561020292
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2116,
+    "OBJECTID_1": 1984,
+    "FIPSNUM": 37169,
+    "State": "NC",
+    "County": "Stokes",
+    "PCT_LACCESS_POP10": 17.2129572804328
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2117,
+    "OBJECTID_1": 1985,
+    "FIPSNUM": 37171,
+    "State": "NC",
+    "County": "Surry",
+    "PCT_LACCESS_POP10": 9.0432951396991292
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2118,
+    "OBJECTID_1": 1986,
+    "FIPSNUM": 37173,
+    "State": "NC",
+    "County": "Swain",
+    "PCT_LACCESS_POP10": 4.3290858720259795
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2119,
+    "OBJECTID_1": 1987,
+    "FIPSNUM": 37175,
+    "State": "NC",
+    "County": "Transylvania",
+    "PCT_LACCESS_POP10": 9.3938737384672208
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2120,
+    "OBJECTID_1": 1988,
+    "FIPSNUM": 37177,
+    "State": "NC",
+    "County": "Tyrrell",
+    "PCT_LACCESS_POP10": 11.4918699729994
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2121,
+    "OBJECTID_1": 1989,
+    "FIPSNUM": 37179,
+    "State": "NC",
+    "County": "Union",
+    "PCT_LACCESS_POP10": 15.9940155803544
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2122,
+    "OBJECTID_1": 1990,
+    "FIPSNUM": 37181,
+    "State": "NC",
+    "County": "Vance",
+    "PCT_LACCESS_POP10": 9.9973925400349195
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2123,
+    "OBJECTID_1": 1991,
+    "FIPSNUM": 37183,
+    "State": "NC",
+    "County": "Wake",
+    "PCT_LACCESS_POP10": 19.2303950392815
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2124,
+    "OBJECTID_1": 1992,
+    "FIPSNUM": 37185,
+    "State": "NC",
+    "County": "Warren",
+    "PCT_LACCESS_POP10": 7.6188985373041405
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2125,
+    "OBJECTID_1": 1993,
+    "FIPSNUM": 37187,
+    "State": "NC",
+    "County": "Washington",
+    "PCT_LACCESS_POP10": 23.0022599847542
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2126,
+    "OBJECTID_1": 1994,
+    "FIPSNUM": 37189,
+    "State": "NC",
+    "County": "Watauga",
+    "PCT_LACCESS_POP10": 7.7315795318299791
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2127,
+    "OBJECTID_1": 1995,
+    "FIPSNUM": 37191,
+    "State": "NC",
+    "County": "Wayne",
+    "PCT_LACCESS_POP10": 20.419906583108599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2128,
+    "OBJECTID_1": 1996,
+    "FIPSNUM": 37193,
+    "State": "NC",
+    "County": "Wilkes",
+    "PCT_LACCESS_POP10": 12.090437229371801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2129,
+    "OBJECTID_1": 1997,
+    "FIPSNUM": 37195,
+    "State": "NC",
+    "County": "Wilson",
+    "PCT_LACCESS_POP10": 6.2747528236014096
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2130,
+    "OBJECTID_1": 1998,
+    "FIPSNUM": 37197,
+    "State": "NC",
+    "County": "Yadkin",
+    "PCT_LACCESS_POP10": 1.6626413076104198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2131,
+    "OBJECTID_1": 1999,
+    "FIPSNUM": 37199,
+    "State": "NC",
+    "County": "Yancey",
+    "PCT_LACCESS_POP10": 0.00053598639679779299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2132,
+    "OBJECTID_1": 2000,
+    "FIPSNUM": 38001,
+    "State": "ND",
+    "County": "Adams",
+    "PCT_LACCESS_POP10": 22.523866017113999
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2133,
+    "OBJECTID_1": 2001,
+    "FIPSNUM": 38003,
+    "State": "ND",
+    "County": "Barnes",
+    "PCT_LACCESS_POP10": 27.9985295703787
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2134,
+    "OBJECTID_1": 2002,
+    "FIPSNUM": 38005,
+    "State": "ND",
+    "County": "Benson",
+    "PCT_LACCESS_POP10": 45.851478948722303
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2135,
+    "OBJECTID_1": 2003,
+    "FIPSNUM": 38007,
+    "State": "ND",
+    "County": "Billings",
+    "PCT_LACCESS_POP10": 99.999999587170791
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2136,
+    "OBJECTID_1": 2004,
+    "FIPSNUM": 38009,
+    "State": "ND",
+    "County": "Bottineau",
+    "PCT_LACCESS_POP10": 46.533510282919501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2137,
+    "OBJECTID_1": 2005,
+    "FIPSNUM": 38011,
+    "State": "ND",
+    "County": "Bowman",
+    "PCT_LACCESS_POP10": 29.824635904860703
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2138,
+    "OBJECTID_1": 2006,
+    "FIPSNUM": 38013,
+    "State": "ND",
+    "County": "Burke",
+    "PCT_LACCESS_POP10": 99.999999617838995
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2139,
+    "OBJECTID_1": 2007,
+    "FIPSNUM": 38015,
+    "State": "ND",
+    "County": "Burleigh",
+    "PCT_LACCESS_POP10": 24.411995627086199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2140,
+    "OBJECTID_1": 2008,
+    "FIPSNUM": 38017,
+    "State": "ND",
+    "County": "Cass",
+    "PCT_LACCESS_POP10": 14.9585904977216
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2141,
+    "OBJECTID_1": 2009,
+    "FIPSNUM": 38019,
+    "State": "ND",
+    "County": "Cavalier",
+    "PCT_LACCESS_POP10": 36.4268508381383
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2142,
+    "OBJECTID_1": 2010,
+    "FIPSNUM": 38021,
+    "State": "ND",
+    "County": "Dickey",
+    "PCT_LACCESS_POP10": 52.760327467817802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2143,
+    "OBJECTID_1": 2011,
+    "FIPSNUM": 38023,
+    "State": "ND",
+    "County": "Divide",
+    "PCT_LACCESS_POP10": 33.030777422965201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2144,
+    "OBJECTID_1": 2012,
+    "FIPSNUM": 38025,
+    "State": "ND",
+    "County": "Dunn",
+    "PCT_LACCESS_POP10": 94.505976552802395
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2145,
+    "OBJECTID_1": 2013,
+    "FIPSNUM": 38027,
+    "State": "ND",
+    "County": "Eddy",
+    "PCT_LACCESS_POP10": 28.868088299905896
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2146,
+    "OBJECTID_1": 2014,
+    "FIPSNUM": 38029,
+    "State": "ND",
+    "County": "Emmons",
+    "PCT_LACCESS_POP10": 46.208012295002796
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2147,
+    "OBJECTID_1": 2015,
+    "FIPSNUM": 38031,
+    "State": "ND",
+    "County": "Foster",
+    "PCT_LACCESS_POP10": 18.325859483143901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2148,
+    "OBJECTID_1": 2016,
+    "FIPSNUM": 38033,
+    "State": "ND",
+    "County": "Golden Valley",
+    "PCT_LACCESS_POP10": 23.614748348183902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2149,
+    "OBJECTID_1": 2017,
+    "FIPSNUM": 38035,
+    "State": "ND",
+    "County": "Grand Forks",
+    "PCT_LACCESS_POP10": 29.9366239543684
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2150,
+    "OBJECTID_1": 2018,
+    "FIPSNUM": 38037,
+    "State": "ND",
+    "County": "Grant",
+    "PCT_LACCESS_POP10": 52.325103895675198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2151,
+    "OBJECTID_1": 2019,
+    "FIPSNUM": 38039,
+    "State": "ND",
+    "County": "Griggs",
+    "PCT_LACCESS_POP10": 32.823088705217302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2152,
+    "OBJECTID_1": 2020,
+    "FIPSNUM": 38041,
+    "State": "ND",
+    "County": "Hettinger",
+    "PCT_LACCESS_POP10": 99.979514871451499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2153,
+    "OBJECTID_1": 2021,
+    "FIPSNUM": 38043,
+    "State": "ND",
+    "County": "Kidder",
+    "PCT_LACCESS_POP10": 99.688708847637599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2154,
+    "OBJECTID_1": 2022,
+    "FIPSNUM": 38045,
+    "State": "ND",
+    "County": "LaMoure",
+    "PCT_LACCESS_POP10": 99.992890727768497
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2155,
+    "OBJECTID_1": 2023,
+    "FIPSNUM": 38047,
+    "State": "ND",
+    "County": "Logan",
+    "PCT_LACCESS_POP10": 95.832376873154701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2156,
+    "OBJECTID_1": 2024,
+    "FIPSNUM": 38049,
+    "State": "ND",
+    "County": "McHenry",
+    "PCT_LACCESS_POP10": 100.00000002555799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2157,
+    "OBJECTID_1": 2025,
+    "FIPSNUM": 38051,
+    "State": "ND",
+    "County": "McIntosh",
+    "PCT_LACCESS_POP10": 19.897862384489599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2158,
+    "OBJECTID_1": 2026,
+    "FIPSNUM": 38053,
+    "State": "ND",
+    "County": "McKenzie",
+    "PCT_LACCESS_POP10": 45.005087798079799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2159,
+    "OBJECTID_1": 2027,
+    "FIPSNUM": 38055,
+    "State": "ND",
+    "County": "McLean",
+    "PCT_LACCESS_POP10": 55.166331296825199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2160,
+    "OBJECTID_1": 2028,
+    "FIPSNUM": 38057,
+    "State": "ND",
+    "County": "Mercer",
+    "PCT_LACCESS_POP10": 18.289914624909702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2161,
+    "OBJECTID_1": 2029,
+    "FIPSNUM": 38059,
+    "State": "ND",
+    "County": "Morton",
+    "PCT_LACCESS_POP10": 30.7368657648462
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2162,
+    "OBJECTID_1": 2030,
+    "FIPSNUM": 38061,
+    "State": "ND",
+    "County": "Mountrail",
+    "PCT_LACCESS_POP10": 12.838589521578401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2163,
+    "OBJECTID_1": 2031,
+    "FIPSNUM": 38063,
+    "State": "ND",
+    "County": "Nelson",
+    "PCT_LACCESS_POP10": 99.999999790376208
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2164,
+    "OBJECTID_1": 2032,
+    "FIPSNUM": 38065,
+    "State": "ND",
+    "County": "Oliver",
+    "PCT_LACCESS_POP10": 82.112034818914807
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2165,
+    "OBJECTID_1": 2033,
+    "FIPSNUM": 38067,
+    "State": "ND",
+    "County": "Pembina",
+    "PCT_LACCESS_POP10": 46.023178862835799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2166,
+    "OBJECTID_1": 2034,
+    "FIPSNUM": 38069,
+    "State": "ND",
+    "County": "Pierce",
+    "PCT_LACCESS_POP10": 19.339432793118998
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2167,
+    "OBJECTID_1": 2035,
+    "FIPSNUM": 38071,
+    "State": "ND",
+    "County": "Ramsey",
+    "PCT_LACCESS_POP10": 22.023796854417
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2168,
+    "OBJECTID_1": 2036,
+    "FIPSNUM": 38073,
+    "State": "ND",
+    "County": "Ransom",
+    "PCT_LACCESS_POP10": 16.485738387991098
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2169,
+    "OBJECTID_1": 2037,
+    "FIPSNUM": 38075,
+    "State": "ND",
+    "County": "Renville",
+    "PCT_LACCESS_POP10": 76.271219674173892
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2170,
+    "OBJECTID_1": 2038,
+    "FIPSNUM": 38077,
+    "State": "ND",
+    "County": "Richland",
+    "PCT_LACCESS_POP10": 53.389464599310699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2171,
+    "OBJECTID_1": 2039,
+    "FIPSNUM": 38079,
+    "State": "ND",
+    "County": "Rolette",
+    "PCT_LACCESS_POP10": 7.1022571305274891
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2172,
+    "OBJECTID_1": 2040,
+    "FIPSNUM": 38081,
+    "State": "ND",
+    "County": "Sargent",
+    "PCT_LACCESS_POP10": 25.036902977697
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2173,
+    "OBJECTID_1": 2041,
+    "FIPSNUM": 38083,
+    "State": "ND",
+    "County": "Sheridan",
+    "PCT_LACCESS_POP10": 82.149780379795999
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2174,
+    "OBJECTID_1": 2042,
+    "FIPSNUM": 38085,
+    "State": "ND",
+    "County": "Sioux",
+    "PCT_LACCESS_POP10": 40.8293212460025
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2175,
+    "OBJECTID_1": 2043,
+    "FIPSNUM": 38087,
+    "State": "ND",
+    "County": "Slope",
+    "PCT_LACCESS_POP10": 95.237806495340109
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2176,
+    "OBJECTID_1": 2044,
+    "FIPSNUM": 38089,
+    "State": "ND",
+    "County": "Stark",
+    "PCT_LACCESS_POP10": 26.120506742002199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2177,
+    "OBJECTID_1": 2045,
+    "FIPSNUM": 38091,
+    "State": "ND",
+    "County": "Steele",
+    "PCT_LACCESS_POP10": 96.067552527124008
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2178,
+    "OBJECTID_1": 2046,
+    "FIPSNUM": 38093,
+    "State": "ND",
+    "County": "Stutsman",
+    "PCT_LACCESS_POP10": 32.957892854557805
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2179,
+    "OBJECTID_1": 2047,
+    "FIPSNUM": 38095,
+    "State": "ND",
+    "County": "Towner",
+    "PCT_LACCESS_POP10": 96.035470646445901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2180,
+    "OBJECTID_1": 2048,
+    "FIPSNUM": 38097,
+    "State": "ND",
+    "County": "Traill",
+    "PCT_LACCESS_POP10": 28.555564019755902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2181,
+    "OBJECTID_1": 2049,
+    "FIPSNUM": 38099,
+    "State": "ND",
+    "County": "Walsh",
+    "PCT_LACCESS_POP10": 18.437256048155202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2182,
+    "OBJECTID_1": 2050,
+    "FIPSNUM": 38101,
+    "State": "ND",
+    "County": "Ward",
+    "PCT_LACCESS_POP10": 40.170679551386904
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2183,
+    "OBJECTID_1": 2051,
+    "FIPSNUM": 38103,
+    "State": "ND",
+    "County": "Wells",
+    "PCT_LACCESS_POP10": 37.776763719441099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2184,
+    "OBJECTID_1": 2052,
+    "FIPSNUM": 38105,
+    "State": "ND",
+    "County": "Williams",
+    "PCT_LACCESS_POP10": 21.354749705876099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2185,
+    "OBJECTID_1": 2053,
+    "FIPSNUM": 39001,
+    "State": "OH",
+    "County": "Adams",
+    "PCT_LACCESS_POP10": 3.2788556270915397
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2186,
+    "OBJECTID_1": 2054,
+    "FIPSNUM": 39003,
+    "State": "OH",
+    "County": "Allen",
+    "PCT_LACCESS_POP10": 20.661753271799398
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2187,
+    "OBJECTID_1": 2055,
+    "FIPSNUM": 39005,
+    "State": "OH",
+    "County": "Ashland",
+    "PCT_LACCESS_POP10": 3.6671015602757997
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2188,
+    "OBJECTID_1": 2056,
+    "FIPSNUM": 39007,
+    "State": "OH",
+    "County": "Ashtabula",
+    "PCT_LACCESS_POP10": 16.691315538483302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2189,
+    "OBJECTID_1": 2057,
+    "FIPSNUM": 39009,
+    "State": "OH",
+    "County": "Athens",
+    "PCT_LACCESS_POP10": 24.185545011694202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2190,
+    "OBJECTID_1": 2058,
+    "FIPSNUM": 39011,
+    "State": "OH",
+    "County": "Auglaize",
+    "PCT_LACCESS_POP10": 4.4945695449543797
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2191,
+    "OBJECTID_1": 2059,
+    "FIPSNUM": 39013,
+    "State": "OH",
+    "County": "Belmont",
+    "PCT_LACCESS_POP10": 14.9317865646337
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2192,
+    "OBJECTID_1": 2060,
+    "FIPSNUM": 39015,
+    "State": "OH",
+    "County": "Brown",
+    "PCT_LACCESS_POP10": 9.9768375050583913
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2193,
+    "OBJECTID_1": 2061,
+    "FIPSNUM": 39017,
+    "State": "OH",
+    "County": "Butler",
+    "PCT_LACCESS_POP10": 30.517950956756103
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2194,
+    "OBJECTID_1": 2062,
+    "FIPSNUM": 39019,
+    "State": "OH",
+    "County": "Carroll",
+    "PCT_LACCESS_POP10": 5.8119383837959306
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2195,
+    "OBJECTID_1": 2063,
+    "FIPSNUM": 39021,
+    "State": "OH",
+    "County": "Champaign",
+    "PCT_LACCESS_POP10": 1.0186637314729601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2196,
+    "OBJECTID_1": 2064,
+    "FIPSNUM": 39023,
+    "State": "OH",
+    "County": "Clark",
+    "PCT_LACCESS_POP10": 19.255350332219301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2197,
+    "OBJECTID_1": 2065,
+    "FIPSNUM": 39025,
+    "State": "OH",
+    "County": "Clermont",
+    "PCT_LACCESS_POP10": 41.684093054358499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2198,
+    "OBJECTID_1": 2066,
+    "FIPSNUM": 39027,
+    "State": "OH",
+    "County": "Clinton",
+    "PCT_LACCESS_POP10": 9.6392630988007095
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2199,
+    "OBJECTID_1": 2067,
+    "FIPSNUM": 39029,
+    "State": "OH",
+    "County": "Columbiana",
+    "PCT_LACCESS_POP10": 19.2247747445371
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2200,
+    "OBJECTID_1": 2068,
+    "FIPSNUM": 39031,
+    "State": "OH",
+    "County": "Coshocton",
+    "PCT_LACCESS_POP10": 17.328738288553598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2201,
+    "OBJECTID_1": 2069,
+    "FIPSNUM": 39033,
+    "State": "OH",
+    "County": "Crawford",
+    "PCT_LACCESS_POP10": 5.6899740798721599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2202,
+    "OBJECTID_1": 2070,
+    "FIPSNUM": 39035,
+    "State": "OH",
+    "County": "Cuyahoga",
+    "PCT_LACCESS_POP10": 19.233334492663001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2203,
+    "OBJECTID_1": 2071,
+    "FIPSNUM": 39037,
+    "State": "OH",
+    "County": "Darke",
+    "PCT_LACCESS_POP10": 4.0325355624601693
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2204,
+    "OBJECTID_1": 2072,
+    "FIPSNUM": 39039,
+    "State": "OH",
+    "County": "Defiance",
+    "PCT_LACCESS_POP10": 16.035601748558602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2205,
+    "OBJECTID_1": 2073,
+    "FIPSNUM": 39041,
+    "State": "OH",
+    "County": "Delaware",
+    "PCT_LACCESS_POP10": 26.597901079577902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2206,
+    "OBJECTID_1": 2074,
+    "FIPSNUM": 39043,
+    "State": "OH",
+    "County": "Erie",
+    "PCT_LACCESS_POP10": 27.954847009270502
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2207,
+    "OBJECTID_1": 2075,
+    "FIPSNUM": 39045,
+    "State": "OH",
+    "County": "Fairfield",
+    "PCT_LACCESS_POP10": 24.5362977300823
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2208,
+    "OBJECTID_1": 2076,
+    "FIPSNUM": 39047,
+    "State": "OH",
+    "County": "Fayette",
+    "PCT_LACCESS_POP10": 4.22725400178411
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2209,
+    "OBJECTID_1": 2077,
+    "FIPSNUM": 39049,
+    "State": "OH",
+    "County": "Franklin",
+    "PCT_LACCESS_POP10": 23.692461024152699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2210,
+    "OBJECTID_1": 2078,
+    "FIPSNUM": 39051,
+    "State": "OH",
+    "County": "Fulton",
+    "PCT_LACCESS_POP10": 13.5120433188197
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2211,
+    "OBJECTID_1": 2079,
+    "FIPSNUM": 39053,
+    "State": "OH",
+    "County": "Gallia",
+    "PCT_LACCESS_POP10": 7.7672900816100094
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2212,
+    "OBJECTID_1": 2080,
+    "FIPSNUM": 39055,
+    "State": "OH",
+    "County": "Geauga",
+    "PCT_LACCESS_POP10": 18.353917270796799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2213,
+    "OBJECTID_1": 2081,
+    "FIPSNUM": 39057,
+    "State": "OH",
+    "County": "Greene",
+    "PCT_LACCESS_POP10": 33.201886729158097
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2214,
+    "OBJECTID_1": 2082,
+    "FIPSNUM": 39059,
+    "State": "OH",
+    "County": "Guernsey",
+    "PCT_LACCESS_POP10": 14.4635884664409
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2215,
+    "OBJECTID_1": 2083,
+    "FIPSNUM": 39061,
+    "State": "OH",
+    "County": "Hamilton",
+    "PCT_LACCESS_POP10": 27.279932904076798
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2216,
+    "OBJECTID_1": 2084,
+    "FIPSNUM": 39063,
+    "State": "OH",
+    "County": "Hancock",
+    "PCT_LACCESS_POP10": 16.0220446420382
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2217,
+    "OBJECTID_1": 2085,
+    "FIPSNUM": 39065,
+    "State": "OH",
+    "County": "Hardin",
+    "PCT_LACCESS_POP10": 5.5459781517317097
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2218,
+    "OBJECTID_1": 2086,
+    "FIPSNUM": 39067,
+    "State": "OH",
+    "County": "Harrison",
+    "PCT_LACCESS_POP10": 2.4045414726566099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2219,
+    "OBJECTID_1": 2087,
+    "FIPSNUM": 39069,
+    "State": "OH",
+    "County": "Henry",
+    "PCT_LACCESS_POP10": 14.470611458882802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2220,
+    "OBJECTID_1": 2088,
+    "FIPSNUM": 39071,
+    "State": "OH",
+    "County": "Highland",
+    "PCT_LACCESS_POP10": 4.3129174650962598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2221,
+    "OBJECTID_1": 2089,
+    "FIPSNUM": 39073,
+    "State": "OH",
+    "County": "Hocking",
+    "PCT_LACCESS_POP10": 17.3730723191794
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2222,
+    "OBJECTID_1": 2090,
+    "FIPSNUM": 39075,
+    "State": "OH",
+    "County": "Holmes",
+    "PCT_LACCESS_POP10": 2.0672963073555799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2223,
+    "OBJECTID_1": 2091,
+    "FIPSNUM": 39077,
+    "State": "OH",
+    "County": "Huron",
+    "PCT_LACCESS_POP10": 12.4889518802431
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2224,
+    "OBJECTID_1": 2092,
+    "FIPSNUM": 39079,
+    "State": "OH",
+    "County": "Jackson",
+    "PCT_LACCESS_POP10": 4.6572508660629204
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2225,
+    "OBJECTID_1": 2093,
+    "FIPSNUM": 39081,
+    "State": "OH",
+    "County": "Jefferson",
+    "PCT_LACCESS_POP10": 20.3075113793806
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2226,
+    "OBJECTID_1": 2094,
+    "FIPSNUM": 39083,
+    "State": "OH",
+    "County": "Knox",
+    "PCT_LACCESS_POP10": 15.7527066027041
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2227,
+    "OBJECTID_1": 2095,
+    "FIPSNUM": 39085,
+    "State": "OH",
+    "County": "Lake",
+    "PCT_LACCESS_POP10": 38.786784204458598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2228,
+    "OBJECTID_1": 2096,
+    "FIPSNUM": 39087,
+    "State": "OH",
+    "County": "Lawrence",
+    "PCT_LACCESS_POP10": 14.192152488006901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2229,
+    "OBJECTID_1": 2097,
+    "FIPSNUM": 39089,
+    "State": "OH",
+    "County": "Licking",
+    "PCT_LACCESS_POP10": 15.962892977457699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2230,
+    "OBJECTID_1": 2098,
+    "FIPSNUM": 39091,
+    "State": "OH",
+    "County": "Logan",
+    "PCT_LACCESS_POP10": 7.5944935683406403
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2231,
+    "OBJECTID_1": 2099,
+    "FIPSNUM": 39093,
+    "State": "OH",
+    "County": "Lorain",
+    "PCT_LACCESS_POP10": 25.6652313159621
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2232,
+    "OBJECTID_1": 2100,
+    "FIPSNUM": 39095,
+    "State": "OH",
+    "County": "Lucas",
+    "PCT_LACCESS_POP10": 16.7742758071848
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2233,
+    "OBJECTID_1": 2101,
+    "FIPSNUM": 39097,
+    "State": "OH",
+    "County": "Madison",
+    "PCT_LACCESS_POP10": 15.8095740528444
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2234,
+    "OBJECTID_1": 2102,
+    "FIPSNUM": 39099,
+    "State": "OH",
+    "County": "Mahoning",
+    "PCT_LACCESS_POP10": 29.227158277668401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2235,
+    "OBJECTID_1": 2103,
+    "FIPSNUM": 39101,
+    "State": "OH",
+    "County": "Marion",
+    "PCT_LACCESS_POP10": 34.555531681808297
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2236,
+    "OBJECTID_1": 2104,
+    "FIPSNUM": 39103,
+    "State": "OH",
+    "County": "Medina",
+    "PCT_LACCESS_POP10": 25.8183595154775
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2237,
+    "OBJECTID_1": 2105,
+    "FIPSNUM": 39105,
+    "State": "OH",
+    "County": "Meigs",
+    "PCT_LACCESS_POP10": 20.995130311928399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2238,
+    "OBJECTID_1": 2106,
+    "FIPSNUM": 39107,
+    "State": "OH",
+    "County": "Mercer",
+    "PCT_LACCESS_POP10": 7.966996163788111
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2239,
+    "OBJECTID_1": 2107,
+    "FIPSNUM": 39109,
+    "State": "OH",
+    "County": "Miami",
+    "PCT_LACCESS_POP10": 15.253680924941198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2240,
+    "OBJECTID_1": 2108,
+    "FIPSNUM": 39111,
+    "State": "OH",
+    "County": "Monroe",
+    "PCT_LACCESS_POP10": 5.6524234963443298
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2241,
+    "OBJECTID_1": 2109,
+    "FIPSNUM": 39113,
+    "State": "OH",
+    "County": "Montgomery",
+    "PCT_LACCESS_POP10": 29.558506182267603
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2242,
+    "OBJECTID_1": 2110,
+    "FIPSNUM": 39115,
+    "State": "OH",
+    "County": "Morgan",
+    "PCT_LACCESS_POP10": 6.3009500384075405
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2243,
+    "OBJECTID_1": 2111,
+    "FIPSNUM": 39117,
+    "State": "OH",
+    "County": "Morrow",
+    "PCT_LACCESS_POP10": 0.47754992738701096
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2244,
+    "OBJECTID_1": 2112,
+    "FIPSNUM": 39119,
+    "State": "OH",
+    "County": "Muskingum",
+    "PCT_LACCESS_POP10": 17.568477708866702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2245,
+    "OBJECTID_1": 2113,
+    "FIPSNUM": 39121,
+    "State": "OH",
+    "County": "Noble",
+    "PCT_LACCESS_POP10": 25.874658516713602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2246,
+    "OBJECTID_1": 2114,
+    "FIPSNUM": 39123,
+    "State": "OH",
+    "County": "Ottawa",
+    "PCT_LACCESS_POP10": 22.283168785324602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2247,
+    "OBJECTID_1": 2115,
+    "FIPSNUM": 39125,
+    "State": "OH",
+    "County": "Paulding",
+    "PCT_LACCESS_POP10": 14.6619794847091
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2248,
+    "OBJECTID_1": 2116,
+    "FIPSNUM": 39127,
+    "State": "OH",
+    "County": "Perry",
+    "PCT_LACCESS_POP10": 10.2990760446745
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2249,
+    "OBJECTID_1": 2117,
+    "FIPSNUM": 39129,
+    "State": "OH",
+    "County": "Pickaway",
+    "PCT_LACCESS_POP10": 12.8206463120632
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2250,
+    "OBJECTID_1": 2118,
+    "FIPSNUM": 39131,
+    "State": "OH",
+    "County": "Pike",
+    "PCT_LACCESS_POP10": 23.128593788783199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2251,
+    "OBJECTID_1": 2119,
+    "FIPSNUM": 39133,
+    "State": "OH",
+    "County": "Portage",
+    "PCT_LACCESS_POP10": 20.545214491538299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2252,
+    "OBJECTID_1": 2120,
+    "FIPSNUM": 39135,
+    "State": "OH",
+    "County": "Preble",
+    "PCT_LACCESS_POP10": 0.69310560131981802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2253,
+    "OBJECTID_1": 2121,
+    "FIPSNUM": 39137,
+    "State": "OH",
+    "County": "Putnam",
+    "PCT_LACCESS_POP10": 14.5603969267215
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2254,
+    "OBJECTID_1": 2122,
+    "FIPSNUM": 39139,
+    "State": "OH",
+    "County": "Richland",
+    "PCT_LACCESS_POP10": 21.3935071674087
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2255,
+    "OBJECTID_1": 2123,
+    "FIPSNUM": 39141,
+    "State": "OH",
+    "County": "Ross",
+    "PCT_LACCESS_POP10": 10.9735861589196
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2256,
+    "OBJECTID_1": 2124,
+    "FIPSNUM": 39143,
+    "State": "OH",
+    "County": "Sandusky",
+    "PCT_LACCESS_POP10": 10.106118874758
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2257,
+    "OBJECTID_1": 2125,
+    "FIPSNUM": 39145,
+    "State": "OH",
+    "County": "Scioto",
+    "PCT_LACCESS_POP10": 16.941654928485701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2258,
+    "OBJECTID_1": 2126,
+    "FIPSNUM": 39147,
+    "State": "OH",
+    "County": "Seneca",
+    "PCT_LACCESS_POP10": 10.6626906757665
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2259,
+    "OBJECTID_1": 2127,
+    "FIPSNUM": 39149,
+    "State": "OH",
+    "County": "Shelby",
+    "PCT_LACCESS_POP10": 15.315017302425
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2260,
+    "OBJECTID_1": 2128,
+    "FIPSNUM": 39151,
+    "State": "OH",
+    "County": "Stark",
+    "PCT_LACCESS_POP10": 27.577477653400699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2261,
+    "OBJECTID_1": 2129,
+    "FIPSNUM": 39153,
+    "State": "OH",
+    "County": "Summit",
+    "PCT_LACCESS_POP10": 35.010370522532504
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2262,
+    "OBJECTID_1": 2130,
+    "FIPSNUM": 39155,
+    "State": "OH",
+    "County": "Trumbull",
+    "PCT_LACCESS_POP10": 21.949793643012399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2263,
+    "OBJECTID_1": 2131,
+    "FIPSNUM": 39157,
+    "State": "OH",
+    "County": "Tuscarawas",
+    "PCT_LACCESS_POP10": 18.9660832342114
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2264,
+    "OBJECTID_1": 2132,
+    "FIPSNUM": 39159,
+    "State": "OH",
+    "County": "Union",
+    "PCT_LACCESS_POP10": 14.0300572640539
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2265,
+    "OBJECTID_1": 2133,
+    "FIPSNUM": 39161,
+    "State": "OH",
+    "County": "Van Wert",
+    "PCT_LACCESS_POP10": 13.196828174218901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2266,
+    "OBJECTID_1": 2134,
+    "FIPSNUM": 39163,
+    "State": "OH",
+    "County": "Vinton",
+    "PCT_LACCESS_POP10": 15.8161858939492
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2267,
+    "OBJECTID_1": 2135,
+    "FIPSNUM": 39165,
+    "State": "OH",
+    "County": "Warren",
+    "PCT_LACCESS_POP10": 32.720812405047504
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2268,
+    "OBJECTID_1": 2136,
+    "FIPSNUM": 39167,
+    "State": "OH",
+    "County": "Washington",
+    "PCT_LACCESS_POP10": 8.3961049822824805
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2269,
+    "OBJECTID_1": 2137,
+    "FIPSNUM": 39169,
+    "State": "OH",
+    "County": "Wayne",
+    "PCT_LACCESS_POP10": 15.8997584708241
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2270,
+    "OBJECTID_1": 2138,
+    "FIPSNUM": 39171,
+    "State": "OH",
+    "County": "Williams",
+    "PCT_LACCESS_POP10": 14.168180162862701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2271,
+    "OBJECTID_1": 2139,
+    "FIPSNUM": 39173,
+    "State": "OH",
+    "County": "Wood",
+    "PCT_LACCESS_POP10": 29.130180283579101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2272,
+    "OBJECTID_1": 2140,
+    "FIPSNUM": 39175,
+    "State": "OH",
+    "County": "Wyandot",
+    "PCT_LACCESS_POP10": 4.4490060215057401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2273,
+    "OBJECTID_1": 2141,
+    "FIPSNUM": 40001,
+    "State": "OK",
+    "County": "Adair",
+    "PCT_LACCESS_POP10": 6.772493663760069
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2274,
+    "OBJECTID_1": 2142,
+    "FIPSNUM": 40003,
+    "State": "OK",
+    "County": "Alfalfa",
+    "PCT_LACCESS_POP10": 60.781069904579802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2275,
+    "OBJECTID_1": 2143,
+    "FIPSNUM": 40005,
+    "State": "OK",
+    "County": "Atoka",
+    "PCT_LACCESS_POP10": 41.679780437136102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2276,
+    "OBJECTID_1": 2144,
+    "FIPSNUM": 40007,
+    "State": "OK",
+    "County": "Beaver",
+    "PCT_LACCESS_POP10": 39.393810936036701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2277,
+    "OBJECTID_1": 2145,
+    "FIPSNUM": 40009,
+    "State": "OK",
+    "County": "Beckham",
+    "PCT_LACCESS_POP10": 14.157612141069301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2278,
+    "OBJECTID_1": 2146,
+    "FIPSNUM": 40011,
+    "State": "OK",
+    "County": "Blaine",
+    "PCT_LACCESS_POP10": 58.272714806182101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2279,
+    "OBJECTID_1": 2147,
+    "FIPSNUM": 40013,
+    "State": "OK",
+    "County": "Bryan",
+    "PCT_LACCESS_POP10": 19.536841201902899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2280,
+    "OBJECTID_1": 2148,
+    "FIPSNUM": 40015,
+    "State": "OK",
+    "County": "Caddo",
+    "PCT_LACCESS_POP10": 33.324327996350199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2281,
+    "OBJECTID_1": 2149,
+    "FIPSNUM": 40017,
+    "State": "OK",
+    "County": "Canadian",
+    "PCT_LACCESS_POP10": 29.294827216730901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2282,
+    "OBJECTID_1": 2150,
+    "FIPSNUM": 40019,
+    "State": "OK",
+    "County": "Carter",
+    "PCT_LACCESS_POP10": 9.6080859664647491
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2283,
+    "OBJECTID_1": 2151,
+    "FIPSNUM": 40021,
+    "State": "OK",
+    "County": "Cherokee",
+    "PCT_LACCESS_POP10": 22.184191920780499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2284,
+    "OBJECTID_1": 2152,
+    "FIPSNUM": 40023,
+    "State": "OK",
+    "County": "Choctaw",
+    "PCT_LACCESS_POP10": 40.854907419466102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2285,
+    "OBJECTID_1": 2153,
+    "FIPSNUM": 40025,
+    "State": "OK",
+    "County": "Cimarron",
+    "PCT_LACCESS_POP10": 40.423783509922202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2286,
+    "OBJECTID_1": 2154,
+    "FIPSNUM": 40027,
+    "State": "OK",
+    "County": "Cleveland",
+    "PCT_LACCESS_POP10": 23.953262375865002
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2287,
+    "OBJECTID_1": 2155,
+    "FIPSNUM": 40029,
+    "State": "OK",
+    "County": "Coal",
+    "PCT_LACCESS_POP10": 26.9468408940789
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2288,
+    "OBJECTID_1": 2156,
+    "FIPSNUM": 40031,
+    "State": "OK",
+    "County": "Comanche",
+    "PCT_LACCESS_POP10": 33.623415263370902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2289,
+    "OBJECTID_1": 2157,
+    "FIPSNUM": 40033,
+    "State": "OK",
+    "County": "Cotton",
+    "PCT_LACCESS_POP10": 6.3053194199132898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2290,
+    "OBJECTID_1": 2158,
+    "FIPSNUM": 40035,
+    "State": "OK",
+    "County": "Craig",
+    "PCT_LACCESS_POP10": 17.279945270023401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2291,
+    "OBJECTID_1": 2159,
+    "FIPSNUM": 40037,
+    "State": "OK",
+    "County": "Creek",
+    "PCT_LACCESS_POP10": 18.849932536652499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2292,
+    "OBJECTID_1": 2160,
+    "FIPSNUM": 40039,
+    "State": "OK",
+    "County": "Custer",
+    "PCT_LACCESS_POP10": 22.70685934974
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2293,
+    "OBJECTID_1": 2161,
+    "FIPSNUM": 40041,
+    "State": "OK",
+    "County": "Delaware",
+    "PCT_LACCESS_POP10": 20.497365294004499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2294,
+    "OBJECTID_1": 2162,
+    "FIPSNUM": 40043,
+    "State": "OK",
+    "County": "Dewey",
+    "PCT_LACCESS_POP10": 99.999999978221695
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2295,
+    "OBJECTID_1": 2163,
+    "FIPSNUM": 40045,
+    "State": "OK",
+    "County": "Ellis",
+    "PCT_LACCESS_POP10": 99.427312532539005
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2296,
+    "OBJECTID_1": 2164,
+    "FIPSNUM": 40047,
+    "State": "OK",
+    "County": "Garfield",
+    "PCT_LACCESS_POP10": 25.375109774254099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2297,
+    "OBJECTID_1": 2165,
+    "FIPSNUM": 40049,
+    "State": "OK",
+    "County": "Garvin",
+    "PCT_LACCESS_POP10": 30.815211639378898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2298,
+    "OBJECTID_1": 2166,
+    "FIPSNUM": 40051,
+    "State": "OK",
+    "County": "Grady",
+    "PCT_LACCESS_POP10": 14.543402563913299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2299,
+    "OBJECTID_1": 2167,
+    "FIPSNUM": 40053,
+    "State": "OK",
+    "County": "Grant",
+    "PCT_LACCESS_POP10": 61.826579402008697
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2300,
+    "OBJECTID_1": 2168,
+    "FIPSNUM": 40055,
+    "State": "OK",
+    "County": "Greer",
+    "PCT_LACCESS_POP10": 8.8296732639285196
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2301,
+    "OBJECTID_1": 2169,
+    "FIPSNUM": 40057,
+    "State": "OK",
+    "County": "Harmon",
+    "PCT_LACCESS_POP10": 8.2876256643808102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2302,
+    "OBJECTID_1": 2170,
+    "FIPSNUM": 40059,
+    "State": "OK",
+    "County": "Harper",
+    "PCT_LACCESS_POP10": 51.747974840643998
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2303,
+    "OBJECTID_1": 2171,
+    "FIPSNUM": 40061,
+    "State": "OK",
+    "County": "Haskell",
+    "PCT_LACCESS_POP10": 37.642559422290603
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2304,
+    "OBJECTID_1": 2172,
+    "FIPSNUM": 40063,
+    "State": "OK",
+    "County": "Hughes",
+    "PCT_LACCESS_POP10": 24.3008977288323
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2305,
+    "OBJECTID_1": 2173,
+    "FIPSNUM": 40065,
+    "State": "OK",
+    "County": "Jackson",
+    "PCT_LACCESS_POP10": 18.768833637856801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2306,
+    "OBJECTID_1": 2174,
+    "FIPSNUM": 40067,
+    "State": "OK",
+    "County": "Jefferson",
+    "PCT_LACCESS_POP10": 23.269495357114302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2307,
+    "OBJECTID_1": 2175,
+    "FIPSNUM": 40069,
+    "State": "OK",
+    "County": "Johnston",
+    "PCT_LACCESS_POP10": 32.330602718896102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2308,
+    "OBJECTID_1": 2176,
+    "FIPSNUM": 40071,
+    "State": "OK",
+    "County": "Kay",
+    "PCT_LACCESS_POP10": 21.759097070943202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2309,
+    "OBJECTID_1": 2177,
+    "FIPSNUM": 40073,
+    "State": "OK",
+    "County": "Kingfisher",
+    "PCT_LACCESS_POP10": 15.123341885491401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2310,
+    "OBJECTID_1": 2178,
+    "FIPSNUM": 40075,
+    "State": "OK",
+    "County": "Kiowa",
+    "PCT_LACCESS_POP10": 37.452605620477101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2311,
+    "OBJECTID_1": 2179,
+    "FIPSNUM": 40077,
+    "State": "OK",
+    "County": "Latimer",
+    "PCT_LACCESS_POP10": 22.375134402141299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2312,
+    "OBJECTID_1": 2180,
+    "FIPSNUM": 40079,
+    "State": "OK",
+    "County": "Le Flore",
+    "PCT_LACCESS_POP10": 13.732438306261699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2313,
+    "OBJECTID_1": 2181,
+    "FIPSNUM": 40081,
+    "State": "OK",
+    "County": "Lincoln",
+    "PCT_LACCESS_POP10": 19.843333210168801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2314,
+    "OBJECTID_1": 2182,
+    "FIPSNUM": 40083,
+    "State": "OK",
+    "County": "Logan",
+    "PCT_LACCESS_POP10": 22.826528951872397
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2315,
+    "OBJECTID_1": 2183,
+    "FIPSNUM": 40085,
+    "State": "OK",
+    "County": "Love",
+    "PCT_LACCESS_POP10": 21.575715817739898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2316,
+    "OBJECTID_1": 2184,
+    "FIPSNUM": 40087,
+    "State": "OK",
+    "County": "McClain",
+    "PCT_LACCESS_POP10": 9.5373735835454312
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2317,
+    "OBJECTID_1": 2185,
+    "FIPSNUM": 40089,
+    "State": "OK",
+    "County": "McCurtain",
+    "PCT_LACCESS_POP10": 16.513000100615098
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2318,
+    "OBJECTID_1": 2186,
+    "FIPSNUM": 40091,
+    "State": "OK",
+    "County": "McIntosh",
+    "PCT_LACCESS_POP10": 12.7562317486595
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2319,
+    "OBJECTID_1": 2187,
+    "FIPSNUM": 40093,
+    "State": "OK",
+    "County": "Major",
+    "PCT_LACCESS_POP10": 44.200492896786194
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2320,
+    "OBJECTID_1": 2188,
+    "FIPSNUM": 40095,
+    "State": "OK",
+    "County": "Marshall",
+    "PCT_LACCESS_POP10": 11.202095465222101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2321,
+    "OBJECTID_1": 2189,
+    "FIPSNUM": 40097,
+    "State": "OK",
+    "County": "Mayes",
+    "PCT_LACCESS_POP10": 2.8618950927978402
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2322,
+    "OBJECTID_1": 2190,
+    "FIPSNUM": 40099,
+    "State": "OK",
+    "County": "Murray",
+    "PCT_LACCESS_POP10": 7.5347136454286394
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2323,
+    "OBJECTID_1": 2191,
+    "FIPSNUM": 40101,
+    "State": "OK",
+    "County": "Muskogee",
+    "PCT_LACCESS_POP10": 12.5388084140172
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2324,
+    "OBJECTID_1": 2192,
+    "FIPSNUM": 40103,
+    "State": "OK",
+    "County": "Noble",
+    "PCT_LACCESS_POP10": 29.312275881023496
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2325,
+    "OBJECTID_1": 2193,
+    "FIPSNUM": 40105,
+    "State": "OK",
+    "County": "Nowata",
+    "PCT_LACCESS_POP10": 25.5236932068157
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2326,
+    "OBJECTID_1": 2194,
+    "FIPSNUM": 40107,
+    "State": "OK",
+    "County": "Okfuskee",
+    "PCT_LACCESS_POP10": 22.432261493330401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2327,
+    "OBJECTID_1": 2195,
+    "FIPSNUM": 40109,
+    "State": "OK",
+    "County": "Oklahoma",
+    "PCT_LACCESS_POP10": 25.498159257870199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2328,
+    "OBJECTID_1": 2196,
+    "FIPSNUM": 40111,
+    "State": "OK",
+    "County": "Okmulgee",
+    "PCT_LACCESS_POP10": 25.1669043686165
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2329,
+    "OBJECTID_1": 2197,
+    "FIPSNUM": 40113,
+    "State": "OK",
+    "County": "Osage",
+    "PCT_LACCESS_POP10": 28.731490416901099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2330,
+    "OBJECTID_1": 2198,
+    "FIPSNUM": 40115,
+    "State": "OK",
+    "County": "Ottawa",
+    "PCT_LACCESS_POP10": 15.249954037230401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2331,
+    "OBJECTID_1": 2199,
+    "FIPSNUM": 40117,
+    "State": "OK",
+    "County": "Pawnee",
+    "PCT_LACCESS_POP10": 2.30236540500408
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2332,
+    "OBJECTID_1": 2200,
+    "FIPSNUM": 40119,
+    "State": "OK",
+    "County": "Payne",
+    "PCT_LACCESS_POP10": 25.615061453104698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2333,
+    "OBJECTID_1": 2201,
+    "FIPSNUM": 40121,
+    "State": "OK",
+    "County": "Pittsburg",
+    "PCT_LACCESS_POP10": 41.555633175273897
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2334,
+    "OBJECTID_1": 2202,
+    "FIPSNUM": 40123,
+    "State": "OK",
+    "County": "Pontotoc",
+    "PCT_LACCESS_POP10": 22.070830176584501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2335,
+    "OBJECTID_1": 2203,
+    "FIPSNUM": 40125,
+    "State": "OK",
+    "County": "Pottawatomie",
+    "PCT_LACCESS_POP10": 17.054344138257697
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2336,
+    "OBJECTID_1": 2204,
+    "FIPSNUM": 40127,
+    "State": "OK",
+    "County": "Pushmataha",
+    "PCT_LACCESS_POP10": 24.970420703545301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2337,
+    "OBJECTID_1": 2205,
+    "FIPSNUM": 40129,
+    "State": "OK",
+    "County": "Roger Mills",
+    "PCT_LACCESS_POP10": 54.526715825337902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2338,
+    "OBJECTID_1": 2206,
+    "FIPSNUM": 40131,
+    "State": "OK",
+    "County": "Rogers",
+    "PCT_LACCESS_POP10": 26.694265291804196
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2339,
+    "OBJECTID_1": 2207,
+    "FIPSNUM": 40133,
+    "State": "OK",
+    "County": "Seminole",
+    "PCT_LACCESS_POP10": 8.5367516333295388
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2340,
+    "OBJECTID_1": 2208,
+    "FIPSNUM": 40135,
+    "State": "OK",
+    "County": "Sequoyah",
+    "PCT_LACCESS_POP10": 7.77073648451608
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2341,
+    "OBJECTID_1": 2209,
+    "FIPSNUM": 40137,
+    "State": "OK",
+    "County": "Stephens",
+    "PCT_LACCESS_POP10": 16.839713899212999
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2342,
+    "OBJECTID_1": 2210,
+    "FIPSNUM": 40139,
+    "State": "OK",
+    "County": "Texas",
+    "PCT_LACCESS_POP10": 83.163950903640298
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2343,
+    "OBJECTID_1": 2211,
+    "FIPSNUM": 40141,
+    "State": "OK",
+    "County": "Tillman",
+    "PCT_LACCESS_POP10": 34.7211948920217
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2344,
+    "OBJECTID_1": 2212,
+    "FIPSNUM": 40143,
+    "State": "OK",
+    "County": "Tulsa",
+    "PCT_LACCESS_POP10": 25.523548345625901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2345,
+    "OBJECTID_1": 2213,
+    "FIPSNUM": 40145,
+    "State": "OK",
+    "County": "Wagoner",
+    "PCT_LACCESS_POP10": 31.354060793626697
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2346,
+    "OBJECTID_1": 2214,
+    "FIPSNUM": 40147,
+    "State": "OK",
+    "County": "Washington",
+    "PCT_LACCESS_POP10": 32.949592147193201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2347,
+    "OBJECTID_1": 2215,
+    "FIPSNUM": 40149,
+    "State": "OK",
+    "County": "Washita",
+    "PCT_LACCESS_POP10": 41.473028404133501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2348,
+    "OBJECTID_1": 2216,
+    "FIPSNUM": 40151,
+    "State": "OK",
+    "County": "Woods",
+    "PCT_LACCESS_POP10": 32.363973071923603
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2349,
+    "OBJECTID_1": 2217,
+    "FIPSNUM": 40153,
+    "State": "OK",
+    "County": "Woodward",
+    "PCT_LACCESS_POP10": 26.8600717029584
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2350,
+    "OBJECTID_1": 2218,
+    "FIPSNUM": 41001,
+    "State": "OR",
+    "County": "Baker",
+    "PCT_LACCESS_POP10": 36.358770919102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2351,
+    "OBJECTID_1": 2219,
+    "FIPSNUM": 41003,
+    "State": "OR",
+    "County": "Benton",
+    "PCT_LACCESS_POP10": 20.1971664435845
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2352,
+    "OBJECTID_1": 2220,
+    "FIPSNUM": 41005,
+    "State": "OR",
+    "County": "Clackamas",
+    "PCT_LACCESS_POP10": 16.804625401035402
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2353,
+    "OBJECTID_1": 2221,
+    "FIPSNUM": 41007,
+    "State": "OR",
+    "County": "Clatsop",
+    "PCT_LACCESS_POP10": 32.765700957367102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2354,
+    "OBJECTID_1": 2222,
+    "FIPSNUM": 41009,
+    "State": "OR",
+    "County": "Columbia",
+    "PCT_LACCESS_POP10": 14.987921240906902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2355,
+    "OBJECTID_1": 2223,
+    "FIPSNUM": 41011,
+    "State": "OR",
+    "County": "Coos",
+    "PCT_LACCESS_POP10": 11.1492296686784
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2356,
+    "OBJECTID_1": 2224,
+    "FIPSNUM": 41013,
+    "State": "OR",
+    "County": "Crook",
+    "PCT_LACCESS_POP10": 14.118428596308499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2357,
+    "OBJECTID_1": 2225,
+    "FIPSNUM": 41015,
+    "State": "OR",
+    "County": "Curry",
+    "PCT_LACCESS_POP10": 12.4764874478048
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2358,
+    "OBJECTID_1": 2226,
+    "FIPSNUM": 41017,
+    "State": "OR",
+    "County": "Deschutes",
+    "PCT_LACCESS_POP10": 15.5368059762868
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2359,
+    "OBJECTID_1": 2227,
+    "FIPSNUM": 41019,
+    "State": "OR",
+    "County": "Douglas",
+    "PCT_LACCESS_POP10": 27.115265777346998
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2360,
+    "OBJECTID_1": 2228,
+    "FIPSNUM": 41021,
+    "State": "OR",
+    "County": "Gilliam",
+    "PCT_LACCESS_POP10": 54.669178832573294
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2361,
+    "OBJECTID_1": 2229,
+    "FIPSNUM": 41023,
+    "State": "OR",
+    "County": "Grant",
+    "PCT_LACCESS_POP10": 39.808307928726798
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2362,
+    "OBJECTID_1": 2230,
+    "FIPSNUM": 41025,
+    "State": "OR",
+    "County": "Harney",
+    "PCT_LACCESS_POP10": 31.912729763588001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2363,
+    "OBJECTID_1": 2231,
+    "FIPSNUM": 41027,
+    "State": "OR",
+    "County": "Hood River",
+    "PCT_LACCESS_POP10": 6.7877148283435096
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2364,
+    "OBJECTID_1": 2232,
+    "FIPSNUM": 41029,
+    "State": "OR",
+    "County": "Jackson",
+    "PCT_LACCESS_POP10": 16.5016253450375
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2365,
+    "OBJECTID_1": 2233,
+    "FIPSNUM": 41031,
+    "State": "OR",
+    "County": "Jefferson",
+    "PCT_LACCESS_POP10": 20.195151174282099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2366,
+    "OBJECTID_1": 2234,
+    "FIPSNUM": 41033,
+    "State": "OR",
+    "County": "Josephine",
+    "PCT_LACCESS_POP10": 17.608260276587501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2367,
+    "OBJECTID_1": 2235,
+    "FIPSNUM": 41035,
+    "State": "OR",
+    "County": "Klamath",
+    "PCT_LACCESS_POP10": 33.438518926041397
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2368,
+    "OBJECTID_1": 2236,
+    "FIPSNUM": 41037,
+    "State": "OR",
+    "County": "Lake",
+    "PCT_LACCESS_POP10": 43.6245561632212
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2369,
+    "OBJECTID_1": 2237,
+    "FIPSNUM": 41039,
+    "State": "OR",
+    "County": "Lane",
+    "PCT_LACCESS_POP10": 15.340427339616799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2370,
+    "OBJECTID_1": 2238,
+    "FIPSNUM": 41041,
+    "State": "OR",
+    "County": "Lincoln",
+    "PCT_LACCESS_POP10": 15.2345981424724
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2371,
+    "OBJECTID_1": 2239,
+    "FIPSNUM": 41043,
+    "State": "OR",
+    "County": "Linn",
+    "PCT_LACCESS_POP10": 24.152888906054102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2372,
+    "OBJECTID_1": 2240,
+    "FIPSNUM": 41045,
+    "State": "OR",
+    "County": "Malheur",
+    "PCT_LACCESS_POP10": 8.9486253073175792
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2373,
+    "OBJECTID_1": 2241,
+    "FIPSNUM": 41047,
+    "State": "OR",
+    "County": "Marion",
+    "PCT_LACCESS_POP10": 14.4672231622895
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2374,
+    "OBJECTID_1": 2242,
+    "FIPSNUM": 41049,
+    "State": "OR",
+    "County": "Morrow",
+    "PCT_LACCESS_POP10": 27.683505607914199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2375,
+    "OBJECTID_1": 2243,
+    "FIPSNUM": 41051,
+    "State": "OR",
+    "County": "Multnomah",
+    "PCT_LACCESS_POP10": 12.579534989157001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2376,
+    "OBJECTID_1": 2244,
+    "FIPSNUM": 41053,
+    "State": "OR",
+    "County": "Polk",
+    "PCT_LACCESS_POP10": 27.793664300650001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2377,
+    "OBJECTID_1": 2245,
+    "FIPSNUM": 41055,
+    "State": "OR",
+    "County": "Sherman",
+    "PCT_LACCESS_POP10": 44.344477209776997
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2378,
+    "OBJECTID_1": 2246,
+    "FIPSNUM": 41057,
+    "State": "OR",
+    "County": "Tillamook",
+    "PCT_LACCESS_POP10": 21.9549242500613
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2379,
+    "OBJECTID_1": 2247,
+    "FIPSNUM": 41059,
+    "State": "OR",
+    "County": "Umatilla",
+    "PCT_LACCESS_POP10": 25.250928069764399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2380,
+    "OBJECTID_1": 2248,
+    "FIPSNUM": 41061,
+    "State": "OR",
+    "County": "Union",
+    "PCT_LACCESS_POP10": 48.907794417425002
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2381,
+    "OBJECTID_1": 2249,
+    "FIPSNUM": 41063,
+    "State": "OR",
+    "County": "Wallowa",
+    "PCT_LACCESS_POP10": 27.149321321964198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2382,
+    "OBJECTID_1": 2250,
+    "FIPSNUM": 41065,
+    "State": "OR",
+    "County": "Wasco",
+    "PCT_LACCESS_POP10": 41.093495048481302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2383,
+    "OBJECTID_1": 2251,
+    "FIPSNUM": 41067,
+    "State": "OR",
+    "County": "Washington",
+    "PCT_LACCESS_POP10": 13.309069475732398
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2384,
+    "OBJECTID_1": 2252,
+    "FIPSNUM": 41069,
+    "State": "OR",
+    "County": "Wheeler",
+    "PCT_LACCESS_POP10": 99.999999834331604
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2385,
+    "OBJECTID_1": 2253,
+    "FIPSNUM": 41071,
+    "State": "OR",
+    "County": "Yamhill",
+    "PCT_LACCESS_POP10": 17.029572895222799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2386,
+    "OBJECTID_1": 2254,
+    "FIPSNUM": 42001,
+    "State": "PA",
+    "County": "Adams",
+    "PCT_LACCESS_POP10": 11.306735786190799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2387,
+    "OBJECTID_1": 2255,
+    "FIPSNUM": 42003,
+    "State": "PA",
+    "County": "Allegheny",
+    "PCT_LACCESS_POP10": 28.739430120017001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2388,
+    "OBJECTID_1": 2256,
+    "FIPSNUM": 42005,
+    "State": "PA",
+    "County": "Armstrong",
+    "PCT_LACCESS_POP10": 5.3285184778425396
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2389,
+    "OBJECTID_1": 2257,
+    "FIPSNUM": 42007,
+    "State": "PA",
+    "County": "Beaver",
+    "PCT_LACCESS_POP10": 39.641914789789702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2390,
+    "OBJECTID_1": 2258,
+    "FIPSNUM": 42009,
+    "State": "PA",
+    "County": "Bedford",
+    "PCT_LACCESS_POP10": 13.137487459405001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2391,
+    "OBJECTID_1": 2259,
+    "FIPSNUM": 42011,
+    "State": "PA",
+    "County": "Berks",
+    "PCT_LACCESS_POP10": 15.389035132329902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2392,
+    "OBJECTID_1": 2260,
+    "FIPSNUM": 42013,
+    "State": "PA",
+    "County": "Blair",
+    "PCT_LACCESS_POP10": 18.303249340573998
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2393,
+    "OBJECTID_1": 2261,
+    "FIPSNUM": 42015,
+    "State": "PA",
+    "County": "Bradford",
+    "PCT_LACCESS_POP10": 12.120556932512699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2394,
+    "OBJECTID_1": 2262,
+    "FIPSNUM": 42017,
+    "State": "PA",
+    "County": "Bucks",
+    "PCT_LACCESS_POP10": 33.991890872485101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2395,
+    "OBJECTID_1": 2263,
+    "FIPSNUM": 42019,
+    "State": "PA",
+    "County": "Butler",
+    "PCT_LACCESS_POP10": 22.528331886980197
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2396,
+    "OBJECTID_1": 2264,
+    "FIPSNUM": 42021,
+    "State": "PA",
+    "County": "Cambria",
+    "PCT_LACCESS_POP10": 20.830448890039499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2397,
+    "OBJECTID_1": 2265,
+    "FIPSNUM": 42023,
+    "State": "PA",
+    "County": "Cameron",
+    "PCT_LACCESS_POP10": 9.1753071640896895
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2398,
+    "OBJECTID_1": 2266,
+    "FIPSNUM": 42025,
+    "State": "PA",
+    "County": "Carbon",
+    "PCT_LACCESS_POP10": 11.568814164860699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2399,
+    "OBJECTID_1": 2267,
+    "FIPSNUM": 42027,
+    "State": "PA",
+    "County": "Centre",
+    "PCT_LACCESS_POP10": 13.613851909087701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2400,
+    "OBJECTID_1": 2268,
+    "FIPSNUM": 42029,
+    "State": "PA",
+    "County": "Chester",
+    "PCT_LACCESS_POP10": 39.139656287944803
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2401,
+    "OBJECTID_1": 2269,
+    "FIPSNUM": 42031,
+    "State": "PA",
+    "County": "Clarion",
+    "PCT_LACCESS_POP10": 6.8960872957832997
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2402,
+    "OBJECTID_1": 2270,
+    "FIPSNUM": 42033,
+    "State": "PA",
+    "County": "Clearfield",
+    "PCT_LACCESS_POP10": 14.2572652391218
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2403,
+    "OBJECTID_1": 2271,
+    "FIPSNUM": 42035,
+    "State": "PA",
+    "County": "Clinton",
+    "PCT_LACCESS_POP10": 18.802081303547698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2404,
+    "OBJECTID_1": 2272,
+    "FIPSNUM": 42037,
+    "State": "PA",
+    "County": "Columbia",
+    "PCT_LACCESS_POP10": 11.079569745429001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2405,
+    "OBJECTID_1": 2273,
+    "FIPSNUM": 42039,
+    "State": "PA",
+    "County": "Crawford",
+    "PCT_LACCESS_POP10": 10.8562582935634
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2406,
+    "OBJECTID_1": 2274,
+    "FIPSNUM": 42041,
+    "State": "PA",
+    "County": "Cumberland",
+    "PCT_LACCESS_POP10": 19.6859557262128
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2407,
+    "OBJECTID_1": 2275,
+    "FIPSNUM": 42043,
+    "State": "PA",
+    "County": "Dauphin",
+    "PCT_LACCESS_POP10": 40.139764715029102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2408,
+    "OBJECTID_1": 2276,
+    "FIPSNUM": 42045,
+    "State": "PA",
+    "County": "Delaware",
+    "PCT_LACCESS_POP10": 20.497867140001599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2409,
+    "OBJECTID_1": 2277,
+    "FIPSNUM": 42047,
+    "State": "PA",
+    "County": "Elk",
+    "PCT_LACCESS_POP10": 9.5124828793690099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2410,
+    "OBJECTID_1": 2278,
+    "FIPSNUM": 42049,
+    "State": "PA",
+    "County": "Erie",
+    "PCT_LACCESS_POP10": 26.325388695589801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2411,
+    "OBJECTID_1": 2279,
+    "FIPSNUM": 42051,
+    "State": "PA",
+    "County": "Fayette",
+    "PCT_LACCESS_POP10": 16.544006430824503
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2412,
+    "OBJECTID_1": 2280,
+    "FIPSNUM": 42053,
+    "State": "PA",
+    "County": "Forest",
+    "PCT_LACCESS_POP10": 1.1648559085371599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2413,
+    "OBJECTID_1": 2281,
+    "FIPSNUM": 42055,
+    "State": "PA",
+    "County": "Franklin",
+    "PCT_LACCESS_POP10": 20.743723456542
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2414,
+    "OBJECTID_1": 2282,
+    "FIPSNUM": 42057,
+    "State": "PA",
+    "County": "Fulton",
+    "PCT_LACCESS_POP10": 12.4684577816054
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2415,
+    "OBJECTID_1": 2283,
+    "FIPSNUM": 42059,
+    "State": "PA",
+    "County": "Greene",
+    "PCT_LACCESS_POP10": 15.6190827474635
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2416,
+    "OBJECTID_1": 2284,
+    "FIPSNUM": 42061,
+    "State": "PA",
+    "County": "Huntingdon",
+    "PCT_LACCESS_POP10": 2.9021673639696899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2417,
+    "OBJECTID_1": 2285,
+    "FIPSNUM": 42063,
+    "State": "PA",
+    "County": "Indiana",
+    "PCT_LACCESS_POP10": 10.903258045443
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2418,
+    "OBJECTID_1": 2286,
+    "FIPSNUM": 42065,
+    "State": "PA",
+    "County": "Jefferson",
+    "PCT_LACCESS_POP10": 5.2844399415543695
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2419,
+    "OBJECTID_1": 2287,
+    "FIPSNUM": 42067,
+    "State": "PA",
+    "County": "Juniata",
+    "PCT_LACCESS_POP10": 17.109069844268703
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2420,
+    "OBJECTID_1": 2288,
+    "FIPSNUM": 42069,
+    "State": "PA",
+    "County": "Lackawanna",
+    "PCT_LACCESS_POP10": 11.2948064039555
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2421,
+    "OBJECTID_1": 2289,
+    "FIPSNUM": 42071,
+    "State": "PA",
+    "County": "Lancaster",
+    "PCT_LACCESS_POP10": 25.733859827508798
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2422,
+    "OBJECTID_1": 2290,
+    "FIPSNUM": 42073,
+    "State": "PA",
+    "County": "Lawrence",
+    "PCT_LACCESS_POP10": 29.077510235101698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2423,
+    "OBJECTID_1": 2335,
+    "FIPSNUM": 45019,
+    "State": "SC",
+    "County": "Charleston",
+    "PCT_LACCESS_POP10": 18.304824357947201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2424,
+    "OBJECTID_1": 2336,
+    "FIPSNUM": 45021,
+    "State": "SC",
+    "County": "Cherokee",
+    "PCT_LACCESS_POP10": 11.262865155817501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2425,
+    "OBJECTID_1": 2337,
+    "FIPSNUM": 45023,
+    "State": "SC",
+    "County": "Chester",
+    "PCT_LACCESS_POP10": 16.7375571347802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2426,
+    "OBJECTID_1": 2338,
+    "FIPSNUM": 45025,
+    "State": "SC",
+    "County": "Chesterfield",
+    "PCT_LACCESS_POP10": 13.631302876493701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2427,
+    "OBJECTID_1": 2339,
+    "FIPSNUM": 45027,
+    "State": "SC",
+    "County": "Clarendon",
+    "PCT_LACCESS_POP10": 4.7657889146477697
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2428,
+    "OBJECTID_1": 2340,
+    "FIPSNUM": 45029,
+    "State": "SC",
+    "County": "Colleton",
+    "PCT_LACCESS_POP10": 23.764852854579701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2429,
+    "OBJECTID_1": 2341,
+    "FIPSNUM": 45031,
+    "State": "SC",
+    "County": "Darlington",
+    "PCT_LACCESS_POP10": 14.209719384056099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2430,
+    "OBJECTID_1": 2342,
+    "FIPSNUM": 45033,
+    "State": "SC",
+    "County": "Dillon",
+    "PCT_LACCESS_POP10": 10.157053567982501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2431,
+    "OBJECTID_1": 2343,
+    "FIPSNUM": 45035,
+    "State": "SC",
+    "County": "Dorchester",
+    "PCT_LACCESS_POP10": 19.561110056449699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2432,
+    "OBJECTID_1": 2344,
+    "FIPSNUM": 45037,
+    "State": "SC",
+    "County": "Edgefield",
+    "PCT_LACCESS_POP10": 6.2068875107018302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2433,
+    "OBJECTID_1": 2345,
+    "FIPSNUM": 45039,
+    "State": "SC",
+    "County": "Fairfield",
+    "PCT_LACCESS_POP10": 20.109412961289898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2434,
+    "OBJECTID_1": 2346,
+    "FIPSNUM": 45041,
+    "State": "SC",
+    "County": "Florence",
+    "PCT_LACCESS_POP10": 22.4907661837536
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2435,
+    "OBJECTID_1": 2347,
+    "FIPSNUM": 45043,
+    "State": "SC",
+    "County": "Georgetown",
+    "PCT_LACCESS_POP10": 23.1308811746222
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2436,
+    "OBJECTID_1": 2348,
+    "FIPSNUM": 45045,
+    "State": "SC",
+    "County": "Greenville",
+    "PCT_LACCESS_POP10": 32.106474202321998
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2437,
+    "OBJECTID_1": 2349,
+    "FIPSNUM": 45047,
+    "State": "SC",
+    "County": "Greenwood",
+    "PCT_LACCESS_POP10": 15.3166320522372
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2438,
+    "OBJECTID_1": 2350,
+    "FIPSNUM": 45049,
+    "State": "SC",
+    "County": "Hampton",
+    "PCT_LACCESS_POP10": 10.546944631217601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2439,
+    "OBJECTID_1": 2351,
+    "FIPSNUM": 45051,
+    "State": "SC",
+    "County": "Horry",
+    "PCT_LACCESS_POP10": 17.318589957119801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2440,
+    "OBJECTID_1": 2352,
+    "FIPSNUM": 45053,
+    "State": "SC",
+    "County": "Jasper",
+    "PCT_LACCESS_POP10": 9.6573696667912099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2441,
+    "OBJECTID_1": 2353,
+    "FIPSNUM": 45055,
+    "State": "SC",
+    "County": "Kershaw",
+    "PCT_LACCESS_POP10": 18.7466413051134
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2442,
+    "OBJECTID_1": 2354,
+    "FIPSNUM": 45057,
+    "State": "SC",
+    "County": "Lancaster",
+    "PCT_LACCESS_POP10": 13.1173503821372
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2443,
+    "OBJECTID_1": 2355,
+    "FIPSNUM": 45059,
+    "State": "SC",
+    "County": "Laurens",
+    "PCT_LACCESS_POP10": 17.623528638353999
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2444,
+    "OBJECTID_1": 2356,
+    "FIPSNUM": 45061,
+    "State": "SC",
+    "County": "Lee",
+    "PCT_LACCESS_POP10": 4.9311999648209
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2445,
+    "OBJECTID_1": 2357,
+    "FIPSNUM": 45063,
+    "State": "SC",
+    "County": "Lexington",
+    "PCT_LACCESS_POP10": 23.199340656535099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2446,
+    "OBJECTID_1": 2358,
+    "FIPSNUM": 45065,
+    "State": "SC",
+    "County": "McCormick",
+    "PCT_LACCESS_POP10": 6.2157964028639103
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2447,
+    "OBJECTID_1": 2359,
+    "FIPSNUM": 45067,
+    "State": "SC",
+    "County": "Marion",
+    "PCT_LACCESS_POP10": 4.6276253884017393
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2448,
+    "OBJECTID_1": 2360,
+    "FIPSNUM": 45069,
+    "State": "SC",
+    "County": "Marlboro",
+    "PCT_LACCESS_POP10": 13.238118439663198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2449,
+    "OBJECTID_1": 2361,
+    "FIPSNUM": 45071,
+    "State": "SC",
+    "County": "Newberry",
+    "PCT_LACCESS_POP10": 10.6248284641732
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2450,
+    "OBJECTID_1": 2362,
+    "FIPSNUM": 45073,
+    "State": "SC",
+    "County": "Oconee",
+    "PCT_LACCESS_POP10": 14.866478826093498
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2451,
+    "OBJECTID_1": 2363,
+    "FIPSNUM": 45075,
+    "State": "SC",
+    "County": "Orangeburg",
+    "PCT_LACCESS_POP10": 13.325603836491601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2452,
+    "OBJECTID_1": 2364,
+    "FIPSNUM": 45077,
+    "State": "SC",
+    "County": "Pickens",
+    "PCT_LACCESS_POP10": 31.162681019464401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2453,
+    "OBJECTID_1": 2365,
+    "FIPSNUM": 45079,
+    "State": "SC",
+    "County": "Richland",
+    "PCT_LACCESS_POP10": 26.882028704495497
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2454,
+    "OBJECTID_1": 2366,
+    "FIPSNUM": 45081,
+    "State": "SC",
+    "County": "Saluda",
+    "PCT_LACCESS_POP10": 4.6808028124202803
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2455,
+    "OBJECTID_1": 2367,
+    "FIPSNUM": 45083,
+    "State": "SC",
+    "County": "Spartanburg",
+    "PCT_LACCESS_POP10": 33.345863482223599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2456,
+    "OBJECTID_1": 2368,
+    "FIPSNUM": 45085,
+    "State": "SC",
+    "County": "Sumter",
+    "PCT_LACCESS_POP10": 22.1378739647642
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2457,
+    "OBJECTID_1": 2369,
+    "FIPSNUM": 45087,
+    "State": "SC",
+    "County": "Union",
+    "PCT_LACCESS_POP10": 8.5907165189026102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2458,
+    "OBJECTID_1": 2370,
+    "FIPSNUM": 45089,
+    "State": "SC",
+    "County": "Williamsburg",
+    "PCT_LACCESS_POP10": 7.4850337469944597
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2459,
+    "OBJECTID_1": 2371,
+    "FIPSNUM": 45091,
+    "State": "SC",
+    "County": "York",
+    "PCT_LACCESS_POP10": 22.9711714913836
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2460,
+    "OBJECTID_1": 2372,
+    "FIPSNUM": 46003,
+    "State": "SD",
+    "County": "Aurora",
+    "PCT_LACCESS_POP10": 99.862594233387298
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2461,
+    "OBJECTID_1": 2373,
+    "FIPSNUM": 46005,
+    "State": "SD",
+    "County": "Beadle",
+    "PCT_LACCESS_POP10": 22.523940727404401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2462,
+    "OBJECTID_1": 2374,
+    "FIPSNUM": 46007,
+    "State": "SD",
+    "County": "Bennett",
+    "PCT_LACCESS_POP10": 96.75905660494
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2463,
+    "OBJECTID_1": 2375,
+    "FIPSNUM": 46009,
+    "State": "SD",
+    "County": "Bon Homme",
+    "PCT_LACCESS_POP10": 87.814970388794507
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2464,
+    "OBJECTID_1": 2376,
+    "FIPSNUM": 46011,
+    "State": "SD",
+    "County": "Brookings",
+    "PCT_LACCESS_POP10": 40.840678027353
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2465,
+    "OBJECTID_1": 2377,
+    "FIPSNUM": 46013,
+    "State": "SD",
+    "County": "Brown",
+    "PCT_LACCESS_POP10": 31.474709608275099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2466,
+    "OBJECTID_1": 2378,
+    "FIPSNUM": 46015,
+    "State": "SD",
+    "County": "Brule",
+    "PCT_LACCESS_POP10": 34.633739528188698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2467,
+    "OBJECTID_1": 2379,
+    "FIPSNUM": 46017,
+    "State": "SD",
+    "County": "Buffalo",
+    "PCT_LACCESS_POP10": 18.350396395900002
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2468,
+    "OBJECTID_1": 2380,
+    "FIPSNUM": 46019,
+    "State": "SD",
+    "County": "Butte",
+    "PCT_LACCESS_POP10": 24.081686602141598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2469,
+    "OBJECTID_1": 2381,
+    "FIPSNUM": 46021,
+    "State": "SD",
+    "County": "Campbell",
+    "PCT_LACCESS_POP10": 93.355145405545699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2470,
+    "OBJECTID_1": 2382,
+    "FIPSNUM": 46023,
+    "State": "SD",
+    "County": "Charles Mix",
+    "PCT_LACCESS_POP10": 33.261954958029598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2471,
+    "OBJECTID_1": 2383,
+    "FIPSNUM": 46025,
+    "State": "SD",
+    "County": "Clark",
+    "PCT_LACCESS_POP10": 46.279312382009799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2472,
+    "OBJECTID_1": 2384,
+    "FIPSNUM": 46027,
+    "State": "SD",
+    "County": "Clay",
+    "PCT_LACCESS_POP10": 22.554756886061199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2473,
+    "OBJECTID_1": 2385,
+    "FIPSNUM": 46029,
+    "State": "SD",
+    "County": "Codington",
+    "PCT_LACCESS_POP10": 36.425804278756701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2474,
+    "OBJECTID_1": 2386,
+    "FIPSNUM": 46031,
+    "State": "SD",
+    "County": "Corson",
+    "PCT_LACCESS_POP10": 89.787560110614194
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2475,
+    "OBJECTID_1": 2387,
+    "FIPSNUM": 46033,
+    "State": "SD",
+    "County": "Custer",
+    "PCT_LACCESS_POP10": 35.345847933690798
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2476,
+    "OBJECTID_1": 2388,
+    "FIPSNUM": 46035,
+    "State": "SD",
+    "County": "Davison",
+    "PCT_LACCESS_POP10": 23.7707871355069
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2477,
+    "OBJECTID_1": 2389,
+    "FIPSNUM": 46037,
+    "State": "SD",
+    "County": "Day",
+    "PCT_LACCESS_POP10": 48.876029945139699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2478,
+    "OBJECTID_1": 2390,
+    "FIPSNUM": 46039,
+    "State": "SD",
+    "County": "Deuel",
+    "PCT_LACCESS_POP10": 97.099118999742188
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2479,
+    "OBJECTID_1": 2391,
+    "FIPSNUM": 46041,
+    "State": "SD",
+    "County": "Dewey",
+    "PCT_LACCESS_POP10": 43.755487795739398
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2480,
+    "OBJECTID_1": 2392,
+    "FIPSNUM": 46043,
+    "State": "SD",
+    "County": "Douglas",
+    "PCT_LACCESS_POP10": 93.321250111217708
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2481,
+    "OBJECTID_1": 2393,
+    "FIPSNUM": 46045,
+    "State": "SD",
+    "County": "Edmunds",
+    "PCT_LACCESS_POP10": 63.660418125990304
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2482,
+    "OBJECTID_1": 2394,
+    "FIPSNUM": 46047,
+    "State": "SD",
+    "County": "Fall River",
+    "PCT_LACCESS_POP10": 37.206737419143501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2483,
+    "OBJECTID_1": 2395,
+    "FIPSNUM": 46049,
+    "State": "SD",
+    "County": "Faulk",
+    "PCT_LACCESS_POP10": 99.911338639408896
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2484,
+    "OBJECTID_1": 2396,
+    "FIPSNUM": 46051,
+    "State": "SD",
+    "County": "Grant",
+    "PCT_LACCESS_POP10": 18.896595580571802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2485,
+    "OBJECTID_1": 2397,
+    "FIPSNUM": 46053,
+    "State": "SD",
+    "County": "Gregory",
+    "PCT_LACCESS_POP10": 37.078903520314597
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2486,
+    "OBJECTID_1": 2398,
+    "FIPSNUM": 46055,
+    "State": "SD",
+    "County": "Haakon",
+    "PCT_LACCESS_POP10": 41.326845628334702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2487,
+    "OBJECTID_1": 2399,
+    "FIPSNUM": 46057,
+    "State": "SD",
+    "County": "Hamlin",
+    "PCT_LACCESS_POP10": 95.600406013999901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2488,
+    "OBJECTID_1": 2400,
+    "FIPSNUM": 46059,
+    "State": "SD",
+    "County": "Hand",
+    "PCT_LACCESS_POP10": 34.324221694986399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2489,
+    "OBJECTID_1": 2401,
+    "FIPSNUM": 46061,
+    "State": "SD",
+    "County": "Hanson",
+    "PCT_LACCESS_POP10": 17.876081913228301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2490,
+    "OBJECTID_1": 2402,
+    "FIPSNUM": 46063,
+    "State": "SD",
+    "County": "Harding",
+    "PCT_LACCESS_POP10": 99.999999631985901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2491,
+    "OBJECTID_1": 2403,
+    "FIPSNUM": 46065,
+    "State": "SD",
+    "County": "Hughes",
+    "PCT_LACCESS_POP10": 23.406355039842598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2492,
+    "OBJECTID_1": 2404,
+    "FIPSNUM": 46067,
+    "State": "SD",
+    "County": "Hutchinson",
+    "PCT_LACCESS_POP10": 36.623405423768901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2493,
+    "OBJECTID_1": 2405,
+    "FIPSNUM": 46069,
+    "State": "SD",
+    "County": "Hyde",
+    "PCT_LACCESS_POP10": 99.452328668683194
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2494,
+    "OBJECTID_1": 2406,
+    "FIPSNUM": 46071,
+    "State": "SD",
+    "County": "Jackson",
+    "PCT_LACCESS_POP10": 90.879862757901293
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2495,
+    "OBJECTID_1": 2407,
+    "FIPSNUM": 46073,
+    "State": "SD",
+    "County": "Jerauld",
+    "PCT_LACCESS_POP10": 100.00000003884
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2496,
+    "OBJECTID_1": 2408,
+    "FIPSNUM": 46075,
+    "State": "SD",
+    "County": "Jones",
+    "PCT_LACCESS_POP10": 99.999999807326702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2497,
+    "OBJECTID_1": 2409,
+    "FIPSNUM": 46077,
+    "State": "SD",
+    "County": "Kingsbury",
+    "PCT_LACCESS_POP10": 52.243040560009
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2498,
+    "OBJECTID_1": 2410,
+    "FIPSNUM": 46079,
+    "State": "SD",
+    "County": "Lake",
+    "PCT_LACCESS_POP10": 12.3829377148947
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2499,
+    "OBJECTID_1": 2411,
+    "FIPSNUM": 46081,
+    "State": "SD",
+    "County": "Lawrence",
+    "PCT_LACCESS_POP10": 14.964423720701001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2500,
+    "OBJECTID_1": 2412,
+    "FIPSNUM": 46083,
+    "State": "SD",
+    "County": "Lincoln",
+    "PCT_LACCESS_POP10": 11.919655137061399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2501,
+    "OBJECTID_1": 2413,
+    "FIPSNUM": 46085,
+    "State": "SD",
+    "County": "Lyman",
+    "PCT_LACCESS_POP10": 53.9646977281948
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2502,
+    "OBJECTID_1": 2414,
+    "FIPSNUM": 46087,
+    "State": "SD",
+    "County": "McCook",
+    "PCT_LACCESS_POP10": 80.366488134694904
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2503,
+    "OBJECTID_1": 2415,
+    "FIPSNUM": 46089,
+    "State": "SD",
+    "County": "McPherson",
+    "PCT_LACCESS_POP10": 55.714202762658104
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2504,
+    "OBJECTID_1": 2416,
+    "FIPSNUM": 46091,
+    "State": "SD",
+    "County": "Marshall",
+    "PCT_LACCESS_POP10": 50.402047833342401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2505,
+    "OBJECTID_1": 2417,
+    "FIPSNUM": 46093,
+    "State": "SD",
+    "County": "Meade",
+    "PCT_LACCESS_POP10": 9.8308245551380598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2506,
+    "OBJECTID_1": 2418,
+    "FIPSNUM": 46095,
+    "State": "SD",
+    "County": "Mellette",
+    "PCT_LACCESS_POP10": 99.359196313379101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2507,
+    "OBJECTID_1": 2419,
+    "FIPSNUM": 46097,
+    "State": "SD",
+    "County": "Miner",
+    "PCT_LACCESS_POP10": 18.4031040041552
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2508,
+    "OBJECTID_1": 2420,
+    "FIPSNUM": 46099,
+    "State": "SD",
+    "County": "Minnehaha",
+    "PCT_LACCESS_POP10": 19.9300035028994
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2509,
+    "OBJECTID_1": 2421,
+    "FIPSNUM": 46101,
+    "State": "SD",
+    "County": "Moody",
+    "PCT_LACCESS_POP10": 77.538606555140106
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2510,
+    "OBJECTID_1": 2422,
+    "FIPSNUM": 46103,
+    "State": "SD",
+    "County": "Pennington",
+    "PCT_LACCESS_POP10": 30.099344874024599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2511,
+    "OBJECTID_1": 2423,
+    "FIPSNUM": 46105,
+    "State": "SD",
+    "County": "Perkins",
+    "PCT_LACCESS_POP10": 49.311238365067602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2512,
+    "OBJECTID_1": 2424,
+    "FIPSNUM": 46107,
+    "State": "SD",
+    "County": "Potter",
+    "PCT_LACCESS_POP10": 100.000000137272
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2513,
+    "OBJECTID_1": 2425,
+    "FIPSNUM": 46109,
+    "State": "SD",
+    "County": "Roberts",
+    "PCT_LACCESS_POP10": 43.258598085113896
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2514,
+    "OBJECTID_1": 2426,
+    "FIPSNUM": 46111,
+    "State": "SD",
+    "County": "Sanborn",
+    "PCT_LACCESS_POP10": 98.5771722997642
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2515,
+    "OBJECTID_1": 2427,
+    "FIPSNUM": 46113,
+    "State": "SD",
+    "County": "Shannon",
+    "PCT_LACCESS_POP10": 47.682683906775097
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2516,
+    "OBJECTID_1": 2428,
+    "FIPSNUM": 46115,
+    "State": "SD",
+    "County": "Spink",
+    "PCT_LACCESS_POP10": 43.597227599730196
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2517,
+    "OBJECTID_1": 2429,
+    "FIPSNUM": 46117,
+    "State": "SD",
+    "County": "Stanley",
+    "PCT_LACCESS_POP10": 18.9980399091796
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2518,
+    "OBJECTID_1": 2430,
+    "FIPSNUM": 46119,
+    "State": "SD",
+    "County": "Sully",
+    "PCT_LACCESS_POP10": 100.00000002066901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2519,
+    "OBJECTID_1": 2431,
+    "FIPSNUM": 46121,
+    "State": "SD",
+    "County": "Todd",
+    "PCT_LACCESS_POP10": 22.2494476168504
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2520,
+    "OBJECTID_1": 2432,
+    "FIPSNUM": 46123,
+    "State": "SD",
+    "County": "Tripp",
+    "PCT_LACCESS_POP10": 26.7608346373977
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2521,
+    "OBJECTID_1": 2433,
+    "FIPSNUM": 46125,
+    "State": "SD",
+    "County": "Turner",
+    "PCT_LACCESS_POP10": 24.5230517890346
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2522,
+    "OBJECTID_1": 2434,
+    "FIPSNUM": 46127,
+    "State": "SD",
+    "County": "Union",
+    "PCT_LACCESS_POP10": 20.149194307690699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2523,
+    "OBJECTID_1": 2435,
+    "FIPSNUM": 46129,
+    "State": "SD",
+    "County": "Walworth",
+    "PCT_LACCESS_POP10": 28.691215710963203
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2524,
+    "OBJECTID_1": 2436,
+    "FIPSNUM": 46135,
+    "State": "SD",
+    "County": "Yankton",
+    "PCT_LACCESS_POP10": 28.668930967618302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2525,
+    "OBJECTID_1": 2437,
+    "FIPSNUM": 46137,
+    "State": "SD",
+    "County": "Ziebach",
+    "PCT_LACCESS_POP10": 66.538472447196597
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2526,
+    "OBJECTID_1": 2438,
+    "FIPSNUM": 47001,
+    "State": "TN",
+    "County": "Anderson",
+    "PCT_LACCESS_POP10": 18.657035555307601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2527,
+    "OBJECTID_1": 2439,
+    "FIPSNUM": 47003,
+    "State": "TN",
+    "County": "Bedford",
+    "PCT_LACCESS_POP10": 13.467356453768002
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2528,
+    "OBJECTID_1": 2440,
+    "FIPSNUM": 47005,
+    "State": "TN",
+    "County": "Benton",
+    "PCT_LACCESS_POP10": 13.471586171073399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2529,
+    "OBJECTID_1": 2441,
+    "FIPSNUM": 47007,
+    "State": "TN",
+    "County": "Bledsoe",
+    "PCT_LACCESS_POP10": 4.65123179704457
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2530,
+    "OBJECTID_1": 2442,
+    "FIPSNUM": 47009,
+    "State": "TN",
+    "County": "Blount",
+    "PCT_LACCESS_POP10": 32.910185614373802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2531,
+    "OBJECTID_1": 2443,
+    "FIPSNUM": 47011,
+    "State": "TN",
+    "County": "Bradley",
+    "PCT_LACCESS_POP10": 28.001297401757004
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2532,
+    "OBJECTID_1": 2444,
+    "FIPSNUM": 47013,
+    "State": "TN",
+    "County": "Campbell",
+    "PCT_LACCESS_POP10": 15.648786462578702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2533,
+    "OBJECTID_1": 2445,
+    "FIPSNUM": 47015,
+    "State": "TN",
+    "County": "Cannon",
+    "PCT_LACCESS_POP10": 2.2036711216121598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2534,
+    "OBJECTID_1": 2446,
+    "FIPSNUM": 47017,
+    "State": "TN",
+    "County": "Carroll",
+    "PCT_LACCESS_POP10": 7.6944125094689797
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2535,
+    "OBJECTID_1": 2447,
+    "FIPSNUM": 47019,
+    "State": "TN",
+    "County": "Carter",
+    "PCT_LACCESS_POP10": 33.0247146114231
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2536,
+    "OBJECTID_1": 2448,
+    "FIPSNUM": 47021,
+    "State": "TN",
+    "County": "Cheatham",
+    "PCT_LACCESS_POP10": 0.80019382786012705
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2537,
+    "OBJECTID_1": 2449,
+    "FIPSNUM": 47023,
+    "State": "TN",
+    "County": "Chester",
+    "PCT_LACCESS_POP10": 13.330880275861501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2538,
+    "OBJECTID_1": 2450,
+    "FIPSNUM": 47025,
+    "State": "TN",
+    "County": "Claiborne",
+    "PCT_LACCESS_POP10": 18.9237545395615
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2539,
+    "OBJECTID_1": 2451,
+    "FIPSNUM": 47027,
+    "State": "TN",
+    "County": "Clay",
+    "PCT_LACCESS_POP10": 0.019227683491082701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2540,
+    "OBJECTID_1": 2452,
+    "FIPSNUM": 47029,
+    "State": "TN",
+    "County": "Cocke",
+    "PCT_LACCESS_POP10": 17.9826283688245
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2541,
+    "OBJECTID_1": 2453,
+    "FIPSNUM": 47031,
+    "State": "TN",
+    "County": "Coffee",
+    "PCT_LACCESS_POP10": 15.314385418797299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2542,
+    "OBJECTID_1": 2454,
+    "FIPSNUM": 47033,
+    "State": "TN",
+    "County": "Crockett",
+    "PCT_LACCESS_POP10": 0.75313837276971496
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2543,
+    "OBJECTID_1": 2455,
+    "FIPSNUM": 47035,
+    "State": "TN",
+    "County": "Cumberland",
+    "PCT_LACCESS_POP10": 14.4205348079114
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2544,
+    "OBJECTID_1": 2456,
+    "FIPSNUM": 47037,
+    "State": "TN",
+    "County": "Davidson",
+    "PCT_LACCESS_POP10": 24.570849751541299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2545,
+    "OBJECTID_1": 2457,
+    "FIPSNUM": 47039,
+    "State": "TN",
+    "County": "Decatur",
+    "PCT_LACCESS_POP10": 6.3710621514216204
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2546,
+    "OBJECTID_1": 2458,
+    "FIPSNUM": 47041,
+    "State": "TN",
+    "County": "DeKalb",
+    "PCT_LACCESS_POP10": 2.3111484057718599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2547,
+    "OBJECTID_1": 2459,
+    "FIPSNUM": 47043,
+    "State": "TN",
+    "County": "Dickson",
+    "PCT_LACCESS_POP10": 12.103365645810801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2548,
+    "OBJECTID_1": 2460,
+    "FIPSNUM": 47045,
+    "State": "TN",
+    "County": "Dyer",
+    "PCT_LACCESS_POP10": 29.420321811107904
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2549,
+    "OBJECTID_1": 2461,
+    "FIPSNUM": 47047,
+    "State": "TN",
+    "County": "Fayette",
+    "PCT_LACCESS_POP10": 11.633605132861401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2550,
+    "OBJECTID_1": 2462,
+    "FIPSNUM": 47049,
+    "State": "TN",
+    "County": "Fentress",
+    "PCT_LACCESS_POP10": 0.27286638723219503
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2551,
+    "OBJECTID_1": 2463,
+    "FIPSNUM": 47051,
+    "State": "TN",
+    "County": "Franklin",
+    "PCT_LACCESS_POP10": 18.676770637175899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2552,
+    "OBJECTID_1": 2464,
+    "FIPSNUM": 47053,
+    "State": "TN",
+    "County": "Gibson",
+    "PCT_LACCESS_POP10": 13.609014713221901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2553,
+    "OBJECTID_1": 2465,
+    "FIPSNUM": 47055,
+    "State": "TN",
+    "County": "Giles",
+    "PCT_LACCESS_POP10": 15.5263202606859
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2554,
+    "OBJECTID_1": 2466,
+    "FIPSNUM": 47057,
+    "State": "TN",
+    "County": "Grainger",
+    "PCT_LACCESS_POP10": 0
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2555,
+    "OBJECTID_1": 2467,
+    "FIPSNUM": 47059,
+    "State": "TN",
+    "County": "Greene",
+    "PCT_LACCESS_POP10": 8.1924621975976901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2556,
+    "OBJECTID_1": 2468,
+    "FIPSNUM": 47061,
+    "State": "TN",
+    "County": "Grundy",
+    "PCT_LACCESS_POP10": 6.7154089952672704
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2557,
+    "OBJECTID_1": 2469,
+    "FIPSNUM": 47063,
+    "State": "TN",
+    "County": "Hamblen",
+    "PCT_LACCESS_POP10": 33.2589328449805
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2558,
+    "OBJECTID_1": 2470,
+    "FIPSNUM": 47065,
+    "State": "TN",
+    "County": "Hamilton",
+    "PCT_LACCESS_POP10": 37.887619389008499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2559,
+    "OBJECTID_1": 2471,
+    "FIPSNUM": 47067,
+    "State": "TN",
+    "County": "Hancock",
+    "PCT_LACCESS_POP10": 1.3963325599795602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2560,
+    "OBJECTID_1": 2472,
+    "FIPSNUM": 47069,
+    "State": "TN",
+    "County": "Hardeman",
+    "PCT_LACCESS_POP10": 29.577946848709502
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2561,
+    "OBJECTID_1": 2473,
+    "FIPSNUM": 47071,
+    "State": "TN",
+    "County": "Hardin",
+    "PCT_LACCESS_POP10": 11.8075673145898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2562,
+    "OBJECTID_1": 2474,
+    "FIPSNUM": 47073,
+    "State": "TN",
+    "County": "Hawkins",
+    "PCT_LACCESS_POP10": 23.365383221819499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2563,
+    "OBJECTID_1": 2475,
+    "FIPSNUM": 47075,
+    "State": "TN",
+    "County": "Haywood",
+    "PCT_LACCESS_POP10": 16.1893426549208
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2564,
+    "OBJECTID_1": 2476,
+    "FIPSNUM": 47077,
+    "State": "TN",
+    "County": "Henderson",
+    "PCT_LACCESS_POP10": 13.6778018093689
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2565,
+    "OBJECTID_1": 2477,
+    "FIPSNUM": 47079,
+    "State": "TN",
+    "County": "Henry",
+    "PCT_LACCESS_POP10": 20.233312404542701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2566,
+    "OBJECTID_1": 2478,
+    "FIPSNUM": 47081,
+    "State": "TN",
+    "County": "Hickman",
+    "PCT_LACCESS_POP10": 9.2304609382907703
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2567,
+    "OBJECTID_1": 2479,
+    "FIPSNUM": 47083,
+    "State": "TN",
+    "County": "Houston",
+    "PCT_LACCESS_POP10": 3.5106112843063397
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2568,
+    "OBJECTID_1": 2480,
+    "FIPSNUM": 47085,
+    "State": "TN",
+    "County": "Humphreys",
+    "PCT_LACCESS_POP10": 9.0556509297940089
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2569,
+    "OBJECTID_1": 2481,
+    "FIPSNUM": 47087,
+    "State": "TN",
+    "County": "Jackson",
+    "PCT_LACCESS_POP10": 0.0137801310276377
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2570,
+    "OBJECTID_1": 2482,
+    "FIPSNUM": 47089,
+    "State": "TN",
+    "County": "Jefferson",
+    "PCT_LACCESS_POP10": 5.1478311614377406
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2571,
+    "OBJECTID_1": 2483,
+    "FIPSNUM": 47091,
+    "State": "TN",
+    "County": "Johnson",
+    "PCT_LACCESS_POP10": 10.7682482731703
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2572,
+    "OBJECTID_1": 2484,
+    "FIPSNUM": 47093,
+    "State": "TN",
+    "County": "Knox",
+    "PCT_LACCESS_POP10": 38.4893879406251
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2573,
+    "OBJECTID_1": 2485,
+    "FIPSNUM": 47095,
+    "State": "TN",
+    "County": "Lake",
+    "PCT_LACCESS_POP10": 0.187705579137456
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2574,
+    "OBJECTID_1": 2486,
+    "FIPSNUM": 47097,
+    "State": "TN",
+    "County": "Lauderdale",
+    "PCT_LACCESS_POP10": 8.6237025251203097
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2575,
+    "OBJECTID_1": 2487,
+    "FIPSNUM": 47099,
+    "State": "TN",
+    "County": "Lawrence",
+    "PCT_LACCESS_POP10": 6.6813587670259107
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2576,
+    "OBJECTID_1": 2488,
+    "FIPSNUM": 47101,
+    "State": "TN",
+    "County": "Lewis",
+    "PCT_LACCESS_POP10": 3.47584955926787
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2577,
+    "OBJECTID_1": 2489,
+    "FIPSNUM": 47103,
+    "State": "TN",
+    "County": "Lincoln",
+    "PCT_LACCESS_POP10": 15.2398117672805
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2578,
+    "OBJECTID_1": 2490,
+    "FIPSNUM": 47105,
+    "State": "TN",
+    "County": "Loudon",
+    "PCT_LACCESS_POP10": 28.163336655153699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2579,
+    "OBJECTID_1": 2491,
+    "FIPSNUM": 47107,
+    "State": "TN",
+    "County": "McMinn",
+    "PCT_LACCESS_POP10": 15.4201337020342
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2580,
+    "OBJECTID_1": 2492,
+    "FIPSNUM": 47109,
+    "State": "TN",
+    "County": "McNairy",
+    "PCT_LACCESS_POP10": 10.6275412093132
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2581,
+    "OBJECTID_1": 2493,
+    "FIPSNUM": 47111,
+    "State": "TN",
+    "County": "Macon",
+    "PCT_LACCESS_POP10": 0.82312733616155109
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2582,
+    "OBJECTID_1": 2494,
+    "FIPSNUM": 47113,
+    "State": "TN",
+    "County": "Madison",
+    "PCT_LACCESS_POP10": 23.1471757495977
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2583,
+    "OBJECTID_1": 2495,
+    "FIPSNUM": 47115,
+    "State": "TN",
+    "County": "Marion",
+    "PCT_LACCESS_POP10": 7.4913875807070704
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2584,
+    "OBJECTID_1": 2496,
+    "FIPSNUM": 47117,
+    "State": "TN",
+    "County": "Marshall",
+    "PCT_LACCESS_POP10": 6.2425604004172799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2585,
+    "OBJECTID_1": 2497,
+    "FIPSNUM": 47119,
+    "State": "TN",
+    "County": "Maury",
+    "PCT_LACCESS_POP10": 16.200347918141102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2586,
+    "OBJECTID_1": 2498,
+    "FIPSNUM": 47121,
+    "State": "TN",
+    "County": "Meigs",
+    "PCT_LACCESS_POP10": 0.80905256206052112
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2587,
+    "OBJECTID_1": 2499,
+    "FIPSNUM": 47123,
+    "State": "TN",
+    "County": "Monroe",
+    "PCT_LACCESS_POP10": 5.0837902044557497
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2588,
+    "OBJECTID_1": 2500,
+    "FIPSNUM": 47125,
+    "State": "TN",
+    "County": "Montgomery",
+    "PCT_LACCESS_POP10": 36.0376815608222
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2589,
+    "OBJECTID_1": 2501,
+    "FIPSNUM": 47127,
+    "State": "TN",
+    "County": "Moore",
+    "PCT_LACCESS_POP10": 32.798324907102199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2590,
+    "OBJECTID_1": 2502,
+    "FIPSNUM": 47129,
+    "State": "TN",
+    "County": "Morgan",
+    "PCT_LACCESS_POP10": 20.201846731442298
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2591,
+    "OBJECTID_1": 2503,
+    "FIPSNUM": 47131,
+    "State": "TN",
+    "County": "Obion",
+    "PCT_LACCESS_POP10": 10.741424116070799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2592,
+    "OBJECTID_1": 2504,
+    "FIPSNUM": 47133,
+    "State": "TN",
+    "County": "Overton",
+    "PCT_LACCESS_POP10": 1.5854935440596698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2593,
+    "OBJECTID_1": 2505,
+    "FIPSNUM": 47135,
+    "State": "TN",
+    "County": "Perry",
+    "PCT_LACCESS_POP10": 6.9430310649707003
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2594,
+    "OBJECTID_1": 2506,
+    "FIPSNUM": 47137,
+    "State": "TN",
+    "County": "Pickett",
+    "PCT_LACCESS_POP10": 0.76577634008597295
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2595,
+    "OBJECTID_1": 2507,
+    "FIPSNUM": 47139,
+    "State": "TN",
+    "County": "Polk",
+    "PCT_LACCESS_POP10": 0.25212060860421903
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2596,
+    "OBJECTID_1": 2558,
+    "FIPSNUM": 48051,
+    "State": "TX",
+    "County": "Burleson",
+    "PCT_LACCESS_POP10": 13.639416213858398
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2597,
+    "OBJECTID_1": 2559,
+    "FIPSNUM": 48053,
+    "State": "TX",
+    "County": "Burnet",
+    "PCT_LACCESS_POP10": 31.555034783257202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2598,
+    "OBJECTID_1": 2560,
+    "FIPSNUM": 48055,
+    "State": "TX",
+    "County": "Caldwell",
+    "PCT_LACCESS_POP10": 19.401001189983699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2599,
+    "OBJECTID_1": 2561,
+    "FIPSNUM": 48057,
+    "State": "TX",
+    "County": "Calhoun",
+    "PCT_LACCESS_POP10": 31.7634925567869
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2600,
+    "OBJECTID_1": 2562,
+    "FIPSNUM": 48059,
+    "State": "TX",
+    "County": "Callahan",
+    "PCT_LACCESS_POP10": 22.0932265868874
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2601,
+    "OBJECTID_1": 2563,
+    "FIPSNUM": 48061,
+    "State": "TX",
+    "County": "Cameron",
+    "PCT_LACCESS_POP10": 27.631608303882299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2602,
+    "OBJECTID_1": 2564,
+    "FIPSNUM": 48063,
+    "State": "TX",
+    "County": "Camp",
+    "PCT_LACCESS_POP10": 10.0558189778755
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2603,
+    "OBJECTID_1": 2565,
+    "FIPSNUM": 48065,
+    "State": "TX",
+    "County": "Carson",
+    "PCT_LACCESS_POP10": 45.802216267793199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2604,
+    "OBJECTID_1": 2566,
+    "FIPSNUM": 48067,
+    "State": "TX",
+    "County": "Cass",
+    "PCT_LACCESS_POP10": 8.1187606170269699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2605,
+    "OBJECTID_1": 2567,
+    "FIPSNUM": 48069,
+    "State": "TX",
+    "County": "Castro",
+    "PCT_LACCESS_POP10": 11.864359109754
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2606,
+    "OBJECTID_1": 2568,
+    "FIPSNUM": 48071,
+    "State": "TX",
+    "County": "Chambers",
+    "PCT_LACCESS_POP10": 18.1204426940571
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2607,
+    "OBJECTID_1": 2569,
+    "FIPSNUM": 48073,
+    "State": "TX",
+    "County": "Cherokee",
+    "PCT_LACCESS_POP10": 16.283617182762601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2608,
+    "OBJECTID_1": 2570,
+    "FIPSNUM": 48075,
+    "State": "TX",
+    "County": "Childress",
+    "PCT_LACCESS_POP10": 44.268868785245701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2609,
+    "OBJECTID_1": 2571,
+    "FIPSNUM": 48077,
+    "State": "TX",
+    "County": "Clay",
+    "PCT_LACCESS_POP10": 37.7731109395055
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2610,
+    "OBJECTID_1": 2572,
+    "FIPSNUM": 48079,
+    "State": "TX",
+    "County": "Cochran",
+    "PCT_LACCESS_POP10": 21.175684127115098
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2611,
+    "OBJECTID_1": 2573,
+    "FIPSNUM": 48081,
+    "State": "TX",
+    "County": "Coke",
+    "PCT_LACCESS_POP10": 99.976292033383203
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2612,
+    "OBJECTID_1": 2574,
+    "FIPSNUM": 48083,
+    "State": "TX",
+    "County": "Coleman",
+    "PCT_LACCESS_POP10": 19.626159947378099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2613,
+    "OBJECTID_1": 2575,
+    "FIPSNUM": 48085,
+    "State": "TX",
+    "County": "Collin",
+    "PCT_LACCESS_POP10": 14.898650267426799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2614,
+    "OBJECTID_1": 2576,
+    "FIPSNUM": 48087,
+    "State": "TX",
+    "County": "Collingsworth",
+    "PCT_LACCESS_POP10": 7.0748411145877501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2615,
+    "OBJECTID_1": 2577,
+    "FIPSNUM": 48089,
+    "State": "TX",
+    "County": "Colorado",
+    "PCT_LACCESS_POP10": 20.8755435807517
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2616,
+    "OBJECTID_1": 2578,
+    "FIPSNUM": 48091,
+    "State": "TX",
+    "County": "Comal",
+    "PCT_LACCESS_POP10": 19.008054311442198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2617,
+    "OBJECTID_1": 2579,
+    "FIPSNUM": 48093,
+    "State": "TX",
+    "County": "Comanche",
+    "PCT_LACCESS_POP10": 15.5454252114636
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2618,
+    "OBJECTID_1": 2580,
+    "FIPSNUM": 48095,
+    "State": "TX",
+    "County": "Concho",
+    "PCT_LACCESS_POP10": 26.694894693107202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2619,
+    "OBJECTID_1": 2581,
+    "FIPSNUM": 48097,
+    "State": "TX",
+    "County": "Cooke",
+    "PCT_LACCESS_POP10": 8.7012227690914603
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2620,
+    "OBJECTID_1": 2582,
+    "FIPSNUM": 48099,
+    "State": "TX",
+    "County": "Coryell",
+    "PCT_LACCESS_POP10": 36.254841395563695
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2621,
+    "OBJECTID_1": 2583,
+    "FIPSNUM": 48101,
+    "State": "TX",
+    "County": "Cottle",
+    "PCT_LACCESS_POP10": 9.305257995765249
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2622,
+    "OBJECTID_1": 2584,
+    "FIPSNUM": 48103,
+    "State": "TX",
+    "County": "Crane",
+    "PCT_LACCESS_POP10": 8.8928583865591708
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2623,
+    "OBJECTID_1": 2585,
+    "FIPSNUM": 48105,
+    "State": "TX",
+    "County": "Crockett",
+    "PCT_LACCESS_POP10": 7.8473208830063701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2624,
+    "OBJECTID_1": 2586,
+    "FIPSNUM": 48107,
+    "State": "TX",
+    "County": "Crosby",
+    "PCT_LACCESS_POP10": 4.5818424447173403
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2625,
+    "OBJECTID_1": 2587,
+    "FIPSNUM": 48109,
+    "State": "TX",
+    "County": "Culberson",
+    "PCT_LACCESS_POP10": 7.8163381927898401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2626,
+    "OBJECTID_1": 2588,
+    "FIPSNUM": 48111,
+    "State": "TX",
+    "County": "Dallam",
+    "PCT_LACCESS_POP10": 36.367414151104896
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2627,
+    "OBJECTID_1": 2589,
+    "FIPSNUM": 48113,
+    "State": "TX",
+    "County": "Dallas",
+    "PCT_LACCESS_POP10": 19.985025469463398
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2628,
+    "OBJECTID_1": 2590,
+    "FIPSNUM": 48115,
+    "State": "TX",
+    "County": "Dawson",
+    "PCT_LACCESS_POP10": 29.5057952270543
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2629,
+    "OBJECTID_1": 2591,
+    "FIPSNUM": 48117,
+    "State": "TX",
+    "County": "Deaf Smith",
+    "PCT_LACCESS_POP10": 19.248392216751601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2630,
+    "OBJECTID_1": 2592,
+    "FIPSNUM": 48119,
+    "State": "TX",
+    "County": "Delta",
+    "PCT_LACCESS_POP10": 7.2109117110578103
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2631,
+    "OBJECTID_1": 2593,
+    "FIPSNUM": 48121,
+    "State": "TX",
+    "County": "Denton",
+    "PCT_LACCESS_POP10": 21.614005155514
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2632,
+    "OBJECTID_1": 2594,
+    "FIPSNUM": 48123,
+    "State": "TX",
+    "County": "DeWitt",
+    "PCT_LACCESS_POP10": 19.153148589323703
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2633,
+    "OBJECTID_1": 2595,
+    "FIPSNUM": 48125,
+    "State": "TX",
+    "County": "Dickens",
+    "PCT_LACCESS_POP10": 19.8428362373363
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2634,
+    "OBJECTID_1": 2596,
+    "FIPSNUM": 48127,
+    "State": "TX",
+    "County": "Dimmit",
+    "PCT_LACCESS_POP10": 22.350853889922202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2635,
+    "OBJECTID_1": 2597,
+    "FIPSNUM": 48129,
+    "State": "TX",
+    "County": "Donley",
+    "PCT_LACCESS_POP10": 14.548785850208802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2636,
+    "OBJECTID_1": 2598,
+    "FIPSNUM": 48131,
+    "State": "TX",
+    "County": "Duval",
+    "PCT_LACCESS_POP10": 33.8181990751673
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2637,
+    "OBJECTID_1": 2599,
+    "FIPSNUM": 48133,
+    "State": "TX",
+    "County": "Eastland",
+    "PCT_LACCESS_POP10": 21.696713880351002
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2638,
+    "OBJECTID_1": 2600,
+    "FIPSNUM": 48135,
+    "State": "TX",
+    "County": "Ector",
+    "PCT_LACCESS_POP10": 22.568299141523198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2639,
+    "OBJECTID_1": 2601,
+    "FIPSNUM": 48137,
+    "State": "TX",
+    "County": "Edwards",
+    "PCT_LACCESS_POP10": 31.868553902180903
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2640,
+    "OBJECTID_1": 2602,
+    "FIPSNUM": 48139,
+    "State": "TX",
+    "County": "Ellis",
+    "PCT_LACCESS_POP10": 25.681506128760901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2641,
+    "OBJECTID_1": 2603,
+    "FIPSNUM": 48141,
+    "State": "TX",
+    "County": "El Paso",
+    "PCT_LACCESS_POP10": 22.3740356577892
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2642,
+    "OBJECTID_1": 2604,
+    "FIPSNUM": 48143,
+    "State": "TX",
+    "County": "Erath",
+    "PCT_LACCESS_POP10": 35.632628933907
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2643,
+    "OBJECTID_1": 2605,
+    "FIPSNUM": 48145,
+    "State": "TX",
+    "County": "Falls",
+    "PCT_LACCESS_POP10": 36.433765363918603
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2644,
+    "OBJECTID_1": 2606,
+    "FIPSNUM": 48147,
+    "State": "TX",
+    "County": "Fannin",
+    "PCT_LACCESS_POP10": 38.186425841836403
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2645,
+    "OBJECTID_1": 2607,
+    "FIPSNUM": 48149,
+    "State": "TX",
+    "County": "Fayette",
+    "PCT_LACCESS_POP10": 29.983451845949698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2646,
+    "OBJECTID_1": 2608,
+    "FIPSNUM": 48151,
+    "State": "TX",
+    "County": "Fisher",
+    "PCT_LACCESS_POP10": 17.0266986659358
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2647,
+    "OBJECTID_1": 2609,
+    "FIPSNUM": 48153,
+    "State": "TX",
+    "County": "Floyd",
+    "PCT_LACCESS_POP10": 5.2523678633922302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2648,
+    "OBJECTID_1": 2610,
+    "FIPSNUM": 48155,
+    "State": "TX",
+    "County": "Foard",
+    "PCT_LACCESS_POP10": 100.000000388567
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2649,
+    "OBJECTID_1": 2611,
+    "FIPSNUM": 48157,
+    "State": "TX",
+    "County": "Fort Bend",
+    "PCT_LACCESS_POP10": 30.368495930740103
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2650,
+    "OBJECTID_1": 2612,
+    "FIPSNUM": 48159,
+    "State": "TX",
+    "County": "Franklin",
+    "PCT_LACCESS_POP10": 7.0143441360681695
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2651,
+    "OBJECTID_1": 2613,
+    "FIPSNUM": 48161,
+    "State": "TX",
+    "County": "Freestone",
+    "PCT_LACCESS_POP10": 18.4251378544791
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2652,
+    "OBJECTID_1": 2614,
+    "FIPSNUM": 48163,
+    "State": "TX",
+    "County": "Frio",
+    "PCT_LACCESS_POP10": 13.993772024288202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2653,
+    "OBJECTID_1": 2615,
+    "FIPSNUM": 48165,
+    "State": "TX",
+    "County": "Gaines",
+    "PCT_LACCESS_POP10": 10.473700258643801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2654,
+    "OBJECTID_1": 2616,
+    "FIPSNUM": 48167,
+    "State": "TX",
+    "County": "Galveston",
+    "PCT_LACCESS_POP10": 34.937701715964096
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2655,
+    "OBJECTID_1": 2617,
+    "FIPSNUM": 48169,
+    "State": "TX",
+    "County": "Garza",
+    "PCT_LACCESS_POP10": 6.0137056925363002
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2656,
+    "OBJECTID_1": 2618,
+    "FIPSNUM": 48171,
+    "State": "TX",
+    "County": "Gillespie",
+    "PCT_LACCESS_POP10": 16.1263393443718
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2657,
+    "OBJECTID_1": 2619,
+    "FIPSNUM": 48173,
+    "State": "TX",
+    "County": "Glasscock",
+    "PCT_LACCESS_POP10": 98.241492118977703
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2658,
+    "OBJECTID_1": 2620,
+    "FIPSNUM": 48175,
+    "State": "TX",
+    "County": "Goliad",
+    "PCT_LACCESS_POP10": 37.037202820756299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2659,
+    "OBJECTID_1": 2621,
+    "FIPSNUM": 48177,
+    "State": "TX",
+    "County": "Gonzales",
+    "PCT_LACCESS_POP10": 27.900287473303798
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2660,
+    "OBJECTID_1": 2622,
+    "FIPSNUM": 48179,
+    "State": "TX",
+    "County": "Gray",
+    "PCT_LACCESS_POP10": 16.922417805289399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2661,
+    "OBJECTID_1": 2623,
+    "FIPSNUM": 48181,
+    "State": "TX",
+    "County": "Grayson",
+    "PCT_LACCESS_POP10": 27.081388403358602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2662,
+    "OBJECTID_1": 2624,
+    "FIPSNUM": 48183,
+    "State": "TX",
+    "County": "Gregg",
+    "PCT_LACCESS_POP10": 24.3590108969026
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2663,
+    "OBJECTID_1": 2625,
+    "FIPSNUM": 48185,
+    "State": "TX",
+    "County": "Grimes",
+    "PCT_LACCESS_POP10": 43.710096648981597
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2664,
+    "OBJECTID_1": 2626,
+    "FIPSNUM": 48187,
+    "State": "TX",
+    "County": "Guadalupe",
+    "PCT_LACCESS_POP10": 31.692923544514301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2665,
+    "OBJECTID_1": 2627,
+    "FIPSNUM": 48189,
+    "State": "TX",
+    "County": "Hale",
+    "PCT_LACCESS_POP10": 26.089661433635197
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2666,
+    "OBJECTID_1": 2628,
+    "FIPSNUM": 48191,
+    "State": "TX",
+    "County": "Hall",
+    "PCT_LACCESS_POP10": 24.454720337968201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2667,
+    "OBJECTID_1": 2629,
+    "FIPSNUM": 48193,
+    "State": "TX",
+    "County": "Hamilton",
+    "PCT_LACCESS_POP10": 25.056992642738901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2668,
+    "OBJECTID_1": 2630,
+    "FIPSNUM": 48195,
+    "State": "TX",
+    "County": "Hansford",
+    "PCT_LACCESS_POP10": 37.514066874847998
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2669,
+    "OBJECTID_1": 2631,
+    "FIPSNUM": 48197,
+    "State": "TX",
+    "County": "Hardeman",
+    "PCT_LACCESS_POP10": 29.720308938533901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2670,
+    "OBJECTID_1": 2632,
+    "FIPSNUM": 48199,
+    "State": "TX",
+    "County": "Hardin",
+    "PCT_LACCESS_POP10": 27.8440673666904
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2671,
+    "OBJECTID_1": 2633,
+    "FIPSNUM": 48201,
+    "State": "TX",
+    "County": "Harris",
+    "PCT_LACCESS_POP10": 21.651253400131701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2672,
+    "OBJECTID_1": 2634,
+    "FIPSNUM": 48203,
+    "State": "TX",
+    "County": "Harrison",
+    "PCT_LACCESS_POP10": 17.613376822381898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2673,
+    "OBJECTID_1": 2635,
+    "FIPSNUM": 48205,
+    "State": "TX",
+    "County": "Hartley",
+    "PCT_LACCESS_POP10": 23.9207505225136
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2674,
+    "OBJECTID_1": 2636,
+    "FIPSNUM": 48207,
+    "State": "TX",
+    "County": "Haskell",
+    "PCT_LACCESS_POP10": 14.9023596663347
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2675,
+    "OBJECTID_1": 2637,
+    "FIPSNUM": 48209,
+    "State": "TX",
+    "County": "Hays",
+    "PCT_LACCESS_POP10": 19.4533931165453
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2676,
+    "OBJECTID_1": 2638,
+    "FIPSNUM": 48211,
+    "State": "TX",
+    "County": "Hemphill",
+    "PCT_LACCESS_POP10": 10.5974562936049
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2677,
+    "OBJECTID_1": 2639,
+    "FIPSNUM": 48213,
+    "State": "TX",
+    "County": "Henderson",
+    "PCT_LACCESS_POP10": 24.328315549531702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2678,
+    "OBJECTID_1": 2640,
+    "FIPSNUM": 48215,
+    "State": "TX",
+    "County": "Hidalgo",
+    "PCT_LACCESS_POP10": 42.653448408490306
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2679,
+    "OBJECTID_1": 2641,
+    "FIPSNUM": 48217,
+    "State": "TX",
+    "County": "Hill",
+    "PCT_LACCESS_POP10": 3.1898253799687901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2680,
+    "OBJECTID_1": 2642,
+    "FIPSNUM": 48219,
+    "State": "TX",
+    "County": "Hockley",
+    "PCT_LACCESS_POP10": 35.739402257374906
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2681,
+    "OBJECTID_1": 2643,
+    "FIPSNUM": 48221,
+    "State": "TX",
+    "County": "Hood",
+    "PCT_LACCESS_POP10": 35.109768328860504
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2682,
+    "OBJECTID_1": 2644,
+    "FIPSNUM": 48223,
+    "State": "TX",
+    "County": "Hopkins",
+    "PCT_LACCESS_POP10": 16.0288050492669
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2683,
+    "OBJECTID_1": 2645,
+    "FIPSNUM": 48225,
+    "State": "TX",
+    "County": "Houston",
+    "PCT_LACCESS_POP10": 38.493512464250898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2684,
+    "OBJECTID_1": 2646,
+    "FIPSNUM": 48227,
+    "State": "TX",
+    "County": "Howard",
+    "PCT_LACCESS_POP10": 49.182669949804804
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2685,
+    "OBJECTID_1": 2647,
+    "FIPSNUM": 48229,
+    "State": "TX",
+    "County": "Hudspeth",
+    "PCT_LACCESS_POP10": 99.923543018143803
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2686,
+    "OBJECTID_1": 2648,
+    "FIPSNUM": 48231,
+    "State": "TX",
+    "County": "Hunt",
+    "PCT_LACCESS_POP10": 13.341473499673601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2687,
+    "OBJECTID_1": 2649,
+    "FIPSNUM": 48233,
+    "State": "TX",
+    "County": "Hutchinson",
+    "PCT_LACCESS_POP10": 42.908771804269399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2688,
+    "OBJECTID_1": 2650,
+    "FIPSNUM": 48235,
+    "State": "TX",
+    "County": "Irion",
+    "PCT_LACCESS_POP10": 99.974199825360401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2689,
+    "OBJECTID_1": 2651,
+    "FIPSNUM": 48237,
+    "State": "TX",
+    "County": "Jack",
+    "PCT_LACCESS_POP10": 46.666076799487996
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2690,
+    "OBJECTID_1": 2652,
+    "FIPSNUM": 48239,
+    "State": "TX",
+    "County": "Jackson",
+    "PCT_LACCESS_POP10": 22.192791318317699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2691,
+    "OBJECTID_1": 2653,
+    "FIPSNUM": 48241,
+    "State": "TX",
+    "County": "Jasper",
+    "PCT_LACCESS_POP10": 20.123405018076301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2692,
+    "OBJECTID_1": 2654,
+    "FIPSNUM": 48243,
+    "State": "TX",
+    "County": "Jeff Davis",
+    "PCT_LACCESS_POP10": 30.246813317663701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2693,
+    "OBJECTID_1": 2655,
+    "FIPSNUM": 48245,
+    "State": "TX",
+    "County": "Jefferson",
+    "PCT_LACCESS_POP10": 28.933482425073699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2694,
+    "OBJECTID_1": 2656,
+    "FIPSNUM": 48247,
+    "State": "TX",
+    "County": "Jim Hogg",
+    "PCT_LACCESS_POP10": 2.10038429153416
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2695,
+    "OBJECTID_1": 2657,
+    "FIPSNUM": 48249,
+    "State": "TX",
+    "County": "Jim Wells",
+    "PCT_LACCESS_POP10": 18.530579307015199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2696,
+    "OBJECTID_1": 2658,
+    "FIPSNUM": 48251,
+    "State": "TX",
+    "County": "Johnson",
+    "PCT_LACCESS_POP10": 22.689832814971702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2697,
+    "OBJECTID_1": 2659,
+    "FIPSNUM": 48253,
+    "State": "TX",
+    "County": "Jones",
+    "PCT_LACCESS_POP10": 21.8634508892073
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2698,
+    "OBJECTID_1": 2660,
+    "FIPSNUM": 48255,
+    "State": "TX",
+    "County": "Karnes",
+    "PCT_LACCESS_POP10": 24.4257654871755
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2699,
+    "OBJECTID_1": 2661,
+    "FIPSNUM": 48257,
+    "State": "TX",
+    "County": "Kaufman",
+    "PCT_LACCESS_POP10": 8.4601888993276404
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2700,
+    "OBJECTID_1": 2662,
+    "FIPSNUM": 48259,
+    "State": "TX",
+    "County": "Kendall",
+    "PCT_LACCESS_POP10": 11.8941368276032
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2701,
+    "OBJECTID_1": 2663,
+    "FIPSNUM": 48261,
+    "State": "TX",
+    "County": "Kenedy",
+    "PCT_LACCESS_POP10": 97.384632684219994
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2702,
+    "OBJECTID_1": 2664,
+    "FIPSNUM": 48263,
+    "State": "TX",
+    "County": "Kent",
+    "PCT_LACCESS_POP10": 97.195259048246001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2703,
+    "OBJECTID_1": 2665,
+    "FIPSNUM": 48265,
+    "State": "TX",
+    "County": "Kerr",
+    "PCT_LACCESS_POP10": 29.998090752780698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2704,
+    "OBJECTID_1": 2666,
+    "FIPSNUM": 48267,
+    "State": "TX",
+    "County": "Kimble",
+    "PCT_LACCESS_POP10": 24.9727983018991
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2705,
+    "OBJECTID_1": 2667,
+    "FIPSNUM": 48269,
+    "State": "TX",
+    "County": "King",
+    "PCT_LACCESS_POP10": 99.999999606456697
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2706,
+    "OBJECTID_1": 2668,
+    "FIPSNUM": 48271,
+    "State": "TX",
+    "County": "Kinney",
+    "PCT_LACCESS_POP10": 4.1502953583100304
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2707,
+    "OBJECTID_1": 2669,
+    "FIPSNUM": 48273,
+    "State": "TX",
+    "County": "Kleberg",
+    "PCT_LACCESS_POP10": 29.942149472993101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2708,
+    "OBJECTID_1": 2670,
+    "FIPSNUM": 48275,
+    "State": "TX",
+    "County": "Knox",
+    "PCT_LACCESS_POP10": 12.632494317950099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2709,
+    "OBJECTID_1": 2671,
+    "FIPSNUM": 48277,
+    "State": "TX",
+    "County": "Lamar",
+    "PCT_LACCESS_POP10": 31.639878595313498
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2710,
+    "OBJECTID_1": 2672,
+    "FIPSNUM": 48279,
+    "State": "TX",
+    "County": "Lamb",
+    "PCT_LACCESS_POP10": 3.6134029829274001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2711,
+    "OBJECTID_1": 2673,
+    "FIPSNUM": 48281,
+    "State": "TX",
+    "County": "Lampasas",
+    "PCT_LACCESS_POP10": 20.402294802710198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2712,
+    "OBJECTID_1": 2674,
+    "FIPSNUM": 48283,
+    "State": "TX",
+    "County": "La Salle",
+    "PCT_LACCESS_POP10": 43.1244826973466
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2713,
+    "OBJECTID_1": 2675,
+    "FIPSNUM": 48285,
+    "State": "TX",
+    "County": "Lavaca",
+    "PCT_LACCESS_POP10": 16.133371141933502
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2714,
+    "OBJECTID_1": 2676,
+    "FIPSNUM": 48287,
+    "State": "TX",
+    "County": "Lee",
+    "PCT_LACCESS_POP10": 7.5380138436478896
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2715,
+    "OBJECTID_1": 2677,
+    "FIPSNUM": 48289,
+    "State": "TX",
+    "County": "Leon",
+    "PCT_LACCESS_POP10": 20.3743603807083
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2716,
+    "OBJECTID_1": 2678,
+    "FIPSNUM": 48291,
+    "State": "TX",
+    "County": "Liberty",
+    "PCT_LACCESS_POP10": 20.8729574629495
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2717,
+    "OBJECTID_1": 2679,
+    "FIPSNUM": 48293,
+    "State": "TX",
+    "County": "Limestone",
+    "PCT_LACCESS_POP10": 20.613150933789999
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2718,
+    "OBJECTID_1": 2680,
+    "FIPSNUM": 48295,
+    "State": "TX",
+    "County": "Lipscomb",
+    "PCT_LACCESS_POP10": 99.999553700561705
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2719,
+    "OBJECTID_1": 2681,
+    "FIPSNUM": 48297,
+    "State": "TX",
+    "County": "Live Oak",
+    "PCT_LACCESS_POP10": 10.2439970751154
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2720,
+    "OBJECTID_1": 2682,
+    "FIPSNUM": 48299,
+    "State": "TX",
+    "County": "Llano",
+    "PCT_LACCESS_POP10": 31.0965427541751
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2721,
+    "OBJECTID_1": 2683,
+    "FIPSNUM": 48301,
+    "State": "TX",
+    "County": "Loving",
+    "PCT_LACCESS_POP10": 99.999999403506507
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2722,
+    "OBJECTID_1": 2684,
+    "FIPSNUM": 48303,
+    "State": "TX",
+    "County": "Lubbock",
+    "PCT_LACCESS_POP10": 20.980664059431898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2723,
+    "OBJECTID_1": 2685,
+    "FIPSNUM": 48305,
+    "State": "TX",
+    "County": "Lynn",
+    "PCT_LACCESS_POP10": 33.885727970933196
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2724,
+    "OBJECTID_1": 2686,
+    "FIPSNUM": 48307,
+    "State": "TX",
+    "County": "McCulloch",
+    "PCT_LACCESS_POP10": 16.089524581320301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2725,
+    "OBJECTID_1": 2687,
+    "FIPSNUM": 48309,
+    "State": "TX",
+    "County": "McLennan",
+    "PCT_LACCESS_POP10": 28.410896776811001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2726,
+    "OBJECTID_1": 2688,
+    "FIPSNUM": 48311,
+    "State": "TX",
+    "County": "McMullen",
+    "PCT_LACCESS_POP10": 98.000221592471505
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2727,
+    "OBJECTID_1": 2689,
+    "FIPSNUM": 48313,
+    "State": "TX",
+    "County": "Madison",
+    "PCT_LACCESS_POP10": 28.335319179429401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2728,
+    "OBJECTID_1": 2690,
+    "FIPSNUM": 48315,
+    "State": "TX",
+    "County": "Marion",
+    "PCT_LACCESS_POP10": 10.9467945102661
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2729,
+    "OBJECTID_1": 2691,
+    "FIPSNUM": 48317,
+    "State": "TX",
+    "County": "Martin",
+    "PCT_LACCESS_POP10": 21.073525216605198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2730,
+    "OBJECTID_1": 2692,
+    "FIPSNUM": 48319,
+    "State": "TX",
+    "County": "Mason",
+    "PCT_LACCESS_POP10": 20.825922976640502
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2731,
+    "OBJECTID_1": 2693,
+    "FIPSNUM": 48321,
+    "State": "TX",
+    "County": "Matagorda",
+    "PCT_LACCESS_POP10": 37.172801748375697
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2732,
+    "OBJECTID_1": 2694,
+    "FIPSNUM": 48323,
+    "State": "TX",
+    "County": "Maverick",
+    "PCT_LACCESS_POP10": 31.657930760507202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2733,
+    "OBJECTID_1": 2695,
+    "FIPSNUM": 48325,
+    "State": "TX",
+    "County": "Medina",
+    "PCT_LACCESS_POP10": 19.5970655646815
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2734,
+    "OBJECTID_1": 2696,
+    "FIPSNUM": 48327,
+    "State": "TX",
+    "County": "Menard",
+    "PCT_LACCESS_POP10": 20.283383594040199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2735,
+    "OBJECTID_1": 2697,
+    "FIPSNUM": 48329,
+    "State": "TX",
+    "County": "Midland",
+    "PCT_LACCESS_POP10": 29.633201217474198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2736,
+    "OBJECTID_1": 2698,
+    "FIPSNUM": 48331,
+    "State": "TX",
+    "County": "Milam",
+    "PCT_LACCESS_POP10": 23.1498316600048
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2737,
+    "OBJECTID_1": 2699,
+    "FIPSNUM": 48333,
+    "State": "TX",
+    "County": "Mills",
+    "PCT_LACCESS_POP10": 24.677646305354902
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2738,
+    "OBJECTID_1": 2700,
+    "FIPSNUM": 48335,
+    "State": "TX",
+    "County": "Mitchell",
+    "PCT_LACCESS_POP10": 29.786489831193101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2739,
+    "OBJECTID_1": 2701,
+    "FIPSNUM": 48337,
+    "State": "TX",
+    "County": "Montague",
+    "PCT_LACCESS_POP10": 19.7634113163131
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2740,
+    "OBJECTID_1": 2702,
+    "FIPSNUM": 48339,
+    "State": "TX",
+    "County": "Montgomery",
+    "PCT_LACCESS_POP10": 22.041265050017799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2741,
+    "OBJECTID_1": 2703,
+    "FIPSNUM": 48341,
+    "State": "TX",
+    "County": "Moore",
+    "PCT_LACCESS_POP10": 31.6350794695872
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2742,
+    "OBJECTID_1": 2704,
+    "FIPSNUM": 48343,
+    "State": "TX",
+    "County": "Morris",
+    "PCT_LACCESS_POP10": 3.98363072333126
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2743,
+    "OBJECTID_1": 2705,
+    "FIPSNUM": 48345,
+    "State": "TX",
+    "County": "Motley",
+    "PCT_LACCESS_POP10": 18.453749339305599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2744,
+    "OBJECTID_1": 2706,
+    "FIPSNUM": 48347,
+    "State": "TX",
+    "County": "Nacogdoches",
+    "PCT_LACCESS_POP10": 30.160533240027899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2745,
+    "OBJECTID_1": 2707,
+    "FIPSNUM": 48349,
+    "State": "TX",
+    "County": "Navarro",
+    "PCT_LACCESS_POP10": 27.069329382272699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2746,
+    "OBJECTID_1": 2708,
+    "FIPSNUM": 48351,
+    "State": "TX",
+    "County": "Newton",
+    "PCT_LACCESS_POP10": 26.407487570866699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2747,
+    "OBJECTID_1": 2759,
+    "FIPSNUM": 48453,
+    "State": "TX",
+    "County": "Travis",
+    "PCT_LACCESS_POP10": 28.946663914292497
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2748,
+    "OBJECTID_1": 2760,
+    "FIPSNUM": 48455,
+    "State": "TX",
+    "County": "Trinity",
+    "PCT_LACCESS_POP10": 13.814821996898999
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2749,
+    "OBJECTID_1": 2761,
+    "FIPSNUM": 48457,
+    "State": "TX",
+    "County": "Tyler",
+    "PCT_LACCESS_POP10": 53.687632805078202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2750,
+    "OBJECTID_1": 2762,
+    "FIPSNUM": 48459,
+    "State": "TX",
+    "County": "Upshur",
+    "PCT_LACCESS_POP10": 16.5409715742428
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2751,
+    "OBJECTID_1": 2763,
+    "FIPSNUM": 48461,
+    "State": "TX",
+    "County": "Upton",
+    "PCT_LACCESS_POP10": 33.405938444925596
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2752,
+    "OBJECTID_1": 2764,
+    "FIPSNUM": 48463,
+    "State": "TX",
+    "County": "Uvalde",
+    "PCT_LACCESS_POP10": 36.337025068889098
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2753,
+    "OBJECTID_1": 2765,
+    "FIPSNUM": 48465,
+    "State": "TX",
+    "County": "Val Verde",
+    "PCT_LACCESS_POP10": 33.871417926257003
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2754,
+    "OBJECTID_1": 2766,
+    "FIPSNUM": 48467,
+    "State": "TX",
+    "County": "Van Zandt",
+    "PCT_LACCESS_POP10": 4.8193759654061896
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2755,
+    "OBJECTID_1": 2767,
+    "FIPSNUM": 48469,
+    "State": "TX",
+    "County": "Victoria",
+    "PCT_LACCESS_POP10": 40.595313108621198
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2756,
+    "OBJECTID_1": 2768,
+    "FIPSNUM": 48471,
+    "State": "TX",
+    "County": "Walker",
+    "PCT_LACCESS_POP10": 29.703895653187402
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2757,
+    "OBJECTID_1": 2769,
+    "FIPSNUM": 48473,
+    "State": "TX",
+    "County": "Waller",
+    "PCT_LACCESS_POP10": 14.2079467892334
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2758,
+    "OBJECTID_1": 2770,
+    "FIPSNUM": 48475,
+    "State": "TX",
+    "County": "Ward",
+    "PCT_LACCESS_POP10": 35.9244327037418
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2759,
+    "OBJECTID_1": 2771,
+    "FIPSNUM": 48477,
+    "State": "TX",
+    "County": "Washington",
+    "PCT_LACCESS_POP10": 13.486718624337099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2760,
+    "OBJECTID_1": 2772,
+    "FIPSNUM": 48479,
+    "State": "TX",
+    "County": "Webb",
+    "PCT_LACCESS_POP10": 17.897160719897901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2761,
+    "OBJECTID_1": 2773,
+    "FIPSNUM": 48481,
+    "State": "TX",
+    "County": "Wharton",
+    "PCT_LACCESS_POP10": 16.901846132628201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2762,
+    "OBJECTID_1": 2774,
+    "FIPSNUM": 48483,
+    "State": "TX",
+    "County": "Wheeler",
+    "PCT_LACCESS_POP10": 10.2788378098719
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2763,
+    "OBJECTID_1": 2775,
+    "FIPSNUM": 48485,
+    "State": "TX",
+    "County": "Wichita",
+    "PCT_LACCESS_POP10": 32.778534318304096
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2764,
+    "OBJECTID_1": 2776,
+    "FIPSNUM": 48487,
+    "State": "TX",
+    "County": "Wilbarger",
+    "PCT_LACCESS_POP10": 25.1025552531794
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2765,
+    "OBJECTID_1": 2777,
+    "FIPSNUM": 48489,
+    "State": "TX",
+    "County": "Willacy",
+    "PCT_LACCESS_POP10": 4.0423236935587399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2766,
+    "OBJECTID_1": 2778,
+    "FIPSNUM": 48491,
+    "State": "TX",
+    "County": "Williamson",
+    "PCT_LACCESS_POP10": 34.071590837619794
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2767,
+    "OBJECTID_1": 2779,
+    "FIPSNUM": 48493,
+    "State": "TX",
+    "County": "Wilson",
+    "PCT_LACCESS_POP10": 10.006903943533899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2768,
+    "OBJECTID_1": 2780,
+    "FIPSNUM": 48495,
+    "State": "TX",
+    "County": "Winkler",
+    "PCT_LACCESS_POP10": 6.0430708435488905
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2769,
+    "OBJECTID_1": 2781,
+    "FIPSNUM": 48497,
+    "State": "TX",
+    "County": "Wise",
+    "PCT_LACCESS_POP10": 6.1930001600460205
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2770,
+    "OBJECTID_1": 2782,
+    "FIPSNUM": 48499,
+    "State": "TX",
+    "County": "Wood",
+    "PCT_LACCESS_POP10": 9.1788299698933997
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2771,
+    "OBJECTID_1": 2783,
+    "FIPSNUM": 48501,
+    "State": "TX",
+    "County": "Yoakum",
+    "PCT_LACCESS_POP10": 11.479423972002401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2772,
+    "OBJECTID_1": 2784,
+    "FIPSNUM": 48503,
+    "State": "TX",
+    "County": "Young",
+    "PCT_LACCESS_POP10": 35.129761405489305
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2773,
+    "OBJECTID_1": 2785,
+    "FIPSNUM": 48505,
+    "State": "TX",
+    "County": "Zapata",
+    "PCT_LACCESS_POP10": 43.141537427590002
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2774,
+    "OBJECTID_1": 2786,
+    "FIPSNUM": 48507,
+    "State": "TX",
+    "County": "Zavala",
+    "PCT_LACCESS_POP10": 31.702071101137903
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2775,
+    "OBJECTID_1": 2787,
+    "FIPSNUM": 49001,
+    "State": "UT",
+    "County": "Beaver",
+    "PCT_LACCESS_POP10": 14.3878937089929
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2776,
+    "OBJECTID_1": 2788,
+    "FIPSNUM": 49003,
+    "State": "UT",
+    "County": "Box Elder",
+    "PCT_LACCESS_POP10": 17.754649274097101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2777,
+    "OBJECTID_1": 2789,
+    "FIPSNUM": 49005,
+    "State": "UT",
+    "County": "Cache",
+    "PCT_LACCESS_POP10": 32.709826528061001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2778,
+    "OBJECTID_1": 2790,
+    "FIPSNUM": 49007,
+    "State": "UT",
+    "County": "Carbon",
+    "PCT_LACCESS_POP10": 23.343515322788001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2779,
+    "OBJECTID_1": 2791,
+    "FIPSNUM": 49009,
+    "State": "UT",
+    "County": "Daggett",
+    "PCT_LACCESS_POP10": 99.999999111505204
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2780,
+    "OBJECTID_1": 2792,
+    "FIPSNUM": 49011,
+    "State": "UT",
+    "County": "Davis",
+    "PCT_LACCESS_POP10": 27.761176107714903
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2781,
+    "OBJECTID_1": 2793,
+    "FIPSNUM": 49013,
+    "State": "UT",
+    "County": "Duchesne",
+    "PCT_LACCESS_POP10": 27.664254877717998
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2782,
+    "OBJECTID_1": 2794,
+    "FIPSNUM": 49015,
+    "State": "UT",
+    "County": "Emery",
+    "PCT_LACCESS_POP10": 40.347130653248101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2783,
+    "OBJECTID_1": 2795,
+    "FIPSNUM": 49017,
+    "State": "UT",
+    "County": "Garfield",
+    "PCT_LACCESS_POP10": 35.0288332368402
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2784,
+    "OBJECTID_1": 2796,
+    "FIPSNUM": 49019,
+    "State": "UT",
+    "County": "Grand",
+    "PCT_LACCESS_POP10": 18.6207332646919
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2785,
+    "OBJECTID_1": 2797,
+    "FIPSNUM": 49021,
+    "State": "UT",
+    "County": "Iron",
+    "PCT_LACCESS_POP10": 25.812439664816999
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2786,
+    "OBJECTID_1": 2798,
+    "FIPSNUM": 49023,
+    "State": "UT",
+    "County": "Juab",
+    "PCT_LACCESS_POP10": 43.004678765993596
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2787,
+    "OBJECTID_1": 2799,
+    "FIPSNUM": 49025,
+    "State": "UT",
+    "County": "Kane",
+    "PCT_LACCESS_POP10": 43.640539159667803
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2788,
+    "OBJECTID_1": 2800,
+    "FIPSNUM": 49027,
+    "State": "UT",
+    "County": "Millard",
+    "PCT_LACCESS_POP10": 40.611887421786101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2789,
+    "OBJECTID_1": 2801,
+    "FIPSNUM": 49029,
+    "State": "UT",
+    "County": "Morgan",
+    "PCT_LACCESS_POP10": 0.41810264658256402
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2790,
+    "OBJECTID_1": 2802,
+    "FIPSNUM": 49031,
+    "State": "UT",
+    "County": "Piute",
+    "PCT_LACCESS_POP10": 100.00000021628901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2791,
+    "OBJECTID_1": 2803,
+    "FIPSNUM": 49033,
+    "State": "UT",
+    "County": "Rich",
+    "PCT_LACCESS_POP10": 99.999999497188895
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2792,
+    "OBJECTID_1": 2804,
+    "FIPSNUM": 49035,
+    "State": "UT",
+    "County": "Salt Lake",
+    "PCT_LACCESS_POP10": 11.477535556603501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2793,
+    "OBJECTID_1": 2805,
+    "FIPSNUM": 49037,
+    "State": "UT",
+    "County": "San Juan",
+    "PCT_LACCESS_POP10": 49.076484252057298
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2794,
+    "OBJECTID_1": 2806,
+    "FIPSNUM": 49039,
+    "State": "UT",
+    "County": "Sanpete",
+    "PCT_LACCESS_POP10": 9.3353323669757202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2795,
+    "OBJECTID_1": 2807,
+    "FIPSNUM": 49041,
+    "State": "UT",
+    "County": "Sevier",
+    "PCT_LACCESS_POP10": 2.06829474580061
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2796,
+    "OBJECTID_1": 2808,
+    "FIPSNUM": 49043,
+    "State": "UT",
+    "County": "Summit",
+    "PCT_LACCESS_POP10": 20.4504618905193
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2797,
+    "OBJECTID_1": 2809,
+    "FIPSNUM": 49045,
+    "State": "UT",
+    "County": "Tooele",
+    "PCT_LACCESS_POP10": 27.376720191640302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2798,
+    "OBJECTID_1": 2810,
+    "FIPSNUM": 49047,
+    "State": "UT",
+    "County": "Uintah",
+    "PCT_LACCESS_POP10": 24.554653136644699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2799,
+    "OBJECTID_1": 2811,
+    "FIPSNUM": 49049,
+    "State": "UT",
+    "County": "Utah",
+    "PCT_LACCESS_POP10": 22.940526201252901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2800,
+    "OBJECTID_1": 2812,
+    "FIPSNUM": 49051,
+    "State": "UT",
+    "County": "Wasatch",
+    "PCT_LACCESS_POP10": 4.9609203529211197
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2801,
+    "OBJECTID_1": 2813,
+    "FIPSNUM": 49053,
+    "State": "UT",
+    "County": "Washington",
+    "PCT_LACCESS_POP10": 27.639869458581103
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2802,
+    "OBJECTID_1": 2814,
+    "FIPSNUM": 49055,
+    "State": "UT",
+    "County": "Wayne",
+    "PCT_LACCESS_POP10": 36.321282031591402
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2803,
+    "OBJECTID_1": 2815,
+    "FIPSNUM": 49057,
+    "State": "UT",
+    "County": "Weber",
+    "PCT_LACCESS_POP10": 24.775907050386099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2804,
+    "OBJECTID_1": 2816,
+    "FIPSNUM": 50001,
+    "State": "VT",
+    "County": "Addison",
+    "PCT_LACCESS_POP10": 2.4291895675383399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2805,
+    "OBJECTID_1": 2817,
+    "FIPSNUM": 50003,
+    "State": "VT",
+    "County": "Bennington",
+    "PCT_LACCESS_POP10": 11.561881838919801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2806,
+    "OBJECTID_1": 2818,
+    "FIPSNUM": 50005,
+    "State": "VT",
+    "County": "Caledonia",
+    "PCT_LACCESS_POP10": 6.3863857355474796
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2807,
+    "OBJECTID_1": 2819,
+    "FIPSNUM": 50007,
+    "State": "VT",
+    "County": "Chittenden",
+    "PCT_LACCESS_POP10": 19.882974612519899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2808,
+    "OBJECTID_1": 2820,
+    "FIPSNUM": 50009,
+    "State": "VT",
+    "County": "Essex",
+    "PCT_LACCESS_POP10": 29.770170191672101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2809,
+    "OBJECTID_1": 2821,
+    "FIPSNUM": 50011,
+    "State": "VT",
+    "County": "Franklin",
+    "PCT_LACCESS_POP10": 4.3709862995923494
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2810,
+    "OBJECTID_1": 2822,
+    "FIPSNUM": 50013,
+    "State": "VT",
+    "County": "Grand Isle",
+    "PCT_LACCESS_POP10": 3.1859429727728199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2811,
+    "OBJECTID_1": 2823,
+    "FIPSNUM": 50015,
+    "State": "VT",
+    "County": "Lamoille",
+    "PCT_LACCESS_POP10": 2.2192352349690698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2812,
+    "OBJECTID_1": 2824,
+    "FIPSNUM": 50017,
+    "State": "VT",
+    "County": "Orange",
+    "PCT_LACCESS_POP10": 11.1374308813932
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2813,
+    "OBJECTID_1": 2825,
+    "FIPSNUM": 50019,
+    "State": "VT",
+    "County": "Orleans",
+    "PCT_LACCESS_POP10": 16.011284271820202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2814,
+    "OBJECTID_1": 2826,
+    "FIPSNUM": 50021,
+    "State": "VT",
+    "County": "Rutland",
+    "PCT_LACCESS_POP10": 10.3148084642824
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2815,
+    "OBJECTID_1": 2827,
+    "FIPSNUM": 50023,
+    "State": "VT",
+    "County": "Washington",
+    "PCT_LACCESS_POP10": 9.8773704504386988
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2816,
+    "OBJECTID_1": 2828,
+    "FIPSNUM": 50025,
+    "State": "VT",
+    "County": "Windham",
+    "PCT_LACCESS_POP10": 9.5674032869652894
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2817,
+    "OBJECTID_1": 2829,
+    "FIPSNUM": 50027,
+    "State": "VT",
+    "County": "Windsor",
+    "PCT_LACCESS_POP10": 12.4920375313768
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2818,
+    "OBJECTID_1": 2830,
+    "FIPSNUM": 51001,
+    "State": "VA",
+    "County": "Accomack",
+    "PCT_LACCESS_POP10": 4.6060486697583096
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2819,
+    "OBJECTID_1": 2831,
+    "FIPSNUM": 51003,
+    "State": "VA",
+    "County": "Albemarle",
+    "PCT_LACCESS_POP10": 15.622910526103201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2820,
+    "OBJECTID_1": 2832,
+    "FIPSNUM": 51005,
+    "State": "VA",
+    "County": "Alleghany",
+    "PCT_LACCESS_POP10": 13.667137179864799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2821,
+    "OBJECTID_1": 2833,
+    "FIPSNUM": 51007,
+    "State": "VA",
+    "County": "Amelia",
+    "PCT_LACCESS_POP10": 14.615239825674401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2822,
+    "OBJECTID_1": 2834,
+    "FIPSNUM": 51009,
+    "State": "VA",
+    "County": "Amherst",
+    "PCT_LACCESS_POP10": 20.172298138694099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2823,
+    "OBJECTID_1": 2835,
+    "FIPSNUM": 51011,
+    "State": "VA",
+    "County": "Appomattox",
+    "PCT_LACCESS_POP10": 2.9697363798332401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2824,
+    "OBJECTID_1": 2836,
+    "FIPSNUM": 51013,
+    "State": "VA",
+    "County": "Arlington",
+    "PCT_LACCESS_POP10": 2.4737553690370699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2825,
+    "OBJECTID_1": 2837,
+    "FIPSNUM": 51015,
+    "State": "VA",
+    "County": "Augusta",
+    "PCT_LACCESS_POP10": 12.875326816120799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2826,
+    "OBJECTID_1": 2838,
+    "FIPSNUM": 51017,
+    "State": "VA",
+    "County": "Bath",
+    "PCT_LACCESS_POP10": 20.703049545663699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2827,
+    "OBJECTID_1": 2839,
+    "FIPSNUM": 51019,
+    "State": "VA",
+    "County": "Bedford",
+    "PCT_LACCESS_POP10": 11.1218906404716
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2828,
+    "OBJECTID_1": 2840,
+    "FIPSNUM": 51021,
+    "State": "VA",
+    "County": "Bland",
+    "PCT_LACCESS_POP10": 40.332163855381694
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2829,
+    "OBJECTID_1": 2841,
+    "FIPSNUM": 51023,
+    "State": "VA",
+    "County": "Botetourt",
+    "PCT_LACCESS_POP10": 22.010773369655499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2830,
+    "OBJECTID_1": 2842,
+    "FIPSNUM": 51025,
+    "State": "VA",
+    "County": "Brunswick",
+    "PCT_LACCESS_POP10": 20.553878675133401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2831,
+    "OBJECTID_1": 2843,
+    "FIPSNUM": 51027,
+    "State": "VA",
+    "County": "Buchanan",
+    "PCT_LACCESS_POP10": 5.6303865828065298
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2832,
+    "OBJECTID_1": 2844,
+    "FIPSNUM": 51029,
+    "State": "VA",
+    "County": "Buckingham",
+    "PCT_LACCESS_POP10": 12.103016392900299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2833,
+    "OBJECTID_1": 2845,
+    "FIPSNUM": 51031,
+    "State": "VA",
+    "County": "Campbell",
+    "PCT_LACCESS_POP10": 21.0736313481144
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2834,
+    "OBJECTID_1": 2846,
+    "FIPSNUM": 51033,
+    "State": "VA",
+    "County": "Caroline",
+    "PCT_LACCESS_POP10": 5.0152628329637201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2835,
+    "OBJECTID_1": 2847,
+    "FIPSNUM": 51035,
+    "State": "VA",
+    "County": "Carroll",
+    "PCT_LACCESS_POP10": 6.6478086178826192
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2836,
+    "OBJECTID_1": 2848,
+    "FIPSNUM": 51036,
+    "State": "VA",
+    "County": "Charles City",
+    "PCT_LACCESS_POP10": 1.9365486597025801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2837,
+    "OBJECTID_1": 2849,
+    "FIPSNUM": 51037,
+    "State": "VA",
+    "County": "Charlotte",
+    "PCT_LACCESS_POP10": 33.536835887054401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2838,
+    "OBJECTID_1": 2850,
+    "FIPSNUM": 51041,
+    "State": "VA",
+    "County": "Chesterfield",
+    "PCT_LACCESS_POP10": 36.843886127818898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2839,
+    "OBJECTID_1": 2851,
+    "FIPSNUM": 51043,
+    "State": "VA",
+    "County": "Clarke",
+    "PCT_LACCESS_POP10": 2.2239747407192203
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2840,
+    "OBJECTID_1": 2852,
+    "FIPSNUM": 51045,
+    "State": "VA",
+    "County": "Craig",
+    "PCT_LACCESS_POP10": 12.4056296145011
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2841,
+    "OBJECTID_1": 2853,
+    "FIPSNUM": 51047,
+    "State": "VA",
+    "County": "Culpeper",
+    "PCT_LACCESS_POP10": 4.7001835434516197
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2842,
+    "OBJECTID_1": 2854,
+    "FIPSNUM": 51049,
+    "State": "VA",
+    "County": "Cumberland",
+    "PCT_LACCESS_POP10": 58.825983475714509
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2843,
+    "OBJECTID_1": 2855,
+    "FIPSNUM": 51051,
+    "State": "VA",
+    "County": "Dickenson",
+    "PCT_LACCESS_POP10": 0.18932226825076301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2844,
+    "OBJECTID_1": 2856,
+    "FIPSNUM": 51053,
+    "State": "VA",
+    "County": "Dinwiddie",
+    "PCT_LACCESS_POP10": 20.8853951151182
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2845,
+    "OBJECTID_1": 2857,
+    "FIPSNUM": 51057,
+    "State": "VA",
+    "County": "Essex",
+    "PCT_LACCESS_POP10": 26.679304453565798
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2846,
+    "OBJECTID_1": 2858,
+    "FIPSNUM": 51059,
+    "State": "VA",
+    "County": "Fairfax",
+    "PCT_LACCESS_POP10": 18.998775527617102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2847,
+    "OBJECTID_1": 2859,
+    "FIPSNUM": 51061,
+    "State": "VA",
+    "County": "Fauquier",
+    "PCT_LACCESS_POP10": 12.458774202075499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2848,
+    "OBJECTID_1": 2860,
+    "FIPSNUM": 51063,
+    "State": "VA",
+    "County": "Floyd",
+    "PCT_LACCESS_POP10": 27.838818621533701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2849,
+    "OBJECTID_1": 2861,
+    "FIPSNUM": 51065,
+    "State": "VA",
+    "County": "Fluvanna",
+    "PCT_LACCESS_POP10": 26.814700416080701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2850,
+    "OBJECTID_1": 2862,
+    "FIPSNUM": 51067,
+    "State": "VA",
+    "County": "Franklin",
+    "PCT_LACCESS_POP10": 15.904745930420299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2851,
+    "OBJECTID_1": 2863,
+    "FIPSNUM": 51069,
+    "State": "VA",
+    "County": "Frederick",
+    "PCT_LACCESS_POP10": 18.7609490859281
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2852,
+    "OBJECTID_1": 2864,
+    "FIPSNUM": 51071,
+    "State": "VA",
+    "County": "Giles",
+    "PCT_LACCESS_POP10": 10.717501552342599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2853,
+    "OBJECTID_1": 2865,
+    "FIPSNUM": 51073,
+    "State": "VA",
+    "County": "Gloucester",
+    "PCT_LACCESS_POP10": 10.214919704838501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2854,
+    "OBJECTID_1": 2866,
+    "FIPSNUM": 51075,
+    "State": "VA",
+    "County": "Goochland",
+    "PCT_LACCESS_POP10": 15.253476170531099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2855,
+    "OBJECTID_1": 2867,
+    "FIPSNUM": 51077,
+    "State": "VA",
+    "County": "Grayson",
+    "PCT_LACCESS_POP10": 17.615077250614601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2856,
+    "OBJECTID_1": 2868,
+    "FIPSNUM": 51079,
+    "State": "VA",
+    "County": "Greene",
+    "PCT_LACCESS_POP10": 0
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2857,
+    "OBJECTID_1": 2869,
+    "FIPSNUM": 51081,
+    "State": "VA",
+    "County": "Greensville",
+    "PCT_LACCESS_POP10": 7.0607048469755904
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2858,
+    "OBJECTID_1": 2870,
+    "FIPSNUM": 51083,
+    "State": "VA",
+    "County": "Halifax",
+    "PCT_LACCESS_POP10": 26.306503874550103
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2859,
+    "OBJECTID_1": 2871,
+    "FIPSNUM": 51085,
+    "State": "VA",
+    "County": "Hanover",
+    "PCT_LACCESS_POP10": 19.8484891054865
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2860,
+    "OBJECTID_1": 2872,
+    "FIPSNUM": 51087,
+    "State": "VA",
+    "County": "Henrico",
+    "PCT_LACCESS_POP10": 22.486908514832802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2861,
+    "OBJECTID_1": 2873,
+    "FIPSNUM": 51089,
+    "State": "VA",
+    "County": "Henry",
+    "PCT_LACCESS_POP10": 19.209145650964299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2862,
+    "OBJECTID_1": 2874,
+    "FIPSNUM": 51091,
+    "State": "VA",
+    "County": "Highland",
+    "PCT_LACCESS_POP10": 100.00000049754001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2863,
+    "OBJECTID_1": 2875,
+    "FIPSNUM": 51093,
+    "State": "VA",
+    "County": "Isle of Wight",
+    "PCT_LACCESS_POP10": 16.442303282467797
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2864,
+    "OBJECTID_1": 2876,
+    "FIPSNUM": 51095,
+    "State": "VA",
+    "County": "James City",
+    "PCT_LACCESS_POP10": 32.143289638625497
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2865,
+    "OBJECTID_1": 2877,
+    "FIPSNUM": 51097,
+    "State": "VA",
+    "County": "King and Queen",
+    "PCT_LACCESS_POP10": 10.537046022003899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2866,
+    "OBJECTID_1": 2878,
+    "FIPSNUM": 51099,
+    "State": "VA",
+    "County": "King George",
+    "PCT_LACCESS_POP10": 0
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2867,
+    "OBJECTID_1": 2879,
+    "FIPSNUM": 51101,
+    "State": "VA",
+    "County": "King William",
+    "PCT_LACCESS_POP10": 10.205987411308399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2868,
+    "OBJECTID_1": 2880,
+    "FIPSNUM": 51103,
+    "State": "VA",
+    "County": "Lancaster",
+    "PCT_LACCESS_POP10": 3.08870250302886
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2869,
+    "OBJECTID_1": 2881,
+    "FIPSNUM": 51105,
+    "State": "VA",
+    "County": "Lee",
+    "PCT_LACCESS_POP10": 0.072698813534276596
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2870,
+    "OBJECTID_1": 2882,
+    "FIPSNUM": 51107,
+    "State": "VA",
+    "County": "Loudoun",
+    "PCT_LACCESS_POP10": 12.625254296183099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2871,
+    "OBJECTID_1": 2883,
+    "FIPSNUM": 51109,
+    "State": "VA",
+    "County": "Louisa",
+    "PCT_LACCESS_POP10": 2.34926162858073
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2872,
+    "OBJECTID_1": 2884,
+    "FIPSNUM": 51111,
+    "State": "VA",
+    "County": "Lunenburg",
+    "PCT_LACCESS_POP10": 0.035294490215035799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2873,
+    "OBJECTID_1": 2885,
+    "FIPSNUM": 51113,
+    "State": "VA",
+    "County": "Madison",
+    "PCT_LACCESS_POP10": 1.8548721460322801
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2874,
+    "OBJECTID_1": 2886,
+    "FIPSNUM": 51115,
+    "State": "VA",
+    "County": "Mathews",
+    "PCT_LACCESS_POP10": 0
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2875,
+    "OBJECTID_1": 2887,
+    "FIPSNUM": 51117,
+    "State": "VA",
+    "County": "Mecklenburg",
+    "PCT_LACCESS_POP10": 10.998429689974699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2876,
+    "OBJECTID_1": 2888,
+    "FIPSNUM": 51119,
+    "State": "VA",
+    "County": "Middlesex",
+    "PCT_LACCESS_POP10": 0.98186052729261197
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2877,
+    "OBJECTID_1": 2889,
+    "FIPSNUM": 51121,
+    "State": "VA",
+    "County": "Montgomery",
+    "PCT_LACCESS_POP10": 8.3594491478686699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2878,
+    "OBJECTID_1": 2890,
+    "FIPSNUM": 51125,
+    "State": "VA",
+    "County": "Nelson",
+    "PCT_LACCESS_POP10": 5.23911108514588
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2879,
+    "OBJECTID_1": 2891,
+    "FIPSNUM": 51127,
+    "State": "VA",
+    "County": "New Kent",
+    "PCT_LACCESS_POP10": 0.000239484741053984
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2880,
+    "OBJECTID_1": 2892,
+    "FIPSNUM": 51131,
+    "State": "VA",
+    "County": "Northampton",
+    "PCT_LACCESS_POP10": 0.31040956597400604
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2881,
+    "OBJECTID_1": 2893,
+    "FIPSNUM": 51133,
+    "State": "VA",
+    "County": "Northumberland",
+    "PCT_LACCESS_POP10": 7.3610566343246298
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2882,
+    "OBJECTID_1": 2894,
+    "FIPSNUM": 51135,
+    "State": "VA",
+    "County": "Nottoway",
+    "PCT_LACCESS_POP10": 50.314832372467698
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2883,
+    "OBJECTID_1": 2895,
+    "FIPSNUM": 51137,
+    "State": "VA",
+    "County": "Orange",
+    "PCT_LACCESS_POP10": 22.230136994447598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2884,
+    "OBJECTID_1": 2896,
+    "FIPSNUM": 51139,
+    "State": "VA",
+    "County": "Page",
+    "PCT_LACCESS_POP10": 2.87894861675503
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2885,
+    "OBJECTID_1": 2897,
+    "FIPSNUM": 51141,
+    "State": "VA",
+    "County": "Patrick",
+    "PCT_LACCESS_POP10": 4.9049714329844596
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2886,
+    "OBJECTID_1": 2898,
+    "FIPSNUM": 51143,
+    "State": "VA",
+    "County": "Pittsylvania",
+    "PCT_LACCESS_POP10": 15.416123828365299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2887,
+    "OBJECTID_1": 2899,
+    "FIPSNUM": 51145,
+    "State": "VA",
+    "County": "Powhatan",
+    "PCT_LACCESS_POP10": 9.4320531676046393
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2888,
+    "OBJECTID_1": 2900,
+    "FIPSNUM": 51147,
+    "State": "VA",
+    "County": "Prince Edward",
+    "PCT_LACCESS_POP10": 15.018431063745799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2889,
+    "OBJECTID_1": 2901,
+    "FIPSNUM": 51149,
+    "State": "VA",
+    "County": "Prince George",
+    "PCT_LACCESS_POP10": 28.6726658566221
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2890,
+    "OBJECTID_1": 2902,
+    "FIPSNUM": 51153,
+    "State": "VA",
+    "County": "Prince William",
+    "PCT_LACCESS_POP10": 20.580268846648
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2891,
+    "OBJECTID_1": 2903,
+    "FIPSNUM": 51155,
+    "State": "VA",
+    "County": "Pulaski",
+    "PCT_LACCESS_POP10": 14.9886632917728
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2892,
+    "OBJECTID_1": 2904,
+    "FIPSNUM": 51157,
+    "State": "VA",
+    "County": "Rappahannock",
+    "PCT_LACCESS_POP10": 79.010656011750001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2893,
+    "OBJECTID_1": 2905,
+    "FIPSNUM": 51159,
+    "State": "VA",
+    "County": "Richmond",
+    "PCT_LACCESS_POP10": 6.9578742751816591
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2894,
+    "OBJECTID_1": 2906,
+    "FIPSNUM": 51161,
+    "State": "VA",
+    "County": "Roanoke",
+    "PCT_LACCESS_POP10": 21.309654174688898
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2895,
+    "OBJECTID_1": 2907,
+    "FIPSNUM": 51163,
+    "State": "VA",
+    "County": "Rockbridge",
+    "PCT_LACCESS_POP10": 16.3270811274778
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2896,
+    "OBJECTID_1": 2908,
+    "FIPSNUM": 51165,
+    "State": "VA",
+    "County": "Rockingham",
+    "PCT_LACCESS_POP10": 19.458304107450498
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2897,
+    "OBJECTID_1": 2909,
+    "FIPSNUM": 51167,
+    "State": "VA",
+    "County": "Russell",
+    "PCT_LACCESS_POP10": 7.3293860853827306
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2898,
+    "OBJECTID_1": 2910,
+    "FIPSNUM": 51169,
+    "State": "VA",
+    "County": "Scott",
+    "PCT_LACCESS_POP10": 11.996790421935399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2899,
+    "OBJECTID_1": 2911,
+    "FIPSNUM": 51171,
+    "State": "VA",
+    "County": "Shenandoah",
+    "PCT_LACCESS_POP10": 6.9382665058378299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2900,
+    "OBJECTID_1": 2912,
+    "FIPSNUM": 51173,
+    "State": "VA",
+    "County": "Smyth",
+    "PCT_LACCESS_POP10": 8.1295928271239397
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2901,
+    "OBJECTID_1": 2913,
+    "FIPSNUM": 51175,
+    "State": "VA",
+    "County": "Southampton",
+    "PCT_LACCESS_POP10": 22.788883749634699
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2902,
+    "OBJECTID_1": 2914,
+    "FIPSNUM": 51177,
+    "State": "VA",
+    "County": "Spotsylvania",
+    "PCT_LACCESS_POP10": 27.037214663661402
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2903,
+    "OBJECTID_1": 2915,
+    "FIPSNUM": 51179,
+    "State": "VA",
+    "County": "Stafford",
+    "PCT_LACCESS_POP10": 28.292307751099301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2904,
+    "OBJECTID_1": 2916,
+    "FIPSNUM": 51181,
+    "State": "VA",
+    "County": "Surry",
+    "PCT_LACCESS_POP10": 23.2757015382969
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2905,
+    "OBJECTID_1": 2917,
+    "FIPSNUM": 51183,
+    "State": "VA",
+    "County": "Sussex",
+    "PCT_LACCESS_POP10": 28.917323987435299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2906,
+    "OBJECTID_1": 2918,
+    "FIPSNUM": 51185,
+    "State": "VA",
+    "County": "Tazewell",
+    "PCT_LACCESS_POP10": 18.271678720795002
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2907,
+    "OBJECTID_1": 2919,
+    "FIPSNUM": 51187,
+    "State": "VA",
+    "County": "Warren",
+    "PCT_LACCESS_POP10": 5.1013501622069501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2908,
+    "OBJECTID_1": 2920,
+    "FIPSNUM": 51191,
+    "State": "VA",
+    "County": "Washington",
+    "PCT_LACCESS_POP10": 12.505836653986099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2909,
+    "OBJECTID_1": 2921,
+    "FIPSNUM": 51193,
+    "State": "VA",
+    "County": "Westmoreland",
+    "PCT_LACCESS_POP10": 17.614226610752002
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2910,
+    "OBJECTID_1": 2922,
+    "FIPSNUM": 51195,
+    "State": "VA",
+    "County": "Wise",
+    "PCT_LACCESS_POP10": 9.4674078622748006
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2911,
+    "OBJECTID_1": 2923,
+    "FIPSNUM": 51197,
+    "State": "VA",
+    "County": "Wythe",
+    "PCT_LACCESS_POP10": 3.9933426470473599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2912,
+    "OBJECTID_1": 2924,
+    "FIPSNUM": 51199,
+    "State": "VA",
+    "County": "York",
+    "PCT_LACCESS_POP10": 29.4512999591844
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2913,
+    "OBJECTID_1": 2925,
+    "FIPSNUM": 51510,
+    "State": "VA",
+    "County": "Alexandria",
+    "PCT_LACCESS_POP10": 0
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2914,
+    "OBJECTID_1": 2926,
+    "FIPSNUM": 51515,
+    "State": "VA",
+    "County": "Bedford",
+    "PCT_LACCESS_POP10": 8.6733959731408508
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2915,
+    "OBJECTID_1": 2927,
+    "FIPSNUM": 51520,
+    "State": "VA",
+    "County": "Bristol",
+    "PCT_LACCESS_POP10": 28.164511350035099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2916,
+    "OBJECTID_1": 2928,
+    "FIPSNUM": 51530,
+    "State": "VA",
+    "County": "Buena Vista",
+    "PCT_LACCESS_POP10": 93.797731252026097
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2917,
+    "OBJECTID_1": 2929,
+    "FIPSNUM": 51540,
+    "State": "VA",
+    "County": "Charlottesville",
+    "PCT_LACCESS_POP10": 2.6520092552458201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2918,
+    "OBJECTID_1": 2930,
+    "FIPSNUM": 51550,
+    "State": "VA",
+    "County": "Chesapeake",
+    "PCT_LACCESS_POP10": 22.4118182090182
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2919,
+    "OBJECTID_1": 2932,
+    "FIPSNUM": 51570,
+    "State": "VA",
+    "County": "Colonial Heights",
+    "PCT_LACCESS_POP10": 18.9504362965667
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2920,
+    "OBJECTID_1": 2933,
+    "FIPSNUM": 51580,
+    "State": "VA",
+    "County": "Covington",
+    "PCT_LACCESS_POP10": 19.3257641777017
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2921,
+    "OBJECTID_1": 2934,
+    "FIPSNUM": 51590,
+    "State": "VA",
+    "County": "Danville",
+    "PCT_LACCESS_POP10": 14.852914592147901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2922,
+    "OBJECTID_1": 2935,
+    "FIPSNUM": 51595,
+    "State": "VA",
+    "County": "Emporia",
+    "PCT_LACCESS_POP10": 1.71109073119238
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2923,
+    "OBJECTID_1": 2936,
+    "FIPSNUM": 51600,
+    "State": "VA",
+    "County": "Fairfax",
+    "PCT_LACCESS_POP10": 0
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2924,
+    "OBJECTID_1": 2937,
+    "FIPSNUM": 51610,
+    "State": "VA",
+    "County": "Falls Church",
+    "PCT_LACCESS_POP10": 1.3450996349123101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2925,
+    "OBJECTID_1": 2938,
+    "FIPSNUM": 51620,
+    "State": "VA",
+    "County": "Franklin",
+    "PCT_LACCESS_POP10": 58.002891173522599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2926,
+    "OBJECTID_1": 2939,
+    "FIPSNUM": 51630,
+    "State": "VA",
+    "County": "Fredericksburg",
+    "PCT_LACCESS_POP10": 26.312731991426201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2927,
+    "OBJECTID_1": 2940,
+    "FIPSNUM": 51640,
+    "State": "VA",
+    "County": "Galax",
+    "PCT_LACCESS_POP10": 2.6928959411645503
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2928,
+    "OBJECTID_1": 2941,
+    "FIPSNUM": 51650,
+    "State": "VA",
+    "County": "Hampton",
+    "PCT_LACCESS_POP10": 23.430694000456899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2929,
+    "OBJECTID_1": 2942,
+    "FIPSNUM": 51660,
+    "State": "VA",
+    "County": "Harrisonburg",
+    "PCT_LACCESS_POP10": 8.6019607892781096
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2930,
+    "OBJECTID_1": 2943,
+    "FIPSNUM": 51670,
+    "State": "VA",
+    "County": "Hopewell",
+    "PCT_LACCESS_POP10": 28.954880101523401
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2931,
+    "OBJECTID_1": 2944,
+    "FIPSNUM": 51678,
+    "State": "VA",
+    "County": "Lexington",
+    "PCT_LACCESS_POP10": 0.12884842878849301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2932,
+    "OBJECTID_1": 2945,
+    "FIPSNUM": 51680,
+    "State": "VA",
+    "County": "Lynchburg",
+    "PCT_LACCESS_POP10": 26.4015595898606
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2933,
+    "OBJECTID_1": 2946,
+    "FIPSNUM": 51683,
+    "State": "VA",
+    "County": "Manassas",
+    "PCT_LACCESS_POP10": 6.1182680080712597
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2934,
+    "OBJECTID_1": 2947,
+    "FIPSNUM": 51685,
+    "State": "VA",
+    "County": "Manassas Park",
+    "PCT_LACCESS_POP10": 34.461298638443601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2935,
+    "OBJECTID_1": 2948,
+    "FIPSNUM": 51690,
+    "State": "VA",
+    "County": "Martinsville",
+    "PCT_LACCESS_POP10": 25.245551618048502
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2936,
+    "OBJECTID_1": 2949,
+    "FIPSNUM": 51700,
+    "State": "VA",
+    "County": "Newport News",
+    "PCT_LACCESS_POP10": 18.6733957125115
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2937,
+    "OBJECTID_1": 2950,
+    "FIPSNUM": 51710,
+    "State": "VA",
+    "County": "Norfolk",
+    "PCT_LACCESS_POP10": 13.1979087152333
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2938,
+    "OBJECTID_1": 2951,
+    "FIPSNUM": 51720,
+    "State": "VA",
+    "County": "Norton",
+    "PCT_LACCESS_POP10": 12.337144471360501
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2939,
+    "OBJECTID_1": 2952,
+    "FIPSNUM": 51730,
+    "State": "VA",
+    "County": "Petersburg",
+    "PCT_LACCESS_POP10": 22.257064460683502
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2940,
+    "OBJECTID_1": 2953,
+    "FIPSNUM": 51735,
+    "State": "VA",
+    "County": "Poquoson",
+    "PCT_LACCESS_POP10": 42.894784257383101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2941,
+    "OBJECTID_1": 2954,
+    "FIPSNUM": 51740,
+    "State": "VA",
+    "County": "Portsmouth",
+    "PCT_LACCESS_POP10": 14.905298234009202
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2942,
+    "OBJECTID_1": 2955,
+    "FIPSNUM": 51750,
+    "State": "VA",
+    "County": "Radford",
+    "PCT_LACCESS_POP10": 15.8455968731326
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2943,
+    "OBJECTID_1": 2956,
+    "FIPSNUM": 51760,
+    "State": "VA",
+    "County": "Richmond",
+    "PCT_LACCESS_POP10": 20.3555902087848
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2944,
+    "OBJECTID_1": 2957,
+    "FIPSNUM": 51770,
+    "State": "VA",
+    "County": "Roanoke",
+    "PCT_LACCESS_POP10": 23.7206679864717
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2945,
+    "OBJECTID_1": 2958,
+    "FIPSNUM": 51775,
+    "State": "VA",
+    "County": "Salem",
+    "PCT_LACCESS_POP10": 48.946300819810602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2946,
+    "OBJECTID_1": 2960,
+    "FIPSNUM": 51790,
+    "State": "VA",
+    "County": "Staunton",
+    "PCT_LACCESS_POP10": 7.6948055128989195
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2947,
+    "OBJECTID_1": 2961,
+    "FIPSNUM": 51800,
+    "State": "VA",
+    "County": "Suffolk",
+    "PCT_LACCESS_POP10": 19.336632406087102
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2948,
+    "OBJECTID_1": 2962,
+    "FIPSNUM": 51810,
+    "State": "VA",
+    "County": "Virginia Beach",
+    "PCT_LACCESS_POP10": 17.972809463587001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2949,
+    "OBJECTID_1": 2963,
+    "FIPSNUM": 51820,
+    "State": "VA",
+    "County": "Waynesboro",
+    "PCT_LACCESS_POP10": 15.502452576322201
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2950,
+    "OBJECTID_1": 2964,
+    "FIPSNUM": 51830,
+    "State": "VA",
+    "County": "Williamsburg",
+    "PCT_LACCESS_POP10": 5.8445934840192804
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2951,
+    "OBJECTID_1": 2965,
+    "FIPSNUM": 51840,
+    "State": "VA",
+    "County": "Winchester",
+    "PCT_LACCESS_POP10": 24.809404306693398
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2952,
+    "OBJECTID_1": 2990,
+    "FIPSNUM": 53001,
+    "State": "WA",
+    "County": "Adams",
+    "PCT_LACCESS_POP10": 20.345864491425299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2953,
+    "OBJECTID_1": 2991,
+    "FIPSNUM": 53003,
+    "State": "WA",
+    "County": "Asotin",
+    "PCT_LACCESS_POP10": 19.478508852990601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2954,
+    "OBJECTID_1": 2992,
+    "FIPSNUM": 53005,
+    "State": "WA",
+    "County": "Benton",
+    "PCT_LACCESS_POP10": 21.571555074323602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2955,
+    "OBJECTID_1": 2993,
+    "FIPSNUM": 53007,
+    "State": "WA",
+    "County": "Chelan",
+    "PCT_LACCESS_POP10": 21.748804845414099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2956,
+    "OBJECTID_1": 2994,
+    "FIPSNUM": 53009,
+    "State": "WA",
+    "County": "Clallam",
+    "PCT_LACCESS_POP10": 21.633853941860302
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2957,
+    "OBJECTID_1": 2995,
+    "FIPSNUM": 53011,
+    "State": "WA",
+    "County": "Clark",
+    "PCT_LACCESS_POP10": 20.771883909334001
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2958,
+    "OBJECTID_1": 2996,
+    "FIPSNUM": 53013,
+    "State": "WA",
+    "County": "Columbia",
+    "PCT_LACCESS_POP10": 26.495384292566399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2959,
+    "OBJECTID_1": 2997,
+    "FIPSNUM": 53015,
+    "State": "WA",
+    "County": "Cowlitz",
+    "PCT_LACCESS_POP10": 26.9754115070916
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2960,
+    "OBJECTID_1": 2998,
+    "FIPSNUM": 53017,
+    "State": "WA",
+    "County": "Douglas",
+    "PCT_LACCESS_POP10": 46.884656609000103
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2961,
+    "OBJECTID_1": 2999,
+    "FIPSNUM": 53019,
+    "State": "WA",
+    "County": "Ferry",
+    "PCT_LACCESS_POP10": 48.934336454694702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2962,
+    "OBJECTID_1": 3000,
+    "FIPSNUM": 53021,
+    "State": "WA",
+    "County": "Franklin",
+    "PCT_LACCESS_POP10": 31.658655101843099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2963,
+    "OBJECTID_1": 3001,
+    "FIPSNUM": 53023,
+    "State": "WA",
+    "County": "Garfield",
+    "PCT_LACCESS_POP10": 99.663065359597809
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2964,
+    "OBJECTID_1": 3002,
+    "FIPSNUM": 53025,
+    "State": "WA",
+    "County": "Grant",
+    "PCT_LACCESS_POP10": 22.671195580382498
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2965,
+    "OBJECTID_1": 3003,
+    "FIPSNUM": 53027,
+    "State": "WA",
+    "County": "Grays Harbor",
+    "PCT_LACCESS_POP10": 19.534521070691099
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2966,
+    "OBJECTID_1": 3004,
+    "FIPSNUM": 53029,
+    "State": "WA",
+    "County": "Island",
+    "PCT_LACCESS_POP10": 24.670063168910598
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2967,
+    "OBJECTID_1": 3005,
+    "FIPSNUM": 53031,
+    "State": "WA",
+    "County": "Jefferson",
+    "PCT_LACCESS_POP10": 21.151081103529702
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2968,
+    "OBJECTID_1": 3006,
+    "FIPSNUM": 53033,
+    "State": "WA",
+    "County": "King",
+    "PCT_LACCESS_POP10": 17.2646871099852
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2969,
+    "OBJECTID_1": 3007,
+    "FIPSNUM": 53035,
+    "State": "WA",
+    "County": "Kitsap",
+    "PCT_LACCESS_POP10": 31.762231252093297
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2970,
+    "OBJECTID_1": 3008,
+    "FIPSNUM": 53037,
+    "State": "WA",
+    "County": "Kittitas",
+    "PCT_LACCESS_POP10": 22.4179557607509
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2971,
+    "OBJECTID_1": 3009,
+    "FIPSNUM": 53039,
+    "State": "WA",
+    "County": "Klickitat",
+    "PCT_LACCESS_POP10": 23.5917770654438
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2972,
+    "OBJECTID_1": 3010,
+    "FIPSNUM": 53041,
+    "State": "WA",
+    "County": "Lewis",
+    "PCT_LACCESS_POP10": 16.8679235578931
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2973,
+    "OBJECTID_1": 3011,
+    "FIPSNUM": 53043,
+    "State": "WA",
+    "County": "Lincoln",
+    "PCT_LACCESS_POP10": 71.118460894327399
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2974,
+    "OBJECTID_1": 3012,
+    "FIPSNUM": 53045,
+    "State": "WA",
+    "County": "Mason",
+    "PCT_LACCESS_POP10": 6.0754786575027104
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2975,
+    "OBJECTID_1": 3013,
+    "FIPSNUM": 53047,
+    "State": "WA",
+    "County": "Okanogan",
+    "PCT_LACCESS_POP10": 15.820303995919899
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2976,
+    "OBJECTID_1": 3014,
+    "FIPSNUM": 53049,
+    "State": "WA",
+    "County": "Pacific",
+    "PCT_LACCESS_POP10": 32.938126013831599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2977,
+    "OBJECTID_1": 3015,
+    "FIPSNUM": 53051,
+    "State": "WA",
+    "County": "Pend Oreille",
+    "PCT_LACCESS_POP10": 33.064116270528601
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2978,
+    "OBJECTID_1": 3016,
+    "FIPSNUM": 53053,
+    "State": "WA",
+    "County": "Pierce",
+    "PCT_LACCESS_POP10": 33.542697604082299
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2979,
+    "OBJECTID_1": 3017,
+    "FIPSNUM": 53055,
+    "State": "WA",
+    "County": "San Juan",
+    "PCT_LACCESS_POP10": 0.24097913104928098
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2980,
+    "OBJECTID_1": 3018,
+    "FIPSNUM": 53057,
+    "State": "WA",
+    "County": "Skagit",
+    "PCT_LACCESS_POP10": 25.508485143015701
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2981,
+    "OBJECTID_1": 3019,
+    "FIPSNUM": 53059,
+    "State": "WA",
+    "County": "Skamania",
+    "PCT_LACCESS_POP10": 4.5602758340081602
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2982,
+    "OBJECTID_1": 3020,
+    "FIPSNUM": 53061,
+    "State": "WA",
+    "County": "Snohomish",
+    "PCT_LACCESS_POP10": 24.260585984454199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2983,
+    "OBJECTID_1": 3021,
+    "FIPSNUM": 53063,
+    "State": "WA",
+    "County": "Spokane",
+    "PCT_LACCESS_POP10": 16.993544689184599
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2984,
+    "OBJECTID_1": 3022,
+    "FIPSNUM": 53065,
+    "State": "WA",
+    "County": "Stevens",
+    "PCT_LACCESS_POP10": 29.639783713824603
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2985,
+    "OBJECTID_1": 3023,
+    "FIPSNUM": 53067,
+    "State": "WA",
+    "County": "Thurston",
+    "PCT_LACCESS_POP10": 31.4163843490666
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2986,
+    "OBJECTID_1": 3024,
+    "FIPSNUM": 53069,
+    "State": "WA",
+    "County": "Wahkiakum",
+    "PCT_LACCESS_POP10": 72.765734586499491
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2987,
+    "OBJECTID_1": 3025,
+    "FIPSNUM": 53071,
+    "State": "WA",
+    "County": "Walla Walla",
+    "PCT_LACCESS_POP10": 23.722638804432901
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2988,
+    "OBJECTID_1": 3026,
+    "FIPSNUM": 53073,
+    "State": "WA",
+    "County": "Whatcom",
+    "PCT_LACCESS_POP10": 25.297971636764199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2989,
+    "OBJECTID_1": 3027,
+    "FIPSNUM": 53075,
+    "State": "WA",
+    "County": "Whitman",
+    "PCT_LACCESS_POP10": 20.497786400250799
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2990,
+    "OBJECTID_1": 3028,
+    "FIPSNUM": 53077,
+    "State": "WA",
+    "County": "Yakima",
+    "PCT_LACCESS_POP10": 12.4333755190251
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2991,
+    "OBJECTID_1": 3029,
+    "FIPSNUM": 54001,
+    "State": "WV",
+    "County": "Barbour",
+    "PCT_LACCESS_POP10": 1.0715216406092301
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2992,
+    "OBJECTID_1": 3030,
+    "FIPSNUM": 54003,
+    "State": "WV",
+    "County": "Berkeley",
+    "PCT_LACCESS_POP10": 24.191475739063101
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2993,
+    "OBJECTID_1": 3031,
+    "FIPSNUM": 54005,
+    "State": "WV",
+    "County": "Boone",
+    "PCT_LACCESS_POP10": 3.0474038731624802
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2994,
+    "OBJECTID_1": 3032,
+    "FIPSNUM": 54007,
+    "State": "WV",
+    "County": "Braxton",
+    "PCT_LACCESS_POP10": 20.5689210394005
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2995,
+    "OBJECTID_1": 3033,
+    "FIPSNUM": 54009,
+    "State": "WV",
+    "County": "Brooke",
+    "PCT_LACCESS_POP10": 22.4470833086434
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2996,
+    "OBJECTID_1": 3034,
+    "FIPSNUM": 54011,
+    "State": "WV",
+    "County": "Cabell",
+    "PCT_LACCESS_POP10": 13.0490138035076
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2997,
+    "OBJECTID_1": 3035,
+    "FIPSNUM": 54013,
+    "State": "WV",
+    "County": "Calhoun",
+    "PCT_LACCESS_POP10": 24.1705086005854
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2998,
+    "OBJECTID_1": 3036,
+    "FIPSNUM": 54015,
+    "State": "WV",
+    "County": "Clay",
+    "PCT_LACCESS_POP10": 15.435366400501199
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2999,
+    "OBJECTID_1": 3037,
+    "FIPSNUM": 54017,
+    "State": "WV",
+    "County": "Doddridge",
+    "PCT_LACCESS_POP10": 2.0720892790515499
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3000,
+    "OBJECTID_1": 3038,
+    "FIPSNUM": 54019,
+    "State": "WV",
+    "County": "Fayette",
+    "PCT_LACCESS_POP10": 13.658127556069498
+   }
+  }
+ ]
+}

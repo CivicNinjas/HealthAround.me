@@ -1,0 +1,7022 @@
+{
+ "displayFieldName": "FIPSTXT",
+ "fieldAliases": {
+  "State": "State",
+  "County": "County",
+  "GROCPTH11": "Grocery stores/1,000 pop, 2011"
+ },
+ "fields": [
+  {
+   "name": "State",
+   "type": "esriFieldTypeString",
+   "alias": "State",
+   "length": 2
+  },
+  {
+   "name": "County",
+   "type": "esriFieldTypeString",
+   "alias": "County",
+   "length": 50
+  },
+  {
+   "name": "GROCPTH11",
+   "type": "esriFieldTypeDouble",
+   "alias": "Grocery stores/1,000 pop, 2011"
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Oneida",
+    "GROCPTH11": 0.23475480927238812
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Onondaga",
+    "GROCPTH11": 0.26768888127462737
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Ontario",
+    "GROCPTH11": 0.16586040082930201
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Orange",
+    "GROCPTH11": 0.32277684116178323
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Orleans",
+    "GROCPTH11": 0.23462061845995025
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Oswego",
+    "GROCPTH11": 0.18817292273456165
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Otsego",
+    "GROCPTH11": 0.29071175929066329
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Putnam",
+    "GROCPTH11": 0.33022124823631832
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Queens",
+    "GROCPTH11": 0.62726661233321823
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Rensselaer",
+    "GROCPTH11": 0.23212773299036982
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Richmond",
+    "GROCPTH11": 0.4506160899701786
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Rockland",
+    "GROCPTH11": 0.29509008180023988
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "St. Lawrence",
+    "GROCPTH11": 0.24174053182917002
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Saratoga",
+    "GROCPTH11": 0.13129182097228384
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Schenectady",
+    "GROCPTH11": 0.25796798617291594
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Schoharie",
+    "GROCPTH11": 0.12278224568727361
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Schuyler",
+    "GROCPTH11": 0.05446326452807581
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Seneca",
+    "GROCPTH11": 0.25569634638331723
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Steuben",
+    "GROCPTH11": 0.20195288439207132
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Suffolk",
+    "GROCPTH11": 0.34827490499167341
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Sullivan",
+    "GROCPTH11": 0.41612483745123535
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Tioga",
+    "GROCPTH11": 0.21550457457437847
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Tompkins",
+    "GROCPTH11": 0.1966123688841265
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Ulster",
+    "GROCPTH11": 0.25760764711040951
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Warren",
+    "GROCPTH11": 0.3797602953016056
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Washington",
+    "GROCPTH11": 0.15831552283701417
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Wayne",
+    "GROCPTH11": 0.11772764245044735
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Westchester",
+    "GROCPTH11": 0.48854533794888372
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Wyoming",
+    "GROCPTH11": 0.26225443448407398
+   }
+  },
+  {
+   "attributes": {
+    "State": "NY",
+    "County": "Yates",
+    "GROCPTH11": 0.39286556140488726
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Alamance",
+    "GROCPTH11": 0.15656496467502984
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Alexander",
+    "GROCPTH11": 0.10785450427373472
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Alleghany",
+    "GROCPTH11": 0.18096272167933405
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Anson",
+    "GROCPTH11": 0.22548761697170128
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Ashe",
+    "GROCPTH11": 0.14736764543344508
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Avery",
+    "GROCPTH11": 0.28454359207830643
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Beaufort",
+    "GROCPTH11": 0.23065148560525045
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Bertie",
+    "GROCPTH11": 0.43115837884449559
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Bladen",
+    "GROCPTH11": 0.22904260192395787
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Brunswick",
+    "GROCPTH11": 0.16349219324777242
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Buncombe",
+    "GROCPTH11": 0.19468227438602595
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Burke",
+    "GROCPTH11": 0.17600985655196691
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cabarrus",
+    "GROCPTH11": 0.15429717636167259
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Caldwell",
+    "GROCPTH11": 0.16991322288973845
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Camden",
+    "GROCPTH11": 0.099860195725983633
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Carteret",
+    "GROCPTH11": 0.22264111736155431
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Caswell",
+    "GROCPTH11": 0.12818869375721062
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Catawba",
+    "GROCPTH11": 0.17511885381467235
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Chatham",
+    "GROCPTH11": 0.18693044629644054
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cherokee",
+    "GROCPTH11": 0.183864087666397
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Chowan",
+    "GROCPTH11": 0.26930586413519153
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Clay",
+    "GROCPTH11": 0.18934014957871817
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cleveland",
+    "GROCPTH11": 0.21540891792920225
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Columbus",
+    "GROCPTH11": 0.20792902689215415
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Craven",
+    "GROCPTH11": 0.15269215353196036
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Cumberland",
+    "GROCPTH11": 0.15390061098542562
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Currituck",
+    "GROCPTH11": 0.33395950740972657
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Dare",
+    "GROCPTH11": 0.52467426472731504
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Davidson",
+    "GROCPTH11": 0.16595266046700308
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Davie",
+    "GROCPTH11": 0.096264921062764727
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Duplin",
+    "GROCPTH11": 0.23512814483893721
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Durham",
+    "GROCPTH11": 0.18288757534968106
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Edgecombe",
+    "GROCPTH11": 0.17844078442568834
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Forsyth",
+    "GROCPTH11": 0.19439248123689964
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Franklin",
+    "GROCPTH11": 0.16355904481517827
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Gaston",
+    "GROCPTH11": 0.15456622438185585
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Gates",
+    "GROCPTH11": 0.24910736527443331
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Graham",
+    "GROCPTH11": 0.22722108611679165
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Granville",
+    "GROCPTH11": 0.11671335200746966
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Greene",
+    "GROCPTH11": 0.13917238819818148
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Guilford",
+    "GROCPTH11": 0.20796359223791036
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Halifax",
+    "GROCPTH11": 0.38764698281431709
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Harnett",
+    "GROCPTH11": 0.15932112430401824
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Haywood",
+    "GROCPTH11": 0.18690000849545493
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Henderson",
+    "GROCPTH11": 0.20384148544849759
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Hertford",
+    "GROCPTH11": 0.28649776941022387
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Hoke",
+    "GROCPTH11": 0.12177301509985387
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Hyde",
+    "GROCPTH11": 0.17176228100309171
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Iredell",
+    "GROCPTH11": 0.19230530638577686
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Jackson",
+    "GROCPTH11": 0.17376194613379672
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Johnston",
+    "GROCPTH11": 0.19119904979866162
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Jones",
+    "GROCPTH11": 0.19960079840319361
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Lee",
+    "GROCPTH11": 0.22126906318082787
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Lenoir",
+    "GROCPTH11": 0.28648949257655171
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Lincoln",
+    "GROCPTH11": 0.19003699386813966
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "McDowell",
+    "GROCPTH11": 0.24388080879744592
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Macon",
+    "GROCPTH11": 0.23478311909373717
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Madison",
+    "GROCPTH11": 0.14411990776325903
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Martin",
+    "GROCPTH11": 0.16542597187758479
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Mecklenburg",
+    "GROCPTH11": 0.21178072647142601
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Mitchell",
+    "GROCPTH11": 0.064745872450631264
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Montgomery",
+    "GROCPTH11": 0.14457657136661003
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Moore",
+    "GROCPTH11": 0.1790670606142
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Nash",
+    "GROCPTH11": 0.21848599608806027
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "New Hanover",
+    "GROCPTH11": 0.19399676995378026
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Northampton",
+    "GROCPTH11": 0.22838350157584617
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Onslow",
+    "GROCPTH11": 0.12241332302093824
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Orange",
+    "GROCPTH11": 0.14732422378549592
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pamlico",
+    "GROCPTH11": 0.30309918920966888
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pasquotank",
+    "GROCPTH11": 0.19657951641438964
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pender",
+    "GROCPTH11": 0.14981553961684677
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Perquimans",
+    "GROCPTH11": 0.14829094683769556
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Person",
+    "GROCPTH11": 0.15137371647702905
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Pitt",
+    "GROCPTH11": 0.15192772914791919
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Polk",
+    "GROCPTH11": 0.24684044233807267
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Randolph",
+    "GROCPTH11": 0.16156450638531028
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Richmond",
+    "GROCPTH11": 0.21454163180365152
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Robeson",
+    "GROCPTH11": 0.20661614410000223
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Rockingham",
+    "GROCPTH11": 0.23572523009996893
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Rowan",
+    "GROCPTH11": 0.15215296444692397
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Rutherford",
+    "GROCPTH11": 0.19248423109952917
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Sampson",
+    "GROCPTH11": 0.18828254934571814
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Scotland",
+    "GROCPTH11": 0.22308357268341655
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Stanly",
+    "GROCPTH11": 0.21442945271005839
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Stokes",
+    "GROCPTH11": 0.14817323568011517
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Surry",
+    "GROCPTH11": 0.23062104891879426
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Swain",
+    "GROCPTH11": 0.28483942177597382
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Transylvania",
+    "GROCPTH11": 0.15234613040828762
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Tyrrell",
+    "GROCPTH11": 0.22914757103574704
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Union",
+    "GROCPTH11": 0.12654346524678409
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Vance",
+    "GROCPTH11": 0.1986448010241243
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wake",
+    "GROCPTH11": 0.18606552087590614
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Warren",
+    "GROCPTH11": 0.19174536215905277
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Washington",
+    "GROCPTH11": 0.30833269097356047
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Watauga",
+    "GROCPTH11": 0.19480645978220637
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wayne",
+    "GROCPTH11": 0.19402249044035019
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wilkes",
+    "GROCPTH11": 0.20294561057636554
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Wilson",
+    "GROCPTH11": 0.24554338751657417
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Yadkin",
+    "GROCPTH11": 0.26123984430105279
+   }
+  },
+  {
+   "attributes": {
+    "State": "NC",
+    "County": "Yancey",
+    "GROCPTH11": 0.22597593356307552
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Adams",
+    "GROCPTH11": 0.86692674469007369
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Barnes",
+    "GROCPTH11": 0.36179450072358904
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Benson",
+    "GROCPTH11": 0.29748624126134166
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Billings",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Bottineau",
+    "GROCPTH11": 0.46562160484246473
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Bowman",
+    "GROCPTH11": 1.2763241863433312
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Burke",
+    "GROCPTH11": 0.9837678307919332
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Burleigh",
+    "GROCPTH11": 0.084190270010223112
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Cass",
+    "GROCPTH11": 0.12469809933844377
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Cavalier",
+    "GROCPTH11": 0.76161462300076166
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Dickey",
+    "GROCPTH11": 0.9403799134850479
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Divide",
+    "GROCPTH11": 0.47058823529411764
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Dunn",
+    "GROCPTH11": 0.5376344086021505
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Eddy",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Emmons",
+    "GROCPTH11": 1.1280315848843767
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Foster",
+    "GROCPTH11": 0.29931158335827596
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Golden Valley",
+    "GROCPTH11": 0.57077625570776258
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Grand Forks",
+    "GROCPTH11": 0.12012372743926245
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Grant",
+    "GROCPTH11": 0.42789901583226353
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Griggs",
+    "GROCPTH11": 0.42158516020236092
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Hettinger",
+    "GROCPTH11": 1.1928429423459244
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Kidder",
+    "GROCPTH11": 1.2427506213753106
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "LaMoure",
+    "GROCPTH11": 0.73081607795371495
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Logan",
+    "GROCPTH11": 0.50377833753148615
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McHenry",
+    "GROCPTH11": 0.72661217075386009
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McIntosh",
+    "GROCPTH11": 0.72228241242325741
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McKenzie",
+    "GROCPTH11": 0.28494087476848551
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "McLean",
+    "GROCPTH11": 0.22055580061755625
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Mercer",
+    "GROCPTH11": 0.35507160610723165
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Morton",
+    "GROCPTH11": 0.21634095334246772
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Mountrail",
+    "GROCPTH11": 0.49401012720760779
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Nelson",
+    "GROCPTH11": 1.3084723585214262
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Oliver",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Pembina",
+    "GROCPTH11": 0.68101334786161816
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Pierce",
+    "GROCPTH11": 0.22857142857142856
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Ramsey",
+    "GROCPTH11": 0.2619629758994062
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Ransom",
+    "GROCPTH11": 0.37016472330186934
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Renville",
+    "GROCPTH11": 1.2048192771084336
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Richland",
+    "GROCPTH11": 0.24622960911049552
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Rolette",
+    "GROCPTH11": 0.35196395889060961
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Sargent",
+    "GROCPTH11": 1.05318588730911
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Sheridan",
+    "GROCPTH11": 0.76394194041252872
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Sioux",
+    "GROCPTH11": 0.23364485981308411
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Slope",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Stark",
+    "GROCPTH11": 0.11915637288000953
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Steele",
+    "GROCPTH11": 1.0256410256410258
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Stutsman",
+    "GROCPTH11": 0.14243661570601082
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Towner",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Traill",
+    "GROCPTH11": 0.73646741131704918
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Walsh",
+    "GROCPTH11": 0.54387237128353882
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Ward",
+    "GROCPTH11": 0.15607441628168309
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Wells",
+    "GROCPTH11": 1.180080245456691
+   }
+  },
+  {
+   "attributes": {
+    "State": "ND",
+    "County": "Williams",
+    "GROCPTH11": 0.20513662098957908
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Adams",
+    "GROCPTH11": 0.10542592071970762
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Allen",
+    "GROCPTH11": 0.15080965935868193
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ashland",
+    "GROCPTH11": 0.22576336236901023
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ashtabula",
+    "GROCPTH11": 0.17761113029749864
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Athens",
+    "GROCPTH11": 0.21615278914295416
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Auglaize",
+    "GROCPTH11": 0.21815960556743313
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Belmont",
+    "GROCPTH11": 0.27084432153497456
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Brown",
+    "GROCPTH11": 0.13426723655649295
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Butler",
+    "GROCPTH11": 0.13783821037354155
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Carroll",
+    "GROCPTH11": 0.17371968591480785
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Champaign",
+    "GROCPTH11": 0.25128785023244127
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Clark",
+    "GROCPTH11": 0.16704069256523665
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Clermont",
+    "GROCPTH11": 0.13558368777587512
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Clinton",
+    "GROCPTH11": 0.21465881174422211
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Columbiana",
+    "GROCPTH11": 0.16733289950729757
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Coshocton",
+    "GROCPTH11": 0.16235962657285888
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Crawford",
+    "GROCPTH11": 0.16133121298024844
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Cuyahoga",
+    "GROCPTH11": 0.24561243302731492
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Darke",
+    "GROCPTH11": 0.15148932947035543
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Defiance",
+    "GROCPTH11": 0.12858759386894353
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Delaware",
+    "GROCPTH11": 0.10093024038218917
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Erie",
+    "GROCPTH11": 0.15634975440059412
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Fairfield",
+    "GROCPTH11": 0.09519535446670202
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Fayette",
+    "GROCPTH11": 0.31050543384509227
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Franklin",
+    "GROCPTH11": 0.20444537194212076
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Fulton",
+    "GROCPTH11": 0.11761938367442955
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Gallia",
+    "GROCPTH11": 0.16144656118824668
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Geauga",
+    "GROCPTH11": 0.096537520916462866
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Greene",
+    "GROCPTH11": 0.11053387863380126
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Guernsey",
+    "GROCPTH11": 0.27550279259648858
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hamilton",
+    "GROCPTH11": 0.20490727945604614
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hancock",
+    "GROCPTH11": 0.13323385205713068
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hardin",
+    "GROCPTH11": 0.18738288569643971
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Harrison",
+    "GROCPTH11": 0.50473186119873814
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Henry",
+    "GROCPTH11": 0.1781641961231471
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Highland",
+    "GROCPTH11": 0.18419174360509291
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Hocking",
+    "GROCPTH11": 0.17010274205620196
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Holmes",
+    "GROCPTH11": 0.32751602489121789
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Huron",
+    "GROCPTH11": 0.21850208417372596
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Jackson",
+    "GROCPTH11": 0.27119869824624843
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Jefferson",
+    "GROCPTH11": 0.27605044458650546
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Knox",
+    "GROCPTH11": 0.1795185638514892
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lake",
+    "GROCPTH11": 0.1392000348000087
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lawrence",
+    "GROCPTH11": 0.19203379794843894
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Licking",
+    "GROCPTH11": 0.1255620396058548
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Logan",
+    "GROCPTH11": 0.28453860970057782
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lorain",
+    "GROCPTH11": 0.18566777404231902
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Lucas",
+    "GROCPTH11": 0.16363450415336189
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Madison",
+    "GROCPTH11": 0.11520471878528143
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Mahoning",
+    "GROCPTH11": 0.22758882286003287
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Marion",
+    "GROCPTH11": 0.19633903219960128
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Medina",
+    "GROCPTH11": 0.10966051413466311
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Meigs",
+    "GROCPTH11": 0.1266891891891892
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Mercer",
+    "GROCPTH11": 0.17140898183064793
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Miami",
+    "GROCPTH11": 0.087500121527946562
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Monroe",
+    "GROCPTH11": 0.13712718546451833
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Montgomery",
+    "GROCPTH11": 0.13578818531181061
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Morgan",
+    "GROCPTH11": 0.13303179459890913
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Morrow",
+    "GROCPTH11": 0.14345144168698898
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Muskingum",
+    "GROCPTH11": 0.20872711249231771
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Noble",
+    "GROCPTH11": 0.34008978370289755
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ottawa",
+    "GROCPTH11": 0.26572615711662961
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Paulding",
+    "GROCPTH11": 0.2574665293511843
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Perry",
+    "GROCPTH11": 0.22036746274412586
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Pickaway",
+    "GROCPTH11": 0.16074298981961063
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Pike",
+    "GROCPTH11": 0.10479251082855945
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Portage",
+    "GROCPTH11": 0.1051823986536653
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Preble",
+    "GROCPTH11": 0.095050257823824355
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Putnam",
+    "GROCPTH11": 0.17495771855135012
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Richland",
+    "GROCPTH11": 0.20241276010039672
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Ross",
+    "GROCPTH11": 0.1405768763818068
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Sandusky",
+    "GROCPTH11": 0.16465241874403133
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Scioto",
+    "GROCPTH11": 0.15136798819329692
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Seneca",
+    "GROCPTH11": 0.19479714533637923
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Shelby",
+    "GROCPTH11": 0.1825298639138459
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Stark",
+    "GROCPTH11": 0.16796103304033463
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Summit",
+    "GROCPTH11": 0.15930882200388269
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Trumbull",
+    "GROCPTH11": 0.21503937609909013
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Tuscarawas",
+    "GROCPTH11": 0.17295801444199421
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Union",
+    "GROCPTH11": 0.094761579865059509
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Van Wert",
+    "GROCPTH11": 0.17481906227055
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Vinton",
+    "GROCPTH11": 0.22443330590259594
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Warren",
+    "GROCPTH11": 0.11167465450653762
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Washington",
+    "GROCPTH11": 0.21050927050441259
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Wayne",
+    "GROCPTH11": 0.20067881791451081
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Williams",
+    "GROCPTH11": 0.13298933425539272
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Wood",
+    "GROCPTH11": 0.16619840924379722
+   }
+  },
+  {
+   "attributes": {
+    "State": "OH",
+    "County": "Wyandot",
+    "GROCPTH11": 0.30847875903402078
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Adair",
+    "GROCPTH11": 0.13267291703520256
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Alfalfa",
+    "GROCPTH11": 0.35323207347227131
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Atoka",
+    "GROCPTH11": 0.35196395889060961
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Beaver",
+    "GROCPTH11": 0.17780938833570414
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Beckham",
+    "GROCPTH11": 0.2243359655419957
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Blaine",
+    "GROCPTH11": 0.40899795501022496
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Bryan",
+    "GROCPTH11": 0.11603889623801898
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Caddo",
+    "GROCPTH11": 0.13542336730202797
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Canadian",
+    "GROCPTH11": 0.12553141632912662
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Carter",
+    "GROCPTH11": 0.16633399866932802
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cherokee",
+    "GROCPTH11": 0.14630577907827361
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Choctaw",
+    "GROCPTH11": 0.13114754098360656
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cimarron",
+    "GROCPTH11": 0.40209087253719339
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cleveland",
+    "GROCPTH11": 0.16840107011225461
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Coal",
+    "GROCPTH11": 0.50607287449392713
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Comanche",
+    "GROCPTH11": 0.079481778802209593
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Cotton",
+    "GROCPTH11": 0.1618384851917786
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Craig",
+    "GROCPTH11": 0.13268758707622902
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Creek",
+    "GROCPTH11": 0.099337278442391472
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Custer",
+    "GROCPTH11": 0.14414414414414414
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Delaware",
+    "GROCPTH11": 0.096077630725626306
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Dewey",
+    "GROCPTH11": 0.20546537908362442
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Ellis",
+    "GROCPTH11": 0.74055788694149594
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Garfield",
+    "GROCPTH11": 0.19779133014669523
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Garvin",
+    "GROCPTH11": 0.36427218417601631
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Grady",
+    "GROCPTH11": 0.094304036212749895
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Grant",
+    "GROCPTH11": 0.65430752453653218
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Greer",
+    "GROCPTH11": 0.16326530612244897
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Harmon",
+    "GROCPTH11": 0.34258307639602603
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Harper",
+    "GROCPTH11": 0.54127198917456021
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Haskell",
+    "GROCPTH11": 0.078064012490242002
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Hughes",
+    "GROCPTH11": 0.36119338293722458
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Jackson",
+    "GROCPTH11": 0.075622944001209974
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Jefferson",
+    "GROCPTH11": 0.30740854595757761
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Johnston",
+    "GROCPTH11": 0.089774665589370681
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Kay",
+    "GROCPTH11": 0.19497822743127019
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Kingfisher",
+    "GROCPTH11": 0.13146650890685599
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Kiowa",
+    "GROCPTH11": 0.42480883602378927
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Latimer",
+    "GROCPTH11": 0.17929179740026896
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Le Flore",
+    "GROCPTH11": 0.13826341155092045
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Lincoln",
+    "GROCPTH11": 0.087834870443566096
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Logan",
+    "GROCPTH11": 0.094119861643803385
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Love",
+    "GROCPTH11": 0.10654165778819519
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "McClain",
+    "GROCPTH11": 0.056761742585497377
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "McCurtain",
+    "GROCPTH11": 0.1807501129688206
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "McIntosh",
+    "GROCPTH11": 0.19646365422396858
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Major",
+    "GROCPTH11": 0.3917983544469113
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Marshall",
+    "GROCPTH11": 0.24923671256776123
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Mayes",
+    "GROCPTH11": 0.16912706274614026
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Murray",
+    "GROCPTH11": 0.14737307493920862
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Muskogee",
+    "GROCPTH11": 0.16900694336859007
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Noble",
+    "GROCPTH11": 0.17274140611504579
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Nowata",
+    "GROCPTH11": 0.18816445573431179
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Okfuskee",
+    "GROCPTH11": 0.32393909944930349
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Oklahoma",
+    "GROCPTH11": 0.2457770720031241
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Okmulgee",
+    "GROCPTH11": 0.22535493402108323
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Osage",
+    "GROCPTH11": 0.063257775434897204
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Ottawa",
+    "GROCPTH11": 0.094161958568738227
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pawnee",
+    "GROCPTH11": 0.11954572624028691
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Payne",
+    "GROCPTH11": 0.051289942042365491
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pittsburg",
+    "GROCPTH11": 0.1095890410958904
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pontotoc",
+    "GROCPTH11": 0.13227863170983359
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pottawatomie",
+    "GROCPTH11": 0.085372794536141147
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Pushmataha",
+    "GROCPTH11": 0.52273915316257191
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Roger Mills",
+    "GROCPTH11": 0.2701242571582928
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Rogers",
+    "GROCPTH11": 0.057008642510204544
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Seminole",
+    "GROCPTH11": 0.19769096947651429
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Sequoyah",
+    "GROCPTH11": 0.16532439007108948
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Stephens",
+    "GROCPTH11": 0.17700289842246167
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Texas",
+    "GROCPTH11": 0.18768768768768768
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Tillman",
+    "GROCPTH11": 0.24810817516437167
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Tulsa",
+    "GROCPTH11": 0.13265662079367965
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Wagoner",
+    "GROCPTH11": 0.040486922723960164
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Washington",
+    "GROCPTH11": 0.13598570207475327
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Washita",
+    "GROCPTH11": 0.25920165889061691
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Woods",
+    "GROCPTH11": 0.45584045584045585
+   }
+  },
+  {
+   "attributes": {
+    "State": "OK",
+    "County": "Woodward",
+    "GROCPTH11": 0.19966057701906759
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Baker",
+    "GROCPTH11": 0.43793793793793795
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Benton",
+    "GROCPTH11": 0.1629271017596127
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Clackamas",
+    "GROCPTH11": 0.15517862637984045
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Clatsop",
+    "GROCPTH11": 0.4037359028880575
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Columbia",
+    "GROCPTH11": 0.20242095461722198
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Coos",
+    "GROCPTH11": 0.31851698491822078
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Crook",
+    "GROCPTH11": 0.28792168530159801
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Curry",
+    "GROCPTH11": 0.35672879693213239
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Deschutes",
+    "GROCPTH11": 0.21205204006536194
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Douglas",
+    "GROCPTH11": 0.21397339287375572
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Gilliam",
+    "GROCPTH11": 1.5487867836861124
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Grant",
+    "GROCPTH11": 0.40485829959514169
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Harney",
+    "GROCPTH11": 0.27126000271260003
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Hood River",
+    "GROCPTH11": 0.48904103498866319
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Jackson",
+    "GROCPTH11": 0.18064465731220278
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Jefferson",
+    "GROCPTH11": 0.32152863901520368
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Josephine",
+    "GROCPTH11": 0.20485136226155906
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Klamath",
+    "GROCPTH11": 0.22624775637641592
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Lake",
+    "GROCPTH11": 0.37936267071320179
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Lane",
+    "GROCPTH11": 0.16128302057631799
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Lincoln",
+    "GROCPTH11": 0.34833344218753404
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Linn",
+    "GROCPTH11": 0.17778229288362879
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Malheur",
+    "GROCPTH11": 0.19312475859405176
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Marion",
+    "GROCPTH11": 0.12544218369753379
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Morrow",
+    "GROCPTH11": 0.089533530307099998
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Multnomah",
+    "GROCPTH11": 0.17913696090135303
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Polk",
+    "GROCPTH11": 0.15790928111799771
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Sherman",
+    "GROCPTH11": 1.1641443538998837
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Tillamook",
+    "GROCPTH11": 0.35428886352005673
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Umatilla",
+    "GROCPTH11": 0.15640273704789834
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Union",
+    "GROCPTH11": 0.27141250823930829
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Wallowa",
+    "GROCPTH11": 0.57224606580829751
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Wasco",
+    "GROCPTH11": 0.31703257509709121
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Washington",
+    "GROCPTH11": 0.14803575063377808
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Wheeler",
+    "GROCPTH11": 0.70126227208976155
+   }
+  },
+  {
+   "attributes": {
+    "State": "OR",
+    "County": "Yamhill",
+    "GROCPTH11": 0.17999999999999999
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Adams",
+    "GROCPTH11": 0.11830352741684248
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Allegheny",
+    "GROCPTH11": 0.17113993868300481
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Armstrong",
+    "GROCPTH11": 0.24792906311982266
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Beaver",
+    "GROCPTH11": 0.1701738120107503
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Bedford",
+    "GROCPTH11": 0.22115442610426428
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Berks",
+    "GROCPTH11": 0.18654094937230181
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Blair",
+    "GROCPTH11": 0.12588612026845214
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Bradford",
+    "GROCPTH11": 0.25430328845939887
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Bucks",
+    "GROCPTH11": 0.15793151196291319
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Butler",
+    "GROCPTH11": 0.16770535791569288
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Cambria",
+    "GROCPTH11": 0.19481242346654792
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Cameron",
+    "GROCPTH11": 0.19960079840319361
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Carbon",
+    "GROCPTH11": 0.15348251834116095
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Centre",
+    "GROCPTH11": 0.10987448455940331
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Chester",
+    "GROCPTH11": 0.13693274617630191
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Clarion",
+    "GROCPTH11": 0.34988628695673907
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Clearfield",
+    "GROCPTH11": 0.18417336853091046
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Clinton",
+    "GROCPTH11": 0.12752499489900021
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Columbia",
+    "GROCPTH11": 0.14820084178078133
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Crawford",
+    "GROCPTH11": 0.27045300878972278
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Cumberland",
+    "GROCPTH11": 0.15553276276629732
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Dauphin",
+    "GROCPTH11": 0.17845391985188327
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Delaware",
+    "GROCPTH11": 0.19303156066016794
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Elk",
+    "GROCPTH11": 0.22046549714969607
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Erie",
+    "GROCPTH11": 0.14591526238055411
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Fayette",
+    "GROCPTH11": 0.24982181826197489
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Forest",
+    "GROCPTH11": 0.2635393332454869
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Franklin",
+    "GROCPTH11": 0.18566284952689127
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Fulton",
+    "GROCPTH11": 0.13512600499966218
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Greene",
+    "GROCPTH11": 0.20713046630246226
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Huntingdon",
+    "GROCPTH11": 0.13079019073569481
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Indiana",
+    "GROCPTH11": 0.10078613182826043
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Jefferson",
+    "GROCPTH11": 0.24457488438278194
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Juniata",
+    "GROCPTH11": 0.20491803278688525
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Lackawanna",
+    "GROCPTH11": 0.20077883510921435
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Lancaster",
+    "GROCPTH11": 0.21581607123076274
+   }
+  },
+  {
+   "attributes": {
+    "State": "PA",
+    "County": "Lawrence",
+    "GROCPTH11": 0.099409068316120841
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Charleston",
+    "GROCPTH11": 0.27396953906022858
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Cherokee",
+    "GROCPTH11": 0.18005041411595246
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Chester",
+    "GROCPTH11": 0.30380362133916639
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Chesterfield",
+    "GROCPTH11": 0.2577485662736001
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Clarendon",
+    "GROCPTH11": 0.11518746760352475
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Colleton",
+    "GROCPTH11": 0.28489290616663648
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Darlington",
+    "GROCPTH11": 0.19033953645002122
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Dillon",
+    "GROCPTH11": 0.25190503180301027
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Dorchester",
+    "GROCPTH11": 0.12065979615592085
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Edgefield",
+    "GROCPTH11": 0.11248593925759279
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Fairfield",
+    "GROCPTH11": 0.084850027576258952
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Florence",
+    "GROCPTH11": 0.29739884812348583
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Georgetown",
+    "GROCPTH11": 0.2833758397092897
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Greenville",
+    "GROCPTH11": 0.18643005946251781
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Greenwood",
+    "GROCPTH11": 0.22911147705305365
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Hampton",
+    "GROCPTH11": 0.28817059699342007
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Horry",
+    "GROCPTH11": 0.19903018021278138
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Jasper",
+    "GROCPTH11": 0.23814248858900575
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Kershaw",
+    "GROCPTH11": 0.11240826682510879
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Lancaster",
+    "GROCPTH11": 0.28238435077270624
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Laurens",
+    "GROCPTH11": 0.18037518037518036
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Lee",
+    "GROCPTH11": 0.26349072512647553
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Lexington",
+    "GROCPTH11": 0.15722740698314297
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "McCormick",
+    "GROCPTH11": 0.19930244145490783
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Marion",
+    "GROCPTH11": 0.30445107471229377
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Marlboro",
+    "GROCPTH11": 0.24553649724648358
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Newberry",
+    "GROCPTH11": 0.15906259112960952
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Oconee",
+    "GROCPTH11": 0.21500174688919346
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Orangeburg",
+    "GROCPTH11": 0.23936459580023936
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Pickens",
+    "GROCPTH11": 0.091993242678174186
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Richland",
+    "GROCPTH11": 0.13620616988250292
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Saluda",
+    "GROCPTH11": 0.15089025248968915
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Spartanburg",
+    "GROCPTH11": 0.14292287742097412
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Sumter",
+    "GROCPTH11": 0.18611576400521126
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Union",
+    "GROCPTH11": 0.17434359635970573
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "Williamsburg",
+    "GROCPTH11": 0.2347142354183781
+   }
+  },
+  {
+   "attributes": {
+    "State": "SC",
+    "County": "York",
+    "GROCPTH11": 0.17351471404775126
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Aurora",
+    "GROCPTH11": 1.1135857461024499
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Beadle",
+    "GROCPTH11": 0.17094017094017094
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Bennett",
+    "GROCPTH11": 0.58122638767800061
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Bon Homme",
+    "GROCPTH11": 0.42961477874838899
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Brookings",
+    "GROCPTH11": 0.062061689319183273
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Brown",
+    "GROCPTH11": 0.1901037423279561
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Brule",
+    "GROCPTH11": 0.37857278061707361
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Buffalo",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Butte",
+    "GROCPTH11": 0.38990154985866066
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Campbell",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Charles Mix",
+    "GROCPTH11": 0.5430060816681147
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Clark",
+    "GROCPTH11": 0.27563395810363833
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Clay",
+    "GROCPTH11": 0.14233862358550992
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Codington",
+    "GROCPTH11": 0.10932147802638291
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Corson",
+    "GROCPTH11": 0.24863252113376427
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Custer",
+    "GROCPTH11": 0.35979851283281367
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Davison",
+    "GROCPTH11": 0.15266398656556918
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Day",
+    "GROCPTH11": 0.17418568193694478
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Deuel",
+    "GROCPTH11": 0.45882083046570316
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Dewey",
+    "GROCPTH11": 0.36893562073418185
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Douglas",
+    "GROCPTH11": 0.67294751009421261
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Edmunds",
+    "GROCPTH11": 0.49309664694280081
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Fall River",
+    "GROCPTH11": 0.28649190660363844
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Faulk",
+    "GROCPTH11": 0.42247570764681031
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Grant",
+    "GROCPTH11": 0.41379310344827586
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Gregory",
+    "GROCPTH11": 0.7115749525616698
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Haakon",
+    "GROCPTH11": 0.52438384897745149
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hamlin",
+    "GROCPTH11": 0.3345600535296086
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hand",
+    "GROCPTH11": 0.29214139643587494
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hanson",
+    "GROCPTH11": 0.29620853080568721
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Harding",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hughes",
+    "GROCPTH11": 0.17349063150589866
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hutchinson",
+    "GROCPTH11": 0.68898994074686515
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Hyde",
+    "GROCPTH11": 1.4347202295552368
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Jackson",
+    "GROCPTH11": 0.63111391606184919
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Jerauld",
+    "GROCPTH11": 0.47961630695443647
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Jones",
+    "GROCPTH11": 0.99700897308075787
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Kingsbury",
+    "GROCPTH11": 0.77234987449314541
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lake",
+    "GROCPTH11": 0.1729056799515864
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lawrence",
+    "GROCPTH11": 0.2056597564988483
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lincoln",
+    "GROCPTH11": 0.085482871369649313
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Lyman",
+    "GROCPTH11": 1.0509721492380453
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "McCook",
+    "GROCPTH11": 0.89992800575953924
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "McPherson",
+    "GROCPTH11": 0.81566068515497558
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Marshall",
+    "GROCPTH11": 0.6525995214270176
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Meade",
+    "GROCPTH11": 0.19572535817740547
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Mellette",
+    "GROCPTH11": 0.96758587324625056
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Miner",
+    "GROCPTH11": 0.42390843577787196
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Minnehaha",
+    "GROCPTH11": 0.12226931855233127
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Moody",
+    "GROCPTH11": 0.15444015444015444
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Pennington",
+    "GROCPTH11": 0.18479793804405972
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Perkins",
+    "GROCPTH11": 0.33322225924691773
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Potter",
+    "GROCPTH11": 1.2690355329949239
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Roberts",
+    "GROCPTH11": 0.38887808671981333
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Sanborn",
+    "GROCPTH11": 0.41806020066889632
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Shannon",
+    "GROCPTH11": 0.14359563469270534
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Spink",
+    "GROCPTH11": 0.30911901081916537
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Stanley",
+    "GROCPTH11": 0.33311125916055967
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Sully",
+    "GROCPTH11": 0.72727272727272729
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Todd",
+    "GROCPTH11": 0.30543677458766039
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Tripp",
+    "GROCPTH11": 0.53428317008014248
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Turner",
+    "GROCPTH11": 0.36005760921747476
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Union",
+    "GROCPTH11": 0.20476417991945942
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Walworth",
+    "GROCPTH11": 0.53811659192825112
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Yankton",
+    "GROCPTH11": 0.044224305678400855
+   }
+  },
+  {
+   "attributes": {
+    "State": "SD",
+    "County": "Ziebach",
+    "GROCPTH11": 0.35063113604488078
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Anderson",
+    "GROCPTH11": 0.18608855156646684
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Bedford",
+    "GROCPTH11": 0.19776307983036323
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Benton",
+    "GROCPTH11": 0.30432136335970783
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Bledsoe",
+    "GROCPTH11": 0.15546055188495919
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Blount",
+    "GROCPTH11": 0.13720631794739349
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Bradley",
+    "GROCPTH11": 0.16990655139673178
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Campbell",
+    "GROCPTH11": 0.19747235387045814
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cannon",
+    "GROCPTH11": 0.14533827483467773
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Carroll",
+    "GROCPTH11": 0.24598517060828617
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Carter",
+    "GROCPTH11": 0.13989682609075807
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cheatham",
+    "GROCPTH11": 0.12794922974563691
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Chester",
+    "GROCPTH11": 0.2916982673122922
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Claiborne",
+    "GROCPTH11": 0.18649757553151811
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Clay",
+    "GROCPTH11": 0.2576987501610617
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cocke",
+    "GROCPTH11": 0.16880486158001351
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Coffee",
+    "GROCPTH11": 0.18862230270107139
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Crockett",
+    "GROCPTH11": 0.27485741771456057
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Cumberland",
+    "GROCPTH11": 0.15892075151857607
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Davidson",
+    "GROCPTH11": 0.20457138361068491
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Decatur",
+    "GROCPTH11": 0.42782578933858134
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "DeKalb",
+    "GROCPTH11": 0.21215657154980377
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Dickson",
+    "GROCPTH11": 0.1797088716279627
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Dyer",
+    "GROCPTH11": 0.20946795140343527
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Fayette",
+    "GROCPTH11": 0.12982629242074106
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Fentress",
+    "GROCPTH11": 0.27746947835738067
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Franklin",
+    "GROCPTH11": 0.2443971943202092
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Gibson",
+    "GROCPTH11": 0.32041654150395515
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Giles",
+    "GROCPTH11": 0.20417191275053595
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Grainger",
+    "GROCPTH11": 0.17570060616709129
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Greene",
+    "GROCPTH11": 0.15864088031266677
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Grundy",
+    "GROCPTH11": 0.36913990402362495
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hamblen",
+    "GROCPTH11": 0.19028892201325681
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hamilton",
+    "GROCPTH11": 0.18776312508251308
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hancock",
+    "GROCPTH11": 0.14843402107763098
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hardeman",
+    "GROCPTH11": 0.22359692926883803
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hardin",
+    "GROCPTH11": 0.30919069336012989
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hawkins",
+    "GROCPTH11": 0.14116567556598614
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Haywood",
+    "GROCPTH11": 0.21656740660530591
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Henderson",
+    "GROCPTH11": 0.14330753797649756
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Henry",
+    "GROCPTH11": 0.21636993076162217
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Hickman",
+    "GROCPTH11": 0.081947062197820206
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Houston",
+    "GROCPTH11": 0.24000960038401536
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Humphreys",
+    "GROCPTH11": 0.21656740660530591
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Jackson",
+    "GROCPTH11": 0.17588602585524579
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Jefferson",
+    "GROCPTH11": 0.077420353811016918
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Johnson",
+    "GROCPTH11": 0.27425813175360647
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Knox",
+    "GROCPTH11": 0.15792039438901972
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lake",
+    "GROCPTH11": 0.12855122766422419
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lauderdale",
+    "GROCPTH11": 0.18019316707510449
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lawrence",
+    "GROCPTH11": 0.14246705449364833
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lewis",
+    "GROCPTH11": 0.24707626420688519
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Lincoln",
+    "GROCPTH11": 0.14956178397295924
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Loudon",
+    "GROCPTH11": 0.18278936572090093
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "McMinn",
+    "GROCPTH11": 0.095223584977527226
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "McNairy",
+    "GROCPTH11": 0.11496895838123707
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Macon",
+    "GROCPTH11": 0.26684456304202803
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Madison",
+    "GROCPTH11": 0.18319678387868302
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Marion",
+    "GROCPTH11": 0.14172837756439785
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Marshall",
+    "GROCPTH11": 0.19429422622324408
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Maury",
+    "GROCPTH11": 0.18402875756051479
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Meigs",
+    "GROCPTH11": 0.25560194257476354
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Monroe",
+    "GROCPTH11": 0.20052582326990775
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Montgomery",
+    "GROCPTH11": 0.096252385077483169
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Moore",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Morgan",
+    "GROCPTH11": 0.22895869585126843
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Obion",
+    "GROCPTH11": 0.094369298521547657
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Overton",
+    "GROCPTH11": 0.31575623618566467
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Perry",
+    "GROCPTH11": 0.50645733096986578
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Pickett",
+    "GROCPTH11": 0.19523623584537292
+   }
+  },
+  {
+   "attributes": {
+    "State": "TN",
+    "County": "Polk",
+    "GROCPTH11": 0.17879492222420884
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Burleson",
+    "GROCPTH11": 0.17390296214712189
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Burnet",
+    "GROCPTH11": 0.069578124637613939
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Caldwell",
+    "GROCPTH11": 0.078039644139222722
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Calhoun",
+    "GROCPTH11": 0.23318720268631657
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Callahan",
+    "GROCPTH11": 0.29596744358120608
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cameron",
+    "GROCPTH11": 0.10383388510176929
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Camp",
+    "GROCPTH11": 0.16119932296284356
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Carson",
+    "GROCPTH11": 0.15976993129892952
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cass",
+    "GROCPTH11": 0.16525647805393973
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Castro",
+    "GROCPTH11": 0.24642681123706262
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Chambers",
+    "GROCPTH11": 0.19689468946894689
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cherokee",
+    "GROCPTH11": 0.097770825185764562
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Childress",
+    "GROCPTH11": 0.14318442153493699
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Clay",
+    "GROCPTH11": 0.093274881074526625
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cochran",
+    "GROCPTH11": 0.32164683177870695
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Coke",
+    "GROCPTH11": 0.30257186081694398
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Coleman",
+    "GROCPTH11": 0.3423485107839781
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Collin",
+    "GROCPTH11": 0.10711304489144646
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Collingsworth",
+    "GROCPTH11": 0.32341526520051744
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Colorado",
+    "GROCPTH11": 0.28823981552651806
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Comal",
+    "GROCPTH11": 0.071452176165340345
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Comanche",
+    "GROCPTH11": 0.14397811532647037
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Concho",
+    "GROCPTH11": 0.24503798088703746
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cooke",
+    "GROCPTH11": 0.10417751849150952
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Coryell",
+    "GROCPTH11": 0.065352642860877302
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Cottle",
+    "GROCPTH11": 0.66711140760507004
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Crane",
+    "GROCPTH11": 0.22815423226100845
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Crockett",
+    "GROCPTH11": 0.80601826974744761
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Crosby",
+    "GROCPTH11": 0.49244911359159554
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Culberson",
+    "GROCPTH11": 0.419639110365086
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dallam",
+    "GROCPTH11": 0.14564520827264785
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dallas",
+    "GROCPTH11": 0.14693623464102443
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dawson",
+    "GROCPTH11": 0.14544396771143916
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Deaf Smith",
+    "GROCPTH11": 0.15310028068384793
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Delta",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Denton",
+    "GROCPTH11": 0.071386322380631875
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "DeWitt",
+    "GROCPTH11": 0.14811157738829919
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dickens",
+    "GROCPTH11": 0.4163197335553705
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Dimmit",
+    "GROCPTH11": 0.19766752322593398
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Donley",
+    "GROCPTH11": 0.27389756231169543
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Duval",
+    "GROCPTH11": 0.25709143885508612
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Eastland",
+    "GROCPTH11": 0.26834111522567489
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Ector",
+    "GROCPTH11": 0.11419517382646617
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Edwards",
+    "GROCPTH11": 0.50864699898270604
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Ellis",
+    "GROCPTH11": 0.098197744070492893
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "El Paso",
+    "GROCPTH11": 0.14010891945564641
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Erath",
+    "GROCPTH11": 0.10453143782992735
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Falls",
+    "GROCPTH11": 0.16718680338831923
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fannin",
+    "GROCPTH11": 0.14724070911125509
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fayette",
+    "GROCPTH11": 0.24260067928190199
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fisher",
+    "GROCPTH11": 0.76647930505876338
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Floyd",
+    "GROCPTH11": 0.3127932436659368
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Foard",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Fort Bend",
+    "GROCPTH11": 0.12686320028074663
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Franklin",
+    "GROCPTH11": 0.094777746185195716
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Freestone",
+    "GROCPTH11": 0.1016053647632595
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Frio",
+    "GROCPTH11": 0.22988505747126439
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gaines",
+    "GROCPTH11": 0.22218519135699605
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Galveston",
+    "GROCPTH11": 0.14539454330897691
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Garza",
+    "GROCPTH11": 0.15239256324291373
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gillespie",
+    "GROCPTH11": 0.11945528390539141
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Glasscock",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Goliad",
+    "GROCPTH11": 0.13806433798149936
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gonzales",
+    "GROCPTH11": 0.15072347266881028
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gray",
+    "GROCPTH11": 0.087892770819600091
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Grayson",
+    "GROCPTH11": 0.098831319645195564
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Gregg",
+    "GROCPTH11": 0.13812042476092978
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Grimes",
+    "GROCPTH11": 0.1487707814185294
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Guadalupe",
+    "GROCPTH11": 0.073661026687389969
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hale",
+    "GROCPTH11": 0.13699380787988383
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hall",
+    "GROCPTH11": 0.29612081729345574
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hamilton",
+    "GROCPTH11": 0.3541076487252125
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hansford",
+    "GROCPTH11": 0.35861574323112783
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hardeman",
+    "GROCPTH11": 0.47892720306513409
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hardin",
+    "GROCPTH11": 0.14480686384534627
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Harris",
+    "GROCPTH11": 0.17269033847784707
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Harrison",
+    "GROCPTH11": 0.1659225292627006
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hartley",
+    "GROCPTH11": 0.16747613465081226
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Haskell",
+    "GROCPTH11": 0.3339455668725998
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hays",
+    "GROCPTH11": 0.079244132886315141
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hemphill",
+    "GROCPTH11": 0.25188916876574308
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Henderson",
+    "GROCPTH11": 0.15223403445563649
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hidalgo",
+    "GROCPTH11": 0.081473032426266911
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hill",
+    "GROCPTH11": 0.14127486437613018
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hockley",
+    "GROCPTH11": 0.13105014852350166
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hood",
+    "GROCPTH11": 0.21288949100058061
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hopkins",
+    "GROCPTH11": 0.05654349608436289
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Houston",
+    "GROCPTH11": 0.2129109180718787
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Howard",
+    "GROCPTH11": 0.05694436535504812
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hudspeth",
+    "GROCPTH11": 0.58428279287174989
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hunt",
+    "GROCPTH11": 0.11556551987149113
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Hutchinson",
+    "GROCPTH11": 0.18073377914332187
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Irion",
+    "GROCPTH11": 0.61728395061728392
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jack",
+    "GROCPTH11": 0.22136137244050913
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jackson",
+    "GROCPTH11": 0.14253135689851767
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jasper",
+    "GROCPTH11": 0.13775622658144149
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jeff Davis",
+    "GROCPTH11": 0.43706293706293708
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jefferson",
+    "GROCPTH11": 0.16218226121628784
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jim Hogg",
+    "GROCPTH11": 0.94966761633428309
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jim Wells",
+    "GROCPTH11": 0.26609255182757202
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Johnson",
+    "GROCPTH11": 0.11130462110597508
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Jones",
+    "GROCPTH11": 0.14891293557033652
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Karnes",
+    "GROCPTH11": 0.33453766894152281
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kaufman",
+    "GROCPTH11": 0.085423033846504293
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kendall",
+    "GROCPTH11": 0.057502659498001783
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kenedy",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kent",
+    "GROCPTH11": 2.4242424242424243
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kerr",
+    "GROCPTH11": 0.16069742683245283
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kimble",
+    "GROCPTH11": 0.43177892918825567
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "King",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kinney",
+    "GROCPTH11": 0.27548209366391185
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Kleberg",
+    "GROCPTH11": 0.062119517952540691
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Knox",
+    "GROCPTH11": 0.53219797764768495
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lamar",
+    "GROCPTH11": 0.13979310620281984
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lamb",
+    "GROCPTH11": 0.42351944660125646
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lampasas",
+    "GROCPTH11": 0.050273993263284904
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "La Salle",
+    "GROCPTH11": 0.14283673760891299
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lavaca",
+    "GROCPTH11": 0.31012560086835167
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lee",
+    "GROCPTH11": 0.30001200048001919
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Leon",
+    "GROCPTH11": 0.2955781508630882
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Liberty",
+    "GROCPTH11": 0.19683489489016612
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Limestone",
+    "GROCPTH11": 0.25387154100025389
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lipscomb",
+    "GROCPTH11": 0.60114217012323412
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Live Oak",
+    "GROCPTH11": 0.17471826679479341
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Llano",
+    "GROCPTH11": 0.15640477555914706
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Loving",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lubbock",
+    "GROCPTH11": 0.077489345215032923
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Lynn",
+    "GROCPTH11": 0.16983695652173914
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "McCulloch",
+    "GROCPTH11": 0.12062726176115804
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "McLennan",
+    "GROCPTH11": 0.096410187622608612
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "McMullen",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Madison",
+    "GROCPTH11": 0.072743143958681894
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Marion",
+    "GROCPTH11": 0.28552393642333684
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Martin",
+    "GROCPTH11": 0.20267531414673692
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Mason",
+    "GROCPTH11": 0.25100401606425704
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Matagorda",
+    "GROCPTH11": 0.1086690754978402
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Maverick",
+    "GROCPTH11": 0.19853803808320547
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Medina",
+    "GROCPTH11": 0.12940237669031857
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Menard",
+    "GROCPTH11": 0.44169611307420498
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Midland",
+    "GROCPTH11": 0.071271773526812451
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Milam",
+    "GROCPTH11": 0.16194987651321915
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Mills",
+    "GROCPTH11": 0.20627062706270627
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Mitchell",
+    "GROCPTH11": 0.31826861871419476
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Montague",
+    "GROCPTH11": 0.15220700152207001
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Montgomery",
+    "GROCPTH11": 0.10387209741082899
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Moore",
+    "GROCPTH11": 0.22774892958003096
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Morris",
+    "GROCPTH11": 0.23349937733499376
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Motley",
+    "GROCPTH11": 0.81300813008130079
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Nacogdoches",
+    "GROCPTH11": 0.15275104634466746
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Navarro",
+    "GROCPTH11": 0.16647937736712864
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Newton",
+    "GROCPTH11": 0.20755500207555
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Travis",
+    "GROCPTH11": 0.12510229228786696
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Trinity",
+    "GROCPTH11": 0.20465243195306637
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Tyler",
+    "GROCPTH11": 0.13846579894765992
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Upshur",
+    "GROCPTH11": 0.075327675387937526
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Upton",
+    "GROCPTH11": 0.29886431560071725
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Uvalde",
+    "GROCPTH11": 0.03768607499528924
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Val Verde",
+    "GROCPTH11": 0.06109233087606402
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Van Zandt",
+    "GROCPTH11": 0.094740033348491737
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Victoria",
+    "GROCPTH11": 0.079958878291164548
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Walker",
+    "GROCPTH11": 0.088122549091603386
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Waller",
+    "GROCPTH11": 0.11360279917297163
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Ward",
+    "GROCPTH11": 0.27995520716685335
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Washington",
+    "GROCPTH11": 0.14796839395105207
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Webb",
+    "GROCPTH11": 0.14815045848668207
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wharton",
+    "GROCPTH11": 0.19363896015878396
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wheeler",
+    "GROCPTH11": 0.73193046660567251
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wichita",
+    "GROCPTH11": 0.10711717088249245
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wilbarger",
+    "GROCPTH11": 0.14920919128618323
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Willacy",
+    "GROCPTH11": 0.045259108395564608
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Williamson",
+    "GROCPTH11": 0.076787222606158334
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wilson",
+    "GROCPTH11": 0.091347141976295412
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Winkler",
+    "GROCPTH11": 0.27862914460852606
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wise",
+    "GROCPTH11": 0.15041866528504338
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Wood",
+    "GROCPTH11": 0.094867659614837299
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Yoakum",
+    "GROCPTH11": 0.24984384759525294
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Young",
+    "GROCPTH11": 0.16230253191949792
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Zapata",
+    "GROCPTH11": 0.21005461419969193
+   }
+  },
+  {
+   "attributes": {
+    "State": "TX",
+    "County": "Zavala",
+    "GROCPTH11": 0.25318592286268882
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Beaver",
+    "GROCPTH11": 0.30330603579011223
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Box Elder",
+    "GROCPTH11": 0.099423344601312386
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Cache",
+    "GROCPTH11": 0.11334013374135782
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Carbon",
+    "GROCPTH11": 0.23454357819682894
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Daggett",
+    "GROCPTH11": 0.86505190311418689
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Davis",
+    "GROCPTH11": 0.067348489950643187
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Duchesne",
+    "GROCPTH11": 0.26471833968657349
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Emery",
+    "GROCPTH11": 0.45687134502923971
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Garfield",
+    "GROCPTH11": 0.38880248833592534
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Grand",
+    "GROCPTH11": 0.32171581769437002
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Iron",
+    "GROCPTH11": 0.085579803166452709
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Juab",
+    "GROCPTH11": 0.096758587324625056
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Kane",
+    "GROCPTH11": 0.27559597629874605
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Millard",
+    "GROCPTH11": 0.3954132068011072
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Morgan",
+    "GROCPTH11": 0.10325245224574083
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Piute",
+    "GROCPTH11": 1.3360053440213759
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Rich",
+    "GROCPTH11": 0.43421623968736434
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Salt Lake",
+    "GROCPTH11": 0.13441564941348066
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "San Juan",
+    "GROCPTH11": 0.13490725126475547
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Sanpete",
+    "GROCPTH11": 0.14291839359725597
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Sevier",
+    "GROCPTH11": 0.14305469457822709
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Summit",
+    "GROCPTH11": 0.4255998297600681
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Tooele",
+    "GROCPTH11": 0.084280079560395099
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Uintah",
+    "GROCPTH11": 0.0603081747730905
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Utah",
+    "GROCPTH11": 0.090480849162769383
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Wasatch",
+    "GROCPTH11": 0.24573043371421549
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Washington",
+    "GROCPTH11": 0.10588285121341748
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Wayne",
+    "GROCPTH11": 1.0960906101571062
+   }
+  },
+  {
+   "attributes": {
+    "State": "UT",
+    "County": "Weber",
+    "GROCPTH11": 0.14930466683730059
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Addison",
+    "GROCPTH11": 0.43546894562081545
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Bennington",
+    "GROCPTH11": 0.32458750338111986
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Caledonia",
+    "GROCPTH11": 0.32086247834178272
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Chittenden",
+    "GROCPTH11": 0.27938104399616481
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Essex",
+    "GROCPTH11": 0.31791448100460973
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Franklin",
+    "GROCPTH11": 0.33255045413921391
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Grand Isle",
+    "GROCPTH11": 0.43283797431828019
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Lamoille",
+    "GROCPTH11": 0.40484190923444396
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Orange",
+    "GROCPTH11": 0.34475625732607046
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Orleans",
+    "GROCPTH11": 0.58881978434475402
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Rutland",
+    "GROCPTH11": 0.4079035389711041
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Washington",
+    "GROCPTH11": 0.43605138697883478
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Windham",
+    "GROCPTH11": 0.40663263000948813
+   }
+  },
+  {
+   "attributes": {
+    "State": "VT",
+    "County": "Windsor",
+    "GROCPTH11": 0.47647619383757461
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Accomack",
+    "GROCPTH11": 0.32997360211183108
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Albemarle",
+    "GROCPTH11": 0.16906507016200412
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Alleghany",
+    "GROCPTH11": 0.18547140649149921
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Amelia",
+    "GROCPTH11": 0.078094494338149162
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Amherst",
+    "GROCPTH11": 0.18652656449155966
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Appomattox",
+    "GROCPTH11": 0.19945482348248122
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Arlington",
+    "GROCPTH11": 0.19444084368807985
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Augusta",
+    "GROCPTH11": 0.13596377924920799
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bath",
+    "GROCPTH11": 0.21473051320592657
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bedford",
+    "GROCPTH11": 0.15885394102186409
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bland",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Botetourt",
+    "GROCPTH11": 0.15184645286686105
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Brunswick",
+    "GROCPTH11": 0.11625203441060218
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Buchanan",
+    "GROCPTH11": 0.29684915822060132
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Buckingham",
+    "GROCPTH11": 0.11575413821044103
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Campbell",
+    "GROCPTH11": 0.16354121238552116
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Caroline",
+    "GROCPTH11": 0.10462439840970915
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Carroll",
+    "GROCPTH11": 0.066708915646576161
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Charles City",
+    "GROCPTH11": 0.13810247203424941
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Charlotte",
+    "GROCPTH11": 0.15993602558976408
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Chesterfield",
+    "GROCPTH11": 0.12489189045732288
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Clarke",
+    "GROCPTH11": 0.14027212792818067
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Craig",
+    "GROCPTH11": 0.39223377132771131
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Culpeper",
+    "GROCPTH11": 0.25275928890386723
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Cumberland",
+    "GROCPTH11": 0.20062192797672787
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Dickenson",
+    "GROCPTH11": 0.25411346166063148
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Dinwiddie",
+    "GROCPTH11": 0.21491510853212981
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Essex",
+    "GROCPTH11": 0.17849174475680499
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fairfax",
+    "GROCPTH11": 0.16171644747122718
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fauquier",
+    "GROCPTH11": 0.21189326633470057
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Floyd",
+    "GROCPTH11": 0.19508388607101054
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fluvanna",
+    "GROCPTH11": 0.1534860519550286
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Franklin",
+    "GROCPTH11": 0.088622627129158624
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Frederick",
+    "GROCPTH11": 0.12552406296287
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Giles",
+    "GROCPTH11": 0.35038542396636302
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Gloucester",
+    "GROCPTH11": 0.13549768298962087
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Goochland",
+    "GROCPTH11": 0.091395146917698677
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Grayson",
+    "GROCPTH11": 0.065240083507306895
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Greene",
+    "GROCPTH11": 0.16077170418006431
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Greensville",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Halifax",
+    "GROCPTH11": 0.24961171510982919
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Hanover",
+    "GROCPTH11": 0.1295569153495047
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Henrico",
+    "GROCPTH11": 0.19971331475784762
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Henry",
+    "GROCPTH11": 0.24190096946465456
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Highland",
+    "GROCPTH11": 0.4411116012351125
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Isle of Wight",
+    "GROCPTH11": 0.1697024550288494
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "James City",
+    "GROCPTH11": 0.16129032258064516
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "King and Queen",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "King George",
+    "GROCPTH11": 0.082778030710649389
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "King William",
+    "GROCPTH11": 0.12514861397910018
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lancaster",
+    "GROCPTH11": 0.53182059918454172
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lee",
+    "GROCPTH11": 0.23860653781913624
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Loudoun",
+    "GROCPTH11": 0.15058158295047711
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Louisa",
+    "GROCPTH11": 0.11977840994160802
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lunenburg",
+    "GROCPTH11": 0.23302780798508621
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Madison",
+    "GROCPTH11": 0.37967955045941226
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Mathews",
+    "GROCPTH11": 0.2231644722160232
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Mecklenburg",
+    "GROCPTH11": 0.24523327815584575
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Middlesex",
+    "GROCPTH11": 0.2763957987838585
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Montgomery",
+    "GROCPTH11": 0.16959572618770008
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Nelson",
+    "GROCPTH11": 0.26495330198052597
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "New Kent",
+    "GROCPTH11": 0.15938795027095953
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Northampton",
+    "GROCPTH11": 0.24238506907974466
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Northumberland",
+    "GROCPTH11": 0.32100152475724258
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Nottoway",
+    "GROCPTH11": 0.31565656565656564
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Orange",
+    "GROCPTH11": 0.11786198361718427
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Page",
+    "GROCPTH11": 0.25043826696719262
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Patrick",
+    "GROCPTH11": 0.21750951604132679
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Pittsylvania",
+    "GROCPTH11": 0.095474508306282221
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Powhatan",
+    "GROCPTH11": 0.1422981145499822
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Prince Edward",
+    "GROCPTH11": 0.1713575804309643
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Prince George",
+    "GROCPTH11": 0.08206811653672548
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Prince William",
+    "GROCPTH11": 0.15274244282898097
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Pulaski",
+    "GROCPTH11": 0.20227121680584853
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Rappahannock",
+    "GROCPTH11": 0.13433637829124126
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Richmond",
+    "GROCPTH11": 0.10845986984815617
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Roanoke",
+    "GROCPTH11": 0.14017683847315074
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Rockbridge",
+    "GROCPTH11": 0.089385474860335198
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Rockingham",
+    "GROCPTH11": 0.13056705270991917
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Russell",
+    "GROCPTH11": 0.13913527427040942
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Scott",
+    "GROCPTH11": 0.25944824007610479
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Shenandoah",
+    "GROCPTH11": 0.23646811227505971
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Smyth",
+    "GROCPTH11": 0.18733023197727058
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Southampton",
+    "GROCPTH11": 0.16297262059973924
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Spotsylvania",
+    "GROCPTH11": 0.16890940825403974
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Stafford",
+    "GROCPTH11": 0.098385717421083291
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Surry",
+    "GROCPTH11": 0.43283797431828019
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Sussex",
+    "GROCPTH11": 0.33093406138826842
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Tazewell",
+    "GROCPTH11": 0.17891088001789107
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Warren",
+    "GROCPTH11": 0.13245383983681686
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Washington",
+    "GROCPTH11": 0.21887026465062834
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Westmoreland",
+    "GROCPTH11": 0.28417163967036091
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Wise",
+    "GROCPTH11": 0.21652832912306028
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Wythe",
+    "GROCPTH11": 0.17120942336666209
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "York",
+    "GROCPTH11": 0.15120815314361749
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Alexandria",
+    "GROCPTH11": 0.20789876716031075
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bedford",
+    "GROCPTH11": 0.3235722375020223
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Bristol",
+    "GROCPTH11": 0.28169014084507044
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Buena Vista",
+    "GROCPTH11": 0
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Charlottesville",
+    "GROCPTH11": 0.45965388062788715
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Chesapeake",
+    "GROCPTH11": 0.10664296822928238
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Colonial Heights",
+    "GROCPTH11": 0.1146788990825688
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Covington",
+    "GROCPTH11": 0.16837851490149858
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Danville",
+    "GROCPTH11": 0.32670587137123125
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Emporia",
+    "GROCPTH11": 0.68131493783001185
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fairfax",
+    "GROCPTH11": 0.70956583440507337
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Falls Church",
+    "GROCPTH11": 0.70582699396125792
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Franklin",
+    "GROCPTH11": 0.2328830926874709
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Fredericksburg",
+    "GROCPTH11": 0.3892413685726519
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Galax",
+    "GROCPTH11": 0.57281970499785195
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Hampton",
+    "GROCPTH11": 0.13929516645772391
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Harrisonburg",
+    "GROCPTH11": 0.30016208752726475
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Hopewell",
+    "GROCPTH11": 0.35429583702391498
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lexington",
+    "GROCPTH11": 0.71479628305932807
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Lynchburg",
+    "GROCPTH11": 0.20913939140437099
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Manassas",
+    "GROCPTH11": 0.40712468193384227
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Manassas Park",
+    "GROCPTH11": 0.13044612575006523
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Martinsville",
+    "GROCPTH11": 0.36875875802050301
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Newport News",
+    "GROCPTH11": 0.18373039513170131
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Norfolk",
+    "GROCPTH11": 0.16073989811563383
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Norton",
+    "GROCPTH11": 0.49333991119881593
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Petersburg",
+    "GROCPTH11": 0.43308791684711995
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Poquoson",
+    "GROCPTH11": 0.25
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Portsmouth",
+    "GROCPTH11": 0.13586388528907656
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Radford",
+    "GROCPTH11": 0.12184720360667721
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Richmond",
+    "GROCPTH11": 0.27732772839398057
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Roanoke",
+    "GROCPTH11": 0.28951341067477304
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Salem",
+    "GROCPTH11": 0.28043748247265737
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Staunton",
+    "GROCPTH11": 0.16828642349278472
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Suffolk",
+    "GROCPTH11": 0.16484163428705992
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Virginia Beach",
+    "GROCPTH11": 0.1603769536058838
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Waynesboro",
+    "GROCPTH11": 0.37539298953592043
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Williamsburg",
+    "GROCPTH11": 0.27693159789531985
+   }
+  },
+  {
+   "attributes": {
+    "State": "VA",
+    "County": "Winchester",
+    "GROCPTH11": 0.45134840335502313
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Adams",
+    "GROCPTH11": 0.36789824985546854
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Asotin",
+    "GROCPTH11": 0.22796699037979301
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Benton",
+    "GROCPTH11": 0.1162288712516189
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Chelan",
+    "GROCPTH11": 0.34024252487172857
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Clallam",
+    "GROCPTH11": 0.26448397783902672
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Clark",
+    "GROCPTH11": 0.1361272489836601
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Columbia",
+    "GROCPTH11": 0.24691358024691359
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Cowlitz",
+    "GROCPTH11": 0.1366146880306017
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Douglas",
+    "GROCPTH11": 0.20528084986271844
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Ferry",
+    "GROCPTH11": 0.65027962023670183
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Franklin",
+    "GROCPTH11": 0.20370259421244982
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Garfield",
+    "GROCPTH11": 0.44208664898320071
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Grant",
+    "GROCPTH11": 0.24105626472360708
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Grays Harbor",
+    "GROCPTH11": 0.45488379786618144
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Island",
+    "GROCPTH11": 0.2026060199313672
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Jefferson",
+    "GROCPTH11": 0.30076193022323217
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "King",
+    "GROCPTH11": 0.24876606952656263
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Kitsap",
+    "GROCPTH11": 0.1845793750220906
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Kittitas",
+    "GROCPTH11": 0.28826058757116435
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Klickitat",
+    "GROCPTH11": 0.28989708653428037
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Lewis",
+    "GROCPTH11": 0.36890159549940055
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Lincoln",
+    "GROCPTH11": 0.47728140511645661
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Mason",
+    "GROCPTH11": 0.16388338058637475
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Okanogan",
+    "GROCPTH11": 0.33807442466977372
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Pacific",
+    "GROCPTH11": 0.5733397037744864
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Pend Oreille",
+    "GROCPTH11": 0.38651824366110082
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Pierce",
+    "GROCPTH11": 0.1856656236384521
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "San Juan",
+    "GROCPTH11": 0.88361524867457719
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Skagit",
+    "GROCPTH11": 0.20320212684892769
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Skamania",
+    "GROCPTH11": 0.17958157493041213
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Snohomish",
+    "GROCPTH11": 0.20764119601328904
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Spokane",
+    "GROCPTH11": 0.17097228349315371
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Stevens",
+    "GROCPTH11": 0.20691557844399483
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Thurston",
+    "GROCPTH11": 0.1870681356711654
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Wahkiakum",
+    "GROCPTH11": 0.25056376847907791
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Walla Walla",
+    "GROCPTH11": 0.23494663355037926
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Whatcom",
+    "GROCPTH11": 0.1669424490457275
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Whitman",
+    "GROCPTH11": 0.19965836235774342
+   }
+  },
+  {
+   "attributes": {
+    "State": "WA",
+    "County": "Yakima",
+    "GROCPTH11": 0.23873011762516136
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Barbour",
+    "GROCPTH11": 0.24213075060532688
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Berkeley",
+    "GROCPTH11": 0.094562647754137114
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Boone",
+    "GROCPTH11": 0.28636884306987404
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Braxton",
+    "GROCPTH11": 0.34518467380048329
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Brooke",
+    "GROCPTH11": 0.16775708773695688
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Cabell",
+    "GROCPTH11": 0.1758869357391907
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Calhoun",
+    "GROCPTH11": 0.13068478829064298
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Clay",
+    "GROCPTH11": 0.21374372127818747
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Doddridge",
+    "GROCPTH11": 0.12238404112103783
+   }
+  },
+  {
+   "attributes": {
+    "State": "WV",
+    "County": "Fayette",
+    "GROCPTH11": 0.26258780279656013
+   }
+  }
+ ]
+}
