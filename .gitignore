@@ -1,6 +1,7 @@
 # Standard python stuff
 *.pyc
 *.swp
+*~
 
 # Developer overrides
 settings_override.py
