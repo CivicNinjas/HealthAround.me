@@ -18,6 +18,22 @@ def ers_importer():
         "data/ers/LowAccessToStoresByCountyOK.json")
     access.import_json()
 
+    grocery_per_capita = ImportGroceryPerCapitaData(
+        "data/ers/GroceryStoresPerThousandByCountyOK.json")
+    grocery_per_capita.import_json()
+
+    farmers_markets = ImportFarmersMarketData(
+        "data/ers/FarmersMarketsPerThousandByCountyOK.json")
+    farmers_markets.import_json()
+
+    restaurants = ImportRestaurantData(
+        "data/ers/FastFoodPerCapitaByCountyOK.json")
+    restaurants.import_json()
+
+    lunches = ImportSchoolMealData(
+        "data/ers/ReducedAndFreeSchoolLunchesByCountyOK.json")
+    lunches.import_json()
+
 
 class ImportDataFromJson(object):
 
