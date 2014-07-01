@@ -14,6 +14,11 @@ class Census(models.Model):
         max_length=2, help_text='State / U.S. - Abbreviation (USPS)')
     logical_num = models.IntegerField(help_text='Logical record number')
 
+    # B01003 - Total Population
+    B01003_001E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Total Population: Total')
+
     # B07013 - Geographical Mobility In the Past Year by Tenure For
     #          Current Residence In the United States
     B07013_001E = models.IntegerField(
