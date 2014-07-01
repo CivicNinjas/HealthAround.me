@@ -866,3 +866,99 @@ class FitnessCentersPerCapitaAlgorithm(ErsPercentAlgorithm):
         std_dev = 0.0508600
         better_sign = 1
         return average, std_dev, better_sign
+
+
+class FastFoodPerThousandAlgorithm(ErsPercentAlgorithm):
+    '''
+    Score based on the number of fast food restaurants per 1000 population
+    '''
+
+    def local_percent(self, source_data):
+        return float(source_data.fast_food_rest_per_thousand)
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.4844545
+        std_dev = 0.2416161
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+class FullRestPerThousandAlgorithm(ErsPercentAlgorithm):
+    '''
+    Score based on the number of full serivce restaurants per 1000 population
+    '''
+
+    def local_percent(self, source_data):
+        return float(source_data.full_rest_per_thousand)
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.6372740
+        std_dev = 0.2420894
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+class FarmersMarketsPerThousandAlgorithm(ErsPercentAlgorithm):
+    '''
+    Score based on the number of Farmer's Markets per 1000 population
+    '''
+
+    def local_percent(self, source_data):
+        return float(source_data.farmers_markets_per_thousand)
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.0248259
+        std_dev = 0.0409239
+        better_sign = 1
+        return average, std_dev, better_sign
+
+
+class PercentLowAccessToGroceriesAlgorithm(ErsPercentAlgorithm):
+    '''
+    Score based on the number of the population with low access to groceries
+    '''
+
+    def local_percent(self, source_data):
+        return float(source_data.percent_low_access_to_groceries)
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 27.8403948
+        std_dev = 18.7626943
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+class GroceryStoresPerThousandAlgorithm(ErsPercentAlgorithm):
+    '''
+    Score based on the number of Grocery Stores per Thousand Population
+    '''
+
+    def local_percent(self, source_data):
+        return float(source_data.grocery_stores_per_thousand)
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.2111467
+        std_dev = 0.1415997
+        better_sign = 1
+        return average, std_dev, better_sign
+
+
+class PercentFreeLunchAlgorithm(ErsPercentAlgorithm):
+    '''
+    Score based on the percent of students that qualify for a free lunch
+    '''
+
+    def local_percent(self, source_data):
+        return float(source_data.percent_students_for_free_lunch)
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 53.579519
+        std_dev = 9.5828258
+        better_sign = -1
+        return average, std_dev, better_sign

@@ -17,9 +17,9 @@ TABLES = {
     #    'description': 'Median Age By Sex',
     #    'valtype': 'decimal:5,2',
     #},
-    #'B01003': {
-    #    'description': 'Total Population',
-    #},
+    'B01003': {
+        'description': 'Total Population',
+    },
     #'B02001': {
     #    'description': 'Race',
     #},
