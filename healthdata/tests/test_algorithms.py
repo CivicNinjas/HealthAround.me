@@ -300,28 +300,27 @@ class ErsAlgorithmTest(TestCase):
             centroid="POINT (95.941481 36.121077)")
         self.location = (-95.99, 36.15)
         Ers.objects.create(
+
             boundary=self.county,
             adult_obesity=30.2,
-            adult_diabetes = 10.3,
-            childhood_obesity = None, 
-            rec_facilities_per_thousand = 0.1212,
-            fast_food_rest_per_thousand = 0.8615,
-            full_rest_per_thousand = 0.7829,
-            farmers_markets_per_thousand = 0.0163,
-            percent_low_access_to_groceries = 25.5236,
-            grocery_stores_per_thousand = 0.1327,
-            percent_students_for_free_lunch = 48.1355,
-            percent_students_for_reduced_lunch = 8.4127, 
-            )
+            adult_diabetes=10.3,
+            childhood_obesity=None,
+            rec_facilities_per_thousand=0.1212,
+            fast_food_rest_per_thousand=0.8615,
+            full_rest_per_thousand=0.7829,
+            farmers_markets_per_thousand=0.0163,
+            percent_low_access_to_groceries=25.5236,
+            grocery_stores_per_thousand=0.1327,
+            percent_students_for_free_lunch=48.1355,
+            percent_students_for_reduced_lunch=8.4127,
+        )
         self.cache = AlgorithmCache()
 
     def adult_obesity_node(self):
         metric = ScoreMetric.objects.create(
             name="Adult Obesity Rate",
             algorithm=ScoreMetric.PERCENT_ADULT_OBESITY_ALGORITHM,
-            description=(
-                "Percent of Adults that are obese")
-            )
+            description="Percent of Adults that are obese")
         return ScoreNode(slug='adult-obesity', metric=metric)
 
     def assertAdultObesityRateResults(self, score):
@@ -332,8 +331,7 @@ class ErsAlgorithmTest(TestCase):
                 u"average": 0.333883,
                 u"std_dev": 0.0230814,
                 u"value_type": u"percent",
-                u"description": (
-                    u"Percent of Adults that are obese"),
+                u"description": u"Percent of Adults that are obese",
             },
             u'detail': {
                 u"path": u"/api/detail/tulsa-county/adult-obesity/",
@@ -361,9 +359,7 @@ class ErsAlgorithmTest(TestCase):
         metric = ScoreMetric.objects.create(
             name="Adult Diabetes Rate",
             algorithm=ScoreMetric.PERCENT_ADULT_DIABETES_ALGORITHM,
-            description=(
-                "Percent of Adults that are Diabetic")
-            )
+            description="Percent of Adults that are Diabetic")
         return ScoreNode(slug='adult-diabetes', metric=metric)
 
     def assertAdultDiabetesRateResults(self, score):
@@ -403,9 +399,8 @@ class ErsAlgorithmTest(TestCase):
         metric = ScoreMetric.objects.create(
             name="Fitness Centers per 1000 Residents of a County",
             algorithm=ScoreMetric.FITNESS_CENTERS_PER_CAPITA_ALGORITHM,
-            description=(
-                "Fitness and Recreation Centers per 1000 Residents")
-            )
+            description="Fitness and Recreation Centers per 1000 Residents",
+        )
         return ScoreNode(slug='fitness-centers', metric=metric)
 
     def assertFitnessCentersPerCapitaResults(self, score):
@@ -436,7 +431,7 @@ class ErsAlgorithmTest(TestCase):
         score = node.score_by_boundary(self.county, self.cache)
         self.assertFitnessCentersPerCapitaResults(score)
 
-    def test_adult_diabetes_by_location(self):
+    def test_adult_fitness_by_location(self):
         node = self.adult_fitness_center_node()
         score = node.score_by_location(self.location, self.cache)
         self.assertFitnessCentersPerCapitaResults(score)
@@ -447,7 +442,7 @@ class ErsAlgorithmTest(TestCase):
             algorithm=ScoreMetric.FAST_FOOD_PER_THOUSAND_ALGORITHM,
             description=(
                 "Fast Food Restaurants per Thousand Population")
-            )
+        )
         return ScoreNode(slug='fast-food', metric=metric)
 
     def assertFastFoodPerThousandResults(self, score):
@@ -489,7 +484,7 @@ class ErsAlgorithmTest(TestCase):
             algorithm=ScoreMetric.FULL_REST_PER_THOUSAND_ALGORITHM,
             description=(
                 "Full Service Restaurants per Thousand Population")
-            )
+        )
         return ScoreNode(slug='full-rest', metric=metric)
 
     def assertFullRestPerThousandResults(self, score):
@@ -531,7 +526,7 @@ class ErsAlgorithmTest(TestCase):
             algorithm=ScoreMetric.FARMERS_MARKETS_PER_THOUSAND_ALGORITHM,
             description=(
                 "Farmers' Markets per Thousand Population")
-            )
+        )
         return ScoreNode(slug='farmers-markets', metric=metric)
 
     def assertFarmersMarketsPerThousandResults(self, score):
@@ -573,7 +568,7 @@ class ErsAlgorithmTest(TestCase):
             algorithm=ScoreMetric.PERCENT_LOW_ACCESS_TO_GROCERIES_ALGORITHM,
             description=(
                 "Percent with Low Access to Groceries")
-            )
+        )
         return ScoreNode(slug='low-grocery', metric=metric)
 
     def assertPercentLowAccessToGroceriesResults(self, score):
@@ -615,7 +610,7 @@ class ErsAlgorithmTest(TestCase):
             algorithm=ScoreMetric.GROCERY_STORES_PER_THOUSAND_ALGORITHM,
             description=(
                 "Grocery Stores per Thousand Population")
-            )
+        )
         return ScoreNode(slug='groceries-per', metric=metric)
 
     def assertGroceryStoresPerThousandResults(self, score):
@@ -657,7 +652,7 @@ class ErsAlgorithmTest(TestCase):
             algorithm=ScoreMetric.PERCENT_FREE_LUNCH_ALGORITHM,
             description=(
                 "Percent of Students Qualifying for a Free Lunch")
-            )
+        )
         return ScoreNode(slug='free-lunch', metric=metric)
 
     def assertPercentFreeLunchResults(self, score):
@@ -692,9 +687,6 @@ class ErsAlgorithmTest(TestCase):
         node = self.percent_free_lunch_node()
         score = node.score_by_location(self.location, self.cache)
         self.assertPercentFreeLunchResults(score)
-
-
-
 
 
 class CensusPercentAlgorithmTest(TestCase):

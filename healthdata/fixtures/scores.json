@@ -3,7 +3,7 @@
   "pk": 1,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": "{\"why_md_fmt\":\"Social cohesion is a measure of how well an individual can be expected to experience positive social inclusion in a specific area. Areas with greater social cohesion can be expected to have better health due to the positive impact societal acceptance and human interaction have on an individual's physiological state.\",\"references\":[{\"date\":\"1999\",\"publisher\":\"International Journal of Health Services\",\"link\":\"http://individual.utoronto.ca/cmuntaner/publications/1990/1999MuntanerIntJHealthServ1.pdf\",\"title\":\"Social Inequalities and Their Effect on Health and Well-Being\"}]}",
+    "params": "{\"why_md_fmt\":\"Poverty is measured based on household income. Every member of a household is considered to be in poverty if total annual income before taxes is lower than the poverty threshold set for that household. Thresholds vary based on the size of the household meaning that the threshold for a single-person household is lower than the threshold for a larger household with more dependants. Poverty has a cascading negative effect on almost all health determinants and outcomes.\",\"references\":[{\"date\":\"Dec 2013\",\"publisher\":\"U.S. Census Bureau\",\"link\":\"http://www.census.gov/hhes/www/poverty/about/overview/measure.html\",\"title\":\"How the Census Bureau Measures Poverty\"},{\"date\":\"2003\",\"publisher\":\"World Health Organization\",\"link\":\"http://www.euro.who.int/__data/assets/pdf_file/0005/98438/e81384.pdf\",\"title\":\"Social determinants of health: the solid facts\"},{\"date\":\"1999\",\"publisher\":\"Income Inequality, Social Cohesion, and Class Relations\",\"link\":\"http://www.euro.who.int/__data/assets/pdf_file/0005/98438/e81384.pdf\",\"title\":\"Social determinants of health: the solid facts\"}],\"score_md_fmt\":\"In **{boundary}**, **{value}** of people live in a household where the income is below the poverty level, versus **{average}** in {domain}.  This puts it in the **{rel}**.\",\"more_data\":[{\"table\":\"B17001\",\"type\":\"census_reporter\",\"text\":\"View poverty status on CensusReporter.org\"}]}",
     "name": "Percent Poverty",
     "algorithm": 2,
     "description": "Percent of population in a household with income below the poverty line"
@@ -223,7 +223,7 @@
   "pk": 23,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": "{\"why_md_fmt\":\"The grade for perceptions of discrimination and equity is based on survey data on individual perceptions of racial discrimination by race. Discrimination and unequal treatment can result in many detrimental health outcomes.\"}",
+    "params": "{\"why_md_fmt\":\"The grade for perceptions of discrimination and equity is based on survey data on individual perceptions of racial discrimination by race. Discrimination and unequal treatment can result in many detrimental health outcomes.\",\"references\":[{\"date\":\"Jul 2009\",\"publisher\":\"National Center for Biotechnology Information\",\"link\":\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2747726/\",\"title\":\"Perceived Discrimination and Health: A Meta-Analytic Review\"}]}",
     "name": "Perception of Discrimination",
     "algorithm": 0,
     "description": "People's perception of discrimination and inequality"
@@ -333,7 +333,7 @@
   "pk": 34,
   "model": "healthdata.scoremetric",
   "fields": {
-    "params": null,
+    "params": "{\"why_md_fmt\":\"Social cohesion is a measure of how well an individual can be expected to experience positive social inclusion in a specific area. Areas with greater social cohesion can be expected to have better health due to the positive impact societal acceptance and human interaction have on an individual's physiological state.\",\"references\":[{\"date\":\"1999\",\"publisher\":\"International Journal of Health Services\",\"link\":\"http://individual.utoronto.ca/cmuntaner/publications/1990/1999MuntanerIntJHealthServ1.pdf\",\"title\":\"Social Inequalities and Their Effect on Health and Well-Being\"}]}",
     "name": "Social Cohesion",
     "algorithm": 0,
     "description": "social-cohesion"

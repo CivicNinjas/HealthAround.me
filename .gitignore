@@ -8,9 +8,14 @@ settings_override.py
 
 # Downloaded data
 data/shapefiles/*.zip
+data/shapefiles/.imported_states_list
 !data/census/cache/.keep
 data/census/cache/*
 
 # Server and deployment folders
 src/*
 static/*
+
+# Test files
+.coverage
+htmlcov

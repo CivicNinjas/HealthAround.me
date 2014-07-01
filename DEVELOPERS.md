@@ -21,12 +21,13 @@ to add the
 
 4. Install a healtharoundme user and database
 
-        createuser healtharoundme -s -d -P  # Create healtharoundme user
-        createdb healtharoundme -O healtharoundme  # Create healtharoundme database
+        createuser django -s -d -P  # Create healtharoundme user
+        createdb healtharoundme -O django  # Create healtharoundme database
+
 
 5. Install PostGIS extensions
 
-        psql -U healtharoundme
+        psql -U django -d healtharoundme
         CREATE EXTENSION postgis;
         CREATE EXTENSION postgis_topology;
 
@@ -77,44 +78,67 @@ Install the HealthAround.me project
 4. Customize settings:
 
         cp settings_override.example.py settings_override.py
-        vim settings_override.py # Fill DATABASES with your selected settings
+        vim settings_override.py
+        # Fill DATABASES with your selected settings
+        # If you are using the healtharound.me database dump, your
+        # database user must be "django"
 
-5. Setup database
+5. Customize virtualenv for tests:
 
-        ./manage.py syncdb
-        ./manage.py migrate
+        cdvirtualenv
+        vim bin/postactivate
+        # Add the line, customizing as needed:
+        export DATABASE_URL="postgis://username:p@ssw0rd@127.0.0.1:5432/healthgeist
+        source bin/postactivate
 
-6. Test that things are working.  Each of these should run without errors.
-   Maybe some warnings, but no errors.
+Install Data From HealthAround.me
+---------------------------------
+You have two choices for loading data - install from a healtharound.me
+database dump, or load from 3rd party sources.  These are the
+instructions for the first method.  It takes about 30 minutes.
 
-        ./manage.py dbshell     # \q to exit
-        ./manage.py shell       # Ctrl-D to exit
-        ./manage.py runserver   # Ctrl-C to exit
+
+1. Check postgis version on the healtharound.me server:
+
+        sudo -u postgres psql -d healtharoundme -c "SELECT PostGIS_full_version();"
+        # Response is something like:
+        POSTGIS="2.1.3 r12547" GEOS="3.3.3-CAPI-1.7.4" PROJ="Rel. 4.7.1, 23 September 2009" GDAL="GDAL 1.9.0, released 2011/12/29" LIBXML="2.7.8" LIBJSON="UNKNOWN" TOPOLOGY RASTER
+
+1. Create a database dump.  On the healtharound.me server:
+
+        sudo -u postgres pg_dump -Fc healtharoundme > ~/ham.dump
+
+2. Transfer the dump to your machine:
+
+        scp healtharound.me:ham.dump .
+
+3. Check that you are on the same minor version as the server (For example, 2.1.4 is compatible with 2.1.3)
+
+        sudo -u postgres psql -d healtharoundme -c "SELECT PostGIS_full_version();"
+
+4. Load the database dump
+
+        pg_restore -h localhost -U django -d healtharoundme ham.dump
+
+5. If you don't have a admin user on the server:
+
+        ./manage.py createsuperuser
 
 
-Install Data
-------------
+Install Data From External Sources
+----------------------------------
+You have two choices for loading data - install from a healtharound.me
+database dump, or load from 3rd party sources.  These are the
+instructions for the second method.  It takes about 2 hours.
 
-1. Go to the download site:
-   <https://www.census.gov/geo/maps-data/data/tiger-line.html>
-2. Download each of these 2013 boundaries:
-   - Counties and equivalent (`tl_2013_us_county.zip`)
-   - States and equivalent (`tl_2013_us_state.zip`)
-   - Block groups (`tl_2013_40_bg.zip`)
-   - Census tracts (`tl_2013_40_tract.zip`)
-3. Load the counties data into [QGIS](http://www.qgis.org), and re-export in
-   UTF-8 encoding as `counties.zip`
-4. Run the shapefile import script (takes about 10 minutes)
+1. Download and import the data:
 
-        ./manage.py loadshapefiles
+        tools/reset_db.sh
 
-5. Run the census import script (takes about 60 minutes)
+2. Setup your superuser account
 
-        ./manage.py import_census_data
+        ./manage.py createsuperuser
 
-6. Import the initial score tree (takes seconds)
-
-        ./manage.py loaddata scores
 
 Run it!
 -------

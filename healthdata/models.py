@@ -77,16 +77,16 @@ class ScoreMetric(models.Model):
     GROCERY_STORES_PER_THOUSAND_ALGORITHM = 23
     PERCENT_FREE_LUNCH_ALGORITHM = 24
     algorithm_choices = (
-        (PLACEHOLDER_ALGORITHM, 
+        (PLACEHOLDER_ALGORITHM,
          'PlaceholderAlgorithm',
          'Placeholder Algorithm'),
-        (FOOD_STAMP_ALGORITHM, 
-         'FoodStampAlgorithm', 
+        (FOOD_STAMP_ALGORITHM,
+         'FoodStampAlgorithm',
          'Food Stamp Algorithm'),
-        (PERCENT_POVERTY_ALGORITHM, 
+        (PERCENT_POVERTY_ALGORITHM,
          'PercentPovertyAlgorithm',
          'Percent Poverty Algorithm'),
-        (PERCENT_UNEMPLOYMENT_ALGORITHM, 
+        (PERCENT_UNEMPLOYMENT_ALGORITHM,
          'PercentUnemploymentAlgorithm',
          'Percent Unemployment Algorithm'),
         (PERCENT_SINGLE_PARENT_ALGORITHM,

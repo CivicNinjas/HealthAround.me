@@ -1,8 +1,11 @@
-from math import floor, sqrt
-from boundaryservice.models import Boundary, BoundarySet
-from data.models import Census, Dartmouth, Ers
+from datetime import date
+from math import floor
+from textwrap import fill
 import json
-import csv
+
+from boundaryservice.models import Boundary, BoundarySet
+
+from data.models import Census, Dartmouth, Ers
 
 
 def fake_boundary(location, precision):
@@ -57,15 +60,15 @@ def stand_dev_single_value(dataset, field, geolevel):
     '''
     Calculate the average and standard deviation for a single database value.
     '''
-    total_average = 0
-    total_geoography_count = 0
     ok_state = BoundarySet.objects.get(slug=geolevel)
     if dataset == 'Ers':
         ok_data = Ers.objects.filter(boundary__set=ok_state).values_list(field)
     elif dataset == 'Census':
-        ok_data = Census.objects.filter(boundary__set=ok_state).values_list(field)
+        ok_data = Census.objects.filter(
+            boundary__set=ok_state).values_list(field)
     elif dataset == 'Dartmouth':
-        ok_data = Dartmouth.objects.filter(boundary__set=ok_state).values_list(field)
+        ok_data = Dartmouth.objects.filter(
+            boundary__set=ok_state).values_list(field)
 
     total_features = len(ok_data)
     total_sum = 0
@@ -79,7 +82,7 @@ def stand_dev_single_value(dataset, field, geolevel):
 
     for feature in ok_data:
         total_dif_squared_sum += ((sum(feature) - average)**2)
-    
+
     stand_dev = (total_dif_squared_sum / float(total_features)) ** (0.5)
     print "Average: " + str(average)
     print "Standard Deviation: " + str(stand_dev)
@@ -389,10 +392,96 @@ def discharge_health_stand_dev():
     return final_total
 
 
+def score_tree_to_graph():
+    """Export score tree to twopi representation
 
+    The output can be processed with Graphviz's twopi command to create
+    visualizations of the score tree.  Or, try a different GraphViz
+    visualization like circle or dot.
+    """
+    from healthdata.models import ScoreNode
 
+    out = ["""\
+/* twopi visualization of the healtharound.me score tree
 
+To generate a graph from this file, try:
 
+twopi -Tsvg -oscore_tree.svg <filename.twopi>
+*/
 
+graph scoretree {
+  size="7.75,10.25";
+  orientation="portrait";
+  ranksep=3.0;
+  nodesep=2.0;
+  node [style=filled, fillcolor=white, shape=box];
+  overlap="false";\
+"""]
+    today = date.today().strftime('%Y/%m/%d')
+    out.append('  label="Score Nodes for {}";'.format(today))
+    out.append("""
+  /* Legend */
+  subgraph legend {
+    node [style=filled];
+    rank = sink;
+    label = "Legend";
+    a_node [label="node", shape=oval];
+    fake [fillcolor=lightpink, penwidth=0];
+    real [fillcolor=cyan, penwidth=2];
+    a_node -- fake [label="weight"];
+    a_node -- real [label="weight"];
+  };
+""")
 
+    nodes = [(0, {'label': '"scores"', 'shape': 'circle'})]
+    leaves = []
+    links = []
 
+    def to_attr(properties):
+        if properties:
+            props = []
+            for key, val in properties.items():
+                props.append('{}={}'.format(key, val))
+            return ' [' + ', '.join(props) + ']'
+        else:
+            return ''
+
+    def add_node(parent_id, node):
+        link_props = {'label': '"{}"'.format(node.weight)}
+        links.append((parent_id, node.id, link_props))
+
+        name = '"{}"'.format(fill(node.label, 14))
+        node_props = {'label': name}
+        if node.is_leaf_node():
+            if node.metric.algorithm == 0:
+                node_props['fillcolor'] = 'lightpink'
+                node_props['style'] = 'filled'
+                node_props['penwidth'] = 0
+                node_props['shape'] = 'box'
+            else:
+                node_props['fillcolor'] = 'cyan'
+                node_props['shape'] = 'box'
+                node_props['penwidth'] = 2
+        else:
+            node_props['shape'] = 'oval'
+        nodes.append((node.id, node_props))
+
+        for child in node.get_children():
+            add_node(node.id, child)
+
+    for root in ScoreNode.objects.root_nodes():
+        add_node(0, root)
+
+    out.append("  /* nodes */")
+    out.extend(["  {}{};".format(n, to_attr(p)) for n, p in nodes])
+
+    out.append("\n  /* leaves */")
+    out.extend(["  {}{};".format(n, to_attr(p)) for n, p in leaves])
+
+    out.append("\n  /* links */")
+    out.extend(
+        ["  {} -- {}{};".format(a, b, to_attr(p)) for a, b, p in links])
+
+    out.append("}")
+
+    return "\n".join(out)

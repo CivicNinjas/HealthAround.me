@@ -12,6 +12,7 @@ class DartmouthAdmin(admin.ModelAdmin):
     list_display = ('boundary', )
     raw_id_fields = ('boundary', )
 
+
 class ErsAdmin(admin.ModelAdmin):
     list_display = ('boundary', )
     raw_id_fields = ('boundary', )
@@ -19,4 +20,3 @@ class ErsAdmin(admin.ModelAdmin):
 admin.site.register(Census, CensusAdmin)
 admin.site.register(Dartmouth, DartmouthAdmin)
 admin.site.register(Ers, ErsAdmin)
-

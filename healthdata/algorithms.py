@@ -869,7 +869,9 @@ class FitnessCentersPerCapitaAlgorithm(ErsPercentAlgorithm):
 
 
 class FastFoodPerThousandAlgorithm(ErsPercentAlgorithm):
-    '''Score based on the number of fast food restaurants per 1000 population'''
+    '''
+    Score based on the number of fast food restaurants per 1000 population
+    '''
 
     def local_percent(self, source_data):
         return float(source_data.fast_food_rest_per_thousand)
@@ -880,6 +882,7 @@ class FastFoodPerThousandAlgorithm(ErsPercentAlgorithm):
         std_dev = 0.2416161
         better_sign = -1
         return average, std_dev, better_sign
+
 
 class FullRestPerThousandAlgorithm(ErsPercentAlgorithm):
     '''
@@ -896,6 +899,7 @@ class FullRestPerThousandAlgorithm(ErsPercentAlgorithm):
         better_sign = -1
         return average, std_dev, better_sign
 
+
 class FarmersMarketsPerThousandAlgorithm(ErsPercentAlgorithm):
     '''
     Score based on the number of Farmer's Markets per 1000 population
@@ -910,6 +914,7 @@ class FarmersMarketsPerThousandAlgorithm(ErsPercentAlgorithm):
         std_dev = 0.0409239
         better_sign = 1
         return average, std_dev, better_sign
+
 
 class PercentLowAccessToGroceriesAlgorithm(ErsPercentAlgorithm):
     '''
@@ -926,6 +931,7 @@ class PercentLowAccessToGroceriesAlgorithm(ErsPercentAlgorithm):
         better_sign = -1
         return average, std_dev, better_sign
 
+
 class GroceryStoresPerThousandAlgorithm(ErsPercentAlgorithm):
     '''
     Score based on the number of Grocery Stores per Thousand Population
@@ -941,6 +947,7 @@ class GroceryStoresPerThousandAlgorithm(ErsPercentAlgorithm):
         better_sign = 1
         return average, std_dev, better_sign
 
+
 class PercentFreeLunchAlgorithm(ErsPercentAlgorithm):
     '''
     Score based on the percent of students that qualify for a free lunch
@@ -955,14 +962,3 @@ class PercentFreeLunchAlgorithm(ErsPercentAlgorithm):
         std_dev = 9.5828258
         better_sign = -1
         return average, std_dev, better_sign
-
-
-
-
-
-
-
-
-
-
-

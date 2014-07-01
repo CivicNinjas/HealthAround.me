@@ -45,6 +45,3 @@ class Ers(models.Model):
     percent_students_for_reduced_lunch = models.FloatField(
         blank=True, null=True,
         help_text='Percent of Students Eligible for a Reduced Price Lunch')
-
-
-
