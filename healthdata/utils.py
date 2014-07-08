@@ -1,11 +1,12 @@
 from datetime import date
 from math import floor
 from textwrap import fill
+from django.db.models import Q
 import json
 
 from boundaryservice.models import Boundary, BoundarySet
 
-from data.models import Census, Dartmouth, Ers
+from data.models import Census
 
 
 def fake_boundary(location, precision):
@@ -56,36 +57,30 @@ def fake_boundary(location, precision):
     return boundary
 
 
-def stand_dev_single_value(dataset, field, geolevel):
+def stand_dev_single_value(klass, field, geolevel):
     '''
     Calculate the average and standard deviation for a single database value.
     '''
     ok_state = BoundarySet.objects.get(slug=geolevel)
-    if dataset == 'Ers':
-        ok_data = Ers.objects.filter(boundary__set=ok_state).values_list(field)
-    elif dataset == 'Census':
-        ok_data = Census.objects.filter(
-            boundary__set=ok_state).values_list(field)
-    elif dataset == 'Dartmouth':
-        ok_data = Dartmouth.objects.filter(
-            boundary__set=ok_state).values_list(field)
-
+    ok_data = klass.objects.filter(boundary__set=ok_state).values_list(field)
     total_features = len(ok_data)
     total_sum = 0
 
     for feature in ok_data:
         total_sum += sum(feature)
 
-    average = total_sum / float(total_features)
+    average = round(total_sum / float(total_features), 5)
 
     total_dif_squared_sum = 0
 
     for feature in ok_data:
-        total_dif_squared_sum += ((sum(feature) - average)**2)
+        total_dif_squared_sum += ((sum(feature) - average) ** 2)
 
-    stand_dev = (total_dif_squared_sum / float(total_features)) ** (0.5)
+    stand_dev = round(
+        (total_dif_squared_sum / float(total_features)) ** (0.5), 5)
     print "Average: " + str(average)
     print "Standard Deviation: " + str(stand_dev)
+    return average, stand_dev
 
 
 def std_dev_across_tracts(total_col, target_cols):
@@ -485,3 +480,77 @@ graph scoretree {
     out.append("}")
 
     return "\n".join(out)
+
+
+def highest_resolution_for_data(area_to_get, field_to_get, klass):
+    #Determines the smallest boundary with the data we're looking
+    contains_list = Boundary.objects.filter(
+        shape__contains=area_to_get.centroid)
+    values = []
+    for bounds in contains_list:
+        area = [
+            klass.objects.filter(boundary=bounds).values_list(
+                field_to_get, flat=True).first(),
+            bounds.shape.area,
+            bounds.kind
+        ]
+        values.append(area)
+    sorted_values = sorted(values, key=lambda values: values[1])
+    for areas in sorted_values:
+        if areas[0] is not None:
+            highest_resolution_kind = areas[2]
+            return highest_resolution_kind
+
+
+def get_field_for_area(area_to_get, field_to_get, klass):
+    '''
+    If the area_to_get contains or is overlapped by any census
+    boundaries, this will return a list of the overlapping
+    boundaries.
+
+    Note that this only really works for real-value fields, not percentages,
+    per capita fields, or per thousand
+    '''
+
+    best_kind = highest_resolution_for_data(area_to_get, field_to_get, klass)
+
+    boundary_list = Boundary.objects.filter(
+        (Q(shape__within=area_to_get) | Q(shape__overlaps=area_to_get)),
+        kind=best_kind)
+
+    '''
+    If this list is empty, the area_to_get is contained entirely inside
+    other boundaries.  In this situation, the smallest of such boundaries
+    that has the field_to_get must be determined and returned.
+    '''
+    if not boundary_list:
+
+        contains_bound = Boundary.objects.filter(
+            shape__contains=area_to_get,
+            kind=best_kind
+        ).first()
+
+        container_value = klass.objects.filter(
+            boundary=contains_bound
+        ).values_list(field_to_get, flat=True).first()
+
+        percent = area_to_get.area / float(contains_bound.shape.area)
+        total = container_value * percent
+        return total
+
+    total = 0.0
+    for blocks in boundary_list:
+        field = klass.objects.filter(
+            boundary=blocks
+        ).values_list(
+            field_to_get, flat=True
+        ).first()
+        sect = blocks.shape.simplify(
+            tolerance=0.00001,
+            preserve_topology=True
+        ).intersection(area_to_get)
+        sect_area = sect.area
+        block_area = blocks.shape.area
+        percent = sect_area/float(block_area)
+        total += percent * float(field)
+    return total
