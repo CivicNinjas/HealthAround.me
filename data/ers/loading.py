@@ -3,6 +3,7 @@ import json
 
 from boundaryservice.models import Boundary
 from math import ceil
+from healthdata.utils import round_div_float
 
 from data.models import Ers
 
@@ -33,10 +34,6 @@ def ers_importer():
     lunches = ImportSchoolMealData(
         "data/ers/ReducedAndFreeSchoolLunchesByCountyOK.json")
     lunches.import_json()
-
-
-def round_float(float_num):
-    return float(ceil(float_num * 10000) / 10000.0)
 
 
 class ImportDataFromJson(object):
@@ -70,72 +67,67 @@ class ImportDataFromJson(object):
 
 class ImportGroceryPerCapitaData(ImportDataFromJson):
     def finish_import(self, counties, Ers_data):
-        grocery_stores_per_thousand = \
-            counties['attributes']['GROCPTH11']
+        grocery_stores_per_capita = (
+            counties['attributes']['GROCPTH11'])
 
-        Ers_data.grocery_stores_per_thousand = \
-            round_float(grocery_stores_per_thousand)
+        Ers_data.grocery_stores_per_capita = round_div_float(
+            grocery_stores_per_capita, 1000.0)
 
 
 class ImportObesityData(ImportDataFromJson):
 
     def finish_import(self, counties, Ers_data):
-        adult_diabetes = counties['attributes']['PCT_DIABETES_ADULTS10']
-        adult_obesity = counties['attributes']["PCT_OBESE_ADULTS10"]
-        childhood_obesity = counties['attributes']["PCT_OBESE_CHILD11"]
-        rec_facilities_per_thousand = counties['attributes']["RECFACPTH11"]
+        pper_adult_diabetes = counties['attributes']['PCT_DIABETES_ADULTS10']
+        per_adult_obesity = counties['attributes']["PCT_OBESE_ADULTS10"]
+        rec_facilities_per_capita = (counties['attributes']["RECFACPTH11"]
 
-        Ers_data.adult_diabetes = float(adult_diabetes)
-        Ers_data.adult_obesity = float(adult_obesity)
-        if childhood_obesity is None:
-            Ers_data.childhood_obesity = childhood_obesity
-        else:
-            Ers_data.childhood_obesity = float(childhood_obesity)
-        Ers_data.rec_facilities_per_thousand = round_float(
-            rec_facilities_per_thousand)
+        Ers_data.per_adult_diabetes = round_div_float(
+            per_adult_diabetes, 100.0)
+        Ers_data.per_adult_obesity = round_div_float(per_adult_obesity, 100.0)
+        Ers_data.rec_facilities_per_capita = round_div_float(
+            rec_facilities_per_capita, 1000.0)
 
 
 class ImportGroceryAccessData(ImportDataFromJson):
 
     def finish_import(self, counties, Ers_data):
-        percent_low_access_to_groceries = \
-            counties['attributes']['PCT_LACCESS_POP10']
+        per_low_access_to_groceries = (
+            counties['attributes']['PCT_LACCESS_POP10'])
 
-        Ers_data.percent_low_access_to_groceries = round_float(
-            percent_low_access_to_groceries)
+        Ers_data.per_low_access_to_groceries = round_div_float(
+            per_low_access_to_groceries, 100.0)
 
 
 class ImportRestaurantData(ImportDataFromJson):
 
     def finish_import(self, counties, Ers_data):
-        fast_food_rest_per_thousand = counties['attributes']['FFRPTH11']
-        full_rest_per_thousand = counties['attributes']['FSRPTH11']
+        fast_food_rest_per_capita = counties['attributes']['FFRPTH11']
+        full_rest_per_capita = counties['attributes']['FSRPTH11']
 
-        Ers_data.fast_food_rest_per_thousand = \
-            round_float(fast_food_rest_per_thousand)
-        Ers_data.full_rest_per_thousand = \
-            round_float(full_rest_per_thousand)
+        Ers_data.fast_food_rest_per_capita = round_div_float(
+            fast_food_rest_per_capita, 1000.0)
+        Ers_data.full_rest_per_capita = round_div_float(
+            full_rest_per_capita, 1000.0)
 
 
 class ImportFarmersMarketData(ImportDataFromJson):
 
     def finish_import(self, counties, Ers_data):
-        farmers_markets_per_thousand = counties['attributes']['FMRKTPTH13']
+        farmers_markets_per_capita = counties['attributes']['FMRKTPTH13']
 
-        Ers_data.farmers_markets_per_thousand = \
-            round_float(farmers_markets_per_thousand)
+        Ers_data.farmers_markets_per_capita = round_div_float(
+            farmers_markets_per_capita, 1000.0)
 
 
 class ImportSchoolMealData(ImportDataFromJson):
 
     def finish_import(self, counties, Ers_data):
-
-        percent_students_for_free_lunch = (
+        per_students_for_free_lunch = (
             counties['attributes']["PCT_FREE_LUNCH10"])
-        percent_students_for_reduced_lunch = (
+        per_students_for_reduced_lunch = (
             counties['attributes']["PCT_REDUCED_LUNCH10"])
 
-        Ers_data.percent_students_for_free_lunch = (
-            percent_students_for_free_lunch)
-        Ers_data.percent_students_for_reduced_lunch = (
-            percent_students_for_reduced_lunch)
+        Ers_data.per_students_for_free_lunch = round_div_float(
+            per_students_for_free_lunch, 100.0)
+        Ers_data.per_students_for_reduced_lunch = round_div_float(
+            per_students_for_reduced_lunch, 100.0)
