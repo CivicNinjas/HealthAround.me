@@ -69,15 +69,15 @@ def stand_dev_single_value(klass, field, geolevel):
     for feature in ok_data:
         total_sum += sum(feature)
 
-    average = round(total_sum / float(total_features), 5)
+    average = total_sum / float(total_features)
 
     total_dif_squared_sum = 0
 
     for feature in ok_data:
         total_dif_squared_sum += ((sum(feature) - average) ** 2)
 
-    stand_dev = round(
-        (total_dif_squared_sum / float(total_features)) ** (0.5), 5)
+    stand_dev = (
+        (total_dif_squared_sum / float(total_features)) ** (0.5))
     print "Average: " + str(average)
     print "Standard Deviation: " + str(stand_dev)
     return average, stand_dev
