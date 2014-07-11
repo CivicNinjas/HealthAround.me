@@ -32,7 +32,7 @@ def dartmouth_health_discharge_rate_db_importer():
                 display_name=boundary_name, kind='State')
             county_prefix = boundary.external_id
         data, created = Dartmouth.objects.get_or_create(boundary=boundary)
-        data.discharge_rate_per_capita = round_div_float(value, 1000.0)
+        data.discharge_rate_per_capita = round_div_float(float(value), 1000.0)
         data.save()
         count += 1
     logger.info("Imported {} discharge rates".format(count))

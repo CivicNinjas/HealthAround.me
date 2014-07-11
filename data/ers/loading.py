@@ -2,7 +2,6 @@ import logging
 import json
 
 from boundaryservice.models import Boundary
-from math import ceil
 from healthdata.utils import round_div_float
 
 from data.models import Ers
@@ -77,9 +76,9 @@ class ImportGroceryPerCapitaData(ImportDataFromJson):
 class ImportObesityData(ImportDataFromJson):
 
     def finish_import(self, counties, Ers_data):
-        pper_adult_diabetes = counties['attributes']['PCT_DIABETES_ADULTS10']
+        per_adult_diabetes = counties['attributes']['PCT_DIABETES_ADULTS10']
         per_adult_obesity = counties['attributes']["PCT_OBESE_ADULTS10"]
-        rec_facilities_per_capita = (counties['attributes']["RECFACPTH11"]
+        rec_facilities_per_capita = counties['attributes']["RECFACPTH11"]
 
         Ers_data.per_adult_diabetes = round_div_float(
             per_adult_diabetes, 100.0)

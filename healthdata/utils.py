@@ -1,5 +1,5 @@
 from datetime import date
-from math import floor
+from math import floor, ceil
 from textwrap import fill
 from django.db.models import Q
 import json
@@ -7,7 +7,6 @@ import json
 from boundaryservice.models import Boundary, BoundarySet
 
 from data.models import Census
-
 
 
 def fake_boundary(location, precision):
@@ -555,6 +554,7 @@ def get_field_for_area(area_to_get, field_to_get, klass):
         percent = sect_area/float(block_area)
         total += percent * float(field)
     return total
+
 
 def round_div_float(float_num, divide_by):
     return ceil(float_num * 10000) / (10000.0 * divide_by)
