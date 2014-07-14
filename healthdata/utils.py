@@ -558,6 +558,7 @@ def get_field_for_area(area_to_get, field_to_get, klass):
         total += percent * float(field)
     return total
 
+
 def get_field_for_area_percent(area_to_get, field_to_get, klass):
     best_kind = highest_resolution_for_data(area_to_get, field_to_get, klass)
 
@@ -570,32 +571,41 @@ def get_field_for_area_percent(area_to_get, field_to_get, klass):
         contains_bound = Boundary.objects.filter(
             shape__contains=area_to_get,
             kind=best_kind
-            ).first()
+        ).first()
 
         container_value = klass.objects.filter(
             boundary=contains_bound
-            ).values_list(field_to_get, flat=True).first()
+        ).values_list(field_to_get, flat=True).first()
         '''
         If the area_to_get is entirely contained within another boundary,
         then the per capita field is  equal to that boundary's field
         '''
         return container_value
-
+    
+    '''
+    This block works by getting the population of each intersection with
+    the area_to_get and intersecting blocks and then using the per_capita_field
+    to get the actual number of whatver the field is in the intersection.
+    This is then added to a total, and  the population to a different total.
+    When all of the blocks have been looped through, the total for the field
+    is divided by the total population for area specified to get the 
+    per-capita for that area.
+    '''
     total_pop = 0.0
     total_pop_field = 0.0
     for blocks in boundary_list:
 
         field_per_capita = klass.objects.filter(
             boundary=blocks
-            ).values_list(
-                field_to_get, flat=True
-            ).first()
+        ).values_list(
+            field_to_get, flat=True
+        ).first()
 
         block_pop = Census.objects.filter(
             boundary=blocks
-            ).values_list(
-                'B01003_001E', flat=True
-            ).first()
+        ).values_list(
+            'B01003_001E', flat=True
+        ).first()
 
         sect = blocks.shape.simplify(
             tolerance=0.00001,
@@ -609,11 +619,10 @@ def get_field_for_area_percent(area_to_get, field_to_get, klass):
         sect_pop_field = sect_pop * field_per_capita
         total_pop += sect_pop
         total_pop_field += sect_pop_field
+
     percent_area_to_get = total_pop_field / total_pop
     return percent_area_to_get
 
 
-
 def round_div_float(float_num, divide_by):
     return ceil(float_num * 10000) / (10000.0 * divide_by)
-
