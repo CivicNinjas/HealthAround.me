@@ -556,12 +556,14 @@ def get_field_for_area(area_to_get, field_to_get, klass):
         block_area = blocks.shape.area
         percent = sect_area/float(block_area)
         total += percent * float(field)
-    return total
+    return round(total, 6)
 
 
 def get_field_for_area_percent(area_to_get, field_to_get, klass):
     best_kind = highest_resolution_for_data(area_to_get, field_to_get, klass)
 
+    if best_kind == None:
+        return None
     boundary_list = Boundary.objects.filter(
         (Q(shape__within=area_to_get) | Q(shape__overlaps=area_to_get)),
         kind=best_kind)
@@ -621,7 +623,7 @@ def get_field_for_area_percent(area_to_get, field_to_get, klass):
         total_pop_field += sect_pop_field
 
     percent_area_to_get = total_pop_field / total_pop
-    return percent_area_to_get
+    return round(percent_area_to_get, 6)
 
 
 def round_div_float(float_num, divide_by):
