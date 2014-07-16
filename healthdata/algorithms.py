@@ -804,12 +804,12 @@ class PercentDischargeRateAlgorithm(DartmouthPercentAlgorithm):
     '''Score based on the Discharge Rate per 1000 Medicare Enrollees'''
 
     def local_percent(self, source_data):
-        return float(source_data.discharge_rate) / 1000.0
+        return float(source_data.discharge_rate_per_capita)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 0.323900
-        std_dev = 0.0887797251
+        average = 0.29159
+        std_dev = 0.08387
         better_sign = -1
         return average, std_dev, better_sign
 
@@ -830,12 +830,12 @@ class PercentAdultObesityAlgorithm(ErsPercentAlgorithm):
     '''Score based on percent of adults that are obese'''
 
     def local_percent(self, source_data):
-        return float(source_data.adult_obesity) / 100.0
+        return float(source_data.per_adult_obesity)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 0.333883
-        std_dev = 0.0230814
+        average = 0.33388
+        std_dev = 0.02308
         better_sign = -1
         return average, std_dev, better_sign
 
@@ -844,12 +844,12 @@ class PercentAdultDiabetesAlgorithm(ErsPercentAlgorithm):
     '''Score based on percent of adults that are Diabetic'''
 
     def local_percent(self, source_data):
-        return float(source_data.adult_diabetes) / 100.0
+        return float(source_data.per_adult_diabetes)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 0.1227012
-        std_dev = 0.0145057
+        average = 0.1227
+        std_dev = 0.01451
         better_sign = -1
         return average, std_dev, better_sign
 
@@ -858,12 +858,12 @@ class FitnessCentersPerCapitaAlgorithm(ErsPercentAlgorithm):
     '''Score based on fitness centers/recreation areas per 1000 people'''
 
     def local_percent(self, source_data):
-        return float(source_data.rec_facilities_per_thousand)
+        return float(source_data.rec_facilities_per_capita)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 0.0334103
-        std_dev = 0.0508600
+        average = 0.0000334103
+        std_dev = 0.0000508600
         better_sign = 1
         return average, std_dev, better_sign
 
@@ -874,12 +874,12 @@ class FastFoodPerThousandAlgorithm(ErsPercentAlgorithm):
     '''
 
     def local_percent(self, source_data):
-        return float(source_data.fast_food_rest_per_thousand)
+        return float(source_data.fast_food_rest_per_capita)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 0.4844545
-        std_dev = 0.2416161
+        average = 0.0004844545
+        std_dev = 0.0002416161
         better_sign = -1
         return average, std_dev, better_sign
 
@@ -890,12 +890,12 @@ class FullRestPerThousandAlgorithm(ErsPercentAlgorithm):
     '''
 
     def local_percent(self, source_data):
-        return float(source_data.full_rest_per_thousand)
+        return float(source_data.full_rest_per_capita)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 0.6372740
-        std_dev = 0.2420894
+        average = 0.0006372740
+        std_dev = 0.0002420894
         better_sign = -1
         return average, std_dev, better_sign
 
@@ -906,12 +906,12 @@ class FarmersMarketsPerThousandAlgorithm(ErsPercentAlgorithm):
     '''
 
     def local_percent(self, source_data):
-        return float(source_data.farmers_markets_per_thousand)
+        return float(source_data.farmers_markets_per_capita)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 0.0248259
-        std_dev = 0.0409239
+        average = 0.0000248259
+        std_dev = 0.0000409239
         better_sign = 1
         return average, std_dev, better_sign
 
@@ -922,12 +922,12 @@ class PercentLowAccessToGroceriesAlgorithm(ErsPercentAlgorithm):
     '''
 
     def local_percent(self, source_data):
-        return float(source_data.percent_low_access_to_groceries)
+        return float(source_data.per_low_access_to_groceries)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 27.8403948
-        std_dev = 18.7626943
+        average = 0.278403948
+        std_dev = 0.187626943
         better_sign = -1
         return average, std_dev, better_sign
 
@@ -938,12 +938,12 @@ class GroceryStoresPerThousandAlgorithm(ErsPercentAlgorithm):
     '''
 
     def local_percent(self, source_data):
-        return float(source_data.grocery_stores_per_thousand)
+        return float(source_data.grocery_stores_per_capita)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 0.2111467
-        std_dev = 0.1415997
+        average = 0.0002111467
+        std_dev = 0.0001415997
         better_sign = 1
         return average, std_dev, better_sign
 
@@ -954,11 +954,27 @@ class PercentFreeLunchAlgorithm(ErsPercentAlgorithm):
     '''
 
     def local_percent(self, source_data):
-        return float(source_data.percent_students_for_free_lunch)
+        return float(source_data.per_students_for_free_lunch)
 
     def get_default_stats(self, source_data):
         '''Stats for counties in Oklahoma'''
-        average = 53.579519
-        std_dev = 9.5828258
+        average = 0.53579519
+        std_dev = 0.095828258
+        better_sign = -1
+        return average, std_dev, better_sign
+
+
+class PercentReducedLunchAlgorithm(ErsPercentAlgorithm):
+    '''
+    Score based on the percent of students that qualify for a free lunch
+    '''
+
+    def local_percent(self, source_data):
+        return float(source_data.per_students_for_reduced_lunch)
+
+    def get_default_stats(self, source_data):
+        '''Stats for counties in Oklahoma'''
+        average = 0.53579519
+        std_dev = 0.095828258
         better_sign = -1
         return average, std_dev, better_sign

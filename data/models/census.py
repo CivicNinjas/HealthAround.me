@@ -280,6 +280,41 @@ class Census(models.Model):
         blank=True, null=True,
         help_text='Not divorced last year')
 
+    # B14001 - School Enrollment by Level of School For the Population
+    #          3 Years And Over
+    B14001_001E = models.IntegerField(
+        blank=True, null=True,
+        help_text=(
+            'School Enrollment by Level of School For the Population 3 Years'
+            ' And Over: Total:'))
+    B14001_002E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Enrolled in school:')
+    B14001_003E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Enrolled in nursery school, preschool')
+    B14001_004E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Enrolled in kindergarten')
+    B14001_005E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Enrolled in grade 1 to grade 4')
+    B14001_006E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Enrolled in grade 5 to grade 8')
+    B14001_007E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Enrolled in grade 9 to grade 12')
+    B14001_008E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Enrolled in college, undergraduate years')
+    B14001_009E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Graduate or professional school')
+    B14001_010E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Not enrolled in school')
+
     # B15002 - Sex by Educational Attainment For the Population 25
     #          Years And Over
     B15002_001E = models.IntegerField(
@@ -1437,3 +1472,68 @@ class Census(models.Model):
     B25091_023E = models.IntegerField(
         blank=True, null=True,
         help_text='Not computed')
+
+    # C27006 - Medicare Coverage by Sex by Age
+    C27006_001E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Medicare Coverage by Sex by Age: Total:')
+    C27006_002E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Male:')
+    C27006_003E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Under 18 years:')
+    C27006_004E = models.IntegerField(
+        blank=True, null=True,
+        help_text='With Medicare coverage')
+    C27006_005E = models.IntegerField(
+        blank=True, null=True,
+        help_text='No Medicare coverage')
+    C27006_006E = models.IntegerField(
+        blank=True, null=True,
+        help_text='18 to 64 years:')
+    C27006_007E = models.IntegerField(
+        blank=True, null=True,
+        help_text='With Medicare coverage')
+    C27006_008E = models.IntegerField(
+        blank=True, null=True,
+        help_text='No Medicare coverage')
+    C27006_009E = models.IntegerField(
+        blank=True, null=True,
+        help_text='65 years and over:')
+    C27006_010E = models.IntegerField(
+        blank=True, null=True,
+        help_text='With Medicare coverage')
+    C27006_011E = models.IntegerField(
+        blank=True, null=True,
+        help_text='No Medicare coverage')
+    C27006_012E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Female:')
+    C27006_013E = models.IntegerField(
+        blank=True, null=True,
+        help_text='Under 18 years:')
+    C27006_014E = models.IntegerField(
+        blank=True, null=True,
+        help_text='With Medicare coverage')
+    C27006_015E = models.IntegerField(
+        blank=True, null=True,
+        help_text='No Medicare coverage')
+    C27006_016E = models.IntegerField(
+        blank=True, null=True,
+        help_text='18 to 64 years:')
+    C27006_017E = models.IntegerField(
+        blank=True, null=True,
+        help_text='With Medicare coverage')
+    C27006_018E = models.IntegerField(
+        blank=True, null=True,
+        help_text='No Medicare coverage')
+    C27006_019E = models.IntegerField(
+        blank=True, null=True,
+        help_text='65 years and over:')
+    C27006_020E = models.IntegerField(
+        blank=True, null=True,
+        help_text='With Medicare coverage')
+    C27006_021E = models.IntegerField(
+        blank=True, null=True,
+        help_text='No Medicare coverage')

@@ -10,6 +10,6 @@ class Dartmouth(models.Model):
         app_label = "data"
 
     boundary = models.ForeignKey(Boundary, blank=True, null=True)
-    discharge_rate = models.FloatField(
+    discharge_rate_per_capita = models.FloatField(
         blank=True, null=True,
-        help_text='Discharge Rate Per 1000 Medicare Enrollees')
+        help_text='Discharge Rate Per Medicare Enrollee')

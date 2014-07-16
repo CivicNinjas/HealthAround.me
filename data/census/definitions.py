@@ -95,11 +95,11 @@ TABLES = {
     #        'Women 15 To 50 Years Who Had A Birth In The Past 12 Months By'
     #        ' Marital Status And Presence Of Unmarried Partner'),
     #},
-    #'B14001': {
-    #    'description': (
-    #        'School Enrollment By Level Of School For The Population 3 Years'
-    #        ' And Over'),
-    #},
+    'B14001': {
+        'description': (
+            'School Enrollment By Level Of School For The Population 3 Years'
+            ' And Over'),
+    },
     #'B14002': {
     #    'description': (
     #        'Sex By School Enrollment By Level Of School By Type Of School'
@@ -285,9 +285,9 @@ TABLES = {
     #'B27003': {
     #    'description': 'Public Health Insurance Status By Sex By Age',
     #},
-    #'C27006': {
-    #    'description': 'Medicare Coverage By Sex By Age',
-    #},
+    'C27006': {
+        'description': 'Medicare Coverage By Sex By Age',
+    },
     #'C27007': {
     #    'description': 'Medicaid/Means-Tested Public Coverage By Sex By Age',
     #},

@@ -186,7 +186,10 @@ class DartmouthPercentAlgorithmTest(TestCase):
             simple_shape=shape,
             centroid="POINT (95.941481 36.121077)")
         self.location = (-95.99, 36.15)
-        Dartmouth.objects.create(boundary=self.county, discharge_rate=223.4)
+        Dartmouth.objects.create(
+            boundary=self.county,
+            discharge_rate_per_capita=0.2234
+        )
         self.cache = AlgorithmCache()
 
     def discharge_rate_node(self):
@@ -194,20 +197,20 @@ class DartmouthPercentAlgorithmTest(TestCase):
             name="Hospital Discharge Rate",
             algorithm=ScoreMetric.PERCENT_DISCHARGE_RATE_ALGORITHM,
             description=(
-                "Hospital Discharges Rate per 1,000 Medicare Enrollees")
+                "Hospital Discharge Rates per Medicare Enrollee")
         )
         return ScoreNode(slug='discharge-rate', metric=metric)
 
     def assertDischargeRateResults(self, score):
         expected = {
             u"summary": {
-                u"score": 0.871,
+                u"score": 0.792,
                 u"value": 0.223,
-                u"average": 0.3239,
-                u"std_dev": 0.0887797251,
+                u"average": 0.29159,
+                u"std_dev": 0.08387,
                 u"value_type": u"percent",
                 u"description": (
-                    u"Hospital Discharges Rate per 1,000 Medicare Enrollees"),
+                    u"Hospital Discharge Rates per Medicare Enrollee"),
             },
             u'detail': {
                 u"path": u"/api/detail/tulsa-county/discharge-rate/",
@@ -300,19 +303,17 @@ class ErsAlgorithmTest(TestCase):
             centroid="POINT (95.941481 36.121077)")
         self.location = (-95.99, 36.15)
         Ers.objects.create(
-
             boundary=self.county,
-            adult_obesity=30.2,
-            adult_diabetes=10.3,
-            childhood_obesity=None,
-            rec_facilities_per_thousand=0.1212,
-            fast_food_rest_per_thousand=0.8615,
-            full_rest_per_thousand=0.7829,
-            farmers_markets_per_thousand=0.0163,
-            percent_low_access_to_groceries=25.5236,
-            grocery_stores_per_thousand=0.1327,
-            percent_students_for_free_lunch=48.1355,
-            percent_students_for_reduced_lunch=8.4127,
+            per_adult_obesity=0.302,
+            per_adult_diabetes=0.103,
+            rec_facilities_per_capita=0.0001212,
+            fast_food_rest_per_capita=0.0008615,
+            full_rest_per_capita=0.0007829,
+            farmers_markets_per_capita=0.0000163,
+            per_low_access_to_groceries=0.255236,
+            grocery_stores_per_capita=0.0001327,
+            per_students_for_free_lunch=0.481355,
+            per_students_for_reduced_lunch=0.084127,
         )
         self.cache = AlgorithmCache()
 
@@ -328,8 +329,8 @@ class ErsAlgorithmTest(TestCase):
             u"summary": {
                 u"score": 0.916,
                 u"value": 0.302,
-                u"average": 0.333883,
-                u"std_dev": 0.0230814,
+                u"average": 0.33388,
+                u"std_dev": 0.02308,
                 u"value_type": u"percent",
                 u"description": u"Percent of Adults that are obese",
             },
@@ -367,8 +368,8 @@ class ErsAlgorithmTest(TestCase):
             u"summary": {
                 u"score": 0.913,
                 u"value": 0.103,
-                u"average": 0.1227012,
-                u"std_dev": 0.0145057,
+                u"average": 0.1227,
+                u"std_dev": 0.01451,
                 u"value_type": u"percent",
                 u"description": (
                     u"Percent of Adults that are Diabetic"),
@@ -397,9 +398,9 @@ class ErsAlgorithmTest(TestCase):
 
     def adult_fitness_center_node(self):
         metric = ScoreMetric.objects.create(
-            name="Fitness Centers per 1000 Residents of a County",
+            name="Fitness Centers per Capita",
             algorithm=ScoreMetric.FITNESS_CENTERS_PER_CAPITA_ALGORITHM,
-            description="Fitness and Recreation Centers per 1000 Residents",
+            description="Fitness and Recreation Centers per Capita",
         )
         return ScoreNode(slug='fitness-centers', metric=metric)
 
@@ -407,12 +408,12 @@ class ErsAlgorithmTest(TestCase):
         expected = {
             u"summary": {
                 u"score": 0.958,
-                u"value": 0.121,
-                u"average": 0.0334103,
-                u"std_dev": 0.0508600,
+                u"value": 0.0,
+                u"average": 0.0000334103,
+                u"std_dev": 0.0000508600,
                 u"value_type": u"percent",
                 u"description": (
-                    u"Fitness and Recreation Centers per 1000 Residents"),
+                    u"Fitness and Recreation Centers per Capita"),
             },
             u'detail': {
                 u"path": u"/api/detail/tulsa-county/fitness-centers/",
@@ -438,10 +439,10 @@ class ErsAlgorithmTest(TestCase):
 
     def fast_food_node(self):
         metric = ScoreMetric.objects.create(
-            name="Fast Food Restaurants Per Thousand",
+            name="Fast Food Restaurants per Capita",
             algorithm=ScoreMetric.FAST_FOOD_PER_THOUSAND_ALGORITHM,
             description=(
-                "Fast Food Restaurants per Thousand Population")
+                "Fast Food Restaurants per Capita")
         )
         return ScoreNode(slug='fast-food', metric=metric)
 
@@ -449,12 +450,12 @@ class ErsAlgorithmTest(TestCase):
         expected = {
             u"summary": {
                 u"score": 0.059,
-                u"value": 0.862,
-                u"average": 0.4844545,
-                u"std_dev": 0.2416161,
+                u"value": 0.001,
+                u"average": 0.0004844545,
+                u"std_dev": 0.0002416161,
                 u"value_type": u"percent",
                 u"description": (
-                    u"Fast Food Restaurants per Thousand Population"),
+                    u"Fast Food Restaurants per Capita"),
             },
             u'detail': {
                 u"path": u"/api/detail/tulsa-county/fast-food/",
@@ -480,10 +481,10 @@ class ErsAlgorithmTest(TestCase):
 
     def full_rest_node(self):
         metric = ScoreMetric.objects.create(
-            name="Full Service Restaurants Per Thousand",
+            name="Full Service Restaurants per Capita",
             algorithm=ScoreMetric.FULL_REST_PER_THOUSAND_ALGORITHM,
             description=(
-                "Full Service Restaurants per Thousand Population")
+                "Full Service Restaurants per Capita")
         )
         return ScoreNode(slug='full-rest', metric=metric)
 
@@ -491,12 +492,12 @@ class ErsAlgorithmTest(TestCase):
         expected = {
             u"summary": {
                 u"score": 0.274,
-                u"value": 0.783,
-                u"average": 0.6372740,
-                u"std_dev": 0.2420894,
+                u"value": 0.001,
+                u"average": 0.0006372740,
+                u"std_dev": 0.0002420894,
                 u"value_type": u"percent",
                 u"description": (
-                    u"Full Service Restaurants per Thousand Population"),
+                    u"Full Service Restaurants per Capita"),
             },
             u'detail': {
                 u"path": u"/api/detail/tulsa-county/full-rest/",
@@ -522,10 +523,10 @@ class ErsAlgorithmTest(TestCase):
 
     def farmers_markets_node(self):
         metric = ScoreMetric.objects.create(
-            name="Farmers' Markets per Thousand Population",
+            name="Farmers' Markets per Capita",
             algorithm=ScoreMetric.FARMERS_MARKETS_PER_THOUSAND_ALGORITHM,
             description=(
-                "Farmers' Markets per Thousand Population")
+                "Farmers' Markets per Capita")
         )
         return ScoreNode(slug='farmers-markets', metric=metric)
 
@@ -533,12 +534,12 @@ class ErsAlgorithmTest(TestCase):
         expected = {
             u"summary": {
                 u"score": 0.417,
-                u"value": 0.016,
-                u"average": 0.0248259,
-                u"std_dev": 0.0409239,
+                u"value": 0.0,
+                u"average": 0.0000248259,
+                u"std_dev": 0.0000409239,
                 u"value_type": u"percent",
                 u"description": (
-                    u"Farmers' Markets per Thousand Population"),
+                    u"Farmers' Markets per Capita"),
             },
             u'detail': {
                 u"path": u"/api/detail/tulsa-county/farmers-markets/",
@@ -575,9 +576,9 @@ class ErsAlgorithmTest(TestCase):
         expected = {
             u"summary": {
                 u"score": 0.549,
-                u"value": 25.524,
-                u"average": 27.8403948,
-                u"std_dev": 18.7626943,
+                u"value": 0.255,
+                u"average": 0.278403948,
+                u"std_dev": 0.187626943,
                 u"value_type": u"percent",
                 u"description": (
                     u"Percent with Low Access to Groceries"),
@@ -606,10 +607,10 @@ class ErsAlgorithmTest(TestCase):
 
     def groceries_per_thousand_node(self):
         metric = ScoreMetric.objects.create(
-            name="Grocery Stores per Thousand Population",
+            name="Grocery Stores per Capita",
             algorithm=ScoreMetric.GROCERY_STORES_PER_THOUSAND_ALGORITHM,
             description=(
-                "Grocery Stores per Thousand Population")
+                "Grocery Stores per Capita")
         )
         return ScoreNode(slug='groceries-per', metric=metric)
 
@@ -617,12 +618,12 @@ class ErsAlgorithmTest(TestCase):
         expected = {
             u"summary": {
                 u"score": 0.29,
-                u"value": 0.133,
-                u"average": 0.2111467,
-                u"std_dev": 0.1415997,
+                u"value": 0.0,
+                u"average": 0.0002111467,
+                u"std_dev": 0.0001415997,
                 u"value_type": u"percent",
                 u"description": (
-                    u"Grocery Stores per Thousand Population"),
+                    u"Grocery Stores per Capita"),
             },
             u'detail': {
                 u"path": u"/api/detail/tulsa-county/groceries-per/",
@@ -659,9 +660,9 @@ class ErsAlgorithmTest(TestCase):
         expected = {
             u"summary": {
                 u"score": 0.715,
-                u"value": 48.136,
-                u"average": 53.579519,
-                u"std_dev": 9.5828258,
+                u"value": 0.481,
+                u"average": 0.53579519,
+                u"std_dev": 0.095828258,
                 u"value_type": u"percent",
                 u"description": (
                     u"Percent of Students Qualifying for a Free Lunch"),
