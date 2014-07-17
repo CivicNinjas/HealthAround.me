@@ -491,7 +491,7 @@ def highest_resolution_for_data(area_to_get, field_to_get, klass):
     ).order_by('kind')
 
     for bounds in boundary_list:
-        
+
         value = klass.objects.filter(
             boundary=bounds
         ).values_list(
