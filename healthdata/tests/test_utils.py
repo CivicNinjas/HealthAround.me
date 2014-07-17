@@ -359,3 +359,22 @@ class GetFieldForAreaTest(TestCase):
                 'B19058_002E',
                 Census
             ), 40)
+
+    def test_get_field_for_area_outside_data(self):
+        '''
+        In this test, 2/3 of area_to_get_got is inside bound two, taking
+        up 2/25ths of bound two's total area, while the last 1/3 of
+        area_to_get_got is outside of it.  The algorithm will ignore this
+        overlap in to areas that don't contain any of the data we're looking
+        for, so we need only concern ourselves with the area inside bound two.
+        Expected Result: (2/25) * 1000 = 80
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-96.1 36.15, -95.8 36.15,'
+            '-95.8 36.25, -96.1 36.25, -96.1 36.15)))')
+        self.assertEqual(
+            get_field_for_area(
+                area_to_get_got,
+                'B19058_002E',
+                Census
+            ), 80)
