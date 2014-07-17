@@ -484,22 +484,23 @@ graph scoretree {
 
 def highest_resolution_for_data(area_to_get, field_to_get, klass):
     #Determines the smallest boundary with the data we're looking
-    contains_list = Boundary.objects.filter(
-        shape__contains=area_to_get.centroid)
-    values = []
-    for bounds in contains_list:
-        area = [
-            klass.objects.filter(boundary=bounds).values_list(
-                field_to_get, flat=True).first(),
-            bounds.shape.area,
-            bounds.kind
-        ]
-        values.append(area)
-    sorted_values = sorted(values, key=lambda values: values[1])
-    for areas in sorted_values:
-        if areas[0] is not None:
-            highest_resolution_kind = areas[2]
-            return highest_resolution_kind
+    boundary_list = Boundary.objects.filter(
+        Q(shape__within=area_to_get) |
+        Q(shape__overlaps=area_to_get) |
+        Q(shape__contains=area_to_get)
+    ).order_by('kind')
+
+    for bounds in boundary_list:
+
+        value = klass.objects.filter(
+            boundary=bounds
+        ).values_list(
+            field_to_get, flat=True
+        ).first()
+
+        if value is not None:
+            return bounds.kind
+    return None
 
 
 def get_field_for_area(area_to_get, field_to_get, klass):
@@ -513,6 +514,9 @@ def get_field_for_area(area_to_get, field_to_get, klass):
     '''
 
     best_kind = highest_resolution_for_data(area_to_get, field_to_get, klass)
+
+    if best_kind is None:
+        return "No data for that field in given area."
 
     boundary_list = Boundary.objects.filter(
         (Q(shape__within=area_to_get) | Q(shape__overlaps=area_to_get)),
@@ -536,7 +540,7 @@ def get_field_for_area(area_to_get, field_to_get, klass):
 
         percent = area_to_get.area / float(contains_bound.shape.area)
         total = container_value * percent
-        return total
+        return round(total, 6)
 
     total = 0.0
     for blocks in boundary_list:
@@ -556,11 +560,14 @@ def get_field_for_area(area_to_get, field_to_get, klass):
         block_area = blocks.shape.area
         percent = sect_area/float(block_area)
         total += percent * float(field)
-    return total
+    return round(total, 6)
 
 
 def get_field_for_area_percent(area_to_get, field_to_get, klass):
     best_kind = highest_resolution_for_data(area_to_get, field_to_get, klass)
+
+    if best_kind is None:
+        return None
 
     boundary_list = Boundary.objects.filter(
         (Q(shape__within=area_to_get) | Q(shape__overlaps=area_to_get)),
@@ -581,14 +588,14 @@ def get_field_for_area_percent(area_to_get, field_to_get, klass):
         then the per capita field is  equal to that boundary's field
         '''
         return container_value
-    
+
     '''
     This block works by getting the population of each intersection with
     the area_to_get and intersecting blocks and then using the per_capita_field
     to get the actual number of whatver the field is in the intersection.
     This is then added to a total, and  the population to a different total.
     When all of the blocks have been looped through, the total for the field
-    is divided by the total population for area specified to get the 
+    is divided by the total population for area specified to get the
     per-capita for that area.
     '''
     total_pop = 0.0
@@ -621,7 +628,7 @@ def get_field_for_area_percent(area_to_get, field_to_get, klass):
         total_pop_field += sect_pop_field
 
     percent_area_to_get = total_pop_field / total_pop
-    return percent_area_to_get
+    return round(percent_area_to_get, 6)
 
 
 def round_div_float(float_num, divide_by):

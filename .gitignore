@@ -11,6 +11,15 @@ data/shapefiles/*.zip
 data/shapefiles/.imported_states_list
 !data/census/cache/.keep
 data/census/cache/*
+.txt
+TestData/FastFoodPerCapita.json
+TestData/backup
+TestData/geojsontest.geojson
+TestData/ham.dump
+TestData/liquor.pdf
+data/ers/.loading.py.swo
+data/ers/GroceryStoresPerThounsandByCountyOK.json
+healthdata/Adult_Obesity_Rates_By_County.json
 
 # Server and deployment folders
 src/*
