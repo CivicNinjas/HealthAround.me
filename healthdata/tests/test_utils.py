@@ -360,7 +360,7 @@ class GetFieldForAreaTest(TestCase):
                 Census
             ), 40)
 
-    def test_get_field_for_area_outside_data(self):
+    def test_get_field_for_area_partially_outside_data(self):
         '''
         In this test, 2/3 of area_to_get_got is inside bound two, taking
         up 2/25ths of bound two's total area, while the last 1/3 of
@@ -378,3 +378,19 @@ class GetFieldForAreaTest(TestCase):
                 'B19058_002E',
                 Census
             ), 80)
+
+    def test_get_field_for_area_outside_data(self):
+        '''
+        In this test, area_to_get is defined as being somewhere in the arctic.
+        The get_field_for_area should return a string indicating that there is
+        no data in that area.
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-51.0 81.0, -52.0 81.0,'
+            '-52.0 82.0, -51.0 82.0, -51.0 81.0)))')
+        self.assertEqual(
+            get_field_for_area(
+                area_to_get_got,
+                'B19058_002E',
+                Census
+            ), "No data for that field in given area.")
