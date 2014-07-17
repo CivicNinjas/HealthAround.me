@@ -1,7 +1,7 @@
 '''Census data import definitions'''
 
 # State-level regions to load'''
-STATES = ['ok', 'pa', 'ma']
+STATES = ['ok', 'pa', 'ma', 'dc', 'va', 'md']
 
 # Census 'tables' to load
 # key is the name of the table

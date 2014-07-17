@@ -1,11 +1,14 @@
 #!/bin/bash
 set -e  # Exit on errors
 
+# 11 = DC
+# 24 = Maryland
 # 25 = Massachusetts
 # 40 = Oklahoma
-# 42 = Pennsylvalia
+# 42 = Pennsylvania
+# 51 = Virginia
 
-STATES="25 40 42"
+STATES="11 24 25 40 42 51"
 IFS=" "
 
 # Fetch files if they aren't already downloaded

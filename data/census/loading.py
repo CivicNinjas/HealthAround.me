@@ -37,7 +37,7 @@ class CensusLoader(object):
         ('co', 'Colorado'),
         ('ct', 'Connecticut'),
         ('de', 'Delaware'),
-        ('dc', 'District of Columbia'),
+        ('dc', 'District Of Columbia'),
         ('fl', 'Florida'),
         ('ga', 'Georgia'),
         ('hi', 'Hawaii'),
