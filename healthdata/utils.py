@@ -536,7 +536,7 @@ def get_field_for_area(area_to_get, field_to_get, klass):
 
         percent = area_to_get.area / float(contains_bound.shape.area)
         total = container_value * percent
-        return total
+        return round(total, 6)
 
     total = 0.0
     for blocks in boundary_list:
@@ -562,7 +562,7 @@ def get_field_for_area(area_to_get, field_to_get, klass):
 def get_field_for_area_percent(area_to_get, field_to_get, klass):
     best_kind = highest_resolution_for_data(area_to_get, field_to_get, klass)
 
-    if best_kind == None:
+    if best_kind is None:
         return None
     boundary_list = Boundary.objects.filter(
         (Q(shape__within=area_to_get) | Q(shape__overlaps=area_to_get)),
@@ -583,14 +583,14 @@ def get_field_for_area_percent(area_to_get, field_to_get, klass):
         then the per capita field is  equal to that boundary's field
         '''
         return container_value
-    
+
     '''
     This block works by getting the population of each intersection with
     the area_to_get and intersecting blocks and then using the per_capita_field
     to get the actual number of whatver the field is in the intersection.
     This is then added to a total, and  the population to a different total.
     When all of the blocks have been looped through, the total for the field
-    is divided by the total population for area specified to get the 
+    is divided by the total population for area specified to get the
     per-capita for that area.
     '''
     total_pop = 0.0

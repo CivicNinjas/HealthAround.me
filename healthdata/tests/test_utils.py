@@ -1,16 +1,14 @@
 '''Tests for healthdata/utils.py'''
-
 from django.test import TestCase
 from boundaryservice.models import Boundary, BoundarySet
-from data.models import Census, Dartmouth, Ers
+from data.models import Census
 from django.contrib.gis.geos import GEOSGeometry
 
 from healthdata.utils import (
     fake_boundary,
     get_field_for_area,
-    highest_resolution_for_data,
-    get_field_for_area_percent
 )
+
 
 class FakeBoundaryUtilTest(TestCase):
     def setUp(self):
@@ -44,6 +42,7 @@ class FakeBoundaryUtilTest(TestCase):
         self.assertEqual(expected_shape, boundary.shape.coords)
         self.assertEqual((-95.9905, 36.1495), boundary.centroid.coords)
 
+
 class GetFieldForAreaTest(TestCase):
     def setUp(self):
         self.county_set = BoundarySet.objects.create(
@@ -55,17 +54,21 @@ class GetFieldForAreaTest(TestCase):
             metadata_fields=['GEOID'])
 
         bound_one_shape = GEOSGeometry(
-            'MULTIPOLYGON(((-95.5 36.0, -95.5 36.5, -95.0 36.5, -95.0 36.0, -95.5 36.0)))')
+            'MULTIPOLYGON((('
+            '-95.5 36.0, -95.5 36.5, -95.0 36.5,'
+            '-95.0 36.0, -95.5 36.0)))'
+        )
 
         bound_two_shape = GEOSGeometry(
-            'MULTIPOLYGON(((-95.5 36.0, -95.5 36.5, -96.0 36.5, -96.0 36.0, -95.5 36.0)))')
-
-        
+            'MULTIPOLYGON((('
+            '-95.5 36.0, -95.5 36.5, -96.0 36.5,'
+            '-96.0 36.0, -95.5 36.0)))'
+        )
 
         self.bound_one = Boundary.objects.create(
             slug='county-one',
-            name= 'County One',
-            set= self.county_set,
+            name='County One',
+            set=self.county_set,
             metadata={'GEOID': '40143'},
             external_id='40143',
             shape=bound_one_shape,
@@ -76,8 +79,8 @@ class GetFieldForAreaTest(TestCase):
 
         self.bound_two = Boundary.objects.create(
             slug='county-two',
-            name= 'County Two',
-            set= self.county_set,
+            name='County Two',
+            set=self.county_set,
             metadata={'GEOID': '40109'},
             external_id='40109',
             shape=bound_two_shape,
@@ -85,7 +88,6 @@ class GetFieldForAreaTest(TestCase):
             kind='County',
             simple_shape=bound_two_shape,
             centroid="POINT (-95.75 36.25)")
-
 
         Census.objects.create(
             boundary=self.bound_one,
@@ -327,11 +329,33 @@ class GetFieldForAreaTest(TestCase):
 
     def test_get_field_for_area_intersection(self):
         '''
-        Two areas, bound one (500 in field being tested) and bound two(1000 in 
+        Two areas, bound one (500 in field being tested) and bound two(1000 in
         field being tested.) 1/25 of bound one is inside area_to_get_got, and
-        of bound two is inside area_to_get_got.  Therefore, the expcted result is
-        ((1/25) * 500) + ((9/25) * 1000) = 380
+        of bound two is inside area_to_get_got.  Therefore, the expcted result
+         is ((1/25) * 500) + ((9/25) * 1000) = 380
         '''
         area_to_get_got = GEOSGeometry(
-            'MUlTIPOLYGON(((-95.95 36.15, -95.45 36.15, -95.45 36.35, -95.95 36.35, -95.95 36.15)))')
-        self.assertEqual(get_field_for_area(area_to_get_got, 'B19058_002E', Census), 380)
+            'MUlTIPOLYGON(((-95.95 36.15, -95.45 36.15,'
+            '-95.45 36.35,-95.95 36.35, -95.95 36.15)))')
+        self.assertEqual(get_field_for_area(
+            area_to_get_got,
+            'B19058_002E',
+            Census
+        ), 380)
+
+    def test_get_field_for_area_inside(self):
+        '''
+        In this test, area_to_get_got is completely inside bound two and
+        is equal to 1/25 of bound two's area. Bound two has a population
+        of 1000 in the field we are getting. Therefore, the expected
+        result is equal to (1/25)* 1000 = 40
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-95.9 36.15, -95.8 36.15,'
+            '-95.8 36.25, -95.9 36.25, -95.9 36.15)))')
+        self.assertEqual(
+            get_field_for_area(
+                area_to_get_got,
+                'B19058_002E',
+                Census
+            ), 40)
