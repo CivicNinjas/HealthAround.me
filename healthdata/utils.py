@@ -484,22 +484,23 @@ graph scoretree {
 
 def highest_resolution_for_data(area_to_get, field_to_get, klass):
     #Determines the smallest boundary with the data we're looking
-    contains_list = Boundary.objects.filter(
-        shape__contains=area_to_get.centroid)
-    values = []
-    for bounds in contains_list:
-        area = [
-            klass.objects.filter(boundary=bounds).values_list(
-                field_to_get, flat=True).first(),
-            bounds.shape.area,
-            bounds.kind
-        ]
-        values.append(area)
-    sorted_values = sorted(values, key=lambda values: values[1])
-    for areas in sorted_values:
-        if areas[0] is not None:
-            highest_resolution_kind = areas[2]
-            return highest_resolution_kind
+    boundary_list = Boundary.objects.filter(
+        Q(shape__within=area_to_get) |
+        Q(shape__overlaps=area_to_get) |
+        Q(shape__contains=area_to_get)
+    ).order_by('kind')
+
+    for bounds in boundary_list:
+        
+        value = klass.objects.filter(
+            boundary=bounds
+        ).values_list(
+            field_to_get, flat=True
+        ).first()
+
+        if value is not None:
+            return bounds.kind
+    return None
 
 
 def get_field_for_area(area_to_get, field_to_get, klass):
@@ -513,6 +514,9 @@ def get_field_for_area(area_to_get, field_to_get, klass):
     '''
 
     best_kind = highest_resolution_for_data(area_to_get, field_to_get, klass)
+
+    if best_kind is None:
+        return None
 
     boundary_list = Boundary.objects.filter(
         (Q(shape__within=area_to_get) | Q(shape__overlaps=area_to_get)),
@@ -564,6 +568,7 @@ def get_field_for_area_percent(area_to_get, field_to_get, klass):
 
     if best_kind is None:
         return None
+
     boundary_list = Boundary.objects.filter(
         (Q(shape__within=area_to_get) | Q(shape__overlaps=area_to_get)),
         kind=best_kind)
