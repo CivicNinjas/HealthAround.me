@@ -559,6 +559,30 @@ class GetFieldForAreaTest(ForAreaTestNoData, ForAreaCounty):
         )
 
 
+class HighestResStateNo(ForAreaTestNoData):
+    def setUp(self):
+        ForAreaTestNoData.setUp(self)
+
+    def test_state_and_county_no_data(self):
+        '''
+        In this test, area_to_get_got is defined as being located inside both
+        a county and a state, where a census table containing the data we are
+        looking for is paired with neither the county nor the state. Should
+        return None.
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-95.32 36.4, -95.31 36.4,'
+            '-95.31 36.45, -95.32 36.45, -95.32 36.4)))'
+        )
+        self.assertEqual(
+            highest_resolution_for_data(
+                area_to_get_got,
+                'B19058_002E',
+                Census
+            ), None
+        )
+
+
 class HighestResStateNoTest(ForAreaTestNoData, ForAreaCounty):
     def setUp(self):
         ForAreaTestNoData.setUp(self)
