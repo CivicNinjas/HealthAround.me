@@ -600,3 +600,46 @@ class HighestResStateNoTests(ForAreaTestNoData, ForAreaCounty):
                 Census
             ), None
         )
+
+
+class HighestResDataStateWith(ForAreaTestNoData, ForAreaState, ForAreaCounty):
+    def setUp(self):
+        ForAreaTestNoData.setUp(self)
+        ForAreaState.setUp(self)
+        ForAreaCounty.setUp(self)
+
+    def test_state_and_county_both_data(self):
+        '''
+        In this test, area_to_get_got is defined as being located inside both
+        a county and a state, where a census table containing the data we are
+        looking for is paired with the county and the state. Should
+        return county.
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-95.32 36.4, -95.31 36.4,'
+            '-95.31 36.45, -95.32 36.45, -95.32 36.4)))')
+        self.assertEqual(
+            highest_resolution_for_data(
+                area_to_get_got,
+                'B19058_002E',
+                Census
+            ), "County"
+        )
+
+    def test_outside_state_and_county(self):
+        '''
+        In this test, area_to_get_got is defined as being located outside both
+        a county and a state, where a census table containing the data we are
+        looking for is paired with the county and the state. Should
+        return None.
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-35.32 36.4, -35.31 36.4,'
+            '-35.31 36.45, -35.32 36.45, -35.32 36.4)))')
+        self.assertEqual(
+            highest_resolution_for_data(
+                area_to_get_got,
+                'B19058_002E',
+                Census
+            ), None
+        )
