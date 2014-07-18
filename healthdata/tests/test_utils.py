@@ -559,7 +559,7 @@ class GetFieldForAreaTest(ForAreaTestNoData, ForAreaCounty):
         )
 
 
-class HighestResStateNoTests(ForAreaTestNoData, ForAreaCounty):
+class HighestResStateNoTest(ForAreaTestNoData, ForAreaCounty):
     def setUp(self):
         ForAreaTestNoData.setUp(self)
         ForAreaCounty.setUp(self)
@@ -602,44 +602,44 @@ class HighestResStateNoTests(ForAreaTestNoData, ForAreaCounty):
         )
 
 
-class HighestResDataStateWith(ForAreaTestNoData, ForAreaState, ForAreaCounty):
+class HighestResCountyNoTest(ForAreaTestNoData, ForAreaState):
     def setUp(self):
         ForAreaTestNoData.setUp(self)
         ForAreaState.setUp(self)
-        ForAreaCounty.setUp(self)
 
-    def test_state_and_county_both_data(self):
+    def test_state_and_county_no_county_data(self):
         '''
         In this test, area_to_get_got is defined as being located inside both
         a county and a state, where a census table containing the data we are
-        looking for is paired with the county and the state. Should
-        return county.
+        looking for is paired with the state but not the county. Should
+        return state.
         '''
         area_to_get_got = GEOSGeometry(
             'MUlTIPOLYGON(((-95.32 36.4, -95.31 36.4,'
-            '-95.31 36.45, -95.32 36.45, -95.32 36.4)))')
+            '-95.31 36.45, -95.32 36.45, -95.32 36.4)))'
+        )
         self.assertEqual(
             highest_resolution_for_data(
                 area_to_get_got,
                 'B19058_002E',
                 Census
-            ), "County"
+            ), "State"
         )
 
-    def test_outside_state_and_county(self):
+    def test_state_state_data(self):
         '''
-        In this test, area_to_get_got is defined as being located outside both
-        a county and a state, where a census table containing the data we are
-        looking for is paired with the county and the state. Should
-        return None.
+        In this test, area_to_get_got is defined as being located inside a
+        state and no other boundaries, where the data we are looking for
+        is paired with the state's boundary.  Should return State.
         '''
         area_to_get_got = GEOSGeometry(
-            'MUlTIPOLYGON(((-35.32 36.4, -35.31 36.4,'
-            '-35.31 36.45, -35.32 36.45, -35.32 36.4)))')
+            'MUlTIPOLYGON(((-95.45 36.8, -95.5 36.8,'
+            '-95.5 36.9, -95.45 36.9, -95.45 36.8)))'
+        )
         self.assertEqual(
             highest_resolution_for_data(
                 area_to_get_got,
                 'B19058_002E',
                 Census
-            ), None
+            ), "State"
         )
