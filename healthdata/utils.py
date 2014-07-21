@@ -516,7 +516,7 @@ def get_field_for_area(area_to_get, field_to_get, klass):
     best_kind = highest_resolution_for_data(area_to_get, field_to_get, klass)
 
     if best_kind is None:
-        return "No data for that field in given area."
+        return None
 
     boundary_list = Boundary.objects.filter(
         (Q(shape__within=area_to_get) | Q(shape__overlaps=area_to_get)),
