@@ -125,7 +125,7 @@ class ForAreaCounty(object):
             boundary=self.bound_one,
             logical_num=4846,
             B01003_001E=1500,
-            B19058_003E=825,
+            B19058_002E=500,
         )
 
         Census.objects.create(
