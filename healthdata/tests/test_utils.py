@@ -7,6 +7,7 @@ from django.contrib.gis.geos import GEOSGeometry
 from healthdata.utils import (
     fake_boundary,
     get_field_for_area,
+    get_field_for_area_percent,
     highest_resolution_for_data
 )
 
@@ -153,7 +154,7 @@ class ForAreaCountyPer(object):
         )
 
         Dartmouth.objects.create(
-            boundary=self.bound_one,
+            boundary=self.bound_two,
             discharge_rate_per_capita=0.5
         )
 
@@ -236,14 +237,31 @@ class FieldForAreaTest(ForAreaTestNoData, ForAreaCounty):
 
 
 class FieldForAreaPerTest(ForAreaTestNoData, ForAreaCounty, ForAreaCountyPer):
-    '''
-    Two areas, bound one(0.25 per capita discharge rate) and bound two(0.5 per
-    capita discharge rate.)  1/25 o
-    '''
     def setUp(self):
         ForAreaTestNoData.setUp(self)
         ForAreaCounty.setUp(self)
         ForAreaCountyPer.setUp(self)
+
+    def test_get_field_for_area_per_intersection(self):
+        '''
+        Two areas, bound one(0.25 per capita discharge rate, population of
+        1500) and bound two(0.5 per capita discharge rate, population of 2500)
+        1/25 ofbound one is inside area_to_get_got, and 9/25ths of bound two
+        is insidearea_to_get_got. Therefore, using the
+        get_field_for_area_percent algorithm, the total discharge rate in 
+        area_to_get_got should be equal to:
+        Value: (0.25 * (1/25) * 1500) + (0.5 * (9/25) * 2500) = 465,
+        Population: (1/25) * 1500 + (9/25) * 2500 = 960,
+        Rate: 465 / 960 = 0.484375
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-95.95 36.15, -95.45 36.15,'
+            '-95.45 36.35,-95.95 36.35, -95.95 36.15)))')
+        self.assertEqual(get_field_for_area_percent(
+            area_to_get_got,
+            'discharge_rate_per_capita',
+            Dartmouth
+        ), 0.484375)
 
 
 class HighestResStateNo(ForAreaTestNoData):
