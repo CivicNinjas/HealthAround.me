@@ -482,6 +482,19 @@ class ForAreaState(object):
         )
 
 
+class ForAreaCountyPer(object):
+    def setUp(self):
+        Dartmouth.objects.create(
+            boundary=self.bound_one,
+            discharge_rate_per_capita=0.25
+        )
+
+        Dartmouth.objects.create(
+            boundary=self.bound_one,
+            discharge_rate_per_capita=0.5
+        )
+
+
 class GetFieldForAreaTest(ForAreaTestNoData, ForAreaCounty):
 
     def setUp(self):
