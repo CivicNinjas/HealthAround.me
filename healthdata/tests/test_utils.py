@@ -198,7 +198,7 @@ class FieldForAreaTest(ForAreaTestNoData, ForAreaCounty):
                 Census
             ), 40)
 
-    def test_get_field_for_area_partially_outside_data(self):
+    def test_get_field_for_area_partially_outside(self):
         '''
         In this test, 2/3 of area_to_get_got is inside bound two, taking
         up 2/25ths of bound two's total area, while the last 1/3 of
@@ -232,8 +232,7 @@ class FieldForAreaTest(ForAreaTestNoData, ForAreaCounty):
                 area_to_get_got,
                 'B19058_002E',
                 Census
-            ), "No data for that field in given area."
-        )
+            ), None)
 
 
 class FieldForAreaPerTest(ForAreaTestNoData, ForAreaCounty, ForAreaCountyPer):
@@ -248,20 +247,82 @@ class FieldForAreaPerTest(ForAreaTestNoData, ForAreaCounty, ForAreaCountyPer):
         1500) and bound two(0.5 per capita discharge rate, population of 2500)
         1/25 ofbound one is inside area_to_get_got, and 9/25ths of bound two
         is insidearea_to_get_got. Therefore, using the
-        get_field_for_area_percent algorithm, the total discharge rate in 
+        get_field_for_area_percent algorithm, the total discharge rate in
         area_to_get_got should be equal to:
-        Value: (0.25 * (1/25) * 1500) + (0.5 * (9/25) * 2500) = 465,
-        Population: (1/25) * 1500 + (9/25) * 2500 = 960,
+        Discharged: (0.25 * (1/25) * 1500) + (0.5 * (9/25) * 2500) = 465
+        Population: (1/25) * 1500 + (9/25) * 2500 = 960
         Rate: 465 / 960 = 0.484375
         '''
         area_to_get_got = GEOSGeometry(
             'MUlTIPOLYGON(((-95.95 36.15, -95.45 36.15,'
             '-95.45 36.35,-95.95 36.35, -95.95 36.15)))')
-        self.assertEqual(get_field_for_area_percent(
-            area_to_get_got,
-            'discharge_rate_per_capita',
-            Dartmouth
-        ), 0.484375)
+        self.assertEqual(
+            get_field_for_area_percent(
+                area_to_get_got,
+                'discharge_rate_per_capita',
+                Dartmouth
+            ), 0.484375)
+
+    def test_get_field_for_area_per_inside(self):
+        '''
+        In this test, area_to_get_got is completely inside bound two and
+        is equal to 1/25 of bound two's area. Bound two has a population
+        of 2500 and a discharge rate of 0.5 per capita.  Therefore, the
+        algorithm should return:
+        Discharged:  (1/25) * 2500 * 0.5 = 50
+        Population: (1/25) * 2500 = 100
+        Rate = 50 / 100 = 0.5
+        (It will be the same, since it is entirely enclosed in
+        get_field_for_area)
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-95.9 36.15, -95.8 36.15,'
+            '-95.8 36.25, -95.9 36.25, -95.9 36.15)))')
+        self.assertEqual(
+            get_field_for_area_percent(
+                area_to_get_got,
+                'discharge_rate_per_capita',
+                Dartmouth
+            ), 0.5)
+
+    def test_get_field_for_area_per_partailly_outside(self):
+        '''
+        In this test, 2/3 of area_to_get_got is inside bound two, taking
+        up 2/25ths of bound two's total area, while the last 1/3 of
+        area_to_get_got is outside of it.  The algorithm will ignore this
+        overlap in to areas that don't contain any of the data we're looking
+        for, so we need only concern ourselves with the area inside bound two.
+        Discharged: (2/25) * 2500 * 0.5 = 100
+        Population: (2/25) * 2500 = 200
+        Rate: 100/200 = 50 (Will be the same, since it is only taking data
+        from one boundary.)
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-96.1 36.15, -95.8 36.15,'
+            '-95.8 36.25, -96.1 36.25, -96.1 36.15)))')
+        self.assertEqual(
+            get_field_for_area_percent(
+                area_to_get_got,
+                'discharge_rate_per_capita',
+                Dartmouth
+            ), 0.5)
+
+    def test_get_field_for_area_outside_data(self):
+        '''
+        In this test, area_to_get is defined as being somewhere in the arctic.
+        The get_field_for_area should return a string indicating that there is
+        no data in that area.
+        '''
+        area_to_get_got = GEOSGeometry(
+            'MUlTIPOLYGON(((-51.0 81.0, -52.0 81.0,'
+            '-52.0 82.0, -51.0 82.0, -51.0 81.0)))'
+        )
+        self.assertEqual(
+            get_field_for_area_percent(
+                area_to_get_got,
+                'discharge_rate_per_capita',
+                Dartmouth
+            ), None)
 
 
 class HighestResStateNo(ForAreaTestNoData):
