@@ -18,20 +18,23 @@ class TestCaseCommonMixin(object):
         actual = json.loads(json.dumps(calculated))
         self.assertDictEqual(expected, actual)
 
-    def score_text_no_data(self, name, feedback_url='#'):
+    def score_text_no_data(self, name):
         '''
         Construct the score_text when no data is available
         '''
+        feedback_url = "http://healtharound.me/#/feedback"
         return {
             u'markdown': (
-                u"We don't have data for {name} yet, but studies show it has"
-                u" an impact on the health of a community. Do you know about"
-                u" a data source? [Tell us about it]({feedback_url})."
+                u"We are still working on aggregating data for {name}. This"
+                u" data will be made available as time and funding allows."
+                u" Do you know of another data source we should be aware of?"
+                u" [Tell us about it]({feedback_url})."
             ).format(name=name, feedback_url=feedback_url),
             u'html': (
-                u"<p>We don't have data for {name} yet, but studies show it"
-                u" has an impact on the health of a community. Do you know"
-                u" about a data source?"
+                u"<p>We are still working on aggregating data for {name}."
+                u" This data will be made available as time and funding"
+                u" allows. Do you know of another data source we should be"
+                u" aware of?"
                 u" <a href=\"{feedback_url}\">Tell us about it</a>.</p>"
             ).format(name=name, feedback_url=feedback_url),
         }

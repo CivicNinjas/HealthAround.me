@@ -281,11 +281,14 @@ class PlaceholderAlgorithm(BaseAlgorithm):
         return self.PlaceholderData(boundary, seed)
 
     def score(self, source_data):
+        feedback_url = "http://healtharound.me/#/feedback"
         score_md = (
-            "We don't have data for {node.label} yet, but studies show it"
-            " has an impact on the health of a community. Do you know about"
-            " a data source? [Tell us about it]({feedback_url})."
-        ).format(node=self.node, feedback_url='#')
+            "We are still working on aggregating data for {node.label}. This"
+            " data will be made available as time and funding allows. Do you"
+            " know of another data source we should be aware of?"
+            " [Tell us about it]({feedback_url})."
+        ).format(node=self.node, feedback_url=feedback_url)
+
         return {
             'summary': OrderedDict((
                 ("score", source_data.score),
