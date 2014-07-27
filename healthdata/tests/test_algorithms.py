@@ -1,26 +1,10 @@
-import json
-
 from boundaryservice.models import Boundary, BoundarySet
-from django.test import TestCase as BaseTestCase
 
+from .base import TestCase
 from data.models import Census, Dartmouth, Ers
 from healthdata.algorithms import AlgorithmCache
 from healthdata.models import ScoreMetric, ScoreNode
 from healthdata.utils import fake_boundary
-
-
-class TestCase(BaseTestCase):
-    maxDiff = None
-
-    def assertScoreEqual(self, expected, calculated):
-        '''
-        Assert calculated is equal to the equivalent dict
-
-        calculated includes OrderDicts, so it is serialized through
-        JSON to turn them into plain dicts
-        '''
-        actual = json.loads(json.dumps(calculated))
-        self.assertDictEqual(expected, actual)
 
 
 class FakeAlgorithmTest(TestCase):
@@ -39,18 +23,7 @@ class FakeAlgorithmTest(TestCase):
             },
             u"detail": {
                 u"path": u"/api/detail/fake_2_-96.00_36.15/random-stat/",
-                u"score_text": {
-                    u'markdown': (
-                        u"We don't have data for Random Stat yet, but studies"
-                        u" show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" [Tell us about it](#)."),
-                    u'html': (
-                        u"<p>We don't have data for Random Stat yet, but"
-                        u" studies show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" <a href=\"#\">Tell us about it</a>.</p>"),
-                },
+                u"score_text": self.score_text_no_data('Random Stat'),
             },
             u"boundary": {
                 u"path": u"/api/boundary/fake_2_-96.00_36.15/",
@@ -97,18 +70,7 @@ class FakeAlgorithmTest(TestCase):
             u"detail": {
                 u"path": (
                     u"/api/detail/fake_2_-96.00_36.15/other-stat/"),
-                u"score_text": {
-                    u'markdown': (
-                        u"We don't have data for Other Stat yet, but studies"
-                        u" show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" [Tell us about it](#)."),
-                    u'html': (
-                        u"<p>We don't have data for Other Stat yet, but"
-                        u" studies show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" <a href=\"#\">Tell us about it</a>.</p>"),
-                },
+                u"score_text": self.score_text_no_data('Other Stat'),
             },
             u"boundary": {
                 u"path": u"/api/boundary/fake_2_-96.00_36.15/",
@@ -984,18 +946,7 @@ class CensusPercentAlgorithmTest(TestCase):
             },
             u"detail": {
                 u"path": u"/api/detail/fake_2_-96.00_36.15/percent-poverty/",
-                u"score_text": {
-                    u'markdown': (
-                        u"We don't have data for Percent Poverty yet, but"
-                        u" studies show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" [Tell us about it](#)."),
-                    u'html': (
-                        u"<p>We don't have data for Percent Poverty yet, but"
-                        u" studies show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" <a href=\"#\">Tell us about it</a>.</p>"),
-                },
+                u"score_text": self.score_text_no_data('Percent Poverty'),
             },
             u"boundary": {
                 u"path": u"/api/boundary/fake_2_-96.00_36.15/",
@@ -1018,18 +969,7 @@ class CensusPercentAlgorithmTest(TestCase):
             },
             u"detail": {
                 u"path": u"/api/detail/fake_2_0.00_0.00/percent-poverty/",
-                u"score_text": {
-                    u'markdown': (
-                        u"We don't have data for Percent Poverty yet, but"
-                        u" studies show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" [Tell us about it](#)."),
-                    u'html': (
-                        u"<p>We don't have data for Percent Poverty yet, but"
-                        u" studies show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" <a href=\"#\">Tell us about it</a>.</p>"),
-                },
+                u"score_text": self.score_text_no_data('Percent Poverty'),
             },
             u"boundary": {
                 u"path": u"/api/boundary/fake_2_0.00_0.00/",
@@ -1189,18 +1129,7 @@ class CensusPercentAlgorithmTest(TestCase):
             u'detail': {
                 u"path": (
                     u"/api/detail/fake_2_0.00_0.00/percent-poverty/"),
-                u"score_text": {
-                    u"markdown": (
-                        u"We don't have data for Percent Poverty yet, but"
-                        u" studies show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" [Tell us about it](#)."),
-                    u"html": (
-                        u"<p>We don't have data for Percent Poverty yet, but"
-                        u" studies show it has an impact on the health of a"
-                        u" community. Do you know about a data source?"
-                        u" <a href=\"#\">Tell us about it</a>.</p>"),
-                },
+                u"score_text": self.score_text_no_data('Percent Poverty'),
                 u"why_text": {
                     u"markdown": (
                         u"Living below the poverty level is associated with"

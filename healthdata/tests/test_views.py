@@ -1,25 +1,5 @@
-import json
-
-from rest_framework.test import APITestCase as BaseAPITestCase
-
+from .base import APITestCase
 from healthdata.models import Feedback, ScoreNode, ScoreMetric
-
-
-class APITestCase(BaseAPITestCase):
-    maxDiff = None
-
-    def assertDataEqual(self, response, expected):
-        '''
-        assert Response data is equal to a dictionary
-
-        Because data includes dict-like objects that aren't quite dicts, it
-        passed through json encoding/decoding first, to get a plain old dict
-        (with unicode strings)
-        '''
-        self.assertEqual(response.status_code, 200, response.content)
-        actual = response.data
-        data = json.loads(json.dumps(actual))
-        self.assertEqual(expected, data)
 
 
 class DetailAPIViewTest(APITestCase):
@@ -62,18 +42,7 @@ class DetailAPIViewTest(APITestCase):
                     u'description': u'The first metric',
                     u'weight': 2,
                     u'score': 0.53,
-                    u'score_text': {
-                        u'markdown': (
-                            u"We don't have data for Metric A yet, but"
-                            u" studies show it has an impact on the health of"
-                            u" a community. Do you know about a data source?"
-                            u" [Tell us about it](#)."),
-                        u'html': (
-                            u"<p>We don't have data for Metric A yet, but"
-                            u" studies show it has an impact on the health of"
-                            u" a community. Do you know about a data source?"
-                            u" <a href=\"#\">Tell us about it</a>.</p>"),
-                    },
+                    u'score_text': self.score_text_no_data('Metric A'),
                     u'value': 0.46,
                     u'value_type': u'percent',
                 },

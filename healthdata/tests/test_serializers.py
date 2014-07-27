@@ -1,26 +1,10 @@
 import json
 
-from rest_framework.test import APITestCase as BaseAPITestCase
-
+from .base import APITestCase
 from healthdata.algorithms import AlgorithmCache
 from healthdata.models import Boundary, ScoreNode, ScoreMetric
 from healthdata.serializers import (
     MetricDetailSerializer, ScoreNodeSerializer)
-
-
-class APITestCase(BaseAPITestCase):
-    maxDiff = None
-
-    def assertSerializerDataEqual(self, expected, actual):
-        '''
-        assert serializer.data is equal to a dictionary
-
-        Because serializer.data includes dict-like objects that aren't quite
-        dicts, it passed through json encoding/decoding first, to get a
-        plain old dict (with unicode strings)
-        '''
-        data = json.loads(json.dumps(actual))
-        self.assertEqual(expected, data)
 
 
 class MetricDetailSerializerTest(APITestCase):
@@ -80,21 +64,7 @@ class MetricDetailSerializerTest(APITestCase):
                         u'detail': {
                             u'path': (
                                 u'/api/detail/fake_2_-95.99_36.15/metric-a/'),
-                            u'score_text': {
-                                u'markdown': (
-                                    u"We don't have data for Metric A yet, but"
-                                    u" studies show it has an impact on the"
-                                    u" health of a community. Do you know"
-                                    u" about a data source?"
-                                    u" [Tell us about it](#)."),
-                                u'html': (
-                                    u"<p>We don't have data for Metric A yet,"
-                                    u" but studies show it has an impact on"
-                                    u" the health of a community. Do you know"
-                                    u" about a data source?"
-                                    u" <a href=\"#\">Tell us about it</a>."
-                                    u"</p>"),
-                            },
+                            u'score_text': self.score_text_no_data('Metric A'),
                         },
                         u'boundary': {
                             u'path': u'/api/boundary/fake_2_-95.99_36.15/',
@@ -166,18 +136,7 @@ class ScoreSerializerTest(APITestCase):
                 },
                 u'detail': {
                     u"path": u"/api/detail/fake_2_-96.00_36.14/metric-a/",
-                    u'score_text': {
-                        u'markdown': (
-                            u"We don't have data for Metric A yet, but"
-                            u" studies show it has an impact on the health of"
-                            u" a community. Do you know about a data source?"
-                            u" [Tell us about it](#)."),
-                        u'html': (
-                            u"<p>We don't have data for Metric A yet, but"
-                            u" studies show it has an impact on the health of"
-                            u" a community. Do you know about a data source?"
-                            u" <a href=\"#\">Tell us about it</a>.</p>"),
-                    },
+                    u'score_text': self.score_text_no_data('Metric A'),
                 },
                 u'boundary': self.boundary_rep(),
             },
@@ -198,18 +157,7 @@ class ScoreSerializerTest(APITestCase):
                 },
                 u'detail': {
                     u"path": u"/api/detail/fake_2_-96.00_36.14/metric-b/",
-                    u'score_text': {
-                        u'markdown': (
-                            u"We don't have data for Metric B yet, but"
-                            u" studies show it has an impact on the health of"
-                            u" a community. Do you know about a data source?"
-                            u" [Tell us about it](#)."),
-                        u'html': (
-                            u"<p>We don't have data for Metric B yet, but"
-                            u" studies show it has an impact on the health of"
-                            u" a community. Do you know about a data source?"
-                            u" <a href=\"#\">Tell us about it</a>.</p>"),
-                    },
+                    u'score_text': self.score_text_no_data('Metric B'),
                 },
                 u'boundary': self.boundary_rep(),
             },
